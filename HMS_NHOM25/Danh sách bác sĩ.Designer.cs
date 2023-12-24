@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiBS = new System.Windows.Forms.ComboBox();
             this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhBS = new System.Windows.Forms.ComboBox();
@@ -37,25 +38,24 @@
             this.txtBangCapBS = new System.Windows.Forms.TextBox();
             this.txtTenBS = new System.Windows.Forms.TextBox();
             this.txtMaBS = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.labNgaySinh = new System.Windows.Forms.Label();
+            this.labTrangThaiBS = new System.Windows.Forms.Label();
+            this.labChuyenMonBS = new System.Windows.Forms.Label();
+            this.labBangCapBS = new System.Windows.Forms.Label();
+            this.labSDTBS = new System.Windows.Forms.Label();
+            this.labDiaChiBS = new System.Windows.Forms.Label();
+            this.labSexBS = new System.Windows.Forms.Label();
+            this.labNgaySinhBS = new System.Windows.Forms.Label();
             this.labTenBS = new System.Windows.Forms.Label();
             this.labMaBS = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labTimKiemBS = new System.Windows.Forms.Label();
+            this.labTenBSTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiemBS = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSuaBS = new System.Windows.Forms.Button();
             this.btnXoaBS = new System.Windows.Forms.Button();
             this.btnThemBS = new System.Windows.Forms.Button();
             this.btnTimKiemBS = new System.Windows.Forms.Button();
-            this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -71,13 +71,13 @@
             this.groupBox1.Controls.Add(this.txtBangCapBS);
             this.groupBox1.Controls.Add(this.txtTenBS);
             this.groupBox1.Controls.Add(this.txtMaBS);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.labNgaySinh);
+            this.groupBox1.Controls.Add(this.labTrangThaiBS);
+            this.groupBox1.Controls.Add(this.labChuyenMonBS);
+            this.groupBox1.Controls.Add(this.labBangCapBS);
+            this.groupBox1.Controls.Add(this.labSDTBS);
+            this.groupBox1.Controls.Add(this.labDiaChiBS);
+            this.groupBox1.Controls.Add(this.labSexBS);
+            this.groupBox1.Controls.Add(this.labNgaySinhBS);
             this.groupBox1.Controls.Add(this.labTenBS);
             this.groupBox1.Controls.Add(this.labMaBS);
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
@@ -87,6 +87,19 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin bác sĩ";
+            // 
+            // cobChuyenMonBS
+            // 
+            this.cobChuyenMonBS.FormattingEnabled = true;
+            this.cobChuyenMonBS.Items.AddRange(new object[] {
+            "Sản",
+            "Tim Mạch",
+            "Răng - Hàm - Mặt",
+            "Da liễu"});
+            this.cobChuyenMonBS.Location = new System.Drawing.Point(790, 94);
+            this.cobChuyenMonBS.Name = "cobChuyenMonBS";
+            this.cobChuyenMonBS.Size = new System.Drawing.Size(180, 28);
+            this.cobChuyenMonBS.TabIndex = 18;
             // 
             // cobTrangThaiBS
             // 
@@ -160,77 +173,77 @@
             this.txtMaBS.Size = new System.Drawing.Size(184, 26);
             this.txtMaBS.TabIndex = 9;
             // 
-            // label9
+            // labTrangThaiBS
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label9.Location = new System.Drawing.Point(682, 158);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 20);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Trạng thái";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.labTrangThaiBS.AutoSize = true;
+            this.labTrangThaiBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labTrangThaiBS.Location = new System.Drawing.Point(682, 158);
+            this.labTrangThaiBS.Name = "labTrangThaiBS";
+            this.labTrangThaiBS.Size = new System.Drawing.Size(80, 20);
+            this.labTrangThaiBS.TabIndex = 8;
+            this.labTrangThaiBS.Text = "Trạng thái";
+            this.labTrangThaiBS.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label8
+            // labChuyenMonBS
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(682, 102);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 20);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Chuyên môn";
+            this.labChuyenMonBS.AutoSize = true;
+            this.labChuyenMonBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labChuyenMonBS.Location = new System.Drawing.Point(682, 102);
+            this.labChuyenMonBS.Name = "labChuyenMonBS";
+            this.labChuyenMonBS.Size = new System.Drawing.Size(98, 20);
+            this.labChuyenMonBS.TabIndex = 7;
+            this.labChuyenMonBS.Text = "Chuyên môn";
             // 
-            // label7
+            // labBangCapBS
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(682, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Bằng cấp";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.labBangCapBS.AutoSize = true;
+            this.labBangCapBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labBangCapBS.Location = new System.Drawing.Point(682, 50);
+            this.labBangCapBS.Name = "labBangCapBS";
+            this.labBangCapBS.Size = new System.Drawing.Size(77, 20);
+            this.labBangCapBS.TabIndex = 6;
+            this.labBangCapBS.Text = "Bằng cấp";
+            this.labBangCapBS.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label6
+            // labSDTBS
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(373, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "SĐT";
+            this.labSDTBS.AutoSize = true;
+            this.labSDTBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labSDTBS.Location = new System.Drawing.Point(373, 158);
+            this.labSDTBS.Name = "labSDTBS";
+            this.labSDTBS.Size = new System.Drawing.Size(41, 20);
+            this.labSDTBS.TabIndex = 5;
+            this.labSDTBS.Text = "SĐT";
             // 
-            // label5
+            // labDiaChiBS
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(373, 102);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Địa chỉ";
+            this.labDiaChiBS.AutoSize = true;
+            this.labDiaChiBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labDiaChiBS.Location = new System.Drawing.Point(373, 102);
+            this.labDiaChiBS.Name = "labDiaChiBS";
+            this.labDiaChiBS.Size = new System.Drawing.Size(57, 20);
+            this.labDiaChiBS.TabIndex = 4;
+            this.labDiaChiBS.Text = "Địa chỉ";
             // 
-            // label4
+            // labSexBS
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(373, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Giới tính";
+            this.labSexBS.AutoSize = true;
+            this.labSexBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labSexBS.Location = new System.Drawing.Point(373, 50);
+            this.labSexBS.Name = "labSexBS";
+            this.labSexBS.Size = new System.Drawing.Size(67, 20);
+            this.labSexBS.TabIndex = 3;
+            this.labSexBS.Text = "Giới tính";
             // 
-            // labNgaySinh
+            // labNgaySinhBS
             // 
-            this.labNgaySinh.AutoSize = true;
-            this.labNgaySinh.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgaySinh.Location = new System.Drawing.Point(37, 158);
-            this.labNgaySinh.Name = "labNgaySinh";
-            this.labNgaySinh.Size = new System.Drawing.Size(78, 20);
-            this.labNgaySinh.TabIndex = 2;
-            this.labNgaySinh.Text = "Ngày sinh";
+            this.labNgaySinhBS.AutoSize = true;
+            this.labNgaySinhBS.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labNgaySinhBS.Location = new System.Drawing.Point(37, 158);
+            this.labNgaySinhBS.Name = "labNgaySinhBS";
+            this.labNgaySinhBS.Size = new System.Drawing.Size(78, 20);
+            this.labNgaySinhBS.TabIndex = 2;
+            this.labNgaySinhBS.Text = "Ngày sinh";
             // 
             // labTenBS
             // 
@@ -253,26 +266,26 @@
             this.labMaBS.TabIndex = 0;
             this.labMaBS.Text = "Mã bác sĩ";
             // 
-            // label1
+            // labTimKiemBS
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(46, 244);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Tìm kiếm";
+            this.labTimKiemBS.AutoSize = true;
+            this.labTimKiemBS.ForeColor = System.Drawing.Color.Red;
+            this.labTimKiemBS.Location = new System.Drawing.Point(46, 244);
+            this.labTimKiemBS.Name = "labTimKiemBS";
+            this.labTimKiemBS.Size = new System.Drawing.Size(71, 20);
+            this.labTimKiemBS.TabIndex = 1;
+            this.labTimKiemBS.Text = "Tìm kiếm";
             // 
-            // label2
+            // labTenBSTimKiem
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(67, 277);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Tên bác sĩ";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.labTenBSTimKiem.AutoSize = true;
+            this.labTenBSTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labTenBSTimKiem.Location = new System.Drawing.Point(67, 277);
+            this.labTenBSTimKiem.Name = "labTenBSTimKiem";
+            this.labTenBSTimKiem.Size = new System.Drawing.Size(81, 20);
+            this.labTenBSTimKiem.TabIndex = 18;
+            this.labTenBSTimKiem.Text = "Tên bác sĩ";
+            this.labTenBSTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemBS
             // 
@@ -333,24 +346,11 @@
             this.btnTimKiemBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiemBS.Location = new System.Drawing.Point(412, 265);
             this.btnTimKiemBS.Name = "btnTimKiemBS";
-            this.btnTimKiemBS.Size = new System.Drawing.Size(115, 39);
+            this.btnTimKiemBS.Size = new System.Drawing.Size(109, 39);
             this.btnTimKiemBS.TabIndex = 19;
             this.btnTimKiemBS.Text = "Tìm kiếm";
             this.btnTimKiemBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiemBS.UseVisualStyleBackColor = true;
-            // 
-            // cobChuyenMonBS
-            // 
-            this.cobChuyenMonBS.FormattingEnabled = true;
-            this.cobChuyenMonBS.Items.AddRange(new object[] {
-            "Sản",
-            "Tim Mạch",
-            "Răng - Hàm - Mặt",
-            "Da liễu"});
-            this.cobChuyenMonBS.Location = new System.Drawing.Point(790, 94);
-            this.cobChuyenMonBS.Name = "cobChuyenMonBS";
-            this.cobChuyenMonBS.Size = new System.Drawing.Size(180, 28);
-            this.cobChuyenMonBS.TabIndex = 18;
             // 
             // Danh_sách_bác_sĩ
             // 
@@ -363,9 +363,10 @@
             this.Controls.Add(this.btnThemBS);
             this.Controls.Add(this.btnTimKiemBS);
             this.Controls.Add(this.txtTimKiemBS);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labTenBSTimKiem);
+            this.Controls.Add(this.labTimKiemBS);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Danh_sách_bác_sĩ";
             this.Text = "Danh_sách_bác_sĩ";
             this.groupBox1.ResumeLayout(false);
@@ -381,14 +382,14 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label labMaBS;
-        private System.Windows.Forms.Label labNgaySinh;
+        private System.Windows.Forms.Label labNgaySinhBS;
         private System.Windows.Forms.Label labTenBS;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labSexBS;
+        private System.Windows.Forms.Label labTrangThaiBS;
+        private System.Windows.Forms.Label labChuyenMonBS;
+        private System.Windows.Forms.Label labBangCapBS;
+        private System.Windows.Forms.Label labSDTBS;
+        private System.Windows.Forms.Label labDiaChiBS;
         private System.Windows.Forms.TextBox txtSDTBS;
         private System.Windows.Forms.TextBox txtBangCapBS;
         private System.Windows.Forms.TextBox txtTenBS;
@@ -397,8 +398,8 @@
         private System.Windows.Forms.ComboBox cobGioiTinhBS;
         private System.Windows.Forms.ComboBox cobDiaChiBS;
         private System.Windows.Forms.ComboBox cobTrangThaiBS;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labTimKiemBS;
+        private System.Windows.Forms.Label labTenBSTimKiem;
         private System.Windows.Forms.TextBox txtTimKiemBS;
         private System.Windows.Forms.Button btnTimKiemBS;
         private System.Windows.Forms.Button btnThemBS;
