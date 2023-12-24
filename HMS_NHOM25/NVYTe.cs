@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Danh_sách_bác_sĩ : Form
+    public partial class NVYTe : Form
     {
-        public Danh_sách_bác_sĩ()
+        public NVYTe()
         {
             InitializeComponent();
         }
 
+        private void NVYTe_Load(object sender, EventArgs e)
+        {
+
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 

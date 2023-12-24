@@ -365,7 +365,6 @@
             this.Controls.Add(this.grbAddInfoBS);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.palAddBS);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddDoctor";
             this.Text = "AddDoctor";
             this.palAddBS.ResumeLayout(false);

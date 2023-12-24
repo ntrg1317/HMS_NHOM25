@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grbInforBS = new System.Windows.Forms.GroupBox();
             this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiBS = new System.Windows.Forms.ComboBox();
             this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
@@ -51,42 +51,43 @@
             this.labTimKiemBS = new System.Windows.Forms.Label();
             this.labTenBSTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiemBS = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvInfoBS = new System.Windows.Forms.DataGridView();
             this.btnSuaBS = new System.Windows.Forms.Button();
             this.btnXoaBS = new System.Windows.Forms.Button();
             this.btnThemBS = new System.Windows.Forms.Button();
             this.btnTimKiemBS = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.grbInforBS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBS)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grbInforBS
             // 
-            this.groupBox1.Controls.Add(this.cobChuyenMonBS);
-            this.groupBox1.Controls.Add(this.cobTrangThaiBS);
-            this.groupBox1.Controls.Add(this.cobDiaChiBS);
-            this.groupBox1.Controls.Add(this.cobGioiTinhBS);
-            this.groupBox1.Controls.Add(this.DOBBS);
-            this.groupBox1.Controls.Add(this.txtSDTBS);
-            this.groupBox1.Controls.Add(this.txtBangCapBS);
-            this.groupBox1.Controls.Add(this.txtTenBS);
-            this.groupBox1.Controls.Add(this.txtMaBS);
-            this.groupBox1.Controls.Add(this.labTrangThaiBS);
-            this.groupBox1.Controls.Add(this.labChuyenMonBS);
-            this.groupBox1.Controls.Add(this.labBangCapBS);
-            this.groupBox1.Controls.Add(this.labSDTBS);
-            this.groupBox1.Controls.Add(this.labDiaChiBS);
-            this.groupBox1.Controls.Add(this.labSexBS);
-            this.groupBox1.Controls.Add(this.labNgaySinhBS);
-            this.groupBox1.Controls.Add(this.labTenBS);
-            this.groupBox1.Controls.Add(this.labMaBS);
-            this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(35, 22);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1017, 207);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin bác sĩ";
+            this.grbInforBS.Controls.Add(this.cobChuyenMonBS);
+            this.grbInforBS.Controls.Add(this.cobTrangThaiBS);
+            this.grbInforBS.Controls.Add(this.cobDiaChiBS);
+            this.grbInforBS.Controls.Add(this.cobGioiTinhBS);
+            this.grbInforBS.Controls.Add(this.DOBBS);
+            this.grbInforBS.Controls.Add(this.txtSDTBS);
+            this.grbInforBS.Controls.Add(this.txtBangCapBS);
+            this.grbInforBS.Controls.Add(this.txtTenBS);
+            this.grbInforBS.Controls.Add(this.txtMaBS);
+            this.grbInforBS.Controls.Add(this.labTrangThaiBS);
+            this.grbInforBS.Controls.Add(this.labChuyenMonBS);
+            this.grbInforBS.Controls.Add(this.labBangCapBS);
+            this.grbInforBS.Controls.Add(this.labSDTBS);
+            this.grbInforBS.Controls.Add(this.labDiaChiBS);
+            this.grbInforBS.Controls.Add(this.labSexBS);
+            this.grbInforBS.Controls.Add(this.labNgaySinhBS);
+            this.grbInforBS.Controls.Add(this.labTenBS);
+            this.grbInforBS.Controls.Add(this.labMaBS);
+            this.grbInforBS.ForeColor = System.Drawing.Color.Red;
+            this.grbInforBS.Location = new System.Drawing.Point(35, 22);
+            this.grbInforBS.Name = "grbInforBS";
+            this.grbInforBS.Size = new System.Drawing.Size(1017, 207);
+            this.grbInforBS.TabIndex = 0;
+            this.grbInforBS.TabStop = false;
+            this.grbInforBS.Text = "Thông tin bác sĩ";
+            this.grbInforBS.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cobChuyenMonBS
             // 
@@ -294,25 +295,25 @@
             this.txtTimKiemBS.Size = new System.Drawing.Size(184, 26);
             this.txtTimKiemBS.TabIndex = 18;
             // 
-            // dataGridView1
+            // dgvInfoBS
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 329);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1021, 259);
-            this.dataGridView1.TabIndex = 23;
+            this.dgvInfoBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInfoBS.Location = new System.Drawing.Point(35, 329);
+            this.dgvInfoBS.Name = "dgvInfoBS";
+            this.dgvInfoBS.RowHeadersWidth = 62;
+            this.dgvInfoBS.RowTemplate.Height = 28;
+            this.dgvInfoBS.Size = new System.Drawing.Size(1021, 259);
+            this.dgvInfoBS.TabIndex = 23;
             // 
             // btnSuaBS
             // 
             this.btnSuaBS.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBS.Location = new System.Drawing.Point(764, 265);
+            this.btnSuaBS.Location = new System.Drawing.Point(758, 265);
             this.btnSuaBS.Name = "btnSuaBS";
-            this.btnSuaBS.Size = new System.Drawing.Size(103, 39);
+            this.btnSuaBS.Size = new System.Drawing.Size(114, 39);
             this.btnSuaBS.TabIndex = 22;
-            this.btnSuaBS.Text = "Sửa";
+            this.btnSuaBS.Text = "Cập nhật";
             this.btnSuaBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBS.UseVisualStyleBackColor = true;
             // 
@@ -357,7 +358,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 612);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvInfoBS);
             this.Controls.Add(this.btnSuaBS);
             this.Controls.Add(this.btnXoaBS);
             this.Controls.Add(this.btnThemBS);
@@ -365,13 +366,14 @@
             this.Controls.Add(this.txtTimKiemBS);
             this.Controls.Add(this.labTenBSTimKiem);
             this.Controls.Add(this.labTimKiemBS);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbInforBS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Danh_sách_bác_sĩ";
             this.Text = "Danh_sách_bác_sĩ";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
+            this.grbInforBS.ResumeLayout(false);
+            this.grbInforBS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,7 +381,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbInforBS;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label labMaBS;
         private System.Windows.Forms.Label labNgaySinhBS;
@@ -405,7 +407,7 @@
         private System.Windows.Forms.Button btnThemBS;
         private System.Windows.Forms.Button btnXoaBS;
         private System.Windows.Forms.Button btnSuaBS;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvInfoBS;
         private System.Windows.Forms.ComboBox cobChuyenMonBS;
     }
 }

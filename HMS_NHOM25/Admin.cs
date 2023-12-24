@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Danh_sách_bác_sĩ : Form
+    public partial class Admin : Form
     {
-        public Danh_sách_bác_sĩ()
+        public Admin()
         {
             InitializeComponent();
         }
 
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -46,7 +50,6 @@ namespace HMS_NHOM25
         {
 
         }
-
         private void Danh_sách_bác_sĩ_Load(object sender, EventArgs e)
         {
 
