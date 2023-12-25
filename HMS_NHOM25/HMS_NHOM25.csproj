@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="AddDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +82,13 @@
     </Compile>
     <Compile Include="Danh sách bác sĩ.Designer.cs">
       <DependentUpon>Doctor.cs</DependentUpon>
+=======
+    <Compile Include="AdminControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControl.Designer.cs">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+>>>>>>> 12130d04a43f7a3c5d9228846134a868ae7aaca2
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -108,6 +116,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="AddDoctor.resx">
       <DependentUpon>AddDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +134,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="AdminControl.resx">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+>>>>>>> 12130d04a43f7a3c5d9228846134a868ae7aaca2
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
