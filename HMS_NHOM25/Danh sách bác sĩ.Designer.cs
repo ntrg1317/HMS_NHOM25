@@ -368,8 +368,8 @@
             this.Controls.Add(this.labTimKiemBS);
             this.Controls.Add(this.grbInforBS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Danh_sách_bác_sĩ";
-            this.Text = "Danh_sách_bác_sĩ";
+            this.Name = "Doctor";
+            this.Text = "Doctor";
             this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
             this.grbInforBS.ResumeLayout(false);
             this.grbInforBS.PerformLayout();

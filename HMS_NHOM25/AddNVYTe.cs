@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDoctor : Form
+    public partial class AddNVYTe : Form
     {
-        public AddDoctor()
+        public AddNVYTe()
         {
             InitializeComponent();
         }
 
+        private void AddNVYTe_Load(object sender, EventArgs e)
+        {
+
+        }
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -42,7 +46,7 @@ namespace HMS_NHOM25
 
         }
 
-        private void ptbBS_Click(object sender, EventArgs e)
+        private void labAddBS_Click(object sender, EventArgs e)
         {
 
         }

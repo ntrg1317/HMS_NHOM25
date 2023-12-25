@@ -52,6 +52,24 @@
     <Compile Include="AddDoctor.Designer.cs">
       <DependentUpon>AddDoctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNVTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNVTN.Designer.cs">
+      <DependentUpon>AddNVTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNVYTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNVYTe.Designer.cs">
+      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPatients.Designer.cs">
+      <DependentUpon>AddPatients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +110,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddDoctor.resx">
       <DependentUpon>AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNVTN.resx">
+      <DependentUpon>AddNVTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNVYTe.resx">
+      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatients.resx">
+      <DependentUpon>AddPatients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -163,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\floppy-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
