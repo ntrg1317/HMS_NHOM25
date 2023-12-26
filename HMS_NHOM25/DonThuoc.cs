@@ -50,5 +50,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void dgvInfoBN_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
