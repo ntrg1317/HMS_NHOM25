@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AddDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,9 +80,9 @@
     <Compile Include="Doctor.cs">
       <SubType>Form</SubType>
     </Compile>
-	<Compile Include="Danh sách bác sĩ.Designer.cs">
-		<DependentUpon>Doctor.cs</DependentUpon>
-	</Compile>	
+    <Compile Include="Danh sách bác sĩ.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,9 +130,9 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="Doctor.resx">
-		<DependentUpon>Doctor.cs</DependentUpon>
-	</EmbeddedResource>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminControl.resx">
       <DependentUpon>AdminControl.cs</DependentUpon>
     </EmbeddedResource>

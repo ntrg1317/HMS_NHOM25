@@ -51,5 +51,11 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnThemBS_Click(object sender, EventArgs e)
+        {
+            AddDoctor addDoctor = new AddDoctor();
+            addDoctor.Show();
+        }
     }
 }

@@ -55,5 +55,11 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnThemNVTN_Click(object sender, EventArgs e)
+        {
+            AddNVTN addNVTN = new AddNVTN();
+            addNVTN.Show();
+        }
     }
 }
