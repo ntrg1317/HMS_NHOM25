@@ -16,14 +16,15 @@ namespace HMS_NHOM25
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             //Application.Run(new login());
             //Application.Run(new Patients());
-            Application.Run(new Doctors());
+            //Application.Run(new Doctors());
             //Application.Run(new Admin());
             //Application.Run(new NVYTe());
             //Application.Run(new NVThuNgan());
             //Application.Run(new AddDoctor());
-
+            Application.Run(new AdminControl());
         }
     }
 }

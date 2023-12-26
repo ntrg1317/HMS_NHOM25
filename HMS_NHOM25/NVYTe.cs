@@ -55,5 +55,11 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnThemNVYTe_Click(object sender, EventArgs e)
+        {
+            AddNVYTe addNVYTe = new AddNVYTe();
+            addNVYTe.Show();
+        }
     }
 }

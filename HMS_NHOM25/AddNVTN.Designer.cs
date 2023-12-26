@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.labAddNVTN = new System.Windows.Forms.Label();
             this.palAddNVTN = new System.Windows.Forms.Panel();
+            this.ptbNVTN = new System.Windows.Forms.PictureBox();
             this.grbAddInfoNVTNM = new System.Windows.Forms.GroupBox();
             this.cobDiaChiNVTNM = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiNVTNM = new System.Windows.Forms.ComboBox();
@@ -53,11 +54,10 @@
             this.btnThoatAddNVTNM = new System.Windows.Forms.Button();
             this.btnSaveInfoNVTNM = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.ptbNVTN = new System.Windows.Forms.PictureBox();
             this.palAddNVTN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
             this.grbAddInfoNVTNM.SuspendLayout();
             this.grbTaiKhoanNVTNM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
             this.SuspendLayout();
             // 
             // labAddNVTN
@@ -66,9 +66,9 @@
             this.labAddNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labAddNVTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddNVTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddNVTN.Location = new System.Drawing.Point(271, 32);
+            this.labAddNVTN.Location = new System.Drawing.Point(241, 26);
             this.labAddNVTN.Name = "labAddNVTN";
-            this.labAddNVTN.Size = new System.Drawing.Size(362, 32);
+            this.labAddNVTN.Size = new System.Drawing.Size(309, 29);
             this.labAddNVTN.TabIndex = 0;
             this.labAddNVTN.Text = "Thêm Nhân viên thu ngân";
             this.labAddNVTN.Click += new System.EventHandler(this.labAddBS_Click);
@@ -78,10 +78,23 @@
             this.palAddNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.palAddNVTN.Controls.Add(this.ptbNVTN);
             this.palAddNVTN.Controls.Add(this.labAddNVTN);
-            this.palAddNVTN.Location = new System.Drawing.Point(-6, 0);
+            this.palAddNVTN.Location = new System.Drawing.Point(-5, 0);
+            this.palAddNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.palAddNVTN.Name = "palAddNVTN";
-            this.palAddNVTN.Size = new System.Drawing.Size(809, 101);
+            this.palAddNVTN.Size = new System.Drawing.Size(719, 81);
             this.palAddNVTN.TabIndex = 4;
+            // 
+            // ptbNVTN
+            // 
+            this.ptbNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbNVTN.Image = global::HMS_NHOM25.Properties.Resources.cashier;
+            this.ptbNVTN.Location = new System.Drawing.Point(177, 25);
+            this.ptbNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbNVTN.Name = "ptbNVTN";
+            this.ptbNVTN.Size = new System.Drawing.Size(69, 26);
+            this.ptbNVTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbNVTN.TabIndex = 3;
+            this.ptbNVTN.TabStop = false;
             // 
             // grbAddInfoNVTNM
             // 
@@ -98,9 +111,11 @@
             this.grbAddInfoNVTNM.Controls.Add(this.labTenNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.labSexNVTNM);
             this.grbAddInfoNVTNM.ForeColor = System.Drawing.Color.Red;
-            this.grbAddInfoNVTNM.Location = new System.Drawing.Point(30, 116);
+            this.grbAddInfoNVTNM.Location = new System.Drawing.Point(27, 93);
+            this.grbAddInfoNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbAddInfoNVTNM.Name = "grbAddInfoNVTNM";
-            this.grbAddInfoNVTNM.Size = new System.Drawing.Size(729, 194);
+            this.grbAddInfoNVTNM.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbAddInfoNVTNM.Size = new System.Drawing.Size(648, 155);
             this.grbAddInfoNVTNM.TabIndex = 5;
             this.grbAddInfoNVTNM.TabStop = false;
             this.grbAddInfoNVTNM.Text = "Thông tin nhân viên thu ngân mới";
@@ -109,49 +124,54 @@
             // cobDiaChiNVTNM
             // 
             this.cobDiaChiNVTNM.FormattingEnabled = true;
-            this.cobDiaChiNVTNM.Location = new System.Drawing.Point(530, 80);
+            this.cobDiaChiNVTNM.Location = new System.Drawing.Point(471, 64);
+            this.cobDiaChiNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobDiaChiNVTNM.Name = "cobDiaChiNVTNM";
-            this.cobDiaChiNVTNM.Size = new System.Drawing.Size(153, 28);
+            this.cobDiaChiNVTNM.Size = new System.Drawing.Size(136, 24);
             this.cobDiaChiNVTNM.TabIndex = 15;
             // 
             // cobTrangThaiNVTNM
             // 
             this.cobTrangThaiNVTNM.FormattingEnabled = true;
-            this.cobTrangThaiNVTNM.Location = new System.Drawing.Point(530, 129);
+            this.cobTrangThaiNVTNM.Location = new System.Drawing.Point(471, 103);
+            this.cobTrangThaiNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobTrangThaiNVTNM.Name = "cobTrangThaiNVTNM";
-            this.cobTrangThaiNVTNM.Size = new System.Drawing.Size(153, 28);
+            this.cobTrangThaiNVTNM.Size = new System.Drawing.Size(136, 24);
             this.cobTrangThaiNVTNM.TabIndex = 14;
             // 
             // cobSexNVTNM
             // 
             this.cobSexNVTNM.FormattingEnabled = true;
-            this.cobSexNVTNM.Location = new System.Drawing.Point(160, 80);
+            this.cobSexNVTNM.Location = new System.Drawing.Point(142, 64);
+            this.cobSexNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobSexNVTNM.Name = "cobSexNVTNM";
-            this.cobSexNVTNM.Size = new System.Drawing.Size(153, 28);
+            this.cobSexNVTNM.Size = new System.Drawing.Size(136, 24);
             this.cobSexNVTNM.TabIndex = 13;
             // 
             // DOBNVTNM
             // 
             this.DOBNVTNM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DOBNVTNM.Location = new System.Drawing.Point(160, 126);
+            this.DOBNVTNM.Location = new System.Drawing.Point(142, 101);
+            this.DOBNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DOBNVTNM.Name = "DOBNVTNM";
-            this.DOBNVTNM.Size = new System.Drawing.Size(153, 26);
+            this.DOBNVTNM.Size = new System.Drawing.Size(136, 22);
             this.DOBNVTNM.TabIndex = 12;
             // 
             // txtSDTNVTNM
             // 
-            this.txtSDTNVTNM.Location = new System.Drawing.Point(530, 39);
+            this.txtSDTNVTNM.Location = new System.Drawing.Point(471, 31);
+            this.txtSDTNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTNVTNM.Name = "txtSDTNVTNM";
-            this.txtSDTNVTNM.Size = new System.Drawing.Size(154, 26);
+            this.txtSDTNVTNM.Size = new System.Drawing.Size(137, 22);
             this.txtSDTNVTNM.TabIndex = 9;
             // 
             // labTrangThaiNVTNM
             // 
             this.labTrangThaiNVTNM.AutoSize = true;
             this.labTrangThaiNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiNVTNM.Location = new System.Drawing.Point(383, 132);
+            this.labTrangThaiNVTNM.Location = new System.Drawing.Point(340, 106);
             this.labTrangThaiNVTNM.Name = "labTrangThaiNVTNM";
-            this.labTrangThaiNVTNM.Size = new System.Drawing.Size(80, 20);
+            this.labTrangThaiNVTNM.Size = new System.Drawing.Size(67, 16);
             this.labTrangThaiNVTNM.TabIndex = 8;
             this.labTrangThaiNVTNM.Text = "Trạng thái";
             // 
@@ -159,9 +179,9 @@
             // 
             this.labDiaChiNVTNM.AutoSize = true;
             this.labDiaChiNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labDiaChiNVTNM.Location = new System.Drawing.Point(383, 88);
+            this.labDiaChiNVTNM.Location = new System.Drawing.Point(340, 70);
             this.labDiaChiNVTNM.Name = "labDiaChiNVTNM";
-            this.labDiaChiNVTNM.Size = new System.Drawing.Size(57, 20);
+            this.labDiaChiNVTNM.Size = new System.Drawing.Size(47, 16);
             this.labDiaChiNVTNM.TabIndex = 6;
             this.labDiaChiNVTNM.Text = "Địa chỉ";
             // 
@@ -169,26 +189,27 @@
             // 
             this.labSDTNVTNM.AutoSize = true;
             this.labSDTNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSDTNVTNM.Location = new System.Drawing.Point(383, 42);
+            this.labSDTNVTNM.Location = new System.Drawing.Point(340, 34);
             this.labSDTNVTNM.Name = "labSDTNVTNM";
-            this.labSDTNVTNM.Size = new System.Drawing.Size(41, 20);
+            this.labSDTNVTNM.Size = new System.Drawing.Size(34, 16);
             this.labSDTNVTNM.TabIndex = 4;
             this.labSDTNVTNM.Text = "SĐT";
             // 
             // txtTenNVTNM
             // 
-            this.txtTenNVTNM.Location = new System.Drawing.Point(160, 36);
+            this.txtTenNVTNM.Location = new System.Drawing.Point(142, 29);
+            this.txtTenNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenNVTNM.Name = "txtTenNVTNM";
-            this.txtTenNVTNM.Size = new System.Drawing.Size(154, 26);
+            this.txtTenNVTNM.Size = new System.Drawing.Size(137, 22);
             this.txtTenNVTNM.TabIndex = 3;
             // 
             // labDOBNVTNM
             // 
             this.labDOBNVTNM.AutoSize = true;
             this.labDOBNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labDOBNVTNM.Location = new System.Drawing.Point(34, 132);
+            this.labDOBNVTNM.Location = new System.Drawing.Point(30, 106);
             this.labDOBNVTNM.Name = "labDOBNVTNM";
-            this.labDOBNVTNM.Size = new System.Drawing.Size(78, 20);
+            this.labDOBNVTNM.Size = new System.Drawing.Size(67, 16);
             this.labDOBNVTNM.TabIndex = 2;
             this.labDOBNVTNM.Text = "Ngày sinh";
             // 
@@ -196,9 +217,9 @@
             // 
             this.labTenNVTNM.AutoSize = true;
             this.labTenNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenNVTNM.Location = new System.Drawing.Point(34, 42);
+            this.labTenNVTNM.Location = new System.Drawing.Point(30, 34);
             this.labTenNVTNM.Name = "labTenNVTNM";
-            this.labTenNVTNM.Size = new System.Drawing.Size(77, 20);
+            this.labTenNVTNM.Size = new System.Drawing.Size(64, 16);
             this.labTenNVTNM.TabIndex = 1;
             this.labTenNVTNM.Text = "Họ và tên";
             this.labTenNVTNM.Click += new System.EventHandler(this.label4_Click);
@@ -207,9 +228,9 @@
             // 
             this.labSexNVTNM.AutoSize = true;
             this.labSexNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSexNVTNM.Location = new System.Drawing.Point(34, 88);
+            this.labSexNVTNM.Location = new System.Drawing.Point(30, 70);
             this.labSexNVTNM.Name = "labSexNVTNM";
-            this.labSexNVTNM.Size = new System.Drawing.Size(67, 20);
+            this.labSexNVTNM.Size = new System.Drawing.Size(54, 16);
             this.labSexNVTNM.TabIndex = 0;
             this.labSexNVTNM.Text = "Giới tính";
             this.labSexNVTNM.Click += new System.EventHandler(this.label2_Click);
@@ -227,34 +248,38 @@
             this.grbTaiKhoanNVTNM.Controls.Add(this.labMatKhauNVTNM);
             this.grbTaiKhoanNVTNM.Controls.Add(this.labTenDNNVTNM);
             this.grbTaiKhoanNVTNM.ForeColor = System.Drawing.Color.Red;
-            this.grbTaiKhoanNVTNM.Location = new System.Drawing.Point(30, 352);
+            this.grbTaiKhoanNVTNM.Location = new System.Drawing.Point(27, 282);
+            this.grbTaiKhoanNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbTaiKhoanNVTNM.Name = "grbTaiKhoanNVTNM";
-            this.grbTaiKhoanNVTNM.Size = new System.Drawing.Size(729, 86);
+            this.grbTaiKhoanNVTNM.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbTaiKhoanNVTNM.Size = new System.Drawing.Size(648, 69);
             this.grbTaiKhoanNVTNM.TabIndex = 7;
             this.grbTaiKhoanNVTNM.TabStop = false;
             this.grbTaiKhoanNVTNM.Text = "Tài khoản nhân viên mới";
             // 
             // txtTenDNNVTNM
             // 
-            this.txtTenDNNVTNM.Location = new System.Drawing.Point(161, 34);
+            this.txtTenDNNVTNM.Location = new System.Drawing.Point(143, 27);
+            this.txtTenDNNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenDNNVTNM.Name = "txtTenDNNVTNM";
-            this.txtTenDNNVTNM.Size = new System.Drawing.Size(154, 26);
+            this.txtTenDNNVTNM.Size = new System.Drawing.Size(137, 22);
             this.txtTenDNNVTNM.TabIndex = 16;
             // 
             // txtMatKhauNVTNM
             // 
-            this.txtMatKhauNVTNM.Location = new System.Drawing.Point(532, 34);
+            this.txtMatKhauNVTNM.Location = new System.Drawing.Point(473, 27);
+            this.txtMatKhauNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatKhauNVTNM.Name = "txtMatKhauNVTNM";
-            this.txtMatKhauNVTNM.Size = new System.Drawing.Size(154, 26);
+            this.txtMatKhauNVTNM.Size = new System.Drawing.Size(137, 22);
             this.txtMatKhauNVTNM.TabIndex = 17;
             // 
             // labMatKhauNVTNM
             // 
             this.labMatKhauNVTNM.AutoSize = true;
             this.labMatKhauNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMatKhauNVTNM.Location = new System.Drawing.Point(383, 40);
+            this.labMatKhauNVTNM.Location = new System.Drawing.Point(340, 32);
             this.labMatKhauNVTNM.Name = "labMatKhauNVTNM";
-            this.labMatKhauNVTNM.Size = new System.Drawing.Size(75, 20);
+            this.labMatKhauNVTNM.Size = new System.Drawing.Size(61, 16);
             this.labMatKhauNVTNM.TabIndex = 3;
             this.labMatKhauNVTNM.Text = "Mật khẩu";
             // 
@@ -262,9 +287,9 @@
             // 
             this.labTenDNNVTNM.AutoSize = true;
             this.labTenDNNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenDNNVTNM.Location = new System.Drawing.Point(34, 40);
+            this.labTenDNNVTNM.Location = new System.Drawing.Point(30, 32);
             this.labTenDNNVTNM.Name = "labTenDNNVTNM";
-            this.labTenDNNVTNM.Size = new System.Drawing.Size(116, 20);
+            this.labTenDNNVTNM.Size = new System.Drawing.Size(98, 16);
             this.labTenDNNVTNM.TabIndex = 2;
             this.labTenDNNVTNM.Text = "Tên đăng nhập";
             // 
@@ -272,9 +297,10 @@
             // 
             this.btnThoatAddNVTNM.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnThoatAddNVTNM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoatAddNVTNM.Location = new System.Drawing.Point(417, 475);
+            this.btnThoatAddNVTNM.Location = new System.Drawing.Point(371, 380);
+            this.btnThoatAddNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoatAddNVTNM.Name = "btnThoatAddNVTNM";
-            this.btnThoatAddNVTNM.Size = new System.Drawing.Size(141, 39);
+            this.btnThoatAddNVTNM.Size = new System.Drawing.Size(125, 31);
             this.btnThoatAddNVTNM.TabIndex = 9;
             this.btnThoatAddNVTNM.Text = "Thoát";
             this.btnThoatAddNVTNM.UseVisualStyleBackColor = true;
@@ -283,9 +309,10 @@
             // 
             this.btnSaveInfoNVTNM.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
             this.btnSaveInfoNVTNM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveInfoNVTNM.Location = new System.Drawing.Point(191, 475);
+            this.btnSaveInfoNVTNM.Location = new System.Drawing.Point(170, 380);
+            this.btnSaveInfoNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveInfoNVTNM.Name = "btnSaveInfoNVTNM";
-            this.btnSaveInfoNVTNM.Size = new System.Drawing.Size(154, 39);
+            this.btnSaveInfoNVTNM.Size = new System.Drawing.Size(137, 31);
             this.btnSaveInfoNVTNM.TabIndex = 8;
             this.btnSaveInfoNVTNM.Text = "Lưu thông tin";
             this.btnSaveInfoNVTNM.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -295,43 +322,34 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Image = global::HMS_NHOM25.Properties.Resources.doctor;
-            this.label3.Location = new System.Drawing.Point(151, 45);
+            this.label3.Location = new System.Drawing.Point(134, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 20);
+            this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 2;
-            // 
-            // ptbNVTN
-            // 
-            this.ptbNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbNVTN.Image = global::HMS_NHOM25.Properties.Resources.cashier;
-            this.ptbNVTN.Location = new System.Drawing.Point(199, 31);
-            this.ptbNVTN.Name = "ptbNVTN";
-            this.ptbNVTN.Size = new System.Drawing.Size(78, 33);
-            this.ptbNVTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbNVTN.TabIndex = 3;
-            this.ptbNVTN.TabStop = false;
             // 
             // AddNVTN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 547);
+            this.ClientSize = new System.Drawing.Size(702, 438);
             this.Controls.Add(this.btnThoatAddNVTNM);
             this.Controls.Add(this.btnSaveInfoNVTNM);
             this.Controls.Add(this.grbTaiKhoanNVTNM);
             this.Controls.Add(this.grbAddInfoNVTNM);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.palAddNVTN);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddNVTN";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNVTN";
             this.Load += new System.EventHandler(this.AddDoctor_Load);
             this.palAddNVTN.ResumeLayout(false);
             this.palAddNVTN.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();
             this.grbAddInfoNVTNM.ResumeLayout(false);
             this.grbAddInfoNVTNM.PerformLayout();
             this.grbTaiKhoanNVTNM.ResumeLayout(false);
             this.grbTaiKhoanNVTNM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
