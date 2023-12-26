@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Danh_sách_bác_sĩ : Form
+    public partial class Doctors : Form
     {
-        public Danh_sách_bác_sĩ()
+        public Doctors()
         {
             InitializeComponent();
         }
@@ -47,7 +47,7 @@ namespace HMS_NHOM25
 
         }
 
-        private void Danh_sách_bác_sĩ_Load(object sender, EventArgs e)
+        private void Doctors_Load(object sender, EventArgs e)
         {
 
         }
