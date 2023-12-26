@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddPatients : Form
+    public partial class AddThuoc : Form
     {
-        public AddPatients()
+        public AddThuoc()
         {
             InitializeComponent();
         }
 
-        private void AddPatients_Load(object sender, EventArgs e)
+        private void AddThuoc_Load(object sender, EventArgs e)
         {
 
         }
-
     }
 }

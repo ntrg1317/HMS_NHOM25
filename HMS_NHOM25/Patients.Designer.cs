@@ -39,7 +39,7 @@
             this.cobGioiTinhBN = new System.Windows.Forms.ComboBox();
             this.DOBBN = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBN = new System.Windows.Forms.TextBox();
-            this.txtBangCapBN = new System.Windows.Forms.TextBox();
+            this.txtBenhTrangBN = new System.Windows.Forms.TextBox();
             this.txtTenBN = new System.Windows.Forms.TextBox();
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.labTrangThaiBN = new System.Windows.Forms.Label();
@@ -55,11 +55,11 @@
             this.labTimKiemBN = new System.Windows.Forms.Label();
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.dgvInfoBN = new System.Windows.Forms.DataGridView();
+            this.txtTimKiemBN = new System.Windows.Forms.TextBox();
             this.btnSuaBN = new System.Windows.Forms.Button();
             this.btnXoaBN = new System.Windows.Forms.Button();
             this.btnThemBN = new System.Windows.Forms.Button();
             this.btnTimKiemBN = new System.Windows.Forms.Button();
-            this.txtTimKiemBN = new System.Windows.Forms.TextBox();
             this.grbInfoBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBN)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,7 @@
             this.grbInfoBN.Controls.Add(this.cobGioiTinhBN);
             this.grbInfoBN.Controls.Add(this.DOBBN);
             this.grbInfoBN.Controls.Add(this.txtSDTBN);
-            this.grbInfoBN.Controls.Add(this.txtBangCapBN);
+            this.grbInfoBN.Controls.Add(this.txtBenhTrangBN);
             this.grbInfoBN.Controls.Add(this.txtTenBN);
             this.grbInfoBN.Controls.Add(this.txtMaBN);
             this.grbInfoBN.Controls.Add(this.labTrangThaiBN);
@@ -110,7 +110,7 @@
             // DateVaoVienBN
             // 
             this.DateVaoVienBN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateVaoVienBN.Location = new System.Drawing.Point(448, 188);
+            this.DateVaoVienBN.Location = new System.Drawing.Point(448, 185);
             this.DateVaoVienBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DateVaoVienBN.Name = "DateVaoVienBN";
             this.DateVaoVienBN.Size = new System.Drawing.Size(182, 26);
@@ -120,7 +120,7 @@
             // 
             this.labNgayVaoBN.AutoSize = true;
             this.labNgayVaoBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayVaoBN.Location = new System.Drawing.Point(374, 192);
+            this.labNgayVaoBN.Location = new System.Drawing.Point(374, 189);
             this.labNgayVaoBN.Name = "labNgayVaoBN";
             this.labNgayVaoBN.Size = new System.Drawing.Size(74, 20);
             this.labNgayVaoBN.TabIndex = 21;
@@ -128,7 +128,7 @@
             // 
             // txtMaPhongBN
             // 
-            this.txtMaPhongBN.Location = new System.Drawing.Point(145, 188);
+            this.txtMaPhongBN.Location = new System.Drawing.Point(145, 185);
             this.txtMaPhongBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaPhongBN.Name = "txtMaPhongBN";
             this.txtMaPhongBN.Size = new System.Drawing.Size(184, 26);
@@ -138,7 +138,7 @@
             // 
             this.labMaPhongBN.AutoSize = true;
             this.labMaPhongBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaPhongBN.Location = new System.Drawing.Point(22, 191);
+            this.labMaPhongBN.Location = new System.Drawing.Point(22, 188);
             this.labMaPhongBN.Name = "labMaPhongBN";
             this.labMaPhongBN.Size = new System.Drawing.Size(80, 20);
             this.labMaPhongBN.TabIndex = 19;
@@ -200,13 +200,13 @@
             this.txtSDTBN.Size = new System.Drawing.Size(180, 26);
             this.txtSDTBN.TabIndex = 12;
             // 
-            // txtBangCapBN
+            // txtBenhTrangBN
             // 
-            this.txtBangCapBN.Location = new System.Drawing.Point(804, 38);
-            this.txtBangCapBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBangCapBN.Name = "txtBangCapBN";
-            this.txtBangCapBN.Size = new System.Drawing.Size(180, 26);
-            this.txtBangCapBN.TabIndex = 11;
+            this.txtBenhTrangBN.Location = new System.Drawing.Point(804, 38);
+            this.txtBenhTrangBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBenhTrangBN.Name = "txtBenhTrangBN";
+            this.txtBenhTrangBN.Size = new System.Drawing.Size(180, 26);
+            this.txtBenhTrangBN.TabIndex = 11;
             // 
             // txtTenBN
             // 
@@ -349,6 +349,14 @@
             this.dgvInfoBN.Size = new System.Drawing.Size(1022, 308);
             this.dgvInfoBN.TabIndex = 23;
             // 
+            // txtTimKiemBN
+            // 
+            this.txtTimKiemBN.Location = new System.Drawing.Point(178, 300);
+            this.txtTimKiemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTimKiemBN.Name = "txtTimKiemBN";
+            this.txtTimKiemBN.Size = new System.Drawing.Size(184, 26);
+            this.txtTimKiemBN.TabIndex = 18;
+            // 
             // btnSuaBN
             // 
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
@@ -401,14 +409,6 @@
             this.btnTimKiemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiemBN.UseVisualStyleBackColor = true;
             // 
-            // txtTimKiemBN
-            // 
-            this.txtTimKiemBN.Location = new System.Drawing.Point(178, 300);
-            this.txtTimKiemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTimKiemBN.Name = "txtTimKiemBN";
-            this.txtTimKiemBN.Size = new System.Drawing.Size(184, 26);
-            this.txtTimKiemBN.TabIndex = 18;
-            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -449,7 +449,7 @@
         private System.Windows.Forms.Label labSDTBN;
         private System.Windows.Forms.Label labDiaChiBN;
         private System.Windows.Forms.TextBox txtSDTBN;
-        private System.Windows.Forms.TextBox txtBangCapBN;
+        private System.Windows.Forms.TextBox txtBenhTrangBN;
         private System.Windows.Forms.TextBox txtTenBN;
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.DateTimePicker DOBBN;
