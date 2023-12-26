@@ -47,12 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phong.Designer.cs">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
     <Compile Include="SuaTTTK.cs">
       <SubType>Form</SubType>
     </Compile>
-	  <Compile Include="SuaTTTK.Designer.cs">
-		  <DependentUpon>SuaTTTK.cs</DependentUpon>
-	  </Compile>
+    <Compile Include="SuaTTTK.Designer.cs">
+      <DependentUpon>SuaTTTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,9 +139,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-	  <EmbeddedResource Include="SuaTTTK.resx">
-		  <DependentUpon>SuaTTTK.cs</DependentUpon>
-	  </EmbeddedResource>
+    <EmbeddedResource Include="Phong.resx">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaTTTK.resx">
+      <DependentUpon>SuaTTTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddDoctor.resx">
       <DependentUpon>AddDoctor.cs</DependentUpon>
     </EmbeddedResource>

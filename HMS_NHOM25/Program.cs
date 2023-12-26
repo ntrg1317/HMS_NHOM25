@@ -24,7 +24,7 @@ namespace HMS_NHOM25
             //Application.Run(new NVYTe());
             //Application.Run(new NVThuNgan());
             //Application.Run(new AddDoctor());
-            Application.Run(new AdminControl());
+            Application.Run(new Phong());
         }
     }
 }
