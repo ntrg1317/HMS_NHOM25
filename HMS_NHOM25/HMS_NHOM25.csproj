@@ -47,13 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="SuaTTTK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SuaTTTK.Designer.cs">
-      <DependentUpon>SuaTTTK.cs</DependentUpon>
-=======
+	  <Compile Include="SuaTTTK.Designer.cs">
+		  <DependentUpon>SuaTTTK.cs</DependentUpon>
+	  </Compile>
     <Compile Include="AddDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,7 +94,6 @@
     </Compile>
     <Compile Include="AdminControl.Designer.cs">
       <DependentUpon>AdminControl.cs</DependentUpon>
->>>>>>> 2f3424125f6142f65cee9fced2ca7395c0147d97
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -123,10 +121,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <EmbeddedResource Include="SuaTTTK.resx">
-      <DependentUpon>SuaTTTK.cs</DependentUpon>
-=======
+	  <EmbeddedResource Include="SuaTTTK.resx">
+		  <DependentUpon>SuaTTTK.cs</DependentUpon>
+	  </EmbeddedResource>
     <EmbeddedResource Include="AddDoctor.resx">
       <DependentUpon>AddDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,7 +144,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminControl.resx">
       <DependentUpon>AdminControl.cs</DependentUpon>
->>>>>>> 2f3424125f6142f65cee9fced2ca7395c0147d97
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -185,9 +181,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\error.png" />
-=======
     <None Include="Resources\find.png" />
   </ItemGroup>
   <ItemGroup>
@@ -222,7 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cashier.png" />
->>>>>>> 2f3424125f6142f65cee9fced2ca7395c0147d97
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
