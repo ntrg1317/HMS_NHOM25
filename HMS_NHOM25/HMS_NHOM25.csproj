@@ -59,6 +59,12 @@
     <Compile Include="AddThuoc.Designer.cs">
       <DependentUpon>AddThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="DSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSHoaDon.Designer.cs">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddThuoc.resx">
       <DependentUpon>AddThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSHoaDon.resx">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
