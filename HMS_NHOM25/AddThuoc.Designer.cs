@@ -31,8 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.labAddBS = new System.Windows.Forms.Label();
             this.palAddBS = new System.Windows.Forms.Panel();
-            this.ptbYTe = new System.Windows.Forms.PictureBox();
             this.grbAddInfoThuocM = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtGiaThuocM = new System.Windows.Forms.TextBox();
+            this.labGiaThuocM = new System.Windows.Forms.Label();
+            this.dateHSD = new System.Windows.Forms.DateTimePicker();
+            this.labHSD = new System.Windows.Forms.Label();
             this.dateNSX = new System.Windows.Forms.DateTimePicker();
             this.txtSoLuongThuocM = new System.Windows.Forms.TextBox();
             this.labSDTNVYTeM = new System.Windows.Forms.Label();
@@ -43,14 +47,10 @@
             this.btnThoatAddThuoc = new System.Windows.Forms.Button();
             this.btnSaveInfoThuoc = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateHSD = new System.Windows.Forms.DateTimePicker();
-            this.labHSD = new System.Windows.Forms.Label();
-            this.txtGiaThuocM = new System.Windows.Forms.TextBox();
-            this.labGiaThuocM = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ptbYTe = new System.Windows.Forms.PictureBox();
             this.palAddBS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
             this.grbAddInfoThuocM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
             this.SuspendLayout();
             // 
             // labAddBS
@@ -76,18 +76,6 @@
             this.palAddBS.Size = new System.Drawing.Size(809, 101);
             this.palAddBS.TabIndex = 4;
             // 
-            // ptbYTe
-            // 
-            this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.medicine;
-            this.ptbYTe.Location = new System.Drawing.Point(233, 22);
-            this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbYTe.Name = "ptbYTe";
-            this.ptbYTe.Size = new System.Drawing.Size(93, 43);
-            this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbYTe.TabIndex = 3;
-            this.ptbYTe.TabStop = false;
-            // 
             // grbAddInfoThuocM
             // 
             this.grbAddInfoThuocM.Controls.Add(this.label1);
@@ -110,6 +98,53 @@
             this.grbAddInfoThuocM.TabIndex = 5;
             this.grbAddInfoThuocM.TabStop = false;
             this.grbAddInfoThuocM.Text = "Thông tin thuốc mới";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(321, 164);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "(VNĐ)";
+            // 
+            // txtGiaThuocM
+            // 
+            this.txtGiaThuocM.Location = new System.Drawing.Point(161, 161);
+            this.txtGiaThuocM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGiaThuocM.Name = "txtGiaThuocM";
+            this.txtGiaThuocM.Size = new System.Drawing.Size(154, 26);
+            this.txtGiaThuocM.TabIndex = 16;
+            // 
+            // labGiaThuocM
+            // 
+            this.labGiaThuocM.AutoSize = true;
+            this.labGiaThuocM.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labGiaThuocM.Location = new System.Drawing.Point(33, 167);
+            this.labGiaThuocM.Name = "labGiaThuocM";
+            this.labGiaThuocM.Size = new System.Drawing.Size(78, 20);
+            this.labGiaThuocM.TabIndex = 15;
+            this.labGiaThuocM.Text = "Giá thuốc";
+            // 
+            // dateHSD
+            // 
+            this.dateHSD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateHSD.Location = new System.Drawing.Point(530, 101);
+            this.dateHSD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateHSD.Name = "dateHSD";
+            this.dateHSD.Size = new System.Drawing.Size(152, 26);
+            this.dateHSD.TabIndex = 14;
+            // 
+            // labHSD
+            // 
+            this.labHSD.AutoSize = true;
+            this.labHSD.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labHSD.Location = new System.Drawing.Point(409, 107);
+            this.labHSD.Name = "labHSD";
+            this.labHSD.Size = new System.Drawing.Size(44, 20);
+            this.labHSD.TabIndex = 13;
+            this.labHSD.Text = "HSD";
             // 
             // dateNSX
             // 
@@ -174,7 +209,7 @@
             // 
             // btnThoatAddThuoc
             // 
-            this.btnThoatAddThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
+            this.btnThoatAddThuoc.Image = global::HMS_NHOM25.Properties.Resources.cancel;
             this.btnThoatAddThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoatAddThuoc.Location = new System.Drawing.Point(443, 363);
             this.btnThoatAddThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -206,52 +241,17 @@
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 2;
             // 
-            // dateHSD
+            // ptbYTe
             // 
-            this.dateHSD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateHSD.Location = new System.Drawing.Point(530, 101);
-            this.dateHSD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateHSD.Name = "dateHSD";
-            this.dateHSD.Size = new System.Drawing.Size(152, 26);
-            this.dateHSD.TabIndex = 14;
-            // 
-            // labHSD
-            // 
-            this.labHSD.AutoSize = true;
-            this.labHSD.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labHSD.Location = new System.Drawing.Point(409, 107);
-            this.labHSD.Name = "labHSD";
-            this.labHSD.Size = new System.Drawing.Size(44, 20);
-            this.labHSD.TabIndex = 13;
-            this.labHSD.Text = "HSD";
-            // 
-            // txtGiaThuocM
-            // 
-            this.txtGiaThuocM.Location = new System.Drawing.Point(161, 161);
-            this.txtGiaThuocM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGiaThuocM.Name = "txtGiaThuocM";
-            this.txtGiaThuocM.Size = new System.Drawing.Size(154, 26);
-            this.txtGiaThuocM.TabIndex = 16;
-            // 
-            // labGiaThuocM
-            // 
-            this.labGiaThuocM.AutoSize = true;
-            this.labGiaThuocM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labGiaThuocM.Location = new System.Drawing.Point(33, 167);
-            this.labGiaThuocM.Name = "labGiaThuocM";
-            this.labGiaThuocM.Size = new System.Drawing.Size(78, 20);
-            this.labGiaThuocM.TabIndex = 15;
-            this.labGiaThuocM.Text = "Giá thuốc";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(321, 164);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "(VNĐ)";
+            this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.medicine;
+            this.ptbYTe.Location = new System.Drawing.Point(233, 22);
+            this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbYTe.Name = "ptbYTe";
+            this.ptbYTe.Size = new System.Drawing.Size(93, 43);
+            this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbYTe.TabIndex = 3;
+            this.ptbYTe.TabStop = false;
             // 
             // AddThuoc
             // 
@@ -270,9 +270,9 @@
             this.Load += new System.EventHandler(this.AddThuoc_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();
             this.grbAddInfoThuocM.ResumeLayout(false);
             this.grbAddInfoThuocM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

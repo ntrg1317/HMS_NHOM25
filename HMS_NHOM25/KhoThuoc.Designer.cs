@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbInforKhoThuoc = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtGiaThuoc = new System.Windows.Forms.TextBox();
             this.labGiaThuoc = new System.Windows.Forms.Label();
             this.dateHSD = new System.Windows.Forms.DateTimePicker();
@@ -49,7 +50,6 @@
             this.btnXoaThuoc = new System.Windows.Forms.Button();
             this.btnThemThuoc = new System.Windows.Forms.Button();
             this.btnTimKiemThuoc = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.grbInforKhoThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoKhoThuoc)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,16 @@
             this.grbInforKhoThuoc.TabStop = false;
             this.grbInforKhoThuoc.Text = "Thông tin thuốc";
             this.grbInforKhoThuoc.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(938, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "(VNĐ)";
             // 
             // txtGiaThuoc
             // 
@@ -238,7 +248,7 @@
             // 
             // btnThemThuoc
             // 
-            this.btnThemThuoc.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
+            this.btnThemThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemThuoc.Location = new System.Drawing.Point(593, 233);
             this.btnThemThuoc.Name = "btnThemThuoc";
@@ -259,16 +269,6 @@
             this.btnTimKiemThuoc.Text = "Tìm kiếm";
             this.btnTimKiemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiemThuoc.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(938, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "(VNĐ)";
             // 
             // KhoThuoc
             // 

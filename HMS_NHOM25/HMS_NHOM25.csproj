@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDonThuoc.Designer.cs">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddDonThuoc.resx">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddThuoc.resx">
       <DependentUpon>AddThuoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +273,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

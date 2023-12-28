@@ -380,7 +380,7 @@
             // 
             // btnThoatAddBNM
             // 
-            this.btnThoatAddBNM.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
+            this.btnThoatAddBNM.Image = global::HMS_NHOM25.Properties.Resources.cancel;
             this.btnThoatAddBNM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoatAddBNM.Location = new System.Drawing.Point(418, 510);
             this.btnThoatAddBNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
