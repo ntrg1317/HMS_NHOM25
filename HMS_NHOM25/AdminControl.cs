@@ -94,5 +94,9 @@ namespace HMS_NHOM25
             OpenChildForm(new DonThuoc(), btnDT);
         }
 
+        private void btnHD_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DSHoaDon(), btnHD);
+        }
     }
 }

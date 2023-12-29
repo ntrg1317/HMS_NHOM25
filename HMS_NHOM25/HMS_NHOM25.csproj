@@ -47,6 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDonThuoc.Designer.cs">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddThuoc.Designer.cs">
+      <DependentUpon>AddThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSHoaDon.Designer.cs">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,15 @@
     <Compile Include="ThongTinPhongChiTiet.Designer.cs">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddDonThuoc.resx">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddThuoc.resx">
+      <DependentUpon>AddThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSHoaDon.resx">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +279,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospitalisation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

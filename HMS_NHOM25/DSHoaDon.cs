@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class DonThuoc : Form
+    public partial class DSHoaDon : Form
     {
-        public DonThuoc()
+        public DSHoaDon()
         {
             InitializeComponent();
-        }
-
-        private void DonThuoc_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

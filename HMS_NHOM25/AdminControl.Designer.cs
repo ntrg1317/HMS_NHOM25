@@ -423,6 +423,7 @@
             this.btnHD.TabIndex = 0;
             this.btnHD.Text = "Hoá đơn";
             this.btnHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHD.Click += new System.EventHandler(this.btnHD_Click);
             // 
             // pictureBox5
             // 

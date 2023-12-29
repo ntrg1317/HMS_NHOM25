@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class DonThuoc : Form
+    public partial class AddThuoc : Form
     {
-        public DonThuoc()
+        public AddThuoc()
         {
             InitializeComponent();
         }
 
-        private void DonThuoc_Load(object sender, EventArgs e)
+        private void AddThuoc_Load(object sender, EventArgs e)
         {
 
         }
