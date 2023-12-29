@@ -324,6 +324,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.ErrorImage = null;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
@@ -348,6 +349,7 @@
             this.btnPhong.TabIndex = 0;
             this.btnPhong.Text = "Phòng";
             this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
             // panel6
             // 
@@ -384,6 +386,7 @@
             this.btnDT.TabIndex = 0;
             this.btnDT.Text = "Đơn thuốc";
             this.btnDT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDT.Click += new System.EventHandler(this.btnDT_Click);
             // 
             // panel11
             // 

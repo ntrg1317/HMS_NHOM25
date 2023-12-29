@@ -83,5 +83,16 @@ namespace HMS_NHOM25
         {
             OpenChildForm(new NVYTe(), btnYT);
         }
+
+        private void btnPhong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Phong(), btnPhong);
+        }
+
+        private void btnDT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DonThuoc(), btnDT);
+        }
+
     }
 }
