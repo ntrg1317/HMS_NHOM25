@@ -20,22 +20,22 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
+        private void btnThemNVYTe_Click(object sender, EventArgs e)
+        {
+            AddNVYTe addNVYTe = new AddNVYTe();
+            addNVYTe.Show();
+        }
+
         private void NVYTe_Load(object sender, EventArgs e)
         {
             try
             {
                 dgvInfoNVYTe.DataSource = nhanVienYTe.all(table);
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                MessageBox.Show("Loi" + ex.Message);
+                MessageBox.Show("Error: " +  ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnThemNVYTe_Click(object sender, EventArgs e)
-        {
-            AddNVYTe addNVYTe = new AddNVYTe();
-            addNVYTe.Show();
         }
     }
 }

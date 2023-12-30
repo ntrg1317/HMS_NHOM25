@@ -60,9 +60,6 @@
             this.navbar = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnSetting = new System.Windows.Forms.Button();
             this.searchbar = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelBody = new System.Windows.Forms.Panel();
@@ -102,8 +99,6 @@
             this.navbar.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panelUser.SuspendLayout();
@@ -453,7 +448,6 @@
             // 
             this.navbar.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.navbar.Controls.Add(this.panel10);
-            this.navbar.Controls.Add(this.panel9);
             this.navbar.Controls.Add(this.searchbar);
             this.navbar.Controls.Add(this.textBox1);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -482,44 +476,6 @@
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.pictureBox6);
-            this.panel9.Controls.Add(this.btnSetting);
-            this.panel9.Location = new System.Drawing.Point(796, 1);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(89, 81);
-            this.panel9.TabIndex = 3;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.ErrorImage = null;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(26, 9);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 27);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.White;
-            this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(-1, -4);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Padding = new System.Windows.Forms.Padding(8, 25, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(101, 91);
-            this.btnSetting.TabIndex = 0;
-            this.btnSetting.Text = "Cài đặt";
-            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // searchbar
             // 
@@ -747,8 +703,6 @@
             this.navbar.PerformLayout();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.panelUser.ResumeLayout(false);
@@ -787,12 +741,9 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel navbar;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Panel panelBody;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label searchbar;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;

@@ -28,7 +28,7 @@ namespace HMS_NHOM25
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Loi" + ex.Message);
+                MessageBox.Show("Loi " + ex.Message);
             }
         }
     }

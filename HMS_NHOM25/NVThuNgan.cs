@@ -13,29 +13,29 @@ namespace HMS_NHOM25
 {
     public partial class NVThuNgan : Form
     {
-        BaseModel nhanVienThuNgan = new BaseModel();
+        BaseModel nvtn = new BaseModel();
         private string table = "nhanVienThuNgan";
         public NVThuNgan()
         {
             InitializeComponent();
         }
 
-        private void NVThuNgan_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                dgvInfoNVTN.DataSource = nhanVienThuNgan.all(table);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Loi" + ex.Message);
-            }
-
-        }
         private void btnThemNVTN_Click(object sender, EventArgs e)
         {
             AddNVTN addNVTN = new AddNVTN();
             addNVTN.Show();
+        }
+
+        private void NVThuNgan_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvInfoNVTN.DataSource = nvtn.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

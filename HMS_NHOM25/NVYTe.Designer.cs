@@ -254,10 +254,14 @@ namespace HMS_NHOM25
             // 
             // dgvInfoNVYTe
             // 
+            this.dgvInfoNVYTe.AllowUserToAddRows = false;
+            this.dgvInfoNVYTe.AllowUserToDeleteRows = false;
+            this.dgvInfoNVYTe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoNVYTe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoNVYTe.Location = new System.Drawing.Point(31, 263);
             this.dgvInfoNVYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoNVYTe.Name = "dgvInfoNVYTe";
+            this.dgvInfoNVYTe.ReadOnly = true;
             this.dgvInfoNVYTe.RowHeadersWidth = 62;
             this.dgvInfoNVYTe.RowTemplate.Height = 28;
             this.dgvInfoNVYTe.Size = new System.Drawing.Size(908, 276);
@@ -334,6 +338,7 @@ namespace HMS_NHOM25
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NVYTe";
             this.Text = "NVYTe";
+            this.Load += new System.EventHandler(this.NVYTe_Load);
             this.grbInforNVYTe.ResumeLayout(false);
             this.grbInforNVYTe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVYTe)).EndInit();

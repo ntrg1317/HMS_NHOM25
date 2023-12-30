@@ -254,6 +254,7 @@
             // 
             // dgvInfoNVTN
             // 
+            this.dgvInfoNVTN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoNVTN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoNVTN.Location = new System.Drawing.Point(31, 263);
             this.dgvInfoNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -334,6 +335,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NVThuNgan";
             this.Text = "NVThuNgan";
+            this.Load += new System.EventHandler(this.NVThuNgan_Load);
             this.grbInforNVTN.ResumeLayout(false);
             this.grbInforNVTN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVTN)).EndInit();
