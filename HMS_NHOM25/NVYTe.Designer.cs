@@ -1,4 +1,6 @@
-﻿namespace HMS_NHOM25
+﻿using System;
+
+namespace HMS_NHOM25
 {
     partial class NVYTe
     {

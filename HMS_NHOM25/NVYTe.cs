@@ -13,7 +13,7 @@ namespace HMS_NHOM25
 {
     public partial class NVYTe : Form
     {
-        BaseModel nvyt = new BaseModel();
+        BaseModel nhanVienYTe = new BaseModel();
         private string table = "nhanVienYTe";
         public NVYTe()
         {
@@ -30,7 +30,7 @@ namespace HMS_NHOM25
         {
             try
             {
-                dgvInfoNVYTe.DataSource = nvyt.all(table);
+                dgvInfoNVYTe.DataSource = nhanVienYTe.all(table);
             }
             catch(Exception ex)
             {

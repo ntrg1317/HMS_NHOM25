@@ -76,7 +76,6 @@
             this.grbInforQTV.TabIndex = 0;
             this.grbInforQTV.TabStop = false;
             this.grbInforQTV.Text = "Thông tin quản trị viên";
-            this.grbInforQTV.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cobTrangThaiQTV
             // 
@@ -112,7 +111,6 @@
             this.cobGioiTinhQTV.Name = "cobGioiTinhQTV";
             this.cobGioiTinhQTV.Size = new System.Drawing.Size(180, 28);
             this.cobGioiTinhQTV.TabIndex = 15;
-            this.cobGioiTinhQTV.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DOBQTV
             // 
@@ -152,7 +150,6 @@
             this.labTrangThaiQTV.Size = new System.Drawing.Size(80, 20);
             this.labTrangThaiQTV.TabIndex = 8;
             this.labTrangThaiQTV.Text = "Trạng thái";
-            this.labTrangThaiQTV.Click += new System.EventHandler(this.label9_Click);
             // 
             // labSDTQTV
             // 
@@ -203,7 +200,6 @@
             this.labTenQTV.Size = new System.Drawing.Size(77, 20);
             this.labTenQTV.TabIndex = 1;
             this.labTenQTV.Text = "Họ và tên";
-            this.labTenQTV.Click += new System.EventHandler(this.label2_Click);
             // 
             // labMaQTV
             // 
@@ -234,7 +230,6 @@
             this.labTenQTVTimKiem.Size = new System.Drawing.Size(90, 20);
             this.labTenQTVTimKiem.TabIndex = 18;
             this.labTenQTVTimKiem.Text = "Tên quản lý";
-            this.labTenQTVTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemQTV
             // 
@@ -279,7 +274,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.Text = "Admin";
-            this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
             this.grbInforQTV.ResumeLayout(false);
             this.grbInforQTV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoQTV)).EndInit();
