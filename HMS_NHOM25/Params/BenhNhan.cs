@@ -8,5 +8,6 @@ namespace HMS_NHOM25.Params
 {
     internal class BenhNhan
     {
+
     }
 }

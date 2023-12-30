@@ -676,10 +676,9 @@
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.navbar);
             this.Controls.Add(this.sidebar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminControl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminControl";
+            this.Text = "HMS_25";
             this.sidebar.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

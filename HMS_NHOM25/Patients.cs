@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,9 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
-{
+{ 
     public partial class Patients : Form
     {
+        BaseModel benhNhan = new BaseModel();
+        private string table = "benhNhan";
         public Patients()
         {
             InitializeComponent();
@@ -19,8 +22,14 @@ namespace HMS_NHOM25
 
         private void Patients_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                dgvInfoBN.DataSource = benhNhan.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
-       
     }
 }
