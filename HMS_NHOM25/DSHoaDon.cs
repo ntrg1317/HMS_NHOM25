@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,23 @@ namespace HMS_NHOM25
 {
     public partial class DSHoaDon : Form
     {
+        BaseModel hoaDon = new BaseModel();
+        private string table = "hoaDon";
         public DSHoaDon()
         {
             InitializeComponent();
+        }
+
+        private void DSHoaDon_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvInfoDSHoaDon.DataSource = hoaDon.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi" + ex.Message);
+            }
         }
     }
 }

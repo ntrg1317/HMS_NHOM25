@@ -15,11 +15,12 @@ namespace HMS_NHOM25.Model
         {
             DataTable dt = new DataTable();
             string query = "SELECT * FROM " + table;
-            using(SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            Console.WriteLine("SQL Query: " + query);  // Print the SQL query to the console
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
             {
                 sqlConnection.Open();
                 adapter = new SqlDataAdapter(query, sqlConnection);
-                adapter.Fill(dt); 
+                adapter.Fill(dt);
                 sqlConnection.Close();
             }
             return dt;
