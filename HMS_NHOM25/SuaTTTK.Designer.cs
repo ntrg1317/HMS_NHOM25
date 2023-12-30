@@ -116,7 +116,6 @@
             this.ptbSuaTTTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbSuaTTTK.TabIndex = 3;
             this.ptbSuaTTTK.TabStop = false;
-            this.ptbSuaTTTK.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // grbTTTKMoi
             // 

@@ -98,7 +98,7 @@
             this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbBS.TabIndex = 3;
             this.ptbBS.TabStop = false;
-            this.ptbBS.Click += new System.EventHandler(this.ptbBS_Click);
+
             // 
             // grbAddInfoBS
             // 
@@ -127,7 +127,6 @@
             this.grbAddInfoBS.TabIndex = 5;
             this.grbAddInfoBS.TabStop = false;
             this.grbAddInfoBS.Text = "Thông tin bác sĩ mới";
-            this.grbAddInfoBS.Enter += new System.EventHandler(this.grbAddInfoBS_Enter);
             // 
             // cobChuyenMonBSM
             // 
@@ -229,7 +228,6 @@
             this.labBangCapBSM.Size = new System.Drawing.Size(65, 16);
             this.labBangCapBSM.TabIndex = 5;
             this.labBangCapBSM.Text = "Bằng cấp";
-            this.labBangCapBSM.Click += new System.EventHandler(this.label7_Click);
             // 
             // labSDTBSM
             // 
@@ -268,7 +266,6 @@
             this.labTenBSM.Size = new System.Drawing.Size(64, 16);
             this.labTenBSM.TabIndex = 1;
             this.labTenBSM.Text = "Họ và tên";
-            this.labTenBSM.Click += new System.EventHandler(this.label4_Click);
             // 
             // labSexBSM
             // 
@@ -279,7 +276,6 @@
             this.labSexBSM.Size = new System.Drawing.Size(54, 16);
             this.labSexBSM.TabIndex = 0;
             this.labSexBSM.Text = "Giới tính";
-            this.labSexBSM.Click += new System.EventHandler(this.label2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -350,7 +346,6 @@
             this.btnThoatAddBS.TabIndex = 9;
             this.btnThoatAddBS.Text = "Thoát";
             this.btnThoatAddBS.UseVisualStyleBackColor = true;
-            this.btnThoatAddBS.Click += new System.EventHandler(this.btnThoatAddBS_Click);
             // 
             // btnSaveInfoBS
             // 

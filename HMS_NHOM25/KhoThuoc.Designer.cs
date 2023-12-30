@@ -74,7 +74,6 @@
             this.grbInforKhoThuoc.TabIndex = 0;
             this.grbInforKhoThuoc.TabStop = false;
             this.grbInforKhoThuoc.Text = "Thông tin thuốc";
-            this.grbInforKhoThuoc.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label2
             // 
@@ -172,7 +171,6 @@
             this.labTenThuoc.Size = new System.Drawing.Size(80, 20);
             this.labTenThuoc.TabIndex = 1;
             this.labTenThuoc.Text = "Tên thuốc";
-            this.labTenThuoc.Click += new System.EventHandler(this.label2_Click);
             // 
             // labTimKiemThuoc
             // 
@@ -193,7 +191,6 @@
             this.labTenThuocTimKiem.Size = new System.Drawing.Size(80, 20);
             this.labTenThuocTimKiem.TabIndex = 18;
             this.labTenThuocTimKiem.Text = "Tên thuốc";
-            this.labTenThuocTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemThuoc
             // 
@@ -288,7 +285,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KhoThuoc";
             this.Text = "KhoThuoc";
-            this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
             this.grbInforKhoThuoc.ResumeLayout(false);
             this.grbInforKhoThuoc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoKhoThuoc)).EndInit();

@@ -114,7 +114,6 @@
             this.grbDanhMucPhong.TabIndex = 34;
             this.grbDanhMucPhong.TabStop = false;
             this.grbDanhMucPhong.Text = "Danh mục phòng";
-            this.grbDanhMucPhong.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // colMaPhong
             // 

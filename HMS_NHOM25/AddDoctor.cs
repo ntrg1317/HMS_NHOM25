@@ -17,37 +17,7 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grbAddInfoBS_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddDoctor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ptbBS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnThoatAddBS_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,6 @@
-﻿namespace HMS_NHOM25
+﻿using System;
+
+namespace HMS_NHOM25
 {
     partial class NVYTe
     {
@@ -80,7 +82,6 @@
             this.grbInforNVYTe.TabIndex = 0;
             this.grbInforNVYTe.TabStop = false;
             this.grbInforNVYTe.Text = "Thông tin nhân viên y tế";
-            this.grbInforNVYTe.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cobTrangThaiNVYTe
             // 
@@ -119,7 +120,6 @@
             this.cobGioiTinhNVYTe.Name = "cobGioiTinhNVYTe";
             this.cobGioiTinhNVYTe.Size = new System.Drawing.Size(160, 24);
             this.cobGioiTinhNVYTe.TabIndex = 15;
-            this.cobGioiTinhNVYTe.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DOBNVYTe
             // 
@@ -163,7 +163,6 @@
             this.labTrangThaiNVYTe.Size = new System.Drawing.Size(67, 16);
             this.labTrangThaiNVYTe.TabIndex = 8;
             this.labTrangThaiNVYTe.Text = "Trạng thái";
-            this.labTrangThaiNVYTe.Click += new System.EventHandler(this.label9_Click);
             // 
             // labSDTNVYTe
             // 
@@ -214,7 +213,6 @@
             this.labTenNVYTe.Size = new System.Drawing.Size(64, 16);
             this.labTenNVYTe.TabIndex = 1;
             this.labTenNVYTe.Text = "Họ và tên";
-            this.labTenNVYTe.Click += new System.EventHandler(this.label2_Click);
             // 
             // labMaNVYTe
             // 
@@ -245,7 +243,6 @@
             this.labTenNVYTeTimKiem.Size = new System.Drawing.Size(91, 16);
             this.labTenNVYTeTimKiem.TabIndex = 18;
             this.labTenNVYTeTimKiem.Text = "Tên nhân viên";
-            this.labTenNVYTeTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemNVYTe
             // 
@@ -337,7 +334,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NVYTe";
             this.Text = "NVYTe";
-            this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
             this.grbInforNVYTe.ResumeLayout(false);
             this.grbInforNVYTe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVYTe)).EndInit();
