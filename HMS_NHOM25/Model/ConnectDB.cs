@@ -9,7 +9,7 @@ namespace HMS_NHOM25.Model
 {
     class ConnectDB
     {
-        private static string connectionString = @"Data Source=DESKTOP-KMNS09Q\\SQLEXPRESS;Initial Catalog=HMS;Integrated Security=True";
+        private static string connectionString = "Data Source=DESKTOP-KMNS09Q\\SQLEXPRESS;Initial Catalog=HMS;Integrated Security=True";
 
         public static SqlConnection getSqlConnection()
         {
