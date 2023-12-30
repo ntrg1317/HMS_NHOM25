@@ -31,5 +31,19 @@ namespace HMS_NHOM25
                 MessageBox.Show("Loi " + ex.Message);
             }
         }
+
+        private void txtTimKiemBS_TextChanged(object sender, EventArgs e)
+        {
+            string nameBS = txtTimKiemBS.Text.Trim();
+            if(nameBS == "")
+            {
+                Doctors_Load(sender, e);
+            }
+            else
+            {
+                string query = "Select * from bacSi where TenBS like '%"+nameBS+"%'";
+                dgvInfoBS.DataSource = bacSi.Table(query);
+            }
+        }
     }
 }

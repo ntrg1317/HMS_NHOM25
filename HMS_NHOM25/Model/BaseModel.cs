@@ -12,6 +12,7 @@ namespace HMS_NHOM25.Model
     { 
         SqlDataAdapter adapter;
         SqlCommand command;
+        public BaseModel() { }
         public DataTable all(string table)
         {
             DataTable dt = new DataTable();
@@ -25,6 +26,19 @@ namespace HMS_NHOM25.Model
                 sqlConnection.Close();
             }
             return dt;
+        }
+
+        public DataTable Table(string query)
+        {
+            DataTable datatable = new DataTable();
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+                adapter = new SqlDataAdapter(query, sqlConnection);
+                adapter.Fill(datatable);
+                sqlConnection.Close();
+            }
+            return datatable;
         }
 
         public void Command(string query)
