@@ -1,4 +1,5 @@
 ﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace HMS_NHOM25
     public partial class Doctors : Form
     {
         BaseModel bacSi = new BaseModel();
+        
         private string table = "bacSi";
         public Doctors()
         {
@@ -45,5 +47,7 @@ namespace HMS_NHOM25
                 dgvInfoBS.DataSource = bacSi.Table(query);
             }
         }
+        
+
     }
 }
