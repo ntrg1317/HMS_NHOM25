@@ -82,7 +82,6 @@
             this.grbInforNVTN.TabIndex = 0;
             this.grbInforNVTN.TabStop = false;
             this.grbInforNVTN.Text = "Thông tin nhân viên thu ngân";
-            this.grbInforNVTN.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cobTrangThaiNVTN
             // 
@@ -121,7 +120,6 @@
             this.cobGioiTinhNVTN.Name = "cobGioiTinhNVTN";
             this.cobGioiTinhNVTN.Size = new System.Drawing.Size(160, 24);
             this.cobGioiTinhNVTN.TabIndex = 15;
-            this.cobGioiTinhNVTN.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DOBNVTN
             // 
@@ -165,7 +163,6 @@
             this.labTrangThaiNVTN.Size = new System.Drawing.Size(67, 16);
             this.labTrangThaiNVTN.TabIndex = 8;
             this.labTrangThaiNVTN.Text = "Trạng thái";
-            this.labTrangThaiNVTN.Click += new System.EventHandler(this.label9_Click);
             // 
             // labSDTNVTN
             // 
@@ -216,7 +213,6 @@
             this.labTenNVTN.Size = new System.Drawing.Size(64, 16);
             this.labTenNVTN.TabIndex = 1;
             this.labTenNVTN.Text = "Họ và tên";
-            this.labTenNVTN.Click += new System.EventHandler(this.label2_Click);
             // 
             // labMaNVTN
             // 
@@ -247,7 +243,6 @@
             this.labTenNVTNTimKiem.Size = new System.Drawing.Size(94, 16);
             this.labTenNVTNTimKiem.TabIndex = 18;
             this.labTenNVTNTimKiem.Text = "Tên Nhân viên";
-            this.labTenNVTNTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemNVTN
             // 
@@ -259,6 +254,7 @@
             // 
             // dgvInfoNVTN
             // 
+            this.dgvInfoNVTN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoNVTN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoNVTN.Location = new System.Drawing.Point(31, 263);
             this.dgvInfoNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -339,7 +335,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NVThuNgan";
             this.Text = "NVThuNgan";
-            this.Load += new System.EventHandler(this.Danh_sách_bác_sĩ_Load);
+            this.Load += new System.EventHandler(this.NVThuNgan_Load);
             this.grbInforNVTN.ResumeLayout(false);
             this.grbInforNVTN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVTN)).EndInit();

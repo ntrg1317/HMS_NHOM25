@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,54 +13,29 @@ namespace HMS_NHOM25
 {
     public partial class NVYTe : Form
     {
+        BaseModel nvyt = new BaseModel();
+        private string table = "nhanVienYTe";
         public NVYTe()
         {
             InitializeComponent();
-        }
-
-        private void NVYTe_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Danh_sách_bác_sĩ_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnThemNVYTe_Click(object sender, EventArgs e)
         {
             AddNVYTe addNVYTe = new AddNVYTe();
             addNVYTe.Show();
+        }
+
+        private void NVYTe_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvInfoNVYTe.DataSource = nvyt.all(table);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " +  ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

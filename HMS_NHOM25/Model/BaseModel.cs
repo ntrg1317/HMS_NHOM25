@@ -24,7 +24,5 @@ namespace HMS_NHOM25.Model
             }
             return dt;
         }
-
-
     }
 }
