@@ -92,7 +92,6 @@
             this.grbInforBS.TabIndex = 0;
             this.grbInforBS.TabStop = false;
             this.grbInforBS.Text = "Thông tin bác sĩ";
-            this.grbInforBS.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // cobChuyenMonBS
             // 
@@ -151,7 +150,6 @@
             this.cobGioiTinhBS.Name = "cobGioiTinhBS";
             this.cobGioiTinhBS.Size = new System.Drawing.Size(160, 24);
             this.cobGioiTinhBS.TabIndex = 15;
-            this.cobGioiTinhBS.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DOBBS
             // 
@@ -209,7 +207,6 @@
             this.labTrangThaiBS.Size = new System.Drawing.Size(67, 16);
             this.labTrangThaiBS.TabIndex = 8;
             this.labTrangThaiBS.Text = "Trạng thái";
-            this.labTrangThaiBS.Click += new System.EventHandler(this.label9_Click);
             // 
             // labChuyenMonBS
             // 
@@ -232,7 +229,6 @@
             this.labBangCapBS.Size = new System.Drawing.Size(65, 16);
             this.labBangCapBS.TabIndex = 6;
             this.labBangCapBS.Text = "Bằng cấp";
-            this.labBangCapBS.Click += new System.EventHandler(this.label7_Click);
             // 
             // labSDTBS
             // 
@@ -288,7 +284,6 @@
             this.labTenBS.Size = new System.Drawing.Size(64, 16);
             this.labTenBS.TabIndex = 1;
             this.labTenBS.Text = "Họ và tên";
-            this.labTenBS.Click += new System.EventHandler(this.label2_Click);
             // 
             // labMaBS
             // 
@@ -322,7 +317,6 @@
             this.labTenBSTimKiem.Size = new System.Drawing.Size(72, 16);
             this.labTenBSTimKiem.TabIndex = 18;
             this.labTenBSTimKiem.Text = "Tên bác sĩ";
-            this.labTenBSTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtTimKiemBS
             // 
