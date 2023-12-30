@@ -36,5 +36,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void dgvDanhMucPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
