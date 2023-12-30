@@ -46,5 +46,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnThoatAddBS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -65,6 +65,9 @@
     <Compile Include="DSHoaDon.Designer.cs">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BacSi.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
     </Compile>
