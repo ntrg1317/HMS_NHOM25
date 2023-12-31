@@ -88,8 +88,10 @@
             this.dgvInforDichVu.ReadOnly = true;
             this.dgvInforDichVu.RowHeadersWidth = 51;
             this.dgvInforDichVu.RowTemplate.Height = 24;
+            this.dgvInforDichVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInforDichVu.Size = new System.Drawing.Size(998, 435);
             this.dgvInforDichVu.TabIndex = 32;
+            this.dgvInforDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDichVu_CellClick);
             // 
             // label1
             // 
@@ -203,6 +205,7 @@
             this.txtTKTenDV.Name = "txtTKTenDV";
             this.txtTKTenDV.Size = new System.Drawing.Size(184, 26);
             this.txtTKTenDV.TabIndex = 36;
+            this.txtTKTenDV.TextChanged += new System.EventHandler(this.txtTKTenDV_TextChanged);
             // 
             // labTenPhong
             // 
@@ -240,6 +243,7 @@
             this.Controls.Add(this.grb);
             this.Name = "DichVu";
             this.Text = "DichVu";
+            this.Load += new System.EventHandler(this.DichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDichVu)).EndInit();
             this.grb.ResumeLayout(false);
             this.grb.PerformLayout();

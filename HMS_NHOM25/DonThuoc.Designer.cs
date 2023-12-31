@@ -82,10 +82,13 @@
             // 
             // dgvInfoDSDonThuoc
             // 
+            this.dgvInfoDSDonThuoc.AllowUserToAddRows = false;
+            this.dgvInfoDSDonThuoc.AllowUserToDeleteRows = false;
             this.dgvInfoDSDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoDSDonThuoc.Location = new System.Drawing.Point(27, 378);
             this.dgvInfoDSDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDSDonThuoc.Name = "dgvInfoDSDonThuoc";
+            this.dgvInfoDSDonThuoc.ReadOnly = true;
             this.dgvInfoDSDonThuoc.RowHeadersWidth = 62;
             this.dgvInfoDSDonThuoc.RowTemplate.Height = 28;
             this.dgvInfoDSDonThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

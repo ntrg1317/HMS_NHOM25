@@ -208,6 +208,8 @@
             // 
             // dgvInfoKhoThuoc
             // 
+            this.dgvInfoKhoThuoc.AllowUserToAddRows = false;
+            this.dgvInfoKhoThuoc.AllowUserToDeleteRows = false;
             this.dgvInfoKhoThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,6 +217,7 @@
             this.dgvInfoKhoThuoc.Location = new System.Drawing.Point(35, 329);
             this.dgvInfoKhoThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoKhoThuoc.Name = "dgvInfoKhoThuoc";
+            this.dgvInfoKhoThuoc.ReadOnly = true;
             this.dgvInfoKhoThuoc.RowHeadersWidth = 62;
             this.dgvInfoKhoThuoc.RowTemplate.Height = 28;
             this.dgvInfoKhoThuoc.Size = new System.Drawing.Size(1022, 498);
