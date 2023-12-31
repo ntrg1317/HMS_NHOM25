@@ -24,13 +24,12 @@ namespace HMS_NHOM25
         {
             try
             {
-                dgvDanhMucPhong.DataSource = phong.all(table);
+                dgvInforPhong.DataSource = phong.all(table);
             }
             catch(Exception ex) 
             {
                 MessageBox.Show("Error: ", ex.Message);
             }
         }
-
     }
 }

@@ -203,6 +203,16 @@ namespace HMS_NHOM25.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hotel__1_ {
+            get {
+                object obj = ResourceManager.GetObject("hotel (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medicine {
             get {
                 object obj = ResourceManager.GetObject("medicine", resourceCulture);
@@ -266,6 +276,16 @@ namespace HMS_NHOM25.Properties {
         internal static System.Drawing.Bitmap revision__1_ {
             get {
                 object obj = ResourceManager.GetObject("revision (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap service {
+            get {
+                object obj = ResourceManager.GetObject("service", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
