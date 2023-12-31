@@ -264,7 +264,7 @@ namespace HMS_NHOM25
             this.dgvInfoNVYTe.ReadOnly = true;
             this.dgvInfoNVYTe.RowHeadersWidth = 62;
             this.dgvInfoNVYTe.RowTemplate.Height = 28;
-            this.dgvInfoNVYTe.Size = new System.Drawing.Size(908, 276);
+            this.dgvInfoNVYTe.Size = new System.Drawing.Size(908, 393);
             this.dgvInfoNVYTe.TabIndex = 23;
             // 
             // btnSuaNVYTe
@@ -324,7 +324,7 @@ namespace HMS_NHOM25
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
+            this.ClientSize = new System.Drawing.Size(970, 683);
             this.Controls.Add(this.dgvInfoNVYTe);
             this.Controls.Add(this.btnSuaNVYTe);
             this.Controls.Add(this.btnXoaNVYTe);

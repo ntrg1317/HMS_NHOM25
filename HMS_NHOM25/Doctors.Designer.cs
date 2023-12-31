@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.grbInforBS = new System.Windows.Forms.GroupBox();
+            this.txtDiaChiBS = new System.Windows.Forms.TextBox();
             this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiBS = new System.Windows.Forms.ComboBox();
-            this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
-            this.cobGioiTinhBS = new System.Windows.Forms.ComboBox();
+            this.cobSexBS = new System.Windows.Forms.ComboBox();
             this.DOBBS = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBS = new System.Windows.Forms.TextBox();
             this.txtBangCapBS = new System.Windows.Forms.TextBox();
@@ -62,10 +62,10 @@
             // 
             // grbInforBS
             // 
+            this.grbInforBS.Controls.Add(this.txtDiaChiBS);
             this.grbInforBS.Controls.Add(this.cobChuyenMonBS);
             this.grbInforBS.Controls.Add(this.cobTrangThaiBS);
-            this.grbInforBS.Controls.Add(this.cobDiaChiBS);
-            this.grbInforBS.Controls.Add(this.cobGioiTinhBS);
+            this.grbInforBS.Controls.Add(this.cobSexBS);
             this.grbInforBS.Controls.Add(this.DOBBS);
             this.grbInforBS.Controls.Add(this.txtSDTBS);
             this.grbInforBS.Controls.Add(this.txtBangCapBS);
@@ -90,6 +90,14 @@
             this.grbInforBS.TabStop = false;
             this.grbInforBS.Text = "Thông tin bác sĩ";
             // 
+            // txtDiaChiBS
+            // 
+            this.txtDiaChiBS.Location = new System.Drawing.Point(400, 79);
+            this.txtDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChiBS.Name = "txtDiaChiBS";
+            this.txtDiaChiBS.Size = new System.Drawing.Size(180, 22);
+            this.txtDiaChiBS.TabIndex = 19;
+            // 
             // cobChuyenMonBS
             // 
             this.cobChuyenMonBS.FormattingEnabled = true;
@@ -101,7 +109,7 @@
             this.cobChuyenMonBS.Location = new System.Drawing.Point(702, 75);
             this.cobChuyenMonBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobChuyenMonBS.Name = "cobChuyenMonBS";
-            this.cobChuyenMonBS.Size = new System.Drawing.Size(160, 24);
+            this.cobChuyenMonBS.Size = new System.Drawing.Size(164, 24);
             this.cobChuyenMonBS.TabIndex = 18;
             // 
             // cobTrangThaiBS
@@ -116,31 +124,18 @@
             this.cobTrangThaiBS.Size = new System.Drawing.Size(164, 24);
             this.cobTrangThaiBS.TabIndex = 17;
             // 
-            // cobDiaChiBS
+            // cobSexBS
             // 
-            this.cobDiaChiBS.FormattingEnabled = true;
-            this.cobDiaChiBS.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiBS.Location = new System.Drawing.Point(400, 75);
-            this.cobDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiBS.Name = "cobDiaChiBS";
-            this.cobDiaChiBS.Size = new System.Drawing.Size(160, 24);
-            this.cobDiaChiBS.TabIndex = 16;
-            // 
-            // cobGioiTinhBS
-            // 
-            this.cobGioiTinhBS.FormattingEnabled = true;
-            this.cobGioiTinhBS.Items.AddRange(new object[] {
+            this.cobSexBS.FormattingEnabled = true;
+            this.cobSexBS.Items.AddRange(new object[] {
             "Nam",
             "Nữ",
             "Khác"});
-            this.cobGioiTinhBS.Location = new System.Drawing.Point(400, 38);
-            this.cobGioiTinhBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobGioiTinhBS.Name = "cobGioiTinhBS";
-            this.cobGioiTinhBS.Size = new System.Drawing.Size(160, 24);
-            this.cobGioiTinhBS.TabIndex = 15;
+            this.cobSexBS.Location = new System.Drawing.Point(400, 40);
+            this.cobSexBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobSexBS.Name = "cobSexBS";
+            this.cobSexBS.Size = new System.Drawing.Size(180, 24);
+            this.cobSexBS.TabIndex = 15;
             // 
             // DOBBS
             // 
@@ -156,7 +151,7 @@
             this.txtSDTBS.Location = new System.Drawing.Point(400, 120);
             this.txtSDTBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTBS.Name = "txtSDTBS";
-            this.txtSDTBS.Size = new System.Drawing.Size(160, 22);
+            this.txtSDTBS.Size = new System.Drawing.Size(180, 22);
             this.txtSDTBS.TabIndex = 12;
             // 
             // txtBangCapBS
@@ -313,14 +308,16 @@
             this.dgvInfoBS.ReadOnly = true;
             this.dgvInfoBS.RowHeadersWidth = 62;
             this.dgvInfoBS.RowTemplate.Height = 28;
-            this.dgvInfoBS.Size = new System.Drawing.Size(908, 409);
+            this.dgvInfoBS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInfoBS.Size = new System.Drawing.Size(904, 396);
             this.dgvInfoBS.TabIndex = 23;
+            this.dgvInfoBS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBS_CellClick);
             // 
             // btnSuaBS
             // 
             this.btnSuaBS.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBS.Location = new System.Drawing.Point(674, 212);
+            this.btnSuaBS.Location = new System.Drawing.Point(682, 212);
             this.btnSuaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBS.Name = "btnSuaBS";
             this.btnSuaBS.Size = new System.Drawing.Size(101, 31);
@@ -328,12 +325,13 @@
             this.btnSuaBS.Text = "Cập nhật";
             this.btnSuaBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBS.UseVisualStyleBackColor = true;
+            this.btnSuaBS.Click += new System.EventHandler(this.btnSuaBS_Click);
             // 
             // btnXoaBS
             // 
             this.btnXoaBS.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBS.Location = new System.Drawing.Point(828, 212);
+            this.btnXoaBS.Location = new System.Drawing.Point(850, 212);
             this.btnXoaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBS.Name = "btnXoaBS";
             this.btnXoaBS.Size = new System.Drawing.Size(85, 31);
@@ -341,12 +339,13 @@
             this.btnXoaBS.Text = "Xóa";
             this.btnXoaBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaBS.UseVisualStyleBackColor = true;
+            this.btnXoaBS.Click += new System.EventHandler(this.btnXoaBS_Click);
             // 
             // btnThemBS
             // 
             this.btnThemBS.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemBS.Location = new System.Drawing.Point(532, 212);
+            this.btnThemBS.Location = new System.Drawing.Point(523, 212);
             this.btnThemBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBS.Name = "btnThemBS";
             this.btnThemBS.Size = new System.Drawing.Size(88, 31);
@@ -354,6 +353,7 @@
             this.btnThemBS.Text = "Thêm";
             this.btnThemBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBS.UseVisualStyleBackColor = true;
+            this.btnThemBS.Click += new System.EventHandler(this.btnThemBS_Click);
             // 
             // btnTimKiemBS
             // 
@@ -413,8 +413,7 @@
         private System.Windows.Forms.TextBox txtTenBS;
         private System.Windows.Forms.TextBox txtMaBS;
         private System.Windows.Forms.DateTimePicker DOBBS;
-        private System.Windows.Forms.ComboBox cobGioiTinhBS;
-        private System.Windows.Forms.ComboBox cobDiaChiBS;
+        private System.Windows.Forms.ComboBox cobSexBS;
         private System.Windows.Forms.ComboBox cobTrangThaiBS;
         private System.Windows.Forms.Label labTimKiemBS;
         private System.Windows.Forms.Label labTenBSTimKiem;
@@ -425,5 +424,6 @@
         private System.Windows.Forms.Button btnSuaBS;
         private System.Windows.Forms.DataGridView dgvInfoBS;
         private System.Windows.Forms.ComboBox cobChuyenMonBS;
+        private System.Windows.Forms.TextBox txtDiaChiBS;
     }
 }

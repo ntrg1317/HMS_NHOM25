@@ -32,13 +32,10 @@
             this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.labTenPhong = new System.Windows.Forms.Label();
             this.btnTimKiemPhong = new System.Windows.Forms.Button();
-            this.panDanhMucPhong = new System.Windows.Forms.Panel();
             this.dgvDanhMucPhong = new System.Windows.Forms.DataGridView();
-            this.grbDanhMucPhong = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.grbTimKiem.SuspendLayout();
-            this.panDanhMucPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).BeginInit();
-            this.grbDanhMucPhong.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbTimKiem
@@ -85,43 +82,37 @@
             this.btnTimKiemPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiemPhong.UseVisualStyleBackColor = true;
             // 
-            // panDanhMucPhong
-            // 
-            this.panDanhMucPhong.Controls.Add(this.dgvDanhMucPhong);
-            this.panDanhMucPhong.Location = new System.Drawing.Point(6, 19);
-            this.panDanhMucPhong.Name = "panDanhMucPhong";
-            this.panDanhMucPhong.Size = new System.Drawing.Size(892, 434);
-            this.panDanhMucPhong.TabIndex = 35;
-            // 
             // dgvDanhMucPhong
             // 
+            this.dgvDanhMucPhong.AllowUserToAddRows = false;
+            this.dgvDanhMucPhong.AllowUserToDeleteRows = false;
             this.dgvDanhMucPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhMucPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhMucPhong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDanhMucPhong.Location = new System.Drawing.Point(0, 0);
+            this.dgvDanhMucPhong.Location = new System.Drawing.Point(31, 136);
             this.dgvDanhMucPhong.Name = "dgvDanhMucPhong";
+            this.dgvDanhMucPhong.ReadOnly = true;
             this.dgvDanhMucPhong.RowHeadersWidth = 51;
             this.dgvDanhMucPhong.RowTemplate.Height = 24;
-            this.dgvDanhMucPhong.Size = new System.Drawing.Size(892, 434);
+            this.dgvDanhMucPhong.Size = new System.Drawing.Size(901, 524);
             this.dgvDanhMucPhong.TabIndex = 0;
             // 
-            // grbDanhMucPhong
+            // label2
             // 
-            this.grbDanhMucPhong.Controls.Add(this.panDanhMucPhong);
-            this.grbDanhMucPhong.ForeColor = System.Drawing.Color.Red;
-            this.grbDanhMucPhong.Location = new System.Drawing.Point(31, 95);
-            this.grbDanhMucPhong.Name = "grbDanhMucPhong";
-            this.grbDanhMucPhong.Size = new System.Drawing.Size(927, 443);
-            this.grbDanhMucPhong.TabIndex = 34;
-            this.grbDanhMucPhong.TabStop = false;
-            this.grbDanhMucPhong.Text = "Danh mục phòng";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(40, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Danh sách phòng";
             // 
             // Phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
-            this.Controls.Add(this.grbDanhMucPhong);
+            this.ClientSize = new System.Drawing.Size(970, 683);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dgvDanhMucPhong);
             this.Controls.Add(this.grbTimKiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Phong";
@@ -129,10 +120,9 @@
             this.Load += new System.EventHandler(this.Phong_Load);
             this.grbTimKiem.ResumeLayout(false);
             this.grbTimKiem.PerformLayout();
-            this.panDanhMucPhong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMucPhong)).EndInit();
-            this.grbDanhMucPhong.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,8 +131,7 @@
         private System.Windows.Forms.GroupBox grbTimKiem;
         private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.Label labTenPhong;
-        private System.Windows.Forms.Panel panDanhMucPhong;
         private System.Windows.Forms.DataGridView dgvDanhMucPhong;
-        private System.Windows.Forms.GroupBox grbDanhMucPhong;
+        private System.Windows.Forms.Label label2;
     }
 }
