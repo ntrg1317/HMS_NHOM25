@@ -264,7 +264,7 @@
             this.dgvInfoNVTN.Name = "dgvInfoNVTN";
             this.dgvInfoNVTN.RowHeadersWidth = 62;
             this.dgvInfoNVTN.RowTemplate.Height = 28;
-            this.dgvInfoNVTN.Size = new System.Drawing.Size(908, 276);
+            this.dgvInfoNVTN.Size = new System.Drawing.Size(908, 391);
             this.dgvInfoNVTN.TabIndex = 23;
             // 
             // btnSuaNVTN
@@ -324,7 +324,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
+            this.ClientSize = new System.Drawing.Size(970, 683);
             this.Controls.Add(this.dgvInfoNVTN);
             this.Controls.Add(this.btnSuaNVTN);
             this.Controls.Add(this.btnXoaNVTN);

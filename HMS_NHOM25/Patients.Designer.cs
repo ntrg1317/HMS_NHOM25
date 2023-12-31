@@ -343,7 +343,7 @@
             this.dgvInfoBN.ReadOnly = true;
             this.dgvInfoBN.RowHeadersWidth = 62;
             this.dgvInfoBN.RowTemplate.Height = 28;
-            this.dgvInfoBN.Size = new System.Drawing.Size(908, 246);
+            this.dgvInfoBN.Size = new System.Drawing.Size(908, 364);
             this.dgvInfoBN.TabIndex = 23;
             // 
             // txtTimKiemBN
@@ -410,7 +410,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
+            this.ClientSize = new System.Drawing.Size(970, 683);
             this.Controls.Add(this.dgvInfoBN);
             this.Controls.Add(this.btnSuaBN);
             this.Controls.Add(this.btnXoaBN);
