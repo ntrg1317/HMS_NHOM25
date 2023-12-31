@@ -1,4 +1,5 @@
 ﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,28 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Error: ", ex.Message);
             }
+        }
+
+        private void txtTKTenPhong_TextChanged(object sender, EventArgs e)
+        {
+            string timKiem = txtTKTenPhong.Text.Trim();
+            if (timKiem == "")
+            {
+                Phong_Load(sender, e);
+            }
+            else
+            {
+                string query = "Select * from phong where TenPhong like '%" + timKiem + "%'";
+                dgvInforPhong.DataSource = phong.Table(query);
+            }
+        }
+
+        private void dgvInforPhong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaPhong.Text = dgvInforPhong.SelectedRows[0].Cells[0].Value.ToString();
+            txtTenPhong.Text = dgvInforPhong.SelectedRows[0].Cells[1].Value.ToString();
+            txtSoLuongPhong.Text = dgvInforPhong.SelectedRows[0].Cells[2].Value.ToString();
+            txtGiaPhong.Text = dgvInforPhong.SelectedRows[0].Cells[3].Value.ToString();
         }
     }
 }

@@ -35,7 +35,6 @@
             this.txtMaPhongBN = new System.Windows.Forms.TextBox();
             this.labMaPhongBN = new System.Windows.Forms.Label();
             this.cobTrangThaiBN = new System.Windows.Forms.ComboBox();
-            this.cobDiaChiBN = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhBN = new System.Windows.Forms.ComboBox();
             this.DOBBN = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBN = new System.Windows.Forms.TextBox();
@@ -59,19 +58,20 @@
             this.btnSuaBN = new System.Windows.Forms.Button();
             this.btnXoaBN = new System.Windows.Forms.Button();
             this.btnThemBN = new System.Windows.Forms.Button();
+            this.txtDiaChiBN = new System.Windows.Forms.TextBox();
             this.grbInfoBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBN)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfoBN
             // 
+            this.grbInfoBN.Controls.Add(this.txtDiaChiBN);
             this.grbInfoBN.Controls.Add(this.txtSDTNguoiThan);
             this.grbInfoBN.Controls.Add(this.DateVaoVienBN);
             this.grbInfoBN.Controls.Add(this.labNgayVaoBN);
             this.grbInfoBN.Controls.Add(this.txtMaPhongBN);
             this.grbInfoBN.Controls.Add(this.labMaPhongBN);
             this.grbInfoBN.Controls.Add(this.cobTrangThaiBN);
-            this.grbInfoBN.Controls.Add(this.cobDiaChiBN);
             this.grbInfoBN.Controls.Add(this.cobGioiTinhBN);
             this.grbInfoBN.Controls.Add(this.DOBBN);
             this.grbInfoBN.Controls.Add(this.txtSDTBN);
@@ -153,19 +153,6 @@
             this.cobTrangThaiBN.Name = "cobTrangThaiBN";
             this.cobTrangThaiBN.Size = new System.Drawing.Size(180, 28);
             this.cobTrangThaiBN.TabIndex = 17;
-            // 
-            // cobDiaChiBN
-            // 
-            this.cobDiaChiBN.FormattingEnabled = true;
-            this.cobDiaChiBN.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiBN.Location = new System.Drawing.Point(450, 82);
-            this.cobDiaChiBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiBN.Name = "cobDiaChiBN";
-            this.cobDiaChiBN.Size = new System.Drawing.Size(180, 28);
-            this.cobDiaChiBN.TabIndex = 16;
             // 
             // cobGioiTinhBN
             // 
@@ -346,8 +333,10 @@
             this.dgvInfoBN.ReadOnly = true;
             this.dgvInfoBN.RowHeadersWidth = 62;
             this.dgvInfoBN.RowTemplate.Height = 28;
+            this.dgvInfoBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoBN.Size = new System.Drawing.Size(1022, 471);
             this.dgvInfoBN.TabIndex = 23;
+            this.dgvInfoBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBN_CellClick);
             // 
             // txtTimKiemBN
             // 
@@ -356,6 +345,7 @@
             this.txtTimKiemBN.Name = "txtTimKiemBN";
             this.txtTimKiemBN.Size = new System.Drawing.Size(184, 26);
             this.txtTimKiemBN.TabIndex = 18;
+            this.txtTimKiemBN.TextChanged += new System.EventHandler(this.txtTimKiemBN_TextChanged);
             // 
             // btnSuaBN
             // 
@@ -395,6 +385,14 @@
             this.btnThemBN.Text = "Thêm";
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBN.UseVisualStyleBackColor = true;
+            // 
+            // txtDiaChiBN
+            // 
+            this.txtDiaChiBN.Location = new System.Drawing.Point(450, 84);
+            this.txtDiaChiBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChiBN.Name = "txtDiaChiBN";
+            this.txtDiaChiBN.Size = new System.Drawing.Size(180, 26);
+            this.txtDiaChiBN.TabIndex = 24;
             // 
             // Patients
             // 
@@ -440,7 +438,6 @@
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.DateTimePicker DOBBN;
         private System.Windows.Forms.ComboBox cobGioiTinhBN;
-        private System.Windows.Forms.ComboBox cobDiaChiBN;
         private System.Windows.Forms.ComboBox cobTrangThaiBN;
         private System.Windows.Forms.Label labTimKiemBN;
         private System.Windows.Forms.Label labTenBNTimKiem;
@@ -455,5 +452,6 @@
         private System.Windows.Forms.TextBox txtSDTNguoiThan;
         private System.Windows.Forms.TextBox txtTimKiemBN;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TextBox txtDiaChiBN;
     }
 }
