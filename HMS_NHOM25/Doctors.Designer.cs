@@ -95,7 +95,7 @@
             this.txtDiaChiBS.Location = new System.Drawing.Point(400, 79);
             this.txtDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChiBS.Name = "txtDiaChiBS";
-            this.txtDiaChiBS.Size = new System.Drawing.Size(160, 22);
+            this.txtDiaChiBS.Size = new System.Drawing.Size(180, 22);
             this.txtDiaChiBS.TabIndex = 19;
             // 
             // cobChuyenMonBS
@@ -109,7 +109,7 @@
             this.cobChuyenMonBS.Location = new System.Drawing.Point(702, 75);
             this.cobChuyenMonBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobChuyenMonBS.Name = "cobChuyenMonBS";
-            this.cobChuyenMonBS.Size = new System.Drawing.Size(160, 24);
+            this.cobChuyenMonBS.Size = new System.Drawing.Size(164, 24);
             this.cobChuyenMonBS.TabIndex = 18;
             // 
             // cobTrangThaiBS
@@ -135,6 +135,10 @@
             this.cobSexBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobSexBS.Name = "cobSexBS";
             this.cobSexBS.Size = new System.Drawing.Size(160, 24);
+            this.cobSexBS.Location = new System.Drawing.Point(400, 40);
+            this.cobSexBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobSexBS.Name = "cobSexBS";
+            this.cobSexBS.Size = new System.Drawing.Size(180, 24);
             this.cobSexBS.TabIndex = 15;
             // 
             // DOBBS
@@ -151,7 +155,7 @@
             this.txtSDTBS.Location = new System.Drawing.Point(400, 120);
             this.txtSDTBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTBS.Name = "txtSDTBS";
-            this.txtSDTBS.Size = new System.Drawing.Size(160, 22);
+            this.txtSDTBS.Size = new System.Drawing.Size(180, 22);
             this.txtSDTBS.TabIndex = 12;
             // 
             // txtBangCapBS
@@ -312,7 +316,7 @@
             this.dgvInfoBS.RowHeadersWidth = 62;
             this.dgvInfoBS.RowTemplate.Height = 28;
             this.dgvInfoBS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoBS.Size = new System.Drawing.Size(908, 391);
+            this.dgvInfoBS.Size = new System.Drawing.Size(904, 396);
             this.dgvInfoBS.TabIndex = 23;
             this.dgvInfoBS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBS_CellClick);
             // 
@@ -320,7 +324,7 @@
             // 
             this.btnSuaBS.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBS.Location = new System.Drawing.Point(674, 212);
+            this.btnSuaBS.Location = new System.Drawing.Point(682, 212);
             this.btnSuaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBS.Name = "btnSuaBS";
             this.btnSuaBS.Size = new System.Drawing.Size(101, 31);
@@ -334,7 +338,7 @@
             // 
             this.btnXoaBS.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBS.Location = new System.Drawing.Point(828, 212);
+            this.btnXoaBS.Location = new System.Drawing.Point(850, 212);
             this.btnXoaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBS.Name = "btnXoaBS";
             this.btnXoaBS.Size = new System.Drawing.Size(85, 31);
@@ -348,7 +352,7 @@
             // 
             this.btnThemBS.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemBS.Location = new System.Drawing.Point(532, 212);
+            this.btnThemBS.Location = new System.Drawing.Point(523, 212);
             this.btnThemBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBS.Name = "btnThemBS";
             this.btnThemBS.Size = new System.Drawing.Size(88, 31);
@@ -375,7 +379,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 681);
+            this.ClientSize = new System.Drawing.Size(970, 683);
             this.Controls.Add(this.dgvInfoBS);
             this.Controls.Add(this.btnSuaBS);
             this.Controls.Add(this.btnXoaBS);

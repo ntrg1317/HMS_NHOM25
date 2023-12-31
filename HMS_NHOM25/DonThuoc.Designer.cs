@@ -88,7 +88,7 @@
             this.dgvInfoDSDonThuoc.Name = "dgvInfoDSDonThuoc";
             this.dgvInfoDSDonThuoc.RowHeadersWidth = 62;
             this.dgvInfoDSDonThuoc.RowTemplate.Height = 28;
-            this.dgvInfoDSDonThuoc.Size = new System.Drawing.Size(914, 358);
+            this.dgvInfoDSDonThuoc.Size = new System.Drawing.Size(914, 360);
             this.dgvInfoDSDonThuoc.TabIndex = 20;
             // 
             // labDSDT
@@ -261,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 681);
+            this.ClientSize = new System.Drawing.Size(970, 683);
             this.Controls.Add(this.btnCapNhatDonThuoc);
             this.Controls.Add(this.btnXoaDonThuoc);
             this.Controls.Add(this.btnThemDonThuoc);

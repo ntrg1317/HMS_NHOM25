@@ -136,7 +136,7 @@
             this.dgvInfoDSHoaDon.ReadOnly = true;
             this.dgvInfoDSHoaDon.RowHeadersWidth = 62;
             this.dgvInfoDSHoaDon.RowTemplate.Height = 28;
-            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(922, 437);
+            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(922, 427);
             this.dgvInfoDSHoaDon.TabIndex = 30;
             // 
             // txtTimKiemSDTBN

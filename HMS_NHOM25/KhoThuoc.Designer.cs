@@ -218,7 +218,7 @@
             this.dgvInfoKhoThuoc.Name = "dgvInfoKhoThuoc";
             this.dgvInfoKhoThuoc.RowHeadersWidth = 62;
             this.dgvInfoKhoThuoc.RowTemplate.Height = 28;
-            this.dgvInfoKhoThuoc.Size = new System.Drawing.Size(908, 397);
+            this.dgvInfoKhoThuoc.Size = new System.Drawing.Size(908, 398);
             this.dgvInfoKhoThuoc.TabIndex = 23;
             // 
             // label1

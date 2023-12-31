@@ -138,6 +138,7 @@
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(221, 765);
+            this.sidebar.Size = new System.Drawing.Size(221, 767);
             this.sidebar.TabIndex = 0;
             // 
             // panel4
@@ -714,6 +715,14 @@
             // 
             this.panel9.Controls.Add(this.pictureBox6);
             this.panel9.Controls.Add(this.button4);
+            this.button4.Text = "Tài Khoản";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Click += new System.EventHandler(this.btnHD_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.pictureBox6);
+            this.panel9.Controls.Add(this.btnDichVu);
             this.panel9.Location = new System.Drawing.Point(3, 631);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(230, 55);
@@ -735,6 +744,7 @@
             // 
             this.panel13.Controls.Add(this.pictureBox14);
             this.panel13.Controls.Add(this.button5);
+            this.panel13.Controls.Add(this.button4);
             this.panel13.Location = new System.Drawing.Point(3, 692);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(230, 55);
@@ -752,12 +762,28 @@
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
             // 
+            // btnDichVu
+            // 
+            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDichVu.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDichVu.Location = new System.Drawing.Point(-11, -18);
+            this.btnDichVu.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.btnDichVu.Size = new System.Drawing.Size(240, 78);
+            this.btnDichVu.TabIndex = 0;
+            this.btnDichVu.Text = "Dịch vụ";
+            this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDichVu.Click += new System.EventHandler(this.btnHD_Click);
+            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1191, 765);
+            this.ClientSize = new System.Drawing.Size(1191, 767);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.navbar);
@@ -862,5 +888,6 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDichVu;
     }
 }
