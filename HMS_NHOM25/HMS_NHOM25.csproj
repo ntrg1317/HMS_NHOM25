@@ -83,12 +83,24 @@
     <Compile Include="DSHoaDon.Designer.cs">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDonBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonBN.Designer.cs">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BacSi.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\InforBS.cs" />
     <Compile Include="Params\TestBacSi.cs" />
+    <Compile Include="Patient_TTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_TTTK.Designer.cs">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +222,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DSHoaDon.resx">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBN.resx">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_TTTK.resx">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
@@ -345,6 +363,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hotel %281%29.png" />

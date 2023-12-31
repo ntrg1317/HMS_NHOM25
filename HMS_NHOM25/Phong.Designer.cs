@@ -265,7 +265,6 @@
             this.Controls.Add(this.dgvInforPhong);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Phong";
-            this.Text = "Phòng";
             this.Load += new System.EventHandler(this.Phong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforPhong)).EndInit();
             this.grb.ResumeLayout(false);

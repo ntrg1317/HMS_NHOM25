@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace HMS_NHOM25.Model
 {
@@ -52,18 +53,20 @@ namespace HMS_NHOM25.Model
             }    
         }
 
-        public int getLastInsertID(string query)
+        public int getLastInsertID(string pk, string table)
         {
-            int pk;
+            string query = "SELECT TOP(1) " + pk + " FROM " + table + " ORDER BY 1 DESC";
+            int id;
+
             using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
             {
                 sqlConnection.Open();
                 command = new SqlCommand(query, sqlConnection);
                 command.ExecuteNonQuery();
-                pk = Convert.ToInt32(command.ExecuteScalar());
+                id = Convert.ToInt32(command.ExecuteScalar());
                 sqlConnection.Close();
             }
-            return pk;
+            return id;
         }
     }
 }

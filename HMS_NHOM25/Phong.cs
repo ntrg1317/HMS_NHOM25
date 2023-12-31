@@ -53,6 +53,5 @@ namespace HMS_NHOM25
             txtTenPhong.Text = dgvInforPhong.SelectedRows[0].Cells[1].Value.ToString();
             txtSoLuongPhong.Text = dgvInforPhong.SelectedRows[0].Cells[2].Value.ToString();
             txtGiaPhong.Text = dgvInforPhong.SelectedRows[0].Cells[3].Value.ToString();
-        }
     }
 }

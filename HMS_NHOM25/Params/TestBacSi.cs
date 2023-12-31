@@ -17,9 +17,8 @@ namespace HMS_NHOM25.Params
         private string _bangCap;
         private string _tenDNBS;
         private string _matKhauBS;
-        private int _trangThai;
 
-        public TestBacSi(string tenBS, string ngaySinh, string gioiTinh, string sdt, string diaChi, string chuyenMon, string bangCap, string tenDNBS, string matKhauBS, int trangThai)
+        public TestBacSi(string tenBS, string ngaySinh, string gioiTinh, string sdt, string diaChi, string chuyenMon, string bangCap, string tenDNBS, string matKhauBS)
         {
             _tenBS = tenBS;
             _ngaySinh = ngaySinh;
@@ -30,7 +29,6 @@ namespace HMS_NHOM25.Params
             _bangCap = bangCap;
             _tenDNBS = tenDNBS;
             _matKhauBS = matKhauBS;
-            _trangThai = trangThai;
         }
 
         public string TenBS { get => _tenBS; set => _tenBS = value; }
@@ -42,6 +40,5 @@ namespace HMS_NHOM25.Params
         public string BangCap { get => _bangCap; set => _bangCap = value; }
         public string TenDNBS { get => _tenDNBS; set => _tenDNBS = value; }
         public string MatKhauBS { get => _matKhauBS; set => _matKhauBS = value; }
-        public int TrangThai { get => _trangThai; set => _trangThai = value; }
     }
 }
