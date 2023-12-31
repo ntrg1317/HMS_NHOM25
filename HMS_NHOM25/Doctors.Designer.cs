@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.grbInforBS = new System.Windows.Forms.GroupBox();
+            this.txtDiaChiBS = new System.Windows.Forms.TextBox();
             this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiBS = new System.Windows.Forms.ComboBox();
-            this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
-            this.cobGioiTinhBS = new System.Windows.Forms.ComboBox();
+            this.cobSexBS = new System.Windows.Forms.ComboBox();
             this.DOBBS = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBS = new System.Windows.Forms.TextBox();
             this.txtBangCapBS = new System.Windows.Forms.TextBox();
@@ -62,10 +62,10 @@
             // 
             // grbInforBS
             // 
+            this.grbInforBS.Controls.Add(this.txtDiaChiBS);
             this.grbInforBS.Controls.Add(this.cobChuyenMonBS);
             this.grbInforBS.Controls.Add(this.cobTrangThaiBS);
-            this.grbInforBS.Controls.Add(this.cobDiaChiBS);
-            this.grbInforBS.Controls.Add(this.cobGioiTinhBS);
+            this.grbInforBS.Controls.Add(this.cobSexBS);
             this.grbInforBS.Controls.Add(this.DOBBS);
             this.grbInforBS.Controls.Add(this.txtSDTBS);
             this.grbInforBS.Controls.Add(this.txtBangCapBS);
@@ -89,6 +89,14 @@
             this.grbInforBS.TabIndex = 0;
             this.grbInforBS.TabStop = false;
             this.grbInforBS.Text = "Thông tin bác sĩ";
+            // 
+            // txtDiaChiBS
+            // 
+            this.txtDiaChiBS.Location = new System.Drawing.Point(450, 99);
+            this.txtDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChiBS.Name = "txtDiaChiBS";
+            this.txtDiaChiBS.Size = new System.Drawing.Size(180, 26);
+            this.txtDiaChiBS.TabIndex = 19;
             // 
             // cobChuyenMonBS
             // 
@@ -116,31 +124,18 @@
             this.cobTrangThaiBS.Size = new System.Drawing.Size(184, 28);
             this.cobTrangThaiBS.TabIndex = 17;
             // 
-            // cobDiaChiBS
+            // cobSexBS
             // 
-            this.cobDiaChiBS.FormattingEnabled = true;
-            this.cobDiaChiBS.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiBS.Location = new System.Drawing.Point(450, 94);
-            this.cobDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiBS.Name = "cobDiaChiBS";
-            this.cobDiaChiBS.Size = new System.Drawing.Size(180, 28);
-            this.cobDiaChiBS.TabIndex = 16;
-            // 
-            // cobGioiTinhBS
-            // 
-            this.cobGioiTinhBS.FormattingEnabled = true;
-            this.cobGioiTinhBS.Items.AddRange(new object[] {
+            this.cobSexBS.FormattingEnabled = true;
+            this.cobSexBS.Items.AddRange(new object[] {
             "Nam",
             "Nữ",
             "Khác"});
-            this.cobGioiTinhBS.Location = new System.Drawing.Point(450, 48);
-            this.cobGioiTinhBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobGioiTinhBS.Name = "cobGioiTinhBS";
-            this.cobGioiTinhBS.Size = new System.Drawing.Size(180, 28);
-            this.cobGioiTinhBS.TabIndex = 15;
+            this.cobSexBS.Location = new System.Drawing.Point(450, 48);
+            this.cobSexBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobSexBS.Name = "cobSexBS";
+            this.cobSexBS.Size = new System.Drawing.Size(180, 28);
+            this.cobSexBS.TabIndex = 15;
             // 
             // DOBBS
             // 
@@ -313,8 +308,10 @@
             this.dgvInfoBS.ReadOnly = true;
             this.dgvInfoBS.RowHeadersWidth = 62;
             this.dgvInfoBS.RowTemplate.Height = 28;
+            this.dgvInfoBS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoBS.Size = new System.Drawing.Size(1022, 345);
             this.dgvInfoBS.TabIndex = 23;
+            this.dgvInfoBS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBS_CellClick);
             // 
             // btnSuaBS
             // 
@@ -328,6 +325,7 @@
             this.btnSuaBS.Text = "Cập nhật";
             this.btnSuaBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaBS.UseVisualStyleBackColor = true;
+            this.btnSuaBS.Click += new System.EventHandler(this.btnSuaBS_Click);
             // 
             // btnXoaBS
             // 
@@ -341,6 +339,7 @@
             this.btnXoaBS.Text = "Xóa";
             this.btnXoaBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaBS.UseVisualStyleBackColor = true;
+            this.btnXoaBS.Click += new System.EventHandler(this.btnXoaBS_Click);
             // 
             // btnThemBS
             // 
@@ -413,8 +412,7 @@
         private System.Windows.Forms.TextBox txtTenBS;
         private System.Windows.Forms.TextBox txtMaBS;
         private System.Windows.Forms.DateTimePicker DOBBS;
-        private System.Windows.Forms.ComboBox cobGioiTinhBS;
-        private System.Windows.Forms.ComboBox cobDiaChiBS;
+        private System.Windows.Forms.ComboBox cobSexBS;
         private System.Windows.Forms.ComboBox cobTrangThaiBS;
         private System.Windows.Forms.Label labTimKiemBS;
         private System.Windows.Forms.Label labTenBSTimKiem;
@@ -425,5 +423,6 @@
         private System.Windows.Forms.Button btnSuaBS;
         private System.Windows.Forms.DataGridView dgvInfoBS;
         private System.Windows.Forms.ComboBox cobChuyenMonBS;
+        private System.Windows.Forms.TextBox txtDiaChiBS;
     }
 }

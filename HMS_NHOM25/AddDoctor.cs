@@ -104,10 +104,13 @@ namespace HMS_NHOM25
                 string query2 = "INSERT INTO taiKhoan VALUES (2, N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
                 try
                 {
-                    Doctor.Command(query1);
-                    Doctor.Command(query2);
-                    MessageBox.Show("Lưu thông tin thành công!");
-                    AddDoctor_Load(sender, e);
+                    if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        Doctor.Command(query1);
+                        Doctor.Command(query2);
+                        MessageBox.Show("Lưu thông tin thành công!");
+                        AddDoctor_Load(sender, e);
+                    }
                 }
                 catch(Exception ex)
                 {

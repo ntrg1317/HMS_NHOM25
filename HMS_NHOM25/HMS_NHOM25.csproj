@@ -69,6 +69,7 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BacSi.cs" />
     <Compile Include="Params\BenhNhan.cs" />
+    <Compile Include="Params\InforBS.cs" />
     <Compile Include="Params\TestBacSi.cs" />
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
