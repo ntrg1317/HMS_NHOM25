@@ -168,5 +168,11 @@ namespace HMS_NHOM25
             txtBangCapBS.Text = dgvInfoBS.SelectedRows[0].Cells[7].Value.ToString();
             cobTrangThaiBS.Text = dgvInfoBS.SelectedRows[0].Cells[8].Value.ToString();
         }
+
+        private void btnThemBS_Click(object sender, EventArgs e)
+        {
+            AddDoctor doctor = new AddDoctor();
+            doctor.Show();
+        }
     }
 }

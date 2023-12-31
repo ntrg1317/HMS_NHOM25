@@ -335,6 +335,9 @@
             // 
             this.dgvInfoBN.AllowUserToAddRows = false;
             this.dgvInfoBN.AllowUserToDeleteRows = false;
+            this.dgvInfoBN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoBN.Location = new System.Drawing.Point(31, 293);
@@ -343,7 +346,7 @@
             this.dgvInfoBN.ReadOnly = true;
             this.dgvInfoBN.RowHeadersWidth = 62;
             this.dgvInfoBN.RowTemplate.Height = 28;
-            this.dgvInfoBN.Size = new System.Drawing.Size(908, 246);
+            this.dgvInfoBN.Size = new System.Drawing.Size(908, 377);
             this.dgvInfoBN.TabIndex = 23;
             // 
             // txtTimKiemBN
@@ -410,7 +413,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
+            this.ClientSize = new System.Drawing.Size(970, 681);
             this.Controls.Add(this.dgvInfoBN);
             this.Controls.Add(this.btnSuaBN);
             this.Controls.Add(this.btnXoaBN);

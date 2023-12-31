@@ -16,6 +16,7 @@ namespace HMS_NHOM25
     {
         TestBacSi qlBacSi;
         BaseModel Doctor = new BaseModel();
+        BaseModel taiKhoan = new BaseModel();
         public AddDoctor()
         {
             InitializeComponent();
@@ -101,13 +102,13 @@ namespace HMS_NHOM25
             {
                 GetValuesTextBoxes();
                 string query1 = "INSERT INTO bacSi VALUES (N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "', '" + qlBacSi.TrangThai + "')";
-                string query2 = "INSERT INTO taiKhoan VALUES (2, N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
+                string query2 = "INSERT INTO taiKhoan VALUES (2, N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "') SELECT SCOPE_IDENTITY()";
                 try
                 {
                     if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        Doctor.Command(query1);
-                        Doctor.Command(query2);
+                        int id = taiKhoan.getLastInsertID(query2);
+                        Console.WriteLine(id);
                         MessageBox.Show("Lưu thông tin thành công!");
                         AddDoctor_Load(sender, e);
                     }

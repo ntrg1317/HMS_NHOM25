@@ -51,5 +51,19 @@ namespace HMS_NHOM25.Model
                 sqlConnection.Close();
             }    
         }
+
+        public int getLastInsertID(string query)
+        {
+            int pk;
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+                command = new SqlCommand(query, sqlConnection);
+                command.ExecuteNonQuery();
+                pk = Convert.ToInt32(command.ExecuteScalar());
+                sqlConnection.Close();
+            }
+            return pk;
+        }
     }
 }

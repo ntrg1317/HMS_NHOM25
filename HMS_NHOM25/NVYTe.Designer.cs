@@ -256,6 +256,9 @@ namespace HMS_NHOM25
             // 
             this.dgvInfoNVYTe.AllowUserToAddRows = false;
             this.dgvInfoNVYTe.AllowUserToDeleteRows = false;
+            this.dgvInfoNVYTe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoNVYTe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoNVYTe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoNVYTe.Location = new System.Drawing.Point(31, 263);
@@ -264,7 +267,7 @@ namespace HMS_NHOM25
             this.dgvInfoNVYTe.ReadOnly = true;
             this.dgvInfoNVYTe.RowHeadersWidth = 62;
             this.dgvInfoNVYTe.RowTemplate.Height = 28;
-            this.dgvInfoNVYTe.Size = new System.Drawing.Size(908, 276);
+            this.dgvInfoNVYTe.Size = new System.Drawing.Size(908, 407);
             this.dgvInfoNVYTe.TabIndex = 23;
             // 
             // btnSuaNVYTe
@@ -324,7 +327,7 @@ namespace HMS_NHOM25
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 550);
+            this.ClientSize = new System.Drawing.Size(970, 681);
             this.Controls.Add(this.dgvInfoNVYTe);
             this.Controls.Add(this.btnSuaNVYTe);
             this.Controls.Add(this.btnXoaNVYTe);
