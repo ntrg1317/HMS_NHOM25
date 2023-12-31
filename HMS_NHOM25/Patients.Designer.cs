@@ -51,15 +51,14 @@
             this.labNgaySinhBN = new System.Windows.Forms.Label();
             this.labTenBN = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.labTimKiemBN = new System.Windows.Forms.Label();
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.dgvInfoBN = new System.Windows.Forms.DataGridView();
             this.txtTimKiemBN = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnSuaBN = new System.Windows.Forms.Button();
             this.btnXoaBN = new System.Windows.Forms.Button();
             this.btnThemBN = new System.Windows.Forms.Button();
-            this.btnTimKiemBN = new System.Windows.Forms.Button();
             this.grbInfoBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBN)).BeginInit();
             this.SuspendLayout();
@@ -97,7 +96,6 @@
             this.grbInfoBN.TabIndex = 0;
             this.grbInfoBN.TabStop = false;
             this.grbInfoBN.Text = "Thông tin bệnh nhân";
-            this.grbInfoBN.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtSDTNguoiThan
             // 
@@ -181,12 +179,11 @@
             this.cobGioiTinhBN.Name = "cobGioiTinhBN";
             this.cobGioiTinhBN.Size = new System.Drawing.Size(180, 28);
             this.cobGioiTinhBN.TabIndex = 15;
-            this.cobGioiTinhBN.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // DOBBN
             // 
             this.DOBBN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DOBBN.Location = new System.Drawing.Point(145, 133);
+            this.DOBBN.Location = new System.Drawing.Point(145, 132);
             this.DOBBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DOBBN.Name = "DOBBN";
             this.DOBBN.Size = new System.Drawing.Size(182, 26);
@@ -194,7 +191,7 @@
             // 
             // txtSDTBN
             // 
-            this.txtSDTBN.Location = new System.Drawing.Point(450, 133);
+            this.txtSDTBN.Location = new System.Drawing.Point(450, 132);
             this.txtSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTBN.Name = "txtSDTBN";
             this.txtSDTBN.Size = new System.Drawing.Size(180, 26);
@@ -233,7 +230,6 @@
             this.labTrangThaiBN.Size = new System.Drawing.Size(80, 20);
             this.labTrangThaiBN.TabIndex = 8;
             this.labTrangThaiBN.Text = "Trạng thái";
-            this.labTrangThaiBN.Click += new System.EventHandler(this.label9_Click);
             // 
             // labSDTNguoiThan
             // 
@@ -254,7 +250,6 @@
             this.labBenhTrangBN.Size = new System.Drawing.Size(88, 20);
             this.labBenhTrangBN.TabIndex = 6;
             this.labBenhTrangBN.Text = "Bệnh trạng";
-            this.labBenhTrangBN.Click += new System.EventHandler(this.label7_Click);
             // 
             // labSDTBN
             // 
@@ -305,7 +300,6 @@
             this.labTenBN.Size = new System.Drawing.Size(77, 20);
             this.labTenBN.TabIndex = 1;
             this.labTenBN.Text = "Họ và tên";
-            this.labTenBN.Click += new System.EventHandler(this.label2_Click);
             // 
             // labMaBN
             // 
@@ -336,17 +330,23 @@
             this.labTenBNTimKiem.Size = new System.Drawing.Size(116, 20);
             this.labTenBNTimKiem.TabIndex = 18;
             this.labTenBNTimKiem.Text = "Tên bệnh nhân";
-            this.labTenBNTimKiem.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // dgvInfoBN
             // 
+            this.dgvInfoBN.AllowUserToAddRows = false;
+            this.dgvInfoBN.AllowUserToDeleteRows = false;
+            this.dgvInfoBN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvInfoBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoBN.Location = new System.Drawing.Point(35, 366);
             this.dgvInfoBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoBN.Name = "dgvInfoBN";
+            this.dgvInfoBN.ReadOnly = true;
             this.dgvInfoBN.RowHeadersWidth = 62;
             this.dgvInfoBN.RowTemplate.Height = 28;
-            this.dgvInfoBN.Size = new System.Drawing.Size(1022, 308);
+            this.dgvInfoBN.Size = new System.Drawing.Size(1022, 471);
             this.dgvInfoBN.TabIndex = 23;
             // 
             // txtTimKiemBN
@@ -361,7 +361,7 @@
             // 
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBN.Location = new System.Drawing.Point(765, 298);
+            this.btnSuaBN.Location = new System.Drawing.Point(694, 287);
             this.btnSuaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBN.Name = "btnSuaBN";
             this.btnSuaBN.Size = new System.Drawing.Size(116, 39);
@@ -374,7 +374,7 @@
             // 
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBN.Location = new System.Drawing.Point(932, 298);
+            this.btnXoaBN.Location = new System.Drawing.Point(923, 287);
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(96, 39);
@@ -387,7 +387,7 @@
             // 
             this.btnThemBN.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemBN.Location = new System.Drawing.Point(598, 298);
+            this.btnThemBN.Location = new System.Drawing.Point(483, 287);
             this.btnThemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN.Name = "btnThemBN";
             this.btnThemBN.Size = new System.Drawing.Size(99, 39);
@@ -396,29 +396,15 @@
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBN.UseVisualStyleBackColor = true;
             // 
-            // btnTimKiemBN
-            // 
-            this.btnTimKiemBN.Image = global::HMS_NHOM25.Properties.Resources.find__1_;
-            this.btnTimKiemBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemBN.Location = new System.Drawing.Point(412, 298);
-            this.btnTimKiemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiemBN.Name = "btnTimKiemBN";
-            this.btnTimKiemBN.Size = new System.Drawing.Size(109, 39);
-            this.btnTimKiemBN.TabIndex = 19;
-            this.btnTimKiemBN.Text = "Tìm kiếm";
-            this.btnTimKiemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiemBN.UseVisualStyleBackColor = true;
-            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 688);
+            this.ClientSize = new System.Drawing.Size(1091, 851);
             this.Controls.Add(this.dgvInfoBN);
             this.Controls.Add(this.btnSuaBN);
             this.Controls.Add(this.btnXoaBN);
             this.Controls.Add(this.btnThemBN);
-            this.Controls.Add(this.btnTimKiemBN);
             this.Controls.Add(this.txtTimKiemBN);
             this.Controls.Add(this.labTenBNTimKiem);
             this.Controls.Add(this.labTimKiemBN);
@@ -427,6 +413,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Patients";
             this.Text = "Patients";
+            this.Load += new System.EventHandler(this.Patients_Load);
             this.grbInfoBN.ResumeLayout(false);
             this.grbInfoBN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBN)).EndInit();
@@ -438,7 +425,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grbInfoBN;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label labMaBN;
         private System.Windows.Forms.Label labNgaySinhBN;
         private System.Windows.Forms.Label labTenBN;
@@ -458,7 +444,6 @@
         private System.Windows.Forms.ComboBox cobTrangThaiBN;
         private System.Windows.Forms.Label labTimKiemBN;
         private System.Windows.Forms.Label labTenBNTimKiem;
-        private System.Windows.Forms.Button btnTimKiemBN;
         private System.Windows.Forms.Button btnThemBN;
         private System.Windows.Forms.Button btnXoaBN;
         private System.Windows.Forms.Button btnSuaBN;
@@ -469,5 +454,6 @@
         private System.Windows.Forms.Label labMaPhongBN;
         private System.Windows.Forms.TextBox txtSDTNguoiThan;
         private System.Windows.Forms.TextBox txtTimKiemBN;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

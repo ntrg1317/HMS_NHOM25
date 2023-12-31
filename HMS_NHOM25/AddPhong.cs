@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddNVYTe : Form
+    public partial class AddPhong : Form
     {
-        public AddNVYTe()
+        public AddPhong()
         {
             InitializeComponent();
-        }
-
-        private void AddNVYTe_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

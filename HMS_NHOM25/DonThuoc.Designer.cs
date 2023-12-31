@@ -35,6 +35,7 @@
             this.dgvInfoDSDonThuoc = new System.Windows.Forms.DataGridView();
             this.labDSDT = new System.Windows.Forms.Label();
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.labVND = new System.Windows.Forms.Label();
             this.labTienThuoc = new System.Windows.Forms.Label();
             this.txtTienThuoc = new System.Windows.Forms.TextBox();
@@ -46,8 +47,6 @@
             this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaDonThuoc = new System.Windows.Forms.Button();
             this.btnThemDonThuoc = new System.Windows.Forms.Button();
-            this.btnTimKiemSDTBN = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSDonThuoc)).BeginInit();
             this.grbInfoDonThuoc.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +55,7 @@
             // 
             this.labTimKiemDT.AutoSize = true;
             this.labTimKiemDT.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemDT.Location = new System.Drawing.Point(35, 217);
+            this.labTimKiemDT.Location = new System.Drawing.Point(35, 218);
             this.labTimKiemDT.Name = "labTimKiemDT";
             this.labTimKiemDT.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemDT.TabIndex = 1;
@@ -75,6 +74,7 @@
             // txtTimKiemSDTBN
             // 
             this.txtTimKiemSDTBN.Location = new System.Drawing.Point(252, 265);
+            this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(218, 26);
             this.txtTimKiemSDTBN.TabIndex = 18;
@@ -82,11 +82,12 @@
             // dgvInfoDSDonThuoc
             // 
             this.dgvInfoDSDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoDSDonThuoc.Location = new System.Drawing.Point(27, 377);
+            this.dgvInfoDSDonThuoc.Location = new System.Drawing.Point(27, 378);
+            this.dgvInfoDSDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDSDonThuoc.Name = "dgvInfoDSDonThuoc";
             this.dgvInfoDSDonThuoc.RowHeadersWidth = 62;
             this.dgvInfoDSDonThuoc.RowTemplate.Height = 28;
-            this.dgvInfoDSDonThuoc.Size = new System.Drawing.Size(1028, 267);
+            this.dgvInfoDSDonThuoc.Size = new System.Drawing.Size(1028, 450);
             this.dgvInfoDSDonThuoc.TabIndex = 20;
             // 
             // labDSDT
@@ -111,18 +112,29 @@
             this.grbInfoDonThuoc.Controls.Add(this.txtSoLuongThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.labTenThuoc);
             this.grbInfoDonThuoc.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoDonThuoc.Location = new System.Drawing.Point(30, 27);
+            this.grbInfoDonThuoc.Location = new System.Drawing.Point(30, 28);
+            this.grbInfoDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDonThuoc.Name = "grbInfoDonThuoc";
-            this.grbInfoDonThuoc.Size = new System.Drawing.Size(1027, 163);
+            this.grbInfoDonThuoc.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbInfoDonThuoc.Size = new System.Drawing.Size(1027, 162);
             this.grbInfoDonThuoc.TabIndex = 22;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Thông tin đơn thuốc";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(218, 49);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(219, 28);
+            this.comboBox1.TabIndex = 36;
             // 
             // labVND
             // 
             this.labVND.AutoSize = true;
             this.labVND.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labVND.Location = new System.Drawing.Point(905, 107);
+            this.labVND.Location = new System.Drawing.Point(904, 108);
             this.labVND.Name = "labVND";
             this.labVND.Size = new System.Drawing.Size(53, 20);
             this.labVND.TabIndex = 35;
@@ -132,7 +144,7 @@
             // 
             this.labTienThuoc.AutoSize = true;
             this.labTienThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTienThuoc.Location = new System.Drawing.Point(563, 107);
+            this.labTienThuoc.Location = new System.Drawing.Point(562, 108);
             this.labTienThuoc.Name = "labTienThuoc";
             this.labTienThuoc.Size = new System.Drawing.Size(64, 20);
             this.labTienThuoc.TabIndex = 33;
@@ -141,6 +153,7 @@
             // txtTienThuoc
             // 
             this.txtTienThuoc.Location = new System.Drawing.Point(672, 101);
+            this.txtTienThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTienThuoc.Name = "txtTienThuoc";
             this.txtTienThuoc.Size = new System.Drawing.Size(218, 26);
             this.txtTienThuoc.TabIndex = 34;
@@ -149,7 +162,7 @@
             // 
             this.labLieuDung.AutoSize = true;
             this.labLieuDung.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labLieuDung.Location = new System.Drawing.Point(563, 50);
+            this.labLieuDung.Location = new System.Drawing.Point(562, 50);
             this.labLieuDung.Name = "labLieuDung";
             this.labLieuDung.Size = new System.Drawing.Size(79, 20);
             this.labLieuDung.TabIndex = 31;
@@ -158,6 +171,7 @@
             // txtLieuDung
             // 
             this.txtLieuDung.Location = new System.Drawing.Point(672, 44);
+            this.txtLieuDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLieuDung.Name = "txtLieuDung";
             this.txtLieuDung.Size = new System.Drawing.Size(218, 26);
             this.txtLieuDung.TabIndex = 32;
@@ -166,7 +180,7 @@
             // 
             this.labSoLuongThuoc.AutoSize = true;
             this.labSoLuongThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSoLuongThuoc.Location = new System.Drawing.Point(68, 107);
+            this.labSoLuongThuoc.Location = new System.Drawing.Point(68, 108);
             this.labSoLuongThuoc.Name = "labSoLuongThuoc";
             this.labSoLuongThuoc.Size = new System.Drawing.Size(72, 20);
             this.labSoLuongThuoc.TabIndex = 29;
@@ -175,6 +189,7 @@
             // txtSoLuongThuoc
             // 
             this.txtSoLuongThuoc.Location = new System.Drawing.Point(220, 101);
+            this.txtSoLuongThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoLuongThuoc.Name = "txtSoLuongThuoc";
             this.txtSoLuongThuoc.Size = new System.Drawing.Size(218, 26);
             this.txtSoLuongThuoc.TabIndex = 30;
@@ -193,7 +208,7 @@
             // 
             this.btnCapNhatDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnCapNhatDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(806, 258);
+            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(743, 259);
             this.btnCapNhatDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatDonThuoc.Name = "btnCapNhatDonThuoc";
             this.btnCapNhatDonThuoc.Size = new System.Drawing.Size(114, 39);
@@ -206,7 +221,7 @@
             // 
             this.btnXoaDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDonThuoc.Location = new System.Drawing.Point(961, 258);
+            this.btnXoaDonThuoc.Location = new System.Drawing.Point(928, 259);
             this.btnXoaDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDonThuoc.Name = "btnXoaDonThuoc";
             this.btnXoaDonThuoc.Size = new System.Drawing.Size(96, 39);
@@ -219,7 +234,7 @@
             // 
             this.btnThemDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDonThuoc.Location = new System.Drawing.Point(669, 258);
+            this.btnThemDonThuoc.Location = new System.Drawing.Point(565, 259);
             this.btnThemDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDonThuoc.Name = "btnThemDonThuoc";
             this.btnThemDonThuoc.Size = new System.Drawing.Size(99, 39);
@@ -228,42 +243,22 @@
             this.btnThemDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemDonThuoc.UseVisualStyleBackColor = true;
             // 
-            // btnTimKiemSDTBN
-            // 
-            this.btnTimKiemSDTBN.Image = global::HMS_NHOM25.Properties.Resources.find__1_;
-            this.btnTimKiemSDTBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemSDTBN.Location = new System.Drawing.Point(526, 258);
-            this.btnTimKiemSDTBN.Name = "btnTimKiemSDTBN";
-            this.btnTimKiemSDTBN.Size = new System.Drawing.Size(109, 39);
-            this.btnTimKiemSDTBN.TabIndex = 19;
-            this.btnTimKiemSDTBN.Text = "Tìm kiếm";
-            this.btnTimKiemSDTBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiemSDTBN.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(218, 49);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 28);
-            this.comboBox1.TabIndex = 36;
-            // 
             // DonThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 688);
+            this.ClientSize = new System.Drawing.Size(1091, 854);
             this.Controls.Add(this.btnCapNhatDonThuoc);
             this.Controls.Add(this.btnXoaDonThuoc);
             this.Controls.Add(this.btnThemDonThuoc);
             this.Controls.Add(this.grbInfoDonThuoc);
             this.Controls.Add(this.labDSDT);
             this.Controls.Add(this.dgvInfoDSDonThuoc);
-            this.Controls.Add(this.btnTimKiemSDTBN);
             this.Controls.Add(this.txtTimKiemSDTBN);
             this.Controls.Add(this.labTenBNTimKiem);
             this.Controls.Add(this.labTimKiemDT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DonThuoc";
             this.Text = "DonThuoc";
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSDonThuoc)).EndInit();
@@ -279,7 +274,6 @@
         private System.Windows.Forms.Label labTimKiemDT;
         private System.Windows.Forms.Label labTenBNTimKiem;
         private System.Windows.Forms.TextBox txtTimKiemSDTBN;
-        private System.Windows.Forms.Button btnTimKiemSDTBN;
         private System.Windows.Forms.DataGridView dgvInfoDSDonThuoc;
         private System.Windows.Forms.Label labDSDT;
         private System.Windows.Forms.GroupBox grbInfoDonThuoc;
