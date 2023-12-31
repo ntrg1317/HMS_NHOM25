@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace HMS_NHOM25
 {
     public partial class Doctors : Form
     {
+        BaseModel bacSi = new BaseModel();
         public Doctors()
         {
             InitializeComponent();
@@ -49,7 +51,14 @@ namespace HMS_NHOM25
 
         private void Doctors_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                dgvInfoBS.DataSource = bacSi.all("bacSi");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi" + ex.Message);
+            }
         }
     }
 }
