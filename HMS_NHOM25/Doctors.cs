@@ -24,7 +24,7 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private void Doctors_Load(object sender, EventArgs e)
+        public void Doctors_Load(object sender, EventArgs e)
         {
             try
             {

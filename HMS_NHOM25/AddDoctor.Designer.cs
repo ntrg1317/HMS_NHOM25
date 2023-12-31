@@ -359,6 +359,7 @@
             this.btnThoatAddBS.TabIndex = 9;
             this.btnThoatAddBS.Text = "Thoát";
             this.btnThoatAddBS.UseVisualStyleBackColor = true;
+            this.btnThoatAddBS.Click += new System.EventHandler(this.btnThoatAddBS_Click);
             // 
             // btnSaveInfoBS
             // 

@@ -100,30 +100,49 @@ namespace HMS_NHOM25
         {
             if (CheckTextBoxes())
             {
-                GetValuesTextBoxes();
-        
-                string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('2', N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
-
-                try
+                using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
                 {
-                    if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    sqlConnection.Open();
+                    SqlTransaction transaction = sqlConnection.BeginTransaction();
+
+                    GetValuesTextBoxes();
+
+                    string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('2', N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
+
+                    try
                     {
-                        taiKhoan.Command(query2);
-                        int id = taiKhoan.getLastInsertID("MaTK", "taiKhoan");
+                        if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        {
+                            taiKhoan.Command(query2);
+                            int id = taiKhoan.getLastInsertID("MaTK", "taiKhoan");
 
-                        string query1 = "INSERT INTO bacSi VALUES (id, N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "')";
+                            string query1 = "INSERT INTO bacSi (MaBS, TenBS, NgaySinh, GioiTinh, SDT, DiaChi, ChuyenMon, BangCap) VALUES " +
+                                "('" + id + "', N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.Sdt + "' , N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "')";
 
-                        Doctor.Command(query1);
+                            Doctor.Command(query1);
 
-                        MessageBox.Show("Lưu thông tin thành công!");
-                        AddDoctor_Load(sender, e);
+                            transaction.Commit();
+
+                            MessageBox.Show("Lưu thông tin thành công!");
+                            AddDoctor_Load(sender, e);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        MessageBox.Show("Lỗi: " + ex.Message);
+                    }
+                    finally
+                    {
+                        sqlConnection.Close();
                     }
                 }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
             }
+        }
+
+        private void btnThoatAddBS_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
