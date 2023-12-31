@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace HMS_NHOM25
 {
     public partial class Phong : Form
     {
+        BaseModel phong = new BaseModel();
+        private string table = "phong";
         public Phong()
         {
             InitializeComponent();
@@ -19,20 +22,17 @@ namespace HMS_NHOM25
 
         private void Phong_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                dgvInforPhong.DataSource = phong.all(table);
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show("Error: ", ex.Message);
+            }
         }
 
-        private void grbInforQTV_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
+        private void dgvDanhMucPhong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

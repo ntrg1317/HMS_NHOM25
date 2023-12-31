@@ -71,7 +71,6 @@
             this.labAddNVTN.Size = new System.Drawing.Size(362, 32);
             this.labAddNVTN.TabIndex = 0;
             this.labAddNVTN.Text = "Thêm Nhân viên thu ngân";
-            this.labAddNVTN.Click += new System.EventHandler(this.labAddBS_Click);
             // 
             // palAddNVTN
             // 
@@ -107,7 +106,6 @@
             this.grbAddInfoNVTNM.TabIndex = 5;
             this.grbAddInfoNVTNM.TabStop = false;
             this.grbAddInfoNVTNM.Text = "Thông tin nhân viên thu ngân mới";
-            this.grbAddInfoNVTNM.Enter += new System.EventHandler(this.grbAddInfoBS_Enter);
             // 
             // cobDiaChiNVTNM
             // 
@@ -210,7 +208,6 @@
             this.labTenNVTNM.Size = new System.Drawing.Size(77, 20);
             this.labTenNVTNM.TabIndex = 1;
             this.labTenNVTNM.Text = "Họ và tên";
-            this.labTenNVTNM.Click += new System.EventHandler(this.label4_Click);
             // 
             // labSexNVTNM
             // 
@@ -221,7 +218,6 @@
             this.labSexNVTNM.Size = new System.Drawing.Size(67, 20);
             this.labSexNVTNM.TabIndex = 0;
             this.labSexNVTNM.Text = "Giới tính";
-            this.labSexNVTNM.Click += new System.EventHandler(this.label2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -342,7 +338,6 @@
             this.Name = "AddNVTN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNVTN";
-            this.Load += new System.EventHandler(this.AddDoctor_Load);
             this.palAddNVTN.ResumeLayout(false);
             this.palAddNVTN.PerformLayout();
             this.grbAddInfoNVTNM.ResumeLayout(false);

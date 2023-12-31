@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbInfoHoaDon = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.labVND = new System.Windows.Forms.Label();
             this.labTienThuoc = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
@@ -38,12 +39,10 @@
             this.txtTimKiemSDTBN = new System.Windows.Forms.TextBox();
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.labTimKiemDT = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaDonThuoc = new System.Windows.Forms.Button();
             this.btnThemDonThuoc = new System.Windows.Forms.Button();
-            this.btnTimKiemSDTBN = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.grbInfoHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSHoaDon)).BeginInit();
             this.SuspendLayout();
@@ -57,11 +56,22 @@
             this.grbInfoHoaDon.Controls.Add(this.labSoLuongThuoc);
             this.grbInfoHoaDon.ForeColor = System.Drawing.Color.Red;
             this.grbInfoHoaDon.Location = new System.Drawing.Point(26, 26);
+            this.grbInfoHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoHoaDon.Name = "grbInfoHoaDon";
-            this.grbInfoHoaDon.Size = new System.Drawing.Size(1014, 101);
+            this.grbInfoHoaDon.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbInfoHoaDon.Size = new System.Drawing.Size(1037, 101);
             this.grbInfoHoaDon.TabIndex = 32;
             this.grbInfoHoaDon.TabStop = false;
             this.grbInfoHoaDon.Text = "Thông tin hóa đơn";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(184, 45);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(164, 26);
+            this.dateTimePicker1.TabIndex = 36;
             // 
             // labVND
             // 
@@ -86,6 +96,7 @@
             // txtTongTien
             // 
             this.txtTongTien.Location = new System.Drawing.Point(712, 45);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(167, 26);
             this.txtTongTien.TabIndex = 34;
@@ -104,7 +115,7 @@
             // 
             this.labDSDT.AutoSize = true;
             this.labDSDT.ForeColor = System.Drawing.Color.Red;
-            this.labDSDT.Location = new System.Drawing.Point(22, 243);
+            this.labDSDT.Location = new System.Drawing.Point(22, 242);
             this.labDSDT.Name = "labDSDT";
             this.labDSDT.Size = new System.Drawing.Size(148, 20);
             this.labDSDT.TabIndex = 31;
@@ -112,17 +123,25 @@
             // 
             // dgvInfoDSHoaDon
             // 
+            this.dgvInfoDSHoaDon.AllowUserToAddRows = false;
+            this.dgvInfoDSHoaDon.AllowUserToDeleteRows = false;
+            this.dgvInfoDSHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoDSHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoDSHoaDon.Location = new System.Drawing.Point(26, 291);
+            this.dgvInfoDSHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDSHoaDon.Name = "dgvInfoDSHoaDon";
+            this.dgvInfoDSHoaDon.ReadOnly = true;
             this.dgvInfoDSHoaDon.RowHeadersWidth = 62;
             this.dgvInfoDSHoaDon.RowTemplate.Height = 28;
-            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1012, 311);
+            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1037, 534);
             this.dgvInfoDSHoaDon.TabIndex = 30;
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(210, 187);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(210, 188);
+            this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(164, 26);
             this.txtTimKiemSDTBN.TabIndex = 27;
@@ -131,7 +150,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(73, 193);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(73, 192);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 28;
@@ -141,17 +160,27 @@
             // 
             this.labTimKiemDT.AutoSize = true;
             this.labTimKiemDT.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemDT.Location = new System.Drawing.Point(-107, 107);
+            this.labTimKiemDT.Location = new System.Drawing.Point(-107, 108);
             this.labTimKiemDT.Name = "labTimKiemDT";
             this.labTimKiemDT.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemDT.TabIndex = 26;
             this.labTimKiemDT.Text = "Tìm kiếm";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(22, 148);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Tìm kiếm";
+            // 
             // btnCapNhatDonThuoc
             // 
             this.btnCapNhatDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnCapNhatDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(774, 181);
+            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(700, 182);
             this.btnCapNhatDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatDonThuoc.Name = "btnCapNhatDonThuoc";
             this.btnCapNhatDonThuoc.Size = new System.Drawing.Size(114, 39);
@@ -164,7 +193,7 @@
             // 
             this.btnXoaDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDonThuoc.Location = new System.Drawing.Point(944, 181);
+            this.btnXoaDonThuoc.Location = new System.Drawing.Point(911, 181);
             this.btnXoaDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDonThuoc.Name = "btnXoaDonThuoc";
             this.btnXoaDonThuoc.Size = new System.Drawing.Size(96, 39);
@@ -177,7 +206,7 @@
             // 
             this.btnThemDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDonThuoc.Location = new System.Drawing.Point(614, 181);
+            this.btnThemDonThuoc.Location = new System.Drawing.Point(497, 181);
             this.btnThemDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDonThuoc.Name = "btnThemDonThuoc";
             this.btnThemDonThuoc.Size = new System.Drawing.Size(99, 39);
@@ -186,41 +215,11 @@
             this.btnThemDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemDonThuoc.UseVisualStyleBackColor = true;
             // 
-            // btnTimKiemSDTBN
-            // 
-            this.btnTimKiemSDTBN.Image = global::HMS_NHOM25.Properties.Resources.find__1_;
-            this.btnTimKiemSDTBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemSDTBN.Location = new System.Drawing.Point(447, 181);
-            this.btnTimKiemSDTBN.Name = "btnTimKiemSDTBN";
-            this.btnTimKiemSDTBN.Size = new System.Drawing.Size(109, 39);
-            this.btnTimKiemSDTBN.TabIndex = 29;
-            this.btnTimKiemSDTBN.Text = "Tìm kiếm";
-            this.btnTimKiemSDTBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiemSDTBN.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(22, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "Tìm kiếm";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(184, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 26);
-            this.dateTimePicker1.TabIndex = 36;
-            // 
             // DSHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 632);
+            this.ClientSize = new System.Drawing.Size(1091, 851);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCapNhatDonThuoc);
             this.Controls.Add(this.btnXoaDonThuoc);
@@ -228,12 +227,14 @@
             this.Controls.Add(this.grbInfoHoaDon);
             this.Controls.Add(this.labDSDT);
             this.Controls.Add(this.dgvInfoDSHoaDon);
-            this.Controls.Add(this.btnTimKiemSDTBN);
             this.Controls.Add(this.txtTimKiemSDTBN);
             this.Controls.Add(this.labTenBNTimKiem);
             this.Controls.Add(this.labTimKiemDT);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DSHoaDon";
             this.Text = "DSHoaDon";
+            this.Load += new System.EventHandler(this.DSHoaDon_Load);
             this.grbInfoHoaDon.ResumeLayout(false);
             this.grbInfoHoaDon.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSHoaDon)).EndInit();
@@ -254,7 +255,6 @@
         private System.Windows.Forms.Label labSoLuongThuoc;
         private System.Windows.Forms.Label labDSDT;
         private System.Windows.Forms.DataGridView dgvInfoDSHoaDon;
-        private System.Windows.Forms.Button btnTimKiemSDTBN;
         private System.Windows.Forms.TextBox txtTimKiemSDTBN;
         private System.Windows.Forms.Label labTenBNTimKiem;
         private System.Windows.Forms.Label labTimKiemDT;

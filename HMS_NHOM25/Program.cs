@@ -14,18 +14,9 @@ namespace HMS_NHOM25
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new login());
-            //Application.Run(new AddThuoc());
-            //Application.Run(new Doctors());
-            //Application.Run(new Admin());
-            //Application.Run(new NVYTe());
-            //Application.Run(new NVThuNgan());
-            //Application.Run(new AddDoctor());
-            //Application.Run(new DonThuoc());
-            //Application.Run(new AddDonThuoc());
             Application.Run(new AdminControl());
         }
     }

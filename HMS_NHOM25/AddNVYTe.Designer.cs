@@ -71,7 +71,6 @@
             this.labAddBS.Size = new System.Drawing.Size(292, 32);
             this.labAddBS.TabIndex = 0;
             this.labAddBS.Text = "Thêm Nhân viên y tế";
-            this.labAddBS.Click += new System.EventHandler(this.labAddBS_Click);
             // 
             // palAddBS
             // 
@@ -119,7 +118,6 @@
             this.grbAddInfoNVYTeM.TabIndex = 5;
             this.grbAddInfoNVYTeM.TabStop = false;
             this.grbAddInfoNVYTeM.Text = "Thông tin nhân viên y tế mới";
-            this.grbAddInfoNVYTeM.Enter += new System.EventHandler(this.grbAddInfoBS_Enter);
             // 
             // cobDiaChiNVYTeM
             // 
@@ -222,7 +220,6 @@
             this.labTenNVYTeM.Size = new System.Drawing.Size(77, 20);
             this.labTenNVYTeM.TabIndex = 1;
             this.labTenNVYTeM.Text = "Họ và tên";
-            this.labTenNVYTeM.Click += new System.EventHandler(this.label4_Click);
             // 
             // labSexNVYTeM
             // 
@@ -233,7 +230,6 @@
             this.labSexNVYTeM.Size = new System.Drawing.Size(67, 20);
             this.labSexNVYTeM.TabIndex = 0;
             this.labSexNVYTeM.Text = "Giới tính";
-            this.labSexNVYTeM.Click += new System.EventHandler(this.label2_Click);
             // 
             // contextMenuStrip1
             // 
@@ -342,7 +338,6 @@
             this.Name = "AddNVYTe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddNVYTe";
-            this.Load += new System.EventHandler(this.AddDoctor_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();

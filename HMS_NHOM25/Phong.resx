@@ -117,4 +117,280 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtTenPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 24</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtTenPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txtTenPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtTenPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;txtTenPhong.Name" xml:space="preserve">
+    <value>txtTenPhong</value>
+  </data>
+  <data name="&gt;&gt;txtTenPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTenPhong.Parent" xml:space="preserve">
+    <value>grbTimKiem</value>
+  </data>
+  <data name="&gt;&gt;txtTenPhong.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labTenPhong.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labTenPhong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labTenPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 29</value>
+  </data>
+  <data name="labTenPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="labTenPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="labTenPhong.Text" xml:space="preserve">
+    <value>Tên phòng</value>
+  </data>
+  <data name="&gt;&gt;labTenPhong.Name" xml:space="preserve">
+    <value>labTenPhong</value>
+  </data>
+  <data name="&gt;&gt;labTenPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labTenPhong.Parent" xml:space="preserve">
+    <value>grbTimKiem</value>
+  </data>
+  <data name="&gt;&gt;labTenPhong.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnTimKiemPhong.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btnTimKiemPhong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnTimKiemPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 18</value>
+  </data>
+  <data name="btnTimKiemPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btnTimKiemPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 35</value>
+  </data>
+  <data name="btnTimKiemPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="btnTimKiemPhong.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="btnTimKiemPhong.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;btnTimKiemPhong.Name" xml:space="preserve">
+    <value>btnTimKiemPhong</value>
+  </data>
+  <data name="&gt;&gt;btnTimKiemPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTimKiemPhong.Parent" xml:space="preserve">
+    <value>grbTimKiem</value>
+  </data>
+  <data name="&gt;&gt;btnTimKiemPhong.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grbTimKiem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 12</value>
+  </data>
+  <data name="grbTimKiem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>927, 67</value>
+  </data>
+  <data name="grbTimKiem.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="grbTimKiem.Text" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="&gt;&gt;grbTimKiem.Name" xml:space="preserve">
+    <value>grbTimKiem</value>
+  </data>
+  <data name="&gt;&gt;grbTimKiem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbTimKiem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grbTimKiem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grbDanhMucPhong.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="colMaPhong.HeaderText" xml:space="preserve">
+    <value>Mã phòng</value>
+  </data>
+  <data name="colMaPhong.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colMaPhong.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="colTenPhong.HeaderText" xml:space="preserve">
+    <value>Tên phòng</value>
+  </data>
+  <data name="colTenPhong.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colTenPhong.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="colSoGiuong.HeaderText" xml:space="preserve">
+    <value>Số giường</value>
+  </data>
+  <data name="colSoGiuong.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colSoGiuong.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="colTienPhong.HeaderText" xml:space="preserve">
+    <value>Tiền phòng</value>
+  </data>
+  <data name="colTienPhong.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colTienPhong.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="colTrangThai.HeaderText" xml:space="preserve">
+    <value>Trạng Thái</value>
+  </data>
+  <data name="colTrangThai.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colTrangThai.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="colThongTinChiTiet.HeaderText" xml:space="preserve">
+    <value>Thông tin chi tiết</value>
+  </data>
+  <data name="colThongTinChiTiet.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="colThongTinChiTiet.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="dgvDanhMucPhong.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvDanhMucPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="dgvDanhMucPhong.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dgvDanhMucPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>921, 422</value>
+  </data>
+  <data name="dgvDanhMucPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhMucPhong.Name" xml:space="preserve">
+    <value>dgvDanhMucPhong</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhMucPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhMucPhong.Parent" xml:space="preserve">
+    <value>grbDanhMucPhong</value>
+  </data>
+  <data name="&gt;&gt;dgvDanhMucPhong.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grbDanhMucPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 95</value>
+  </data>
+  <data name="grbDanhMucPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>927, 443</value>
+  </data>
+  <data name="grbDanhMucPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="grbDanhMucPhong.Text" xml:space="preserve">
+    <value>Danh mục phòng</value>
+  </data>
+  <data name="&gt;&gt;grbDanhMucPhong.Name" xml:space="preserve">
+    <value>grbDanhMucPhong</value>
+  </data>
+  <data name="&gt;&gt;grbDanhMucPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grbDanhMucPhong.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grbDanhMucPhong.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>970, 550</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Phòng</value>
+  </data>
+  <data name="&gt;&gt;colThongTinChiTiet.Name" xml:space="preserve">
+    <value>colThongTinChiTiet</value>
+  </data>
+  <data name="&gt;&gt;colThongTinChiTiet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTrangThai.Name" xml:space="preserve">
+    <value>colTrangThai</value>
+  </data>
+  <data name="&gt;&gt;colTrangThai.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTienPhong.Name" xml:space="preserve">
+    <value>colTienPhong</value>
+  </data>
+  <data name="&gt;&gt;colTienPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colSoGiuong.Name" xml:space="preserve">
+    <value>colSoGiuong</value>
+  </data>
+  <data name="&gt;&gt;colSoGiuong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTenPhong.Name" xml:space="preserve">
+    <value>colTenPhong</value>
+  </data>
+  <data name="&gt;&gt;colTenPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colMaPhong.Name" xml:space="preserve">
+    <value>colMaPhong</value>
+  </data>
+  <data name="&gt;&gt;colMaPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Phong</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
