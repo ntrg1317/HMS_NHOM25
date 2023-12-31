@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -91,8 +92,7 @@ namespace HMS_NHOM25
             string _bangCap = txtBangCapBSM.Text;
             string _tenDNBS = txtTenDNBSM.Text;
             string _matKhauBS = txtMatKhauBSM.Text;
-            int _trangThai = int.Parse(cobTrangThaiBSM.Text);
-            qlBacSi = new TestBacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS, _trangThai);
+            qlBacSi = new TestBacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS);
 
         }
 
@@ -101,14 +101,20 @@ namespace HMS_NHOM25
             if (CheckTextBoxes())
             {
                 GetValuesTextBoxes();
-                string query1 = "INSERT INTO bacSi VALUES (N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "', '" + qlBacSi.TrangThai + "')";
-                string query2 = "INSERT INTO taiKhoan VALUES (2, N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "') SELECT SCOPE_IDENTITY()";
+        
+                string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('2', N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
+
                 try
                 {
                     if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        int id = taiKhoan.getLastInsertID(query2);
-                        Console.WriteLine(id);
+                        taiKhoan.Command(query2);
+                        int id = taiKhoan.getLastInsertID("MaTK", "taiKhoan");
+
+                        string query1 = "INSERT INTO bacSi VALUES (id, N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "')";
+
+                        Doctor.Command(query1);
+
                         MessageBox.Show("Lưu thông tin thành công!");
                         AddDoctor_Load(sender, e);
                     }
