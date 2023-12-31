@@ -35,7 +35,7 @@
             this.dgvInfoDSDonThuoc = new System.Windows.Forms.DataGridView();
             this.labDSDT = new System.Windows.Forms.Label();
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTenThuoc = new System.Windows.Forms.ComboBox();
             this.labVND = new System.Windows.Forms.Label();
             this.labTienThuoc = new System.Windows.Forms.Label();
             this.txtTienThuoc = new System.Windows.Forms.TextBox();
@@ -78,17 +78,23 @@
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(218, 26);
             this.txtTimKiemSDTBN.TabIndex = 18;
+            this.txtTimKiemSDTBN.TextChanged += new System.EventHandler(this.txtTimKiemSDTBN_TextChanged);
             // 
             // dgvInfoDSDonThuoc
             // 
+            this.dgvInfoDSDonThuoc.AllowUserToAddRows = false;
+            this.dgvInfoDSDonThuoc.AllowUserToDeleteRows = false;
             this.dgvInfoDSDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoDSDonThuoc.Location = new System.Drawing.Point(27, 378);
             this.dgvInfoDSDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDSDonThuoc.Name = "dgvInfoDSDonThuoc";
+            this.dgvInfoDSDonThuoc.ReadOnly = true;
             this.dgvInfoDSDonThuoc.RowHeadersWidth = 62;
             this.dgvInfoDSDonThuoc.RowTemplate.Height = 28;
+            this.dgvInfoDSDonThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoDSDonThuoc.Size = new System.Drawing.Size(1028, 450);
             this.dgvInfoDSDonThuoc.TabIndex = 20;
+            this.dgvInfoDSDonThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoDSDonThuoc_CellClick);
             // 
             // labDSDT
             // 
@@ -102,7 +108,7 @@
             // 
             // grbInfoDonThuoc
             // 
-            this.grbInfoDonThuoc.Controls.Add(this.comboBox1);
+            this.grbInfoDonThuoc.Controls.Add(this.cmbTenThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.labVND);
             this.grbInfoDonThuoc.Controls.Add(this.labTienThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.txtTienThuoc);
@@ -121,14 +127,14 @@
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Thông tin đơn thuốc";
             // 
-            // comboBox1
+            // cmbTenThuoc
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(218, 49);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 28);
-            this.comboBox1.TabIndex = 36;
+            this.cmbTenThuoc.FormattingEnabled = true;
+            this.cmbTenThuoc.Location = new System.Drawing.Point(218, 49);
+            this.cmbTenThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbTenThuoc.Name = "cmbTenThuoc";
+            this.cmbTenThuoc.Size = new System.Drawing.Size(219, 28);
+            this.cmbTenThuoc.TabIndex = 36;
             // 
             // labVND
             // 
@@ -288,6 +294,6 @@
         private System.Windows.Forms.Button btnCapNhatDonThuoc;
         private System.Windows.Forms.Button btnXoaDonThuoc;
         private System.Windows.Forms.Button btnThemDonThuoc;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTenThuoc;
     }
 }

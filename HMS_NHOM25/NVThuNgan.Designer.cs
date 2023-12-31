@@ -31,7 +31,6 @@
         {
             this.grbInforNVTN = new System.Windows.Forms.GroupBox();
             this.cobTrangThaiNVTN = new System.Windows.Forms.ComboBox();
-            this.cobDiaChiNVTN = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhNVTN = new System.Windows.Forms.ComboBox();
             this.DOBNVTN = new System.Windows.Forms.DateTimePicker();
             this.txtSDTNVTN = new System.Windows.Forms.TextBox();
@@ -52,14 +51,15 @@
             this.btnSuaNVTN = new System.Windows.Forms.Button();
             this.btnXoaNVTN = new System.Windows.Forms.Button();
             this.btnThemNVTN = new System.Windows.Forms.Button();
+            this.txtDiaChiNVTN = new System.Windows.Forms.TextBox();
             this.grbInforNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVTN)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInforNVTN
             // 
+            this.grbInforNVTN.Controls.Add(this.txtDiaChiNVTN);
             this.grbInforNVTN.Controls.Add(this.cobTrangThaiNVTN);
-            this.grbInforNVTN.Controls.Add(this.cobDiaChiNVTN);
             this.grbInforNVTN.Controls.Add(this.cobGioiTinhNVTN);
             this.grbInforNVTN.Controls.Add(this.DOBNVTN);
             this.grbInforNVTN.Controls.Add(this.txtSDTNVTN);
@@ -93,19 +93,6 @@
             this.cobTrangThaiNVTN.Name = "cobTrangThaiNVTN";
             this.cobTrangThaiNVTN.Size = new System.Drawing.Size(184, 28);
             this.cobTrangThaiNVTN.TabIndex = 17;
-            // 
-            // cobDiaChiNVTN
-            // 
-            this.cobDiaChiNVTN.FormattingEnabled = true;
-            this.cobDiaChiNVTN.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiNVTN.Location = new System.Drawing.Point(450, 94);
-            this.cobDiaChiNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiNVTN.Name = "cobDiaChiNVTN";
-            this.cobDiaChiNVTN.Size = new System.Drawing.Size(180, 28);
-            this.cobDiaChiNVTN.TabIndex = 16;
             // 
             // cobGioiTinhNVTN
             // 
@@ -250,9 +237,12 @@
             this.txtTimKiemNVTN.Name = "txtTimKiemNVTN";
             this.txtTimKiemNVTN.Size = new System.Drawing.Size(184, 26);
             this.txtTimKiemNVTN.TabIndex = 18;
+            this.txtTimKiemNVTN.TextChanged += new System.EventHandler(this.txtTimKiemNVTN_TextChanged);
             // 
             // dgvInfoNVTN
             // 
+            this.dgvInfoNVTN.AllowUserToAddRows = false;
+            this.dgvInfoNVTN.AllowUserToDeleteRows = false;
             this.dgvInfoNVTN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -261,10 +251,13 @@
             this.dgvInfoNVTN.Location = new System.Drawing.Point(35, 329);
             this.dgvInfoNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoNVTN.Name = "dgvInfoNVTN";
+            this.dgvInfoNVTN.ReadOnly = true;
             this.dgvInfoNVTN.RowHeadersWidth = 62;
             this.dgvInfoNVTN.RowTemplate.Height = 28;
+            this.dgvInfoNVTN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoNVTN.Size = new System.Drawing.Size(1022, 495);
             this.dgvInfoNVTN.TabIndex = 23;
+            this.dgvInfoNVTN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoNVTN_CellClick);
             // 
             // btnSuaNVTN
             // 
@@ -305,6 +298,14 @@
             this.btnThemNVTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNVTN.UseVisualStyleBackColor = true;
             this.btnThemNVTN.Click += new System.EventHandler(this.btnThemNVTN_Click);
+            // 
+            // txtDiaChiNVTN
+            // 
+            this.txtDiaChiNVTN.Location = new System.Drawing.Point(450, 96);
+            this.txtDiaChiNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChiNVTN.Name = "txtDiaChiNVTN";
+            this.txtDiaChiNVTN.Size = new System.Drawing.Size(184, 26);
+            this.txtDiaChiNVTN.TabIndex = 18;
             // 
             // NVThuNgan
             // 
@@ -348,7 +349,6 @@
         private System.Windows.Forms.TextBox txtMaNVTN;
         private System.Windows.Forms.DateTimePicker DOBNVTN;
         private System.Windows.Forms.ComboBox cobGioiTinhNVTN;
-        private System.Windows.Forms.ComboBox cobDiaChiNVTN;
         private System.Windows.Forms.ComboBox cobTrangThaiNVTN;
         private System.Windows.Forms.Label labTimKiemNVTN;
         private System.Windows.Forms.Label labTenNVTNTimKiem;
@@ -357,5 +357,6 @@
         private System.Windows.Forms.Button btnXoaNVTN;
         private System.Windows.Forms.Button btnSuaNVTN;
         private System.Windows.Forms.DataGridView dgvInfoNVTN;
+        private System.Windows.Forms.TextBox txtDiaChiNVTN;
     }
 }

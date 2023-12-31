@@ -34,12 +34,10 @@
             this.grbAddInfoBS = new System.Windows.Forms.GroupBox();
             this.txtDiaChiBSM = new System.Windows.Forms.TextBox();
             this.cobChuyenMonBSM = new System.Windows.Forms.ComboBox();
-            this.cobTrangThaiBSM = new System.Windows.Forms.ComboBox();
             this.cobSexBSM = new System.Windows.Forms.ComboBox();
             this.DOBBSM = new System.Windows.Forms.DateTimePicker();
             this.txtBangCapBSM = new System.Windows.Forms.TextBox();
             this.txtSDTBSM = new System.Windows.Forms.TextBox();
-            this.labTrangThaiBSM = new System.Windows.Forms.Label();
             this.labChuyenMonBSM = new System.Windows.Forms.Label();
             this.labDiaChiBSM = new System.Windows.Forms.Label();
             this.labBangCapBSM = new System.Windows.Forms.Label();
@@ -101,12 +99,10 @@
             // 
             this.grbAddInfoBS.Controls.Add(this.txtDiaChiBSM);
             this.grbAddInfoBS.Controls.Add(this.cobChuyenMonBSM);
-            this.grbAddInfoBS.Controls.Add(this.cobTrangThaiBSM);
             this.grbAddInfoBS.Controls.Add(this.cobSexBSM);
             this.grbAddInfoBS.Controls.Add(this.DOBBSM);
             this.grbAddInfoBS.Controls.Add(this.txtBangCapBSM);
             this.grbAddInfoBS.Controls.Add(this.txtSDTBSM);
-            this.grbAddInfoBS.Controls.Add(this.labTrangThaiBSM);
             this.grbAddInfoBS.Controls.Add(this.labChuyenMonBSM);
             this.grbAddInfoBS.Controls.Add(this.labDiaChiBSM);
             this.grbAddInfoBS.Controls.Add(this.labBangCapBSM);
@@ -157,18 +153,6 @@
             this.cobChuyenMonBSM.Size = new System.Drawing.Size(136, 24);
             this.cobChuyenMonBSM.TabIndex = 16;
             // 
-            // cobTrangThaiBSM
-            // 
-            this.cobTrangThaiBSM.FormattingEnabled = true;
-            this.cobTrangThaiBSM.Items.AddRange(new object[] {
-            "0",
-            "1"});
-            this.cobTrangThaiBSM.Location = new System.Drawing.Point(473, 137);
-            this.cobTrangThaiBSM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobTrangThaiBSM.Name = "cobTrangThaiBSM";
-            this.cobTrangThaiBSM.Size = new System.Drawing.Size(136, 24);
-            this.cobTrangThaiBSM.TabIndex = 14;
-            // 
             // cobSexBSM
             // 
             this.cobSexBSM.FormattingEnabled = true;
@@ -207,16 +191,6 @@
             this.txtSDTBSM.Name = "txtSDTBSM";
             this.txtSDTBSM.Size = new System.Drawing.Size(137, 22);
             this.txtSDTBSM.TabIndex = 9;
-            // 
-            // labTrangThaiBSM
-            // 
-            this.labTrangThaiBSM.AutoSize = true;
-            this.labTrangThaiBSM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiBSM.Location = new System.Drawing.Point(340, 143);
-            this.labTrangThaiBSM.Name = "labTrangThaiBSM";
-            this.labTrangThaiBSM.Size = new System.Drawing.Size(67, 16);
-            this.labTrangThaiBSM.TabIndex = 8;
-            this.labTrangThaiBSM.Text = "Trạng thái";
             // 
             // labChuyenMonBSM
             // 
@@ -359,7 +333,6 @@
             this.btnThoatAddBS.TabIndex = 9;
             this.btnThoatAddBS.Text = "Thoát";
             this.btnThoatAddBS.UseVisualStyleBackColor = true;
-            this.btnThoatAddBS.Click += new System.EventHandler(this.btnThoatAddBS_Click);
             // 
             // btnSaveInfoBS
             // 
@@ -426,9 +399,7 @@
         private System.Windows.Forms.Label labDiaChiBSM;
         private System.Windows.Forms.Label labBangCapBSM;
         private System.Windows.Forms.Label labSDTBSM;
-        private System.Windows.Forms.Label labTrangThaiBSM;
         private System.Windows.Forms.Label labChuyenMonBSM;
-        private System.Windows.Forms.ComboBox cobTrangThaiBSM;
         private System.Windows.Forms.ComboBox cobSexBSM;
         private System.Windows.Forms.DateTimePicker DOBBSM;
         private System.Windows.Forms.TextBox txtBangCapBSM;

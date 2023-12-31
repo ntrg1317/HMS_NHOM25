@@ -62,8 +62,10 @@
             this.dgvInforPhong.ReadOnly = true;
             this.dgvInforPhong.RowHeadersWidth = 51;
             this.dgvInforPhong.RowTemplate.Height = 24;
+            this.dgvInforPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInforPhong.Size = new System.Drawing.Size(998, 435);
             this.dgvInforPhong.TabIndex = 0;
+            this.dgvInforPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforPhong_CellClick);
             // 
             // label2
             // 
@@ -225,6 +227,7 @@
             this.txtTKTenPhong.Name = "txtTKTenPhong";
             this.txtTKTenPhong.Size = new System.Drawing.Size(184, 26);
             this.txtTKTenPhong.TabIndex = 34;
+            this.txtTKTenPhong.TextChanged += new System.EventHandler(this.txtTKTenPhong_TextChanged);
             // 
             // labTenPhong
             // 

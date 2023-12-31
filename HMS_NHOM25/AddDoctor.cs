@@ -38,14 +38,13 @@ namespace HMS_NHOM25
             txtDiaChiBSM.Text = "";
             cobChuyenMonBSM.SelectedIndex = -1;
             txtBangCapBSM.Text = "";
-            cobTrangThaiBSM.SelectedIndex = -1;
 
         }
         private bool CheckTextBoxes()
         {
             if(txtTenBSM.Text == "")
             {
-                MessageBox.Show("Bạn chưa nhập tên!");return false;
+                MessageBox.Show("Bạn chưa nhập tên!"); return false;
             }
             if (txtTenDNBSM.Text == "")
             {
