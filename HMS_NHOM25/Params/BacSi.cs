@@ -8,6 +8,7 @@ namespace HMS_NHOM25.Params
 {
     internal class BacSi
     {
+        
         private string _tenBS;
         private string _ngaySinh;
         private string _gioiTinh;
