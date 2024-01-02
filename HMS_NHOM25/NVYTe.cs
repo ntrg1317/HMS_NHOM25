@@ -60,7 +60,7 @@ namespace HMS_NHOM25
             DOBNVYTe.Text = dgvInfoNVYTe.SelectedRows[0].Cells[2].Value.ToString();
             cobGioiTinhNVYTe.Text = dgvInfoNVYTe.SelectedRows[0].Cells[3].Value.ToString();
             txtSDTNVYTe.Text = dgvInfoNVYTe.SelectedRows[0].Cells[4].Value.ToString();
-            txtDiaChiNVYT.Text = dgvInfoNVYTe.SelectedRows[0].Cells[5].Value.ToString();
+            cobDiaChiNVYT.Text = dgvInfoNVYTe.SelectedRows[0].Cells[5].Value.ToString();
             cobTrangThaiNVYTe.Text = dgvInfoNVYTe.SelectedRows[0].Cells[6].Value.ToString();
         }
     }

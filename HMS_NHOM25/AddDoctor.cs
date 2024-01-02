@@ -35,7 +35,7 @@ namespace HMS_NHOM25
             DOBBSM.Text = "";
             cobSexBSM.SelectedIndex = -1;
             txtSDTBSM.Text = "";
-            txtDiaChiBSM.Text = "";
+            cobDiaChiBSM.Text = "";
             cobChuyenMonBSM.SelectedIndex = -1;
             txtBangCapBSM.Text = "";
 
@@ -66,7 +66,7 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Bạn chưa nhập số điện thoại!"); return false;
             }
-            if (txtDiaChiBSM.Text == "")
+            if (cobDiaChiBSM.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập địa chỉ!"); return false;
             }
@@ -86,7 +86,7 @@ namespace HMS_NHOM25
             string _ngaySinh = DOBBSM.Text;
             string _gioiTinh = cobSexBSM.Text;
             string _sdt = txtSDTBSM.Text;
-            string _diaChi = txtDiaChiBSM.Text;
+            string _diaChi = cobDiaChiBSM.Text;
             string _chuyenMon = cobChuyenMonBSM.Text;
             string _bangCap = txtBangCapBSM.Text;
             string _tenDNBS = txtTenDNBSM.Text;

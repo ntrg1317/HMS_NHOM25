@@ -59,7 +59,7 @@ namespace HMS_NHOM25
             cobGioiTinhBN.Text = dgvInfoBN.SelectedRows[0].Cells[5].Value.ToString();
             txtBenhTrangBN.Text = dgvInfoBN.SelectedRows[0].Cells[6].Value.ToString();
             txtSDTBN.Text = dgvInfoBN.SelectedRows[0].Cells[7].Value.ToString();
-            txtDiaChiBN.Text = dgvInfoBN.SelectedRows[0].Cells[8].Value.ToString();
+            cobDiaChiBN.Text = dgvInfoBN.SelectedRows[0].Cells[8].Value.ToString();
             txtSDTNguoiThan.Text = dgvInfoBN.SelectedRows[0].Cells[9].Value.ToString();
             cobTrangThaiBN.Text = dgvInfoBN.SelectedRows[0].Cells[10].Value.ToString();
         }

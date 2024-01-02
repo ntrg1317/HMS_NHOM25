@@ -70,11 +70,11 @@
             this.grbInforQTV.Controls.Add(this.labTenQTV);
             this.grbInforQTV.Controls.Add(this.labMaQTV);
             this.grbInforQTV.ForeColor = System.Drawing.Color.Red;
-            this.grbInforQTV.Location = new System.Drawing.Point(31, 18);
+            this.grbInforQTV.Location = new System.Drawing.Point(35, 22);
             this.grbInforQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforQTV.Name = "grbInforQTV";
             this.grbInforQTV.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInforQTV.Size = new System.Drawing.Size(904, 166);
+            this.grbInforQTV.Size = new System.Drawing.Size(1017, 208);
             this.grbInforQTV.TabIndex = 0;
             this.grbInforQTV.TabStop = false;
             this.grbInforQTV.Text = "Thông tin quản trị viên";
@@ -85,23 +85,83 @@
             this.cobTrangThaiQTV.Items.AddRange(new object[] {
             "Hoạt Động",
             "Ngừng hoạt động"});
-            this.cobTrangThaiQTV.Location = new System.Drawing.Point(130, 114);
+            this.cobTrangThaiQTV.Location = new System.Drawing.Point(146, 142);
             this.cobTrangThaiQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobTrangThaiQTV.Name = "cobTrangThaiQTV";
-            this.cobTrangThaiQTV.Size = new System.Drawing.Size(164, 24);
+            this.cobTrangThaiQTV.Size = new System.Drawing.Size(184, 28);
             this.cobTrangThaiQTV.TabIndex = 17;
             // 
             // cobDiaChiQTV
             // 
             this.cobDiaChiQTV.FormattingEnabled = true;
             this.cobDiaChiQTV.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiQTV.Location = new System.Drawing.Point(400, 75);
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
+            this.cobDiaChiQTV.Location = new System.Drawing.Point(450, 94);
             this.cobDiaChiQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobDiaChiQTV.Name = "cobDiaChiQTV";
-            this.cobDiaChiQTV.Size = new System.Drawing.Size(160, 24);
+            this.cobDiaChiQTV.Size = new System.Drawing.Size(180, 28);
             this.cobDiaChiQTV.TabIndex = 16;
             // 
             // cobGioiTinhQTV
@@ -111,52 +171,52 @@
             "Nam",
             "Nữ",
             "Khác"});
-            this.cobGioiTinhQTV.Location = new System.Drawing.Point(400, 38);
+            this.cobGioiTinhQTV.Location = new System.Drawing.Point(450, 48);
             this.cobGioiTinhQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobGioiTinhQTV.Name = "cobGioiTinhQTV";
-            this.cobGioiTinhQTV.Size = new System.Drawing.Size(160, 24);
+            this.cobGioiTinhQTV.Size = new System.Drawing.Size(180, 28);
             this.cobGioiTinhQTV.TabIndex = 15;
             // 
             // DOBQTV
             // 
             this.DOBQTV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DOBQTV.Location = new System.Drawing.Point(692, 40);
+            this.DOBQTV.Location = new System.Drawing.Point(778, 50);
             this.DOBQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DOBQTV.Name = "DOBQTV";
-            this.DOBQTV.Size = new System.Drawing.Size(162, 22);
+            this.DOBQTV.Size = new System.Drawing.Size(182, 26);
             this.DOBQTV.TabIndex = 13;
             // 
             // txtSDTQTV
             // 
-            this.txtSDTQTV.Location = new System.Drawing.Point(693, 77);
+            this.txtSDTQTV.Location = new System.Drawing.Point(780, 96);
             this.txtSDTQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTQTV.Name = "txtSDTQTV";
-            this.txtSDTQTV.Size = new System.Drawing.Size(160, 22);
+            this.txtSDTQTV.Size = new System.Drawing.Size(180, 26);
             this.txtSDTQTV.TabIndex = 12;
             // 
             // txtTenQTV
             // 
-            this.txtTenQTV.Location = new System.Drawing.Point(130, 77);
+            this.txtTenQTV.Location = new System.Drawing.Point(146, 96);
             this.txtTenQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenQTV.Name = "txtTenQTV";
-            this.txtTenQTV.Size = new System.Drawing.Size(164, 22);
+            this.txtTenQTV.Size = new System.Drawing.Size(184, 26);
             this.txtTenQTV.TabIndex = 10;
             // 
             // txtMaQTV
             // 
-            this.txtMaQTV.Location = new System.Drawing.Point(130, 38);
+            this.txtMaQTV.Location = new System.Drawing.Point(146, 48);
             this.txtMaQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaQTV.Name = "txtMaQTV";
-            this.txtMaQTV.Size = new System.Drawing.Size(164, 22);
+            this.txtMaQTV.Size = new System.Drawing.Size(184, 26);
             this.txtMaQTV.TabIndex = 9;
             // 
             // labTrangThaiQTV
             // 
             this.labTrangThaiQTV.AutoSize = true;
             this.labTrangThaiQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiQTV.Location = new System.Drawing.Point(33, 121);
+            this.labTrangThaiQTV.Location = new System.Drawing.Point(37, 151);
             this.labTrangThaiQTV.Name = "labTrangThaiQTV";
-            this.labTrangThaiQTV.Size = new System.Drawing.Size(67, 16);
+            this.labTrangThaiQTV.Size = new System.Drawing.Size(80, 20);
             this.labTrangThaiQTV.TabIndex = 8;
             this.labTrangThaiQTV.Text = "Trạng thái";
             // 
@@ -164,9 +224,9 @@
             // 
             this.labSDTQTV.AutoSize = true;
             this.labSDTQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSDTQTV.Location = new System.Drawing.Point(609, 82);
+            this.labSDTQTV.Location = new System.Drawing.Point(685, 102);
             this.labSDTQTV.Name = "labSDTQTV";
-            this.labSDTQTV.Size = new System.Drawing.Size(34, 16);
+            this.labSDTQTV.Size = new System.Drawing.Size(41, 20);
             this.labSDTQTV.TabIndex = 5;
             this.labSDTQTV.Text = "SĐT";
             // 
@@ -174,9 +234,9 @@
             // 
             this.labDiaChiQTV.AutoSize = true;
             this.labDiaChiQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labDiaChiQTV.Location = new System.Drawing.Point(332, 82);
+            this.labDiaChiQTV.Location = new System.Drawing.Point(374, 102);
             this.labDiaChiQTV.Name = "labDiaChiQTV";
-            this.labDiaChiQTV.Size = new System.Drawing.Size(47, 16);
+            this.labDiaChiQTV.Size = new System.Drawing.Size(57, 20);
             this.labDiaChiQTV.TabIndex = 4;
             this.labDiaChiQTV.Text = "Địa chỉ";
             // 
@@ -184,9 +244,9 @@
             // 
             this.labSexQTV.AutoSize = true;
             this.labSexQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSexQTV.Location = new System.Drawing.Point(332, 40);
+            this.labSexQTV.Location = new System.Drawing.Point(374, 50);
             this.labSexQTV.Name = "labSexQTV";
-            this.labSexQTV.Size = new System.Drawing.Size(54, 16);
+            this.labSexQTV.Size = new System.Drawing.Size(67, 20);
             this.labSexQTV.TabIndex = 3;
             this.labSexQTV.Text = "Giới tính";
             // 
@@ -194,9 +254,9 @@
             // 
             this.labNgaySinhQTV.AutoSize = true;
             this.labNgaySinhQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgaySinhQTV.Location = new System.Drawing.Point(609, 42);
+            this.labNgaySinhQTV.Location = new System.Drawing.Point(685, 52);
             this.labNgaySinhQTV.Name = "labNgaySinhQTV";
-            this.labNgaySinhQTV.Size = new System.Drawing.Size(67, 16);
+            this.labNgaySinhQTV.Size = new System.Drawing.Size(78, 20);
             this.labNgaySinhQTV.TabIndex = 2;
             this.labNgaySinhQTV.Text = "Ngày sinh";
             // 
@@ -204,9 +264,9 @@
             // 
             this.labTenQTV.AutoSize = true;
             this.labTenQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenQTV.Location = new System.Drawing.Point(33, 82);
+            this.labTenQTV.Location = new System.Drawing.Point(37, 102);
             this.labTenQTV.Name = "labTenQTV";
-            this.labTenQTV.Size = new System.Drawing.Size(64, 16);
+            this.labTenQTV.Size = new System.Drawing.Size(77, 20);
             this.labTenQTV.TabIndex = 1;
             this.labTenQTV.Text = "Họ và tên";
             // 
@@ -214,9 +274,9 @@
             // 
             this.labMaQTV.AutoSize = true;
             this.labMaQTV.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaQTV.Location = new System.Drawing.Point(33, 40);
+            this.labMaQTV.Location = new System.Drawing.Point(37, 50);
             this.labMaQTV.Name = "labMaQTV";
-            this.labMaQTV.Size = new System.Drawing.Size(72, 16);
+            this.labMaQTV.Size = new System.Drawing.Size(85, 20);
             this.labMaQTV.TabIndex = 0;
             this.labMaQTV.Text = "Mã quản lý";
             // 
@@ -224,9 +284,9 @@
             // 
             this.labTimKiemQTV.AutoSize = true;
             this.labTimKiemQTV.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemQTV.Location = new System.Drawing.Point(41, 195);
+            this.labTimKiemQTV.Location = new System.Drawing.Point(46, 244);
             this.labTimKiemQTV.Name = "labTimKiemQTV";
-            this.labTimKiemQTV.Size = new System.Drawing.Size(62, 16);
+            this.labTimKiemQTV.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemQTV.TabIndex = 1;
             this.labTimKiemQTV.Text = "Tìm kiếm";
             // 
@@ -234,19 +294,20 @@
             // 
             this.labTenQTVTimKiem.AutoSize = true;
             this.labTenQTVTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenQTVTimKiem.Location = new System.Drawing.Point(60, 222);
+            this.labTenQTVTimKiem.Location = new System.Drawing.Point(68, 278);
             this.labTenQTVTimKiem.Name = "labTenQTVTimKiem";
-            this.labTenQTVTimKiem.Size = new System.Drawing.Size(77, 16);
+            this.labTenQTVTimKiem.Size = new System.Drawing.Size(90, 20);
             this.labTenQTVTimKiem.TabIndex = 18;
             this.labTenQTVTimKiem.Text = "Tên quản lý";
             // 
             // txtTimKiemQTV
             // 
-            this.txtTimKiemQTV.Location = new System.Drawing.Point(161, 217);
+            this.txtTimKiemQTV.Location = new System.Drawing.Point(181, 271);
             this.txtTimKiemQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemQTV.Name = "txtTimKiemQTV";
-            this.txtTimKiemQTV.Size = new System.Drawing.Size(164, 22);
+            this.txtTimKiemQTV.Size = new System.Drawing.Size(184, 26);
             this.txtTimKiemQTV.TabIndex = 18;
+            this.txtTimKiemQTV.TextChanged += new System.EventHandler(this.txtTimKiemQTV_TextChanged);
             // 
             // dgvInfoQTV
             // 
@@ -255,22 +316,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoQTV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoQTV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoQTV.Location = new System.Drawing.Point(31, 263);
+            this.dgvInfoQTV.Location = new System.Drawing.Point(35, 329);
             this.dgvInfoQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoQTV.Name = "dgvInfoQTV";
             this.dgvInfoQTV.RowHeadersWidth = 62;
             this.dgvInfoQTV.RowTemplate.Height = 28;
-            this.dgvInfoQTV.Size = new System.Drawing.Size(908, 363);
+            this.dgvInfoQTV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInfoQTV.Size = new System.Drawing.Size(1022, 454);
             this.dgvInfoQTV.TabIndex = 23;
+            this.dgvInfoQTV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoQTV_CellClick);
             // 
             // btnSuaQTV
             // 
             this.btnSuaQTV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaQTV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaQTV.Location = new System.Drawing.Point(462, 206);
+            this.btnSuaQTV.Location = new System.Drawing.Point(520, 258);
             this.btnSuaQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaQTV.Name = "btnSuaQTV";
-            this.btnSuaQTV.Size = new System.Drawing.Size(111, 31);
+            this.btnSuaQTV.Size = new System.Drawing.Size(125, 39);
             this.btnSuaQTV.TabIndex = 22;
             this.btnSuaQTV.Text = "Cập nhật";
             this.btnSuaQTV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -278,9 +341,9 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 681);
+            this.ClientSize = new System.Drawing.Size(1094, 851);
             this.Controls.Add(this.dgvInfoQTV);
             this.Controls.Add(this.btnSuaQTV);
             this.Controls.Add(this.txtTimKiemQTV);

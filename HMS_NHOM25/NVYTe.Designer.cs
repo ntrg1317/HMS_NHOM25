@@ -51,14 +51,14 @@ namespace HMS_NHOM25
             this.btnSuaNVYTe = new System.Windows.Forms.Button();
             this.btnXoaNVYTe = new System.Windows.Forms.Button();
             this.btnThemNVYTe = new System.Windows.Forms.Button();
-            this.txtDiaChiNVYT = new System.Windows.Forms.TextBox();
+            this.cobDiaChiNVYT = new System.Windows.Forms.ComboBox();
             this.grbInforNVYTe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVYTe)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInforNVYTe
             // 
-            this.grbInforNVYTe.Controls.Add(this.txtDiaChiNVYT);
+            this.grbInforNVYTe.Controls.Add(this.cobDiaChiNVYT);
             this.grbInforNVYTe.Controls.Add(this.cobTrangThaiNVYTe);
             this.grbInforNVYTe.Controls.Add(this.cobGioiTinhNVYTe);
             this.grbInforNVYTe.Controls.Add(this.DOBNVYTe);
@@ -299,13 +299,80 @@ namespace HMS_NHOM25
             this.btnThemNVYTe.UseVisualStyleBackColor = true;
             this.btnThemNVYTe.Click += new System.EventHandler(this.btnThemNVYTe_Click);
             // 
-            // txtDiaChiNVYT
+            // cobDiaChiNVYT
             // 
-            this.txtDiaChiNVYT.Location = new System.Drawing.Point(450, 99);
-            this.txtDiaChiNVYT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDiaChiNVYT.Name = "txtDiaChiNVYT";
-            this.txtDiaChiNVYT.Size = new System.Drawing.Size(184, 26);
-            this.txtDiaChiNVYT.TabIndex = 18;
+            this.cobDiaChiNVYT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobDiaChiNVYT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobDiaChiNVYT.FormattingEnabled = true;
+            this.cobDiaChiNVYT.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
+            this.cobDiaChiNVYT.Location = new System.Drawing.Point(450, 96);
+            this.cobDiaChiNVYT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobDiaChiNVYT.Name = "cobDiaChiNVYT";
+            this.cobDiaChiNVYT.Size = new System.Drawing.Size(180, 28);
+            this.cobDiaChiNVYT.TabIndex = 18;
             // 
             // NVYTe
             // 
@@ -357,6 +424,6 @@ namespace HMS_NHOM25
         private System.Windows.Forms.Button btnXoaNVYTe;
         private System.Windows.Forms.Button btnSuaNVYTe;
         private System.Windows.Forms.DataGridView dgvInfoNVYTe;
-        private System.Windows.Forms.TextBox txtDiaChiNVYT;
+        private System.Windows.Forms.ComboBox cobDiaChiNVYT;
     }
 }
