@@ -16,7 +16,7 @@ namespace HMS_NHOM25
     public partial class Doctors : Form
     {
         BaseModel bacSi = new BaseModel();
-        InforBS qlBacSi;
+        BacSi qlBacSi;
 
         private string table = "bacSi";
         public Doctors()
@@ -104,7 +104,7 @@ namespace HMS_NHOM25
             string _chuyenMon = cobChuyenMonBS.Text;
             string _bangCap = txtBangCapBS.Text;
             int _trangThai = int.Parse(cobTrangThaiBS.Text);
-            qlBacSi = new InforBS(_maBS, _tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _trangThai);
+            qlBacSi = new BacSi(_maBS, _tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _trangThai);
 
         }
         private void btnSuaBS_Click(object sender, EventArgs e)

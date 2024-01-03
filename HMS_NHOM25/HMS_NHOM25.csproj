@@ -91,10 +91,8 @@
     </Compile>
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\ConnectDB.cs" />
-    <Compile Include="Params\BacSi.cs" />
     <Compile Include="Params\BenhNhan.cs" />
-    <Compile Include="Params\InforBS.cs" />
-    <Compile Include="Params\TestBacSi.cs" />
+    <Compile Include="Params\BacSi.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>
     </Compile>
