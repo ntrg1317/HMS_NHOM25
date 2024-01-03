@@ -8,7 +8,6 @@ namespace HMS_NHOM25.Params
 {
     internal class BacSi
     {
-        private int _maBS;
         private string _tenBS;
         private string _ngaySinh;
         private string _gioiTinh;
@@ -18,11 +17,10 @@ namespace HMS_NHOM25.Params
         private string _bangCap;
         private string _tenDNBS;
         private string _matKhauBS;
-        private int _trangThai;
+        private string _trangThai;
 
-        public BacSi(int maBS, string tenBS, string ngaySinh, string gioiTinh, string sdt, string diaChi, string chuyenMon, string bangCap, string tenDNBS = null, string matKhauBS = null, int trangThai = 1)
+        public BacSi(string tenBS, string ngaySinh, string gioiTinh, string sdt, string diaChi, string chuyenMon, string bangCap, string tenDNBS = null, string matKhauBS = null, string trangThai = null)
         {
-            _maBS = maBS;
             _tenBS = tenBS;
             _ngaySinh = ngaySinh;
             _gioiTinh = gioiTinh;
@@ -44,7 +42,6 @@ namespace HMS_NHOM25.Params
         public string BangCap { get => _bangCap; set => _bangCap = value; }
         public string TenDNBS { get => _tenDNBS; set => _tenDNBS = value; }
         public string MatKhauBS { get => _matKhauBS; set => _matKhauBS = value; }
-        public int MaBS { get => _maBS; set => _maBS = value; }
-        public int TrangThai { get => _trangThai; set => _trangThai = value; }
+        public string TrangThai { get => (_trangThai == "Hoạt động") ? "1" : "0"; set => _trangThai = value; }
     }
 }
