@@ -71,7 +71,6 @@ namespace HMS_NHOM25
             }
             return true;
         }
-
         private void btnSaveBNDV_Click(object sender, EventArgs e)
         {
             if (CheckTextBoxes())

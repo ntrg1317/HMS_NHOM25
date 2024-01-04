@@ -129,7 +129,7 @@ namespace HMS_NHOM25
             string _tenDN = txtTenDNNVTNM.Text;
             string _matKhau = txtMatKhauNVTNM.Text;
 
-            nvtn = new NVThuNganParams(_tenNV, _ngaySinh, _gioiTinh, _sdt, _diaChi, _tenDN, _matKhau);
+            nvtn = new NVThuNganParams(_tenNV, _ngaySinh, _gioiTinh, _sdt, _diaChi,null, _tenDN, _matKhau);
         }
     }
 }

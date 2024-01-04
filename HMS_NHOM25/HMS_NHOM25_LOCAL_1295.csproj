@@ -80,9 +80,7 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -174,11 +172,8 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\BacSi.cs" />
-    <Compile Include="Params\DichVuParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Params\NVThuNganParams.cs" />
-    <Compile Include="Params\PhongParams.cs" />
-    <Compile Include="Params\TaiKhoanParams.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -556,7 +551,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-    <None Include="Resources\add3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
