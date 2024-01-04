@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataThongKe1_x0027_" targetNamespace="http://tempuri.org/DataThongKe1'.xsd" xmlns:mstns="http://tempuri.org/DataThongKe1'.xsd" xmlns="http://tempuri.org/DataThongKe1'.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataThongKe1_x0027_" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataThongKe1'" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="_DataThongKe1_">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Revenue" msprop:Generator_RowEvHandlerName="RevenueRowChangeEventHandler" msprop:Generator_RowDeletedName="RevenueRowDeleted" msprop:Generator_RowDeletingName="RevenueRowDeleting" msprop:Generator_RowEvArgName="RevenueRowChangeEvent" msprop:Generator_TablePropName="Revenue" msprop:Generator_RowChangedName="RevenueRowChanged" msprop:Generator_UserTableName="Revenue" msprop:Generator_RowChangingName="RevenueRowChanging" msprop:Generator_RowClassName="RevenueRow" msprop:Generator_TableClassName="RevenueDataTable" msprop:Generator_TableVarName="tableRevenue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Năm" msprop:Generator_UserColumnName="Năm" msprop:Generator_ColumnPropNameInTable="NămColumn" msprop:Generator_ColumnPropNameInRow="Năm" msprop:Generator_ColumnVarNameInTable="columnNăm" type="xs:short" />
+              <xs:element name="Tổng_x0020_doanh_x0020_thu" msprop:Generator_UserColumnName="Tổng doanh thu" msprop:Generator_ColumnPropNameInTable="Tổng_doanh_thuColumn" msprop:Generator_ColumnPropNameInRow="Tổng_doanh_thu" msprop:Generator_ColumnVarNameInTable="columnTổng_doanh_thu" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Revenue" />
+      <xs:field xpath="mstns:Năm" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
