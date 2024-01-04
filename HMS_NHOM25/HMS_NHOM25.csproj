@@ -93,6 +93,7 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\BacSi.cs" />
+    <Compile Include="Params\NVThuNganParams.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>
     </Compile>

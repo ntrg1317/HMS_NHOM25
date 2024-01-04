@@ -215,12 +215,11 @@ namespace HMS_NHOM25
                         $"TenBN = N'{bn.TenBN}', " +
                         $"MaPhong = N'{bn.MaPhong}', " +
                         $"NgaySinh = N'{bn.NgaySinh}', " +
-                        $"NgaySinh = N'{bn.NgaySinh}', " +
-                        $"GioiVao = N'{bn.NgayVao}', " +
+                        $"NgayVao = N'{bn.NgayVao}', " +
                         $"SDT = N'{bn.Sdt}'," +
                         $"DiaChi = N'{bn.DiaChi}', " +
                         $"BenhTrang = N'{bn.BenhTrang}', " +
-                        $"SĐT NguoiThan = N'{bn.SdtNguoiThan}', " +
+                        $"SDTNguoiThan = N'{bn.SdtNguoiThan}', " +
                         $"TrangThai = '{bn.TrangThai}' " +
                         $"WHERE MaBN = '{txtMaBN.Text}'";
                 try
