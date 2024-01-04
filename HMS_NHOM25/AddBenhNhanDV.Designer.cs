@@ -116,6 +116,7 @@
             this.cobTenDV.Name = "cobTenDV";
             this.cobTenDV.Size = new System.Drawing.Size(174, 24);
             this.cobTenDV.TabIndex = 27;
+            this.cobTenDV.SelectedIndexChanged += new System.EventHandler(this.cobTenDV_SelectedIndexChanged);
             // 
             // label4
             // 

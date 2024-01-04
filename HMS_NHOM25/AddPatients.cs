@@ -111,7 +111,7 @@ namespace HMS_NHOM25
             string _tenDN        = txtTenDNBNM.Text;
             string _matKhau      = txtMatKhauBNM.Text;
 
-            bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, _tenDN, _matKhau);
+            bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
         }
 
         private void btnSaveInfoBNM_Click(object sender, EventArgs e)
@@ -124,8 +124,10 @@ namespace HMS_NHOM25
                     SqlTransaction transaction = sqlConnection.BeginTransaction();
 
                     GetValuesTextBoxes();
+                    MessageBox.Show(bn.TenDN);
 
                     string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + bn.TenDN + "' ,N'" + bn.MatKhau + "')";
+                    MessageBox.Show(query2);
 
                     try
                     {

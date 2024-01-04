@@ -35,5 +35,23 @@ namespace HMS_NHOM25
         {
             showComboBox();
         }
+
+        private void cobTenDV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cobTenDV.SelectedIndex != -1)
+            {
+                if (int.TryParse(cobTenDV.SelectedValue.ToString(), out int madv))
+                {
+                    string findGiaDV = "SELECT TienDV FROM dichVu WHERE MaDV = '" + madv + "'";
+                    txtGiaDV.Text = bn_dv.GetAStringValue(findGiaDV);
+                }
+            }
+            else
+            {
+                txtGiaDV.Text = string.Empty;
+            }
+        }
+
+
     }
 }
