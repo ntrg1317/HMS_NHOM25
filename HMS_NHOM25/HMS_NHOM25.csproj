@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBenhNhanDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBenhNhanDV.Designer.cs">
+      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,7 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\BacSi.cs" />
+    <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,11 +130,11 @@
     <Compile Include="AddNVTN.Designer.cs">
       <DependentUpon>AddNVTN.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNVYTe.cs">
+    <Compile Include="AddDuocSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNVYTe.Designer.cs">
-      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    <Compile Include="AddDuocSi.Designer.cs">
+      <DependentUpon>AddDuocSi.cs</DependentUpon>
     </Compile>
     <Compile Include="AddPatients.cs">
       <SubType>Form</SubType>
@@ -177,11 +184,11 @@
     <Compile Include="NVThuNgan.Designer.cs">
       <DependentUpon>NVThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="NVYTe.cs">
+    <Compile Include="DuocSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NVYTe.Designer.cs">
-      <DependentUpon>NVYTe.cs</DependentUpon>
+    <Compile Include="DuocSi.Designer.cs">
+      <DependentUpon>DuocSi.cs</DependentUpon>
     </Compile>
     <Compile Include="Patients.cs">
       <SubType>Form</SubType>
@@ -203,6 +210,9 @@
     <Compile Include="ThongTinPhongChiTiet.Designer.cs">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddBenhNhanDV.resx">
+      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddDichVu.resx">
       <DependentUpon>AddDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,8 +249,8 @@
     <EmbeddedResource Include="AddNVTN.resx">
       <DependentUpon>AddNVTN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNVYTe.resx">
-      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    <EmbeddedResource Include="AddDuocSi.resx">
+      <DependentUpon>AddDuocSi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddPatients.resx">
       <DependentUpon>AddPatients.cs</DependentUpon>
@@ -266,8 +276,8 @@
     <EmbeddedResource Include="NVThuNgan.resx">
       <DependentUpon>NVThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NVYTe.resx">
-      <DependentUpon>NVYTe.cs</DependentUpon>
+    <EmbeddedResource Include="DuocSi.resx">
+      <DependentUpon>DuocSi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patients.resx">
       <DependentUpon>Patients.cs</DependentUpon>

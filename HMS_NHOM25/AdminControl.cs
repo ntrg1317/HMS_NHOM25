@@ -82,7 +82,7 @@ namespace HMS_NHOM25
 
         private void btnYT_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new NVYTe(), btnYT);
+            OpenChildForm(new DuocSi(), btnDS);
         }
 
         private void btnPhong_Click(object sender, EventArgs e)

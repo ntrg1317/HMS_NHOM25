@@ -47,7 +47,7 @@
             this.btnTN = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btnYT = new System.Windows.Forms.Button();
+            this.btnDS = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnPhong = new System.Windows.Forms.Button();
@@ -59,10 +59,11 @@
             this.btnHD = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDvu = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.navbar = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -84,7 +85,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnDvu = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -311,7 +311,7 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Controls.Add(this.btnYT);
+            this.panel8.Controls.Add(this.btnDS);
             this.panel8.Location = new System.Drawing.Point(3, 369);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(229, 66);
@@ -329,21 +329,21 @@
             this.pictureBox7.TabIndex = 2;
             this.pictureBox7.TabStop = false;
             // 
-            // btnYT
+            // btnDS
             // 
-            this.btnYT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYT.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYT.ForeColor = System.Drawing.Color.White;
-            this.btnYT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYT.Location = new System.Drawing.Point(-11, -12);
-            this.btnYT.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.btnYT.Name = "btnYT";
-            this.btnYT.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
-            this.btnYT.Size = new System.Drawing.Size(241, 87);
-            this.btnYT.TabIndex = 0;
-            this.btnYT.Text = "Nhân viên y tế";
-            this.btnYT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYT.Click += new System.EventHandler(this.btnYT_Click_1);
+            this.btnDS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDS.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDS.ForeColor = System.Drawing.Color.White;
+            this.btnDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDS.Location = new System.Drawing.Point(-11, -12);
+            this.btnDS.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btnDS.Name = "btnDS";
+            this.btnDS.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.btnDS.Size = new System.Drawing.Size(241, 87);
+            this.btnDS.TabIndex = 0;
+            this.btnDS.Text = "Dược sĩ";
+            this.btnDS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDS.Click += new System.EventHandler(this.btnYT_Click_1);
             // 
             // panel7
             // 
@@ -478,21 +478,21 @@
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
-            // button4
+            // btnDvu
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-11, -11);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
-            this.button4.Size = new System.Drawing.Size(240, 78);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Tài Khoản";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Click += new System.EventHandler(this.btnHD_Click);
+            this.btnDvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDvu.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDvu.ForeColor = System.Drawing.Color.White;
+            this.btnDvu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDvu.Location = new System.Drawing.Point(-11, -11);
+            this.btnDvu.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btnDvu.Name = "btnDvu";
+            this.btnDvu.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.btnDvu.Size = new System.Drawing.Size(240, 78);
+            this.btnDvu.TabIndex = 0;
+            this.btnDvu.Text = "Dịch vụ";
+            this.btnDvu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDvu.Click += new System.EventHandler(this.btnHD_Click);
             // 
             // panel13
             // 
@@ -531,6 +531,22 @@
             this.button5.Text = "Tài khoản";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Click += new System.EventHandler(this.btnHD_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-11, -11);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.button4.Size = new System.Drawing.Size(240, 78);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Tài Khoản";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Click += new System.EventHandler(this.btnHD_Click);
             // 
             // navbar
             // 
@@ -754,22 +770,6 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnDvu
-            // 
-            this.btnDvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDvu.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDvu.ForeColor = System.Drawing.Color.White;
-            this.btnDvu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDvu.Location = new System.Drawing.Point(-11, -11);
-            this.btnDvu.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.btnDvu.Name = "btnDvu";
-            this.btnDvu.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
-            this.btnDvu.Size = new System.Drawing.Size(240, 78);
-            this.btnDvu.TabIndex = 0;
-            this.btnDvu.Text = "Dịch vụ";
-            this.btnDvu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDvu.Click += new System.EventHandler(this.btnHD_Click);
-            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -831,7 +831,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnBN;
         private System.Windows.Forms.Button btnBS;
-        private System.Windows.Forms.Button btnYT;
+        private System.Windows.Forms.Button btnDS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTN;
         private System.Windows.Forms.Button btnPhong;

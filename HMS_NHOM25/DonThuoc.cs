@@ -66,5 +66,10 @@ namespace HMS_NHOM25
 
             }
         }
+
+        private void btnThemDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

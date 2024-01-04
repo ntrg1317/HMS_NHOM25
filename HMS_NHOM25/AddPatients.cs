@@ -99,7 +99,7 @@ namespace HMS_NHOM25
         private void GetValuesTextBoxes()
         {
             string _tenBN        = txtTenBNM.Text;
-            object _maPhong = (cobTenPhong.SelectedIndex != -1) ? (int)cobTenPhong.SelectedValue : (object)DBNull.Value;
+            object _maPhong      = (cobTenPhong.SelectedIndex != -1) ? (int)cobTenPhong.SelectedValue : (object)DBNull.Value;
             string _ngaySinh     = dateDobBn.Text;
             string _ngayVao      = dateNgayVaoM.Text;
             string _gioiTinh     = cobSexBNM.Text;

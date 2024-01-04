@@ -213,5 +213,10 @@ namespace HMS_NHOM25
             AddDoctor doctor = new AddDoctor();
             doctor.Show();
         }
+
+        private void txtSDTBS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -249,5 +249,11 @@ namespace HMS_NHOM25
 
             cobTenPhong.SelectedIndex = -1;
         }
+
+        private void btnThemDV_Click(object sender, EventArgs e)
+        {
+            AddBenhNhanDV bn_dv = new AddBenhNhanDV();
+            bn_dv.Show();
+        }
     }
 }
