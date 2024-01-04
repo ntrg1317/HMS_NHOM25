@@ -16,7 +16,7 @@ namespace HMS_NHOM25
     public partial class Doctors : Form
     {
         BaseModel bacSi = new BaseModel();
-        InforBS qlBacSi;
+        BacSi qlBacSi;
 
         private string table = "bacSi";
         public Doctors()
@@ -95,7 +95,6 @@ namespace HMS_NHOM25
         }
         private void GetValuesTextBoxes()
         {
-            int _maBS = int.Parse(txtMaBS.Text);
             string _tenBS = txtTenBS.Text;
             string _ngaySinh = DOBBS.Text;
             string _gioiTinh = cobSexBS.Text;
@@ -103,17 +102,24 @@ namespace HMS_NHOM25
             string _diaChi = cobDiaChiBS.Text;
             string _chuyenMon = cobChuyenMonBS.Text;
             string _bangCap = txtBangCapBS.Text;
-            int _trangThai = int.Parse(cobTrangThaiBS.Text);
-            qlBacSi = new InforBS(_maBS, _tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _trangThai);
-
+            string _trangThai = cobTrangThaiBS.Text;
+            qlBacSi = new BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, null, null, _trangThai);
         }
         private void btnSuaBS_Click(object sender, EventArgs e)
         {
             if (CheckTextBoxes())
             {
                 GetValuesTextBoxes();
-                string query1 = "UPDATE bacSi SET TenBS = N'" + qlBacSi.TenBS + "' ,NgaySinh = N'" + qlBacSi.NgaySinh + "',GioiTinh = N'" + qlBacSi.GioiTinh + "',DiaChi = N'" + qlBacSi.DiaChi + "',ChuyenMon = N'" + qlBacSi.ChuyenMon + "',BangCap = N'" + qlBacSi.BangCap + "',TrangThai =  '" + qlBacSi.TrangThai + "'";
-                query1 += "Where MaBS = '" + qlBacSi.MaBS + "'";
+                string query1 = "UPDATE bacSi SET " +
+                        $"TenBS = N'{qlBacSi.TenBS}', " +
+                        $"NgaySinh = N'{qlBacSi.NgaySinh}', " +
+                        $"GioiTinh = N'{qlBacSi.GioiTinh}', " +
+                        $"SDT = N'{qlBacSi.Sdt}'," +
+                        $"DiaChi = N'{qlBacSi.DiaChi}', " +
+                        $"ChuyenMon = N'{qlBacSi.ChuyenMon}', " +
+                        $"BangCap = N'{qlBacSi.BangCap}', " +
+                        $"TrangThai = '{qlBacSi.TrangThai}' " +
+                        $"WHERE MaBS = '{txtMaBS.Text}'";
                 try
                 {
                     if (MessageBox.Show("Bạn có muốn cập nhật thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -158,15 +164,48 @@ namespace HMS_NHOM25
 
         private void dgvInfoBS_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaBS.Text = dgvInfoBS.SelectedRows[0].Cells[0].Value.ToString();
-            txtTenBS.Text = dgvInfoBS.SelectedRows[0].Cells[1].Value.ToString();
-            DOBBS.Text = dgvInfoBS.SelectedRows[0].Cells[2].Value.ToString();
-            cobSexBS.Text = dgvInfoBS.SelectedRows[0].Cells[3].Value.ToString();
-            txtSDTBS.Text = dgvInfoBS.SelectedRows[0].Cells[4].Value.ToString();
-            cobDiaChiBS.Text = dgvInfoBS.SelectedRows[0].Cells[5].Value.ToString();
-            cobChuyenMonBS.Text = dgvInfoBS.SelectedRows[0].Cells[6].Value.ToString();
-            txtBangCapBS.Text = dgvInfoBS.SelectedRows[0].Cells[7].Value.ToString();
-            cobTrangThaiBS.Text = dgvInfoBS.SelectedRows[0].Cells[8].Value.ToString();
+            
+            try
+            {
+                txtMaBS.Text = dgvInfoBS.SelectedRows[0].Cells[0].Value.ToString();
+                txtTenBS.Text = dgvInfoBS.SelectedRows[0].Cells[1].Value.ToString();
+                DOBBS.Text = dgvInfoBS.SelectedRows[0].Cells[2].Value.ToString();
+                GetSelectedValue(dgvInfoBS.SelectedRows[0].Cells[3].Value.ToString(), cobSexBS);
+                txtSDTBS.Text = dgvInfoBS.SelectedRows[0].Cells[4].Value.ToString();
+                GetSelectedValue(dgvInfoBS.SelectedRows[0].Cells[5].Value.ToString(), cobDiaChiBS);
+                GetSelectedValue(dgvInfoBS.SelectedRows[0].Cells[6].Value.ToString(), cobChuyenMonBS);
+                txtBangCapBS.Text = dgvInfoBS.SelectedRows[0].Cells[7].Value.ToString();
+                string trangThaiValue = dgvInfoBS.SelectedRows[0].Cells[8].Value.ToString();
+                int _trangThai;
+
+                if (int.TryParse(trangThaiValue, out _trangThai))
+                {
+                    if (_trangThai == 1)
+                    {
+                        cobTrangThaiBS.Text = "Hoạt động";
+                    }
+                    else
+                    {
+                        cobTrangThaiBS.Text = "Ngừng hoạt động";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GetSelectedValue(string selectedValue, ComboBox cob)
+        {
+            foreach (object item in cob.Items)
+            {
+                if (item.ToString() == selectedValue.Trim())
+                {
+                    cob.SelectedItem = item;
+                    break;
+                }
+            }
         }
 
         private void btnThemBS_Click(object sender, EventArgs e)

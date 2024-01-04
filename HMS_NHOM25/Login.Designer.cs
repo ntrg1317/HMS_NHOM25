@@ -146,9 +146,9 @@
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(89, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Số điện thoại";
+            this.label3.Text = "Tên đăng nhập";
             // 
             // pictureBox3
             // 
