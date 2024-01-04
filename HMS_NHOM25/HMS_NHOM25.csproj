@@ -118,6 +118,7 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\BacSi.cs" />
+    <Compile Include="Params\DichVuParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Params\NVThuNganParams.cs" />
     <Compile Include="Patient_TTTK.cs">
@@ -439,6 +440,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
