@@ -82,5 +82,19 @@ namespace HMS_NHOM25.Model
             }
             return result;
         }
+
+        public int GetAIntValue(string query)
+        {
+            int result;
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+                command = new SqlCommand(query, sqlConnection);
+                command.ExecuteNonQuery();
+                result = Convert.ToInt32(command.ExecuteScalar());
+                sqlConnection.Close();
+            }
+            return result;
+        }
     }
 }

@@ -491,9 +491,11 @@
             // 
             // btnThemDV
             // 
+            this.btnThemDV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemDV.Enabled = false;
             this.btnThemDV.Image = global::HMS_NHOM25.Properties.Resources.add1;
             this.btnThemDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDV.Location = new System.Drawing.Point(690, 230);
+            this.btnThemDV.Location = new System.Drawing.Point(839, 230);
             this.btnThemDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDV.Name = "btnThemDV";
             this.btnThemDV.Size = new System.Drawing.Size(100, 31);
@@ -505,6 +507,7 @@
             // 
             // btnSuaBN
             // 
+            this.btnSuaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSuaBN.Location = new System.Drawing.Point(523, 230);
@@ -519,9 +522,10 @@
             // 
             // btnXoaBN
             // 
+            this.btnXoaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBN.Location = new System.Drawing.Point(854, 230);
+            this.btnXoaBN.Location = new System.Drawing.Point(694, 230);
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(85, 31);
@@ -532,12 +536,13 @@
             // 
             // btnThemBN
             // 
+            this.btnThemBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemBN.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemBN.Location = new System.Drawing.Point(367, 230);
             this.btnThemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN.Name = "btnThemBN";
-            this.btnThemBN.Size = new System.Drawing.Size(88, 31);
+            this.btnThemBN.Size = new System.Drawing.Size(106, 31);
             this.btnThemBN.TabIndex = 20;
             this.btnThemBN.Text = "Thêm BN";
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

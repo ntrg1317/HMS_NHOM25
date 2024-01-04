@@ -55,6 +55,10 @@ namespace HMS_NHOM25
 
         private void dgvInfoBN_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if(cobTrangThaiBN.Text == "Hoạt động")
+            {
+                btnThemDV.Enabled = true;
+            }
             try
             {
                 txtMaBN.Text = dgvInfoBN.SelectedRows[0].Cells[0].Value.ToString();
@@ -251,7 +255,8 @@ namespace HMS_NHOM25
 
         private void btnThemDV_Click(object sender, EventArgs e)
         {
-            AddBenhNhanDV bn_dv = new AddBenhNhanDV();
+            string MaBN = txtMaBN.Text;
+            AddBenhNhanDV bn_dv = new AddBenhNhanDV(MaBN);
             bn_dv.Show();
         }
     }
