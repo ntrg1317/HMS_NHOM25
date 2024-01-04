@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.palAddBS = new System.Windows.Forms.Panel();
+            this.ptbYTe = new System.Windows.Forms.PictureBox();
             this.labAddBS = new System.Windows.Forms.Label();
             this.grbAddInfoDV = new System.Windows.Forms.GroupBox();
+            this.dateNgayDV = new System.Windows.Forms.DateTimePicker();
+            this.cobTenDV = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGiaDV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.labTenBN = new System.Windows.Forms.Label();
-            this.cobTenDV = new System.Windows.Forms.ComboBox();
-            this.dateNgayDV = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.ptbYTe = new System.Windows.Forms.PictureBox();
+            this.labTenBN = new System.Windows.Forms.Label();
             this.btnThoatAddBNDichVu = new System.Windows.Forms.Button();
             this.btnSaveBNDV = new System.Windows.Forms.Button();
             this.palAddBS.SuspendLayout();
-            this.grbAddInfoDV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
+            this.grbAddInfoDV.SuspendLayout();
             this.SuspendLayout();
             // 
             // palAddBS
@@ -56,6 +56,18 @@
             this.palAddBS.Name = "palAddBS";
             this.palAddBS.Size = new System.Drawing.Size(719, 81);
             this.palAddBS.TabIndex = 21;
+            // 
+            // ptbYTe
+            // 
+            this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.service;
+            this.ptbYTe.Location = new System.Drawing.Point(167, 23);
+            this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbYTe.Name = "ptbYTe";
+            this.ptbYTe.Size = new System.Drawing.Size(84, 34);
+            this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbYTe.TabIndex = 3;
+            this.ptbYTe.TabStop = false;
             // 
             // labAddBS
             // 
@@ -88,6 +100,23 @@
             this.grbAddInfoDV.TabStop = false;
             this.grbAddInfoDV.Text = "Thông tin dịch vụ";
             // 
+            // dateNgayDV
+            // 
+            this.dateNgayDV.CustomFormat = "yyyy-MM-dd";
+            this.dateNgayDV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgayDV.Location = new System.Drawing.Point(115, 108);
+            this.dateNgayDV.Name = "dateNgayDV";
+            this.dateNgayDV.Size = new System.Drawing.Size(174, 22);
+            this.dateNgayDV.TabIndex = 28;
+            // 
+            // cobTenDV
+            // 
+            this.cobTenDV.FormattingEnabled = true;
+            this.cobTenDV.Location = new System.Drawing.Point(115, 59);
+            this.cobTenDV.Name = "cobTenDV";
+            this.cobTenDV.Size = new System.Drawing.Size(174, 24);
+            this.cobTenDV.TabIndex = 27;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -116,33 +145,6 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Giá dịch vụ";
             // 
-            // labTenBN
-            // 
-            this.labTenBN.AutoSize = true;
-            this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBN.Location = new System.Drawing.Point(18, 64);
-            this.labTenBN.Name = "labTenBN";
-            this.labTenBN.Size = new System.Drawing.Size(76, 16);
-            this.labTenBN.TabIndex = 21;
-            this.labTenBN.Text = "Tên dịch vụ";
-            // 
-            // cobTenDV
-            // 
-            this.cobTenDV.FormattingEnabled = true;
-            this.cobTenDV.Location = new System.Drawing.Point(115, 59);
-            this.cobTenDV.Name = "cobTenDV";
-            this.cobTenDV.Size = new System.Drawing.Size(174, 24);
-            this.cobTenDV.TabIndex = 27;
-            // 
-            // dateNgayDV
-            // 
-            this.dateNgayDV.CustomFormat = "yyyy-MM-dd";
-            this.dateNgayDV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayDV.Location = new System.Drawing.Point(115, 108);
-            this.dateNgayDV.Name = "dateNgayDV";
-            this.dateNgayDV.Size = new System.Drawing.Size(174, 22);
-            this.dateNgayDV.TabIndex = 28;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -153,17 +155,15 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Ngày sử dụng";
             // 
-            // ptbYTe
+            // labTenBN
             // 
-            this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.service;
-            this.ptbYTe.Location = new System.Drawing.Point(167, 23);
-            this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbYTe.Name = "ptbYTe";
-            this.ptbYTe.Size = new System.Drawing.Size(84, 34);
-            this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbYTe.TabIndex = 3;
-            this.ptbYTe.TabStop = false;
+            this.labTenBN.AutoSize = true;
+            this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labTenBN.Location = new System.Drawing.Point(18, 64);
+            this.labTenBN.Name = "labTenBN";
+            this.labTenBN.Size = new System.Drawing.Size(76, 16);
+            this.labTenBN.TabIndex = 21;
+            this.labTenBN.Text = "Tên dịch vụ";
             // 
             // btnThoatAddBNDichVu
             // 
@@ -202,11 +202,12 @@
             this.Name = "AddBenhNhanDV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddBenhNhanDV";
+            this.Load += new System.EventHandler(this.AddBenhNhanDV_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();
             this.grbAddInfoDV.ResumeLayout(false);
             this.grbAddInfoDV.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();
             this.ResumeLayout(false);
 
         }
