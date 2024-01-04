@@ -121,6 +121,7 @@
     <Compile Include="Params\DichVuParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Params\NVThuNganParams.cs" />
+    <Compile Include="Params\PhongParams.cs" />
     <Compile Include="Params\TaiKhoanParams.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>

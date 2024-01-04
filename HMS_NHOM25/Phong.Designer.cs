@@ -118,6 +118,7 @@
             // 
             resources.ApplyResources(this.txtMaPhong, "txtMaPhong");
             this.txtMaPhong.Name = "txtMaPhong";
+            this.txtMaPhong.ReadOnly = true;
             // 
             // labTenBN
             // 
@@ -138,6 +139,7 @@
             resources.ApplyResources(this.btnSuaPhong, "btnSuaPhong");
             this.btnSuaPhong.Name = "btnSuaPhong";
             this.btnSuaPhong.UseVisualStyleBackColor = true;
+            this.btnSuaPhong.Click += new System.EventHandler(this.btnSuaPhong_Click);
             // 
             // btnXoaPhong
             // 
@@ -146,14 +148,16 @@
             resources.ApplyResources(this.btnXoaPhong, "btnXoaPhong");
             this.btnXoaPhong.Name = "btnXoaPhong";
             this.btnXoaPhong.UseVisualStyleBackColor = true;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
             // 
             // btnThemPhong
             // 
             this.btnThemPhong.ForeColor = System.Drawing.Color.Black;
-            this.btnThemPhong.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
+            this.btnThemPhong.Image = global::HMS_NHOM25.Properties.Resources.add1;
             resources.ApplyResources(this.btnThemPhong, "btnThemPhong");
             this.btnThemPhong.Name = "btnThemPhong";
             this.btnThemPhong.UseVisualStyleBackColor = true;
+            this.btnThemPhong.Click += new System.EventHandler(this.btnThemPhong_Click);
             // 
             // txtTKTenPhong
             // 
@@ -176,6 +180,17 @@
             // cobTenPhong
             // 
             this.cobTenPhong.FormattingEnabled = true;
+            this.cobTenPhong.Items.AddRange(new object[] {
+            resources.GetString("cobTenPhong.Items"),
+            resources.GetString("cobTenPhong.Items1"),
+            resources.GetString("cobTenPhong.Items2"),
+            resources.GetString("cobTenPhong.Items3"),
+            resources.GetString("cobTenPhong.Items4"),
+            resources.GetString("cobTenPhong.Items5"),
+            resources.GetString("cobTenPhong.Items6"),
+            resources.GetString("cobTenPhong.Items7"),
+            resources.GetString("cobTenPhong.Items8"),
+            resources.GetString("cobTenPhong.Items9")});
             resources.ApplyResources(this.cobTenPhong, "cobTenPhong");
             this.cobTenPhong.Name = "cobTenPhong";
             // 

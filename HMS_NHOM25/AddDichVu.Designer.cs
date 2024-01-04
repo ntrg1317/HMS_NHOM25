@@ -199,6 +199,7 @@
             this.Controls.Add(this.grbAddInfoDV);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddDichVu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddDichVu";
             this.Load += new System.EventHandler(this.AddDichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();

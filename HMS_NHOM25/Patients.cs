@@ -143,20 +143,6 @@ namespace HMS_NHOM25
             }
         }
 
-        private void DeleteTextBoxes()
-        {
-            txtTenBN.Text = "";
-            cobTenPhong.SelectedValue = null;
-            DOBBN.Text = "";
-            DateVaoVienBN.Text = "";
-            cobGioiTinhBN.Text = "";
-            txtBenhTrangBN.Text = "";
-            txtSDTBN.Text = "";
-            cobDiaChiBN.Text = "";
-            txtSDTNguoiThan.Text = "";
-            cobTrangThaiBN.SelectedValue = null;
-        }
-
         private bool CheckTextBoxes()
         {
             if (txtTenBN.Text == "")

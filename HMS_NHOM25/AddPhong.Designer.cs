@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.grbAddInfoNVYTeM = new System.Windows.Forms.GroupBox();
+            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.txtSoLuongPhong = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.btnThoatAddPhong = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveInfoPhong = new System.Windows.Forms.Button();
-            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             this.grbAddInfoNVYTeM.SuspendLayout();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
@@ -74,6 +74,15 @@
             this.grbAddInfoNVYTeM.TabStop = false;
             this.grbAddInfoNVYTeM.Text = "Thông tin phòng";
             // 
+            // cobTenPhong
+            // 
+            this.cobTenPhong.FormattingEnabled = true;
+            this.cobTenPhong.Location = new System.Drawing.Point(145, 59);
+            this.cobTenPhong.Name = "cobTenPhong";
+            this.cobTenPhong.Size = new System.Drawing.Size(184, 28);
+            this.cobTenPhong.TabIndex = 29;
+            this.cobTenPhong.SelectedIndexChanged += new System.EventHandler(this.cobTenPhong_SelectedIndexChanged);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -89,6 +98,7 @@
             this.txtGiaPhong.Location = new System.Drawing.Point(145, 114);
             this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaPhong.Name = "txtGiaPhong";
+            this.txtGiaPhong.ReadOnly = true;
             this.txtGiaPhong.Size = new System.Drawing.Size(184, 26);
             this.txtGiaPhong.TabIndex = 27;
             // 
@@ -176,6 +186,7 @@
             this.btnThoatAddPhong.TabIndex = 15;
             this.btnThoatAddPhong.Text = "Thoát";
             this.btnThoatAddPhong.UseVisualStyleBackColor = true;
+            this.btnThoatAddPhong.Click += new System.EventHandler(this.btnThoatAddPhong_Click);
             // 
             // label3
             // 
@@ -198,14 +209,7 @@
             this.btnSaveInfoPhong.Text = "Lưu thông tin";
             this.btnSaveInfoPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveInfoPhong.UseVisualStyleBackColor = true;
-            // 
-            // cobTenPhong
-            // 
-            this.cobTenPhong.FormattingEnabled = true;
-            this.cobTenPhong.Location = new System.Drawing.Point(145, 59);
-            this.cobTenPhong.Name = "cobTenPhong";
-            this.cobTenPhong.Size = new System.Drawing.Size(184, 28);
-            this.cobTenPhong.TabIndex = 29;
+            this.btnSaveInfoPhong.Click += new System.EventHandler(this.btnSaveInfoPhong_Click);
             // 
             // AddPhong
             // 
@@ -219,7 +223,9 @@
             this.Controls.Add(this.palAddBS);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPhong";
+            this.Load += new System.EventHandler(this.AddPhong_Load);
             this.grbAddInfoNVYTeM.ResumeLayout(false);
             this.grbAddInfoNVYTeM.PerformLayout();
             this.palAddBS.ResumeLayout(false);
