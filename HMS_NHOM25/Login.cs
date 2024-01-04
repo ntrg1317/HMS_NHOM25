@@ -26,5 +26,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
