@@ -61,7 +61,7 @@ namespace HMS_NHOM25
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ThongKeDuLieu(), btnThongKe);
+            OpenChildForm(new BaoCaoThongKe(), btnThongKe);
         }
 
         private void btnBN_Click(object sender, EventArgs e)
