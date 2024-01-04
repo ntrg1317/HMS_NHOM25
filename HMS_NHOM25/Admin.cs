@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace HMS_NHOM25
 {
     public partial class Admin : Form
     {
+        BaseModel basemodel = new BaseModel();
+        private string table = "quanTriVien";
         public Admin()
         {
             InitializeComponent();
@@ -21,6 +24,30 @@ namespace HMS_NHOM25
         {
 
         }
-       
+
+        private void dgvInfoQTV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[0].Value.ToString();
+            txtTenQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[1].Value.ToString();
+            DOBQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[2].Value.ToString();
+            cobGioiTinhQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[3].Value.ToString();
+            txtSDTQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[4].Value.ToString();
+            cobDiaChiQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[5].Value.ToString();
+            cobTrangThaiQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void txtTimKiemQTV_TextChanged(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiemQTV.Text.Trim();
+            if (timKiem == "")
+            {
+                Admin_Load(sender, e);
+            }
+            else
+            {
+                string query = "Select * from nhanVienThuNgan where TenNV like '%" + timKiem + "%'";
+                dgvInfoQTV.DataSource = basemodel.Table(query);
+            }
+        }
     }
 }

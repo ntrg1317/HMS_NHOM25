@@ -373,5 +373,20 @@
   <ItemGroup>
     <None Include="Resources\service.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video202312311116.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundLoginVideo.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,7 +31,6 @@ namespace HMS_NHOM25
         {
             this.grbInforNVYTe = new System.Windows.Forms.GroupBox();
             this.cobTrangThaiNVYTe = new System.Windows.Forms.ComboBox();
-            this.cobDiaChiNVYTe = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhNVYTe = new System.Windows.Forms.ComboBox();
             this.DOBNVYTe = new System.Windows.Forms.DateTimePicker();
             this.txtSDTNVYTe = new System.Windows.Forms.TextBox();
@@ -52,14 +51,15 @@ namespace HMS_NHOM25
             this.btnSuaNVYTe = new System.Windows.Forms.Button();
             this.btnXoaNVYTe = new System.Windows.Forms.Button();
             this.btnThemNVYTe = new System.Windows.Forms.Button();
+            this.cobDiaChiNVYT = new System.Windows.Forms.ComboBox();
             this.grbInforNVYTe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVYTe)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInforNVYTe
             // 
+            this.grbInforNVYTe.Controls.Add(this.cobDiaChiNVYT);
             this.grbInforNVYTe.Controls.Add(this.cobTrangThaiNVYTe);
-            this.grbInforNVYTe.Controls.Add(this.cobDiaChiNVYTe);
             this.grbInforNVYTe.Controls.Add(this.cobGioiTinhNVYTe);
             this.grbInforNVYTe.Controls.Add(this.DOBNVYTe);
             this.grbInforNVYTe.Controls.Add(this.txtSDTNVYTe);
@@ -93,19 +93,6 @@ namespace HMS_NHOM25
             this.cobTrangThaiNVYTe.Name = "cobTrangThaiNVYTe";
             this.cobTrangThaiNVYTe.Size = new System.Drawing.Size(184, 28);
             this.cobTrangThaiNVYTe.TabIndex = 17;
-            // 
-            // cobDiaChiNVYTe
-            // 
-            this.cobDiaChiNVYTe.FormattingEnabled = true;
-            this.cobDiaChiNVYTe.Items.AddRange(new object[] {
-            "Đống Đa, Hà Nội",
-            "Hai Bà Trưng, Hà Nội",
-            "Phù Cừ, Hưng Yên"});
-            this.cobDiaChiNVYTe.Location = new System.Drawing.Point(450, 94);
-            this.cobDiaChiNVYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiNVYTe.Name = "cobDiaChiNVYTe";
-            this.cobDiaChiNVYTe.Size = new System.Drawing.Size(180, 28);
-            this.cobDiaChiNVYTe.TabIndex = 16;
             // 
             // cobGioiTinhNVYTe
             // 
@@ -250,6 +237,7 @@ namespace HMS_NHOM25
             this.txtTimKiemNVYTe.Name = "txtTimKiemNVYTe";
             this.txtTimKiemNVYTe.Size = new System.Drawing.Size(184, 26);
             this.txtTimKiemNVYTe.TabIndex = 18;
+            this.txtTimKiemNVYTe.TextChanged += new System.EventHandler(this.txtTimKiemNVYTe_TextChanged);
             // 
             // dgvInfoNVYTe
             // 
@@ -266,8 +254,10 @@ namespace HMS_NHOM25
             this.dgvInfoNVYTe.ReadOnly = true;
             this.dgvInfoNVYTe.RowHeadersWidth = 62;
             this.dgvInfoNVYTe.RowTemplate.Height = 28;
+            this.dgvInfoNVYTe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoNVYTe.Size = new System.Drawing.Size(1022, 509);
             this.dgvInfoNVYTe.TabIndex = 23;
+            this.dgvInfoNVYTe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoNVYTe_CellClick);
             // 
             // btnSuaNVYTe
             // 
@@ -308,6 +298,81 @@ namespace HMS_NHOM25
             this.btnThemNVYTe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNVYTe.UseVisualStyleBackColor = true;
             this.btnThemNVYTe.Click += new System.EventHandler(this.btnThemNVYTe_Click);
+            // 
+            // cobDiaChiNVYT
+            // 
+            this.cobDiaChiNVYT.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobDiaChiNVYT.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobDiaChiNVYT.FormattingEnabled = true;
+            this.cobDiaChiNVYT.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
+            this.cobDiaChiNVYT.Location = new System.Drawing.Point(450, 96);
+            this.cobDiaChiNVYT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobDiaChiNVYT.Name = "cobDiaChiNVYT";
+            this.cobDiaChiNVYT.Size = new System.Drawing.Size(180, 28);
+            this.cobDiaChiNVYT.TabIndex = 18;
             // 
             // NVYTe
             // 
@@ -351,7 +416,6 @@ namespace HMS_NHOM25
         private System.Windows.Forms.TextBox txtMaNVYTe;
         private System.Windows.Forms.DateTimePicker DOBNVYTe;
         private System.Windows.Forms.ComboBox cobGioiTinhNVYTe;
-        private System.Windows.Forms.ComboBox cobDiaChiNVYTe;
         private System.Windows.Forms.ComboBox cobTrangThaiNVYTe;
         private System.Windows.Forms.Label labTimKiemNVYTe;
         private System.Windows.Forms.Label labTenNVYTeTimKiem;
@@ -360,5 +424,6 @@ namespace HMS_NHOM25
         private System.Windows.Forms.Button btnXoaNVYTe;
         private System.Windows.Forms.Button btnSuaNVYTe;
         private System.Windows.Forms.DataGridView dgvInfoNVYTe;
+        private System.Windows.Forms.ComboBox cobDiaChiNVYT;
     }
 }

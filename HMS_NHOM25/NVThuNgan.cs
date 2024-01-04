@@ -1,4 +1,5 @@
 ﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,31 @@ namespace HMS_NHOM25
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void dgvInfoNVTN_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[0].Value.ToString();
+            txtTenNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[1].Value.ToString();
+            DOBNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[2].Value.ToString();
+            cobGioiTinhNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[3].Value.ToString();
+            txtSDTNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[4].Value.ToString();
+            cobDiaChiNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[5].Value.ToString();
+            cobTrangThaiNVTN.Text = dgvInfoNVTN.SelectedRows[0].Cells[6].Value.ToString();
+        }
+
+        private void txtTimKiemNVTN_TextChanged(object sender, EventArgs e)
+        {
+            string timKiem = txtTimKiemNVTN.Text.Trim();
+            if (timKiem == "")
+            {
+                NVThuNgan_Load(sender, e);
+            }
+            else
+            {
+                string query = "Select * from nhanVienThuNgan where TenNV like '%" + timKiem + "%'";
+                dgvInfoNVTN.DataSource = nvtn.Table(query);
             }
         }
     }

@@ -31,13 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.labAddNVTN = new System.Windows.Forms.Label();
             this.palAddNVTN = new System.Windows.Forms.Panel();
+            this.ptbNVTN = new System.Windows.Forms.PictureBox();
             this.grbAddInfoNVTNM = new System.Windows.Forms.GroupBox();
             this.cobDiaChiNVTNM = new System.Windows.Forms.ComboBox();
-            this.cobTrangThaiNVTNM = new System.Windows.Forms.ComboBox();
             this.cobSexNVTNM = new System.Windows.Forms.ComboBox();
             this.DOBNVTNM = new System.Windows.Forms.DateTimePicker();
             this.txtSDTNVTNM = new System.Windows.Forms.TextBox();
-            this.labTrangThaiNVTNM = new System.Windows.Forms.Label();
             this.labDiaChiNVTNM = new System.Windows.Forms.Label();
             this.labSDTNVTNM = new System.Windows.Forms.Label();
             this.txtTenNVTNM = new System.Windows.Forms.TextBox();
@@ -53,11 +52,10 @@
             this.btnThoatAddNVTNM = new System.Windows.Forms.Button();
             this.btnSaveInfoNVTNM = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.ptbNVTN = new System.Windows.Forms.PictureBox();
             this.palAddNVTN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
             this.grbAddInfoNVTNM.SuspendLayout();
             this.grbTaiKhoanNVTNM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
             this.SuspendLayout();
             // 
             // labAddNVTN
@@ -83,14 +81,24 @@
             this.palAddNVTN.Size = new System.Drawing.Size(809, 101);
             this.palAddNVTN.TabIndex = 4;
             // 
+            // ptbNVTN
+            // 
+            this.ptbNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbNVTN.Image = global::HMS_NHOM25.Properties.Resources.cashier;
+            this.ptbNVTN.Location = new System.Drawing.Point(199, 31);
+            this.ptbNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbNVTN.Name = "ptbNVTN";
+            this.ptbNVTN.Size = new System.Drawing.Size(78, 32);
+            this.ptbNVTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbNVTN.TabIndex = 3;
+            this.ptbNVTN.TabStop = false;
+            // 
             // grbAddInfoNVTNM
             // 
             this.grbAddInfoNVTNM.Controls.Add(this.cobDiaChiNVTNM);
-            this.grbAddInfoNVTNM.Controls.Add(this.cobTrangThaiNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.cobSexNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.DOBNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.txtSDTNVTNM);
-            this.grbAddInfoNVTNM.Controls.Add(this.labTrangThaiNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.labDiaChiNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.labSDTNVTNM);
             this.grbAddInfoNVTNM.Controls.Add(this.txtTenNVTNM);
@@ -110,20 +118,75 @@
             // cobDiaChiNVTNM
             // 
             this.cobDiaChiNVTNM.FormattingEnabled = true;
+            this.cobDiaChiNVTNM.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
             this.cobDiaChiNVTNM.Location = new System.Drawing.Point(530, 80);
             this.cobDiaChiNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobDiaChiNVTNM.Name = "cobDiaChiNVTNM";
             this.cobDiaChiNVTNM.Size = new System.Drawing.Size(152, 28);
             this.cobDiaChiNVTNM.TabIndex = 15;
-            // 
-            // cobTrangThaiNVTNM
-            // 
-            this.cobTrangThaiNVTNM.FormattingEnabled = true;
-            this.cobTrangThaiNVTNM.Location = new System.Drawing.Point(530, 129);
-            this.cobTrangThaiNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobTrangThaiNVTNM.Name = "cobTrangThaiNVTNM";
-            this.cobTrangThaiNVTNM.Size = new System.Drawing.Size(152, 28);
-            this.cobTrangThaiNVTNM.TabIndex = 14;
             // 
             // cobSexNVTNM
             // 
@@ -136,7 +199,8 @@
             // 
             // DOBNVTNM
             // 
-            this.DOBNVTNM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOBNVTNM.CustomFormat = "yyyy-MM-dd";
+            this.DOBNVTNM.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DOBNVTNM.Location = new System.Drawing.Point(160, 126);
             this.DOBNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DOBNVTNM.Name = "DOBNVTNM";
@@ -150,16 +214,6 @@
             this.txtSDTNVTNM.Name = "txtSDTNVTNM";
             this.txtSDTNVTNM.Size = new System.Drawing.Size(154, 26);
             this.txtSDTNVTNM.TabIndex = 9;
-            // 
-            // labTrangThaiNVTNM
-            // 
-            this.labTrangThaiNVTNM.AutoSize = true;
-            this.labTrangThaiNVTNM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiNVTNM.Location = new System.Drawing.Point(382, 132);
-            this.labTrangThaiNVTNM.Name = "labTrangThaiNVTNM";
-            this.labTrangThaiNVTNM.Size = new System.Drawing.Size(80, 20);
-            this.labTrangThaiNVTNM.TabIndex = 8;
-            this.labTrangThaiNVTNM.Text = "Trạng thái";
             // 
             // labDiaChiNVTNM
             // 
@@ -311,18 +365,6 @@
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 2;
             // 
-            // ptbNVTN
-            // 
-            this.ptbNVTN.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbNVTN.Image = global::HMS_NHOM25.Properties.Resources.cashier;
-            this.ptbNVTN.Location = new System.Drawing.Point(199, 31);
-            this.ptbNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbNVTN.Name = "ptbNVTN";
-            this.ptbNVTN.Size = new System.Drawing.Size(78, 32);
-            this.ptbNVTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbNVTN.TabIndex = 3;
-            this.ptbNVTN.TabStop = false;
-            // 
             // AddNVTN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -340,11 +382,11 @@
             this.Text = "AddNVTN";
             this.palAddNVTN.ResumeLayout(false);
             this.palAddNVTN.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();
             this.grbAddInfoNVTNM.ResumeLayout(false);
             this.grbAddInfoNVTNM.PerformLayout();
             this.grbTaiKhoanNVTNM.ResumeLayout(false);
             this.grbTaiKhoanNVTNM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,9 +406,7 @@
         private System.Windows.Forms.TextBox txtTenNVTNM;
         private System.Windows.Forms.Label labDiaChiNVTNM;
         private System.Windows.Forms.Label labSDTNVTNM;
-        private System.Windows.Forms.Label labTrangThaiNVTNM;
         private System.Windows.Forms.ComboBox cobDiaChiNVTNM;
-        private System.Windows.Forms.ComboBox cobTrangThaiNVTNM;
         private System.Windows.Forms.ComboBox cobSexNVTNM;
         private System.Windows.Forms.DateTimePicker DOBNVTNM;
         private System.Windows.Forms.TextBox txtSDTNVTNM;

@@ -24,7 +24,7 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private void Doctors_Load(object sender, EventArgs e)
+        public void Doctors_Load(object sender, EventArgs e)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace HMS_NHOM25
             DOBBS.Text = "";
             cobSexBS.SelectedIndex = -1;
             txtSDTBS.Text = "";
-            txtDiaChiBS.Text = "";
+            cobDiaChiBS.Text = "";
             cobChuyenMonBS.SelectedIndex = -1;
             txtBangCapBS.Text = "";
             cobTrangThaiBS.SelectedIndex = -1;
@@ -79,7 +79,7 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Bạn chưa nhập số điện thoại!"); return false;
             }
-            if (txtDiaChiBS.Text == "")
+            if (cobDiaChiBS.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập địa chỉ!"); return false;
             }
@@ -100,7 +100,7 @@ namespace HMS_NHOM25
             string _ngaySinh = DOBBS.Text;
             string _gioiTinh = cobSexBS.Text;
             string _sdt = txtSDTBS.Text;
-            string _diaChi = txtDiaChiBS.Text;
+            string _diaChi = cobDiaChiBS.Text;
             string _chuyenMon = cobChuyenMonBS.Text;
             string _bangCap = txtBangCapBS.Text;
             int _trangThai = int.Parse(cobTrangThaiBS.Text);
@@ -163,7 +163,7 @@ namespace HMS_NHOM25
             DOBBS.Text = dgvInfoBS.SelectedRows[0].Cells[2].Value.ToString();
             cobSexBS.Text = dgvInfoBS.SelectedRows[0].Cells[3].Value.ToString();
             txtSDTBS.Text = dgvInfoBS.SelectedRows[0].Cells[4].Value.ToString();
-            txtDiaChiBS.Text = dgvInfoBS.SelectedRows[0].Cells[5].Value.ToString();
+            cobDiaChiBS.Text = dgvInfoBS.SelectedRows[0].Cells[5].Value.ToString();
             cobChuyenMonBS.Text = dgvInfoBS.SelectedRows[0].Cells[6].Value.ToString();
             txtBangCapBS.Text = dgvInfoBS.SelectedRows[0].Cells[7].Value.ToString();
             cobTrangThaiBS.Text = dgvInfoBS.SelectedRows[0].Cells[8].Value.ToString();

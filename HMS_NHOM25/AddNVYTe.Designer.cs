@@ -34,11 +34,9 @@
             this.ptbYTe = new System.Windows.Forms.PictureBox();
             this.grbAddInfoNVYTeM = new System.Windows.Forms.GroupBox();
             this.cobDiaChiNVYTeM = new System.Windows.Forms.ComboBox();
-            this.cobTrangThaiNVYTeM = new System.Windows.Forms.ComboBox();
             this.cobSexNVYTeM = new System.Windows.Forms.ComboBox();
             this.DOBNVYTeM = new System.Windows.Forms.DateTimePicker();
             this.txtSDTNVYTeM = new System.Windows.Forms.TextBox();
-            this.labTrangThaiNVYTeM = new System.Windows.Forms.Label();
             this.labDiaChiNVYTeM = new System.Windows.Forms.Label();
             this.labSDTNVYTeM = new System.Windows.Forms.Label();
             this.txtTenNVYTeM = new System.Windows.Forms.TextBox();
@@ -98,11 +96,9 @@
             // grbAddInfoNVYTeM
             // 
             this.grbAddInfoNVYTeM.Controls.Add(this.cobDiaChiNVYTeM);
-            this.grbAddInfoNVYTeM.Controls.Add(this.cobTrangThaiNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.cobSexNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.DOBNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.txtSDTNVYTeM);
-            this.grbAddInfoNVYTeM.Controls.Add(this.labTrangThaiNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.labDiaChiNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.labSDTNVYTeM);
             this.grbAddInfoNVYTeM.Controls.Add(this.txtTenNVYTeM);
@@ -122,20 +118,75 @@
             // cobDiaChiNVYTeM
             // 
             this.cobDiaChiNVYTeM.FormattingEnabled = true;
+            this.cobDiaChiNVYTeM.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
             this.cobDiaChiNVYTeM.Location = new System.Drawing.Point(530, 80);
             this.cobDiaChiNVYTeM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobDiaChiNVYTeM.Name = "cobDiaChiNVYTeM";
             this.cobDiaChiNVYTeM.Size = new System.Drawing.Size(152, 28);
             this.cobDiaChiNVYTeM.TabIndex = 15;
-            // 
-            // cobTrangThaiNVYTeM
-            // 
-            this.cobTrangThaiNVYTeM.FormattingEnabled = true;
-            this.cobTrangThaiNVYTeM.Location = new System.Drawing.Point(530, 129);
-            this.cobTrangThaiNVYTeM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobTrangThaiNVYTeM.Name = "cobTrangThaiNVYTeM";
-            this.cobTrangThaiNVYTeM.Size = new System.Drawing.Size(152, 28);
-            this.cobTrangThaiNVYTeM.TabIndex = 14;
             // 
             // cobSexNVYTeM
             // 
@@ -148,7 +199,8 @@
             // 
             // DOBNVYTeM
             // 
-            this.DOBNVYTeM.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOBNVYTeM.CustomFormat = "yyyy-MM-dd";
+            this.DOBNVYTeM.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DOBNVYTeM.Location = new System.Drawing.Point(160, 126);
             this.DOBNVYTeM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DOBNVYTeM.Name = "DOBNVYTeM";
@@ -162,16 +214,6 @@
             this.txtSDTNVYTeM.Name = "txtSDTNVYTeM";
             this.txtSDTNVYTeM.Size = new System.Drawing.Size(154, 26);
             this.txtSDTNVYTeM.TabIndex = 9;
-            // 
-            // labTrangThaiNVYTeM
-            // 
-            this.labTrangThaiNVYTeM.AutoSize = true;
-            this.labTrangThaiNVYTeM.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiNVYTeM.Location = new System.Drawing.Point(382, 132);
-            this.labTrangThaiNVYTeM.Name = "labTrangThaiNVYTeM";
-            this.labTrangThaiNVYTeM.Size = new System.Drawing.Size(80, 20);
-            this.labTrangThaiNVYTeM.TabIndex = 8;
-            this.labTrangThaiNVYTeM.Text = "Trạng thái";
             // 
             // labDiaChiNVYTeM
             // 
@@ -364,9 +406,7 @@
         private System.Windows.Forms.TextBox txtTenNVYTeM;
         private System.Windows.Forms.Label labDiaChiNVYTeM;
         private System.Windows.Forms.Label labSDTNVYTeM;
-        private System.Windows.Forms.Label labTrangThaiNVYTeM;
         private System.Windows.Forms.ComboBox cobDiaChiNVYTeM;
-        private System.Windows.Forms.ComboBox cobTrangThaiNVYTeM;
         private System.Windows.Forms.ComboBox cobSexNVYTeM;
         private System.Windows.Forms.DateTimePicker DOBNVYTeM;
         private System.Windows.Forms.TextBox txtSDTNVYTeM;
