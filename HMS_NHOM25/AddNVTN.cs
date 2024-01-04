@@ -38,7 +38,7 @@ namespace HMS_NHOM25
 
                     GetValuesTextBoxes();
 
-                    string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + nvtn.TenDN + "' ,N'" + nvtn.MatKhau + "')";
+                    string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('5', N'" + nvtn.TenDN + "' ,N'" + nvtn.MatKhau + "')";
 
                     try
                     {

@@ -65,6 +65,7 @@
             this.txtTKMaTK.Name = "txtTKMaTK";
             this.txtTKMaTK.Size = new System.Drawing.Size(184, 26);
             this.txtTKMaTK.TabIndex = 43;
+            this.txtTKMaTK.TextChanged += new System.EventHandler(this.txtTKMaTK_TextChanged);
             // 
             // txtMatKhau
             // 
@@ -115,6 +116,7 @@
             this.btnSuaPhong.Text = "Cập nhật";
             this.btnSuaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaPhong.UseVisualStyleBackColor = true;
+            this.btnSuaPhong.Click += new System.EventHandler(this.btnSuaPhong_Click);
             // 
             // btnXoaPhong
             // 
@@ -129,6 +131,7 @@
             this.btnXoaPhong.Text = "Xóa";
             this.btnXoaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaPhong.UseVisualStyleBackColor = true;
+            this.btnXoaPhong.Click += new System.EventHandler(this.BtnXoaTaiKhoan_Click);
             // 
             // txtTMaCV
             // 
@@ -143,6 +146,7 @@
             this.txtMaTK.Location = new System.Drawing.Point(185, 43);
             this.txtMaTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaTK.Name = "txtMaTK";
+            this.txtMaTK.ReadOnly = true;
             this.txtMaTK.Size = new System.Drawing.Size(184, 26);
             this.txtMaTK.TabIndex = 13;
             // 
@@ -216,8 +220,10 @@
             this.dgvInforTaiKhoan.ReadOnly = true;
             this.dgvInforTaiKhoan.RowHeadersWidth = 51;
             this.dgvInforTaiKhoan.RowTemplate.Height = 24;
+            this.dgvInforTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInforTaiKhoan.Size = new System.Drawing.Size(998, 435);
             this.dgvInforTaiKhoan.TabIndex = 40;
+            this.dgvInforTaiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforTaiKhoan_CellClick);
             // 
             // TaiKhoan
             // 
@@ -234,6 +240,7 @@
             this.Controls.Add(this.dgvInforTaiKhoan);
             this.Name = "TaiKhoan";
             this.Text = "TaiKhoan";
+            this.Load += new System.EventHandler(this.TaiKhoan_Load);
             this.grb.ResumeLayout(false);
             this.grb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforTaiKhoan)).EndInit();
