@@ -30,6 +30,7 @@
         private void InitializeComponent()
         {
             this.grbInforNVTN = new System.Windows.Forms.GroupBox();
+            this.cobDiaChiNVTN = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiNVTN = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhNVTN = new System.Windows.Forms.ComboBox();
             this.DOBNVTN = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +52,6 @@
             this.btnSuaNVTN = new System.Windows.Forms.Button();
             this.btnXoaNVTN = new System.Windows.Forms.Button();
             this.btnThemNVTN = new System.Windows.Forms.Button();
-            this.cobDiaChiNVTN = new System.Windows.Forms.ComboBox();
             this.grbInforNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVTN)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,81 @@
             this.grbInforNVTN.TabIndex = 0;
             this.grbInforNVTN.TabStop = false;
             this.grbInforNVTN.Text = "Thông tin nhân viên thu ngân";
+            // 
+            // cobDiaChiNVTN
+            // 
+            this.cobDiaChiNVTN.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobDiaChiNVTN.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobDiaChiNVTN.FormattingEnabled = true;
+            this.cobDiaChiNVTN.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
+            this.cobDiaChiNVTN.Location = new System.Drawing.Point(450, 96);
+            this.cobDiaChiNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobDiaChiNVTN.Name = "cobDiaChiNVTN";
+            this.cobDiaChiNVTN.Size = new System.Drawing.Size(180, 28);
+            this.cobDiaChiNVTN.TabIndex = 18;
             // 
             // cobTrangThaiNVTN
             // 
@@ -137,6 +212,7 @@
             this.txtMaNVTN.Location = new System.Drawing.Point(146, 48);
             this.txtMaNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaNVTN.Name = "txtMaNVTN";
+            this.txtMaNVTN.ReadOnly = true;
             this.txtMaNVTN.Size = new System.Drawing.Size(184, 26);
             this.txtMaNVTN.TabIndex = 9;
             // 
@@ -271,6 +347,7 @@
             this.btnSuaNVTN.Text = "Cập nhật";
             this.btnSuaNVTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaNVTN.UseVisualStyleBackColor = true;
+            this.btnSuaNVTN.Click += new System.EventHandler(this.btnSuaNVTN_Click);
             // 
             // btnXoaNVTN
             // 
@@ -284,6 +361,7 @@
             this.btnXoaNVTN.Text = "Xóa";
             this.btnXoaNVTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaNVTN.UseVisualStyleBackColor = true;
+            this.btnXoaNVTN.Click += new System.EventHandler(this.btnXoaNVTN_Click);
             // 
             // btnThemNVTN
             // 
@@ -298,81 +376,6 @@
             this.btnThemNVTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNVTN.UseVisualStyleBackColor = true;
             this.btnThemNVTN.Click += new System.EventHandler(this.btnThemNVTN_Click);
-            // 
-            // cobDiaChiNVTN
-            // 
-            this.cobDiaChiNVTN.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cobDiaChiNVTN.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cobDiaChiNVTN.FormattingEnabled = true;
-            this.cobDiaChiNVTN.Items.AddRange(new object[] {
-            "Yên Bái",
-            "Vĩnh Phúc",
-            "Vĩnh Long",
-            "Tuyên Quang",
-            "Trà Vinh",
-            "Tiền Giang",
-            "Thừa Thiên Huế",
-            "Thanh Hóa",
-            "Thái Nguyên",
-            "Thái Bình",
-            "Tây Ninh",
-            "Sơn La",
-            "Sóc Trăng",
-            "Quảng Trị",
-            "Quảng Ninh",
-            "Quảng Ngãi",
-            "Quảng Nam",
-            "Quảng Bình",
-            "Phú Yên",
-            "Phú Thọ",
-            "Ninh Thuận",
-            "Ninh Bình",
-            "Nghệ An",
-            "Nam Định",
-            "Long An",
-            "Lào Cai",
-            "Lạng Sơn",
-            "Lâm Đồng",
-            "Lai Châu",
-            "Kon Tum",
-            "Kiên Giang",
-            "Khánh Hòa",
-            "Hưng Yên",
-            "Hoà Bình",
-            "Hậu Giang",
-            "Hải Dương",
-            "Hà Tĩnh",
-            "Hà Nam",
-            "Hà Giang",
-            "Gia Lai",
-            "Đồng Tháp",
-            "Đồng Nai",
-            "Điện Biên",
-            "Đắk Nông",
-            "Đắk Lắk",
-            "Cao Bằng",
-            "Cà Mau",
-            "Bình Thuận",
-            "Bình Phước",
-            "Bình Dương",
-            "Bình Định",
-            "Bến Tre",
-            "Bắc Ninh",
-            "Bạc Liêu",
-            "Bắc Kạn",
-            "Bắc Giang",
-            "Bà Rịa - Vũng Tàu",
-            "An Giang",
-            "Hồ Chí Minh",
-            "Hải Phòng",
-            "Hà Nội",
-            "Đà Nẵng",
-            "Cần Thơ"});
-            this.cobDiaChiNVTN.Location = new System.Drawing.Point(450, 96);
-            this.cobDiaChiNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiNVTN.Name = "cobDiaChiNVTN";
-            this.cobDiaChiNVTN.Size = new System.Drawing.Size(180, 28);
-            this.cobDiaChiNVTN.TabIndex = 18;
             // 
             // NVThuNgan
             // 

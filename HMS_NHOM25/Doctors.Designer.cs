@@ -228,6 +228,7 @@
             this.txtSDTBS.Name = "txtSDTBS";
             this.txtSDTBS.Size = new System.Drawing.Size(180, 22);
             this.txtSDTBS.TabIndex = 12;
+            this.txtSDTBS.TextChanged += new System.EventHandler(this.txtSDTBS_TextChanged);
             // 
             // txtBangCapBS
             // 

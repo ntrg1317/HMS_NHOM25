@@ -38,7 +38,6 @@ namespace HMS_NHOM25
             cobDiaChiBSM.Text = "";
             cobChuyenMonBSM.SelectedIndex = -1;
             txtBangCapBSM.Text = "";
-
         }
         private bool CheckTextBoxes()
         {

@@ -58,6 +58,7 @@
             this.btnThoatAddDichVu.TabIndex = 20;
             this.btnThoatAddDichVu.Text = "Thoát";
             this.btnThoatAddDichVu.UseVisualStyleBackColor = true;
+            this.btnThoatAddDichVu.Click += new System.EventHandler(this.btnThoatAddDichVu_Click);
             // 
             // btnSaveInfoDV
             // 

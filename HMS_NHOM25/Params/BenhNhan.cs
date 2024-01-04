@@ -17,6 +17,7 @@ namespace HMS_NHOM25.Params
         private string _sdt;
         private string _diaChi;
         private string _sdtNguoiThan;
+        private string _trangThai;
 
         private string _tenDN;
         private string _matKhau;
@@ -25,19 +26,21 @@ namespace HMS_NHOM25.Params
         {
         }
 
-        public BenhNhan(string tenBN, object maPhong, string ngaySinh, string ngayVao, string gioiTinh, string benhTrang, string sdt, string diaChi, string sdtNguoiThan, string tenDN, string matKhau)
+        public BenhNhan(string tenBN, object maPhong, string ngaySinh, string ngayVao, string gioiTinh, string benhTrang, string sdt, string diaChi, string sdtNguoiThan, string trangThai = null, string tenDN = null, string matKhau = null)
         {
-            TenBN = tenBN;
-            MaPhong = maPhong;
-            NgaySinh = ngaySinh;
-            NgayVao = ngayVao;
-            GioiTinh = gioiTinh;
-            BenhTrang = benhTrang;
-            Sdt = sdt;
-            DiaChi = diaChi;
-            SdtNguoiThan = sdtNguoiThan;
-            TenDN = tenDN;
-            MatKhau = matKhau;
+            _tenBN = tenBN;
+            _maPhong = maPhong;
+            _ngaySinh = ngaySinh;
+            _ngayVao = ngayVao;
+            _gioiTinh = gioiTinh;
+            _benhTrang = benhTrang;
+            _sdt = sdt;
+            _diaChi = diaChi;
+            _sdtNguoiThan = sdtNguoiThan;
+            _trangThai = trangThai;
+
+            _tenDN = tenDN;
+            _matKhau = matKhau;
         }
 
         public string TenBN { get => _tenBN; set => _tenBN = value; }
@@ -51,5 +54,6 @@ namespace HMS_NHOM25.Params
         public string TenDN { get => _tenDN; set => _tenDN = value; }
         public string MatKhau { get => _matKhau; set => _matKhau = value; }
         public object MaPhong { get => _maPhong; set => _maPhong = value; }
+        public string TrangThai { get => (_trangThai == "Hoạt động") ? "1" : "0"; set => _trangThai = value; }
     }
 }

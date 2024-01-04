@@ -80,11 +80,6 @@ namespace HMS_NHOM25
             OpenChildForm(new NVThuNgan(), btnTN);
         }
 
-        private void btnYT_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new NVYTe(), btnYT);
-        }
-
         private void btnPhong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Phong(), btnPhong);
@@ -100,19 +95,24 @@ namespace HMS_NHOM25
             OpenChildForm(new DSHoaDon(), btnHD);
         }
 
-        private void panel14_Paint(object sender, PaintEventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDV_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new DichVu(), btnDvu);
         }
 
-        private void panel15_Paint(object sender, PaintEventArgs e)
+        private void btnTK_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new TaiKhoan(), btnTK);
+        }
 
+        private void btnDS_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new DuocSi(), btnDS);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -136,11 +136,6 @@ namespace HMS_NHOM25
                     isCollapsed = true;
                 }
             }
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
         }
     }
 }
