@@ -17,7 +17,6 @@ namespace HMS_NHOM25
     {
         BacSi qlBacSi;
         BaseModel Doctor = new BaseModel();
-        BaseModel taiKhoan = new BaseModel();
         public AddDoctor()
         {
             InitializeComponent();
@@ -105,14 +104,14 @@ namespace HMS_NHOM25
 
                     GetValuesTextBoxes();
 
-                    string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('2', N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
+                    string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + qlBacSi.TenDNBS + "' ,N'" + qlBacSi.MatKhauBS + "')";
 
                     try
                     {
                         if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         {
-                            taiKhoan.Command(query2);
-                            int id = taiKhoan.getLastInsertID("MaTK", "taiKhoan");
+                            Doctor.Command(query2);
+                            int id = Doctor.getLastInsertID("MaTK", "taiKhoan");
 
                             string query1 = "INSERT INTO bacSi (MaBS, TenBS, NgaySinh, GioiTinh, SDT, DiaChi, ChuyenMon, BangCap) VALUES " +
                                 "('" + id + "', N'" + qlBacSi.TenBS + "' ,N'" + qlBacSi.NgaySinh + "', N'" + qlBacSi.GioiTinh + "', N'" + qlBacSi.Sdt + "' , N'" + qlBacSi.DiaChi + "', N'" + qlBacSi.ChuyenMon + "', N'" + qlBacSi.BangCap + "')";

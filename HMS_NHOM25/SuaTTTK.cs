@@ -17,5 +17,9 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
+        private void btnLuuTT_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

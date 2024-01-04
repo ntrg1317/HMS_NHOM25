@@ -126,16 +126,6 @@ namespace HMS_NHOM25
             }
         }
 
-        private void DeleteTextBoxes()
-        {
-            txtTenNVTN.Text = "";
-            DOBNVTN.Text = "";
-            cobGioiTinhNVTN.Text = "";
-            txtSDTNVTN.Text = "";
-            cobDiaChiNVTN.Text = "";
-            cobTrangThaiNVTN.SelectedValue = null;
-        }
-
         private bool CheckTextBoxes()
         {
             if (txtTenNVTN.Text == "")
