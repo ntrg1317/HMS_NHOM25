@@ -26,7 +26,7 @@ namespace HMS_NHOM25.Params
         {
         }
 
-        public BenhNhan(string tenBN, object maPhong, string ngaySinh, string ngayVao, string gioiTinh, string benhTrang, string sdt, string diaChi, string sdtNguoiThan, string trangThai = null, string tenDN = null, string matKhau = null)
+        public BenhNhan(string tenBN, object maPhong, string ngaySinh, string ngayVao, string gioiTinh, string benhTrang, string sdt, string diaChi, string sdtNguoiThan = null, string trangThai = null, string tenDN = null, string matKhau = null)
         {
             _tenBN = tenBN;
             _maPhong = maPhong;

@@ -172,11 +172,8 @@
     <Compile Include="Model\ConnectDB.cs" />
     <Compile Include="Params\BenhNhan.cs" />
     <Compile Include="Params\BacSi.cs" />
-    <Compile Include="Params\DichVuParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Params\NVThuNganParams.cs" />
-    <Compile Include="Params\PhongParams.cs" />
-    <Compile Include="Params\TaiKhoanParams.cs" />
     <Compile Include="Patient_TTTK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -554,7 +551,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-    <None Include="Resources\add3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

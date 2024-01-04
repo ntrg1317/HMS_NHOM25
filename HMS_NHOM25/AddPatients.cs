@@ -17,7 +17,6 @@ namespace HMS_NHOM25
     {
         BenhNhan bn = new BenhNhan();
         BaseModel bn_tk = new BaseModel();
-        BaseModel phong = new BaseModel();
         public AddPatients()
         {
             InitializeComponent();
@@ -25,7 +24,7 @@ namespace HMS_NHOM25
 
         private void showComboBox()
         {
-            DataTable dt = phong.all("phong");
+            DataTable dt = bn_tk.all("phong");
 
             cobTenPhong.DataSource = dt;
             cobTenPhong.DisplayMember = "TenPhong";
@@ -43,13 +42,13 @@ namespace HMS_NHOM25
         private void DeleteTextBoxes()
         {
             txtTenBNM.Text         = "";
-            cobTenPhong.SelectedValue = null;
+            cobTenPhong.SelectedValue = -1;
             dateDobBn.Text         = "";
             dateNgayVaoM.Text      = "";
-            cobSexBNM.Text         = "";
+            cobSexBNM.SelectedValue = -1;
             txtBenhTrangBNM.Text   = "";
             txtSDTBNM.Text         = "";
-            cobDiaChiBNM.Text      = "";
+            cobDiaChiBNM.SelectedValue = -1;
             txtSDTNguoiThanM.Text  = "";
             txtTenDNBNM.Text       = "";
             txtMatKhauBNM.Text     = "";
@@ -111,7 +110,7 @@ namespace HMS_NHOM25
             string _tenDN        = txtTenDNBNM.Text;
             string _matKhau      = txtMatKhauBNM.Text;
 
-            bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, _tenDN, _matKhau);
+            bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
         }
 
         private void btnSaveInfoBNM_Click(object sender, EventArgs e)
@@ -124,6 +123,7 @@ namespace HMS_NHOM25
                     SqlTransaction transaction = sqlConnection.BeginTransaction();
 
                     GetValuesTextBoxes();
+                    MessageBox.Show(bn.TenDN);
 
                     string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + bn.TenDN + "' ,N'" + bn.MatKhau + "')";
 
