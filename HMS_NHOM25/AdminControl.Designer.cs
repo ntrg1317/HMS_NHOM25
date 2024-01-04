@@ -532,6 +532,13 @@
             this.btnTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            // 
             // navbar
             // 
             this.navbar.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -755,6 +762,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1191, 767);
             this.Controls.Add(this.panelBody);
