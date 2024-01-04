@@ -15,7 +15,7 @@ namespace HMS_NHOM25
 {
     public partial class AddDoctor : Form
     {
-        TestBacSi qlBacSi;
+        BacSi qlBacSi;
         BaseModel Doctor = new BaseModel();
         BaseModel taiKhoan = new BaseModel();
         public AddDoctor()
@@ -91,7 +91,7 @@ namespace HMS_NHOM25
             string _bangCap = txtBangCapBSM.Text;
             string _tenDNBS = txtTenDNBSM.Text;
             string _matKhauBS = txtMatKhauBSM.Text;
-            qlBacSi = new TestBacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS);
+            qlBacSi = new BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS);
 
         }
 
