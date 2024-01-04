@@ -14,7 +14,7 @@ namespace HMS_NHOM25
 {
     public partial class DichVu : Form
     {
-        BaseModel basemodel = new BaseModel();
+        BaseModel dv = new BaseModel();
         private string table = "dichVu";
         public DichVu()
         {
@@ -22,7 +22,14 @@ namespace HMS_NHOM25
         }
         private void DichVu_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                dgvInforDichVu.DataSource = dv.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void txtTKTenDV_TextChanged(object sender, EventArgs e)
@@ -35,7 +42,7 @@ namespace HMS_NHOM25
             else
             {
                 string query = "Select * from dichVu where TenDV like '%" + timKiem + "%'";
-                dgvInforDichVu.DataSource = basemodel.Table(query);
+                dgvInforDichVu.DataSource = dv.Table(query);
             }
         }
 
@@ -45,7 +52,5 @@ namespace HMS_NHOM25
             txtTenDV.Text = dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString();
             txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[2].Value.ToString();
         }
-
-        
     }
 }

@@ -47,7 +47,6 @@ namespace HMS_NHOM25
                 txtSDTDS.Text = dgvInfoDS.SelectedRows[0].Cells[4].Value.ToString();
                 GetSelectedValue(dgvInfoDS.SelectedRows[0].Cells[5].Value.ToString(), cobDiaChiDS);
                 string trangThaiValue = dgvInfoDS.SelectedRows[0].Cells[6].Value.ToString();
-                MessageBox.Show(trangThaiValue);
                 int _trangThai;
                 if (int.TryParse(trangThaiValue, out _trangThai))
                 {

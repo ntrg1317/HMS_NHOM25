@@ -424,7 +424,7 @@
             // 
             // btnThemBS
             // 
-            this.btnThemBS.Image = global::HMS_NHOM25.Properties.Resources.locked;
+            this.btnThemBS.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemBS.Location = new System.Drawing.Point(400, 212);
             this.btnThemBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

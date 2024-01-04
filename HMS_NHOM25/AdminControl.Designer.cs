@@ -62,7 +62,7 @@
             this.btnDvu = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnTK = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.navbar = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -343,7 +343,7 @@
             this.btnDS.TabIndex = 0;
             this.btnDS.Text = "Dược sĩ";
             this.btnDS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDS.Click += new System.EventHandler(this.btnYT_Click_1);
+            this.btnDS.Click += new System.EventHandler(this.btnDS_Click_1);
             // 
             // panel7
             // 
@@ -492,12 +492,12 @@
             this.btnDvu.TabIndex = 0;
             this.btnDvu.Text = "Dịch vụ";
             this.btnDvu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDvu.Click += new System.EventHandler(this.btnHD_Click);
+            this.btnDvu.Click += new System.EventHandler(this.btnDV_Click);
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.pictureBox14);
-            this.panel13.Controls.Add(this.button5);
+            this.panel13.Controls.Add(this.btnTK);
             this.panel13.Controls.Add(this.button4);
             this.panel13.Location = new System.Drawing.Point(3, 692);
             this.panel13.Name = "panel13";
@@ -516,37 +516,21 @@
             this.pictureBox14.TabIndex = 2;
             this.pictureBox14.TabStop = false;
             // 
-            // button5
+            // btnTK
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-11, -14);
-            this.button5.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
-            this.button5.Size = new System.Drawing.Size(240, 78);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Tài khoản";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Click += new System.EventHandler(this.btnHD_Click);
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-11, -11);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
-            this.button4.Size = new System.Drawing.Size(240, 78);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Tài Khoản";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Click += new System.EventHandler(this.btnHD_Click);
+            this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTK.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK.ForeColor = System.Drawing.Color.White;
+            this.btnTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTK.Location = new System.Drawing.Point(-11, -14);
+            this.btnTK.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.btnTK.Size = new System.Drawing.Size(240, 78);
+            this.btnTK.TabIndex = 0;
+            this.btnTK.Text = "Tài khoản";
+            this.btnTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
             // navbar
             // 
@@ -666,7 +650,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(99, 53);
             this.panel15.TabIndex = 5;
-            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
             // pictureBox12
             // 
@@ -739,7 +722,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(117, 53);
             this.panel14.TabIndex = 5;
-            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
             // 
             // pictureBox11
             // 
@@ -763,7 +745,6 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Thông tin\r\ntài khoản";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // timer1
             // 
@@ -879,7 +860,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnDvu;
     }
 }

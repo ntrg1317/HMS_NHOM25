@@ -64,11 +64,11 @@
             this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(252, 26);
+            this.labAddBS.Location = new System.Drawing.Point(323, 29);
             this.labAddBS.Name = "labAddBS";
-            this.labAddBS.Size = new System.Drawing.Size(251, 29);
+            this.labAddBS.Size = new System.Drawing.Size(178, 29);
             this.labAddBS.TabIndex = 0;
-            this.labAddBS.Text = "Thêm Nhân viên y tế";
+            this.labAddBS.Text = "Thêm Dược Sĩ";
             // 
             // palAddBS
             // 
@@ -85,7 +85,7 @@
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.nurse;
-            this.ptbYTe.Location = new System.Drawing.Point(188, 26);
+            this.ptbYTe.Location = new System.Drawing.Point(241, 29);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
             this.ptbYTe.Size = new System.Drawing.Size(69, 26);

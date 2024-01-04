@@ -16,5 +16,10 @@ namespace HMS_NHOM25
         {
             InitializeComponent();
         }
+
+        private void btnThoatAddDichVu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
