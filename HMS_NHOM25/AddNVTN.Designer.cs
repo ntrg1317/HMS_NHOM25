@@ -191,6 +191,9 @@
             // cobSexNVTNM
             // 
             this.cobSexNVTNM.FormattingEnabled = true;
+            this.cobSexNVTNM.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
             this.cobSexNVTNM.Location = new System.Drawing.Point(160, 80);
             this.cobSexNVTNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobSexNVTNM.Name = "cobSexNVTNM";
@@ -355,6 +358,7 @@
             this.btnSaveInfoNVTNM.Text = "Lưu thông tin";
             this.btnSaveInfoNVTNM.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveInfoNVTNM.UseVisualStyleBackColor = true;
+            this.btnSaveInfoNVTNM.Click += new System.EventHandler(this.btnSaveInfoNVTNM_Click);
             // 
             // label3
             // 

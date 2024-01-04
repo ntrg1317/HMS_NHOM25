@@ -46,10 +46,10 @@ namespace HMS_NHOM25
             cobTenPhong.SelectedValue = null;
             dateDobBn.Text         = "";
             dateNgayVaoM.Text      = "";
-            cobSexBNM.Text         = "";
+            cobSexBNM.Text         = null;
             txtBenhTrangBNM.Text   = "";
             txtSDTBNM.Text         = "";
-            cobDiaChiBNM.Text      = "";
+            cobDiaChiBNM.Text      = null;
             txtSDTNguoiThanM.Text  = "";
             txtTenDNBNM.Text       = "";
             txtMatKhauBNM.Text     = "";
