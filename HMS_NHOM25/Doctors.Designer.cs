@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbInforBS = new System.Windows.Forms.GroupBox();
+            this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
             this.cobChuyenMonBS = new System.Windows.Forms.ComboBox();
             this.cobTrangThaiBS = new System.Windows.Forms.ComboBox();
             this.cobSexBS = new System.Windows.Forms.ComboBox();
@@ -54,7 +55,6 @@
             this.btnSuaBS = new System.Windows.Forms.Button();
             this.btnXoaBS = new System.Windows.Forms.Button();
             this.btnThemBS = new System.Windows.Forms.Button();
-            this.cobDiaChiBS = new System.Windows.Forms.ComboBox();
             this.grbInforBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBS)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +88,79 @@
             this.grbInforBS.TabIndex = 0;
             this.grbInforBS.TabStop = false;
             this.grbInforBS.Text = "Thông tin bác sĩ";
+            // 
+            // cobDiaChiBS
+            // 
+            this.cobDiaChiBS.FormattingEnabled = true;
+            this.cobDiaChiBS.Items.AddRange(new object[] {
+            "Yên Bái",
+            "Vĩnh Phúc",
+            "Vĩnh Long",
+            "Tuyên Quang",
+            "Trà Vinh",
+            "Tiền Giang",
+            "Thừa Thiên Huế",
+            "Thanh Hóa",
+            "Thái Nguyên",
+            "Thái Bình",
+            "Tây Ninh",
+            "Sơn La",
+            "Sóc Trăng",
+            "Quảng Trị",
+            "Quảng Ninh",
+            "Quảng Ngãi",
+            "Quảng Nam",
+            "Quảng Bình",
+            "Phú Yên",
+            "Phú Thọ",
+            "Ninh Thuận",
+            "Ninh Bình",
+            "Nghệ An",
+            "Nam Định",
+            "Long An",
+            "Lào Cai",
+            "Lạng Sơn",
+            "Lâm Đồng",
+            "Lai Châu",
+            "Kon Tum",
+            "Kiên Giang",
+            "Khánh Hòa",
+            "Hưng Yên",
+            "Hoà Bình",
+            "Hậu Giang",
+            "Hải Dương",
+            "Hà Tĩnh",
+            "Hà Nam",
+            "Hà Giang",
+            "Gia Lai",
+            "Đồng Tháp",
+            "Đồng Nai",
+            "Điện Biên",
+            "Đắk Nông",
+            "Đắk Lắk",
+            "Cao Bằng",
+            "Cà Mau",
+            "Bình Thuận",
+            "Bình Phước",
+            "Bình Dương",
+            "Bình Định",
+            "Bến Tre",
+            "Bắc Ninh",
+            "Bạc Liêu",
+            "Bắc Kạn",
+            "Bắc Giang",
+            "Bà Rịa - Vũng Tàu",
+            "An Giang",
+            "Hồ Chí Minh",
+            "Hải Phòng",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Cần Thơ"});
+            this.cobDiaChiBS.Location = new System.Drawing.Point(450, 96);
+            this.cobDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobDiaChiBS.Name = "cobDiaChiBS";
+            this.cobDiaChiBS.Size = new System.Drawing.Size(202, 28);
+            this.cobDiaChiBS.TabIndex = 19;
             // 
             // cobChuyenMonBS
             // 
@@ -305,6 +378,7 @@
             this.dgvInfoBS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvInfoBS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInfoBS.Location = new System.Drawing.Point(35, 329);
             this.dgvInfoBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -358,79 +432,6 @@
             this.btnThemBS.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemBS.UseVisualStyleBackColor = true;
             this.btnThemBS.Click += new System.EventHandler(this.btnThemBS_Click);
-            // 
-            // cobDiaChiBS
-            // 
-            this.cobDiaChiBS.FormattingEnabled = true;
-            this.cobDiaChiBS.Items.AddRange(new object[] {
-            "Yên Bái",
-            "Vĩnh Phúc",
-            "Vĩnh Long",
-            "Tuyên Quang",
-            "Trà Vinh",
-            "Tiền Giang",
-            "Thừa Thiên Huế",
-            "Thanh Hóa",
-            "Thái Nguyên",
-            "Thái Bình",
-            "Tây Ninh",
-            "Sơn La",
-            "Sóc Trăng",
-            "Quảng Trị",
-            "Quảng Ninh",
-            "Quảng Ngãi",
-            "Quảng Nam",
-            "Quảng Bình",
-            "Phú Yên",
-            "Phú Thọ",
-            "Ninh Thuận",
-            "Ninh Bình",
-            "Nghệ An",
-            "Nam Định",
-            "Long An",
-            "Lào Cai",
-            "Lạng Sơn",
-            "Lâm Đồng",
-            "Lai Châu",
-            "Kon Tum",
-            "Kiên Giang",
-            "Khánh Hòa",
-            "Hưng Yên",
-            "Hoà Bình",
-            "Hậu Giang",
-            "Hải Dương",
-            "Hà Tĩnh",
-            "Hà Nam",
-            "Hà Giang",
-            "Gia Lai",
-            "Đồng Tháp",
-            "Đồng Nai",
-            "Điện Biên",
-            "Đắk Nông",
-            "Đắk Lắk",
-            "Cao Bằng",
-            "Cà Mau",
-            "Bình Thuận",
-            "Bình Phước",
-            "Bình Dương",
-            "Bình Định",
-            "Bến Tre",
-            "Bắc Ninh",
-            "Bạc Liêu",
-            "Bắc Kạn",
-            "Bắc Giang",
-            "Bà Rịa - Vũng Tàu",
-            "An Giang",
-            "Hồ Chí Minh",
-            "Hải Phòng",
-            "Hà Nội",
-            "Đà Nẵng",
-            "Cần Thơ"});
-            this.cobDiaChiBS.Location = new System.Drawing.Point(450, 96);
-            this.cobDiaChiBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobDiaChiBS.Name = "cobDiaChiBS";
-            this.cobDiaChiBS.Size = new System.Drawing.Size(202, 28);
-            this.cobDiaChiBS.TabIndex = 19;
             // 
             // Doctors
             // 
