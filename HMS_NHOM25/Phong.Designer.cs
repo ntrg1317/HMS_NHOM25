@@ -37,7 +37,6 @@
             this.txtSoLuongPhong = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.labTenBN = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.txtTKTenPhong = new System.Windows.Forms.TextBox();
             this.labTenPhong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforPhong)).BeginInit();
             this.grb.SuspendLayout();
             this.SuspendLayout();
@@ -72,12 +72,12 @@
             // 
             // grb
             // 
+            this.grb.Controls.Add(this.cobTenPhong);
             this.grb.Controls.Add(this.label4);
             this.grb.Controls.Add(this.txtGiaPhong);
             this.grb.Controls.Add(this.txtSoLuongPhong);
             this.grb.Controls.Add(this.label1);
             this.grb.Controls.Add(this.label3);
-            this.grb.Controls.Add(this.txtTenPhong);
             this.grb.Controls.Add(this.txtMaPhong);
             this.grb.Controls.Add(this.labTenBN);
             this.grb.Controls.Add(this.labMaBN);
@@ -113,11 +113,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Name = "label3";
-            // 
-            // txtTenPhong
-            // 
-            resources.ApplyResources(this.txtTenPhong, "txtTenPhong");
-            this.txtTenPhong.Name = "txtTenPhong";
             // 
             // txtMaPhong
             // 
@@ -178,6 +173,12 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Name = "label5";
             // 
+            // cobTenPhong
+            // 
+            this.cobTenPhong.FormattingEnabled = true;
+            resources.ApplyResources(this.cobTenPhong, "cobTenPhong");
+            this.cobTenPhong.Name = "cobTenPhong";
+            // 
             // Phong
             // 
             resources.ApplyResources(this, "$this");
@@ -211,7 +212,6 @@
         private System.Windows.Forms.TextBox txtSoLuongPhong;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTenPhong;
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.Label labTenBN;
         private System.Windows.Forms.Label labMaBN;
@@ -221,5 +221,6 @@
         private System.Windows.Forms.TextBox txtTKTenPhong;
         private System.Windows.Forms.Label labTenPhong;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cobTenPhong;
     }
 }
