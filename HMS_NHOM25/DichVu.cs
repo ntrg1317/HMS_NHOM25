@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -48,10 +49,14 @@ namespace HMS_NHOM25
         }
 
         private void dgvInforDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
+        {  
             txtMaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[0].Value.ToString();
             txtTenDV.Text = dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString();
             txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[2].Value.ToString();
+            if (txtSDTBN.Text != "")
+            {
+                dateNgayDung.Text = dgvInforDichVu.SelectedRows[0].Cells[6].Value.ToString();
+            }
         }
 
         private void btnThemDV_Click(object sender, EventArgs e)
@@ -110,6 +115,7 @@ namespace HMS_NHOM25
 
         private void DeleteTextBoxes()
         {
+            txtMaDV.Text = "";
             txtTenDV.Text = "";
             txtGiaDV.Text = "";
         }
@@ -124,6 +130,10 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Bạn chưa nhập giá!"); return false;
             }
+            if (dateNgayDung.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn ngày sử dụng dịch vụ!"); return false;
+            }    
             return true;
         }
 
@@ -131,8 +141,81 @@ namespace HMS_NHOM25
         {
             string _tenDV = txtTenDV.Text;
             string _tienDV = txtGiaDV.Text;
+            string _ngayDung = dateNgayDung.Text;
 
-            dvp = new DichVuParams(_tenDV, _tienDV);
+            dvp = txtSDTBN.Text == "" ? new DichVuParams(_tenDV, _tienDV) : new DichVuParams(_tenDV, _tienDV, _ngayDung);
+        }
+
+        private void txtSDTBN_TextChanged(object sender, EventArgs e)
+        {
+            DeleteTextBoxes();
+            if (txtSDTBN.Text != "")
+            {
+                btnThemDV.Enabled = false;
+                lablNgayDung.Visible = true;
+                dateNgayDung.Visible = true;
+                btnXoaBNDV.Visible = true;
+                btnSuaBNDV.Visible = true;
+                btnXoaDV.Visible = false;
+                btnSuaDV.Visible = false;
+            } 
+            else
+            {
+                btnThemDV.Enabled = true;
+                lablNgayDung.Visible = false;
+                dateNgayDung.Visible = false;
+                btnSuaBNDV.Visible = false;
+                btnXoaBNDV.Visible = false;
+                btnXoaDV.Visible = true;
+                btnSuaDV.Visible = true;
+            }    
+           
+            string timKiem = txtSDTBN.Text.Trim();
+            if (timKiem == "")
+            {
+                DichVu_Load(sender, e);
+            }
+            else
+            {
+                string query = "SELECT dv.MaDV, TenDV, dv.TienDV, bn.TenBN, bn.SDT, bn.NgayVao, NgayDung " +
+                        "FROM dichVu AS dv " +
+                        "JOIN benhNhan_dichVu AS bn_dv " +
+                        "ON dv.MaDV = bn_dv.MaDV " +
+                        "JOIN benhNhan AS bn " +
+                        "ON bn_dv.MaBN = bn.MaBN " +
+                        "WHERE bn.SDT LIKE '%" + timKiem + "%'";
+                dgvInforDichVu.DataSource = dv.Table(query);
+            }
+        }
+
+        private void btnSuaBNDV_Click(object sender, EventArgs e)
+        {
+            if (CheckTextBoxes())
+            {
+                GetValuesTextBoxes();
+                string query1 = "UPDATE dichVu SET " +
+                        $"TenDV = N'{dvp.TenDV}', " +
+                        $"TienDV = N'{dvp.TienDV}' " +
+                        $"WHERE MaDV = '{txtMaDV.Text}'";
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn cập nhật thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        dv.Command(query1);
+                        MessageBox.Show("Cập nhật thông tin thành công!");
+                        DichVu_Load(sender, e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnXoaBNDV_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

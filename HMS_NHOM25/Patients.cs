@@ -54,15 +54,10 @@ namespace HMS_NHOM25
         }
 
         private void dgvInfoBN_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(cobTrangThaiBN.Text == "Hoạt động")
-            {
-                btnThemDV.Enabled = true;
-            }
+        {  
             try
             {
                 txtMaBN.Text = dgvInfoBN.SelectedRows[0].Cells[0].Value.ToString();
-                // GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells[1].Value.ToString(), cobTenPhong);
                 txtTenBN.Text = dgvInfoBN.SelectedRows[0].Cells[2].Value.ToString();
                 DOBBN.Text = dgvInfoBN.SelectedRows[0].Cells[3].Value.ToString();
                 DateVaoVienBN.Text = dgvInfoBN.SelectedRows[0].Cells[4].Value.ToString();
@@ -78,10 +73,12 @@ namespace HMS_NHOM25
                     if (_trangThai == 1)
                     {
                         cobTrangThaiBN.Text = "Hoạt động";
+                        btnThemDV.Enabled = true;
                     }
                     else
                     {
                         cobTrangThaiBN.Text = "Ngừng hoạt động";
+                        btnThemDV.Enabled = false;
                     }
                 }
                 string tenPhongValue = dgvInfoBN.SelectedRows[0].Cells[1].Value.ToString();
