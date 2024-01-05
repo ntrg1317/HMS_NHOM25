@@ -49,18 +49,7 @@ namespace HMS_NHOM25
                 dgvInfoBS.DataSource = bacSi.Table(query);
             }
         }
-        private void DeleteTextBoxes()
-        {
-            txtTenBS.Text = "";
-            DOBBS.Text = "";
-            cobSexBS.SelectedIndex = -1;
-            txtSDTBS.Text = "";
-            cobDiaChiBS.Text = "";
-            cobChuyenMonBS.SelectedIndex = -1;
-            txtBangCapBS.Text = "";
-            cobTrangThaiBS.SelectedIndex = -1;
 
-        }
         private bool CheckTextBoxes()
         {
             if (txtTenBS.Text == "")
