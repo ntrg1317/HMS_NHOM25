@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,14 +19,11 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private static string connectionString = @"Data Source = VANGNGUYEN\SQLEXPRESS;Initial Catalog = HMS; Integrated Security = True";
-
-
         private void ThongKeBenhNhan_Load(object sender, EventArgs e)
         {
 
             string query1 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuongBenhNhan FROM BenhNhan WHERE YEAR(NgayVao) = 2024 GROUP BY MONTH(NgayVao) ORDER BY Thang";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
@@ -45,7 +43,7 @@ namespace HMS_NHOM25
             }
 
             string query2 = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuongBenhNhan FROM benhNhan GROUP BY YEAR(NgayVao) ORDER BY Nam;";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
@@ -66,7 +64,7 @@ namespace HMS_NHOM25
 
             }
             string query3 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuongBenhNhan FROM BenhNhan WHERE YEAR(NgayVao) = 2023 GROUP BY MONTH(NgayVao) ORDER BY Thang";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 

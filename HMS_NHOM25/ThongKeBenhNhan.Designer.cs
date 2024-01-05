@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labTKBenhNhan = new System.Windows.Forms.Label();
             this.chartSLBNtheoNam = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.benhNhanBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -76,17 +76,17 @@
             // 
             // chartSLBNtheoNam
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartSLBNtheoNam.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartSLBNtheoNam.Legends.Add(legend4);
+            chartArea7.Name = "ChartArea1";
+            this.chartSLBNtheoNam.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chartSLBNtheoNam.Legends.Add(legend7);
             this.chartSLBNtheoNam.Location = new System.Drawing.Point(93, 27);
             this.chartSLBNtheoNam.Name = "chartSLBNtheoNam";
             this.chartSLBNtheoNam.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Bệnh nhân";
-            this.chartSLBNtheoNam.Series.Add(series4);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Bệnh nhân";
+            this.chartSLBNtheoNam.Series.Add(series7);
             this.chartSLBNtheoNam.Size = new System.Drawing.Size(759, 300);
             this.chartSLBNtheoNam.TabIndex = 3;
             this.chartSLBNtheoNam.Text = "Số lượng bệnh nhân theo năm";
@@ -148,17 +148,17 @@
             // 
             // chartSLBN2024
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartSLBN2024.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartSLBN2024.Legends.Add(legend5);
+            chartArea8.Name = "ChartArea1";
+            this.chartSLBN2024.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chartSLBN2024.Legends.Add(legend8);
             this.chartSLBN2024.Location = new System.Drawing.Point(23, 20);
             this.chartSLBN2024.Name = "chartSLBN2024";
             this.chartSLBN2024.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Bệnh nhân";
-            this.chartSLBN2024.Series.Add(series5);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Bệnh nhân";
+            this.chartSLBN2024.Series.Add(series8);
             this.chartSLBN2024.Size = new System.Drawing.Size(416, 300);
             this.chartSLBN2024.TabIndex = 9;
             this.chartSLBN2024.Text = "Số lượng bệnh nhân theo năm";
@@ -191,17 +191,17 @@
             // 
             // chartSLBN2023
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartSLBN2023.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartSLBN2023.Legends.Add(legend6);
+            chartArea9.Name = "ChartArea1";
+            this.chartSLBN2023.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chartSLBN2023.Legends.Add(legend9);
             this.chartSLBN2023.Location = new System.Drawing.Point(487, 20);
             this.chartSLBN2023.Name = "chartSLBN2023";
             this.chartSLBN2023.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Bệnh nhân";
-            this.chartSLBN2023.Series.Add(series6);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Bệnh nhân";
+            this.chartSLBN2023.Series.Add(series9);
             this.chartSLBN2023.Size = new System.Drawing.Size(415, 300);
             this.chartSLBN2023.TabIndex = 11;
             this.chartSLBN2023.Text = "Số lượng bệnh nhân theo năm";

@@ -15,6 +15,7 @@ namespace HMS_NHOM25
         public BaoCaoThongKe()
         {
             InitializeComponent();
+            OpenChildForm(new ThongKeBenhNhan(), btnTKBenhNhan);
         }
         private Form currentFormChild;
         private Button lastClickedButton;
