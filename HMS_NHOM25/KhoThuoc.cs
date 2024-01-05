@@ -156,5 +156,29 @@ namespace HMS_NHOM25
             string _tienThuoc = txtGiaThuoc.Text;
             ktp = new KhoThuocParams(_tenThuoc, _soLuong, _nsx, _hsd, _tienThuoc);
         }
+
+        private void txtGiaThuoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSoLuongThuoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

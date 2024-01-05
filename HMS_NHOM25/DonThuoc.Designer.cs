@@ -42,6 +42,8 @@
             this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaDonThuoc = new System.Windows.Forms.Button();
             this.btnThemDonThuoc = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cobTrangThaiTT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSDonThuoc)).BeginInit();
             this.grbInfoDonThuoc.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             // 
             this.labTimKiemDT.AutoSize = true;
             this.labTimKiemDT.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemDT.Location = new System.Drawing.Point(35, 186);
+            this.labTimKiemDT.Location = new System.Drawing.Point(35, 204);
             this.labTimKiemDT.Name = "labTimKiemDT";
             this.labTimKiemDT.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemDT.TabIndex = 1;
@@ -60,7 +62,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(100, 239);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(100, 253);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 18;
@@ -68,12 +70,13 @@
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(252, 233);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(252, 247);
             this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(218, 26);
             this.txtTimKiemSDTBN.TabIndex = 18;
             this.txtTimKiemSDTBN.TextChanged += new System.EventHandler(this.txtTimKiemSDTBN_TextChanged);
+            this.txtTimKiemSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiemSDTBN_KeyPress);
             // 
             // dgvInfoDSDonThuoc
             // 
@@ -95,7 +98,7 @@
             // 
             this.labDSDT.AutoSize = true;
             this.labDSDT.ForeColor = System.Drawing.Color.Red;
-            this.labDSDT.Location = new System.Drawing.Point(35, 305);
+            this.labDSDT.Location = new System.Drawing.Point(35, 315);
             this.labDSDT.Name = "labDSDT";
             this.labDSDT.Size = new System.Drawing.Size(161, 20);
             this.labDSDT.TabIndex = 21;
@@ -103,6 +106,8 @@
             // 
             // grbInfoDonThuoc
             // 
+            this.grbInfoDonThuoc.Controls.Add(this.cobTrangThaiTT);
+            this.grbInfoDonThuoc.Controls.Add(this.label1);
             this.grbInfoDonThuoc.Controls.Add(this.labMaDT);
             this.grbInfoDonThuoc.Controls.Add(this.txtMaDT);
             this.grbInfoDonThuoc.Controls.Add(this.labMaBN);
@@ -112,7 +117,7 @@
             this.grbInfoDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDonThuoc.Name = "grbInfoDonThuoc";
             this.grbInfoDonThuoc.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoDonThuoc.Size = new System.Drawing.Size(1027, 122);
+            this.grbInfoDonThuoc.Size = new System.Drawing.Size(1027, 150);
             this.grbInfoDonThuoc.TabIndex = 22;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Thông tin đơn thuốc";
@@ -159,7 +164,7 @@
             // 
             this.btnCapNhatDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.pills;
             this.btnCapNhatDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(742, 227);
+            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(742, 241);
             this.btnCapNhatDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatDonThuoc.Name = "btnCapNhatDonThuoc";
             this.btnCapNhatDonThuoc.Size = new System.Drawing.Size(108, 39);
@@ -173,7 +178,7 @@
             // 
             this.btnXoaDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDonThuoc.Location = new System.Drawing.Point(928, 227);
+            this.btnXoaDonThuoc.Location = new System.Drawing.Point(928, 241);
             this.btnXoaDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDonThuoc.Name = "btnXoaDonThuoc";
             this.btnXoaDonThuoc.Size = new System.Drawing.Size(96, 39);
@@ -187,7 +192,7 @@
             // 
             this.btnThemDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDonThuoc.Location = new System.Drawing.Point(565, 227);
+            this.btnThemDonThuoc.Location = new System.Drawing.Point(565, 241);
             this.btnThemDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDonThuoc.Name = "btnThemDonThuoc";
             this.btnThemDonThuoc.Size = new System.Drawing.Size(99, 39);
@@ -196,6 +201,24 @@
             this.btnThemDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemDonThuoc.UseVisualStyleBackColor = true;
             this.btnThemDonThuoc.Click += new System.EventHandler(this.btnThemDonThuoc_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(72, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Trạng thái TT";
+            // 
+            // cobTrangThaiTT
+            // 
+            this.cobTrangThaiTT.FormattingEnabled = true;
+            this.cobTrangThaiTT.Location = new System.Drawing.Point(222, 98);
+            this.cobTrangThaiTT.Name = "cobTrangThaiTT";
+            this.cobTrangThaiTT.Size = new System.Drawing.Size(216, 28);
+            this.cobTrangThaiTT.TabIndex = 34;
             // 
             // DonThuoc
             // 
@@ -238,5 +261,7 @@
         private System.Windows.Forms.Button btnCapNhatDonThuoc;
         private System.Windows.Forms.Button btnXoaDonThuoc;
         private System.Windows.Forms.Button btnThemDonThuoc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cobTrangThaiTT;
     }
 }
