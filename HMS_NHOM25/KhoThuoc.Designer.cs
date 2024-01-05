@@ -97,6 +97,7 @@
             this.txtGiaThuoc.Name = "txtGiaThuoc";
             this.txtGiaThuoc.Size = new System.Drawing.Size(180, 26);
             this.txtGiaThuoc.TabIndex = 17;
+            this.txtGiaThuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaThuoc_KeyPress);
             // 
             // labGiaThuoc
             // 
@@ -143,6 +144,7 @@
             this.txtSoLuongThuoc.Name = "txtSoLuongThuoc";
             this.txtSoLuongThuoc.Size = new System.Drawing.Size(180, 26);
             this.txtSoLuongThuoc.TabIndex = 12;
+            this.txtSoLuongThuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
             // 
             // txtTenThuoc
             // 
