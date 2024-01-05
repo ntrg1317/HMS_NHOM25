@@ -182,6 +182,7 @@
     <Compile Include="Params\BacSi.cs" />
     <Compile Include="Params\DichVuParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
+    <Compile Include="Params\HoaDonParams.cs" />
     <Compile Include="Params\KhoThuocParams.cs" />
     <Compile Include="Params\NVThuNganParams.cs" />
     <Compile Include="Params\PhongParams.cs" />

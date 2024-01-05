@@ -101,7 +101,7 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "Select * from bacSi where TenBS like '%" + name + "%'";
+                string query = "Select * from khoThuoc where TenThuoc like '%" + name + "%'";
                 dgvInfoKhoThuoc.DataSource = basemodel.Table(query);
             }
         }
