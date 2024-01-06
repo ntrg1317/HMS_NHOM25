@@ -29,21 +29,19 @@
         private void InitializeComponent()
         {
             this.grbTTBenhNhan = new System.Windows.Forms.GroupBox();
+            this.txtDiaChiBN = new System.Windows.Forms.TextBox();
+            this.txtSexBN = new System.Windows.Forms.TextBox();
             this.dateNgayVao = new System.Windows.Forms.DateTimePicker();
             this.labNgayVao = new System.Windows.Forms.Label();
-            this.cbbDiaChi = new System.Windows.Forms.ComboBox();
-            this.cbbGioiTinh = new System.Windows.Forms.ComboBox();
             this.labGioiTinh = new System.Windows.Forms.Label();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.labNgaySinh = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
             this.txtBenhTrang = new System.Windows.Forms.TextBox();
             this.labDiaChi = new System.Windows.Forms.Label();
-            this.labMaHD = new System.Windows.Forms.Label();
-            this.txtMaHD = new System.Windows.Forms.TextBox();
-            this.dateNgayTT = new System.Windows.Forms.DateTimePicker();
             this.labHoTen = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.dateNgayTT = new System.Windows.Forms.DateTimePicker();
             this.labNgayTT = new System.Windows.Forms.Label();
             this.labHoaDon = new System.Windows.Forms.Label();
             this.grbThanhToan = new System.Windows.Forms.GroupBox();
@@ -70,10 +68,10 @@
             // 
             // grbTTBenhNhan
             // 
+            this.grbTTBenhNhan.Controls.Add(this.txtDiaChiBN);
+            this.grbTTBenhNhan.Controls.Add(this.txtSexBN);
             this.grbTTBenhNhan.Controls.Add(this.dateNgayVao);
             this.grbTTBenhNhan.Controls.Add(this.labNgayVao);
-            this.grbTTBenhNhan.Controls.Add(this.cbbDiaChi);
-            this.grbTTBenhNhan.Controls.Add(this.cbbGioiTinh);
             this.grbTTBenhNhan.Controls.Add(this.labGioiTinh);
             this.grbTTBenhNhan.Controls.Add(this.dateNgaySinh);
             this.grbTTBenhNhan.Controls.Add(this.labNgaySinh);
@@ -91,7 +89,24 @@
             this.grbTTBenhNhan.TabIndex = 41;
             this.grbTTBenhNhan.TabStop = false;
             this.grbTTBenhNhan.Text = "Thông tin bệnh nhân";
-            this.grbTTBenhNhan.Enter += new System.EventHandler(this.grbTTBenhNhan_Enter);
+            // 
+            // txtDiaChiBN
+            // 
+            this.txtDiaChiBN.Location = new System.Drawing.Point(505, 77);
+            this.txtDiaChiBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChiBN.Name = "txtDiaChiBN";
+            this.txtDiaChiBN.ReadOnly = true;
+            this.txtDiaChiBN.Size = new System.Drawing.Size(167, 26);
+            this.txtDiaChiBN.TabIndex = 51;
+            // 
+            // txtSexBN
+            // 
+            this.txtSexBN.Location = new System.Drawing.Point(137, 77);
+            this.txtSexBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSexBN.Name = "txtSexBN";
+            this.txtSexBN.ReadOnly = true;
+            this.txtSexBN.Size = new System.Drawing.Size(167, 26);
+            this.txtSexBN.TabIndex = 50;
             // 
             // dateNgayVao
             // 
@@ -111,32 +126,6 @@
             this.labNgayVao.Size = new System.Drawing.Size(74, 20);
             this.labNgayVao.TabIndex = 48;
             this.labNgayVao.Text = "Ngày vào";
-            // 
-            // cbbDiaChi
-            // 
-            this.cbbDiaChi.FormattingEnabled = true;
-            this.cbbDiaChi.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.cbbDiaChi.Location = new System.Drawing.Point(503, 79);
-            this.cbbDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbDiaChi.Name = "cbbDiaChi";
-            this.cbbDiaChi.Size = new System.Drawing.Size(167, 28);
-            this.cbbDiaChi.TabIndex = 47;
-            // 
-            // cbbGioiTinh
-            // 
-            this.cbbGioiTinh.FormattingEnabled = true;
-            this.cbbGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.cbbGioiTinh.Location = new System.Drawing.Point(137, 77);
-            this.cbbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbbGioiTinh.Name = "cbbGioiTinh";
-            this.cbbGioiTinh.Size = new System.Drawing.Size(167, 28);
-            this.cbbGioiTinh.TabIndex = 46;
             // 
             // labGioiTinh
             // 
@@ -182,6 +171,7 @@
             this.txtBenhTrang.Location = new System.Drawing.Point(503, 36);
             this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBenhTrang.Name = "txtBenhTrang";
+            this.txtBenhTrang.ReadOnly = true;
             this.txtBenhTrang.Size = new System.Drawing.Size(167, 26);
             this.txtBenhTrang.TabIndex = 42;
             // 
@@ -194,33 +184,6 @@
             this.labDiaChi.Size = new System.Drawing.Size(57, 20);
             this.labDiaChi.TabIndex = 39;
             this.labDiaChi.Text = "Địa chỉ";
-            // 
-            // labMaHD
-            // 
-            this.labMaHD.AutoSize = true;
-            this.labMaHD.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaHD.Location = new System.Drawing.Point(37, 54);
-            this.labMaHD.Name = "labMaHD";
-            this.labMaHD.Size = new System.Drawing.Size(93, 20);
-            this.labMaHD.TabIndex = 37;
-            this.labMaHD.Text = "Mã hóa đơn";
-            // 
-            // txtMaHD
-            // 
-            this.txtMaHD.Location = new System.Drawing.Point(137, 48);
-            this.txtMaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(167, 26);
-            this.txtMaHD.TabIndex = 38;
-            // 
-            // dateNgayTT
-            // 
-            this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayTT.Location = new System.Drawing.Point(506, 46);
-            this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateNgayTT.Name = "dateNgayTT";
-            this.dateNgayTT.Size = new System.Drawing.Size(164, 26);
-            this.dateNgayTT.TabIndex = 36;
             // 
             // labHoTen
             // 
@@ -237,14 +200,24 @@
             this.txtHoTen.Location = new System.Drawing.Point(137, 36);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(167, 26);
             this.txtHoTen.TabIndex = 34;
+            // 
+            // dateNgayTT
+            // 
+            this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayTT.Location = new System.Drawing.Point(272, 48);
+            this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateNgayTT.Name = "dateNgayTT";
+            this.dateNgayTT.Size = new System.Drawing.Size(164, 26);
+            this.dateNgayTT.TabIndex = 36;
             // 
             // labNgayTT
             // 
             this.labNgayTT.AutoSize = true;
             this.labNgayTT.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayTT.Location = new System.Drawing.Point(369, 52);
+            this.labNgayTT.Location = new System.Drawing.Point(114, 54);
             this.labNgayTT.Name = "labNgayTT";
             this.labNgayTT.Size = new System.Drawing.Size(126, 20);
             this.labNgayTT.TabIndex = 29;
@@ -268,8 +241,6 @@
             this.grbThanhToan.Controls.Add(this.txtTongTien);
             this.grbThanhToan.Controls.Add(this.dateNgayTT);
             this.grbThanhToan.Controls.Add(this.labNgayTT);
-            this.grbThanhToan.Controls.Add(this.txtMaHD);
-            this.grbThanhToan.Controls.Add(this.labMaHD);
             this.grbThanhToan.ForeColor = System.Drawing.Color.Red;
             this.grbThanhToan.Location = new System.Drawing.Point(27, 584);
             this.grbThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -279,13 +250,12 @@
             this.grbThanhToan.TabIndex = 48;
             this.grbThanhToan.TabStop = false;
             this.grbThanhToan.Text = "Thông tin hóa đơn";
-            this.grbThanhToan.Enter += new System.EventHandler(this.grbInfoHoaDon_Enter);
             // 
             // labVND
             // 
             this.labVND.AutoSize = true;
             this.labVND.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labVND.Location = new System.Drawing.Point(984, 48);
+            this.labVND.Location = new System.Drawing.Point(857, 51);
             this.labVND.Name = "labVND";
             this.labVND.Size = new System.Drawing.Size(53, 20);
             this.labVND.TabIndex = 35;
@@ -295,7 +265,7 @@
             // 
             this.labTongTien.AutoSize = true;
             this.labTongTien.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTongTien.Location = new System.Drawing.Point(726, 51);
+            this.labTongTien.Location = new System.Drawing.Point(599, 54);
             this.labTongTien.Name = "labTongTien";
             this.labTongTien.Size = new System.Drawing.Size(75, 20);
             this.labTongTien.TabIndex = 33;
@@ -303,7 +273,7 @@
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(815, 45);
+            this.txtTongTien.Location = new System.Drawing.Point(688, 48);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(167, 26);
@@ -343,6 +313,7 @@
             this.btnThoat.TabIndex = 51;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnSaveTT
             // 
@@ -356,6 +327,7 @@
             this.btnSaveTT.Text = "Lưu thông tin";
             this.btnSaveTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveTT.UseVisualStyleBackColor = true;
+            this.btnSaveTT.Click += new System.EventHandler(this.btnSaveTT_Click);
             // 
             // labInHoaDon
             // 
@@ -377,6 +349,8 @@
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(193, 26);
             this.txtTimKiemSDTBN.TabIndex = 55;
+            this.txtTimKiemSDTBN.TextChanged += new System.EventHandler(this.txtTimKiemSDTBN_TextChanged);
+            this.txtTimKiemSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiemSDTBN_KeyPress);
             // 
             // labTenBNTimKiem
             // 
@@ -438,6 +412,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "HoaDon";
             this.Text = "Hóa đơn";
+            this.Load += new System.EventHandler(this.HoaDon_Load);
             this.grbTTBenhNhan.ResumeLayout(false);
             this.grbTTBenhNhan.PerformLayout();
             this.grbThanhToan.ResumeLayout(false);
@@ -461,15 +436,11 @@
         private System.Windows.Forms.Label labMaBN;
         private System.Windows.Forms.TextBox txtBenhTrang;
         private System.Windows.Forms.Label labDiaChi;
-        private System.Windows.Forms.Label labMaHD;
-        private System.Windows.Forms.TextBox txtMaHD;
         private System.Windows.Forms.DateTimePicker dateNgaySinh;
         private System.Windows.Forms.Label labNgaySinh;
-        private System.Windows.Forms.ComboBox cbbGioiTinh;
         private System.Windows.Forms.Label labGioiTinh;
         private System.Windows.Forms.Label labHoTen;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.ComboBox cbbDiaChi;
         private System.Windows.Forms.DateTimePicker dateNgayVao;
         private System.Windows.Forms.Label labNgayVao;
         private System.Windows.Forms.GroupBox grbThanhToan;
@@ -486,5 +457,7 @@
         private System.Windows.Forms.GroupBox grbTK;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label labChiTietHD;
+        private System.Windows.Forms.TextBox txtDiaChiBN;
+        private System.Windows.Forms.TextBox txtSexBN;
     }
 }

@@ -33,7 +33,7 @@
             this.labMaBN = new System.Windows.Forms.Label();
             this.txtMaHD = new System.Windows.Forms.TextBox();
             this.labMaHD = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateNgayTT = new System.Windows.Forms.DateTimePicker();
             this.labVND = new System.Windows.Forms.Label();
             this.labTienThuoc = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
@@ -57,7 +57,7 @@
             this.grbInfoHoaDon.Controls.Add(this.labMaBN);
             this.grbInfoHoaDon.Controls.Add(this.txtMaHD);
             this.grbInfoHoaDon.Controls.Add(this.labMaHD);
-            this.grbInfoHoaDon.Controls.Add(this.dateTimePicker1);
+            this.grbInfoHoaDon.Controls.Add(this.dateNgayTT);
             this.grbInfoHoaDon.Controls.Add(this.labVND);
             this.grbInfoHoaDon.Controls.Add(this.labTienThuoc);
             this.grbInfoHoaDon.Controls.Add(this.txtTongTien);
@@ -110,14 +110,14 @@
             this.labMaHD.TabIndex = 38;
             this.labMaHD.Text = "Mã hóa đơn";
             // 
-            // dateTimePicker1
+            // dateNgayTT
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(200, 99);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 26);
-            this.dateTimePicker1.TabIndex = 36;
+            this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayTT.Location = new System.Drawing.Point(200, 99);
+            this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateNgayTT.Name = "dateNgayTT";
+            this.dateNgayTT.Size = new System.Drawing.Size(164, 26);
+            this.dateNgayTT.TabIndex = 36;
             // 
             // labVND
             // 
@@ -312,7 +312,7 @@
         private System.Windows.Forms.Label labTenBNTimKiem;
         private System.Windows.Forms.Label labTimKiemDT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateNgayTT;
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.Label labMaBN;
         private System.Windows.Forms.TextBox txtMaHD;
