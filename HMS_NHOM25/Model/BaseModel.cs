@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
 
 namespace HMS_NHOM25.Model
 {
     class BaseModel
-    { 
+    {
         SqlDataAdapter adapter;
         SqlCommand command;
         public BaseModel() { }
@@ -50,7 +45,7 @@ namespace HMS_NHOM25.Model
                 command = new SqlCommand(query, sqlConnection);
                 command.ExecuteNonQuery();
                 sqlConnection.Close();
-            }    
+            }
         }
 
         public int getLastInsertID(string pk, string table)

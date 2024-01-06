@@ -1,13 +1,6 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -37,7 +30,7 @@ namespace HMS_NHOM25
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtTongTien_KeyPress(object sender, KeyPressEventArgs e)

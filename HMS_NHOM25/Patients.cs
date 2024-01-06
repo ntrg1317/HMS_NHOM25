@@ -1,14 +1,7 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -54,7 +47,7 @@ namespace HMS_NHOM25
         }
 
         private void dgvInfoBN_CellClick(object sender, DataGridViewCellEventArgs e)
-        {  
+        {
             try
             {
                 txtMaBN.Text = dgvInfoBN.SelectedRows[0].Cells[0].Value.ToString();

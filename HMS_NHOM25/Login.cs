@@ -1,15 +1,6 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -25,7 +16,7 @@ namespace HMS_NHOM25
 
         private bool CheckTextBoxes()
         {
-            if(txtTenDN.Text == "")
+            if (txtTenDN.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập tên đăng nhập"); return false;
             }
@@ -54,14 +45,13 @@ namespace HMS_NHOM25
 
                 if (tk_count == 1)
                 {
-                    Close();
                     new AdminControl().Show();
                 }
                 else
                 {
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ!");
-                } 
-                    
+                }
+
             }
         }
     }

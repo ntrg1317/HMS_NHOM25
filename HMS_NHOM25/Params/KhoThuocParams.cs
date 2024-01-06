@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HMS_NHOM25.Params
+﻿namespace HMS_NHOM25.Params
 {
     internal class KhoThuocParams
     {
@@ -14,7 +8,7 @@ namespace HMS_NHOM25.Params
         private string _hsd;
         private string _tienThuoc;
 
-        public KhoThuocParams(string tenThuoc, string soLuong, string nsx, string hsd, string tienThuoc) 
+        public KhoThuocParams(string tenThuoc, string soLuong, string nsx, string hsd, string tienThuoc)
         {
             TenThuoc = tenThuoc;
             SoLuong = soLuong;

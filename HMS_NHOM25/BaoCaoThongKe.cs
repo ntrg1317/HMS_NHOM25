@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -51,7 +45,7 @@ namespace HMS_NHOM25
         }
 
         private void btnTKDoanhthu_Resize(object sender, EventArgs e)
-        { 
+        {
         }
 
         private void btnTKBenhNhan_Click(object sender, EventArgs e)

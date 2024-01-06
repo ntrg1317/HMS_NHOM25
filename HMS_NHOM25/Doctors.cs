@@ -1,14 +1,6 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -39,13 +31,13 @@ namespace HMS_NHOM25
         private void txtTimKiemBS_TextChanged(object sender, EventArgs e)
         {
             string nameBS = txtTimKiemBS.Text.Trim();
-            if(nameBS == "")
+            if (nameBS == "")
             {
                 Doctors_Load(sender, e);
             }
             else
             {
-                string query = "Select * from bacSi where TenBS like '%"+nameBS+"%'";
+                string query = "Select * from bacSi where TenBS like '%" + nameBS + "%'";
                 dgvInfoBS.DataSource = bacSi.Table(query);
             }
         }
@@ -153,7 +145,7 @@ namespace HMS_NHOM25
 
         private void dgvInfoBS_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             try
             {
                 txtMaBS.Text = dgvInfoBS.SelectedRows[0].Cells[0].Value.ToString();

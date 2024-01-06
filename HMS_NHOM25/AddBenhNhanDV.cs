@@ -1,14 +1,7 @@
 ﻿using HMS_NHOM25.Model;
-using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -93,7 +86,7 @@ namespace HMS_NHOM25
 
                             MessageBox.Show("Lưu thông tin thành công!");
                             AddBenhNhanDV_Load(sender, e);
-                        }    
+                        }
                     }
                     catch (Exception ex)
                     {
