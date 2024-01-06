@@ -81,7 +81,8 @@ namespace HMS_NHOM25
 
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
-
+            HoaDon hoaDon = new HoaDon();
+            hoaDon.Show();
         }
     }
 }
