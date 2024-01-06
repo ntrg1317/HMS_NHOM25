@@ -40,9 +40,9 @@
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.labTimKiemDT = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
-            this.btnXoaDonThuoc = new System.Windows.Forms.Button();
-            this.btnThemDonThuoc = new System.Windows.Forms.Button();
+            this.btnCapNhatHD = new System.Windows.Forms.Button();
+            this.btnXoaHD = new System.Windows.Forms.Button();
+            this.btnThemHoaDon = new System.Windows.Forms.Button();
             this.grbInfoHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSHoaDon)).BeginInit();
             this.SuspendLayout();
@@ -100,6 +100,7 @@
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(167, 26);
             this.txtTongTien.TabIndex = 34;
+            this.txtTongTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTongTien_KeyPress);
             // 
             // labSoLuongThuoc
             // 
@@ -137,6 +138,7 @@
             this.dgvInfoDSHoaDon.RowTemplate.Height = 28;
             this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1037, 534);
             this.dgvInfoDSHoaDon.TabIndex = 30;
+            this.dgvInfoDSHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoDSHoaDon_CellClick);
             // 
             // txtTimKiemSDTBN
             // 
@@ -145,6 +147,8 @@
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(164, 26);
             this.txtTimKiemSDTBN.TabIndex = 27;
+            this.txtTimKiemSDTBN.TextChanged += new System.EventHandler(this.txtTimKiemSDTBN_TextChanged);
+            this.txtTimKiemSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiemSDTBN_KeyPress);
             // 
             // labTenBNTimKiem
             // 
@@ -176,44 +180,47 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Tìm kiếm";
             // 
-            // btnCapNhatDonThuoc
+            // btnCapNhatHD
             // 
-            this.btnCapNhatDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
-            this.btnCapNhatDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(700, 182);
-            this.btnCapNhatDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCapNhatDonThuoc.Name = "btnCapNhatDonThuoc";
-            this.btnCapNhatDonThuoc.Size = new System.Drawing.Size(114, 39);
-            this.btnCapNhatDonThuoc.TabIndex = 35;
-            this.btnCapNhatDonThuoc.Text = "Cập nhật";
-            this.btnCapNhatDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapNhatDonThuoc.UseVisualStyleBackColor = true;
+            this.btnCapNhatHD.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
+            this.btnCapNhatHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhatHD.Location = new System.Drawing.Point(700, 182);
+            this.btnCapNhatHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCapNhatHD.Name = "btnCapNhatHD";
+            this.btnCapNhatHD.Size = new System.Drawing.Size(114, 39);
+            this.btnCapNhatHD.TabIndex = 35;
+            this.btnCapNhatHD.Text = "Cập nhật";
+            this.btnCapNhatHD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCapNhatHD.UseVisualStyleBackColor = true;
+            this.btnCapNhatHD.Click += new System.EventHandler(this.btnCapNhatHD_Click);
             // 
-            // btnXoaDonThuoc
+            // btnXoaHD
             // 
-            this.btnXoaDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
-            this.btnXoaDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDonThuoc.Location = new System.Drawing.Point(911, 181);
-            this.btnXoaDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoaDonThuoc.Name = "btnXoaDonThuoc";
-            this.btnXoaDonThuoc.Size = new System.Drawing.Size(96, 39);
-            this.btnXoaDonThuoc.TabIndex = 34;
-            this.btnXoaDonThuoc.Text = "Xóa";
-            this.btnXoaDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoaDonThuoc.UseVisualStyleBackColor = true;
+            this.btnXoaHD.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
+            this.btnXoaHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaHD.Location = new System.Drawing.Point(911, 181);
+            this.btnXoaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXoaHD.Name = "btnXoaHD";
+            this.btnXoaHD.Size = new System.Drawing.Size(96, 39);
+            this.btnXoaHD.TabIndex = 34;
+            this.btnXoaHD.Text = "Xóa";
+            this.btnXoaHD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoaHD.UseVisualStyleBackColor = true;
+            this.btnXoaHD.Click += new System.EventHandler(this.btnXoaHD_Click);
             // 
-            // btnThemDonThuoc
+            // btnThemHoaDon
             // 
-            this.btnThemDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
-            this.btnThemDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDonThuoc.Location = new System.Drawing.Point(497, 181);
-            this.btnThemDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemDonThuoc.Name = "btnThemDonThuoc";
-            this.btnThemDonThuoc.Size = new System.Drawing.Size(99, 39);
-            this.btnThemDonThuoc.TabIndex = 33;
-            this.btnThemDonThuoc.Text = "Thêm";
-            this.btnThemDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemDonThuoc.UseVisualStyleBackColor = true;
+            this.btnThemHoaDon.Image = global::HMS_NHOM25.Properties.Resources.plus;
+            this.btnThemHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemHoaDon.Location = new System.Drawing.Point(497, 181);
+            this.btnThemHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemHoaDon.Name = "btnThemHoaDon";
+            this.btnThemHoaDon.Size = new System.Drawing.Size(99, 39);
+            this.btnThemHoaDon.TabIndex = 33;
+            this.btnThemHoaDon.Text = "Thêm";
+            this.btnThemHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemHoaDon.UseVisualStyleBackColor = true;
+            this.btnThemHoaDon.Click += new System.EventHandler(this.btnThemHoaDon_Click);
             // 
             // DSHoaDon
             // 
@@ -221,9 +228,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 851);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCapNhatDonThuoc);
-            this.Controls.Add(this.btnXoaDonThuoc);
-            this.Controls.Add(this.btnThemDonThuoc);
+            this.Controls.Add(this.btnCapNhatHD);
+            this.Controls.Add(this.btnXoaHD);
+            this.Controls.Add(this.btnThemHoaDon);
             this.Controls.Add(this.grbInfoHoaDon);
             this.Controls.Add(this.labDSDT);
             this.Controls.Add(this.dgvInfoDSHoaDon);
@@ -245,9 +252,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnCapNhatDonThuoc;
-        private System.Windows.Forms.Button btnXoaDonThuoc;
-        private System.Windows.Forms.Button btnThemDonThuoc;
+        private System.Windows.Forms.Button btnCapNhatHD;
+        private System.Windows.Forms.Button btnXoaHD;
+        private System.Windows.Forms.Button btnThemHoaDon;
         private System.Windows.Forms.GroupBox grbInfoHoaDon;
         private System.Windows.Forms.Label labVND;
         private System.Windows.Forms.Label labTienThuoc;

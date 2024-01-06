@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,10 @@ namespace HMS_NHOM25
     public partial class AddBenhNhanDV : Form
     {
         BaseModel bn_dv = new BaseModel();
-        public AddBenhNhanDV()
+        public AddBenhNhanDV(string MaBN)
         {
             InitializeComponent();
+            txtMaBN.Text = MaBN;
         }
 
         private void showComboBox()
@@ -33,6 +35,7 @@ namespace HMS_NHOM25
 
         private void AddBenhNhanDV_Load(object sender, EventArgs e)
         {
+            Patients patients = new Patients();
             showComboBox();
         }
 
@@ -52,7 +55,52 @@ namespace HMS_NHOM25
             }
         }
 
+        private bool CheckTextBoxes()
+        {
+            if (txtMaBN.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập số điện thoại bệnh nhân!"); return false;
+            }
+            if (cobTenDV.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn dịch vụ!"); return false;
+            }
+            if (dateNgayDV.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn ngày sử dụng!"); return false;
+            }
+            return true;
+        }
+        private void btnSaveBNDV_Click(object sender, EventArgs e)
+        {
+            if (CheckTextBoxes())
+            {
+                using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+                {
+                    sqlConnection.Open();
 
+                    try
+                    {
+                        if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        {
+                            string MaBN = txtMaBN.Text;
+                            int MaDV = int.Parse(cobTenDV.SelectedValue.ToString());
+                            string NgayDung = dateNgayDV.Text;
+                            string insertBN_DV = "INSERT INTO benhNhan_dichVu (MaBN, MaDV, NgayDung) " +
+                                                 "VALUES ('" + MaBN + "', '" + MaDV + "', '" + NgayDung + "')";
 
+                            bn_dv.Command(insertBN_DV);
+
+                            MessageBox.Show("Lưu thông tin thành công!");
+                            AddBenhNhanDV_Load(sender, e);
+                        }    
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi: " + ex.Message);
+                    }
+                }
+            }
+        }
     }
 }

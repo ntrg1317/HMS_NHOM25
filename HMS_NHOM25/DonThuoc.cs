@@ -35,10 +35,8 @@ namespace HMS_NHOM25
 
         private void dgvInfoDSDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            cmbTenThuoc.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[3].Value.ToString();
-            txtSoLuongThuoc.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[4].Value.ToString();
-            txtLieuDung.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[5].Value.ToString();
-            txtTienThuoc.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[6].Value.ToString();
+            txtMaBN.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            txtMaDT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
         }
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
@@ -70,6 +68,28 @@ namespace HMS_NHOM25
         private void btnThemDonThuoc_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCapNhatDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTimKiemSDTBN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -87,9 +87,9 @@ namespace HMS_NHOM25
         {
             if (cobTenPhong.SelectedIndex != -1)
             {
-                if (int.TryParse(cobTenPhong.SelectedValue.ToString(), out int madv))
+                if (int.TryParse(cobTenPhong.SelectedValue.ToString(), out int maphong))
                 {
-                    string findGiaDV = "SELECT TienDV FROM dichVu WHERE MaDV = '" + madv + "'";
+                    string findGiaDV = "SELECT TienPhong FROM phong WHERE MaPhong = '" + maphong + "'";
                     txtGiaPhong.Text = phong.GetAStringValue(findGiaDV);
                 }
             }

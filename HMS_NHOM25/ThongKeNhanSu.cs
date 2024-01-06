@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -7,8 +8,6 @@ namespace HMS_NHOM25
 {
     public partial class ThongKeNhanSu : Form
     {
-        private static string connectionString = @"Data Source=VANGNGUYEN\SQLEXPRESS;Initial Catalog=HMS;Integrated Security=True";
-
         public ThongKeNhanSu()
         {
             InitializeComponent();
@@ -16,16 +15,16 @@ namespace HMS_NHOM25
 
         private void ThongKeNhanSu_Load(object sender, EventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
                 // Query to get individual counts
-                string query = "SELECT 'BacSi' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM BacSi " +
+                string query = "SELECT 'BacSi' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM bacSi " +
                                "UNION ALL " +
-                               "SELECT 'NhanVienYTe' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM NhanVienYTe " +
+                               "SELECT 'NhanVienYTe' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM duocSi " +
                                "UNION ALL " +
-                               "SELECT 'NhanVienThuNgan' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM NhanVienThuNgan";
+                               "SELECT 'NhanVienThuNgan' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM nhanVienThuNgan";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();

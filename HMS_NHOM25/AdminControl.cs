@@ -21,6 +21,7 @@ namespace HMS_NHOM25
         public AdminControl()
         {
             InitializeComponent();
+            OpenChildForm(new BaoCaoThongKe(), btnThongKe);
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)

@@ -35,8 +35,10 @@
             this.dateNgayDV = new System.Windows.Forms.DateTimePicker();
             this.cobTenDV = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
             this.txtGiaDV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelSDT = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labTenBN = new System.Windows.Forms.Label();
             this.btnThoatAddBNDichVu = new System.Windows.Forms.Button();
@@ -54,17 +56,17 @@
             this.palAddBS.Location = new System.Drawing.Point(0, 0);
             this.palAddBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.palAddBS.Name = "palAddBS";
-            this.palAddBS.Size = new System.Drawing.Size(809, 101);
+            this.palAddBS.Size = new System.Drawing.Size(719, 81);
             this.palAddBS.TabIndex = 21;
             // 
             // ptbYTe
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.service;
-            this.ptbYTe.Location = new System.Drawing.Point(188, 29);
+            this.ptbYTe.Location = new System.Drawing.Point(196, 18);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
-            this.ptbYTe.Size = new System.Drawing.Size(94, 42);
+            this.ptbYTe.Size = new System.Drawing.Size(84, 34);
             this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbYTe.TabIndex = 3;
             this.ptbYTe.TabStop = false;
@@ -75,9 +77,9 @@
             this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(296, 32);
+            this.labAddBS.Location = new System.Drawing.Point(286, 22);
             this.labAddBS.Name = "labAddBS";
-            this.labAddBS.Size = new System.Drawing.Size(329, 32);
+            this.labAddBS.Size = new System.Drawing.Size(282, 29);
             this.labAddBS.TabIndex = 0;
             this.labAddBS.Text = "Thêm Dịch Vụ Sử Dụng";
             // 
@@ -86,16 +88,18 @@
             this.grbAddInfoDV.Controls.Add(this.dateNgayDV);
             this.grbAddInfoDV.Controls.Add(this.cobTenDV);
             this.grbAddInfoDV.Controls.Add(this.label4);
+            this.grbAddInfoDV.Controls.Add(this.txtMaBN);
             this.grbAddInfoDV.Controls.Add(this.txtGiaDV);
             this.grbAddInfoDV.Controls.Add(this.label1);
+            this.grbAddInfoDV.Controls.Add(this.labelSDT);
             this.grbAddInfoDV.Controls.Add(this.label2);
             this.grbAddInfoDV.Controls.Add(this.labTenBN);
             this.grbAddInfoDV.ForeColor = System.Drawing.Color.Red;
-            this.grbAddInfoDV.Location = new System.Drawing.Point(34, 106);
+            this.grbAddInfoDV.Location = new System.Drawing.Point(30, 85);
             this.grbAddInfoDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbAddInfoDV.Name = "grbAddInfoDV";
             this.grbAddInfoDV.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbAddInfoDV.Size = new System.Drawing.Size(729, 219);
+            this.grbAddInfoDV.Size = new System.Drawing.Size(658, 140);
             this.grbAddInfoDV.TabIndex = 22;
             this.grbAddInfoDV.TabStop = false;
             this.grbAddInfoDV.Text = "Thông tin dịch vụ";
@@ -104,19 +108,19 @@
             // 
             this.dateNgayDV.CustomFormat = "yyyy-MM-dd";
             this.dateNgayDV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayDV.Location = new System.Drawing.Point(129, 135);
-            this.dateNgayDV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateNgayDV.Location = new System.Drawing.Point(116, 89);
+            this.dateNgayDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgayDV.Name = "dateNgayDV";
-            this.dateNgayDV.Size = new System.Drawing.Size(195, 26);
+            this.dateNgayDV.Size = new System.Drawing.Size(174, 22);
             this.dateNgayDV.TabIndex = 28;
             // 
             // cobTenDV
             // 
             this.cobTenDV.FormattingEnabled = true;
-            this.cobTenDV.Location = new System.Drawing.Point(129, 74);
-            this.cobTenDV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cobTenDV.Location = new System.Drawing.Point(412, 47);
+            this.cobTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobTenDV.Name = "cobTenDV";
-            this.cobTenDV.Size = new System.Drawing.Size(195, 28);
+            this.cobTenDV.Size = new System.Drawing.Size(174, 24);
             this.cobTenDV.TabIndex = 27;
             this.cobTenDV.SelectedIndexChanged += new System.EventHandler(this.cobTenDV_SelectedIndexChanged);
             // 
@@ -124,38 +128,57 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(669, 76);
+            this.label4.Location = new System.Drawing.Point(594, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.Size = new System.Drawing.Size(43, 16);
             this.label4.TabIndex = 26;
             this.label4.Text = "(VNĐ)";
             // 
+            // txtMaBN
+            // 
+            this.txtMaBN.Location = new System.Drawing.Point(116, 46);
+            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.ReadOnly = true;
+            this.txtMaBN.Size = new System.Drawing.Size(174, 22);
+            this.txtMaBN.TabIndex = 25;
+            // 
             // txtGiaDV
             // 
-            this.txtGiaDV.Location = new System.Drawing.Point(471, 74);
+            this.txtGiaDV.Location = new System.Drawing.Point(412, 89);
             this.txtGiaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaDV.Name = "txtGiaDV";
             this.txtGiaDV.ReadOnly = true;
-            this.txtGiaDV.Size = new System.Drawing.Size(184, 26);
+            this.txtGiaDV.Size = new System.Drawing.Size(176, 22);
             this.txtGiaDV.TabIndex = 25;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(378, 80);
+            this.label1.Location = new System.Drawing.Point(330, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.Size = new System.Drawing.Size(73, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Giá dịch vụ";
+            // 
+            // labelSDT
+            // 
+            this.labelSDT.AutoSize = true;
+            this.labelSDT.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelSDT.Location = new System.Drawing.Point(20, 50);
+            this.labelSDT.Name = "labelSDT";
+            this.labelSDT.Size = new System.Drawing.Size(48, 16);
+            this.labelSDT.TabIndex = 21;
+            this.labelSDT.Text = "Mã BN";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(20, 138);
+            this.label2.Location = new System.Drawing.Point(20, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 20);
+            this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 21;
             this.label2.Text = "Ngày sử dụng";
             // 
@@ -163,9 +186,9 @@
             // 
             this.labTenBN.AutoSize = true;
             this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBN.Location = new System.Drawing.Point(20, 80);
+            this.labTenBN.Location = new System.Drawing.Point(330, 49);
             this.labTenBN.Name = "labTenBN";
-            this.labTenBN.Size = new System.Drawing.Size(89, 20);
+            this.labTenBN.Size = new System.Drawing.Size(76, 16);
             this.labTenBN.TabIndex = 21;
             this.labTenBN.Text = "Tên dịch vụ";
             // 
@@ -173,10 +196,10 @@
             // 
             this.btnThoatAddBNDichVu.Image = global::HMS_NHOM25.Properties.Resources.cancel;
             this.btnThoatAddBNDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoatAddBNDichVu.Location = new System.Drawing.Point(429, 379);
+            this.btnThoatAddBNDichVu.Location = new System.Drawing.Point(381, 303);
             this.btnThoatAddBNDichVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoatAddBNDichVu.Name = "btnThoatAddBNDichVu";
-            this.btnThoatAddBNDichVu.Size = new System.Drawing.Size(141, 39);
+            this.btnThoatAddBNDichVu.Size = new System.Drawing.Size(125, 31);
             this.btnThoatAddBNDichVu.TabIndex = 24;
             this.btnThoatAddBNDichVu.Text = "Thoát";
             this.btnThoatAddBNDichVu.UseVisualStyleBackColor = true;
@@ -185,25 +208,25 @@
             // 
             this.btnSaveBNDV.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
             this.btnSaveBNDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveBNDV.Location = new System.Drawing.Point(222, 379);
+            this.btnSaveBNDV.Location = new System.Drawing.Point(197, 303);
             this.btnSaveBNDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveBNDV.Name = "btnSaveBNDV";
-            this.btnSaveBNDV.Size = new System.Drawing.Size(154, 39);
+            this.btnSaveBNDV.Size = new System.Drawing.Size(137, 31);
             this.btnSaveBNDV.TabIndex = 23;
             this.btnSaveBNDV.Text = "Lưu thông tin";
             this.btnSaveBNDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveBNDV.UseVisualStyleBackColor = true;
+            this.btnSaveBNDV.Click += new System.EventHandler(this.btnSaveBNDV_Click);
             // 
             // AddBenhNhanDV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 466);
+            this.ClientSize = new System.Drawing.Size(718, 373);
             this.Controls.Add(this.palAddBS);
             this.Controls.Add(this.btnThoatAddBNDichVu);
             this.Controls.Add(this.btnSaveBNDV);
             this.Controls.Add(this.grbAddInfoDV);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddBenhNhanDV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddBenhNhanDV";
@@ -232,5 +255,12 @@
         private System.Windows.Forms.DateTimePicker dateNgayDV;
         private System.Windows.Forms.ComboBox cobTenDV;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMaBN;
+        private System.Windows.Forms.Label labelSDT;
+
+        private void label4_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
