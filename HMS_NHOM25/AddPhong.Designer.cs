@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.grbAddInfoNVYTeM = new System.Windows.Forms.GroupBox();
-            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.txtSoLuongPhong = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.btnThoatAddPhong = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveInfoPhong = new System.Windows.Forms.Button();
+            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.grbAddInfoNVYTeM.SuspendLayout();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
@@ -57,7 +57,7 @@
             // 
             // grbAddInfoNVYTeM
             // 
-            this.grbAddInfoNVYTeM.Controls.Add(this.cobTenPhong);
+            this.grbAddInfoNVYTeM.Controls.Add(this.txtTenPhong);
             this.grbAddInfoNVYTeM.Controls.Add(this.label4);
             this.grbAddInfoNVYTeM.Controls.Add(this.txtGiaPhong);
             this.grbAddInfoNVYTeM.Controls.Add(this.txtSoLuongPhong);
@@ -74,15 +74,6 @@
             this.grbAddInfoNVYTeM.TabStop = false;
             this.grbAddInfoNVYTeM.Text = "Thông tin phòng";
             // 
-            // cobTenPhong
-            // 
-            this.cobTenPhong.FormattingEnabled = true;
-            this.cobTenPhong.Location = new System.Drawing.Point(145, 59);
-            this.cobTenPhong.Name = "cobTenPhong";
-            this.cobTenPhong.Size = new System.Drawing.Size(184, 28);
-            this.cobTenPhong.TabIndex = 29;
-            this.cobTenPhong.SelectedIndexChanged += new System.EventHandler(this.cobTenPhong_SelectedIndexChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -98,9 +89,9 @@
             this.txtGiaPhong.Location = new System.Drawing.Point(145, 114);
             this.txtGiaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaPhong.Name = "txtGiaPhong";
-            this.txtGiaPhong.ReadOnly = true;
             this.txtGiaPhong.Size = new System.Drawing.Size(184, 26);
             this.txtGiaPhong.TabIndex = 27;
+            this.txtGiaPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaPhong_KeyPress);
             // 
             // txtSoLuongPhong
             // 
@@ -109,6 +100,7 @@
             this.txtSoLuongPhong.Name = "txtSoLuongPhong";
             this.txtSoLuongPhong.Size = new System.Drawing.Size(184, 26);
             this.txtSoLuongPhong.TabIndex = 26;
+            this.txtSoLuongPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongPhong_KeyPress);
             // 
             // label1
             // 
@@ -211,6 +203,14 @@
             this.btnSaveInfoPhong.UseVisualStyleBackColor = true;
             this.btnSaveInfoPhong.Click += new System.EventHandler(this.btnSaveInfoPhong_Click);
             // 
+            // txtTenPhong
+            // 
+            this.txtTenPhong.Location = new System.Drawing.Point(145, 59);
+            this.txtTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenPhong.Name = "txtTenPhong";
+            this.txtTenPhong.Size = new System.Drawing.Size(184, 26);
+            this.txtTenPhong.TabIndex = 29;
+            // 
             // AddPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -252,6 +252,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labTenBN;
-        private System.Windows.Forms.ComboBox cobTenPhong;
+        private System.Windows.Forms.TextBox txtTenPhong;
     }
 }

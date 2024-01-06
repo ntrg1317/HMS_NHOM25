@@ -95,5 +95,17 @@ namespace HMS_NHOM25
 
             dvp = new DichVuParams(_tenDV, _tienDV);
         }
+
+        private void txtGiaDV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

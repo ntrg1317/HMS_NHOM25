@@ -173,5 +173,31 @@ namespace HMS_NHOM25
                 }
             }
         }
+
+        private void btnXoaDS_Click(object sender, EventArgs e)
+        {
+            string choose = dgvInfoDS.SelectedRows[0].Cells[0].Value.ToString();
+            string query1 = "DELETE duocSi";
+            query1 += "Where MaDS ='" + choose + "'";
+            string query2 = "DELETE taiKhoan";
+            query2 += "Where MaTK ='" + choose + "'";
+            if (dgvInfoDS.Rows.Count > 1)
+            {
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn xóa thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        ds.Command(query1);
+                        ds.Command(query2);
+                        MessageBox.Show("Xóa thông tin thành công!");
+                        DS_Load(sender, e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
     }
 }

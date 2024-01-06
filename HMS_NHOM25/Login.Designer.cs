@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labDangNhap = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPasswd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,26 +51,23 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labDangNhap);
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.txtPhone);
+            this.panel1.Controls.Add(this.txtTenDN);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtPasswd);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(434, 626);
+            this.panel1.Size = new System.Drawing.Size(386, 442);
             this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox2
             // 
             this.pictureBox2.ErrorImage = global::HMS_NHOM25.Properties.Resources.user1;
             this.pictureBox2.Image = global::HMS_NHOM25.Properties.Resources.locked;
-            this.pictureBox2.Location = new System.Drawing.Point(34, 213);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(33, 176);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 44);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -79,10 +76,9 @@
             // 
             this.pictureBox1.ErrorImage = global::HMS_NHOM25.Properties.Resources.user1;
             this.pictureBox1.Image = global::HMS_NHOM25.Properties.Resources.phone_call;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 141);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 119);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -92,44 +88,42 @@
             this.labDangNhap.AutoSize = true;
             this.labDangNhap.BackColor = System.Drawing.Color.Lavender;
             this.labDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDangNhap.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labDangNhap.Location = new System.Drawing.Point(169, 22);
+            this.labDangNhap.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labDangNhap.Location = new System.Drawing.Point(150, 18);
             this.labDangNhap.Name = "labDangNhap";
-            this.labDangNhap.Size = new System.Drawing.Size(129, 29);
+            this.labDangNhap.Size = new System.Drawing.Size(108, 25);
             this.labDangNhap.TabIndex = 1;
             this.labDangNhap.Text = "Đăng nhập";
-            this.labDangNhap.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnLogin.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(128, 356);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogin.Location = new System.Drawing.Point(114, 285);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(198, 68);
+            this.btnLogin.Size = new System.Drawing.Size(176, 54);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txtPhone
+            // txtTenDN
             // 
-            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtPhone.Location = new System.Drawing.Point(104, 142);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(291, 32);
-            this.txtPhone.TabIndex = 1;
+            this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenDN.Location = new System.Drawing.Point(95, 120);
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.Size = new System.Drawing.Size(259, 28);
+            this.txtTenDN.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(100, 201);
+            this.label4.Location = new System.Drawing.Point(92, 167);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
+            this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Mật khẩu";
             // 
@@ -137,22 +131,20 @@
             // 
             this.txtPasswd.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtPasswd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtPasswd.Location = new System.Drawing.Point(104, 225);
-            this.txtPasswd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPasswd.Location = new System.Drawing.Point(95, 186);
             this.txtPasswd.Name = "txtPasswd";
-            this.txtPasswd.Size = new System.Drawing.Size(291, 32);
+            this.txtPasswd.Size = new System.Drawing.Size(259, 28);
             this.txtPasswd.TabIndex = 2;
             this.txtPasswd.UseSystemPasswordChar = true;
-            this.txtPasswd.TextChanged += new System.EventHandler(this.txtPasswd_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(100, 118);
+            this.label3.Location = new System.Drawing.Point(92, 100);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 20);
+            this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Tên đăng nhập";
             // 
@@ -160,24 +152,22 @@
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox3.Image = global::HMS_NHOM25.Properties.Resources.BackgroundLoginVideo;
-            this.pictureBox3.Location = new System.Drawing.Point(69, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(85, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(958, 626);
+            this.pictureBox3.Size = new System.Drawing.Size(852, 442);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1027, 626);
+            this.ClientSize = new System.Drawing.Size(937, 442);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
@@ -192,7 +182,7 @@
 
         #endregion
         private System.Windows.Forms.Label labDangNhap;
-        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtTenDN;
         private System.Windows.Forms.TextBox txtPasswd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

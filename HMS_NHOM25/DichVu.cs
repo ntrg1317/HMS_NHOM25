@@ -24,6 +24,7 @@ namespace HMS_NHOM25
         }
         private void DichVu_Load(object sender, EventArgs e)
         {
+            showComboBox();
             try
             {
                 dgvInforDichVu.DataSource = dv.all(table);
@@ -51,7 +52,7 @@ namespace HMS_NHOM25
         private void dgvInforDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
         {  
             txtMaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[0].Value.ToString();
-            txtTenDV.Text = dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString();
+            GetSelectedValue(dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString(), cobTenDV);
             txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[2].Value.ToString();
             if (txtSDTBN.Text != "")
             {
@@ -116,13 +117,13 @@ namespace HMS_NHOM25
         private void DeleteTextBoxes()
         {
             txtMaDV.Text = "";
-            txtTenDV.Text = "";
+            cobTenDV.Text = "";
             txtGiaDV.Text = "";
         }
 
         private bool CheckTextBoxes()
         {
-            if (txtTenDV.Text == "")
+            if (cobTenDV.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập tên!"); return false;
             }
@@ -139,7 +140,7 @@ namespace HMS_NHOM25
 
         private void GetValuesTextBoxes()
         {
-            string _tenDV = txtTenDV.Text;
+            string _tenDV = cobTenDV.Text;
             string _tienDV = txtGiaDV.Text;
             string _ngayDung = dateNgayDung.Text;
 
@@ -216,6 +217,53 @@ namespace HMS_NHOM25
         private void btnXoaBNDV_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void showComboBox()
+        {
+            DataTable dt = dv.all("dichVu");
+
+            cobTenDV.DataSource = dt;
+            cobTenDV.DisplayMember = "TenDV";
+            cobTenDV.ValueMember = "MaDV";
+
+            cobTenDV.SelectedIndex = -1;
+        }
+
+        private void GetSelectedValue(string selectedValue, ComboBox cob)
+        {
+            foreach (object item in cob.Items)
+            {
+                if (item.ToString() == selectedValue.Trim())
+                {
+                    cob.SelectedItem = item;
+                    break;
+                }
+            }
+        }
+
+        private void txtGiaDV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSDTBN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }
