@@ -131,5 +131,22 @@ namespace HMS_NHOM25
 
             nvtn = new NVThuNganParams(_tenNV, _ngaySinh, _gioiTinh, _sdt, _diaChi,null, _tenDN, _matKhau);
         }
+
+        private void btnThoatAddNVTNM_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtSDTNVTNM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

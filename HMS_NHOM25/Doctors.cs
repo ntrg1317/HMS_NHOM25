@@ -203,9 +203,16 @@ namespace HMS_NHOM25
             doctor.Show();
         }
 
-        private void txtSDTBS_TextChanged(object sender, EventArgs e)
+        private void txtSDTBS_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

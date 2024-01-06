@@ -241,5 +241,43 @@ namespace HMS_NHOM25
             AddBenhNhanDV bn_dv = new AddBenhNhanDV(MaBN);
             bn_dv.Show();
         }
+
+        private void btnXoaBN_Click(object sender, EventArgs e)
+        {
+            string choose = dgvInfoBN.SelectedRows[0].Cells[0].Value.ToString();
+            string query1 = "DELETE benhNhan";
+            query1 += "Where MaBN ='" + choose + "'";
+            string query2 = "DELETE taiKhoan";
+            query2 += "Where MaTK ='" + choose + "'";
+            if (dgvInfoBN.Rows.Count > 1)
+            {
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn xóa thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        benhNhan.Command(query1);
+                        benhNhan.Command(query2);
+                        MessageBox.Show("Xóa thông tin thành công!");
+                        Patients_Load(sender, e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
+        }
+
+        private void txtSDTBN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

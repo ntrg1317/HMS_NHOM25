@@ -54,7 +54,7 @@ namespace HMS_NHOM25
 
                 if (tk_count == 1)
                 {
-                    this.Hide();
+                    Close();
                     new AdminControl().Show();
                 }
                 else

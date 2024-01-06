@@ -193,6 +193,7 @@
             this.txtSDTQTV.Name = "txtSDTQTV";
             this.txtSDTQTV.Size = new System.Drawing.Size(180, 26);
             this.txtSDTQTV.TabIndex = 12;
+            this.txtSDTQTV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDTQTV_KeyPress);
             // 
             // txtTenQTV
             // 
@@ -207,6 +208,7 @@
             this.txtMaQTV.Location = new System.Drawing.Point(146, 48);
             this.txtMaQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaQTV.Name = "txtMaQTV";
+            this.txtMaQTV.ReadOnly = true;
             this.txtMaQTV.Size = new System.Drawing.Size(184, 26);
             this.txtMaQTV.TabIndex = 9;
             // 

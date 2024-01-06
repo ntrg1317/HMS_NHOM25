@@ -152,6 +152,7 @@
             this.txtGiaDV.Name = "txtGiaDV";
             this.txtGiaDV.Size = new System.Drawing.Size(184, 26);
             this.txtGiaDV.TabIndex = 25;
+            this.txtGiaDV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaDV_KeyPress);
             // 
             // label1
             // 

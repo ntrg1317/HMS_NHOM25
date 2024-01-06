@@ -27,7 +27,7 @@ namespace HMS_NHOM25
 
         private void AddPhong_Load(object sender, EventArgs e)
         {
-            showComboBox();
+            DeleteTextBoxes();
         }
 
         private void btnSaveInfoPhong_Click(object sender, EventArgs e)
@@ -72,43 +72,17 @@ namespace HMS_NHOM25
             this.Close();
         }
 
-        private void showComboBox()
-        {
-            DataTable dt = phong.all("phong");
-
-            cobTenPhong.DataSource = dt;
-            cobTenPhong.DisplayMember = "TenPhong";
-            cobTenPhong.ValueMember = "MaPhong";
-
-            cobTenPhong.SelectedIndex = -1;
-        }
-
-        private void cobTenPhong_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cobTenPhong.SelectedIndex != -1)
-            {
-                if (int.TryParse(cobTenPhong.SelectedValue.ToString(), out int maphong))
-                {
-                    string findGiaDV = "SELECT TienPhong FROM phong WHERE MaPhong = '" + maphong + "'";
-                    txtGiaPhong.Text = phong.GetAStringValue(findGiaDV);
-                }
-            }
-            else
-            {
-                txtGiaPhong.Text = string.Empty;
-            }
-        }
         private void DeleteTextBoxes()
         {
-            cobTenPhong.Text = null;
+            txtTenPhong.Text = null;
             txtSoLuongPhong.Text = "";
             txtGiaPhong.Text = "";
         }
         private bool CheckTextBoxes()
         {
-            if (cobTenPhong.SelectedIndex == -1)
+            if (txtTenPhong.Text == "")
             {
-                System.Windows.Forms.MessageBox.Show("Bạn chưa nhập tên!"); return false;
+                System.Windows.Forms.MessageBox.Show("Bạn chưa nhập tên phòng!"); return false;
             }
             if (txtSoLuongPhong.Text == "")
             {
@@ -123,11 +97,35 @@ namespace HMS_NHOM25
 
         private void GetValuesTextBoxes()
         {
-            string _tenPhong = cobTenPhong.Text;
+            string _tenPhong = txtTenPhong.Text;
             string _soLuong = txtSoLuongPhong.Text;
             string _tienPhong = txtGiaPhong.Text;
             phongP = new PhongParams(_tenPhong, _soLuong, _tienPhong);
 
+        }
+
+        private void txtSoLuongPhong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtGiaPhong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }
