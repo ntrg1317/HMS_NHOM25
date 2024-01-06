@@ -17,7 +17,7 @@ namespace HMS_NHOM25
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new AdminControl());
+            Application.Run(new login());
             //Application.Run(new ThongKeDuLieu());
         }
     }

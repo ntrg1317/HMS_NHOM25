@@ -33,7 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvInforDichVu = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTenDV = new System.Windows.Forms.TextBox();
             this.txtMaDV = new System.Windows.Forms.TextBox();
             this.labTenBN = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.btnThemDV = new System.Windows.Forms.Button();
             this.btnSuaBNDV = new System.Windows.Forms.Button();
             this.btnXoaBNDV = new System.Windows.Forms.Button();
+            this.cobTenDV = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDichVu)).BeginInit();
             this.grb.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -112,14 +112,6 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Giá dịch vụ";
             // 
-            // txtTenDV
-            // 
-            this.txtTenDV.Location = new System.Drawing.Point(164, 65);
-            this.txtTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenDV.Name = "txtTenDV";
-            this.txtTenDV.Size = new System.Drawing.Size(164, 22);
-            this.txtTenDV.TabIndex = 14;
-            // 
             // txtMaDV
             // 
             this.txtMaDV.Location = new System.Drawing.Point(164, 28);
@@ -151,12 +143,12 @@
             // 
             // grb
             // 
+            this.grb.Controls.Add(this.cobTenDV);
             this.grb.Controls.Add(this.dateNgayDung);
             this.grb.Controls.Add(this.label4);
             this.grb.Controls.Add(this.txtGiaDV);
             this.grb.Controls.Add(this.lablNgayDung);
             this.grb.Controls.Add(this.label1);
-            this.grb.Controls.Add(this.txtTenDV);
             this.grb.Controls.Add(this.txtMaDV);
             this.grb.Controls.Add(this.labTenBN);
             this.grb.Controls.Add(this.labMaBN);
@@ -322,6 +314,16 @@
             this.btnXoaBNDV.Visible = false;
             this.btnXoaBNDV.Click += new System.EventHandler(this.btnXoaBNDV_Click);
             // 
+            // cobTenDV
+            // 
+            this.cobTenDV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobTenDV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobTenDV.FormattingEnabled = true;
+            this.cobTenDV.Location = new System.Drawing.Point(163, 67);
+            this.cobTenDV.Name = "cobTenDV";
+            this.cobTenDV.Size = new System.Drawing.Size(164, 24);
+            this.cobTenDV.TabIndex = 21;
+            // 
             // DichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -357,7 +359,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvInforDichVu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtTenDV;
         private System.Windows.Forms.TextBox txtMaDV;
         private System.Windows.Forms.Label labTenBN;
         private System.Windows.Forms.Label labMaBN;
@@ -374,5 +375,6 @@
         private System.Windows.Forms.Label lablNgayDung;
         private System.Windows.Forms.Button btnSuaBNDV;
         private System.Windows.Forms.Button btnXoaBNDV;
+        private System.Windows.Forms.ComboBox cobTenDV;
     }
 }

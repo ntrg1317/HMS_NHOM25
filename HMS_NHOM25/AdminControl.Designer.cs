@@ -637,7 +637,7 @@
             // 
             // panelUser
             // 
-            this.panelUser.BackColor = System.Drawing.Color.White;
+            this.panelUser.BackColor = System.Drawing.Color.LightGray;
             this.panelUser.Controls.Add(this.panel16);
             this.panelUser.Controls.Add(this.panel15);
             this.panelUser.Controls.Add(this.panel12);
@@ -765,8 +765,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1191, 767);
-            this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelUser);
+            this.Controls.Add(this.panelBody);
             this.Controls.Add(this.navbar);
             this.Controls.Add(this.sidebar);
             this.Name = "AdminControl";

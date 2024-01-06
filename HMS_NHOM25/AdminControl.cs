@@ -36,10 +36,7 @@ namespace HMS_NHOM25
 
         private void OpenChildForm(Form childForm, Button clickedButton)
         {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
+            currentFormChild?.Close();
             currentFormChild = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;

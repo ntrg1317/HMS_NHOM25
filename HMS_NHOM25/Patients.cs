@@ -15,10 +15,10 @@ namespace HMS_NHOM25
 {
     public partial class Patients : Form
     {
-        BaseModel benhNhan = new BaseModel();
+        readonly BaseModel benhNhan = new BaseModel();
         BenhNhan bn;
 
-        private string table = "benhNhan";
+        private readonly string table = "benhNhan";
         public Patients()
         {
             InitializeComponent();
@@ -67,8 +67,7 @@ namespace HMS_NHOM25
                 GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells[8].Value.ToString(), cobDiaChiBN);
                 txtSDTNguoiThan.Text = dgvInfoBN.SelectedRows[0].Cells[9].Value.ToString();
                 string trangThaiValue = dgvInfoBN.SelectedRows[0].Cells[10].Value.ToString();
-                int _trangThai;
-                if (int.TryParse(trangThaiValue, out _trangThai))
+                if (int.TryParse(trangThaiValue, out int _trangThai))
                 {
                     if (_trangThai == 1)
                     {
