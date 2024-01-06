@@ -32,6 +32,7 @@
             this.dgvInforPhong = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.grb = new System.Windows.Forms.GroupBox();
+            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.txtSoLuongPhong = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.txtTKTenPhong = new System.Windows.Forms.TextBox();
             this.labTenPhong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforPhong)).BeginInit();
             this.grb.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +86,23 @@
             this.grb.Name = "grb";
             this.grb.TabStop = false;
             // 
+            // cobTenPhong
+            // 
+            this.cobTenPhong.FormattingEnabled = true;
+            this.cobTenPhong.Items.AddRange(new object[] {
+            resources.GetString("cobTenPhong.Items"),
+            resources.GetString("cobTenPhong.Items1"),
+            resources.GetString("cobTenPhong.Items2"),
+            resources.GetString("cobTenPhong.Items3"),
+            resources.GetString("cobTenPhong.Items4"),
+            resources.GetString("cobTenPhong.Items5"),
+            resources.GetString("cobTenPhong.Items6"),
+            resources.GetString("cobTenPhong.Items7"),
+            resources.GetString("cobTenPhong.Items8"),
+            resources.GetString("cobTenPhong.Items9")});
+            resources.ApplyResources(this.cobTenPhong, "cobTenPhong");
+            this.cobTenPhong.Name = "cobTenPhong";
+            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -96,11 +113,13 @@
             // 
             resources.ApplyResources(this.txtGiaPhong, "txtGiaPhong");
             this.txtGiaPhong.Name = "txtGiaPhong";
+            this.txtGiaPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaPhong_KeyPress);
             // 
             // txtSoLuongPhong
             // 
             resources.ApplyResources(this.txtSoLuongPhong, "txtSoLuongPhong");
             this.txtSoLuongPhong.Name = "txtSoLuongPhong";
+            this.txtSoLuongPhong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongPhong_KeyPress);
             // 
             // label1
             // 
@@ -176,23 +195,6 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Name = "label5";
-            // 
-            // cobTenPhong
-            // 
-            this.cobTenPhong.FormattingEnabled = true;
-            this.cobTenPhong.Items.AddRange(new object[] {
-            resources.GetString("cobTenPhong.Items"),
-            resources.GetString("cobTenPhong.Items1"),
-            resources.GetString("cobTenPhong.Items2"),
-            resources.GetString("cobTenPhong.Items3"),
-            resources.GetString("cobTenPhong.Items4"),
-            resources.GetString("cobTenPhong.Items5"),
-            resources.GetString("cobTenPhong.Items6"),
-            resources.GetString("cobTenPhong.Items7"),
-            resources.GetString("cobTenPhong.Items8"),
-            resources.GetString("cobTenPhong.Items9")});
-            resources.ApplyResources(this.cobTenPhong, "cobTenPhong");
-            this.cobTenPhong.Name = "cobTenPhong";
             // 
             // Phong
             // 

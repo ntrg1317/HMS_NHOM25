@@ -49,5 +49,17 @@ namespace HMS_NHOM25
                 dgvInfoQTV.DataSource = basemodel.Table(query);
             }
         }
+
+        private void txtSDTQTV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

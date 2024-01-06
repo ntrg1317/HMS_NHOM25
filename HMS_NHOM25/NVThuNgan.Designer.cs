@@ -198,6 +198,7 @@
             this.txtSDTNVTN.Name = "txtSDTNVTN";
             this.txtSDTNVTN.Size = new System.Drawing.Size(180, 26);
             this.txtSDTNVTN.TabIndex = 12;
+            this.txtSDTNVTN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDTNVTN_KeyPress);
             // 
             // txtTenNVTN
             // 

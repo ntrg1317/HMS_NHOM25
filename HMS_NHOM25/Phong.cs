@@ -99,7 +99,25 @@ namespace HMS_NHOM25
 
         private void btnXoaPhong_Click(object sender, EventArgs e)
         {
-
+            string choose = dgvInforPhong.SelectedRows[0].Cells[0].Value.ToString();
+            string query1 = "DELETE phong";
+            query1 += "Where MaPhong ='" + choose + "'";
+            if (dgvInforPhong.Rows.Count > 1)
+            {
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn xóa thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        phong.Command(query1);
+                        MessageBox.Show("Xóa thông tin thành công!");
+                        Phong_Load(sender, e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
         }
 
         private void GetSelectedValue(string selectedValue, ComboBox cob)
@@ -138,6 +156,30 @@ namespace HMS_NHOM25
             string _tienPhong = txtGiaPhong.Text;
 
             phongP = new PhongParams(_tenPhong, _soLuong, _tienPhong);
+        }
+
+        private void txtSoLuongPhong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtGiaPhong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

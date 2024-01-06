@@ -102,5 +102,10 @@ namespace HMS_NHOM25
                 }
             }
         }
+
+        private void btnThoatAddBNDichVu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

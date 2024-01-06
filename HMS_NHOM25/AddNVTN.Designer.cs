@@ -217,6 +217,7 @@
             this.txtSDTNVTNM.Name = "txtSDTNVTNM";
             this.txtSDTNVTNM.Size = new System.Drawing.Size(154, 26);
             this.txtSDTNVTNM.TabIndex = 9;
+            this.txtSDTNVTNM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDTNVTNM_KeyPress);
             // 
             // labDiaChiNVTNM
             // 
@@ -345,6 +346,7 @@
             this.btnThoatAddNVTNM.TabIndex = 9;
             this.btnThoatAddNVTNM.Text = "Thoát";
             this.btnThoatAddNVTNM.UseVisualStyleBackColor = true;
+            this.btnThoatAddNVTNM.Click += new System.EventHandler(this.btnThoatAddNVTNM_Click);
             // 
             // btnSaveInfoNVTNM
             // 
