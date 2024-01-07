@@ -16,5 +16,10 @@ namespace HMS_NHOM25
         {
             InitializeComponent();
         }
+
+        private void dgvDSThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

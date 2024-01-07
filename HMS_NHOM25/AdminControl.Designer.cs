@@ -693,7 +693,7 @@
             this.panelUser.MaximumSize = new System.Drawing.Size(313, 192);
             this.panelUser.MinimumSize = new System.Drawing.Size(313, 0);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(313, 192);
+            this.panelUser.Size = new System.Drawing.Size(313, 0);
             this.panelUser.TabIndex = 3;
             // 
             // panel15

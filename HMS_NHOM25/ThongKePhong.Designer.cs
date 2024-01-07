@@ -64,7 +64,7 @@
             this.panel3.Location = new System.Drawing.Point(4, 110);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1027, 1016);
+            this.panel3.Size = new System.Drawing.Size(1001, 1016);
             this.panel3.TabIndex = 4;
             // 
             // chartLuotSDPhong

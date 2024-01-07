@@ -46,11 +46,9 @@
             this.chartTKDauCo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvCacLoaiBenh = new System.Windows.Forms.DataGridView();
-            this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvDauDauNam = new System.Windows.Forms.DataGridView();
             this.dgvDauCo2023 = new System.Windows.Forms.DataGridView();
             this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).BeginInit();
             this.panel4.SuspendLayout();
@@ -186,43 +184,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
             // 
-            // chartTKDauCo
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartTKDauCo.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartTKDauCo.Legends.Add(legend2);
-            this.chartTKDauCo.Location = new System.Drawing.Point(373, 16);
-            this.chartTKDauCo.Name = "chartTKDauCo";
-            this.chartTKDauCo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.MarkerSize = 1;
-            series2.Name = "Bệnh nhân";
-            this.chartTKDauCo.Series.Add(series2);
-            this.chartTKDauCo.Size = new System.Drawing.Size(293, 300);
-            this.chartTKDauCo.TabIndex = 5;
-            this.chartTKDauCo.Text = "chartTKDauBung";
-            // 
-            // chartTKDauDau
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chartTKDauDau.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartTKDauDau.Legends.Add(legend3);
-            this.chartTKDauDau.Location = new System.Drawing.Point(34, 16);
-            this.chartTKDauDau.Name = "chartTKDauDau";
-            this.chartTKDauDau.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Bệnh nhân";
-            this.chartTKDauDau.Series.Add(series3);
-            this.chartTKDauDau.Size = new System.Drawing.Size(294, 300);
-            this.chartTKDauDau.TabIndex = 4;
-            this.chartTKDauDau.Text = "chartTKDauBung";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -343,7 +304,6 @@
         #endregion
 
         private System.Windows.Forms.Label labSLBN2023;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2023;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2024;

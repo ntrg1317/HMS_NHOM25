@@ -155,7 +155,6 @@
         #endregion
 
         private System.Windows.Forms.Label labSLBN2023;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2023;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2024;
