@@ -55,9 +55,9 @@
             // 
             this.dgvInforPhong.AllowUserToAddRows = false;
             this.dgvInforPhong.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dgvInforPhong, "dgvInforPhong");
             this.dgvInforPhong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInforPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dgvInforPhong, "dgvInforPhong");
             this.dgvInforPhong.Name = "dgvInforPhong";
             this.dgvInforPhong.ReadOnly = true;
             this.dgvInforPhong.RowTemplate.Height = 24;

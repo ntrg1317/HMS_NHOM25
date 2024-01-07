@@ -413,7 +413,11 @@
             this.dgvInfoBN.RowHeadersWidth = 62;
             this.dgvInfoBN.RowTemplate.Height = 28;
             this.dgvInfoBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+<<<<<<< HEAD
             this.dgvInfoBN.Size = new System.Drawing.Size(908, 377);
+=======
+            this.dgvInfoBN.Size = new System.Drawing.Size(908, 440);
+>>>>>>> fcc8f3b6cf68ed197b8bc028ad6fb8b38d549001
             this.dgvInfoBN.TabIndex = 23;
             this.dgvInfoBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBN_CellClick);
             this.dgvInfoBN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBN_CellContentClick);
@@ -449,10 +453,14 @@
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnSuaBN.Location = new System.Drawing.Point(523, 230);
 =======
             this.btnSuaBN.Location = new System.Drawing.Point(601, 287);
 >>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
+=======
+            this.btnSuaBN.Location = new System.Drawing.Point(534, 230);
+>>>>>>> fcc8f3b6cf68ed197b8bc028ad6fb8b38d549001
             this.btnSuaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBN.Name = "btnSuaBN";
             this.btnSuaBN.Size = new System.Drawing.Size(103, 31);
@@ -468,10 +476,14 @@
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnXoaBN.Location = new System.Drawing.Point(690, 231);
 =======
             this.btnXoaBN.Location = new System.Drawing.Point(786, 288);
 >>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
+=======
+            this.btnXoaBN.Location = new System.Drawing.Point(699, 230);
+>>>>>>> fcc8f3b6cf68ed197b8bc028ad6fb8b38d549001
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(85, 31);
@@ -490,10 +502,14 @@
             this.btnThemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN.Name = "btnThemBN";
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnThemBN.Size = new System.Drawing.Size(105, 31);
 =======
             this.btnThemBN.Size = new System.Drawing.Size(124, 39);
 >>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
+=======
+            this.btnThemBN.Size = new System.Drawing.Size(110, 31);
+>>>>>>> fcc8f3b6cf68ed197b8bc028ad6fb8b38d549001
             this.btnThemBN.TabIndex = 20;
             this.btnThemBN.Text = "Thêm BN";
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -504,7 +520,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(970, 681);
+=======
+            this.ClientSize = new System.Drawing.Size(970, 744);
+>>>>>>> fcc8f3b6cf68ed197b8bc028ad6fb8b38d549001
             this.Controls.Add(this.btnThemDV);
             this.Controls.Add(this.dgvInfoBN);
             this.Controls.Add(this.btnSuaBN);

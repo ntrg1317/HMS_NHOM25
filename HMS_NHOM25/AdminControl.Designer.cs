@@ -85,6 +85,9 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnKhoThuoc = new System.Windows.Forms.Button();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,6 +122,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAva)).BeginInit();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -131,6 +136,7 @@
             this.sidebar.Controls.Add(this.panel5);
             this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Controls.Add(this.panel7);
+            this.sidebar.Controls.Add(this.panel17);
             this.sidebar.Controls.Add(this.panel6);
             this.sidebar.Controls.Add(this.panel11);
             this.sidebar.Controls.Add(this.panel9);
@@ -138,7 +144,7 @@
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(221, 767);
+            this.sidebar.Size = new System.Drawing.Size(221, 828);
             this.sidebar.TabIndex = 0;
             // 
             // panel4
@@ -387,7 +393,7 @@
             // 
             this.panel6.Controls.Add(this.pictureBox9);
             this.panel6.Controls.Add(this.btnDT);
-            this.panel6.Location = new System.Drawing.Point(3, 503);
+            this.panel6.Location = new System.Drawing.Point(3, 567);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(239, 58);
             this.panel6.TabIndex = 1;
@@ -410,7 +416,7 @@
             this.btnDT.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDT.ForeColor = System.Drawing.Color.White;
             this.btnDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDT.Location = new System.Drawing.Point(-11, -15);
+            this.btnDT.Location = new System.Drawing.Point(-11, -13);
             this.btnDT.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.btnDT.Name = "btnDT";
             this.btnDT.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
@@ -424,7 +430,7 @@
             // 
             this.panel11.Controls.Add(this.pictureBox10);
             this.panel11.Controls.Add(this.btnHD);
-            this.panel11.Location = new System.Drawing.Point(3, 567);
+            this.panel11.Location = new System.Drawing.Point(3, 631);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(230, 55);
             this.panel11.TabIndex = 6;
@@ -461,7 +467,7 @@
             // 
             this.panel9.Controls.Add(this.pictureBox6);
             this.panel9.Controls.Add(this.btnDvu);
-            this.panel9.Location = new System.Drawing.Point(3, 628);
+            this.panel9.Location = new System.Drawing.Point(3, 692);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(230, 55);
             this.panel9.TabIndex = 6;
@@ -499,7 +505,7 @@
             this.panel13.Controls.Add(this.pictureBox14);
             this.panel13.Controls.Add(this.btnTK);
             this.panel13.Controls.Add(this.button4);
-            this.panel13.Location = new System.Drawing.Point(3, 689);
+            this.panel13.Location = new System.Drawing.Point(3, 753);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(230, 55);
             this.panel13.TabIndex = 6;
@@ -599,7 +605,7 @@
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBody.Location = new System.Drawing.Point(221, 84);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(970, 683);
+            this.panelBody.Size = new System.Drawing.Size(970, 744);
             this.panelBody.TabIndex = 2;
             this.panelBody.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBody_Paint);
             // 
@@ -758,13 +764,50 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnKhoThuoc
+            // 
+            this.btnKhoThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhoThuoc.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhoThuoc.ForeColor = System.Drawing.Color.White;
+            this.btnKhoThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhoThuoc.Location = new System.Drawing.Point(-11, -14);
+            this.btnKhoThuoc.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btnKhoThuoc.Name = "btnKhoThuoc";
+            this.btnKhoThuoc.Padding = new System.Windows.Forms.Padding(75, 5, 5, 5);
+            this.btnKhoThuoc.Size = new System.Drawing.Size(240, 78);
+            this.btnKhoThuoc.TabIndex = 0;
+            this.btnKhoThuoc.Text = "Kho thuốc";
+            this.btnKhoThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhoThuoc.Click += new System.EventHandler(this.btnDT_Click);
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.pictureBox15);
+            this.panel17.Controls.Add(this.btnKhoThuoc);
+            this.panel17.Location = new System.Drawing.Point(3, 503);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(239, 58);
+            this.panel17.TabIndex = 1;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.ErrorImage = null;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(17, 6);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 2;
+            this.pictureBox15.TabStop = false;
+            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1191, 767);
+            this.ClientSize = new System.Drawing.Size(1191, 828);
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.navbar);
@@ -809,6 +852,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picAva)).EndInit();
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -870,5 +915,8 @@
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnDvu;
+        private System.Windows.Forms.Button btnKhoThuoc;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.PictureBox pictureBox15;
     }
 }
