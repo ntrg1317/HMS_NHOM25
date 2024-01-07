@@ -1,4 +1,5 @@
 ﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
 using System.Windows.Forms;
 
@@ -15,7 +16,14 @@ namespace HMS_NHOM25
 
         private void Admin_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                dgvInfoQTV.DataSource = basemodel.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi " + ex.Message);
+            }
         }
 
         private void dgvInfoQTV_CellClick(object sender, DataGridViewCellEventArgs e)

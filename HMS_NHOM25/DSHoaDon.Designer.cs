@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.grbInfoHoaDon = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
+            this.labMaBN = new System.Windows.Forms.Label();
+            this.txtMaHD = new System.Windows.Forms.TextBox();
+            this.labMaHD = new System.Windows.Forms.Label();
+            this.dateNgayTT = new System.Windows.Forms.DateTimePicker();
             this.labVND = new System.Windows.Forms.Label();
             this.labTienThuoc = new System.Windows.Forms.Label();
             this.txtTongTien = new System.Windows.Forms.TextBox();
@@ -49,7 +53,11 @@
             // 
             // grbInfoHoaDon
             // 
-            this.grbInfoHoaDon.Controls.Add(this.dateTimePicker1);
+            this.grbInfoHoaDon.Controls.Add(this.txtMaBN);
+            this.grbInfoHoaDon.Controls.Add(this.labMaBN);
+            this.grbInfoHoaDon.Controls.Add(this.txtMaHD);
+            this.grbInfoHoaDon.Controls.Add(this.labMaHD);
+            this.grbInfoHoaDon.Controls.Add(this.dateNgayTT);
             this.grbInfoHoaDon.Controls.Add(this.labVND);
             this.grbInfoHoaDon.Controls.Add(this.labTienThuoc);
             this.grbInfoHoaDon.Controls.Add(this.txtTongTien);
@@ -59,25 +67,63 @@
             this.grbInfoHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoHoaDon.Name = "grbInfoHoaDon";
             this.grbInfoHoaDon.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoHoaDon.Size = new System.Drawing.Size(1037, 101);
+            this.grbInfoHoaDon.Size = new System.Drawing.Size(1037, 157);
             this.grbInfoHoaDon.TabIndex = 32;
             this.grbInfoHoaDon.TabStop = false;
             this.grbInfoHoaDon.Text = "Thông tin hóa đơn";
             // 
-            // dateTimePicker1
+            // txtMaBN
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(184, 45);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 26);
-            this.dateTimePicker1.TabIndex = 36;
+            this.txtMaBN.Location = new System.Drawing.Point(728, 41);
+            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.ReadOnly = true;
+            this.txtMaBN.Size = new System.Drawing.Size(167, 26);
+            this.txtMaBN.TabIndex = 39;
+            // 
+            // labMaBN
+            // 
+            this.labMaBN.AutoSize = true;
+            this.labMaBN.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labMaBN.Location = new System.Drawing.Point(591, 45);
+            this.labMaBN.Name = "labMaBN";
+            this.labMaBN.Size = new System.Drawing.Size(111, 20);
+            this.labMaBN.TabIndex = 40;
+            this.labMaBN.Text = "Mã bệnh nhân";
+            // 
+            // txtMaHD
+            // 
+            this.txtMaHD.Location = new System.Drawing.Point(200, 43);
+            this.txtMaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaHD.Name = "txtMaHD";
+            this.txtMaHD.ReadOnly = true;
+            this.txtMaHD.Size = new System.Drawing.Size(164, 26);
+            this.txtMaHD.TabIndex = 37;
+            // 
+            // labMaHD
+            // 
+            this.labMaHD.AutoSize = true;
+            this.labMaHD.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labMaHD.Location = new System.Drawing.Point(63, 47);
+            this.labMaHD.Name = "labMaHD";
+            this.labMaHD.Size = new System.Drawing.Size(93, 20);
+            this.labMaHD.TabIndex = 38;
+            this.labMaHD.Text = "Mã hóa đơn";
+            // 
+            // dateNgayTT
+            // 
+            this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayTT.Location = new System.Drawing.Point(200, 99);
+            this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateNgayTT.Name = "dateNgayTT";
+            this.dateNgayTT.Size = new System.Drawing.Size(164, 26);
+            this.dateNgayTT.TabIndex = 36;
             // 
             // labVND
             // 
             this.labVND.AutoSize = true;
             this.labVND.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labVND.Location = new System.Drawing.Point(907, 48);
+            this.labVND.Location = new System.Drawing.Point(923, 102);
             this.labVND.Name = "labVND";
             this.labVND.Size = new System.Drawing.Size(53, 20);
             this.labVND.TabIndex = 35;
@@ -87,7 +133,7 @@
             // 
             this.labTienThuoc.AutoSize = true;
             this.labTienThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTienThuoc.Location = new System.Drawing.Point(612, 51);
+            this.labTienThuoc.Location = new System.Drawing.Point(591, 105);
             this.labTienThuoc.Name = "labTienThuoc";
             this.labTienThuoc.Size = new System.Drawing.Size(75, 20);
             this.labTienThuoc.TabIndex = 33;
@@ -95,7 +141,7 @@
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(712, 45);
+            this.txtTongTien.Location = new System.Drawing.Point(728, 99);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(167, 26);
@@ -106,7 +152,7 @@
             // 
             this.labSoLuongThuoc.AutoSize = true;
             this.labSoLuongThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSoLuongThuoc.Location = new System.Drawing.Point(47, 51);
+            this.labSoLuongThuoc.Location = new System.Drawing.Point(63, 105);
             this.labSoLuongThuoc.Name = "labSoLuongThuoc";
             this.labSoLuongThuoc.Size = new System.Drawing.Size(126, 20);
             this.labSoLuongThuoc.TabIndex = 29;
@@ -116,7 +162,7 @@
             // 
             this.labDSDT.AutoSize = true;
             this.labDSDT.ForeColor = System.Drawing.Color.Red;
-            this.labDSDT.Location = new System.Drawing.Point(22, 242);
+            this.labDSDT.Location = new System.Drawing.Point(29, 289);
             this.labDSDT.Name = "labDSDT";
             this.labDSDT.Size = new System.Drawing.Size(148, 20);
             this.labDSDT.TabIndex = 31;
@@ -130,19 +176,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoDSHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoDSHoaDon.Location = new System.Drawing.Point(26, 291);
+            this.dgvInfoDSHoaDon.Location = new System.Drawing.Point(26, 339);
             this.dgvInfoDSHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDSHoaDon.Name = "dgvInfoDSHoaDon";
             this.dgvInfoDSHoaDon.ReadOnly = true;
             this.dgvInfoDSHoaDon.RowHeadersWidth = 62;
             this.dgvInfoDSHoaDon.RowTemplate.Height = 28;
-            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1037, 534);
+            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1037, 470);
             this.dgvInfoDSHoaDon.TabIndex = 30;
             this.dgvInfoDSHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoDSHoaDon_CellClick);
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(210, 188);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(226, 234);
             this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(164, 26);
@@ -154,7 +200,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(73, 192);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(89, 238);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 28;
@@ -174,7 +220,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(22, 148);
+            this.label1.Location = new System.Drawing.Point(29, 195);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 36;
@@ -184,7 +230,7 @@
             // 
             this.btnCapNhatHD.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnCapNhatHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatHD.Location = new System.Drawing.Point(700, 182);
+            this.btnCapNhatHD.Location = new System.Drawing.Point(707, 229);
             this.btnCapNhatHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatHD.Name = "btnCapNhatHD";
             this.btnCapNhatHD.Size = new System.Drawing.Size(114, 39);
@@ -198,7 +244,7 @@
             // 
             this.btnXoaHD.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaHD.Location = new System.Drawing.Point(911, 181);
+            this.btnXoaHD.Location = new System.Drawing.Point(918, 228);
             this.btnXoaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaHD.Name = "btnXoaHD";
             this.btnXoaHD.Size = new System.Drawing.Size(96, 39);
@@ -212,7 +258,7 @@
             // 
             this.btnThemHoaDon.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHoaDon.Location = new System.Drawing.Point(497, 181);
+            this.btnThemHoaDon.Location = new System.Drawing.Point(504, 228);
             this.btnThemHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemHoaDon.Name = "btnThemHoaDon";
             this.btnThemHoaDon.Size = new System.Drawing.Size(99, 39);
@@ -266,6 +312,10 @@
         private System.Windows.Forms.Label labTenBNTimKiem;
         private System.Windows.Forms.Label labTimKiemDT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateNgayTT;
+        private System.Windows.Forms.TextBox txtMaBN;
+        private System.Windows.Forms.Label labMaBN;
+        private System.Windows.Forms.TextBox txtMaHD;
+        private System.Windows.Forms.Label labMaHD;
     }
 }

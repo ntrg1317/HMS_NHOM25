@@ -12,8 +12,9 @@ namespace HMS_NHOM25
         public login()
         {
             InitializeComponent();
+            
         }
-
+        
         private bool CheckTextBoxes()
         {
             if (txtTenDN.Text == "")
@@ -52,6 +53,27 @@ namespace HMS_NHOM25
                     MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ!");
                 }
 
+            }
+        }
+
+        private void txtTenDN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenDN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                txtPasswd.Focus();
+            }
+        }
+
+        private void txtPasswd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnLogin.PerformClick();
             }
         }
     }

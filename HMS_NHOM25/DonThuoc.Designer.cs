@@ -35,6 +35,8 @@
             this.dgvInfoDSDonThuoc = new System.Windows.Forms.DataGridView();
             this.labDSDT = new System.Windows.Forms.Label();
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
+            this.txtTrangThaiTT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.labMaDT = new System.Windows.Forms.Label();
             this.txtMaDT = new System.Windows.Forms.TextBox();
             this.labMaBN = new System.Windows.Forms.Label();
@@ -42,8 +44,8 @@
             this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaDonThuoc = new System.Windows.Forms.Button();
             this.btnThemDonThuoc = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cobTrangThaiTT = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateNgayKeDon = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDSDonThuoc)).BeginInit();
             this.grbInfoDonThuoc.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +108,9 @@
             // 
             // grbInfoDonThuoc
             // 
-            this.grbInfoDonThuoc.Controls.Add(this.cobTrangThaiTT);
+            this.grbInfoDonThuoc.Controls.Add(this.dateNgayKeDon);
+            this.grbInfoDonThuoc.Controls.Add(this.label2);
+            this.grbInfoDonThuoc.Controls.Add(this.txtTrangThaiTT);
             this.grbInfoDonThuoc.Controls.Add(this.label1);
             this.grbInfoDonThuoc.Controls.Add(this.labMaDT);
             this.grbInfoDonThuoc.Controls.Add(this.txtMaDT);
@@ -121,6 +125,25 @@
             this.grbInfoDonThuoc.TabIndex = 22;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Thông tin đơn thuốc";
+            // 
+            // txtTrangThaiTT
+            // 
+            this.txtTrangThaiTT.Location = new System.Drawing.Point(224, 100);
+            this.txtTrangThaiTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTrangThaiTT.Name = "txtTrangThaiTT";
+            this.txtTrangThaiTT.ReadOnly = true;
+            this.txtTrangThaiTT.Size = new System.Drawing.Size(218, 26);
+            this.txtTrangThaiTT.TabIndex = 34;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(72, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Trạng thái TT";
             // 
             // labMaDT
             // 
@@ -202,23 +225,23 @@
             this.btnThemDonThuoc.UseVisualStyleBackColor = true;
             this.btnThemDonThuoc.Click += new System.EventHandler(this.btnThemDonThuoc_Click);
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(72, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
-            this.label1.TabIndex = 33;
-            this.label1.Text = "Trạng thái TT";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(545, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 20);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Ngày kê đơn";
             // 
-            // cobTrangThaiTT
+            // dateNgayKeDon
             // 
-            this.cobTrangThaiTT.FormattingEnabled = true;
-            this.cobTrangThaiTT.Location = new System.Drawing.Point(222, 98);
-            this.cobTrangThaiTT.Name = "cobTrangThaiTT";
-            this.cobTrangThaiTT.Size = new System.Drawing.Size(216, 28);
-            this.cobTrangThaiTT.TabIndex = 34;
+            this.dateNgayKeDon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayKeDon.Location = new System.Drawing.Point(716, 102);
+            this.dateNgayKeDon.Name = "dateNgayKeDon";
+            this.dateNgayKeDon.Size = new System.Drawing.Size(215, 26);
+            this.dateNgayKeDon.TabIndex = 36;
             // 
             // DonThuoc
             // 
@@ -262,6 +285,8 @@
         private System.Windows.Forms.Button btnXoaDonThuoc;
         private System.Windows.Forms.Button btnThemDonThuoc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cobTrangThaiTT;
+        private System.Windows.Forms.TextBox txtTrangThaiTT;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateNgayKeDon;
     }
 }

@@ -115,6 +115,8 @@
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(259, 28);
             this.txtTenDN.TabIndex = 1;
+            this.txtTenDN.TextChanged += new System.EventHandler(this.txtTenDN_TextChanged);
+            this.txtTenDN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenDN_KeyPress);
             // 
             // label4
             // 
@@ -136,6 +138,7 @@
             this.txtPasswd.Size = new System.Drawing.Size(259, 28);
             this.txtPasswd.TabIndex = 2;
             this.txtPasswd.UseSystemPasswordChar = true;
+            this.txtPasswd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPasswd_KeyPress);
             // 
             // label3
             // 

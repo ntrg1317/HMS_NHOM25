@@ -37,12 +37,21 @@ namespace HMS_NHOM25.Model
             return datatable;
         }
 
-        public void Command(string query)
+        public void Command(string query, SqlTransaction transaction = null)
         {
             using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
             {
                 sqlConnection.Open();
-                command = new SqlCommand(query, sqlConnection);
+
+                if (transaction != null)
+                {
+                    command = new SqlCommand(query, sqlConnection, transaction);
+                }
+                else
+                {
+                    command = new SqlCommand(query, sqlConnection);
+                }
+
                 command.ExecuteNonQuery();
                 sqlConnection.Close();
             }

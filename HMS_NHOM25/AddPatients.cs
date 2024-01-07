@@ -117,7 +117,6 @@ namespace HMS_NHOM25
                     SqlTransaction transaction = sqlConnection.BeginTransaction();
 
                     GetValuesTextBoxes();
-                    MessageBox.Show(bn.TenDN);
 
                     string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + bn.TenDN + "' ,N'" + bn.MatKhau + "')";
 
