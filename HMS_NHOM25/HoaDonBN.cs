@@ -1,7 +1,6 @@
 using System;
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

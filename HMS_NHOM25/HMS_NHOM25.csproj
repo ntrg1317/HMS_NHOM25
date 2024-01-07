@@ -340,6 +340,48 @@
     <Compile Include="ThongTinPhongChiTiet.Designer.cs">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="TTCNAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNAdmin.Designer.cs">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBacSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBacSi.Designer.cs">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.Designer.cs">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNDuocSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNDuocSi.Designer.cs">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.Designer.cs">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDanhSachDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDanhSachDT.Designer.cs">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDonThuocBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDonThuocBN.Designer.cs">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddBenhNhanDV.resx">
       <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,6 +496,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinPhongChiTiet.resx">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNAdmin.resx">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBacSi.resx">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBenhNhan.resx">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNDuocSi.resx">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNNhanVienTN.resx">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDanhSachDT.resx">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDonThuocBN.resx">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -575,6 +638,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-pharmacy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
