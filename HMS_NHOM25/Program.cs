@@ -13,11 +13,18 @@ namespace HMS_NHOM25
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
 
             //Application.Run(new login());
             Application.Run(new AdminControl());
             //Application.Run(new ThongKeDuLieu());
+=======
+            //Application.Run(new login());
+            //Application.Run(new AdminControl());
+>>>>>>> ab181c68edcca20d84ddac6793d7556e1efccfcf
             Application.Run(new AdminControl());
+            //Application.Run(new login());
+
         }
     }
 }

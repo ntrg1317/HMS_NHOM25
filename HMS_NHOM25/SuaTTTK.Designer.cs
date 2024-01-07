@@ -55,38 +55,34 @@
             this.grbTTTKCu.Controls.Add(this.labMK);
             this.grbTTTKCu.Controls.Add(this.labTenDN);
             this.grbTTTKCu.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKCu.Location = new System.Drawing.Point(80, 112);
-            this.grbTTTKCu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbTTTKCu.Location = new System.Drawing.Point(182, 179);
             this.grbTTTKCu.Name = "grbTTTKCu";
-            this.grbTTTKCu.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbTTTKCu.Size = new System.Drawing.Size(450, 125);
+            this.grbTTTKCu.Size = new System.Drawing.Size(588, 152);
             this.grbTTTKCu.TabIndex = 0;
             this.grbTTTKCu.TabStop = false;
             this.grbTTTKCu.Text = "Thông tin tài khoản cũ";
             // 
             // txtMK
             // 
-            this.txtMK.Location = new System.Drawing.Point(216, 78);
-            this.txtMK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMK.Location = new System.Drawing.Point(302, 79);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(173, 26);
+            this.txtMK.Size = new System.Drawing.Size(202, 22);
             this.txtMK.TabIndex = 3;
             // 
             // txtTenDN
             // 
-            this.txtTenDN.Location = new System.Drawing.Point(216, 39);
-            this.txtTenDN.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTenDN.Location = new System.Drawing.Point(302, 48);
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(173, 26);
+            this.txtTenDN.Size = new System.Drawing.Size(202, 22);
             this.txtTenDN.TabIndex = 2;
             // 
             // labMK
             // 
             this.labMK.AutoSize = true;
             this.labMK.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMK.Location = new System.Drawing.Point(54, 81);
+            this.labMK.Location = new System.Drawing.Point(66, 79);
             this.labMK.Name = "labMK";
-            this.labMK.Size = new System.Drawing.Size(75, 20);
+            this.labMK.Size = new System.Drawing.Size(61, 16);
             this.labMK.TabIndex = 1;
             this.labMK.Text = "Mật khẩu";
             // 
@@ -94,9 +90,9 @@
             // 
             this.labTenDN.AutoSize = true;
             this.labTenDN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenDN.Location = new System.Drawing.Point(54, 42);
+            this.labTenDN.Location = new System.Drawing.Point(66, 48);
             this.labTenDN.Name = "labTenDN";
-            this.labTenDN.Size = new System.Drawing.Size(116, 20);
+            this.labTenDN.Size = new System.Drawing.Size(98, 16);
             this.labTenDN.TabIndex = 0;
             this.labTenDN.Text = "Tên đăng nhập";
             // 
@@ -104,9 +100,9 @@
             // 
             this.labSuaTTTK.AutoSize = true;
             this.labSuaTTTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labSuaTTTK.Location = new System.Drawing.Point(172, 38);
+            this.labSuaTTTK.Location = new System.Drawing.Point(368, 81);
             this.labSuaTTTK.Name = "labSuaTTTK";
-            this.labSuaTTTK.Size = new System.Drawing.Size(328, 32);
+            this.labSuaTTTK.Size = new System.Drawing.Size(277, 29);
             this.labSuaTTTK.TabIndex = 2;
             this.labSuaTTTK.Text = "Sửa thông tin tài khoản";
             // 
@@ -114,10 +110,9 @@
             // 
             this.ptbSuaTTTK.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.ErrorImage")));
             this.ptbSuaTTTK.Image = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.Image")));
-            this.ptbSuaTTTK.Location = new System.Drawing.Point(122, 26);
-            this.ptbSuaTTTK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ptbSuaTTTK.Location = new System.Drawing.Point(323, 72);
             this.ptbSuaTTTK.Name = "ptbSuaTTTK";
-            this.ptbSuaTTTK.Size = new System.Drawing.Size(54, 54);
+            this.ptbSuaTTTK.Size = new System.Drawing.Size(48, 43);
             this.ptbSuaTTTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbSuaTTTK.TabIndex = 3;
             this.ptbSuaTTTK.TabStop = false;
@@ -129,38 +124,34 @@
             this.grbTTTKMoi.Controls.Add(this.labMKmoi);
             this.grbTTTKMoi.Controls.Add(this.labTenDNmoi);
             this.grbTTTKMoi.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKMoi.Location = new System.Drawing.Point(80, 256);
-            this.grbTTTKMoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grbTTTKMoi.Location = new System.Drawing.Point(182, 358);
             this.grbTTTKMoi.Name = "grbTTTKMoi";
-            this.grbTTTKMoi.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grbTTTKMoi.Size = new System.Drawing.Size(450, 125);
+            this.grbTTTKMoi.Size = new System.Drawing.Size(588, 152);
             this.grbTTTKMoi.TabIndex = 4;
             this.grbTTTKMoi.TabStop = false;
             this.grbTTTKMoi.Text = "Thông tin tài khoản mới";
             // 
             // txtMKmoi
             // 
-            this.txtMKmoi.Location = new System.Drawing.Point(216, 74);
-            this.txtMKmoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMKmoi.Location = new System.Drawing.Point(302, 87);
             this.txtMKmoi.Name = "txtMKmoi";
-            this.txtMKmoi.Size = new System.Drawing.Size(173, 26);
+            this.txtMKmoi.Size = new System.Drawing.Size(202, 22);
             this.txtMKmoi.TabIndex = 3;
             // 
             // txtTenDNmoi
             // 
-            this.txtTenDNmoi.Location = new System.Drawing.Point(216, 35);
-            this.txtTenDNmoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTenDNmoi.Location = new System.Drawing.Point(302, 56);
             this.txtTenDNmoi.Name = "txtTenDNmoi";
-            this.txtTenDNmoi.Size = new System.Drawing.Size(173, 26);
+            this.txtTenDNmoi.Size = new System.Drawing.Size(202, 22);
             this.txtTenDNmoi.TabIndex = 2;
             // 
             // labMKmoi
             // 
             this.labMKmoi.AutoSize = true;
             this.labMKmoi.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMKmoi.Location = new System.Drawing.Point(54, 78);
+            this.labMKmoi.Location = new System.Drawing.Point(66, 93);
             this.labMKmoi.Name = "labMKmoi";
-            this.labMKmoi.Size = new System.Drawing.Size(104, 20);
+            this.labMKmoi.Size = new System.Drawing.Size(86, 16);
             this.labMKmoi.TabIndex = 1;
             this.labMKmoi.Text = "Mật khẩu mới";
             // 
@@ -168,9 +159,9 @@
             // 
             this.labTenDNmoi.AutoSize = true;
             this.labTenDNmoi.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenDNmoi.Location = new System.Drawing.Point(54, 39);
+            this.labTenDNmoi.Location = new System.Drawing.Point(66, 62);
             this.labTenDNmoi.Name = "labTenDNmoi";
-            this.labTenDNmoi.Size = new System.Drawing.Size(145, 20);
+            this.labTenDNmoi.Size = new System.Drawing.Size(123, 16);
             this.labTenDNmoi.TabIndex = 0;
             this.labTenDNmoi.Text = "Tên đăng nhập mới";
             // 
@@ -178,10 +169,9 @@
             // 
             this.btnLuuTT.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuTT.Image")));
             this.btnLuuTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuTT.Location = new System.Drawing.Point(122, 406);
-            this.btnLuuTT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLuuTT.Location = new System.Drawing.Point(300, 596);
             this.btnLuuTT.Name = "btnLuuTT";
-            this.btnLuuTT.Size = new System.Drawing.Size(144, 40);
+            this.btnLuuTT.Size = new System.Drawing.Size(128, 32);
             this.btnLuuTT.TabIndex = 5;
             this.btnLuuTT.Text = "Lưu thông tin";
             this.btnLuuTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -192,26 +182,25 @@
             // 
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(328, 406);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThoat.Location = new System.Drawing.Point(484, 596);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(144, 40);
+            this.btnThoat.Size = new System.Drawing.Size(128, 32);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // SuaTTTK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 468);
+            this.ClientSize = new System.Drawing.Size(970, 744);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuuTT);
             this.Controls.Add(this.grbTTTKMoi);
             this.Controls.Add(this.ptbSuaTTTK);
             this.Controls.Add(this.labSuaTTTK);
             this.Controls.Add(this.grbTTTKCu);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SuaTTTK";
             this.Text = "SuaThongTinTaiKhoan";
             this.grbTTTKCu.ResumeLayout(false);

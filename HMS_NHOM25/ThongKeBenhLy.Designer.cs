@@ -46,11 +46,13 @@
             this.chartTKDauCo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvCacLoaiBenh = new System.Windows.Forms.DataGridView();
-            this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvDauDauNam = new System.Windows.Forms.DataGridView();
             this.dgvDauCo2023 = new System.Windows.Forms.DataGridView();
             this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
+<<<<<<< HEAD
             this.label5 = new System.Windows.Forms.Label();
+=======
+>>>>>>> ab181c68edcca20d84ddac6793d7556e1efccfcf
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).BeginInit();
             this.panel4.SuspendLayout();
@@ -186,6 +188,7 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
             // 
+<<<<<<< HEAD
             // chartTKDauCo
             // 
             chartArea2.Name = "ChartArea1";
@@ -223,6 +226,8 @@
             this.chartTKDauDau.TabIndex = 4;
             this.chartTKDauDau.Text = "chartTKDauBung";
             // 
+=======
+>>>>>>> ab181c68edcca20d84ddac6793d7556e1efccfcf
             // label5
             // 
             this.label5.AutoSize = true;
@@ -343,7 +348,6 @@
         #endregion
 
         private System.Windows.Forms.Label labSLBN2023;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2023;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2024;

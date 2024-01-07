@@ -6,7 +6,7 @@ namespace HMS_NHOM25
 {
     public partial class AdminControl : Form
     {
-
+        bool isExit;
         private Form currentFormChild;
         private Button lastClickedButton;
         private bool isCollapsed;
@@ -127,6 +127,45 @@ namespace HMS_NHOM25
                     isCollapsed = true;
                 }
             }
+        }
+
+        private void AdminControl_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (isExit)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLogout_Click(object sender, EventArgs e)
+        {
+            isExit = false;
+            this.Close();
+            login login = new login();
+            login.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            isExit = false;
+            this.Close();
+            login login = new login();
+            login.Show();
+        }
+
+        private void picChangPw_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SuaTTTK(), btnChangePw);
+        }
+
+        private void btnChangePw_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SuaTTTK(), btnChangePw);
         }
     }
 }

@@ -175,7 +175,6 @@
             this.ClientSize = new System.Drawing.Size(937, 449);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
