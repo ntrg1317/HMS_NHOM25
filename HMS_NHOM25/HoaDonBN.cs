@@ -81,14 +81,6 @@ namespace HMS_NHOM25
 
         private void HoaDon_Load(object sender, EventArgs e)
         {
-            try
-            {
-                dgvInforBN.DataSource = basemodel.all(table);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Loi" + ex.Message);
-            }
             DeleteTextBoxes();
         }
 
@@ -149,29 +141,40 @@ namespace HMS_NHOM25
                     string maBN = selectedRow.Cells["MaBN"].Value.ToString();
 
                     string query = @"
-                                        SELECT 
-                                            donThuoc.MaDT AS 'DichVu/DonThuoc',
-                                            ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
-                                        FROM 
-                                            donThuoc
-                                        LEFT JOIN 
-                                            donThuocChiTiet ON donThuoc.MaDT = donThuocChiTiet.MaDT
-                                        LEFT JOIN 
-                                            khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
-                                        WHERE 
-                                            donThuoc.MaBN = @MaBN
+                                    SELECT 
+                                        benhNhan_dichVu.MaDV AS 'DichVu/DonThuoc',
+                                        ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
+                                    FROM 
+                                        benhNhan BN
+                                    INNER JOIN 
+                                        benhNhan_dichVu ON BN.MaBN = benhNhan_dichVu.MaBN
+                                    INNER JOIN 
+                                        dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
+                                    WHERE 
+                                        BN.MaBN = @MaBN
+                                        AND BN.NgayVao <= benhNhan_dichVu.NgayDung
+                                        AND benhNhan_dichVu.NgayDung <= GETDATE() 
 
-                                        UNION
+                                    UNION
 
-                                        SELECT 
-                                            benhNhan_dichVu.MaDV AS 'DichVu/DonThuoc',
-                                            ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
-                                        FROM 
-                                            benhNhan_dichVu
-                                        LEFT JOIN 
-                                            dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
-                                        WHERE 
-                                            benhNhan_dichVu.MaBN = @MaBN;";
+                                    SELECT 
+                                        DonThuoc.MaDT AS 'DichVu/DonThuoc',
+                                        ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
+                                    FROM 
+                                        benhNhan BN
+                                    INNER JOIN 
+                                        DonThuoc ON BN.MaBN = DonThuoc.MaBN
+                                    LEFT JOIN 
+                                        donThuocChiTiet ON DonThuoc.MaDT = donThuocChiTiet.MaDT
+                                    LEFT JOIN 
+                                        khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
+                                    WHERE 
+                                        BN.MaBN = @MaBN
+                                        AND BN.NgayVao <= DonThuoc.NgayKeDon
+                                        AND DonThuoc.NgayKeDon <= GETDATE();";
+
+
+ 
 
                     DataTable resultTable = basemodel.Table(query, new Dictionary<string, object> { { "@MaBN", maBN } });
                     dgvChiTietHD.DataSource = resultTable;
