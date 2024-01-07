@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
+            this.richTxtBoxLD = new System.Windows.Forms.RichTextBox();
             this.richTxtLoiDan = new System.Windows.Forms.RichTextBox();
             this.cobTenThuoc = new System.Windows.Forms.ComboBox();
             this.labLieuDung = new System.Windows.Forms.Label();
@@ -48,20 +49,19 @@
             this.labDSThuoc = new System.Windows.Forms.Label();
             this.btnSuaKeThuoc = new System.Windows.Forms.Button();
             this.grbInfoBN = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.labTenBN = new System.Windows.Forms.Label();
             this.txtSDTBN = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.txtBenhTrang = new System.Windows.Forms.TextBox();
+            this.txtGT = new System.Windows.Forms.TextBox();
+            this.txtTenBN = new System.Windows.Forms.TextBox();
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTimBN = new System.Windows.Forms.DataGridView();
-            this.richTxtBoxLD = new System.Windows.Forms.RichTextBox();
-            this.txtTenBN = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtGT = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtBenhTrang = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.grbInfoDonThuoc.SuspendLayout();
             this.palAddNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
@@ -89,6 +89,14 @@
             this.grbInfoDonThuoc.TabIndex = 23;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Kê thuốc";
+            // 
+            // richTxtBoxLD
+            // 
+            this.richTxtBoxLD.Location = new System.Drawing.Point(180, 72);
+            this.richTxtBoxLD.Name = "richTxtBoxLD";
+            this.richTxtBoxLD.Size = new System.Drawing.Size(242, 47);
+            this.richTxtBoxLD.TabIndex = 45;
+            this.richTxtBoxLD.Text = "";
             // 
             // richTxtLoiDan
             // 
@@ -325,6 +333,46 @@
             this.grbInfoBN.TabStop = false;
             this.grbInfoBN.Text = "Thông tin bệnh nhân";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label6.Location = new System.Drawing.Point(663, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Địa chỉ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label4.Location = new System.Drawing.Point(356, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 16);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Bệnh trạng";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(48, 92);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 16);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Giới tính";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(663, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Tên BN";
+            // 
             // labTenBN
             // 
             this.labTenBN.AutoSize = true;
@@ -344,6 +392,46 @@
             this.txtSDTBN.TabIndex = 30;
             this.txtSDTBN.TextChanged += new System.EventHandler(this.txtSDTBN_TextChanged);
             this.txtSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(742, 84);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.ReadOnly = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(156, 22);
+            this.txtDiaChi.TabIndex = 30;
+            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
+            // 
+            // txtBenhTrang
+            // 
+            this.txtBenhTrang.Location = new System.Drawing.Point(435, 86);
+            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBenhTrang.Name = "txtBenhTrang";
+            this.txtBenhTrang.ReadOnly = true;
+            this.txtBenhTrang.Size = new System.Drawing.Size(156, 22);
+            this.txtBenhTrang.TabIndex = 30;
+            this.txtBenhTrang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
+            // 
+            // txtGT
+            // 
+            this.txtGT.Location = new System.Drawing.Point(131, 88);
+            this.txtGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGT.Name = "txtGT";
+            this.txtGT.ReadOnly = true;
+            this.txtGT.Size = new System.Drawing.Size(156, 22);
+            this.txtGT.TabIndex = 30;
+            this.txtGT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
+            // 
+            // txtTenBN
+            // 
+            this.txtTenBN.Location = new System.Drawing.Point(742, 33);
+            this.txtTenBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenBN.Name = "txtTenBN";
+            this.txtTenBN.ReadOnly = true;
+            this.txtTenBN.Size = new System.Drawing.Size(156, 22);
+            this.txtTenBN.TabIndex = 30;
+            this.txtTenBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
             // 
             // txtMaBN
             // 
@@ -382,98 +470,11 @@
             this.dgvTimBN.TabIndex = 38;
             this.dgvTimBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimBN_CellClick);
             // 
-            // richTxtBoxLD
-            // 
-            this.richTxtBoxLD.Location = new System.Drawing.Point(180, 72);
-            this.richTxtBoxLD.Name = "richTxtBoxLD";
-            this.richTxtBoxLD.Size = new System.Drawing.Size(242, 47);
-            this.richTxtBoxLD.TabIndex = 45;
-            this.richTxtBoxLD.Text = "";
-            // 
-            // txtTenBN
-            // 
-            this.txtTenBN.Location = new System.Drawing.Point(742, 33);
-            this.txtTenBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenBN.Name = "txtTenBN";
-            this.txtTenBN.ReadOnly = true;
-            this.txtTenBN.Size = new System.Drawing.Size(156, 22);
-            this.txtTenBN.TabIndex = 30;
-            this.txtTenBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(663, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Tên BN";
-            // 
-            // txtGT
-            // 
-            this.txtGT.Location = new System.Drawing.Point(131, 88);
-            this.txtGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGT.Name = "txtGT";
-            this.txtGT.ReadOnly = true;
-            this.txtGT.Size = new System.Drawing.Size(156, 22);
-            this.txtGT.TabIndex = 30;
-            this.txtGT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(48, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 16);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Giới tính";
-            // 
-            // txtBenhTrang
-            // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(435, 86);
-            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBenhTrang.Name = "txtBenhTrang";
-            this.txtBenhTrang.ReadOnly = true;
-            this.txtBenhTrang.Size = new System.Drawing.Size(156, 22);
-            this.txtBenhTrang.TabIndex = 30;
-            this.txtBenhTrang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(356, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 16);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Bệnh trạng";
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(742, 84);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.ReadOnly = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(156, 22);
-            this.txtDiaChi.TabIndex = 30;
-            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuongThuoc_KeyPress);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(663, 88);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 16);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Địa chỉ";
-            // 
             // AddDonThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(957, 852);
             this.Controls.Add(this.btnSuaKeThuoc);
             this.Controls.Add(this.labDSThuoc);

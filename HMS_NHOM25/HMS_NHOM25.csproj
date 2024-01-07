@@ -76,7 +76,7 @@
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -85,17 +85,17 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net46\System.Data.SQLite.dll</HintPath>
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite.EF6, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.115.5\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite.Linq, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.115.5\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -340,6 +340,48 @@
     <Compile Include="ThongTinPhongChiTiet.Designer.cs">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </Compile>
+    <Compile Include="TTCNAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNAdmin.Designer.cs">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBacSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBacSi.Designer.cs">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.Designer.cs">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNDuocSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNDuocSi.Designer.cs">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.Designer.cs">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDanhSachDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDanhSachDT.Designer.cs">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDonThuocBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDonThuocBN.Designer.cs">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddBenhNhanDV.resx">
       <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,6 +496,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinPhongChiTiet.resx">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNAdmin.resx">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBacSi.resx">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBenhNhan.resx">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNDuocSi.resx">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNNhanVienTN.resx">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDanhSachDT.resx">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDonThuocBN.resx">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -576,6 +639,12 @@
   <ItemGroup>
     <None Include="Resources\receipt.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-pharmacy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -583,12 +652,12 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
-  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <PropertyGroup>
     <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
 if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
   </PropertyGroup>
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
 </Project>
