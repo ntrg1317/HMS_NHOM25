@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -17,7 +14,11 @@ namespace HMS_NHOM25
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+<<<<<<< HEAD
             //Application.Run(new login());
+=======
+            Application.Run(new AdminControl());
+>>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
             //Application.Run(new ThongKeDuLieu());
             Application.Run(new AdminControl());
         }

@@ -1,14 +1,8 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -41,17 +35,17 @@ namespace HMS_NHOM25
 
         private void DeleteTextBoxes()
         {
-            txtTenBNM.Text         = "";
+            txtTenBNM.Text = "";
             cobTenPhong.SelectedValue = -1;
-            dateDobBn.Text         = "";
-            dateNgayVaoM.Text      = "";
+            dateDobBn.Text = "";
+            dateNgayVaoM.Text = "";
             cobSexBNM.SelectedValue = -1;
-            txtBenhTrangBNM.Text   = "";
-            txtSDTBNM.Text         = "";
+            txtBenhTrangBNM.Text = "";
+            txtSDTBNM.Text = "";
             cobDiaChiBNM.SelectedValue = -1;
-            txtSDTNguoiThanM.Text  = "";
-            txtTenDNBNM.Text       = "";
-            txtMatKhauBNM.Text     = "";
+            txtSDTNguoiThanM.Text = "";
+            txtTenDNBNM.Text = "";
+            txtMatKhauBNM.Text = "";
         }
 
         private bool CheckTextBoxes()
@@ -97,18 +91,18 @@ namespace HMS_NHOM25
 
         private void GetValuesTextBoxes()
         {
-            string _tenBN        = txtTenBNM.Text;
-            object _maPhong      = (cobTenPhong.SelectedIndex != -1) ? (int)cobTenPhong.SelectedValue : (object)DBNull.Value;
-            string _ngaySinh     = dateDobBn.Text;
-            string _ngayVao      = dateNgayVaoM.Text;
-            string _gioiTinh     = cobSexBNM.Text;
-            string _benhTrang    = txtBenhTrangBNM.Text;
-            string _sdt          = txtSDTBNM.Text;
-            string _diaChi       = cobDiaChiBNM.Text;
+            string _tenBN = txtTenBNM.Text;
+            object _maPhong = (cobTenPhong.SelectedIndex != -1) ? (int)cobTenPhong.SelectedValue : (object)DBNull.Value;
+            string _ngaySinh = dateDobBn.Text;
+            string _ngayVao = dateNgayVaoM.Text;
+            string _gioiTinh = cobSexBNM.Text;
+            string _benhTrang = txtBenhTrangBNM.Text;
+            string _sdt = txtSDTBNM.Text;
+            string _diaChi = cobDiaChiBNM.Text;
             string _sdtNguoiThan = txtSDTNguoiThanM.Text;
 
-            string _tenDN        = txtTenDNBNM.Text;
-            string _matKhau      = txtMatKhauBNM.Text;
+            string _tenDN = txtTenDNBNM.Text;
+            string _matKhau = txtMatKhauBNM.Text;
 
             bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
         }
@@ -123,7 +117,6 @@ namespace HMS_NHOM25
                     SqlTransaction transaction = sqlConnection.BeginTransaction();
 
                     GetValuesTextBoxes();
-                    MessageBox.Show(bn.TenDN);
 
                     string query2 = "INSERT INTO taiKhoan (MaCV, TenDN, MatKhau) VALUES ('3', N'" + bn.TenDN + "' ,N'" + bn.MatKhau + "')";
 
@@ -177,7 +170,7 @@ namespace HMS_NHOM25
             else
             {
                 e.Handled = true;
-            }    
+            }
         }
 
         private void btnThoatAddBNM_Click(object sender, EventArgs e)

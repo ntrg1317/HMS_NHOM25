@@ -37,6 +37,7 @@
             this.labTenBN = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
             this.grb = new System.Windows.Forms.GroupBox();
+            this.cobTenDV = new System.Windows.Forms.ComboBox();
             this.dateNgayDung = new System.Windows.Forms.DateTimePicker();
             this.lablNgayDung = new System.Windows.Forms.Label();
             this.txtTKTenDV = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.btnThemDV = new System.Windows.Forms.Button();
             this.btnSuaBNDV = new System.Windows.Forms.Button();
             this.btnXoaBNDV = new System.Windows.Forms.Button();
-            this.cobTenDV = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDichVu)).BeginInit();
             this.grb.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -163,6 +163,16 @@
             this.grb.TabIndex = 35;
             this.grb.TabStop = false;
             this.grb.Text = "Thông tin dịch vụ";
+            // 
+            // cobTenDV
+            // 
+            this.cobTenDV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobTenDV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobTenDV.FormattingEnabled = true;
+            this.cobTenDV.Location = new System.Drawing.Point(184, 79);
+            this.cobTenDV.Name = "cobTenDV";
+            this.cobTenDV.Size = new System.Drawing.Size(183, 28);
+            this.cobTenDV.TabIndex = 21;
             // 
             // dateNgayDung
             // 
@@ -317,16 +327,6 @@
             this.btnXoaBNDV.UseVisualStyleBackColor = true;
             this.btnXoaBNDV.Visible = false;
             this.btnXoaBNDV.Click += new System.EventHandler(this.btnXoaBNDV_Click);
-            // 
-            // cobTenDV
-            // 
-            this.cobTenDV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cobTenDV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cobTenDV.FormattingEnabled = true;
-            this.cobTenDV.Location = new System.Drawing.Point(163, 67);
-            this.cobTenDV.Name = "cobTenDV";
-            this.cobTenDV.Size = new System.Drawing.Size(164, 24);
-            this.cobTenDV.TabIndex = 21;
             // 
             // DichVu
             // 

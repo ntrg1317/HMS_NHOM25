@@ -1,12 +1,5 @@
-﻿using HMS_NHOM25.Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -17,7 +10,7 @@ namespace HMS_NHOM25
         private Form currentFormChild;
         private Button lastClickedButton;
         private bool isCollapsed;
-       
+
         public AdminControl()
         {
             InitializeComponent();
@@ -122,9 +115,9 @@ namespace HMS_NHOM25
                 {
                     timer1.Stop();
                     isCollapsed = false;
-                } 
-                    
-            } 
+                }
+
+            }
             else
             {
                 panelUser.Height -= 10;

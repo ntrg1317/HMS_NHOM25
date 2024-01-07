@@ -448,7 +448,11 @@
             this.btnSuaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnSuaBN.Location = new System.Drawing.Point(523, 230);
+=======
+            this.btnSuaBN.Location = new System.Drawing.Point(601, 287);
+>>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
             this.btnSuaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBN.Name = "btnSuaBN";
             this.btnSuaBN.Size = new System.Drawing.Size(103, 31);
@@ -463,7 +467,11 @@
             this.btnXoaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnXoaBN.Location = new System.Drawing.Point(690, 231);
+=======
+            this.btnXoaBN.Location = new System.Drawing.Point(786, 288);
+>>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(85, 31);
@@ -481,7 +489,11 @@
             this.btnThemBN.Location = new System.Drawing.Point(367, 230);
             this.btnThemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN.Name = "btnThemBN";
+<<<<<<< HEAD
             this.btnThemBN.Size = new System.Drawing.Size(105, 31);
+=======
+            this.btnThemBN.Size = new System.Drawing.Size(124, 39);
+>>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
             this.btnThemBN.TabIndex = 20;
             this.btnThemBN.Text = "Thêm BN";
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

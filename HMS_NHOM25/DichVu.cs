@@ -1,14 +1,7 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Contracts;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -50,7 +43,7 @@ namespace HMS_NHOM25
         }
 
         private void dgvInforDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
-        {  
+        {
             txtMaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[0].Value.ToString();
             GetSelectedValue(dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString(), cobTenDV);
             txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[2].Value.ToString();
@@ -127,14 +120,14 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Bạn chưa nhập tên!"); return false;
             }
-            if(txtGiaDV.Text == "")
+            if (txtGiaDV.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập giá!"); return false;
             }
             if (dateNgayDung.Text == "")
             {
                 MessageBox.Show("Bạn chưa chọn ngày sử dụng dịch vụ!"); return false;
-            }    
+            }
             return true;
         }
 
@@ -159,7 +152,7 @@ namespace HMS_NHOM25
                 btnSuaBNDV.Visible = true;
                 btnXoaDV.Visible = false;
                 btnSuaDV.Visible = false;
-            } 
+            }
             else
             {
                 btnThemDV.Enabled = true;
@@ -169,8 +162,8 @@ namespace HMS_NHOM25
                 btnXoaBNDV.Visible = false;
                 btnXoaDV.Visible = true;
                 btnSuaDV.Visible = true;
-            }    
-           
+            }
+
             string timKiem = txtSDTBN.Text.Trim();
             if (timKiem == "")
             {

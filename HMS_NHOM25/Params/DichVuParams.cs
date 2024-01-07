@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HMS_NHOM25.Params
+﻿namespace HMS_NHOM25.Params
 {
     internal class DichVuParams
     {
@@ -20,6 +14,6 @@ namespace HMS_NHOM25.Params
         }
         public string TenDV { get => _tenDV; set => _tenDV = value; }
         public string TienDV { get => _tienDV; set => _tienDV = value; }
-        public string NgayDung { get => _ngayDung; set => _ngayDung = value;}
+        public string NgayDung { get => _ngayDung; set => _ngayDung = value; }
     }
 }

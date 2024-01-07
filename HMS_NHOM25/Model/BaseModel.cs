@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Security.Cryptography;
 
 namespace HMS_NHOM25.Model
 {
     class BaseModel
-    { 
+    {
         SqlDataAdapter adapter;
         SqlCommand command;
         public BaseModel() { }
@@ -42,15 +38,52 @@ namespace HMS_NHOM25.Model
             return datatable;
         }
 
-        public void Command(string query)
+        public void Command(string query, SqlTransaction transaction = null)
         {
             using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
             {
                 sqlConnection.Open();
-                command = new SqlCommand(query, sqlConnection);
+
+                if (transaction != null)
+                {
+                    command = new SqlCommand(query, sqlConnection, transaction);
+                }
+                else
+                {
+                    command = new SqlCommand(query, sqlConnection);
+                }
+
                 command.ExecuteNonQuery();
                 sqlConnection.Close();
-            }    
+            }
+        }
+
+        public DataTable Table(string query, Dictionary<string, object> parameters = null)
+        {
+            DataTable datatable = new DataTable();
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                {
+                    if (parameters != null)
+                    {
+                        foreach (var parameter in parameters)
+                        {
+                            sqlCommand.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                        }
+                    }
+
+                    using (adapter = new SqlDataAdapter(sqlCommand))
+                    {
+                        adapter.Fill(datatable);
+                    }
+                }
+
+                sqlConnection.Close();
+            }
+            return datatable;
         }
 
         public int getLastInsertID(string pk, string table)
