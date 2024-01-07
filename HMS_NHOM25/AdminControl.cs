@@ -160,12 +160,12 @@ namespace HMS_NHOM25
 
         private void picChangPw_Click(object sender, EventArgs e)
         {
-            new SuaTTTK().Show();
+            OpenChildForm(new SuaTTTK(), btnChangePw);
         }
 
         private void btnChangePw_Click(object sender, EventArgs e)
         {
-            new SuaTTTK().Show();
+            OpenChildForm(new SuaTTTK(), btnChangePw);
         }
     }
 }
