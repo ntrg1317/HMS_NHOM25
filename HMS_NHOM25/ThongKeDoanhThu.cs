@@ -9,7 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HMS_NHOM25
 {
@@ -26,12 +28,14 @@ namespace HMS_NHOM25
             {
                 connection.Open();
 
-                string queryDoanhThu = "SELECT MONTH(NgayTT) AS Thang," +
-                    "SUM(TongTien) AS DoanhThu," +
-                    "100 * (SUM(TongTien) - LAG(SUM(TongTien), 1, 0) OVER (ORDER BY MONTH(NgayTT))) / NULLIF(LAG(SUM(TongTien), 1, 0) OVER (ORDER BY MONTH(NgayTT)), 0) " +
-                    "AS TyLeTangTruong FROM hoaDon" +
-                    "WHERE YEAR(NgayTT) = 2023 " +
-                    "GROUP BY MONTH(NgayTT) ORDER BY Thang;";
+                string queryDoanhThu = "WITH DoanhThuThang AS (SELECT MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu" +
+                    "FROM hoaDon WITH(NOLOCK)" +
+                    "WHERE YEAR(NgayTT) = 2023" +
+                    "GROUP BY MONTH(NgayTT))" +
+                    "SELECT t1.Thang, t1.DoanhThu," +
+                    "ISNULL((t1.DoanhThu - t2.DoanhThu) / NULLIF(t2.DoanhThu, 0) * 100, 0) AS TyLeTangTruong" +
+                    "FROM DoanhThuThang t1 LEFT JOIN DoanhThuThang t2 ON t1.Thang = t2.Thang + 1" +
+                    "ORDER BY t1.Thang;";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(queryDoanhThu, connection);
                 DataTable dataTable = new DataTable();
