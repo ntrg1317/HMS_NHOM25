@@ -110,8 +110,6 @@ namespace HMS_NHOM25
             object _maThuoc = (cobTenThuoc.SelectedIndex != -1) ? (int)cobTenThuoc.SelectedValue : (object)DBNull.Value;
             string _soLuong = txtSoLuongThuoc.Text;
             string _lieuDung = txtLieuDung.Text;
-            string _moTa;
-            chiTietDT = new ChiTietDTParams(_maThuoc, _soLuong, _lieuDung, _moTa );
 
         }
 

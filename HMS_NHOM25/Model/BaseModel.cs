@@ -42,6 +42,34 @@ namespace HMS_NHOM25.Model
             return datatable;
         }
 
+        public DataTable Table(string query, Dictionary<string, object> parameters = null)
+        {
+            DataTable datatable = new DataTable();
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                {
+                    if (parameters != null)
+                    {
+                        foreach (var parameter in parameters)
+                        {
+                            sqlCommand.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                        }
+                    }
+
+                    using (adapter = new SqlDataAdapter(sqlCommand))
+                    {
+                        adapter.Fill(datatable);
+                    }
+                }
+
+                sqlConnection.Close();
+            }
+            return datatable;
+        }
+
         public void Command(string query)
         {
             using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())

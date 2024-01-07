@@ -37,7 +37,29 @@ namespace HMS_NHOM25
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
         {
-            
+            string timKiem = txtTimKiemSDTBN.Text.Trim();
+            if (timKiem == "")
+            {
+                DSHoaDon_Load(sender, e);
+            }
+            else
+            {
+                string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
+                DataTable resultTable = basemodel.Table(query1);
+                try
+                {
+                    if (resultTable.Rows.Count > 0)
+                    {
+                        string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
+                        string query2 = "SELECT * FROM hoaDon WHERE MaBN LIKE '%" + maBenhNhan + "%'";
+                        dgvInfoDSHoaDon.DataSource = basemodel.Table(query2);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void txtTongTien_KeyPress(object sender, KeyPressEventArgs e)
@@ -124,6 +146,10 @@ namespace HMS_NHOM25
                 {
                     MessageBox.Show("Lỗi: " + ex.Message);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa chọn hóa đơn cần xóa!");
             }
         }
 
