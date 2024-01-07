@@ -17,6 +17,7 @@ namespace HMS_NHOM25
             //Application.Run(new AdminControl());
             Application.Run(new AdminControl());
             //Application.Run(new login());
+            //Application.Run(new TTCNBenhNhan());
 
         }
     }

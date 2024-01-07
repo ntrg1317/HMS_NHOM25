@@ -20,5 +20,30 @@ namespace HMS_NHOM25
                 e.Handled = true;
             }
         }
+
+        private void txtTimKiemTenThuoc_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void dgvInforDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnThemThuoc_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhatCTDonThuoc_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void btnXoaThuoc_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
