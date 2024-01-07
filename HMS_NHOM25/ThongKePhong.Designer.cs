@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chartLuotSDPhong = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -64,36 +64,36 @@
             this.panel3.Location = new System.Drawing.Point(4, 110);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1001, 1016);
+            this.panel3.Size = new System.Drawing.Size(1078, 1016);
             this.panel3.TabIndex = 4;
             // 
             // chartLuotSDPhong
             // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.Title = "Ngày";
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.AxisY.Title = "Lượt sử dụng";
-            chartArea1.Name = "ChartArea1";
-            this.chartLuotSDPhong.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartLuotSDPhong.Legends.Add(legend1);
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.Title = "Ngày";
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Title = "Lượt sử dụng";
+            chartArea2.Name = "ChartArea1";
+            this.chartLuotSDPhong.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartLuotSDPhong.Legends.Add(legend2);
             this.chartLuotSDPhong.Location = new System.Drawing.Point(11, 400);
             this.chartLuotSDPhong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartLuotSDPhong.Name = "chartLuotSDPhong";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.EmptyPointStyle.BorderWidth = 6;
-            series1.EmptyPointStyle.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series1.IsValueShownAsLabel = true;
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.MarkerBorderColor = System.Drawing.Color.MidnightBlue;
-            series1.MarkerColor = System.Drawing.Color.RoyalBlue;
-            series1.MarkerImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
-            series1.Name = "Series1";
-            this.chartLuotSDPhong.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.EmptyPointStyle.BorderWidth = 6;
+            series2.EmptyPointStyle.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series2.IsValueShownAsLabel = true;
+            series2.IsVisibleInLegend = false;
+            series2.Legend = "Legend1";
+            series2.MarkerBorderColor = System.Drawing.Color.MidnightBlue;
+            series2.MarkerColor = System.Drawing.Color.RoyalBlue;
+            series2.MarkerImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
+            series2.Name = "Series1";
+            this.chartLuotSDPhong.Series.Add(series2);
             this.chartLuotSDPhong.Size = new System.Drawing.Size(1027, 580);
             this.chartLuotSDPhong.TabIndex = 8;
             this.chartLuotSDPhong.Text = "Số lượng bệnh nhân theo năm";

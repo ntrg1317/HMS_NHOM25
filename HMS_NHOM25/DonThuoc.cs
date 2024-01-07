@@ -1,6 +1,14 @@
 ﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -9,29 +17,10 @@ namespace HMS_NHOM25
     {
         BaseModel basemodel = new BaseModel();
         private string table = "donThuoc";
+
         public DonThuoc()
         {
             InitializeComponent();
-        }
-
-        private void DonThuoc_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                dgvInfoDSDonThuoc.DataSource = basemodel.all(table);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
-
-        private void dgvInfoDSDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtMaDT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
-            txtMaBN.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
-            dateNgayKeDon.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[2].Value.ToString();
-            txtTrangThaiTT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[3].Value.ToString();
         }
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
@@ -43,18 +32,25 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
-                DataTable resultTable = basemodel.Table(query1);
+                try
+                {
+                    string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
+                    DataTable resultTable = basemodel.Table(query1);
 
-                if (resultTable.Rows.Count > 0)
-                {
-                    string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
-                    string query2 = "SELECT * FROM donThuoc WHERE MaBN LIKE '%" + maBenhNhan + "%'";
-                    dgvInfoDSDonThuoc.DataSource = basemodel.Table(query2);
+                    if (resultTable.Rows.Count > 0)
+                    {
+                        string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
+                        string query2 = "SELECT * FROM donThuoc WHERE MaBN LIKE '%" + maBenhNhan + "%'";
+                        dgvDSDonThuoc.DataSource = basemodel.Table(query2);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy số điện thoại nào khớp.");
+                    }
                 }
-                else
+                catch(Exception ex)
                 {
-                    MessageBox.Show("Không tìm thấy số điện thoại nào khớp.");
+                    MessageBox.Show("Error: ", ex.Message);
                 }
 
             }
@@ -68,12 +64,12 @@ namespace HMS_NHOM25
 
         private void btnXoaDonThuoc_Click(object sender, EventArgs e)
         {
-            string choose = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            string choose = dgvDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
             string query1 = "DELETE donThuoc";
             query1 += "Where MaDT ='" + choose + "'";
             string query2 = "DELETE donThuocChiTiet";
             query2 += "Where MaDT ='" + choose + "'";
-            if (dgvInfoDSDonThuoc.Rows.Count > 1)
+            if (dgvDSDonThuoc.Rows.Count > 1)
             {
                 try
                 {
@@ -108,6 +104,25 @@ namespace HMS_NHOM25
         {
             ChiTietDonThuoc chiTietDT = new ChiTietDonThuoc();
             chiTietDT.Show();
+        }
+
+        private void dgvDSDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtMaDT.Text = dgvDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            txtMaBN.Text = dgvDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
+            dateNgayKeDon.Text = dgvDSDonThuoc.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void DonThuoc_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvDSDonThuoc.DataSource = basemodel.all(table);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
