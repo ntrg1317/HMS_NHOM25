@@ -416,7 +416,6 @@
             this.dgvInfoBN.Size = new System.Drawing.Size(908, 440);
             this.dgvInfoBN.TabIndex = 23;
             this.dgvInfoBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBN_CellClick);
-            this.dgvInfoBN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBN_CellContentClick);
             // 
             // txtTimKiemBN
             // 

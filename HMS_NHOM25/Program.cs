@@ -15,6 +15,9 @@ namespace HMS_NHOM25
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new login());
             //Application.Run(new AdminControl());
+            Application.Run(new AdminControl());
+            //Application.Run(new login());
+
         }
     }
 }
