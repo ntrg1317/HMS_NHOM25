@@ -20,17 +20,18 @@ namespace HMS_NHOM25
                 connection.Open();
 
                 // Query to get individual counts
-                string query = "SELECT 'BacSi' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM bacSi " +
+                string query = "SELECT 'BacSi' AS NhanVien, COUNT(*) AS SoLuong FROM bacSi " +
                                "UNION ALL " +
-                               "SELECT 'NhanVienYTe' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM duocSi " +
+                               "SELECT 'NhanVienYTe' AS NhanVien, COUNT(*) AS SoLuong FROM nhanVienYTe " +
                                "UNION ALL " +
-                               "SELECT 'NhanVienThuNgan' AS LoaiNhanVien, COUNT(*) AS SoLuong FROM nhanVienThuNgan";
+                               "SELECT 'NhanVienThuNgan' AS NhanVien, COUNT(*) AS SoLuong FROM nhanVienThuNgan";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
+                dgvSLNhanSu.DataSource = dataTable;
 
-                chart1.Series[0].Points.DataBind(dataTable.AsEnumerable(), "LoaiNhanVien", "SoLuong", "");
+                chart1.Series[0].Points.DataBind(dataTable.AsEnumerable(), "NhanVien", "SoLuong", "");
 
                 chart1.Series[0].Name = "NhanVien";
 
@@ -45,7 +46,7 @@ namespace HMS_NHOM25
                             point.LegendText = "Bác sĩ";
                             break;
                         case "NhanVienYTe":
-                            point.LegendText = "Nhân viên y tế";
+                            point.LegendText = "Dược sĩ";
                             break;
                         case "NhanVienThuNgan":
                             point.LegendText = "Nhân viên thu ngân";
@@ -55,6 +56,11 @@ namespace HMS_NHOM25
                     }
                 }
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

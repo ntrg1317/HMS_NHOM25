@@ -17,63 +17,67 @@ namespace HMS_NHOM25
         private void ThongKeBenhNhan_Load(object sender, EventArgs e)
         {
 
-            string query1 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuongBenhNhan FROM BenhNhan WHERE YEAR(NgayVao) = 2024 GROUP BY MONTH(NgayVao) ORDER BY Thang";
+            string querySLBN2024 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2024 GROUP BY MONTH(NgayVao) ORDER BY Thang";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query1, connection))
+                using (SqlCommand command = new SqlCommand(querySLBN2024, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvSLBN2024.DataSource = dataTable;
 
-                    chartSLBN2024.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuongBenhNhan", "");
+                    chartSLBN2024.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuong", "");
 
                     // Cập nhật trục X và trục Y
                     chartSLBN2024.Series[0].XValueMember = "Thang";
-                    chartSLBN2024.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartSLBN2024.Series[0].YValueMembers = "SoLuong";
                 }
             }
 
-            string query2 = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuongBenhNhan FROM benhNhan GROUP BY YEAR(NgayVao) ORDER BY Nam;";
+            string querySLBNNam = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuong FROM benhNhan " +
+                "WHERE YEAR(NgayVao) BETWEEN 2020 AND 2024 GROUP BY YEAR(NgayVao) ORDER BY Nam;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query2, connection))
+                using (SqlCommand command = new SqlCommand(querySLBNNam, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvSLBNtheoNam.DataSource = dataTable;
 
                     // Thiết lập nguồn dữ liệu cho biểu đồ
-                    chartSLBNtheoNam.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Nam", "SoLuongBenhNhan", "");
+                    chartSLBNtheoNam.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Nam", "SoLuong", "");
 
                     // Cập nhật trục X và trục Y
                     chartSLBNtheoNam.Series[0].XValueMember = "Nam";
-                    chartSLBNtheoNam.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartSLBNtheoNam.Series[0].YValueMembers = "SoLuong";
                 }
 
             }
-            string query3 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuongBenhNhan FROM BenhNhan WHERE YEAR(NgayVao) = 2023 GROUP BY MONTH(NgayVao) ORDER BY Thang";
+            string querySLBN2023 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2023 GROUP BY MONTH(NgayVao) ORDER BY Thang";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query3, connection))
+                using (SqlCommand command = new SqlCommand(querySLBN2023, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvSLBN2023.DataSource = dataTable;
 
-                    chartSLBN2023.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuongBenhNhan", "");
+                    chartSLBN2023.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuong", "");
 
                     chartSLBN2023.Series[0].XValueMember = "Thang";
-                    chartSLBN2023.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartSLBN2023.Series[0].YValueMembers = "SoLuong";
                 }
             }
         }
@@ -139,6 +143,16 @@ namespace HMS_NHOM25
         }
 
         private void labSLBN2023_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvSLBNtheoNam_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dgvSLBN2023_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

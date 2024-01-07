@@ -272,5 +272,10 @@ namespace HMS_NHOM25
                 e.Handled = true;
             }
         }
+
+        private void dgvInfoBN_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
