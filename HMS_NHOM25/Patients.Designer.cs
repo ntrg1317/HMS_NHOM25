@@ -463,6 +463,10 @@
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXoaBN.Location = new System.Drawing.Point(884, 360);
+            this.btnXoaBN.Location = new System.Drawing.Point(699, 230);
+=======
+            this.btnXoaBN.Location = new System.Drawing.Point(786, 288);
+>>>>>>> ab181c68edcca20d84ddac6793d7556e1efccfcf
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(96, 39);
@@ -481,6 +485,9 @@
             this.btnThemBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN.Name = "btnThemBN";
             this.btnThemBN.Size = new System.Drawing.Size(122, 38);
+            this.btnThemBN.Size = new System.Drawing.Size(110, 31);
+=======
+            this.btnThemBN.Size = new System.Drawing.Size(124, 39);
             this.btnThemBN.TabIndex = 20;
             this.btnThemBN.Text = "Thêm BN";
             this.btnThemBN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

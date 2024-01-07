@@ -304,16 +304,11 @@
         #endregion
 
         private System.Windows.Forms.Label labSLBN2023;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2023;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBN2024;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSLBNtheoNam;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource soLuongBNtheoNamBindingSource;
         private System.Windows.Forms.BindingSource hMSDataSet2BindingSource;
-        private System.Windows.Forms.BindingSource benhNhanBindingSource1;
-        private System.Windows.Forms.BindingSource benhNhanBindingSource;
         private System.Windows.Forms.Label labTKBenhNhan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
