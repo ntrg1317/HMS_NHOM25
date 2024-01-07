@@ -35,8 +35,10 @@ namespace HMS_NHOM25
 
         private void dgvInfoDSDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaBN.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
-            txtMaDT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
+            txtMaDT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            txtMaBN.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
+            dateNgayKeDon.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[2].Value.ToString();
+            txtTrangThaiTT.Text = dgvInfoDSDonThuoc.SelectedRows[0].Cells[3].Value.ToString();
         }
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
@@ -67,17 +69,34 @@ namespace HMS_NHOM25
 
         private void btnThemDonThuoc_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnCapNhatDonThuoc_Click(object sender, EventArgs e)
-        {
-
+            AddDonThuoc addDonThuoc = new AddDonThuoc();
+            addDonThuoc.Show();
         }
 
         private void btnXoaDonThuoc_Click(object sender, EventArgs e)
         {
-
+            string choose = dgvInfoDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            string query1 = "DELETE donThuoc";
+            query1 += "Where MaDT ='" + choose + "'";
+            string query2 = "DELETE donThuocChiTiet";
+            query2 += "Where MaDT ='" + choose + "'";
+            if (dgvInfoDSDonThuoc.Rows.Count > 1)
+            {
+                try
+                {
+                    if (MessageBox.Show("Bạn có muốn xóa thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        basemodel.Command(query1);
+                        basemodel.Command(query2);
+                        MessageBox.Show("Xóa thông tin thành công!");
+                        DonThuoc_Load(sender, e);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
+            }
         }
 
         private void txtTimKiemSDTBN_KeyPress(object sender, KeyPressEventArgs e)
@@ -90,6 +109,12 @@ namespace HMS_NHOM25
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnCapNhatDonThuoc_Click(object sender, EventArgs e)
+        {
+            ChiTietDonThuoc chiTietDT = new ChiTietDonThuoc();
+            chiTietDT.Show();
         }
     }
 }

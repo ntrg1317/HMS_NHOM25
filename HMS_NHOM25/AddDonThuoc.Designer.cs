@@ -41,7 +41,7 @@
             this.palAddNVTN = new System.Windows.Forms.Panel();
             this.ptbNVTN = new System.Windows.Forms.PictureBox();
             this.labAddNVTN = new System.Windows.Forms.Label();
-            this.dgvInforDonThuoc = new System.Windows.Forms.DataGridView();
+            this.dgvInforKeDonThuoc = new System.Windows.Forms.DataGridView();
             this.btnXoaThuoc = new System.Windows.Forms.Button();
             this.btnInDonThuoc = new System.Windows.Forms.Button();
             this.btnThemThuoc = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@
             this.grbInfoDonThuoc.SuspendLayout();
             this.palAddNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInforDonThuoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInforKeDonThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfoDonThuoc
@@ -106,6 +106,7 @@
             // 
             this.txtTienThuoc.Location = new System.Drawing.Point(555, 38);
             this.txtTienThuoc.Name = "txtTienThuoc";
+            this.txtTienThuoc.ReadOnly = true;
             this.txtTienThuoc.Size = new System.Drawing.Size(171, 26);
             this.txtTienThuoc.TabIndex = 34;
             this.txtTienThuoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTienThuoc_KeyPress);
@@ -190,15 +191,16 @@
             this.labAddNVTN.TabIndex = 0;
             this.labAddNVTN.Text = "Thêm Đơn Thuốc";
             // 
-            // dgvInforDonThuoc
+            // dgvInforKeDonThuoc
             // 
-            this.dgvInforDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInforDonThuoc.Location = new System.Drawing.Point(12, 367);
-            this.dgvInforDonThuoc.Name = "dgvInforDonThuoc";
-            this.dgvInforDonThuoc.RowHeadersWidth = 62;
-            this.dgvInforDonThuoc.RowTemplate.Height = 28;
-            this.dgvInforDonThuoc.Size = new System.Drawing.Size(842, 223);
-            this.dgvInforDonThuoc.TabIndex = 38;
+            this.dgvInforKeDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInforKeDonThuoc.Location = new System.Drawing.Point(12, 367);
+            this.dgvInforKeDonThuoc.Name = "dgvInforKeDonThuoc";
+            this.dgvInforKeDonThuoc.RowHeadersWidth = 62;
+            this.dgvInforKeDonThuoc.RowTemplate.Height = 28;
+            this.dgvInforKeDonThuoc.Size = new System.Drawing.Size(842, 223);
+            this.dgvInforKeDonThuoc.TabIndex = 38;
+            this.dgvInforKeDonThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDonThuoc_CellClick);
             // 
             // btnXoaThuoc
             // 
@@ -212,6 +214,7 @@
             this.btnXoaThuoc.Text = "Xóa";
             this.btnXoaThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
+            this.btnXoaThuoc.Click += new System.EventHandler(this.btnXoaThuoc_Click);
             // 
             // btnInDonThuoc
             // 
@@ -236,6 +239,7 @@
             this.btnThemThuoc.Text = "Thêm";
             this.btnThemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemThuoc.UseVisualStyleBackColor = true;
+            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
             // 
             // btnThoatAddDonThuoc
             // 
@@ -248,6 +252,7 @@
             this.btnThoatAddDonThuoc.TabIndex = 26;
             this.btnThoatAddDonThuoc.Text = "Thoát";
             this.btnThoatAddDonThuoc.UseVisualStyleBackColor = true;
+            this.btnThoatAddDonThuoc.Click += new System.EventHandler(this.btnThoatAddDonThuoc_Click);
             // 
             // btnSaveInfoDonThuoc
             // 
@@ -261,6 +266,7 @@
             this.btnSaveInfoDonThuoc.Text = "Lưu thông tin";
             this.btnSaveInfoDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveInfoDonThuoc.UseVisualStyleBackColor = true;
+            this.btnSaveInfoDonThuoc.Click += new System.EventHandler(this.btnSaveInfoDonThuoc_Click);
             // 
             // labDSThuoc
             // 
@@ -268,9 +274,9 @@
             this.labDSThuoc.ForeColor = System.Drawing.Color.Red;
             this.labDSThuoc.Location = new System.Drawing.Point(23, 335);
             this.labDSThuoc.Name = "labDSThuoc";
-            this.labDSThuoc.Size = new System.Drawing.Size(130, 20);
+            this.labDSThuoc.Size = new System.Drawing.Size(136, 20);
             this.labDSThuoc.TabIndex = 43;
-            this.labDSThuoc.Text = "Danh sách thuốc";
+            this.labDSThuoc.Text = "DS thuốc được kê";
             // 
             // btnSuaKeThuoc
             // 
@@ -284,6 +290,7 @@
             this.btnSuaKeThuoc.Text = "Cập nhật";
             this.btnSuaKeThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaKeThuoc.UseVisualStyleBackColor = true;
+            this.btnSuaKeThuoc.Click += new System.EventHandler(this.btnSuaKeThuoc_Click);
             // 
             // AddDonThuoc
             // 
@@ -295,19 +302,20 @@
             this.Controls.Add(this.btnXoaThuoc);
             this.Controls.Add(this.btnInDonThuoc);
             this.Controls.Add(this.grbInfoDonThuoc);
-            this.Controls.Add(this.dgvInforDonThuoc);
+            this.Controls.Add(this.dgvInforKeDonThuoc);
             this.Controls.Add(this.btnThemThuoc);
             this.Controls.Add(this.btnThoatAddDonThuoc);
             this.Controls.Add(this.btnSaveInfoDonThuoc);
             this.Controls.Add(this.palAddNVTN);
             this.Name = "AddDonThuoc";
             this.Text = "AddDonThuoc";
+            this.Load += new System.EventHandler(this.AddDonThuoc_Load);
             this.grbInfoDonThuoc.ResumeLayout(false);
             this.grbInfoDonThuoc.PerformLayout();
             this.palAddNVTN.ResumeLayout(false);
             this.palAddNVTN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInforDonThuoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInforKeDonThuoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,7 +339,7 @@
         private System.Windows.Forms.Button btnSaveInfoDonThuoc;
         private System.Windows.Forms.ComboBox cobTenThuoc;
         private System.Windows.Forms.Button btnThemThuoc;
-        private System.Windows.Forms.DataGridView dgvInforDonThuoc;
+        private System.Windows.Forms.DataGridView dgvInforKeDonThuoc;
         private System.Windows.Forms.Button btnInDonThuoc;
         private System.Windows.Forms.Button btnXoaThuoc;
         private System.Windows.Forms.Label labDSThuoc;

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,9 @@ namespace HMS_NHOM25
 {
     public partial class AddDonThuoc : Form
     {
+        BaseModel basemodel = new BaseModel();
+        ChiTietDTParams chiTietDT;
+
         public AddDonThuoc()
         {
             InitializeComponent();
@@ -39,6 +44,86 @@ namespace HMS_NHOM25
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnThemThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSuaKeThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoaThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveInfoDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThoatAddDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvInforDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AddDonThuoc_Load(object sender, EventArgs e)
+        {
+            DeleteTextBoxes();
+            showComboBox();
+        }
+
+        private void DeleteTextBoxes()
+        {
+            cobTenThuoc.Text = null;
+            txtLieuDung.Text = "";
+            txtSoLuongThuoc.Text = "";
+            txtTienThuoc.Text = "";
+        }
+        private bool CheckTextBoxes()
+        {
+            if (cobTenThuoc.SelectedIndex == -1)
+            {
+                MessageBox.Show("Bạn chưa chọn tên thuốc!"); return false;
+            }
+            if (txtSoLuongThuoc.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập số lượng!"); return false;
+            }
+            if (txtLieuDung.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập liều dùng!"); return false;
+            }
+            return true;
+        }
+        private void GetValuesTextBoxes()
+        {
+            object _maThuoc = (cobTenThuoc.SelectedIndex != -1) ? (int)cobTenThuoc.SelectedValue : (object)DBNull.Value;
+            string _soLuong = txtSoLuongThuoc.Text;
+            string _lieuDung = txtLieuDung.Text;
+            string _moTa;
+            chiTietDT = new ChiTietDTParams(_maThuoc, _soLuong, _lieuDung, _moTa );
+
+        }
+
+        private void showComboBox()
+        {
+            DataTable dt = basemodel.all("khoThuoc");
+
+            cobTenThuoc.DataSource = dt;
+            cobTenThuoc.DisplayMember = "TenThuoc";
+            cobTenThuoc.ValueMember = "MaThuoc";
+
+            cobTenThuoc.SelectedIndex = -1;
         }
     }
 }
