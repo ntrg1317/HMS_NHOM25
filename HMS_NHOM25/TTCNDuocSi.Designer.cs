@@ -43,8 +43,8 @@
             this.labMaNVTN = new System.Windows.Forms.Label();
             this.grbInforNV = new System.Windows.Forms.GroupBox();
             this.palAddBS = new System.Windows.Forms.Panel();
-            this.btnSaveTTCN = new System.Windows.Forms.Button();
             this.ptbBS = new System.Windows.Forms.PictureBox();
+            this.btnSaveTTCN = new System.Windows.Forms.Button();
             this.grbInforNV.SuspendLayout();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).BeginInit();
@@ -259,7 +259,7 @@
             this.grbInforNV.Controls.Add(this.labTenNVTN);
             this.grbInforNV.Controls.Add(this.labMaNVTN);
             this.grbInforNV.ForeColor = System.Drawing.Color.Red;
-            this.grbInforNV.Location = new System.Drawing.Point(27, 173);
+            this.grbInforNV.Location = new System.Drawing.Point(47, 177);
             this.grbInforNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforNV.Name = "grbInforNV";
             this.grbInforNV.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -279,6 +279,18 @@
             this.palAddBS.Size = new System.Drawing.Size(1107, 124);
             this.palAddBS.TabIndex = 11;
             // 
+            // ptbBS
+            // 
+            this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbBS.Image = global::HMS_NHOM25.Properties.Resources.user2;
+            this.ptbBS.Location = new System.Drawing.Point(292, 27);
+            this.ptbBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbBS.Name = "ptbBS";
+            this.ptbBS.Size = new System.Drawing.Size(79, 60);
+            this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBS.TabIndex = 3;
+            this.ptbBS.TabStop = false;
+            // 
             // btnSaveTTCN
             // 
             this.btnSaveTTCN.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
@@ -291,18 +303,6 @@
             this.btnSaveTTCN.Text = "Lưu thông tin";
             this.btnSaveTTCN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveTTCN.UseVisualStyleBackColor = true;
-            // 
-            // ptbBS
-            // 
-            this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbBS.Image = global::HMS_NHOM25.Properties.Resources.user2;
-            this.ptbBS.Location = new System.Drawing.Point(292, 27);
-            this.ptbBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbBS.Name = "ptbBS";
-            this.ptbBS.Size = new System.Drawing.Size(79, 60);
-            this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbBS.TabIndex = 3;
-            this.ptbBS.TabStop = false;
             // 
             // TTCNDuocSi
             // 

@@ -48,9 +48,9 @@
             this.labTKBenhNhan.BackColor = System.Drawing.Color.Lavender;
             this.labTKBenhNhan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labTKBenhNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTKBenhNhan.Location = new System.Drawing.Point(367, 27);
+            this.labTKBenhNhan.Location = new System.Drawing.Point(413, 34);
             this.labTKBenhNhan.Name = "labTKBenhNhan";
-            this.labTKBenhNhan.Size = new System.Drawing.Size(284, 38);
+            this.labTKBenhNhan.Size = new System.Drawing.Size(339, 42);
             this.labTKBenhNhan.TabIndex = 1;
             this.labTKBenhNhan.Text = "Thống kê doanh thu";
             // 
@@ -62,9 +62,10 @@
             this.panel3.Controls.Add(this.chartDoanhThu);
             this.panel3.Controls.Add(this.dgvDoanhThu);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(4, 88);
+            this.panel3.Location = new System.Drawing.Point(4, 110);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(869, 813);
+            this.panel3.Size = new System.Drawing.Size(952, 1016);
             this.panel3.TabIndex = 5;
             // 
             // chartDoanhThu
@@ -87,7 +88,8 @@
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend1.Name = "Legend1";
             this.chartDoanhThu.Legends.Add(legend1);
-            this.chartDoanhThu.Location = new System.Drawing.Point(20, 320);
+            this.chartDoanhThu.Location = new System.Drawing.Point(22, 400);
+            this.chartDoanhThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartDoanhThu.Name = "chartDoanhThu";
             series1.ChartArea = "ChartArea1";
             series1.Color = System.Drawing.Color.DeepPink;
@@ -114,7 +116,7 @@
             series2.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
             this.chartDoanhThu.Series.Add(series1);
             this.chartDoanhThu.Series.Add(series2);
-            this.chartDoanhThu.Size = new System.Drawing.Size(873, 464);
+            this.chartDoanhThu.Size = new System.Drawing.Size(982, 580);
             this.chartDoanhThu.TabIndex = 8;
             this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -124,33 +126,35 @@
             this.dgvDoanhThu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDoanhThu.BackgroundColor = System.Drawing.Color.White;
             this.dgvDoanhThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDoanhThu.Location = new System.Drawing.Point(20, 54);
+            this.dgvDoanhThu.Location = new System.Drawing.Point(22, 68);
+            this.dgvDoanhThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
-            this.dgvDoanhThu.Size = new System.Drawing.Size(873, 249);
+            this.dgvDoanhThu.Size = new System.Drawing.Size(982, 311);
             this.dgvDoanhThu.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(203, 18);
+            this.label4.Location = new System.Drawing.Point(228, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(598, 17);
+            this.label4.Size = new System.Drawing.Size(654, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Thống kê doanh thu và tỷ lệ tăng trưởng doanh thu trong năm 2023 (theo thán" +
     "g) ";
             // 
             // ThongKeDoanhThu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(952, 882);
+            this.ClientSize = new System.Drawing.Size(1071, 1102);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labTKBenhNhan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ThongKeDoanhThu";
             this.Text = "ThongKeDoanhThu";
             this.Load += new System.EventHandler(this.ThongKeDoanhThu_Load);

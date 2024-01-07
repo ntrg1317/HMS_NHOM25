@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.palAddBS = new System.Windows.Forms.Panel();
-            this.labAddBS = new System.Windows.Forms.Label();
             this.ptbBS = new System.Windows.Forms.PictureBox();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.dgvDSDonThuoc = new System.Windows.Forms.DataGridView();
             this.btnChiTietDT = new System.Windows.Forms.Button();
             this.labDS = new System.Windows.Forms.Label();
@@ -50,18 +50,6 @@
             this.palAddBS.Size = new System.Drawing.Size(1109, 124);
             this.palAddBS.TabIndex = 8;
             // 
-            // labAddBS
-            // 
-            this.labAddBS.AutoSize = true;
-            this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(350, 32);
-            this.labAddBS.Name = "labAddBS";
-            this.labAddBS.Size = new System.Drawing.Size(499, 55);
-            this.labAddBS.TabIndex = 0;
-            this.labAddBS.Text = "Danh sách đơn thuốc";
-            // 
             // ptbBS
             // 
             this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -74,6 +62,18 @@
             this.ptbBS.TabIndex = 3;
             this.ptbBS.TabStop = false;
             // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(350, 32);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(499, 55);
+            this.labAddBS.TabIndex = 0;
+            this.labAddBS.Text = "Danh sách đơn thuốc";
+            // 
             // dgvDSDonThuoc
             // 
             this.dgvDSDonThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -81,6 +81,7 @@
             this.dgvDSDonThuoc.Name = "dgvDSDonThuoc";
             this.dgvDSDonThuoc.RowHeadersWidth = 62;
             this.dgvDSDonThuoc.RowTemplate.Height = 28;
+            this.dgvDSDonThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSDonThuoc.Size = new System.Drawing.Size(944, 456);
             this.dgvDSDonThuoc.TabIndex = 9;
             // 
@@ -97,6 +98,7 @@
             this.btnChiTietDT.Text = "Chi tiết";
             this.btnChiTietDT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnChiTietDT.UseVisualStyleBackColor = true;
+            this.btnChiTietDT.Click += new System.EventHandler(this.btnChiTietDT_Click);
             // 
             // labDS
             // 
@@ -119,6 +121,7 @@
             this.Controls.Add(this.palAddBS);
             this.Name = "TTDanhSachDT";
             this.Text = "TTDanhSachDT";
+            this.Load += new System.EventHandler(this.TTDanhSachDT_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).EndInit();
