@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grbTTBenhNhan = new System.Windows.Forms.GroupBox();
+            this.labMaBenhNhan = new System.Windows.Forms.Label();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
             this.txtDiaChiBN = new System.Windows.Forms.TextBox();
             this.txtSexBN = new System.Windows.Forms.TextBox();
             this.dateNgayVao = new System.Windows.Forms.DateTimePicker();
@@ -56,18 +58,22 @@
             this.txtTimKiemSDTBN = new System.Windows.Forms.TextBox();
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.grbTK = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvChiTietHD = new System.Windows.Forms.DataGridView();
             this.labChiTietHD = new System.Windows.Forms.Label();
+            this.dgvInforBN = new System.Windows.Forms.DataGridView();
             this.grbTTBenhNhan.SuspendLayout();
             this.grbThanhToan.SuspendLayout();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
             this.grbTK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInforBN)).BeginInit();
             this.SuspendLayout();
             // 
             // grbTTBenhNhan
             // 
+            this.grbTTBenhNhan.Controls.Add(this.labMaBenhNhan);
+            this.grbTTBenhNhan.Controls.Add(this.txtMaBN);
             this.grbTTBenhNhan.Controls.Add(this.txtDiaChiBN);
             this.grbTTBenhNhan.Controls.Add(this.txtSexBN);
             this.grbTTBenhNhan.Controls.Add(this.dateNgayVao);
@@ -81,18 +87,37 @@
             this.grbTTBenhNhan.Controls.Add(this.labHoTen);
             this.grbTTBenhNhan.Controls.Add(this.txtHoTen);
             this.grbTTBenhNhan.ForeColor = System.Drawing.Color.Red;
-            this.grbTTBenhNhan.Location = new System.Drawing.Point(28, 186);
+            this.grbTTBenhNhan.Location = new System.Drawing.Point(26, 340);
             this.grbTTBenhNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbTTBenhNhan.Name = "grbTTBenhNhan";
             this.grbTTBenhNhan.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbTTBenhNhan.Size = new System.Drawing.Size(1037, 128);
+            this.grbTTBenhNhan.Size = new System.Drawing.Size(1039, 157);
             this.grbTTBenhNhan.TabIndex = 41;
             this.grbTTBenhNhan.TabStop = false;
             this.grbTTBenhNhan.Text = "Thông tin bệnh nhân";
             // 
+            // labMaBenhNhan
+            // 
+            this.labMaBenhNhan.AutoSize = true;
+            this.labMaBenhNhan.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labMaBenhNhan.Location = new System.Drawing.Point(36, 36);
+            this.labMaBenhNhan.Name = "labMaBenhNhan";
+            this.labMaBenhNhan.Size = new System.Drawing.Size(57, 20);
+            this.labMaBenhNhan.TabIndex = 52;
+            this.labMaBenhNhan.Text = "Mã BN";
+            // 
+            // txtMaBN
+            // 
+            this.txtMaBN.Location = new System.Drawing.Point(136, 30);
+            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.ReadOnly = true;
+            this.txtMaBN.Size = new System.Drawing.Size(167, 26);
+            this.txtMaBN.TabIndex = 53;
+            // 
             // txtDiaChiBN
             // 
-            this.txtDiaChiBN.Location = new System.Drawing.Point(505, 77);
+            this.txtDiaChiBN.Location = new System.Drawing.Point(505, 67);
             this.txtDiaChiBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChiBN.Name = "txtDiaChiBN";
             this.txtDiaChiBN.ReadOnly = true;
@@ -101,7 +126,7 @@
             // 
             // txtSexBN
             // 
-            this.txtSexBN.Location = new System.Drawing.Point(137, 77);
+            this.txtSexBN.Location = new System.Drawing.Point(136, 116);
             this.txtSexBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSexBN.Name = "txtSexBN";
             this.txtSexBN.ReadOnly = true;
@@ -111,7 +136,7 @@
             // dateNgayVao
             // 
             this.dateNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayVao.Location = new System.Drawing.Point(815, 31);
+            this.dateNgayVao.Location = new System.Drawing.Point(815, 22);
             this.dateNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgayVao.Name = "dateNgayVao";
             this.dateNgayVao.Size = new System.Drawing.Size(167, 26);
@@ -121,7 +146,7 @@
             // 
             this.labNgayVao.AutoSize = true;
             this.labNgayVao.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayVao.Location = new System.Drawing.Point(726, 35);
+            this.labNgayVao.Location = new System.Drawing.Point(726, 25);
             this.labNgayVao.Name = "labNgayVao";
             this.labNgayVao.Size = new System.Drawing.Size(74, 20);
             this.labNgayVao.TabIndex = 48;
@@ -131,7 +156,7 @@
             // 
             this.labGioiTinh.AutoSize = true;
             this.labGioiTinh.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labGioiTinh.Location = new System.Drawing.Point(37, 83);
+            this.labGioiTinh.Location = new System.Drawing.Point(36, 122);
             this.labGioiTinh.Name = "labGioiTinh";
             this.labGioiTinh.Size = new System.Drawing.Size(67, 20);
             this.labGioiTinh.TabIndex = 45;
@@ -140,7 +165,7 @@
             // dateNgaySinh
             // 
             this.dateNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgaySinh.Location = new System.Drawing.Point(815, 80);
+            this.dateNgaySinh.Location = new System.Drawing.Point(815, 67);
             this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgaySinh.Name = "dateNgaySinh";
             this.dateNgaySinh.Size = new System.Drawing.Size(167, 26);
@@ -150,7 +175,7 @@
             // 
             this.labNgaySinh.AutoSize = true;
             this.labNgaySinh.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgaySinh.Location = new System.Drawing.Point(726, 88);
+            this.labNgaySinh.Location = new System.Drawing.Point(726, 78);
             this.labNgaySinh.Name = "labNgaySinh";
             this.labNgaySinh.Size = new System.Drawing.Size(78, 20);
             this.labNgaySinh.TabIndex = 43;
@@ -160,7 +185,7 @@
             // 
             this.labMaBN.AutoSize = true;
             this.labMaBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaBN.Location = new System.Drawing.Point(366, 40);
+            this.labMaBN.Location = new System.Drawing.Point(366, 30);
             this.labMaBN.Name = "labMaBN";
             this.labMaBN.Size = new System.Drawing.Size(88, 20);
             this.labMaBN.TabIndex = 41;
@@ -168,7 +193,7 @@
             // 
             // txtBenhTrang
             // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(503, 36);
+            this.txtBenhTrang.Location = new System.Drawing.Point(503, 26);
             this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBenhTrang.Name = "txtBenhTrang";
             this.txtBenhTrang.ReadOnly = true;
@@ -179,7 +204,7 @@
             // 
             this.labDiaChi.AutoSize = true;
             this.labDiaChi.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labDiaChi.Location = new System.Drawing.Point(366, 85);
+            this.labDiaChi.Location = new System.Drawing.Point(366, 75);
             this.labDiaChi.Name = "labDiaChi";
             this.labDiaChi.Size = new System.Drawing.Size(57, 20);
             this.labDiaChi.TabIndex = 39;
@@ -189,7 +214,7 @@
             // 
             this.labHoTen.AutoSize = true;
             this.labHoTen.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labHoTen.Location = new System.Drawing.Point(37, 42);
+            this.labHoTen.Location = new System.Drawing.Point(36, 81);
             this.labHoTen.Name = "labHoTen";
             this.labHoTen.Size = new System.Drawing.Size(57, 20);
             this.labHoTen.TabIndex = 33;
@@ -197,7 +222,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(137, 36);
+            this.txtHoTen.Location = new System.Drawing.Point(136, 75);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.ReadOnly = true;
@@ -207,7 +232,7 @@
             // dateNgayTT
             // 
             this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayTT.Location = new System.Drawing.Point(272, 48);
+            this.dateNgayTT.Location = new System.Drawing.Point(272, 26);
             this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgayTT.Name = "dateNgayTT";
             this.dateNgayTT.Size = new System.Drawing.Size(164, 26);
@@ -217,7 +242,7 @@
             // 
             this.labNgayTT.AutoSize = true;
             this.labNgayTT.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayTT.Location = new System.Drawing.Point(114, 54);
+            this.labNgayTT.Location = new System.Drawing.Point(114, 32);
             this.labNgayTT.Name = "labNgayTT";
             this.labNgayTT.Size = new System.Drawing.Size(126, 20);
             this.labNgayTT.TabIndex = 29;
@@ -228,7 +253,7 @@
             this.labHoaDon.AutoSize = true;
             this.labHoaDon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labHoaDon.Location = new System.Drawing.Point(445, 24);
+            this.labHoaDon.Location = new System.Drawing.Point(445, 10);
             this.labHoaDon.Name = "labHoaDon";
             this.labHoaDon.Size = new System.Drawing.Size(263, 46);
             this.labHoaDon.TabIndex = 37;
@@ -242,11 +267,11 @@
             this.grbThanhToan.Controls.Add(this.dateNgayTT);
             this.grbThanhToan.Controls.Add(this.labNgayTT);
             this.grbThanhToan.ForeColor = System.Drawing.Color.Red;
-            this.grbThanhToan.Location = new System.Drawing.Point(27, 584);
+            this.grbThanhToan.Location = new System.Drawing.Point(29, 711);
             this.grbThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbThanhToan.Name = "grbThanhToan";
             this.grbThanhToan.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbThanhToan.Size = new System.Drawing.Size(1041, 98);
+            this.grbThanhToan.Size = new System.Drawing.Size(1036, 69);
             this.grbThanhToan.TabIndex = 48;
             this.grbThanhToan.TabStop = false;
             this.grbThanhToan.Text = "Thông tin hóa đơn";
@@ -255,7 +280,7 @@
             // 
             this.labVND.AutoSize = true;
             this.labVND.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labVND.Location = new System.Drawing.Point(857, 51);
+            this.labVND.Location = new System.Drawing.Point(857, 29);
             this.labVND.Name = "labVND";
             this.labVND.Size = new System.Drawing.Size(53, 20);
             this.labVND.TabIndex = 35;
@@ -265,7 +290,7 @@
             // 
             this.labTongTien.AutoSize = true;
             this.labTongTien.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTongTien.Location = new System.Drawing.Point(599, 54);
+            this.labTongTien.Location = new System.Drawing.Point(599, 32);
             this.labTongTien.Name = "labTongTien";
             this.labTongTien.Size = new System.Drawing.Size(75, 20);
             this.labTongTien.TabIndex = 33;
@@ -273,7 +298,7 @@
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(688, 48);
+            this.txtTongTien.Location = new System.Drawing.Point(688, 26);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(167, 26);
@@ -284,17 +309,17 @@
             this.palAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.palAddBS.Controls.Add(this.labHoaDon);
             this.palAddBS.Controls.Add(this.ptbYTe);
-            this.palAddBS.Location = new System.Drawing.Point(0, 11);
+            this.palAddBS.Location = new System.Drawing.Point(2, 11);
             this.palAddBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.palAddBS.Name = "palAddBS";
-            this.palAddBS.Size = new System.Drawing.Size(1100, 92);
+            this.palAddBS.Size = new System.Drawing.Size(1100, 68);
             this.palAddBS.TabIndex = 52;
             // 
             // ptbYTe
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.receipt;
-            this.ptbYTe.Location = new System.Drawing.Point(352, 24);
+            this.ptbYTe.Location = new System.Drawing.Point(352, 10);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
             this.ptbYTe.Size = new System.Drawing.Size(87, 41);
@@ -306,7 +331,7 @@
             // 
             this.btnThoat.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(800, 698);
+            this.btnThoat.Location = new System.Drawing.Point(818, 795);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(141, 39);
@@ -319,7 +344,7 @@
             // 
             this.btnSaveTT.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
             this.btnSaveTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveTT.Location = new System.Drawing.Point(164, 698);
+            this.btnSaveTT.Location = new System.Drawing.Point(182, 795);
             this.btnSaveTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveTT.Name = "btnSaveTT";
             this.btnSaveTT.Size = new System.Drawing.Size(154, 39);
@@ -333,10 +358,10 @@
             // 
             this.labInHoaDon.Image = global::HMS_NHOM25.Properties.Resources.printer__2_;
             this.labInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labInHoaDon.Location = new System.Drawing.Point(499, 698);
+            this.labInHoaDon.Location = new System.Drawing.Point(501, 795);
             this.labInHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labInHoaDon.Name = "labInHoaDon";
-            this.labInHoaDon.Size = new System.Drawing.Size(114, 39);
+            this.labInHoaDon.Size = new System.Drawing.Size(138, 39);
             this.labInHoaDon.TabIndex = 49;
             this.labInHoaDon.Text = "In hóa đơn";
             this.labInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -344,7 +369,7 @@
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(487, 24);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(489, 24);
             this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(193, 26);
@@ -356,7 +381,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(291, 27);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(293, 27);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 54;
@@ -367,40 +392,57 @@
             this.grbTK.Controls.Add(this.txtTimKiemSDTBN);
             this.grbTK.Controls.Add(this.labTenBNTimKiem);
             this.grbTK.ForeColor = System.Drawing.Color.Red;
-            this.grbTK.Location = new System.Drawing.Point(28, 108);
+            this.grbTK.Location = new System.Drawing.Point(28, 84);
             this.grbTK.Name = "grbTK";
             this.grbTK.Size = new System.Drawing.Size(1037, 66);
             this.grbTK.TabIndex = 56;
             this.grbTK.TabStop = false;
             this.grbTK.Text = "Tìm kiếm";
             // 
-            // dataGridView1
+            // dgvChiTietHD
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 358);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1037, 221);
-            this.dataGridView1.TabIndex = 57;
+            this.dgvChiTietHD.AllowUserToAddRows = false;
+            this.dgvChiTietHD.AllowUserToDeleteRows = false;
+            this.dgvChiTietHD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvChiTietHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChiTietHD.Location = new System.Drawing.Point(27, 530);
+            this.dgvChiTietHD.Name = "dgvChiTietHD";
+            this.dgvChiTietHD.ReadOnly = true;
+            this.dgvChiTietHD.RowHeadersWidth = 62;
+            this.dgvChiTietHD.RowTemplate.Height = 28;
+            this.dgvChiTietHD.Size = new System.Drawing.Size(1038, 176);
+            this.dgvChiTietHD.TabIndex = 57;
             // 
             // labChiTietHD
             // 
             this.labChiTietHD.AutoSize = true;
             this.labChiTietHD.ForeColor = System.Drawing.Color.Red;
-            this.labChiTietHD.Location = new System.Drawing.Point(30, 326);
+            this.labChiTietHD.Location = new System.Drawing.Point(35, 499);
             this.labChiTietHD.Name = "labChiTietHD";
             this.labChiTietHD.Size = new System.Drawing.Size(120, 20);
             this.labChiTietHD.TabIndex = 58;
             this.labChiTietHD.Text = "Chi tiết hóa đơn";
             // 
+            // dgvInforBN
+            // 
+            this.dgvInforBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInforBN.Location = new System.Drawing.Point(26, 168);
+            this.dgvInforBN.Name = "dgvInforBN";
+            this.dgvInforBN.RowHeadersWidth = 62;
+            this.dgvInforBN.RowTemplate.Height = 28;
+            this.dgvInforBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInforBN.Size = new System.Drawing.Size(1039, 167);
+            this.dgvInforBN.TabIndex = 59;
+            this.dgvInforBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforBN_CellClick);
+            // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 754);
+            this.ClientSize = new System.Drawing.Size(1091, 848);
+            this.Controls.Add(this.dgvInforBN);
             this.Controls.Add(this.labChiTietHD);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvChiTietHD);
             this.Controls.Add(this.grbTK);
             this.Controls.Add(this.palAddBS);
             this.Controls.Add(this.btnThoat);
@@ -408,9 +450,9 @@
             this.Controls.Add(this.labInHoaDon);
             this.Controls.Add(this.grbThanhToan);
             this.Controls.Add(this.grbTTBenhNhan);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "HoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa đơn";
             this.Load += new System.EventHandler(this.HoaDon_Load);
             this.grbTTBenhNhan.ResumeLayout(false);
@@ -422,7 +464,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).EndInit();
             this.grbTK.ResumeLayout(false);
             this.grbTK.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInforBN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,9 +498,12 @@
         private System.Windows.Forms.TextBox txtTimKiemSDTBN;
         private System.Windows.Forms.Label labTenBNTimKiem;
         private System.Windows.Forms.GroupBox grbTK;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvChiTietHD;
         private System.Windows.Forms.Label labChiTietHD;
         private System.Windows.Forms.TextBox txtDiaChiBN;
         private System.Windows.Forms.TextBox txtSexBN;
+        private System.Windows.Forms.Label labMaBenhNhan;
+        private System.Windows.Forms.TextBox txtMaBN;
+        private System.Windows.Forms.DataGridView dgvInforBN;
     }
 }

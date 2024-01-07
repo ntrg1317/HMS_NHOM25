@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -55,6 +56,34 @@ namespace HMS_NHOM25.Model
                 command.ExecuteNonQuery();
                 sqlConnection.Close();
             }
+        }
+
+        public DataTable Table(string query, Dictionary<string, object> parameters = null)
+        {
+            DataTable datatable = new DataTable();
+            using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+            {
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                {
+                    if (parameters != null)
+                    {
+                        foreach (var parameter in parameters)
+                        {
+                            sqlCommand.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                        }
+                    }
+
+                    using (adapter = new SqlDataAdapter(sqlCommand))
+                    {
+                        adapter.Fill(datatable);
+                    }
+                }
+
+                sqlConnection.Close();
+            }
+            return datatable;
         }
 
         public int getLastInsertID(string pk, string table)
