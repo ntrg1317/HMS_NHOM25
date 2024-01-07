@@ -54,7 +54,7 @@
             this.panelDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDanhMuc.Location = new System.Drawing.Point(0, 0);
             this.panelDanhMuc.Name = "panelDanhMuc";
-            this.panelDanhMuc.Size = new System.Drawing.Size(952, 51);
+            this.panelDanhMuc.Size = new System.Drawing.Size(970, 51);
             this.panelDanhMuc.TabIndex = 0;
             this.panelDanhMuc.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDanhMuc_Paint);
             // 
@@ -65,7 +65,7 @@
             this.btnTKDoanhthu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTKDoanhthu.Location = new System.Drawing.Point(822, 0);
             this.btnTKDoanhthu.Name = "btnTKDoanhthu";
-            this.btnTKDoanhthu.Size = new System.Drawing.Size(137, 51);
+            this.btnTKDoanhthu.Size = new System.Drawing.Size(148, 51);
             this.btnTKDoanhthu.TabIndex = 6;
             this.btnTKDoanhthu.Text = "Thống kê doanh thu";
             this.btnTKDoanhthu.UseVisualStyleBackColor = false;
@@ -161,14 +161,14 @@
             this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHienThi.Location = new System.Drawing.Point(0, 51);
             this.panelHienThi.Name = "panelHienThi";
-            this.panelHienThi.Size = new System.Drawing.Size(952, 583);
+            this.panelHienThi.Size = new System.Drawing.Size(970, 693);
             this.panelHienThi.TabIndex = 1;
             // 
             // BaoCaoThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 634);
+            this.ClientSize = new System.Drawing.Size(970, 744);
             this.Controls.Add(this.panelHienThi);
             this.Controls.Add(this.panelDanhMuc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

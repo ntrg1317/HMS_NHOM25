@@ -31,26 +31,26 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chartTKLoaiBenh = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.chartTKDauCo = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label5 = new System.Windows.Forms.Label();
-            this.chartTKDauCo = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -79,6 +79,8 @@
             // 
             // chartTKLoaiBenh
             // 
+            this.chartTKLoaiBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             chartArea1.Name = "ChartArea1";
             this.chartTKLoaiBenh.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -118,6 +120,35 @@
             this.panel4.Size = new System.Drawing.Size(722, 366);
             this.panel4.TabIndex = 4;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(382, 332);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(317, 17);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
+            // 
+            // chartTKDauCo
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartTKDauCo.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartTKDauCo.Legends.Add(legend2);
+            this.chartTKDauCo.Location = new System.Drawing.Point(373, 16);
+            this.chartTKDauCo.Name = "chartTKDauCo";
+            this.chartTKDauCo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.MarkerSize = 1;
+            series2.Name = "Bệnh nhân";
+            this.chartTKDauCo.Series.Add(series2);
+            this.chartTKDauCo.Size = new System.Drawing.Size(293, 300);
+            this.chartTKDauCo.TabIndex = 5;
+            this.chartTKDauCo.Text = "chartTKDauBung";
+            // 
             // chartTKDauDau
             // 
             chartArea3.Name = "ChartArea1";
@@ -146,35 +177,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Thống kê số bệnh nhân đau đầu theo năm";
             // 
-            // chartTKDauCo
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartTKDauCo.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartTKDauCo.Legends.Add(legend2);
-            this.chartTKDauCo.Location = new System.Drawing.Point(373, 16);
-            this.chartTKDauCo.Name = "chartTKDauCo";
-            this.chartTKDauCo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.MarkerSize = 1;
-            series2.Name = "Bệnh nhân";
-            this.chartTKDauCo.Series.Add(series2);
-            this.chartTKDauCo.Size = new System.Drawing.Size(293, 300);
-            this.chartTKDauCo.TabIndex = 5;
-            this.chartTKDauCo.Text = "chartTKDauBung";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(382, 332);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(317, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
-            // 
             // ThongKeBenhLy
             // 
             this.AutoScroll = true;
@@ -190,8 +192,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
