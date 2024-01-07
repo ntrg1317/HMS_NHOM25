@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.palAddBS = new System.Windows.Forms.Panel();
-            this.labAddBS = new System.Windows.Forms.Label();
             this.ptbBS = new System.Windows.Forms.PictureBox();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.grbInfoBN = new System.Windows.Forms.GroupBox();
-            this.cobTenPhong = new System.Windows.Forms.ComboBox();
+            this.btnSaveTTCN = new System.Windows.Forms.Button();
             this.cobDiaChiBN = new System.Windows.Forms.ComboBox();
             this.txtSDTNguoiThan = new System.Windows.Forms.TextBox();
-            this.DateVaoVienBN = new System.Windows.Forms.DateTimePicker();
-            this.labNgayVaoBN = new System.Windows.Forms.Label();
-            this.labMaPhongBN = new System.Windows.Forms.Label();
             this.cobGioiTinhBN = new System.Windows.Forms.ComboBox();
             this.DOBBN = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBN = new System.Windows.Forms.TextBox();
             this.txtTenBN = new System.Windows.Forms.TextBox();
-            this.txtMaBN = new System.Windows.Forms.TextBox();
             this.labSDTNguoiThan = new System.Windows.Forms.Label();
-            this.labBenhTrangBN = new System.Windows.Forms.Label();
             this.labSDTBN = new System.Windows.Forms.Label();
             this.labDiaChiBN = new System.Windows.Forms.Label();
             this.labSexBN = new System.Windows.Forms.Label();
             this.labNgaySinhBN = new System.Windows.Forms.Label();
             this.labTenBN = new System.Windows.Forms.Label();
+            this.cobTenPhong = new System.Windows.Forms.ComboBox();
+            this.DateVaoVienBN = new System.Windows.Forms.DateTimePicker();
+            this.labNgayVaoBN = new System.Windows.Forms.Label();
+            this.labMaPhongBN = new System.Windows.Forms.Label();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
+            this.labBenhTrangBN = new System.Windows.Forms.Label();
             this.labMaBN = new System.Windows.Forms.Label();
             this.grbThongTinBenh = new System.Windows.Forms.GroupBox();
-            this.btnSaveTTCN = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).BeginInit();
@@ -71,18 +71,6 @@
             this.palAddBS.Size = new System.Drawing.Size(1107, 124);
             this.palAddBS.TabIndex = 6;
             // 
-            // labAddBS
-            // 
-            this.labAddBS.AutoSize = true;
-            this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(377, 32);
-            this.labAddBS.Name = "labAddBS";
-            this.labAddBS.Size = new System.Drawing.Size(426, 55);
-            this.labAddBS.TabIndex = 0;
-            this.labAddBS.Text = "Thông tin cá nhân";
-            // 
             // ptbBS
             // 
             this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -94,6 +82,18 @@
             this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbBS.TabIndex = 3;
             this.ptbBS.TabStop = false;
+            // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(377, 32);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(426, 55);
+            this.labAddBS.TabIndex = 0;
+            this.labAddBS.Text = "Thông tin cá nhân";
             // 
             // grbInfoBN
             // 
@@ -120,16 +120,19 @@
             this.grbInfoBN.TabStop = false;
             this.grbInfoBN.Text = "Thông tin cá nhân";
             // 
-            // cobTenPhong
+            // btnSaveTTCN
             // 
-            this.cobTenPhong.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cobTenPhong.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cobTenPhong.FormattingEnabled = true;
-            this.cobTenPhong.Location = new System.Drawing.Point(678, 123);
-            this.cobTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobTenPhong.Name = "cobTenPhong";
-            this.cobTenPhong.Size = new System.Drawing.Size(243, 28);
-            this.cobTenPhong.TabIndex = 25;
+            this.btnSaveTTCN.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveTTCN.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
+            this.btnSaveTTCN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveTTCN.Location = new System.Drawing.Point(429, 305);
+            this.btnSaveTTCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSaveTTCN.Name = "btnSaveTTCN";
+            this.btnSaveTTCN.Size = new System.Drawing.Size(154, 39);
+            this.btnSaveTTCN.TabIndex = 10;
+            this.btnSaveTTCN.Text = "Lưu thông tin";
+            this.btnSaveTTCN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaveTTCN.UseVisualStyleBackColor = true;
             // 
             // cobDiaChiBN
             // 
@@ -212,35 +215,6 @@
             this.txtSDTNguoiThan.Size = new System.Drawing.Size(241, 26);
             this.txtSDTNguoiThan.TabIndex = 23;
             // 
-            // DateVaoVienBN
-            // 
-            this.DateVaoVienBN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateVaoVienBN.Location = new System.Drawing.Point(678, 52);
-            this.DateVaoVienBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DateVaoVienBN.Name = "DateVaoVienBN";
-            this.DateVaoVienBN.Size = new System.Drawing.Size(243, 26);
-            this.DateVaoVienBN.TabIndex = 22;
-            // 
-            // labNgayVaoBN
-            // 
-            this.labNgayVaoBN.AutoSize = true;
-            this.labNgayVaoBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayVaoBN.Location = new System.Drawing.Point(555, 52);
-            this.labNgayVaoBN.Name = "labNgayVaoBN";
-            this.labNgayVaoBN.Size = new System.Drawing.Size(74, 20);
-            this.labNgayVaoBN.TabIndex = 21;
-            this.labNgayVaoBN.Text = "Ngày vào";
-            // 
-            // labMaPhongBN
-            // 
-            this.labMaPhongBN.AutoSize = true;
-            this.labMaPhongBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaPhongBN.Location = new System.Drawing.Point(555, 129);
-            this.labMaPhongBN.Name = "labMaPhongBN";
-            this.labMaPhongBN.Size = new System.Drawing.Size(85, 20);
-            this.labMaPhongBN.TabIndex = 19;
-            this.labMaPhongBN.Text = "Tên phòng";
-            // 
             // cobGioiTinhBN
             // 
             this.cobGioiTinhBN.FormattingEnabled = true;
@@ -279,15 +253,6 @@
             this.txtTenBN.Size = new System.Drawing.Size(247, 26);
             this.txtTenBN.TabIndex = 10;
             // 
-            // txtMaBN
-            // 
-            this.txtMaBN.Location = new System.Drawing.Point(191, 48);
-            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaBN.Name = "txtMaBN";
-            this.txtMaBN.ReadOnly = true;
-            this.txtMaBN.Size = new System.Drawing.Size(243, 26);
-            this.txtMaBN.TabIndex = 9;
-            // 
             // labSDTNguoiThan
             // 
             this.labSDTNguoiThan.AutoSize = true;
@@ -297,16 +262,6 @@
             this.labSDTNguoiThan.Size = new System.Drawing.Size(122, 20);
             this.labSDTNguoiThan.TabIndex = 7;
             this.labSDTNguoiThan.Text = "SĐT Người thân";
-            // 
-            // labBenhTrangBN
-            // 
-            this.labBenhTrangBN.AutoSize = true;
-            this.labBenhTrangBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labBenhTrangBN.Location = new System.Drawing.Point(60, 128);
-            this.labBenhTrangBN.Name = "labBenhTrangBN";
-            this.labBenhTrangBN.Size = new System.Drawing.Size(88, 20);
-            this.labBenhTrangBN.TabIndex = 6;
-            this.labBenhTrangBN.Text = "Bệnh trạng";
             // 
             // labSDTBN
             // 
@@ -358,6 +313,66 @@
             this.labTenBN.TabIndex = 1;
             this.labTenBN.Text = "Họ và tên";
             // 
+            // cobTenPhong
+            // 
+            this.cobTenPhong.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cobTenPhong.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cobTenPhong.FormattingEnabled = true;
+            this.cobTenPhong.Location = new System.Drawing.Point(678, 123);
+            this.cobTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cobTenPhong.Name = "cobTenPhong";
+            this.cobTenPhong.Size = new System.Drawing.Size(243, 28);
+            this.cobTenPhong.TabIndex = 25;
+            // 
+            // DateVaoVienBN
+            // 
+            this.DateVaoVienBN.Enabled = false;
+            this.DateVaoVienBN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateVaoVienBN.Location = new System.Drawing.Point(678, 52);
+            this.DateVaoVienBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DateVaoVienBN.Name = "DateVaoVienBN";
+            this.DateVaoVienBN.Size = new System.Drawing.Size(243, 26);
+            this.DateVaoVienBN.TabIndex = 22;
+            // 
+            // labNgayVaoBN
+            // 
+            this.labNgayVaoBN.AutoSize = true;
+            this.labNgayVaoBN.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labNgayVaoBN.Location = new System.Drawing.Point(555, 52);
+            this.labNgayVaoBN.Name = "labNgayVaoBN";
+            this.labNgayVaoBN.Size = new System.Drawing.Size(74, 20);
+            this.labNgayVaoBN.TabIndex = 21;
+            this.labNgayVaoBN.Text = "Ngày vào";
+            // 
+            // labMaPhongBN
+            // 
+            this.labMaPhongBN.AutoSize = true;
+            this.labMaPhongBN.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labMaPhongBN.Location = new System.Drawing.Point(555, 129);
+            this.labMaPhongBN.Name = "labMaPhongBN";
+            this.labMaPhongBN.Size = new System.Drawing.Size(85, 20);
+            this.labMaPhongBN.TabIndex = 19;
+            this.labMaPhongBN.Text = "Tên phòng";
+            // 
+            // txtMaBN
+            // 
+            this.txtMaBN.Location = new System.Drawing.Point(191, 48);
+            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.ReadOnly = true;
+            this.txtMaBN.Size = new System.Drawing.Size(243, 26);
+            this.txtMaBN.TabIndex = 9;
+            // 
+            // labBenhTrangBN
+            // 
+            this.labBenhTrangBN.AutoSize = true;
+            this.labBenhTrangBN.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labBenhTrangBN.Location = new System.Drawing.Point(60, 128);
+            this.labBenhTrangBN.Name = "labBenhTrangBN";
+            this.labBenhTrangBN.Size = new System.Drawing.Size(88, 20);
+            this.labBenhTrangBN.TabIndex = 6;
+            this.labBenhTrangBN.Text = "Bệnh trạng";
+            // 
             // labMaBN
             // 
             this.labMaBN.AutoSize = true;
@@ -385,20 +400,6 @@
             this.grbThongTinBenh.TabIndex = 8;
             this.grbThongTinBenh.TabStop = false;
             this.grbThongTinBenh.Text = "Thông tin bệnh";
-            // 
-            // btnSaveTTCN
-            // 
-            this.btnSaveTTCN.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveTTCN.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
-            this.btnSaveTTCN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveTTCN.Location = new System.Drawing.Point(429, 305);
-            this.btnSaveTTCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSaveTTCN.Name = "btnSaveTTCN";
-            this.btnSaveTTCN.Size = new System.Drawing.Size(154, 39);
-            this.btnSaveTTCN.TabIndex = 10;
-            this.btnSaveTTCN.Text = "Lưu thông tin";
-            this.btnSaveTTCN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveTTCN.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
