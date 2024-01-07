@@ -13,18 +13,12 @@ namespace HMS_NHOM25
         private Button lastClickedButton;
         private bool isCollapsed;
 
-        public AdminControl(string TenDN, string vaiTro)
+        public AdminControl(string TenDN)
         {
             InitializeComponent();
             OpenChildForm(new BaoCaoThongKe(), btnThongKe);
 
             labTenDN.Text = TenDN;
-            switch(vaiTro)
-            {
-                case "Bác sĩ":
-                    userControl(new BacSiControl());
-                    break;
-            }
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -192,6 +186,12 @@ namespace HMS_NHOM25
         {
             OpenChildForm(new SuaTTTK(), btnChangePw);
             isCollapsed = false;
+            timer1_Tick(sender, e);
+        }
+
+        private void btnKhoThuoc_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new KhoThuoc(), btnKhoThuoc);
         }
     }
 }

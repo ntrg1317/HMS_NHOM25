@@ -462,6 +462,7 @@
             this.btnXoaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoaBN.Location = new System.Drawing.Point(690, 231);
             this.btnXoaBN.Location = new System.Drawing.Point(786, 288);
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";

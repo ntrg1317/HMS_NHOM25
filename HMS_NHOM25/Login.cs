@@ -44,8 +44,6 @@ namespace HMS_NHOM25
                 GetValuesTextBoxes();
                 string query1 = "SELECT COUNT(*) FROM taiKhoan WHERE TenDN = '" + taiKhoan.TenDN + "' AND MatKhau = '" + taiKhoan.MatKhau + "'";
                 int count = tk.GetAIntValue(query1);
-
-             
                 string tenDN = taiKhoan.TenDN;
 
                 if (count == 1)
@@ -54,7 +52,8 @@ namespace HMS_NHOM25
                     int MaTK = tk.GetAIntValue(query);
                     string vaiTro = getUserRole(MaTK);
                     this.Hide();
-                    AdminControl module = new AdminControl(tenDN, vaiTro);
+                    AdminControl module = new AdminControl(tenDN);
+                    module.Show();
                 }
                 else
                 {

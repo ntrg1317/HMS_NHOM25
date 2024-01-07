@@ -134,7 +134,7 @@ namespace HMS_NHOM25
         {
             try
             {
-                if (e.RowIndex >= 0) // Check if a valid row is clicked
+                if (e.RowIndex >= 0) 
                 {
                     DataGridViewRow selectedRow = dgvInforBN.Rows[e.RowIndex];
 

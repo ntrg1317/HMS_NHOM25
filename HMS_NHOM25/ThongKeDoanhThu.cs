@@ -28,25 +28,41 @@ namespace HMS_NHOM25
             {
                 connection.Open();
 
-                string queryDoanhThu = "WITH DoanhThuThang AS (SELECT MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu" +
-                    "FROM hoaDon WITH(NOLOCK)" +
-                    "WHERE YEAR(NgayTT) = 2023" +
-                    "GROUP BY MONTH(NgayTT))" +
-                    "SELECT t1.Thang, t1.DoanhThu," +
-                    "ISNULL((t1.DoanhThu - t2.DoanhThu) / NULLIF(t2.DoanhThu, 0) * 100, 0) AS TyLeTangTruong" +
-                    "FROM DoanhThuThang t1 LEFT JOIN DoanhThuThang t2 ON t1.Thang = t2.Thang + 1" +
-                    "ORDER BY t1.Thang;";
+                string queryDoanhThu = "SELECT MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
+                    "FROM hoaDon WHERE YEAR(NgayTT) = 2023 " +
+                    "GROUP BY MONTH(NgayTT) ORDER BY Thang;";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(queryDoanhThu, connection);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
                 dgvDoanhThu.DataSource = dataTable;
 
-                chartDoanhThu.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "DoanhThu", "TyLeTangTruong");
+                chartDoanhThu.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "DoanhThu", "");
 
                 chartDoanhThu.Series[0].XValueMember = "Thang";
                 chartDoanhThu.Series[0].YValueMembers = "DoanhThu";
-                chartDoanhThu.Series[0].YValueMembers = "TyLeTangTruong";
+            }
+
+            using (SqlConnection connection = ConnectDB.getSqlConnection())
+            {
+                connection.Open();
+
+                string queryTyLeTangTruong = "WITH DoanhThuTheoThang AS (SELECT " +
+                    "MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
+                    "FROM hoaDon WHERE YEAR(NgayTT) = 2023 " +
+                    "GROUP BY MONTH(NgayTT)) " +
+                    "SELECT Thang, (DoanhThu - LAG(DoanhThu) OVER(ORDER BY Thang)) / LAG(DoanhThu) OVER(ORDER BY Thang) * 100 AS TyLeTangTruong " +
+                    "FROM DoanhThuTheoThang;";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(queryTyLeTangTruong, connection);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+                dgvTyLeTangTruong.DataSource = dataTable;
+
+                chartTyLeTangTruong.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "TyLeTangTruong", "");
+
+                chartTyLeTangTruong.Series[0].XValueMember = "Thang";
+                chartTyLeTangTruong.Series[0].YValueMembers = "TyLeTangTruong";
             }
         }
     }

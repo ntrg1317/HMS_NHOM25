@@ -31,11 +31,7 @@
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
             this.richTxtMoTa = new System.Windows.Forms.RichTextBox();
             this.cmbTenThuoc = new System.Windows.Forms.ComboBox();
-            this.labVND = new System.Windows.Forms.Label();
-            this.labTienThuoc = new System.Windows.Forms.Label();
-            this.txtTienThuoc = new System.Windows.Forms.TextBox();
             this.labLieuDung = new System.Windows.Forms.Label();
-            this.txtLieuDung = new System.Windows.Forms.TextBox();
             this.labelMota = new System.Windows.Forms.Label();
             this.labSoLuongThuoc = new System.Windows.Forms.Label();
             this.txtSoLuongThuoc = new System.Windows.Forms.TextBox();
@@ -49,19 +45,17 @@
             this.btnThemThuoc = new System.Windows.Forms.Button();
             this.btnThoatAddDonThuoc = new System.Windows.Forms.Button();
             this.btnSaveInfoDonThuoc = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.grbInfoDonThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDonThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfoDonThuoc
             // 
+            this.grbInfoDonThuoc.Controls.Add(this.richTextBox1);
             this.grbInfoDonThuoc.Controls.Add(this.richTxtMoTa);
             this.grbInfoDonThuoc.Controls.Add(this.cmbTenThuoc);
-            this.grbInfoDonThuoc.Controls.Add(this.labVND);
-            this.grbInfoDonThuoc.Controls.Add(this.labTienThuoc);
-            this.grbInfoDonThuoc.Controls.Add(this.txtTienThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.labLieuDung);
-            this.grbInfoDonThuoc.Controls.Add(this.txtLieuDung);
             this.grbInfoDonThuoc.Controls.Add(this.labelMota);
             this.grbInfoDonThuoc.Controls.Add(this.labSoLuongThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.txtSoLuongThuoc);
@@ -71,17 +65,17 @@
             this.grbInfoDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDonThuoc.Name = "grbInfoDonThuoc";
             this.grbInfoDonThuoc.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoDonThuoc.Size = new System.Drawing.Size(888, 246);
+            this.grbInfoDonThuoc.Size = new System.Drawing.Size(888, 221);
             this.grbInfoDonThuoc.TabIndex = 23;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Chi tiết kê thuốc ";
             // 
             // richTxtMoTa
             // 
-            this.richTxtMoTa.Location = new System.Drawing.Point(187, 134);
+            this.richTxtMoTa.Location = new System.Drawing.Point(187, 100);
             this.richTxtMoTa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.richTxtMoTa.Name = "richTxtMoTa";
-            this.richTxtMoTa.Size = new System.Drawing.Size(602, 72);
+            this.richTxtMoTa.Size = new System.Drawing.Size(219, 72);
             this.richTxtMoTa.TabIndex = 48;
             this.richTxtMoTa.Text = "";
             // 
@@ -94,57 +88,21 @@
             this.cmbTenThuoc.Size = new System.Drawing.Size(219, 28);
             this.cmbTenThuoc.TabIndex = 36;
             // 
-            // labVND
-            // 
-            this.labVND.AutoSize = true;
-            this.labVND.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labVND.Location = new System.Drawing.Point(803, 38);
-            this.labVND.Name = "labVND";
-            this.labVND.Size = new System.Drawing.Size(53, 20);
-            this.labVND.TabIndex = 35;
-            this.labVND.Text = "(VNĐ)";
-            // 
-            // labTienThuoc
-            // 
-            this.labTienThuoc.AutoSize = true;
-            this.labTienThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTienThuoc.Location = new System.Drawing.Point(461, 38);
-            this.labTienThuoc.Name = "labTienThuoc";
-            this.labTienThuoc.Size = new System.Drawing.Size(64, 20);
-            this.labTienThuoc.TabIndex = 33;
-            this.labTienThuoc.Text = "Giá tiền";
-            // 
-            // txtTienThuoc
-            // 
-            this.txtTienThuoc.Location = new System.Drawing.Point(572, 30);
-            this.txtTienThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTienThuoc.Name = "txtTienThuoc";
-            this.txtTienThuoc.Size = new System.Drawing.Size(218, 26);
-            this.txtTienThuoc.TabIndex = 34;
-            // 
             // labLieuDung
             // 
             this.labLieuDung.AutoSize = true;
             this.labLieuDung.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labLieuDung.Location = new System.Drawing.Point(461, 88);
+            this.labLieuDung.Location = new System.Drawing.Point(498, 100);
             this.labLieuDung.Name = "labLieuDung";
             this.labLieuDung.Size = new System.Drawing.Size(79, 20);
             this.labLieuDung.TabIndex = 31;
             this.labLieuDung.Text = "Liều dùng";
             // 
-            // txtLieuDung
-            // 
-            this.txtLieuDung.Location = new System.Drawing.Point(572, 81);
-            this.txtLieuDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtLieuDung.Name = "txtLieuDung";
-            this.txtLieuDung.Size = new System.Drawing.Size(218, 26);
-            this.txtLieuDung.TabIndex = 32;
-            // 
             // labelMota
             // 
             this.labelMota.AutoSize = true;
             this.labelMota.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelMota.Location = new System.Drawing.Point(37, 138);
+            this.labelMota.Location = new System.Drawing.Point(65, 100);
             this.labelMota.Name = "labelMota";
             this.labelMota.Size = new System.Drawing.Size(61, 20);
             this.labelMota.TabIndex = 29;
@@ -154,7 +112,7 @@
             // 
             this.labSoLuongThuoc.AutoSize = true;
             this.labSoLuongThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSoLuongThuoc.Location = new System.Drawing.Point(37, 88);
+            this.labSoLuongThuoc.Location = new System.Drawing.Point(498, 40);
             this.labSoLuongThuoc.Name = "labSoLuongThuoc";
             this.labSoLuongThuoc.Size = new System.Drawing.Size(72, 20);
             this.labSoLuongThuoc.TabIndex = 29;
@@ -162,7 +120,7 @@
             // 
             // txtSoLuongThuoc
             // 
-            this.txtSoLuongThuoc.Location = new System.Drawing.Point(187, 80);
+            this.txtSoLuongThuoc.Location = new System.Drawing.Point(610, 34);
             this.txtSoLuongThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoLuongThuoc.Name = "txtSoLuongThuoc";
             this.txtSoLuongThuoc.Size = new System.Drawing.Size(219, 26);
@@ -173,7 +131,7 @@
             // 
             this.labTenThuoc.AutoSize = true;
             this.labTenThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenThuoc.Location = new System.Drawing.Point(37, 32);
+            this.labTenThuoc.Location = new System.Drawing.Point(65, 40);
             this.labTenThuoc.Name = "labTenThuoc";
             this.labTenThuoc.Size = new System.Drawing.Size(80, 20);
             this.labTenThuoc.TabIndex = 23;
@@ -186,12 +144,13 @@
             this.txtTimKiemTenThuoc.Name = "txtTimKiemTenThuoc";
             this.txtTimKiemTenThuoc.Size = new System.Drawing.Size(218, 26);
             this.txtTimKiemTenThuoc.TabIndex = 38;
+            this.txtTimKiemTenThuoc.TextChanged += new System.EventHandler(this.txtTimKiemTenThuoc_TextChanged);
             // 
             // labTimKiemDT
             // 
             this.labTimKiemDT.AutoSize = true;
             this.labTimKiemDT.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemDT.Location = new System.Drawing.Point(47, 274);
+            this.labTimKiemDT.Location = new System.Drawing.Point(47, 268);
             this.labTimKiemDT.Name = "labTimKiemDT";
             this.labTimKiemDT.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemDT.TabIndex = 37;
@@ -215,8 +174,10 @@
             this.dgvInforDonThuoc.Name = "dgvInforDonThuoc";
             this.dgvInforDonThuoc.RowHeadersWidth = 62;
             this.dgvInforDonThuoc.RowTemplate.Height = 28;
+            this.dgvInforDonThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInforDonThuoc.Size = new System.Drawing.Size(886, 258);
             this.dgvInforDonThuoc.TabIndex = 42;
+            this.dgvInforDonThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDonThuoc_CellClick);
             // 
             // btnCapNhatCTDonThuoc
             // 
@@ -230,6 +191,7 @@
             this.btnCapNhatCTDonThuoc.Text = "Cập nhật";
             this.btnCapNhatCTDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhatCTDonThuoc.UseVisualStyleBackColor = true;
+            this.btnCapNhatCTDonThuoc.Click += new System.EventHandler(this.btnCapNhatCTDonThuoc_Click);
             // 
             // btnXoaThuoc
             // 
@@ -244,6 +206,7 @@
             this.btnXoaThuoc.Text = "Xóa";
             this.btnXoaThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
+            this.btnXoaThuoc.Click += new System.EventHandler(this.btnXoaThuoc_Click);
             // 
             // btnThemThuoc
             // 
@@ -258,6 +221,7 @@
             this.btnThemThuoc.Text = "Thêm";
             this.btnThemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemThuoc.UseVisualStyleBackColor = true;
+            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
             // 
             // btnThoatAddDonThuoc
             // 
@@ -283,6 +247,15 @@
             this.btnSaveInfoDonThuoc.Text = "Lưu thông tin";
             this.btnSaveInfoDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveInfoDonThuoc.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(610, 100);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(219, 72);
+            this.richTextBox1.TabIndex = 49;
+            this.richTextBox1.Text = "";
             // 
             // ChiTietDonThuoc
             // 
@@ -314,11 +287,7 @@
 
         private System.Windows.Forms.GroupBox grbInfoDonThuoc;
         private System.Windows.Forms.ComboBox cmbTenThuoc;
-        private System.Windows.Forms.Label labVND;
-        private System.Windows.Forms.Label labTienThuoc;
-        private System.Windows.Forms.TextBox txtTienThuoc;
         private System.Windows.Forms.Label labLieuDung;
-        private System.Windows.Forms.TextBox txtLieuDung;
         private System.Windows.Forms.Label labSoLuongThuoc;
         private System.Windows.Forms.TextBox txtSoLuongThuoc;
         private System.Windows.Forms.Label labTenThuoc;
@@ -333,5 +302,6 @@
         private System.Windows.Forms.Button btnSaveInfoDonThuoc;
         private System.Windows.Forms.RichTextBox richTxtMoTa;
         private System.Windows.Forms.Label labelMota;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

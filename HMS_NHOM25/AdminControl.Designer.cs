@@ -425,7 +425,7 @@
             this.btnKhoThuoc.TabIndex = 0;
             this.btnKhoThuoc.Text = "Kho thuốc";
             this.btnKhoThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhoThuoc.Click += new System.EventHandler(this.btnDT_Click);
+            this.btnKhoThuoc.Click += new System.EventHandler(this.btnKhoThuoc_Click);
             // 
             // panelDT
             // 

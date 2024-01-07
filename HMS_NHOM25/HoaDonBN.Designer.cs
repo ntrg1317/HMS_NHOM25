@@ -369,7 +369,7 @@
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(489, 24);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(482, 24);
             this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(193, 26);
@@ -381,7 +381,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(293, 27);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(299, 27);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 54;
@@ -425,6 +425,7 @@
             // 
             // dgvInforBN
             // 
+            this.dgvInforBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInforBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInforBN.Location = new System.Drawing.Point(26, 168);
             this.dgvInforBN.Name = "dgvInforBN";
