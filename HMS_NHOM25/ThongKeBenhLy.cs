@@ -27,63 +27,66 @@ namespace HMS_NHOM25
 
         private void ThongKeBenhLy_Load(object sender, EventArgs e)
         {
-            string query1 = "SELECT benhTrang, COUNT(*) AS SoLuongBenhNhan FROM benhNhan GROUP BY benhTrang";
+            string queryCacLoaiBenh = "SELECT benhTrang, COUNT(*) AS SoLuong FROM benhNhan GROUP BY benhTrang";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query1, connection))
+                using (SqlCommand command = new SqlCommand(queryCacLoaiBenh, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvCacLoaiBenh.DataSource = dataTable;
 
-                    chartTKLoaiBenh.Series[0].Points.DataBind(dataTable.AsEnumerable(), "benhTrang", "SoLuongBenhNhan", "");
+                    chartTKLoaiBenh.Series[0].Points.DataBind(dataTable.AsEnumerable(), "benhTrang", "SoLuong", "");
 
                     chartTKLoaiBenh.Series[0].XValueMember = "benhTrang";
-                    chartTKLoaiBenh.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartTKLoaiBenh.Series[0].YValueMembers = "SoLuong";
                 }
             }
 
 
-            string query2 = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuongBenhNhan  FROM benhNhan WHERE benhTrang = N'Đau đầu'" +
+            string queryDauDauNam = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuong  FROM benhNhan WHERE benhTrang = N'Đau đầu' AND YEAR(NgayVao) BETWEEN 2020 AND 2024 " +
                             " GROUP BY YEAR(NgayVao)";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query2, connection))
+                using (SqlCommand command = new SqlCommand(queryDauDauNam, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvDauDauNam.DataSource = dataTable;
 
-                    chartTKDauDau.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Nam", "SoLuongBenhNhan", "");
+                    chartTKDauDau.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Nam", "SoLuong", "");
 
                     chartTKDauDau.Series[0].XValueMember = "Nam";
-                    chartTKDauDau.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartTKDauDau.Series[0].YValueMembers = "SoLuong";
                 }
             }
 
-            string query3 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuongBenhNhan FROM benhNhan WHERE benhTrang = N'Đau Cơ'" +
+            string queryDauCo2023 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM benhNhan WHERE benhTrang = N'Đau Cơ'" +
                             "GROUP BY MONTH(NgayVao)";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
 
-                using (SqlCommand command = new SqlCommand(query3, connection))
+                using (SqlCommand command = new SqlCommand(queryDauCo2023, connection))
                 {
 
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
+                    dgvDauCo2023.DataSource = dataTable;
 
-                    chartTKDauCo.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuongBenhNhan", "");
+                    chartTKDauCo.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuong", "");
 
                     chartTKDauCo.Series[0].XValueMember = "Thang";
-                    chartTKDauCo.Series[0].YValueMembers = "SoLuongBenhNhan";
+                    chartTKDauCo.Series[0].YValueMembers = "SoLuong";
                 }
             }
         }

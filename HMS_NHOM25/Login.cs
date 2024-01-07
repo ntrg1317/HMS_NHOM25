@@ -73,7 +73,7 @@ namespace HMS_NHOM25
 
         private void txtTenDN_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
+            if (e.KeyChar == (char)Keys.Enter || e.KeyChar == (char)Keys.Tab)
             {
                 txtPasswd.Focus();
             }
