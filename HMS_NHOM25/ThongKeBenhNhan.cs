@@ -28,7 +28,7 @@ namespace HMS_NHOM25
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                    dgvSLBN2024.DataSource = dataTable;
+                    dgvSLBNtheoNam.DataSource = dataTable;
 
                     chartSLBN2024.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuong", "");
 

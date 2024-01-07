@@ -163,7 +163,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource soLuongBNtheoNamBindingSource;
         private System.Windows.Forms.BindingSource hMSDataSet2BindingSource;
-        private System.Windows.Forms.BindingSource benhNhanBindingSource1;
         private System.Windows.Forms.Label labTKBenhNhan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;

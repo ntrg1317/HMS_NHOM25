@@ -88,6 +88,7 @@
             this.picTTTK = new System.Windows.Forms.PictureBox();
             this.btnTTTK = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labTenDN = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -733,6 +734,7 @@
             // 
             // panel12
             // 
+            this.panel12.Controls.Add(this.labTenDN);
             this.panel12.Controls.Add(this.txtVaiTro);
             this.panel12.Controls.Add(this.picAva);
             this.panel12.Controls.Add(this.txtTen);
@@ -744,7 +746,7 @@
             // txtVaiTro
             // 
             this.txtVaiTro.AutoSize = true;
-            this.txtVaiTro.Location = new System.Drawing.Point(106, 62);
+            this.txtVaiTro.Location = new System.Drawing.Point(107, 74);
             this.txtVaiTro.Name = "txtVaiTro";
             this.txtVaiTro.Size = new System.Drawing.Size(80, 16);
             this.txtVaiTro.TabIndex = 2;
@@ -764,7 +766,7 @@
             // 
             this.txtTen.AutoSize = true;
             this.txtTen.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen.Location = new System.Drawing.Point(105, 40);
+            this.txtTen.Location = new System.Drawing.Point(106, 30);
             this.txtTen.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(151, 22);
@@ -808,6 +810,15 @@
             // 
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labTenDN
+            // 
+            this.labTenDN.AutoSize = true;
+            this.labTenDN.Location = new System.Drawing.Point(107, 55);
+            this.labTenDN.Name = "labTenDN";
+            this.labTenDN.Size = new System.Drawing.Size(43, 16);
+            this.labTenDN.TabIndex = 2;
+            this.labTenDN.Text = "ntrg13";
             // 
             // AdminControl
             // 
@@ -927,5 +938,6 @@
         private System.Windows.Forms.Button btnKhoThuoc;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Label labTenDN;
     }
 }

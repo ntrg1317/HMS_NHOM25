@@ -47,7 +47,8 @@ namespace HMS_NHOM25
                 if (tk_count == 1)
                 {
                     this.Hide();
-                    new AdminControl().Show();
+                    AdminControl module = new AdminControl(taiKhoan.TenDN); 
+                    module.Show();
                 }
                 else
                 {

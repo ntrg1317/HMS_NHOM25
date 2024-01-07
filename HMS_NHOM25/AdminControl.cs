@@ -11,10 +11,12 @@ namespace HMS_NHOM25
         private Button lastClickedButton;
         private bool isCollapsed;
 
-        public AdminControl()
+        public AdminControl(string TenDN)
         {
             InitializeComponent();
             OpenChildForm(new BaoCaoThongKe(), btnThongKe);
+
+            labTenDN.Text = TenDN;
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
