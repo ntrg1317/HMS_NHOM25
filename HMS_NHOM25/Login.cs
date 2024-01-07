@@ -1,6 +1,7 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -8,7 +9,7 @@ namespace HMS_NHOM25
     public partial class login : Form
     {
         TaiKhoanParams taiKhoan;
-        readonly BaseModel tk = new BaseModel();
+        BaseModel tk = new BaseModel();
         public login()
         {
             InitializeComponent();
@@ -42,13 +43,18 @@ namespace HMS_NHOM25
             {
                 GetValuesTextBoxes();
                 string query1 = "SELECT COUNT(*) FROM taiKhoan WHERE TenDN = '" + taiKhoan.TenDN + "' AND MatKhau = '" + taiKhoan.MatKhau + "'";
-                int tk_count = tk.GetAIntValue(query1);
+                int count = tk.GetAIntValue(query1);
 
-                if (tk_count == 1)
+             
+                string tenDN = taiKhoan.TenDN;
+
+                if (count == 1)
                 {
+                    string query = "SELECT MaTK FROM taiKhoan WHERE TenDN = '" + taiKhoan.TenDN + "' AND MatKhau = '" + taiKhoan.MatKhau + "'";
+                    int MaTK = tk.GetAIntValue(query);
+                    string vaiTro = getUserRole(MaTK);
                     this.Hide();
-                    AdminControl module = new AdminControl(taiKhoan.TenDN); 
-                    module.Show();
+                    AdminControl module = new AdminControl(tenDN, vaiTro);
                 }
                 else
                 {
@@ -77,6 +83,17 @@ namespace HMS_NHOM25
             {
                 btnLogin.PerformClick();
             }
+        }
+
+        private string getUserRole(int MaTK)
+        {
+            string getRole = "SELECT TenCV " +
+                             "FROM chucVu AS cv " +
+                             "JOIN taiKhoan AS tk " +
+                             "ON tk.MaCV = cv.MaCV " +
+                             "WHERE MaTK = '" + MaTK + "'";
+            string role = tk.GetAStringValue(getRole);
+            return role;
         }
     }
 }

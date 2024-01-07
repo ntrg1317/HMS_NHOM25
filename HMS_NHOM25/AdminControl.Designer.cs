@@ -33,37 +33,37 @@
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelTK = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThongKe = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelBN = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnBN = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelBS = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBS = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelNVTN = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnTN = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panelDS = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnDS = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panelPhong = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnPhong = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
+            this.panelKThuoc = new System.Windows.Forms.Panel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.btnKhoThuoc = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelDT = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnDT = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.panelHD = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.btnHD = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.panelDV = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnDvu = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.panelTKhoan = new System.Windows.Forms.Panel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.btnTK = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -81,6 +81,7 @@
             this.picChangPw = new System.Windows.Forms.PictureBox();
             this.btnChangePw = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.labTenDN = new System.Windows.Forms.Label();
             this.txtVaiTro = new System.Windows.Forms.Label();
             this.picAva = new System.Windows.Forms.PictureBox();
             this.txtTen = new System.Windows.Forms.Label();
@@ -88,30 +89,29 @@
             this.picTTTK = new System.Windows.Forms.PictureBox();
             this.btnTTTK = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labTenDN = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panelTK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panelBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panelNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel8.SuspendLayout();
+            this.panelDS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panelPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel17.SuspendLayout();
+            this.panelKThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.panelDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel11.SuspendLayout();
+            this.panelHD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel9.SuspendLayout();
+            this.panelDV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel13.SuspendLayout();
+            this.panelTKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.navbar.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -131,17 +131,17 @@
             // 
             this.sidebar.BackColor = System.Drawing.SystemColors.Highlight;
             this.sidebar.Controls.Add(this.panel4);
-            this.sidebar.Controls.Add(this.panel3);
-            this.sidebar.Controls.Add(this.panel2);
-            this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.panel5);
-            this.sidebar.Controls.Add(this.panel8);
-            this.sidebar.Controls.Add(this.panel7);
-            this.sidebar.Controls.Add(this.panel17);
-            this.sidebar.Controls.Add(this.panel6);
-            this.sidebar.Controls.Add(this.panel11);
-            this.sidebar.Controls.Add(this.panel9);
-            this.sidebar.Controls.Add(this.panel13);
+            this.sidebar.Controls.Add(this.panelTK);
+            this.sidebar.Controls.Add(this.panelBN);
+            this.sidebar.Controls.Add(this.panelBS);
+            this.sidebar.Controls.Add(this.panelNVTN);
+            this.sidebar.Controls.Add(this.panelDS);
+            this.sidebar.Controls.Add(this.panelPhong);
+            this.sidebar.Controls.Add(this.panelKThuoc);
+            this.sidebar.Controls.Add(this.panelDT);
+            this.sidebar.Controls.Add(this.panelHD);
+            this.sidebar.Controls.Add(this.panelDV);
+            this.sidebar.Controls.Add(this.panelTKhoan);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
@@ -167,14 +167,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Menu";
             // 
-            // panel3
+            // panelTK
             // 
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.btnThongKe);
-            this.panel3.Location = new System.Drawing.Point(3, 87);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 69);
-            this.panel3.TabIndex = 5;
+            this.panelTK.Controls.Add(this.pictureBox2);
+            this.panelTK.Controls.Add(this.btnThongKe);
+            this.panelTK.Location = new System.Drawing.Point(3, 87);
+            this.panelTK.Name = "panelTK";
+            this.panelTK.Size = new System.Drawing.Size(230, 69);
+            this.panelTK.TabIndex = 5;
             // 
             // pictureBox2
             // 
@@ -205,14 +205,14 @@
             this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
-            // panel2
+            // panelBN
             // 
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.btnBN);
-            this.panel2.Location = new System.Drawing.Point(3, 162);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(230, 60);
-            this.panel2.TabIndex = 4;
+            this.panelBN.Controls.Add(this.pictureBox3);
+            this.panelBN.Controls.Add(this.btnBN);
+            this.panelBN.Location = new System.Drawing.Point(3, 162);
+            this.panelBN.Name = "panelBN";
+            this.panelBN.Size = new System.Drawing.Size(230, 60);
+            this.panelBN.TabIndex = 4;
             // 
             // pictureBox3
             // 
@@ -242,14 +242,14 @@
             this.btnBN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBN.Click += new System.EventHandler(this.btnBN_Click);
             // 
-            // panel1
+            // panelBS
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnBS);
-            this.panel1.Location = new System.Drawing.Point(3, 228);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(229, 60);
-            this.panel1.TabIndex = 3;
+            this.panelBS.Controls.Add(this.pictureBox1);
+            this.panelBS.Controls.Add(this.btnBS);
+            this.panelBS.Location = new System.Drawing.Point(3, 228);
+            this.panelBS.Name = "panelBS";
+            this.panelBS.Size = new System.Drawing.Size(229, 60);
+            this.panelBS.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -278,14 +278,14 @@
             this.btnBS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBS.Click += new System.EventHandler(this.btnBS_Click);
             // 
-            // panel5
+            // panelNVTN
             // 
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.btnTN);
-            this.panel5.Location = new System.Drawing.Point(3, 294);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(229, 66);
-            this.panel5.TabIndex = 1;
+            this.panelNVTN.Controls.Add(this.pictureBox4);
+            this.panelNVTN.Controls.Add(this.btnTN);
+            this.panelNVTN.Location = new System.Drawing.Point(3, 294);
+            this.panelNVTN.Name = "panelNVTN";
+            this.panelNVTN.Size = new System.Drawing.Size(229, 66);
+            this.panelNVTN.TabIndex = 1;
             // 
             // pictureBox4
             // 
@@ -315,14 +315,14 @@
             this.btnTN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTN.Click += new System.EventHandler(this.btnTN_Click);
             // 
-            // panel8
+            // panelDS
             // 
-            this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Controls.Add(this.btnDS);
-            this.panel8.Location = new System.Drawing.Point(3, 366);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(229, 66);
-            this.panel8.TabIndex = 3;
+            this.panelDS.Controls.Add(this.pictureBox7);
+            this.panelDS.Controls.Add(this.btnDS);
+            this.panelDS.Location = new System.Drawing.Point(3, 366);
+            this.panelDS.Name = "panelDS";
+            this.panelDS.Size = new System.Drawing.Size(229, 66);
+            this.panelDS.TabIndex = 3;
             // 
             // pictureBox7
             // 
@@ -352,14 +352,14 @@
             this.btnDS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDS.Click += new System.EventHandler(this.btnDS_Click_1);
             // 
-            // panel7
+            // panelPhong
             // 
-            this.panel7.Controls.Add(this.pictureBox8);
-            this.panel7.Controls.Add(this.btnPhong);
-            this.panel7.Location = new System.Drawing.Point(3, 438);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(230, 59);
-            this.panel7.TabIndex = 2;
+            this.panelPhong.Controls.Add(this.pictureBox8);
+            this.panelPhong.Controls.Add(this.btnPhong);
+            this.panelPhong.Location = new System.Drawing.Point(3, 438);
+            this.panelPhong.Name = "panelPhong";
+            this.panelPhong.Size = new System.Drawing.Size(230, 59);
+            this.panelPhong.TabIndex = 2;
             // 
             // pictureBox8
             // 
@@ -390,14 +390,14 @@
             this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
-            // panel17
+            // panelKThuoc
             // 
-            this.panel17.Controls.Add(this.pictureBox15);
-            this.panel17.Controls.Add(this.btnKhoThuoc);
-            this.panel17.Location = new System.Drawing.Point(3, 503);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(239, 58);
-            this.panel17.TabIndex = 1;
+            this.panelKThuoc.Controls.Add(this.pictureBox15);
+            this.panelKThuoc.Controls.Add(this.btnKhoThuoc);
+            this.panelKThuoc.Location = new System.Drawing.Point(3, 503);
+            this.panelKThuoc.Name = "panelKThuoc";
+            this.panelKThuoc.Size = new System.Drawing.Size(239, 58);
+            this.panelKThuoc.TabIndex = 1;
             // 
             // pictureBox15
             // 
@@ -427,14 +427,14 @@
             this.btnKhoThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhoThuoc.Click += new System.EventHandler(this.btnDT_Click);
             // 
-            // panel6
+            // panelDT
             // 
-            this.panel6.Controls.Add(this.pictureBox9);
-            this.panel6.Controls.Add(this.btnDT);
-            this.panel6.Location = new System.Drawing.Point(3, 567);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 58);
-            this.panel6.TabIndex = 1;
+            this.panelDT.Controls.Add(this.pictureBox9);
+            this.panelDT.Controls.Add(this.btnDT);
+            this.panelDT.Location = new System.Drawing.Point(3, 567);
+            this.panelDT.Name = "panelDT";
+            this.panelDT.Size = new System.Drawing.Size(239, 58);
+            this.panelDT.TabIndex = 1;
             // 
             // pictureBox9
             // 
@@ -464,14 +464,14 @@
             this.btnDT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDT.Click += new System.EventHandler(this.btnDT_Click);
             // 
-            // panel11
+            // panelHD
             // 
-            this.panel11.Controls.Add(this.pictureBox10);
-            this.panel11.Controls.Add(this.btnHD);
-            this.panel11.Location = new System.Drawing.Point(3, 631);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(230, 55);
-            this.panel11.TabIndex = 6;
+            this.panelHD.Controls.Add(this.pictureBox10);
+            this.panelHD.Controls.Add(this.btnHD);
+            this.panelHD.Location = new System.Drawing.Point(3, 631);
+            this.panelHD.Name = "panelHD";
+            this.panelHD.Size = new System.Drawing.Size(230, 55);
+            this.panelHD.TabIndex = 6;
             // 
             // pictureBox10
             // 
@@ -501,14 +501,14 @@
             this.btnHD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHD.Click += new System.EventHandler(this.btnHD_Click);
             // 
-            // panel9
+            // panelDV
             // 
-            this.panel9.Controls.Add(this.pictureBox6);
-            this.panel9.Controls.Add(this.btnDvu);
-            this.panel9.Location = new System.Drawing.Point(3, 692);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(230, 55);
-            this.panel9.TabIndex = 6;
+            this.panelDV.Controls.Add(this.pictureBox6);
+            this.panelDV.Controls.Add(this.btnDvu);
+            this.panelDV.Location = new System.Drawing.Point(3, 692);
+            this.panelDV.Name = "panelDV";
+            this.panelDV.Size = new System.Drawing.Size(230, 55);
+            this.panelDV.TabIndex = 6;
             // 
             // pictureBox6
             // 
@@ -538,15 +538,15 @@
             this.btnDvu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDvu.Click += new System.EventHandler(this.btnDV_Click);
             // 
-            // panel13
+            // panelTKhoan
             // 
-            this.panel13.Controls.Add(this.pictureBox14);
-            this.panel13.Controls.Add(this.btnTK);
-            this.panel13.Controls.Add(this.button4);
-            this.panel13.Location = new System.Drawing.Point(3, 753);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(230, 55);
-            this.panel13.TabIndex = 6;
+            this.panelTKhoan.Controls.Add(this.pictureBox14);
+            this.panelTKhoan.Controls.Add(this.btnTK);
+            this.panelTKhoan.Controls.Add(this.button4);
+            this.panelTKhoan.Location = new System.Drawing.Point(3, 753);
+            this.panelTKhoan.Name = "panelTKhoan";
+            this.panelTKhoan.Size = new System.Drawing.Size(230, 55);
+            this.panelTKhoan.TabIndex = 6;
             // 
             // pictureBox14
             // 
@@ -743,6 +743,15 @@
             this.panel12.Size = new System.Drawing.Size(291, 112);
             this.panel12.TabIndex = 0;
             // 
+            // labTenDN
+            // 
+            this.labTenDN.AutoSize = true;
+            this.labTenDN.Location = new System.Drawing.Point(107, 55);
+            this.labTenDN.Name = "labTenDN";
+            this.labTenDN.Size = new System.Drawing.Size(43, 16);
+            this.labTenDN.TabIndex = 2;
+            this.labTenDN.Text = "ntrg13";
+            // 
             // txtVaiTro
             // 
             this.txtVaiTro.AutoSize = true;
@@ -811,15 +820,6 @@
             this.timer1.Interval = 15;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // labTenDN
-            // 
-            this.labTenDN.AutoSize = true;
-            this.labTenDN.Location = new System.Drawing.Point(107, 55);
-            this.labTenDN.Name = "labTenDN";
-            this.labTenDN.Size = new System.Drawing.Size(43, 16);
-            this.labTenDN.TabIndex = 2;
-            this.labTenDN.Text = "ntrg13";
-            // 
             // AdminControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -838,27 +838,27 @@
             this.sidebar.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.panelTK.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panelBN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.panelBS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.panelNVTN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel8.ResumeLayout(false);
+            this.panelDS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel7.ResumeLayout(false);
+            this.panelPhong.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel17.ResumeLayout(false);
+            this.panelKThuoc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.panel6.ResumeLayout(false);
+            this.panelDT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel11.ResumeLayout(false);
+            this.panelHD.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel9.ResumeLayout(false);
+            this.panelDV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel13.ResumeLayout(false);
+            this.panelTKhoan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.navbar.ResumeLayout(false);
             this.navbar.PerformLayout();
@@ -890,16 +890,16 @@
         private System.Windows.Forms.Button btnTN;
         private System.Windows.Forms.Button btnPhong;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelBS;
+        private System.Windows.Forms.Panel panelBN;
+        private System.Windows.Forms.Panel panelTK;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelNVTN;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panelDT;
+        private System.Windows.Forms.Panel panelPhong;
+        private System.Windows.Forms.Panel panelDS;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel navbar;
         private System.Windows.Forms.Panel panelBody;
@@ -909,7 +909,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button btnDT;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panelHD;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button btnHD;
         private System.Windows.Forms.Panel panelUser;
@@ -928,15 +928,15 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btnChangePw;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panelDV;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panelTKhoan;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnDvu;
         private System.Windows.Forms.Button btnKhoThuoc;
-        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panelKThuoc;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label labTenDN;
     }
