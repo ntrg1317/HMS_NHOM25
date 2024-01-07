@@ -22,7 +22,7 @@ namespace HMS_NHOM25
                 // Query to get individual counts
                 string query = "SELECT 'BacSi' AS NhanVien, COUNT(*) AS SoLuong FROM bacSi " +
                                "UNION ALL " +
-                               "SELECT 'NhanVienYTe' AS NhanVien, COUNT(*) AS SoLuong FROM nhanVienYTe " +
+                               "SELECT 'DuocSi' AS NhanVien, COUNT(*) AS SoLuong FROM duocSi " +
                                "UNION ALL " +
                                "SELECT 'NhanVienThuNgan' AS NhanVien, COUNT(*) AS SoLuong FROM nhanVienThuNgan";
 
@@ -45,7 +45,7 @@ namespace HMS_NHOM25
                         case "BacSi":
                             point.LegendText = "Bác sĩ";
                             break;
-                        case "NhanVienYTe":
+                        case "DuocSi":
                             point.LegendText = "Dược sĩ";
                             break;
                         case "NhanVienThuNgan":

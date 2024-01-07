@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using HMS_NHOM25.Model;
 using System;
 using System.Collections.Generic;
@@ -10,9 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-=======
-﻿using System.Windows.Forms;
->>>>>>> f3faea4fa332c5d8d1b9563a77a7a480edd64fe8
 
 namespace HMS_NHOM25
 {
