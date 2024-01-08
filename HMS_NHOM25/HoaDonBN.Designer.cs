@@ -309,10 +309,10 @@
             this.palAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.palAddBS.Controls.Add(this.labHoaDon);
             this.palAddBS.Controls.Add(this.ptbYTe);
-            this.palAddBS.Location = new System.Drawing.Point(2, 11);
+            this.palAddBS.Location = new System.Drawing.Point(2, -1);
             this.palAddBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.palAddBS.Name = "palAddBS";
-            this.palAddBS.Size = new System.Drawing.Size(1100, 68);
+            this.palAddBS.Size = new System.Drawing.Size(1100, 80);
             this.palAddBS.TabIndex = 52;
             // 
             // ptbYTe

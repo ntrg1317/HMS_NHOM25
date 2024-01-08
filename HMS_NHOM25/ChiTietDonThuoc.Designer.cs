@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTxtMoTa = new System.Windows.Forms.RichTextBox();
             this.cmbTenThuoc = new System.Windows.Forms.ComboBox();
             this.labLieuDung = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             this.btnThemThuoc = new System.Windows.Forms.Button();
             this.btnThoatAddDonThuoc = new System.Windows.Forms.Button();
             this.btnSaveInfoDonThuoc = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.grbInfoDonThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDonThuoc)).BeginInit();
             this.SuspendLayout();
@@ -61,14 +62,23 @@
             this.grbInfoDonThuoc.Controls.Add(this.txtSoLuongThuoc);
             this.grbInfoDonThuoc.Controls.Add(this.labTenThuoc);
             this.grbInfoDonThuoc.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoDonThuoc.Location = new System.Drawing.Point(35, 24);
+            this.grbInfoDonThuoc.Location = new System.Drawing.Point(35, 87);
             this.grbInfoDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDonThuoc.Name = "grbInfoDonThuoc";
             this.grbInfoDonThuoc.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoDonThuoc.Size = new System.Drawing.Size(888, 221);
+            this.grbInfoDonThuoc.Size = new System.Drawing.Size(888, 197);
             this.grbInfoDonThuoc.TabIndex = 23;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Chi tiết kê thuốc ";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(610, 100);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(219, 72);
+            this.richTextBox1.TabIndex = 49;
+            this.richTextBox1.Text = "";
             // 
             // richTxtMoTa
             // 
@@ -139,7 +149,7 @@
             // 
             // txtTimKiemTenThuoc
             // 
-            this.txtTimKiemTenThuoc.Location = new System.Drawing.Point(222, 304);
+            this.txtTimKiemTenThuoc.Location = new System.Drawing.Point(222, 332);
             this.txtTimKiemTenThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemTenThuoc.Name = "txtTimKiemTenThuoc";
             this.txtTimKiemTenThuoc.Size = new System.Drawing.Size(218, 26);
@@ -150,7 +160,7 @@
             // 
             this.labTimKiemDT.AutoSize = true;
             this.labTimKiemDT.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemDT.Location = new System.Drawing.Point(47, 268);
+            this.labTimKiemDT.Location = new System.Drawing.Point(47, 296);
             this.labTimKiemDT.Name = "labTimKiemDT";
             this.labTimKiemDT.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemDT.TabIndex = 37;
@@ -160,7 +170,7 @@
             // 
             this.labTKTenThuoc.AutoSize = true;
             this.labTKTenThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTKTenThuoc.Location = new System.Drawing.Point(70, 310);
+            this.labTKTenThuoc.Location = new System.Drawing.Point(70, 338);
             this.labTKTenThuoc.Name = "labTKTenThuoc";
             this.labTKTenThuoc.Size = new System.Drawing.Size(80, 20);
             this.labTKTenThuoc.TabIndex = 37;
@@ -183,7 +193,7 @@
             // 
             this.btnCapNhatCTDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnCapNhatCTDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatCTDonThuoc.Location = new System.Drawing.Point(654, 291);
+            this.btnCapNhatCTDonThuoc.Location = new System.Drawing.Point(654, 319);
             this.btnCapNhatCTDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCapNhatCTDonThuoc.Name = "btnCapNhatCTDonThuoc";
             this.btnCapNhatCTDonThuoc.Size = new System.Drawing.Size(114, 39);
@@ -198,7 +208,7 @@
             this.btnXoaThuoc.ForeColor = System.Drawing.Color.Black;
             this.btnXoaThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaThuoc.Location = new System.Drawing.Point(820, 291);
+            this.btnXoaThuoc.Location = new System.Drawing.Point(820, 319);
             this.btnXoaThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaThuoc.Name = "btnXoaThuoc";
             this.btnXoaThuoc.Size = new System.Drawing.Size(102, 39);
@@ -213,7 +223,7 @@
             this.btnThemThuoc.ForeColor = System.Drawing.Color.Black;
             this.btnThemThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemThuoc.Location = new System.Drawing.Point(492, 291);
+            this.btnThemThuoc.Location = new System.Drawing.Point(492, 319);
             this.btnThemThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemThuoc.Name = "btnThemThuoc";
             this.btnThemThuoc.Size = new System.Drawing.Size(99, 39);
@@ -248,20 +258,24 @@
             this.btnSaveInfoDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveInfoDonThuoc.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // labAddBS
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(610, 100);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(219, 72);
-            this.richTextBox1.TabIndex = 49;
-            this.richTextBox1.Text = "";
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(349, 28);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(253, 32);
+            this.labAddBS.TabIndex = 48;
+            this.labAddBS.Text = "Chi tiết đơn thuốc";
             // 
             // ChiTietDonThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 719);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.btnThoatAddDonThuoc);
             this.Controls.Add(this.btnSaveInfoDonThuoc);
             this.Controls.Add(this.btnXoaThuoc);
@@ -303,5 +317,6 @@
         private System.Windows.Forms.RichTextBox richTxtMoTa;
         private System.Windows.Forms.Label labelMota;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label labAddBS;
     }
 }

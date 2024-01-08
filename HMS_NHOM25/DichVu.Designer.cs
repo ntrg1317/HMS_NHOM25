@@ -50,6 +50,7 @@
             this.btnThemDV = new System.Windows.Forms.Button();
             this.btnSuaBNDV = new System.Windows.Forms.Button();
             this.btnXoaBNDV = new System.Windows.Forms.Button();
+            this.labAddBS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDichVu)).BeginInit();
             this.grb.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -59,18 +60,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(778, 34);
+            this.label4.Location = new System.Drawing.Point(875, 42);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 16);
+            this.label4.Size = new System.Drawing.Size(53, 20);
             this.label4.TabIndex = 19;
             this.label4.Text = "(VNĐ)";
             // 
             // txtGiaDV
             // 
-            this.txtGiaDV.Location = new System.Drawing.Point(609, 28);
+            this.txtGiaDV.Location = new System.Drawing.Point(685, 35);
             this.txtGiaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaDV.Name = "txtGiaDV";
-            this.txtGiaDV.Size = new System.Drawing.Size(164, 22);
+            this.txtGiaDV.Size = new System.Drawing.Size(184, 26);
             this.txtGiaDV.TabIndex = 18;
             this.txtGiaDV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaDV_KeyPress);
             // 
@@ -78,9 +79,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(29, 266);
+            this.label2.Location = new System.Drawing.Point(33, 387);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 16);
+            this.label2.Size = new System.Drawing.Size(139, 20);
             this.label2.TabIndex = 34;
             this.label2.Text = "Danh sách dịch vụ";
             // 
@@ -93,13 +94,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInforDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInforDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInforDichVu.Location = new System.Drawing.Point(33, 294);
+            this.dgvInforDichVu.Location = new System.Drawing.Point(37, 430);
+            this.dgvInforDichVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvInforDichVu.Name = "dgvInforDichVu";
             this.dgvInforDichVu.ReadOnly = true;
             this.dgvInforDichVu.RowHeadersWidth = 51;
             this.dgvInforDichVu.RowTemplate.Height = 24;
             this.dgvInforDichVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInforDichVu.Size = new System.Drawing.Size(907, 433);
+            this.dgvInforDichVu.Size = new System.Drawing.Size(1020, 479);
             this.dgvInforDichVu.TabIndex = 32;
             this.dgvInforDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDichVu_CellClick);
             // 
@@ -107,28 +109,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(500, 34);
+            this.label1.Location = new System.Drawing.Point(562, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Giá dịch vụ";
             // 
             // txtMaDV
             // 
-            this.txtMaDV.Location = new System.Drawing.Point(164, 28);
+            this.txtMaDV.Location = new System.Drawing.Point(184, 35);
             this.txtMaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaDV.Name = "txtMaDV";
             this.txtMaDV.ReadOnly = true;
-            this.txtMaDV.Size = new System.Drawing.Size(164, 22);
+            this.txtMaDV.Size = new System.Drawing.Size(184, 26);
             this.txtMaDV.TabIndex = 13;
             // 
             // labTenBN
             // 
             this.labTenBN.AutoSize = true;
             this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBN.Location = new System.Drawing.Point(55, 70);
+            this.labTenBN.Location = new System.Drawing.Point(62, 88);
             this.labTenBN.Name = "labTenBN";
-            this.labTenBN.Size = new System.Drawing.Size(76, 16);
+            this.labTenBN.Size = new System.Drawing.Size(89, 20);
             this.labTenBN.TabIndex = 12;
             this.labTenBN.Text = "Tên dịch vụ";
             // 
@@ -136,9 +138,9 @@
             // 
             this.labMaBN.AutoSize = true;
             this.labMaBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaBN.Location = new System.Drawing.Point(55, 31);
+            this.labMaBN.Location = new System.Drawing.Point(62, 39);
             this.labMaBN.Name = "labMaBN";
-            this.labMaBN.Size = new System.Drawing.Size(71, 16);
+            this.labMaBN.Size = new System.Drawing.Size(84, 20);
             this.labMaBN.TabIndex = 11;
             this.labMaBN.Text = "Mã dịch vụ";
             // 
@@ -154,11 +156,11 @@
             this.grb.Controls.Add(this.labTenBN);
             this.grb.Controls.Add(this.labMaBN);
             this.grb.ForeColor = System.Drawing.Color.Red;
-            this.grb.Location = new System.Drawing.Point(29, 17);
+            this.grb.Location = new System.Drawing.Point(37, 94);
             this.grb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grb.Name = "grb";
             this.grb.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grb.Size = new System.Drawing.Size(890, 102);
+            this.grb.Size = new System.Drawing.Size(1001, 128);
             this.grb.TabIndex = 35;
             this.grb.TabStop = false;
             this.grb.Text = "Thông tin dịch vụ";
@@ -168,19 +170,20 @@
             this.cobTenDV.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cobTenDV.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cobTenDV.FormattingEnabled = true;
-            this.cobTenDV.Location = new System.Drawing.Point(164, 63);
+            this.cobTenDV.Location = new System.Drawing.Point(184, 79);
             this.cobTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobTenDV.Name = "cobTenDV";
-            this.cobTenDV.Size = new System.Drawing.Size(163, 24);
+            this.cobTenDV.Size = new System.Drawing.Size(183, 28);
             this.cobTenDV.TabIndex = 21;
             // 
             // dateNgayDung
             // 
             this.dateNgayDung.CustomFormat = "yyyy-MM-dd";
             this.dateNgayDung.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayDung.Location = new System.Drawing.Point(609, 65);
+            this.dateNgayDung.Location = new System.Drawing.Point(685, 81);
+            this.dateNgayDung.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateNgayDung.Name = "dateNgayDung";
-            this.dateNgayDung.Size = new System.Drawing.Size(164, 22);
+            this.dateNgayDung.Size = new System.Drawing.Size(184, 26);
             this.dateNgayDung.TabIndex = 20;
             this.dateNgayDung.Visible = false;
             // 
@@ -188,19 +191,19 @@
             // 
             this.lablNgayDung.AutoSize = true;
             this.lablNgayDung.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lablNgayDung.Location = new System.Drawing.Point(500, 68);
+            this.lablNgayDung.Location = new System.Drawing.Point(562, 85);
             this.lablNgayDung.Name = "lablNgayDung";
-            this.lablNgayDung.Size = new System.Drawing.Size(90, 16);
+            this.lablNgayDung.Size = new System.Drawing.Size(106, 20);
             this.lablNgayDung.TabIndex = 16;
             this.lablNgayDung.Text = "Ngày sử dụng";
             this.lablNgayDung.Visible = false;
             // 
             // txtTKTenDV
             // 
-            this.txtTKTenDV.Location = new System.Drawing.Point(164, 27);
+            this.txtTKTenDV.Location = new System.Drawing.Point(184, 34);
             this.txtTKTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTKTenDV.Name = "txtTKTenDV";
-            this.txtTKTenDV.Size = new System.Drawing.Size(164, 22);
+            this.txtTKTenDV.Size = new System.Drawing.Size(184, 26);
             this.txtTKTenDV.TabIndex = 36;
             this.txtTKTenDV.TextChanged += new System.EventHandler(this.txtTKTenDV_TextChanged);
             // 
@@ -208,9 +211,9 @@
             // 
             this.labTenPhong.AutoSize = true;
             this.labTenPhong.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenPhong.Location = new System.Drawing.Point(63, 32);
+            this.labTenPhong.Location = new System.Drawing.Point(71, 40);
             this.labTenPhong.Name = "labTenPhong";
-            this.labTenPhong.Size = new System.Drawing.Size(76, 16);
+            this.labTenPhong.Size = new System.Drawing.Size(89, 20);
             this.labTenPhong.TabIndex = 37;
             this.labTenPhong.Text = "Tên dịch vụ";
             // 
@@ -221,21 +224,21 @@
             this.groupBox1.Controls.Add(this.txtTKTenDV);
             this.groupBox1.Controls.Add(this.labTenPhong);
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(28, 135);
+            this.groupBox1.Location = new System.Drawing.Point(32, 251);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(891, 65);
+            this.groupBox1.Size = new System.Drawing.Size(1002, 81);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
             // 
             // txtSDTBN
             // 
-            this.txtSDTBN.Location = new System.Drawing.Point(610, 27);
+            this.txtSDTBN.Location = new System.Drawing.Point(686, 34);
             this.txtSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTBN.Name = "txtSDTBN";
-            this.txtSDTBN.Size = new System.Drawing.Size(164, 22);
+            this.txtSDTBN.Size = new System.Drawing.Size(184, 26);
             this.txtSDTBN.TabIndex = 39;
             this.txtSDTBN.TextChanged += new System.EventHandler(this.txtSDTBN_TextChanged);
             this.txtSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDTBN_KeyPress);
@@ -244,9 +247,9 @@
             // 
             this.labSDTBN.AutoSize = true;
             this.labSDTBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSDTBN.Location = new System.Drawing.Point(500, 32);
+            this.labSDTBN.Location = new System.Drawing.Point(562, 40);
             this.labSDTBN.Name = "labSDTBN";
-            this.labSDTBN.Size = new System.Drawing.Size(56, 16);
+            this.labSDTBN.Size = new System.Drawing.Size(67, 20);
             this.labSDTBN.TabIndex = 38;
             this.labSDTBN.Text = "SĐT BN";
             // 
@@ -255,10 +258,10 @@
             this.btnSuaDV.ForeColor = System.Drawing.Color.Black;
             this.btnSuaDV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaDV.Location = new System.Drawing.Point(444, 225);
+            this.btnSuaDV.Location = new System.Drawing.Point(500, 347);
             this.btnSuaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaDV.Name = "btnSuaDV";
-            this.btnSuaDV.Size = new System.Drawing.Size(107, 31);
+            this.btnSuaDV.Size = new System.Drawing.Size(120, 39);
             this.btnSuaDV.TabIndex = 40;
             this.btnSuaDV.Text = "Cập nhật";
             this.btnSuaDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -270,10 +273,10 @@
             this.btnXoaDV.ForeColor = System.Drawing.Color.Black;
             this.btnXoaDV.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDV.Location = new System.Drawing.Point(716, 225);
+            this.btnXoaDV.Location = new System.Drawing.Point(806, 347);
             this.btnXoaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDV.Name = "btnXoaDV";
-            this.btnXoaDV.Size = new System.Drawing.Size(85, 31);
+            this.btnXoaDV.Size = new System.Drawing.Size(96, 39);
             this.btnXoaDV.TabIndex = 39;
             this.btnXoaDV.Text = "Xóa";
             this.btnXoaDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -285,10 +288,10 @@
             this.btnThemDV.ForeColor = System.Drawing.Color.Black;
             this.btnThemDV.Image = global::HMS_NHOM25.Properties.Resources.add2;
             this.btnThemDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDV.Location = new System.Drawing.Point(193, 225);
+            this.btnThemDV.Location = new System.Drawing.Point(217, 347);
             this.btnThemDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDV.Name = "btnThemDV";
-            this.btnThemDV.Size = new System.Drawing.Size(88, 31);
+            this.btnThemDV.Size = new System.Drawing.Size(99, 39);
             this.btnThemDV.TabIndex = 38;
             this.btnThemDV.Text = "Thêm";
             this.btnThemDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -300,10 +303,10 @@
             this.btnSuaBNDV.ForeColor = System.Drawing.Color.Black;
             this.btnSuaBNDV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBNDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBNDV.Location = new System.Drawing.Point(444, 225);
+            this.btnSuaBNDV.Location = new System.Drawing.Point(500, 347);
             this.btnSuaBNDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBNDV.Name = "btnSuaBNDV";
-            this.btnSuaBNDV.Size = new System.Drawing.Size(107, 31);
+            this.btnSuaBNDV.Size = new System.Drawing.Size(120, 39);
             this.btnSuaBNDV.TabIndex = 40;
             this.btnSuaBNDV.Text = "Cập nhật";
             this.btnSuaBNDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,10 +319,10 @@
             this.btnXoaBNDV.ForeColor = System.Drawing.Color.Black;
             this.btnXoaBNDV.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBNDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBNDV.Location = new System.Drawing.Point(716, 225);
+            this.btnXoaBNDV.Location = new System.Drawing.Point(806, 347);
             this.btnXoaBNDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBNDV.Name = "btnXoaBNDV";
-            this.btnXoaBNDV.Size = new System.Drawing.Size(85, 31);
+            this.btnXoaBNDV.Size = new System.Drawing.Size(96, 39);
             this.btnXoaBNDV.TabIndex = 39;
             this.btnXoaBNDV.Text = "Xóa";
             this.btnXoaBNDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -327,12 +330,25 @@
             this.btnXoaBNDV.Visible = false;
             this.btnXoaBNDV.Click += new System.EventHandler(this.btnXoaBNDV_Click);
             // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(398, 28);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(263, 32);
+            this.labAddBS.TabIndex = 0;
+            this.labAddBS.Text = "Danh sách dịch vụ";
+            // 
             // DichVu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(1091, 930);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.btnSuaBNDV);
             this.Controls.Add(this.btnSuaDV);
             this.Controls.Add(this.btnXoaBNDV);
@@ -380,5 +396,6 @@
         private System.Windows.Forms.Button btnSuaBNDV;
         private System.Windows.Forms.Button btnXoaBNDV;
         private System.Windows.Forms.ComboBox cobTenDV;
+        private System.Windows.Forms.Label labAddBS;
     }
 }
