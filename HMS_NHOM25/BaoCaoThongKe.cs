@@ -75,7 +75,6 @@ namespace HMS_NHOM25
 
         private void btnTKHoaDonThanhToan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ThongKeHoaDon_ThanhToan(), btnTKHoaDonThanhToan);
         }
 
         private void btnTKDoanhthu_Click(object sender, EventArgs e)

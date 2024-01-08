@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+=======
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.labTKBenhNhan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chartTyLeTangTruong = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -77,6 +86,33 @@
             // 
             // chartTyLeTangTruong
             // 
+<<<<<<< HEAD
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.Title = "Tháng";
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.Title = "Tỷ lệ tăng trưởng (%)";
+            chartArea1.Name = "ChartArea1";
+            this.chartTyLeTangTruong.ChartAreas.Add(chartArea1);
+            legend1.Alignment = System.Drawing.StringAlignment.Far;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend1.Name = "Legend1";
+            this.chartTyLeTangTruong.Legends.Add(legend1);
+            this.chartTyLeTangTruong.Location = new System.Drawing.Point(231, 406);
+            this.chartTyLeTangTruong.Name = "chartTyLeTangTruong";
+            this.chartTyLeTangTruong.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Color = System.Drawing.Color.HotPink;
+            series1.Legend = "Legend1";
+            series1.MarkerBorderColor = System.Drawing.Color.White;
+            series1.MarkerColor = System.Drawing.Color.MediumVioletRed;
+            series1.MarkerSize = 8;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
+            series1.Name = "Tỷ lệ tăng trưởng (%)";
+            this.chartTyLeTangTruong.Series.Add(series1);
+            this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
+=======
             chartArea3.AxisX.MajorGrid.Enabled = false;
             chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
             chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
@@ -100,6 +136,7 @@
             series3.Name = "Tỷ lệ tăng trưởng (%)";
             this.chartTyLeTangTruong.Series.Add(series3);
             this.chartTyLeTangTruong.Size = new System.Drawing.Size(645, 286);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.chartTyLeTangTruong.TabIndex = 10;
             this.chartTyLeTangTruong.Text = "chartTKDauBung";
             // 
@@ -113,11 +150,39 @@
             this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
             this.dgvTyLeTangTruong.RowHeadersWidth = 51;
             this.dgvTyLeTangTruong.RowTemplate.Height = 24;
+<<<<<<< HEAD
+            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
+=======
             this.dgvTyLeTangTruong.Size = new System.Drawing.Size(217, 286);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.dgvTyLeTangTruong.TabIndex = 9;
             // 
             // chartDoanhThu
             // 
+<<<<<<< HEAD
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.Title = "Tháng";
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Title = "Tổng tiền (VNĐ)";
+            chartArea2.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea2);
+            legend2.Alignment = System.Drawing.StringAlignment.Far;
+            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend2.MaximumAutoSize = 30F;
+            legend2.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend2);
+            this.chartDoanhThu.Location = new System.Drawing.Point(231, 54);
+            this.chartDoanhThu.Name = "chartDoanhThu";
+            this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.DeepPink;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Doanh thu (VNĐ)";
+            this.chartDoanhThu.Series.Add(series2);
+            this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
+=======
             chartArea4.AxisX.MajorGrid.Enabled = false;
             chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
             chartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
@@ -138,6 +203,7 @@
             series4.Name = "Doanh thu (VNĐ)";
             this.chartDoanhThu.Series.Add(series4);
             this.chartDoanhThu.Size = new System.Drawing.Size(645, 323);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.chartDoanhThu.TabIndex = 8;
             this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
             // 

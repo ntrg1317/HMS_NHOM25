@@ -49,7 +49,11 @@ namespace HMS_NHOM25
 
                 string queryTyLeTangTruong = "WITH DoanhThuTheoThang AS (SELECT " +
                     "MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
+<<<<<<< HEAD
+                    "FROM hoaDon WHERE YEAR(NgayTT) = 2023" +
+=======
                     "FROM hoaDon WHERE YEAR(NgayTT) = 2023 " +
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
                     "GROUP BY MONTH(NgayTT)) " +
                     "SELECT Thang, (DoanhThu - LAG(DoanhThu) OVER(ORDER BY Thang)) / LAG(DoanhThu) OVER(ORDER BY Thang) * 100 AS TyLeTangTruong " +
                     "FROM DoanhThuTheoThang;";

@@ -39,24 +39,23 @@
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvCacLoaiBenh = new System.Windows.Forms.DataGridView();
             this.chartTKLoaiBenh = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvDauCo2023 = new System.Windows.Forms.DataGridView();
+            this.dgvDauDauNam = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.chartTKDauCo = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dgvCacLoaiBenh = new System.Windows.Forms.DataGridView();
-            this.dgvDauDauNam = new System.Windows.Forms.DataGridView();
-            this.dgvDauCo2023 = new System.Windows.Forms.DataGridView();
             this.chartTKDauDau = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCacLoaiBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCacLoaiBenh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDauDauNam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauCo2023)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDauDauNam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,18 +81,35 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(5, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(709, 366);
+            this.panel3.Size = new System.Drawing.Size(709, 405);
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // dgvCacLoaiBenh
+            // 
+            this.dgvCacLoaiBenh.AllowUserToAddRows = false;
+            this.dgvCacLoaiBenh.AllowUserToDeleteRows = false;
+            this.dgvCacLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCacLoaiBenh.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCacLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCacLoaiBenh.Location = new System.Drawing.Point(20, 54);
+            this.dgvCacLoaiBenh.Name = "dgvCacLoaiBenh";
+            this.dgvCacLoaiBenh.ReadOnly = true;
+            this.dgvCacLoaiBenh.RowHeadersWidth = 51;
+            this.dgvCacLoaiBenh.RowTemplate.Height = 24;
+            this.dgvCacLoaiBenh.Size = new System.Drawing.Size(199, 339);
+            this.dgvCacLoaiBenh.TabIndex = 7;
+            // 
             // chartTKLoaiBenh
             // 
-            this.chartTKLoaiBenh.BorderSkin.BackColor = System.Drawing.Color.White;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.chartTKLoaiBenh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.chartTKLoaiBenh.BorderSkin.BackColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.Title = "Tên bệnh";
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.Title = "Số lượng";
             chartArea1.Name = "ChartArea1";
             this.chartTKLoaiBenh.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -108,7 +124,7 @@
             series1.Name = "Bệnh nhân";
             series1.ShadowColor = System.Drawing.Color.DarkGray;
             this.chartTKLoaiBenh.Series.Add(series1);
-            this.chartTKLoaiBenh.Size = new System.Drawing.Size(448, 300);
+            this.chartTKLoaiBenh.Size = new System.Drawing.Size(448, 339);
             this.chartTKLoaiBenh.TabIndex = 4;
             this.chartTKLoaiBenh.Text = "chartTKLoaiBenh";
             // 
@@ -133,32 +149,64 @@
             this.panel4.Controls.Add(this.chartTKDauCo);
             this.panel4.Controls.Add(this.chartTKDauDau);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(5, 463);
+            this.panel4.Location = new System.Drawing.Point(5, 506);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(709, 584);
             this.panel4.TabIndex = 4;
+            // 
+            // dgvDauCo2023
+            // 
+            this.dgvDauCo2023.AllowUserToAddRows = false;
+            this.dgvDauCo2023.AllowUserToDeleteRows = false;
+            this.dgvDauCo2023.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDauCo2023.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDauCo2023.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDauCo2023.Location = new System.Drawing.Point(20, 343);
+            this.dgvDauCo2023.Name = "dgvDauCo2023";
+            this.dgvDauCo2023.ReadOnly = true;
+            this.dgvDauCo2023.RowHeadersWidth = 51;
+            this.dgvDauCo2023.RowTemplate.Height = 24;
+            this.dgvDauCo2023.Size = new System.Drawing.Size(199, 216);
+            this.dgvDauCo2023.TabIndex = 9;
+            // 
+            // dgvDauDauNam
+            // 
+            this.dgvDauDauNam.AllowUserToAddRows = false;
+            this.dgvDauDauNam.AllowUserToDeleteRows = false;
+            this.dgvDauDauNam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDauDauNam.BackgroundColor = System.Drawing.Color.White;
+            this.dgvDauDauNam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDauDauNam.Location = new System.Drawing.Point(20, 51);
+            this.dgvDauDauNam.Name = "dgvDauDauNam";
+            this.dgvDauDauNam.ReadOnly = true;
+            this.dgvDauDauNam.RowHeadersWidth = 51;
+            this.dgvDauDauNam.RowTemplate.Height = 24;
+            this.dgvDauDauNam.Size = new System.Drawing.Size(199, 216);
+            this.dgvDauDauNam.TabIndex = 8;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(134, 311);
+            this.label6.Location = new System.Drawing.Point(225, 296);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(405, 17);
+            this.label6.Size = new System.Drawing.Size(317, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Thống kê số bệnh nhân đau cơ năm 2023 (theo tháng)";
+            this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
             // 
             // chartTKDauCo
             // 
             chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.Title = "Tháng";
             chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
             chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Title = "Số lượng";
             chartArea2.Name = "ChartArea1";
             this.chartTKDauCo.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             legend2.Position.Auto = false;
             legend2.Position.Height = 13.48837F;
-            legend2.Position.Width = 27.96421F;
+            legend2.Position.Width = 27.9642F;
             legend2.Position.X = 72.0358F;
             legend2.Position.Y = 5F;
             this.chartTKDauCo.Legends.Add(legend2);
@@ -178,50 +226,22 @@
             this.chartTKDauCo.TabIndex = 5;
             this.chartTKDauCo.Text = "chartTKDauBung";
             // 
-            this.label6.Location = new System.Drawing.Point(382, 332);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(317, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(134, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(483, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Thống kê số bệnh nhân đau đầu theo năm (giai đoạn 2020-2024)";
-            // 
-            // dgvCacLoaiBenh
-            // 
-            this.dgvCacLoaiBenh.AllowUserToAddRows = false;
-            this.dgvCacLoaiBenh.AllowUserToDeleteRows = false;
-            this.dgvCacLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCacLoaiBenh.BackgroundColor = System.Drawing.Color.White;
-            this.dgvCacLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCacLoaiBenh.Location = new System.Drawing.Point(20, 54);
-            this.dgvCacLoaiBenh.Name = "dgvCacLoaiBenh";
-            this.dgvCacLoaiBenh.ReadOnly = true;
-            this.dgvCacLoaiBenh.RowHeadersWidth = 51;
-            this.dgvCacLoaiBenh.RowTemplate.Height = 24;
-            this.dgvCacLoaiBenh.Size = new System.Drawing.Size(199, 300);
-            this.dgvCacLoaiBenh.TabIndex = 7;
-            // 
             // chartTKDauDau
             // 
             chartArea3.AxisX.MajorGrid.Enabled = false;
+            chartArea3.AxisX.Title = "Năm";
             chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray;
             chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea3.AxisY.MajorTickMark.LineColor = System.Drawing.Color.DarkGray;
             chartArea3.AxisY.MajorTickMark.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea3.AxisY.Title = "Số lượng";
+            chartArea3.BorderColor = System.Drawing.Color.BlanchedAlmond;
             chartArea3.Name = "ChartArea1";
             this.chartTKDauDau.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             legend3.Position.Auto = false;
             legend3.Position.Height = 13.48837F;
-            legend3.Position.Width = 27.96421F;
+            legend3.Position.Width = 27.9642F;
             legend3.Position.X = 72.0358F;
             legend3.Position.Y = 5F;
             this.chartTKDauDau.Legends.Add(legend3);
@@ -240,36 +260,11 @@
             this.chartTKDauDau.TabIndex = 4;
             this.chartTKDauDau.Text = "chartTKDauBung";
             // 
-            // dgvDauDauNam
+            // label5
             // 
-            this.dgvDauDauNam.AllowUserToAddRows = false;
-            this.dgvDauDauNam.AllowUserToDeleteRows = false;
-            this.dgvDauDauNam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDauDauNam.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDauDauNam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDauDauNam.Location = new System.Drawing.Point(20, 51);
-            this.dgvDauDauNam.Name = "dgvDauDauNam";
-            this.dgvDauDauNam.ReadOnly = true;
-            this.dgvDauDauNam.RowHeadersWidth = 51;
-            this.dgvDauDauNam.RowTemplate.Height = 24;
-            this.dgvDauDauNam.Size = new System.Drawing.Size(199, 216);
-            this.dgvDauDauNam.TabIndex = 8;
-            // 
-            // dgvDauCo2023
-            // 
-            this.dgvDauCo2023.AllowUserToAddRows = false;
-            this.dgvDauCo2023.AllowUserToDeleteRows = false;
-            this.dgvDauCo2023.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDauCo2023.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDauCo2023.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDauCo2023.Location = new System.Drawing.Point(20, 343);
-            this.dgvDauCo2023.Name = "dgvDauCo2023";
-            this.dgvDauCo2023.ReadOnly = true;
-            this.dgvDauCo2023.RowHeadersWidth = 51;
-            this.dgvDauCo2023.RowTemplate.Height = 24;
-            this.dgvDauCo2023.Size = new System.Drawing.Size(199, 216);
-            this.dgvDauCo2023.TabIndex = 9;
-            this.label5.Location = new System.Drawing.Point(31, 332);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(225, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(316, 17);
             this.label5.TabIndex = 1;
@@ -287,14 +282,13 @@
             this.Load += new System.EventHandler(this.ThongKeBenhLy_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCacLoaiBenh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKLoaiBenh)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCacLoaiBenh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDauDauNam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDauCo2023)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDauDauNam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKDauCo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDauDau)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -306,9 +300,7 @@
         private System.Windows.Forms.Label labSLBN2023;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource soLuongBNtheoNamBindingSource;
-        private System.Windows.Forms.BindingSource hMSDataSet2BindingSource;
         private System.Windows.Forms.Label labTKBenhNhan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
