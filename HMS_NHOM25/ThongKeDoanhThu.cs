@@ -28,7 +28,7 @@ namespace HMS_NHOM25
             {
                 connection.Open();
 
-                string queryDoanhThu = "SELECT MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu" +
+                string queryDoanhThu = "SELECT MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
                     "FROM hoaDon WHERE YEAR(NgayTT) = 2023 " +
                     "GROUP BY MONTH(NgayTT) ORDER BY Thang;";
 
@@ -47,11 +47,11 @@ namespace HMS_NHOM25
             {
                 connection.Open();
 
-                string queryTyLeTangTruong = "WITH DoanhThuTheoThang AS (SELECT" +
-                    "MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu" +
+                string queryTyLeTangTruong = "WITH DoanhThuTheoThang AS (SELECT " +
+                    "MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
                     "FROM hoaDon WHERE YEAR(NgayTT) = 2023" +
-                    "GROUP BY MONTH(NgayTT))" +
-                    "SELECT Thang, (DoanhThu - LAG(DoanhThu) OVER(ORDER BY Thang)) / LAG(DoanhThu) OVER(ORDER BY Thang) * 100 AS TyLeTangTruong" +
+                    "GROUP BY MONTH(NgayTT)) " +
+                    "SELECT Thang, (DoanhThu - LAG(DoanhThu) OVER(ORDER BY Thang)) / LAG(DoanhThu) OVER(ORDER BY Thang) * 100 AS TyLeTangTruong " +
                     "FROM DoanhThuTheoThang;";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(queryTyLeTangTruong, connection);

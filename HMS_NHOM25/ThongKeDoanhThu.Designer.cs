@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labTKBenhNhan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.chartTyLeTangTruong = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dgvTyLeTangTruong = new System.Windows.Forms.DataGridView();
+            this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvDoanhThu = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dgvTyLeTangTruong = new System.Windows.Forms.DataGridView();
-            this.chartTyLeTangTruong = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTyLeTangTruong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTyLeTangTruong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTyLeTangTruong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).BeginInit();
             this.SuspendLayout();
             // 
             // labTKBenhNhan
@@ -75,6 +75,76 @@
             this.panel3.Size = new System.Drawing.Size(915, 813);
             this.panel3.TabIndex = 5;
             // 
+            // chartTyLeTangTruong
+            // 
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.Title = "Tháng";
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.Title = "Tỷ lệ tăng trưởng (%)";
+            chartArea1.Name = "ChartArea1";
+            this.chartTyLeTangTruong.ChartAreas.Add(chartArea1);
+            legend1.Alignment = System.Drawing.StringAlignment.Far;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend1.Name = "Legend1";
+            this.chartTyLeTangTruong.Legends.Add(legend1);
+            this.chartTyLeTangTruong.Location = new System.Drawing.Point(231, 406);
+            this.chartTyLeTangTruong.Name = "chartTyLeTangTruong";
+            this.chartTyLeTangTruong.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Color = System.Drawing.Color.HotPink;
+            series1.Legend = "Legend1";
+            series1.MarkerBorderColor = System.Drawing.Color.White;
+            series1.MarkerColor = System.Drawing.Color.MediumVioletRed;
+            series1.MarkerSize = 8;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
+            series1.Name = "Tỷ lệ tăng trưởng (%)";
+            this.chartTyLeTangTruong.Series.Add(series1);
+            this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
+            this.chartTyLeTangTruong.TabIndex = 10;
+            this.chartTyLeTangTruong.Text = "chartTKDauBung";
+            // 
+            // dgvTyLeTangTruong
+            // 
+            this.dgvTyLeTangTruong.AllowUserToDeleteRows = false;
+            this.dgvTyLeTangTruong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTyLeTangTruong.BackgroundColor = System.Drawing.Color.White;
+            this.dgvTyLeTangTruong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTyLeTangTruong.Location = new System.Drawing.Point(20, 406);
+            this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
+            this.dgvTyLeTangTruong.RowHeadersWidth = 51;
+            this.dgvTyLeTangTruong.RowTemplate.Height = 24;
+            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
+            this.dgvTyLeTangTruong.TabIndex = 9;
+            // 
+            // chartDoanhThu
+            // 
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.Title = "Tháng";
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.Title = "Tổng tiền (VNĐ)";
+            chartArea2.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea2);
+            legend2.Alignment = System.Drawing.StringAlignment.Far;
+            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend2.MaximumAutoSize = 30F;
+            legend2.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend2);
+            this.chartDoanhThu.Location = new System.Drawing.Point(231, 54);
+            this.chartDoanhThu.Name = "chartDoanhThu";
+            this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series2.ChartArea = "ChartArea1";
+            series2.Color = System.Drawing.Color.DeepPink;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Doanh thu (VNĐ)";
+            this.chartDoanhThu.Series.Add(series2);
+            this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
+            this.chartDoanhThu.TabIndex = 8;
+            this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
+            // 
             // dgvDoanhThu
             // 
             this.dgvDoanhThu.AllowUserToDeleteRows = false;
@@ -99,72 +169,6 @@
             this.label4.Text = "Thống kê doanh thu và tỷ lệ tăng trưởng doanh thu trong năm 2023 (theo thán" +
     "g) ";
             // 
-            // chartDoanhThu
-            // 
-            chartArea2.AxisX.MajorGrid.Enabled = false;
-            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea2.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea2);
-            legend2.Alignment = System.Drawing.StringAlignment.Far;
-            legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend2.MaximumAutoSize = 30F;
-            legend2.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend2);
-            this.chartDoanhThu.Location = new System.Drawing.Point(231, 54);
-            this.chartDoanhThu.Name = "chartDoanhThu";
-            this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series2.ChartArea = "ChartArea1";
-            series2.Color = System.Drawing.Color.DeepPink;
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Doanh thu (VNĐ)";
-            this.chartDoanhThu.Series.Add(series2);
-            this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
-            this.chartDoanhThu.TabIndex = 8;
-            this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
-            // 
-            // dgvTyLeTangTruong
-            // 
-            this.dgvTyLeTangTruong.AllowUserToDeleteRows = false;
-            this.dgvTyLeTangTruong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTyLeTangTruong.BackgroundColor = System.Drawing.Color.White;
-            this.dgvTyLeTangTruong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTyLeTangTruong.Location = new System.Drawing.Point(20, 406);
-            this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
-            this.dgvTyLeTangTruong.RowHeadersWidth = 51;
-            this.dgvTyLeTangTruong.RowTemplate.Height = 24;
-            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
-            this.dgvTyLeTangTruong.TabIndex = 9;
-            // 
-            // chartTyLeTangTruong
-            // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.Name = "ChartArea1";
-            this.chartTyLeTangTruong.ChartAreas.Add(chartArea1);
-            legend1.Alignment = System.Drawing.StringAlignment.Far;
-            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend1.Name = "Legend1";
-            this.chartTyLeTangTruong.Legends.Add(legend1);
-            this.chartTyLeTangTruong.Location = new System.Drawing.Point(231, 406);
-            this.chartTyLeTangTruong.Name = "chartTyLeTangTruong";
-            this.chartTyLeTangTruong.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Color = System.Drawing.Color.HotPink;
-            series1.Legend = "Legend1";
-            series1.MarkerBorderColor = System.Drawing.Color.White;
-            series1.MarkerColor = System.Drawing.Color.MediumVioletRed;
-            series1.MarkerSize = 8;
-            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
-            series1.Name = "Tỷ lệ tăng trưởng (%)";
-            this.chartTyLeTangTruong.Series.Add(series1);
-            this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
-            this.chartTyLeTangTruong.TabIndex = 10;
-            this.chartTyLeTangTruong.Text = "chartTKDauBung";
-            // 
             // ThongKeDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,10 +183,10 @@
             this.Load += new System.EventHandler(this.ThongKeDoanhThu_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTyLeTangTruong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTyLeTangTruong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTyLeTangTruong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhThu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

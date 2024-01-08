@@ -30,7 +30,6 @@
         {
             this.panelDanhMuc = new System.Windows.Forms.Panel();
             this.btnTKDoanhthu = new System.Windows.Forms.Button();
-            this.btnTKHoaDonThanhToan = new System.Windows.Forms.Button();
             this.btnTKPhong = new System.Windows.Forms.Button();
             this.btnTKThuoc = new System.Windows.Forms.Button();
             this.btnTKNhansu = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             // 
             this.panelDanhMuc.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panelDanhMuc.Controls.Add(this.btnTKDoanhthu);
-            this.panelDanhMuc.Controls.Add(this.btnTKHoaDonThanhToan);
             this.panelDanhMuc.Controls.Add(this.btnTKPhong);
             this.panelDanhMuc.Controls.Add(this.btnTKThuoc);
             this.panelDanhMuc.Controls.Add(this.btnTKNhansu);
@@ -63,37 +61,23 @@
             this.btnTKDoanhthu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTKDoanhthu.BackColor = System.Drawing.Color.Lavender;
             this.btnTKDoanhthu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKDoanhthu.Location = new System.Drawing.Point(822, 0);
+            this.btnTKDoanhthu.Location = new System.Drawing.Point(805, 0);
             this.btnTKDoanhthu.Name = "btnTKDoanhthu";
-            this.btnTKDoanhthu.Size = new System.Drawing.Size(148, 51);
+            this.btnTKDoanhthu.Size = new System.Drawing.Size(160, 51);
             this.btnTKDoanhthu.TabIndex = 6;
             this.btnTKDoanhthu.Text = "Thống kê doanh thu";
             this.btnTKDoanhthu.UseVisualStyleBackColor = false;
             this.btnTKDoanhthu.Click += new System.EventHandler(this.btnTKDoanhthu_Click);
             this.btnTKDoanhthu.Resize += new System.EventHandler(this.btnTKDoanhthu_Resize);
             // 
-            // btnTKHoaDonThanhToan
-            // 
-            this.btnTKHoaDonThanhToan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnTKHoaDonThanhToan.BackColor = System.Drawing.Color.Lavender;
-            this.btnTKHoaDonThanhToan.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKHoaDonThanhToan.Location = new System.Drawing.Point(685, 0);
-            this.btnTKHoaDonThanhToan.Name = "btnTKHoaDonThanhToan";
-            this.btnTKHoaDonThanhToan.Size = new System.Drawing.Size(137, 51);
-            this.btnTKHoaDonThanhToan.TabIndex = 5;
-            this.btnTKHoaDonThanhToan.Text = "Thống kê hóa đơn & thanh toán";
-            this.btnTKHoaDonThanhToan.UseVisualStyleBackColor = false;
-            this.btnTKHoaDonThanhToan.Click += new System.EventHandler(this.btnTKHoaDonThanhToan_Click);
-            this.btnTKHoaDonThanhToan.Resize += new System.EventHandler(this.btnTKDoanhthu_Resize);
-            // 
             // btnTKPhong
             // 
             this.btnTKPhong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTKPhong.BackColor = System.Drawing.Color.Lavender;
             this.btnTKPhong.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKPhong.Location = new System.Drawing.Point(548, 0);
+            this.btnTKPhong.Location = new System.Drawing.Point(645, 0);
             this.btnTKPhong.Name = "btnTKPhong";
-            this.btnTKPhong.Size = new System.Drawing.Size(137, 51);
+            this.btnTKPhong.Size = new System.Drawing.Size(160, 51);
             this.btnTKPhong.TabIndex = 4;
             this.btnTKPhong.Text = "Thống kê phòng";
             this.btnTKPhong.UseVisualStyleBackColor = false;
@@ -105,9 +89,9 @@
             this.btnTKThuoc.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTKThuoc.BackColor = System.Drawing.Color.Lavender;
             this.btnTKThuoc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKThuoc.Location = new System.Drawing.Point(411, 0);
+            this.btnTKThuoc.Location = new System.Drawing.Point(485, 0);
             this.btnTKThuoc.Name = "btnTKThuoc";
-            this.btnTKThuoc.Size = new System.Drawing.Size(137, 51);
+            this.btnTKThuoc.Size = new System.Drawing.Size(160, 51);
             this.btnTKThuoc.TabIndex = 3;
             this.btnTKThuoc.Text = "Thống kê thuốc";
             this.btnTKThuoc.UseVisualStyleBackColor = false;
@@ -119,9 +103,9 @@
             this.btnTKNhansu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTKNhansu.BackColor = System.Drawing.Color.Lavender;
             this.btnTKNhansu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKNhansu.Location = new System.Drawing.Point(274, 0);
+            this.btnTKNhansu.Location = new System.Drawing.Point(325, 0);
             this.btnTKNhansu.Name = "btnTKNhansu";
-            this.btnTKNhansu.Size = new System.Drawing.Size(137, 51);
+            this.btnTKNhansu.Size = new System.Drawing.Size(160, 51);
             this.btnTKNhansu.TabIndex = 2;
             this.btnTKNhansu.Text = "Thống kê nhân sự";
             this.btnTKNhansu.UseVisualStyleBackColor = false;
@@ -133,9 +117,9 @@
             this.btnTKBenhly.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTKBenhly.BackColor = System.Drawing.Color.Lavender;
             this.btnTKBenhly.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnTKBenhly.Location = new System.Drawing.Point(137, 0);
+            this.btnTKBenhly.Location = new System.Drawing.Point(165, 0);
             this.btnTKBenhly.Name = "btnTKBenhly";
-            this.btnTKBenhly.Size = new System.Drawing.Size(137, 51);
+            this.btnTKBenhly.Size = new System.Drawing.Size(160, 51);
             this.btnTKBenhly.TabIndex = 1;
             this.btnTKBenhly.Text = "Thống kê bệnh lý";
             this.btnTKBenhly.UseVisualStyleBackColor = false;
@@ -149,7 +133,7 @@
             this.btnTKBenhNhan.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTKBenhNhan.Location = new System.Drawing.Point(0, 0);
             this.btnTKBenhNhan.Name = "btnTKBenhNhan";
-            this.btnTKBenhNhan.Size = new System.Drawing.Size(137, 51);
+            this.btnTKBenhNhan.Size = new System.Drawing.Size(165, 51);
             this.btnTKBenhNhan.TabIndex = 0;
             this.btnTKBenhNhan.Text = "Thống kê bệnh nhân";
             this.btnTKBenhNhan.UseVisualStyleBackColor = false;
@@ -184,7 +168,6 @@
         private System.Windows.Forms.Panel panelDanhMuc;
         private System.Windows.Forms.Button btnTKBenhNhan;
         private System.Windows.Forms.Button btnTKDoanhthu;
-        private System.Windows.Forms.Button btnTKHoaDonThanhToan;
         private System.Windows.Forms.Button btnTKPhong;
         private System.Windows.Forms.Button btnTKThuoc;
         private System.Windows.Forms.Button btnTKNhansu;
