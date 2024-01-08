@@ -146,6 +146,12 @@
     <Compile Include="AddThuoc.Designer.cs">
       <DependentUpon>AddThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="BacSiControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BacSiControl.Designer.cs">
+      <DependentUpon>BacSiControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddThuoc.resx">
       <DependentUpon>AddThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BacSiControl.resx">
+      <DependentUpon>BacSiControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoThongKe.resx">
       <DependentUpon>BaoCaoThongKe.cs</DependentUpon>

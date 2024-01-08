@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+=======
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.labTKBenhNhan = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chartTyLeTangTruong = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -54,7 +63,7 @@
             this.labTKBenhNhan.BackColor = System.Drawing.Color.Lavender;
             this.labTKBenhNhan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labTKBenhNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTKBenhNhan.Location = new System.Drawing.Point(367, 27);
+            this.labTKBenhNhan.Location = new System.Drawing.Point(330, 27);
             this.labTKBenhNhan.Name = "labTKBenhNhan";
             this.labTKBenhNhan.Size = new System.Drawing.Size(284, 38);
             this.labTKBenhNhan.TabIndex = 1;
@@ -72,11 +81,12 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(915, 813);
+            this.panel3.Size = new System.Drawing.Size(948, 813);
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
             // 
+<<<<<<< HEAD
             chartArea1.AxisX.MajorGrid.Enabled = false;
             chartArea1.AxisX.Title = "Tháng";
             chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
@@ -102,6 +112,31 @@
             series1.Name = "Tỷ lệ tăng trưởng (%)";
             this.chartTyLeTangTruong.Series.Add(series1);
             this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
+=======
+            chartArea3.AxisX.MajorGrid.Enabled = false;
+            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkGray;
+            chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea3.Name = "ChartArea1";
+            this.chartTyLeTangTruong.ChartAreas.Add(chartArea3);
+            legend3.Alignment = System.Drawing.StringAlignment.Far;
+            legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend3.Name = "Legend1";
+            this.chartTyLeTangTruong.Legends.Add(legend3);
+            this.chartTyLeTangTruong.Location = new System.Drawing.Point(259, 406);
+            this.chartTyLeTangTruong.Name = "chartTyLeTangTruong";
+            this.chartTyLeTangTruong.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Color = System.Drawing.Color.HotPink;
+            series3.Legend = "Legend1";
+            series3.MarkerBorderColor = System.Drawing.Color.White;
+            series3.MarkerColor = System.Drawing.Color.MediumVioletRed;
+            series3.MarkerSize = 8;
+            series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
+            series3.Name = "Tỷ lệ tăng trưởng (%)";
+            this.chartTyLeTangTruong.Series.Add(series3);
+            this.chartTyLeTangTruong.Size = new System.Drawing.Size(645, 286);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.chartTyLeTangTruong.TabIndex = 10;
             this.chartTyLeTangTruong.Text = "chartTKDauBung";
             // 
@@ -115,11 +150,16 @@
             this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
             this.dgvTyLeTangTruong.RowHeadersWidth = 51;
             this.dgvTyLeTangTruong.RowTemplate.Height = 24;
+<<<<<<< HEAD
             this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
+=======
+            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(217, 286);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.dgvTyLeTangTruong.TabIndex = 9;
             // 
             // chartDoanhThu
             // 
+<<<<<<< HEAD
             chartArea2.AxisX.MajorGrid.Enabled = false;
             chartArea2.AxisX.Title = "Tháng";
             chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
@@ -142,6 +182,28 @@
             series2.Name = "Doanh thu (VNĐ)";
             this.chartDoanhThu.Series.Add(series2);
             this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
+=======
+            chartArea4.AxisX.MajorGrid.Enabled = false;
+            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea4.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea4);
+            legend4.Alignment = System.Drawing.StringAlignment.Far;
+            legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend4.MaximumAutoSize = 30F;
+            legend4.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend4);
+            this.chartDoanhThu.Location = new System.Drawing.Point(259, 54);
+            this.chartDoanhThu.Name = "chartDoanhThu";
+            this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series4.ChartArea = "ChartArea1";
+            series4.Color = System.Drawing.Color.DeepPink;
+            series4.IsValueShownAsLabel = true;
+            series4.Legend = "Legend1";
+            series4.Name = "Doanh thu (VNĐ)";
+            this.chartDoanhThu.Series.Add(series4);
+            this.chartDoanhThu.Size = new System.Drawing.Size(645, 323);
+>>>>>>> 7c3fcae40dda752e00d974146709275fe465b86d
             this.chartDoanhThu.TabIndex = 8;
             this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -155,7 +217,7 @@
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
-            this.dgvDoanhThu.Size = new System.Drawing.Size(191, 323);
+            this.dgvDoanhThu.Size = new System.Drawing.Size(217, 323);
             this.dgvDoanhThu.TabIndex = 7;
             // 
             // label4

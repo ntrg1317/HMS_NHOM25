@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -8,6 +9,7 @@ namespace HMS_NHOM25
     {
         bool isExit;
         private Form currentFormChild;
+        private Form currentUserControl;
         private Button lastClickedButton;
         private bool isCollapsed;
 
@@ -27,6 +29,19 @@ namespace HMS_NHOM25
         private void panelBody_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void userControl(Form childForm)
+        {
+            currentUserControl?.Close();
+            currentUserControl = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            sidebar.Controls.Add(childForm);
+            sidebar.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void OpenChildForm(Form childForm, Button clickedButton)
@@ -163,11 +178,20 @@ namespace HMS_NHOM25
         private void picChangPw_Click(object sender, EventArgs e)
         {
             OpenChildForm(new SuaTTTK(), btnChangePw);
+            isCollapsed = false;
+            timer1_Tick(sender, e);
         }
 
         private void btnChangePw_Click(object sender, EventArgs e)
         {
             OpenChildForm(new SuaTTTK(), btnChangePw);
+            isCollapsed = false;
+            timer1_Tick(sender, e);
+        }
+
+        private void btnKhoThuoc_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new KhoThuoc(), btnKhoThuoc);
         }
     }
 }

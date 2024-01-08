@@ -21,9 +21,9 @@ namespace HMS_NHOM25
 
         private void ThongKePhong_Load(object sender, EventArgs e)
         {
-            string queryLuotSDPhong = "SELECT DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) AS Ngay," +
-                "COUNT(*) AS LuotSuDung FROM BenhNhan WHERE TrangThai = 1 AND MONTH(NgayVao) = 1 AND YEAR(NgayVao) = 2024" +
-                "GROUP BY DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE));";
+            string queryLuotSDPhong = "SELECT DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) AS Ngay, " +
+                                      "COUNT(*) AS LuotSuDung FROM BenhNhan WHERE TrangThai = 1 AND MONTH(NgayVao) = 1 AND YEAR(NgayVao) = 2024 " +
+                                      "GROUP BY DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE));";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();

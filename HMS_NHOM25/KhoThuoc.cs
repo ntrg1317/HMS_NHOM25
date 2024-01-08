@@ -14,6 +14,7 @@ namespace HMS_NHOM25
         public KhoThuoc()
         {
             InitializeComponent();
+            dgvInfoKhoThuoc.DataSource = basemodel.all(table);
         }
 
         private void KhoThuoc_Load(object sender, EventArgs e)

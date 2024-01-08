@@ -246,6 +246,7 @@
             this.dgvInfoKhoThuoc.ReadOnly = true;
             this.dgvInfoKhoThuoc.RowHeadersWidth = 62;
             this.dgvInfoKhoThuoc.RowTemplate.Height = 28;
+            this.dgvInfoKhoThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoKhoThuoc.Size = new System.Drawing.Size(908, 470);
             this.dgvInfoKhoThuoc.TabIndex = 23;
             this.dgvInfoKhoThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoKhoThuoc_CellClick);
