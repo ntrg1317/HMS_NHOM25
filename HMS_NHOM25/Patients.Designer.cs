@@ -60,6 +60,7 @@
             this.btnSuaBN = new System.Windows.Forms.Button();
             this.btnXoaBN = new System.Windows.Forms.Button();
             this.btnThemBN = new System.Windows.Forms.Button();
+            this.labDS = new System.Windows.Forms.Label();
             this.grbInfoBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoBN)).BeginInit();
             this.SuspendLayout();
@@ -487,6 +488,18 @@
             this.btnThemBN.UseVisualStyleBackColor = true;
             this.btnThemBN.Click += new System.EventHandler(this.btnThemBN_Click);
             // 
+            // labDS
+            // 
+            this.labDS.AutoSize = true;
+            this.labDS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labDS.Location = new System.Drawing.Point(390, 32);
+            this.labDS.Name = "labDS";
+            this.labDS.Size = new System.Drawing.Size(310, 32);
+            this.labDS.TabIndex = 25;
+            this.labDS.Text = "Danh sách bệnh nhân";
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -548,5 +561,6 @@
         private System.Windows.Forms.ComboBox cobDiaChiBN;
         private System.Windows.Forms.ComboBox cobTenPhong;
         private System.Windows.Forms.Button btnThemDV;
+        private System.Windows.Forms.Label labDS;
     }
 }

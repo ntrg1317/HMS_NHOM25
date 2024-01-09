@@ -33,12 +33,12 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.chartSuDungThuoc = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvSuDungThuoc = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.chartSuDungThuoc = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSuDungThuoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSuDungThuoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSuDungThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -63,38 +63,13 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 813);
+            this.panel3.Size = new System.Drawing.Size(916, 499);
             this.panel3.TabIndex = 5;
-            // 
-            // dgvSuDungThuoc
-            // 
-            this.dgvSuDungThuoc.AllowUserToAddRows = false;
-            this.dgvSuDungThuoc.AllowUserToDeleteRows = false;
-            this.dgvSuDungThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSuDungThuoc.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSuDungThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSuDungThuoc.Location = new System.Drawing.Point(20, 54);
-            this.dgvSuDungThuoc.Name = "dgvSuDungThuoc";
-            this.dgvSuDungThuoc.ReadOnly = true;
-            this.dgvSuDungThuoc.RowHeadersWidth = 51;
-            this.dgvSuDungThuoc.RowTemplate.Height = 24;
-            this.dgvSuDungThuoc.Size = new System.Drawing.Size(272, 354);
-            this.dgvSuDungThuoc.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(317, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(351, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Thống kê 8 loại thuốc được sử dụng nhiều nhất";
             // 
             // chartSuDungThuoc
             // 
             chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.Title = "Năm";
+            chartArea1.AxisX.Title = "Tên thuốc";
             chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
             chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea1.AxisY.Title = "Số lượng";
@@ -117,9 +92,34 @@
             series1.Legend = "Legend1";
             series1.Name = "Thuốc";
             this.chartSuDungThuoc.Series.Add(series1);
-            this.chartSuDungThuoc.Size = new System.Drawing.Size(581, 354);
+            this.chartSuDungThuoc.Size = new System.Drawing.Size(581, 420);
             this.chartSuDungThuoc.TabIndex = 8;
             this.chartSuDungThuoc.Text = "Số lượng bệnh nhân theo năm";
+            // 
+            // dgvSuDungThuoc
+            // 
+            this.dgvSuDungThuoc.AllowUserToAddRows = false;
+            this.dgvSuDungThuoc.AllowUserToDeleteRows = false;
+            this.dgvSuDungThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSuDungThuoc.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSuDungThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSuDungThuoc.Location = new System.Drawing.Point(20, 54);
+            this.dgvSuDungThuoc.Name = "dgvSuDungThuoc";
+            this.dgvSuDungThuoc.ReadOnly = true;
+            this.dgvSuDungThuoc.RowHeadersWidth = 51;
+            this.dgvSuDungThuoc.RowTemplate.Height = 24;
+            this.dgvSuDungThuoc.Size = new System.Drawing.Size(272, 420);
+            this.dgvSuDungThuoc.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(317, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(351, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Thống kê 8 loại thuốc được sử dụng nhiều nhất";
             // 
             // ThongKeThuoc
             // 
@@ -134,8 +134,8 @@
             this.Load += new System.EventHandler(this.ThongKeThuoc_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSuDungThuoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSuDungThuoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSuDungThuoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

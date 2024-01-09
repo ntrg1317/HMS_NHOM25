@@ -44,6 +44,7 @@
             this.labTenBN = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvInforTaiKhoan = new System.Windows.Forms.DataGridView();
+            this.labDS = new System.Windows.Forms.Label();
             this.grb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforTaiKhoan)).BeginInit();
             this.SuspendLayout();
@@ -52,44 +53,44 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(29, 150);
+            this.label5.Location = new System.Drawing.Point(33, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 16);
+            this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 48;
             this.label5.Text = "Tìm kiếm";
             // 
             // txtTKMaTK
             // 
-            this.txtTKMaTK.Location = new System.Drawing.Point(192, 186);
+            this.txtTKMaTK.Location = new System.Drawing.Point(216, 288);
             this.txtTKMaTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTKMaTK.Name = "txtTKMaTK";
-            this.txtTKMaTK.Size = new System.Drawing.Size(164, 22);
+            this.txtTKMaTK.Size = new System.Drawing.Size(184, 26);
             this.txtTKMaTK.TabIndex = 43;
             this.txtTKMaTK.TextChanged += new System.EventHandler(this.txtTKMaTK_TextChanged);
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(657, 74);
+            this.txtMatKhau.Location = new System.Drawing.Point(739, 92);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(164, 22);
+            this.txtMatKhau.Size = new System.Drawing.Size(184, 26);
             this.txtMatKhau.TabIndex = 18;
             // 
             // txtTenDN
             // 
-            this.txtTenDN.Location = new System.Drawing.Point(657, 34);
+            this.txtTenDN.Location = new System.Drawing.Point(739, 42);
             this.txtTenDN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(164, 22);
+            this.txtTenDN.Size = new System.Drawing.Size(184, 26);
             this.txtTenDN.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(523, 78);
+            this.label1.Location = new System.Drawing.Point(588, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "Mật khẩu";
             // 
@@ -97,9 +98,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(523, 37);
+            this.label3.Location = new System.Drawing.Point(588, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 16);
+            this.label3.Size = new System.Drawing.Size(116, 20);
             this.label3.TabIndex = 15;
             this.label3.Text = "Tên đăng nhập";
             // 
@@ -108,10 +109,10 @@
             this.btnSuaPhong.ForeColor = System.Drawing.Color.Black;
             this.btnSuaPhong.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaPhong.Location = new System.Drawing.Point(556, 181);
+            this.btnSuaPhong.Location = new System.Drawing.Point(626, 282);
             this.btnSuaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaPhong.Name = "btnSuaPhong";
-            this.btnSuaPhong.Size = new System.Drawing.Size(107, 31);
+            this.btnSuaPhong.Size = new System.Drawing.Size(120, 39);
             this.btnSuaPhong.TabIndex = 47;
             this.btnSuaPhong.Text = "Cập nhật";
             this.btnSuaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -123,10 +124,10 @@
             this.btnXoaPhong.ForeColor = System.Drawing.Color.Black;
             this.btnXoaPhong.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaPhong.Location = new System.Drawing.Point(764, 181);
+            this.btnXoaPhong.Location = new System.Drawing.Point(860, 282);
             this.btnXoaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaPhong.Name = "btnXoaPhong";
-            this.btnXoaPhong.Size = new System.Drawing.Size(85, 31);
+            this.btnXoaPhong.Size = new System.Drawing.Size(96, 39);
             this.btnXoaPhong.TabIndex = 46;
             this.btnXoaPhong.Text = "Xóa";
             this.btnXoaPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,28 +136,28 @@
             // 
             // txtTMaCV
             // 
-            this.txtTMaCV.Location = new System.Drawing.Point(164, 74);
+            this.txtTMaCV.Location = new System.Drawing.Point(184, 92);
             this.txtTMaCV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTMaCV.Name = "txtTMaCV";
-            this.txtTMaCV.Size = new System.Drawing.Size(164, 22);
+            this.txtTMaCV.Size = new System.Drawing.Size(184, 26);
             this.txtTMaCV.TabIndex = 14;
             // 
             // txtMaTK
             // 
-            this.txtMaTK.Location = new System.Drawing.Point(164, 34);
+            this.txtMaTK.Location = new System.Drawing.Point(184, 42);
             this.txtMaTK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaTK.Name = "txtMaTK";
             this.txtMaTK.ReadOnly = true;
-            this.txtMaTK.Size = new System.Drawing.Size(164, 22);
+            this.txtMaTK.Size = new System.Drawing.Size(184, 26);
             this.txtMaTK.TabIndex = 13;
             // 
             // labMaBN
             // 
             this.labMaBN.AutoSize = true;
             this.labMaBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaBN.Location = new System.Drawing.Point(55, 37);
+            this.labMaBN.Location = new System.Drawing.Point(62, 46);
             this.labMaBN.Name = "labMaBN";
-            this.labMaBN.Size = new System.Drawing.Size(83, 16);
+            this.labMaBN.Size = new System.Drawing.Size(100, 20);
             this.labMaBN.TabIndex = 11;
             this.labMaBN.Text = "Mã tài khoản";
             // 
@@ -164,9 +165,9 @@
             // 
             this.labTenPhong.AutoSize = true;
             this.labTenPhong.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenPhong.Location = new System.Drawing.Point(91, 190);
+            this.labTenPhong.Location = new System.Drawing.Point(102, 294);
             this.labTenPhong.Name = "labTenPhong";
-            this.labTenPhong.Size = new System.Drawing.Size(83, 16);
+            this.labTenPhong.Size = new System.Drawing.Size(100, 20);
             this.labTenPhong.TabIndex = 44;
             this.labTenPhong.Text = "Mã tài khoản";
             // 
@@ -181,11 +182,11 @@
             this.grb.Controls.Add(this.labTenBN);
             this.grb.Controls.Add(this.labMaBN);
             this.grb.ForeColor = System.Drawing.Color.Red;
-            this.grb.Location = new System.Drawing.Point(29, 15);
+            this.grb.Location = new System.Drawing.Point(33, 75);
             this.grb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grb.Name = "grb";
             this.grb.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grb.Size = new System.Drawing.Size(902, 113);
+            this.grb.Size = new System.Drawing.Size(1015, 141);
             this.grb.TabIndex = 42;
             this.grb.TabStop = false;
             this.grb.Text = "Thông tin tài khoản";
@@ -194,9 +195,9 @@
             // 
             this.labTenBN.AutoSize = true;
             this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBN.Location = new System.Drawing.Point(55, 78);
+            this.labTenBN.Location = new System.Drawing.Point(62, 98);
             this.labTenBN.Name = "labTenBN";
-            this.labTenBN.Size = new System.Drawing.Size(74, 16);
+            this.labTenBN.Size = new System.Drawing.Size(89, 20);
             this.labTenBN.TabIndex = 12;
             this.labTenBN.Text = "Mã chức vụ";
             // 
@@ -204,9 +205,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(29, 238);
+            this.label2.Location = new System.Drawing.Point(33, 354);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 16);
+            this.label2.Size = new System.Drawing.Size(155, 20);
             this.label2.TabIndex = 41;
             this.label2.Text = "Danh sách tài khoản";
             // 
@@ -219,21 +220,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInforTaiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInforTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInforTaiKhoan.Location = new System.Drawing.Point(33, 272);
+            this.dgvInforTaiKhoan.Location = new System.Drawing.Point(37, 390);
+            this.dgvInforTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvInforTaiKhoan.Name = "dgvInforTaiKhoan";
             this.dgvInforTaiKhoan.ReadOnly = true;
             this.dgvInforTaiKhoan.RowHeadersWidth = 51;
             this.dgvInforTaiKhoan.RowTemplate.Height = 24;
             this.dgvInforTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInforTaiKhoan.Size = new System.Drawing.Size(898, 460);
+            this.dgvInforTaiKhoan.Size = new System.Drawing.Size(1010, 525);
             this.dgvInforTaiKhoan.TabIndex = 40;
             this.dgvInforTaiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforTaiKhoan_CellClick);
             // 
+            // labDS
+            // 
+            this.labDS.AutoSize = true;
+            this.labDS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labDS.Location = new System.Drawing.Point(380, 27);
+            this.labDS.Name = "labDS";
+            this.labDS.Size = new System.Drawing.Size(291, 32);
+            this.labDS.TabIndex = 49;
+            this.labDS.Text = "Danh sách tài khoản";
+            // 
             // TaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(1091, 930);
+            this.Controls.Add(this.labDS);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTKMaTK);
             this.Controls.Add(this.btnSuaPhong);
@@ -273,5 +288,6 @@
         private System.Windows.Forms.Label labTenBN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvInforTaiKhoan;
+        private System.Windows.Forms.Label labDS;
     }
 }

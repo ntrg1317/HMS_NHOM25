@@ -17,7 +17,7 @@ namespace HMS_NHOM25
         private void ThongKeBenhNhan_Load(object sender, EventArgs e)
         {
 
-            string querySLBN2024 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2024 GROUP BY MONTH(NgayVao) ORDER BY Thang";
+            string querySLBN2024 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2022 GROUP BY MONTH(NgayVao) ORDER BY Thang";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -28,7 +28,7 @@ namespace HMS_NHOM25
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                    dgvSLBNtheoNam.DataSource = dataTable;
+                    dgvSLBN2024.DataSource = dataTable;
 
                     chartSLBN2024.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Thang", "SoLuong", "");
 

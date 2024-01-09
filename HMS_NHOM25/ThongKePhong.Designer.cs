@@ -63,7 +63,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(938, 813);
+            this.panel3.Size = new System.Drawing.Size(951, 813);
             this.panel3.TabIndex = 4;
             // 
             // chartLuotSDPhong
@@ -77,7 +77,7 @@
             this.chartLuotSDPhong.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartLuotSDPhong.Legends.Add(legend1);
-            this.chartLuotSDPhong.Location = new System.Drawing.Point(10, 320);
+            this.chartLuotSDPhong.Location = new System.Drawing.Point(20, 268);
             this.chartLuotSDPhong.Name = "chartLuotSDPhong";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -92,7 +92,7 @@
             series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
             series1.Name = "Series1";
             this.chartLuotSDPhong.Series.Add(series1);
-            this.chartLuotSDPhong.Size = new System.Drawing.Size(913, 464);
+            this.chartLuotSDPhong.Size = new System.Drawing.Size(913, 443);
             this.chartLuotSDPhong.TabIndex = 8;
             this.chartLuotSDPhong.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -108,7 +108,7 @@
             this.dgvLuotSDPhong.ReadOnly = true;
             this.dgvLuotSDPhong.RowHeadersWidth = 51;
             this.dgvLuotSDPhong.RowTemplate.Height = 24;
-            this.dgvLuotSDPhong.Size = new System.Drawing.Size(903, 249);
+            this.dgvLuotSDPhong.Size = new System.Drawing.Size(903, 194);
             this.dgvLuotSDPhong.TabIndex = 7;
             // 
             // label4
