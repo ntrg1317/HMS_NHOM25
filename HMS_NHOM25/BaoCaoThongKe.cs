@@ -30,12 +30,12 @@ namespace HMS_NHOM25
             childForm.Show();
             if (lastClickedButton != null && lastClickedButton != clickedButton)
             {
-                lastClickedButton.BackColor = SystemColors.Highlight;
-                lastClickedButton.ForeColor = Color.White;
+                lastClickedButton.BackColor = Color.Lavender;
+                lastClickedButton.ForeColor = SystemColors.HotTrack;
             }
 
-            clickedButton.BackColor = SystemColors.Control;
-            clickedButton.ForeColor = SystemColors.Highlight;
+            clickedButton.BackColor = SystemColors.Highlight;
+            clickedButton.ForeColor = Color.Lavender;
 
             lastClickedButton = clickedButton;
         }
