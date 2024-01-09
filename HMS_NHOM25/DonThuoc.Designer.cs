@@ -42,7 +42,7 @@
             this.txtMaDT = new System.Windows.Forms.TextBox();
             this.labMaBN = new System.Windows.Forms.Label();
             this.txtMaBN = new System.Windows.Forms.TextBox();
-            this.btnCapNhatDonThuoc = new System.Windows.Forms.Button();
+            this.btnChiTietDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaDonThuoc = new System.Windows.Forms.Button();
             this.btnThemDonThuoc = new System.Windows.Forms.Button();
             this.dgvDSDonThuoc = new System.Windows.Forms.DataGridView();
@@ -187,19 +187,20 @@
             this.txtMaBN.Size = new System.Drawing.Size(218, 26);
             this.txtMaBN.TabIndex = 30;
             // 
-            // btnCapNhatDonThuoc
+            // btnChiTietDonThuoc
             // 
-            this.btnCapNhatDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.pills;
-            this.btnCapNhatDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhatDonThuoc.Location = new System.Drawing.Point(742, 295);
-            this.btnCapNhatDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCapNhatDonThuoc.Name = "btnCapNhatDonThuoc";
-            this.btnCapNhatDonThuoc.Size = new System.Drawing.Size(108, 39);
-            this.btnCapNhatDonThuoc.TabIndex = 25;
-            this.btnCapNhatDonThuoc.Text = "Chi tiết";
-            this.btnCapNhatDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapNhatDonThuoc.UseVisualStyleBackColor = true;
-            this.btnCapNhatDonThuoc.Click += new System.EventHandler(this.btnCapNhatDonThuoc_Click);
+            this.btnChiTietDonThuoc.Enabled = false;
+            this.btnChiTietDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.pills;
+            this.btnChiTietDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChiTietDonThuoc.Location = new System.Drawing.Point(742, 295);
+            this.btnChiTietDonThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChiTietDonThuoc.Name = "btnChiTietDonThuoc";
+            this.btnChiTietDonThuoc.Size = new System.Drawing.Size(108, 39);
+            this.btnChiTietDonThuoc.TabIndex = 25;
+            this.btnChiTietDonThuoc.Text = "Chi tiết";
+            this.btnChiTietDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnChiTietDonThuoc.UseVisualStyleBackColor = true;
+            this.btnChiTietDonThuoc.Click += new System.EventHandler(this.btnCapNhatDonThuoc_Click);
             // 
             // btnXoaDonThuoc
             // 
@@ -261,7 +262,7 @@
             this.ClientSize = new System.Drawing.Size(1091, 930);
             this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.dgvDSDonThuoc);
-            this.Controls.Add(this.btnCapNhatDonThuoc);
+            this.Controls.Add(this.btnChiTietDonThuoc);
             this.Controls.Add(this.btnXoaDonThuoc);
             this.Controls.Add(this.btnThemDonThuoc);
             this.Controls.Add(this.grbInfoDonThuoc);
@@ -293,7 +294,7 @@
         private System.Windows.Forms.TextBox txtMaDT;
         private System.Windows.Forms.Label labMaBN;
         private System.Windows.Forms.TextBox txtMaBN;
-        private System.Windows.Forms.Button btnCapNhatDonThuoc;
+        private System.Windows.Forms.Button btnChiTietDonThuoc;
         private System.Windows.Forms.Button btnXoaDonThuoc;
         private System.Windows.Forms.Button btnThemDonThuoc;
         private System.Windows.Forms.Label label1;

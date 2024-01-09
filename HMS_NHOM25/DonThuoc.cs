@@ -102,16 +102,48 @@ namespace HMS_NHOM25
 
         private void btnCapNhatDonThuoc_Click(object sender, EventArgs e)
         {
-            ChiTietDonThuoc chiTietDT = new ChiTietDonThuoc();
+            string maDT = dgvDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
+            string maBN = dgvDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
+            string trangThaiTT = txtTrangThaiTT.Text;
+            ChiTietDonThuoc chiTietDT = new ChiTietDonThuoc(maDT, maBN, trangThaiTT);
             chiTietDT.Show();
         }
 
         private void dgvDSDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaDT.Text = dgvDSDonThuoc.SelectedRows[0].Cells[0].Value.ToString();
-            txtMaBN.Text = dgvDSDonThuoc.SelectedRows[0].Cells[1].Value.ToString();
-            dateNgayKeDon.Text = dgvDSDonThuoc.SelectedRows[0].Cells[2].Value.ToString();
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    btnChiTietDonThuoc.Enabled = true;
+                    DataGridViewRow selectedRow = dgvDSDonThuoc.Rows[e.RowIndex];
+
+                    txtMaDT.Text = selectedRow.Cells["MaDT"].Value.ToString();
+                    txtMaBN.Text = selectedRow.Cells["MaBN"].Value.ToString();
+                    dateNgayKeDon.Text = selectedRow.Cells["NgayKeDon"].Value.ToString();
+
+                    string maBN = selectedRow.Cells["MaBN"].Value.ToString();
+                    DateTime ngayKeDon = Convert.ToDateTime(selectedRow.Cells["NgayKeDon"].Value);
+
+                    string query = "SELECT COUNT(*) FROM hoaDon WHERE MaBN = @MaBN AND (NgayTT IS NOT NULL AND NgayTT >= @NgayKeDon)";
+
+                    DataTable resultTable = basemodel.Table(query, new Dictionary<string, object>
+                    {
+                        { "@MaBN", maBN },
+                        { "@NgayKeDon", ngayKeDon }
+                    });
+
+                    int count = Convert.ToInt32(resultTable.Rows[0][0]);
+                    txtTrangThaiTT.Text = count > 0 ? "1" : "0";
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void DonThuoc_Load(object sender, EventArgs e)
         {
