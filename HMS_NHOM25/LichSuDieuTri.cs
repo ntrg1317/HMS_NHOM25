@@ -14,7 +14,7 @@ namespace HMS_NHOM25
 {
     public partial class LichSuDieuTri : Form
     {
-        BaseModel bn;
+        BaseModel bn = new BaseModel();
         public LichSuDieuTri()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace HMS_NHOM25
                 }
                 else
                 {
-                    string timKiemBN = "SELECT * FROM benhNhanh WHERE SDT LIKE %" + "'timKiem'" + "%";
+                    string timKiemBN = "SELECT * FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
                     dgvTimBN.DataSource = bn.Table(timKiemBN);
                 }
             }
@@ -49,8 +49,66 @@ namespace HMS_NHOM25
         private void txtMaBN_TextChanged(object sender, EventArgs e)
         {
             string maBN = txtMaBN.Text;
-            string lichSuDieuTri = "SELECT NgayVao, MaPhong, BenhTrang FROM benhNhan_lichSu";
+            string lichSuDieuTri = "SELECT NgayVao, MaPhong, BenhTrang FROM benhNhan_lichSu WHERE MaBN = '" + maBN + "'";
             dgvInfoLSDT.DataSource = bn.Table(lichSuDieuTri);
+        }
+
+        private void dgvTimBN_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtSDTBN.Text = dgvTimBN.SelectedRows[0].Cells["SDT"].Value.ToString();
+                txtMaBN.Text = dgvTimBN.SelectedRows[0].Cells["MaBN"].Value.ToString();
+                txtTenBN.Text = dgvTimBN.SelectedRows[0].Cells["TenBN"].Value.ToString();
+                txtGT.Text = dgvTimBN.SelectedRows[0].Cells["GioiTinh"].Value.ToString();
+                txtDiaChi.Text = dgvTimBN.SelectedRows[0].Cells["DiaChi"].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvInfoLSDT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtNgayVao.Text = dgvInfoLSDT.SelectedRows[0].Cells[3].Value.ToString();
+            txtBenhTrang.Text = dgvInfoLSDT.SelectedRows[0].Cells[4].Value.ToString();
+            int MaPhong = int.Parse(dgvInfoLSDT.SelectedRows[0].Cells[2].Value.ToString());
+            switch (MaPhong)
+            {
+                case 1:
+                    txtPhong.Text = "P101";
+                    break;
+                case 2:
+                    txtPhong.Text = "P102";
+                    break;
+                case 3:
+                    txtPhong.Text = "P103";
+                    break;
+                case 4:
+                    txtPhong.Text = "P104";
+                    break;
+                case 5:
+                    txtPhong.Text = "P105";
+                    break;
+                case 6:
+                    txtPhong.Text = "P106";
+                    break;
+                case 7:
+                    txtPhong.Text = "P107";
+                    break;
+                case 8:
+                    txtPhong.Text = "P108";
+                    break;
+                case 9:
+                    txtPhong.Text = "P109";
+                    break;
+                case 10:
+                    txtPhong.Text = "P110";
+                    break;
+                default:
+                    break;
+            } 
         }
     }
 }

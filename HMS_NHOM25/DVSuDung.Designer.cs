@@ -35,7 +35,7 @@
             this.txtNgayVao = new System.Windows.Forms.TextBox();
             this.txtPhong = new System.Windows.Forms.TextBox();
             this.labTenThuoc = new System.Windows.Forms.Label();
-            this.dgvInfoLSDT = new System.Windows.Forms.DataGridView();
+            this.dgvInfoDVSD = new System.Windows.Forms.DataGridView();
             this.labDSThuoc = new System.Windows.Forms.Label();
             this.grbInfoBN = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,15 +50,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTimBN = new System.Windows.Forms.DataGridView();
             this.btnThemDV = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labTienDV = new System.Windows.Forms.Label();
             this.grbInfoDieuTri.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoLSDT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDVSD)).BeginInit();
             this.grbInfoBN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimBN)).BeginInit();
             this.SuspendLayout();
             // 
             // grbInfoDieuTri
             // 
+            this.grbInfoDieuTri.Controls.Add(this.labTienDV);
             this.grbInfoDieuTri.Controls.Add(this.labLieuDung);
+            this.grbInfoDieuTri.Controls.Add(this.textBox1);
             this.grbInfoDieuTri.Controls.Add(this.labSoLuongThuoc);
             this.grbInfoDieuTri.Controls.Add(this.txtBenhTrang);
             this.grbInfoDieuTri.Controls.Add(this.txtNgayVao);
@@ -69,7 +73,7 @@
             this.grbInfoDieuTri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDieuTri.Name = "grbInfoDieuTri";
             this.grbInfoDieuTri.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoDieuTri.Size = new System.Drawing.Size(933, 83);
+            this.grbInfoDieuTri.Size = new System.Drawing.Size(933, 91);
             this.grbInfoDieuTri.TabIndex = 23;
             this.grbInfoDieuTri.TabStop = false;
             this.grbInfoDieuTri.Text = "Thông tin điều trị";
@@ -78,7 +82,7 @@
             // 
             this.labLieuDung.AutoSize = true;
             this.labLieuDung.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labLieuDung.Location = new System.Drawing.Point(652, 41);
+            this.labLieuDung.Location = new System.Drawing.Point(531, 29);
             this.labLieuDung.Name = "labLieuDung";
             this.labLieuDung.Size = new System.Drawing.Size(75, 16);
             this.labLieuDung.TabIndex = 31;
@@ -88,7 +92,7 @@
             // 
             this.labSoLuongThuoc.AutoSize = true;
             this.labSoLuongThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSoLuongThuoc.Location = new System.Drawing.Point(349, 41);
+            this.labSoLuongThuoc.Location = new System.Drawing.Point(144, 61);
             this.labSoLuongThuoc.Name = "labSoLuongThuoc";
             this.labSoLuongThuoc.Size = new System.Drawing.Size(80, 16);
             this.labSoLuongThuoc.TabIndex = 29;
@@ -96,7 +100,7 @@
             // 
             // txtBenhTrang
             // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(742, 35);
+            this.txtBenhTrang.Location = new System.Drawing.Point(631, 26);
             this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBenhTrang.Name = "txtBenhTrang";
             this.txtBenhTrang.ReadOnly = true;
@@ -105,7 +109,7 @@
             // 
             // txtNgayVao
             // 
-            this.txtNgayVao.Location = new System.Drawing.Point(131, 35);
+            this.txtNgayVao.Location = new System.Drawing.Point(230, 26);
             this.txtNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayVao.Name = "txtNgayVao";
             this.txtNgayVao.ReadOnly = true;
@@ -114,7 +118,7 @@
             // 
             // txtPhong
             // 
-            this.txtPhong.Location = new System.Drawing.Point(435, 35);
+            this.txtPhong.Location = new System.Drawing.Point(230, 58);
             this.txtPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhong.Name = "txtPhong";
             this.txtPhong.ReadOnly = true;
@@ -125,27 +129,28 @@
             // 
             this.labTenThuoc.AutoSize = true;
             this.labTenThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenThuoc.Location = new System.Drawing.Point(37, 41);
+            this.labTenThuoc.Location = new System.Drawing.Point(149, 29);
             this.labTenThuoc.Name = "labTenThuoc";
             this.labTenThuoc.Size = new System.Drawing.Size(75, 16);
             this.labTenThuoc.TabIndex = 23;
             this.labTenThuoc.Text = "Mã Dịch Vụ";
             // 
-            // dgvInfoLSDT
+            // dgvInfoDVSD
             // 
-            this.dgvInfoLSDT.AllowUserToAddRows = false;
-            this.dgvInfoLSDT.AllowUserToDeleteRows = false;
-            this.dgvInfoLSDT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvInfoLSDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoLSDT.Location = new System.Drawing.Point(19, 435);
-            this.dgvInfoLSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvInfoLSDT.Name = "dgvInfoLSDT";
-            this.dgvInfoLSDT.ReadOnly = true;
-            this.dgvInfoLSDT.RowHeadersWidth = 62;
-            this.dgvInfoLSDT.RowTemplate.Height = 28;
-            this.dgvInfoLSDT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoLSDT.Size = new System.Drawing.Size(933, 178);
-            this.dgvInfoLSDT.TabIndex = 38;
+            this.dgvInfoDVSD.AllowUserToAddRows = false;
+            this.dgvInfoDVSD.AllowUserToDeleteRows = false;
+            this.dgvInfoDVSD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInfoDVSD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInfoDVSD.Location = new System.Drawing.Point(19, 435);
+            this.dgvInfoDVSD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvInfoDVSD.Name = "dgvInfoDVSD";
+            this.dgvInfoDVSD.ReadOnly = true;
+            this.dgvInfoDVSD.RowHeadersWidth = 62;
+            this.dgvInfoDVSD.RowTemplate.Height = 28;
+            this.dgvInfoDVSD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInfoDVSD.Size = new System.Drawing.Size(933, 178);
+            this.dgvInfoDVSD.TabIndex = 38;
+            this.dgvInfoDVSD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoDVSD_CellClick);
             // 
             // labDSThuoc
             // 
@@ -226,6 +231,7 @@
             this.txtSDTBN.Name = "txtSDTBN";
             this.txtSDTBN.Size = new System.Drawing.Size(156, 22);
             this.txtSDTBN.TabIndex = 30;
+            this.txtSDTBN.TextChanged += new System.EventHandler(this.txtSDTBN_TextChanged);
             // 
             // txtDiaChi
             // 
@@ -262,6 +268,7 @@
             this.txtMaBN.ReadOnly = true;
             this.txtMaBN.Size = new System.Drawing.Size(156, 22);
             this.txtMaBN.TabIndex = 30;
+            this.txtMaBN.TextChanged += new System.EventHandler(this.txtMaBN_TextChanged);
             // 
             // label5
             // 
@@ -288,6 +295,7 @@
             this.dgvTimBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTimBN.Size = new System.Drawing.Size(933, 115);
             this.dgvTimBN.TabIndex = 38;
+            this.dgvTimBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimBN_CellClick);
             // 
             // btnThemDV
             // 
@@ -305,6 +313,25 @@
             this.btnThemDV.UseVisualStyleBackColor = true;
             this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(631, 55);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(156, 22);
+            this.textBox1.TabIndex = 30;
+            // 
+            // labTienDV
+            // 
+            this.labTienDV.AutoSize = true;
+            this.labTienDV.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labTienDV.Location = new System.Drawing.Point(531, 58);
+            this.labTienDV.Name = "labTienDV";
+            this.labTienDV.Size = new System.Drawing.Size(83, 16);
+            this.labTienDV.TabIndex = 31;
+            this.labTienDV.Text = "Tiền Dịch Vụ";
+            // 
             // DVSuDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -316,15 +343,16 @@
             this.Controls.Add(this.dgvTimBN);
             this.Controls.Add(this.grbInfoBN);
             this.Controls.Add(this.grbInfoDieuTri);
-            this.Controls.Add(this.dgvInfoLSDT);
+            this.Controls.Add(this.dgvInfoDVSD);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DVSuDung";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddDonThuoc";
+            this.Load += new System.EventHandler(this.DVSuDung_Load);
             this.grbInfoDieuTri.ResumeLayout(false);
             this.grbInfoDieuTri.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoLSDT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDVSD)).EndInit();
             this.grbInfoBN.ResumeLayout(false);
             this.grbInfoBN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimBN)).EndInit();
@@ -340,7 +368,7 @@
         private System.Windows.Forms.Label labSoLuongThuoc;
         private System.Windows.Forms.TextBox txtPhong;
         private System.Windows.Forms.Label labTenThuoc;
-        private System.Windows.Forms.DataGridView dgvInfoLSDT;
+        private System.Windows.Forms.DataGridView dgvInfoDVSD;
         private System.Windows.Forms.Label labDSThuoc;
         private System.Windows.Forms.GroupBox grbInfoBN;
         private System.Windows.Forms.Label labTenBN;
@@ -357,5 +385,7 @@
         private System.Windows.Forms.TextBox txtBenhTrang;
         private System.Windows.Forms.TextBox txtNgayVao;
         private System.Windows.Forms.Button btnThemDV;
+        private System.Windows.Forms.Label labTienDV;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -49,6 +49,7 @@
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTimBN = new System.Windows.Forms.DataGridView();
+            this.labHeaderLSDT = new System.Windows.Forms.Label();
             this.grbInfoDieuTri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoLSDT)).BeginInit();
             this.grbInfoBN.SuspendLayout();
@@ -64,7 +65,7 @@
             this.grbInfoDieuTri.Controls.Add(this.txtPhong);
             this.grbInfoDieuTri.Controls.Add(this.labTenThuoc);
             this.grbInfoDieuTri.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoDieuTri.Location = new System.Drawing.Point(19, 297);
+            this.grbInfoDieuTri.Location = new System.Drawing.Point(19, 310);
             this.grbInfoDieuTri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDieuTri.Name = "grbInfoDieuTri";
             this.grbInfoDieuTri.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -134,9 +135,12 @@
             // 
             this.dgvInfoLSDT.AllowUserToAddRows = false;
             this.dgvInfoLSDT.AllowUserToDeleteRows = false;
+            this.dgvInfoLSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoLSDT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoLSDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoLSDT.Location = new System.Drawing.Point(20, 417);
+            this.dgvInfoLSDT.Location = new System.Drawing.Point(20, 430);
             this.dgvInfoLSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoLSDT.Name = "dgvInfoLSDT";
             this.dgvInfoLSDT.ReadOnly = true;
@@ -145,12 +149,13 @@
             this.dgvInfoLSDT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvInfoLSDT.Size = new System.Drawing.Size(933, 178);
             this.dgvInfoLSDT.TabIndex = 38;
+            this.dgvInfoLSDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoLSDT_CellClick);
             // 
             // labDSThuoc
             // 
             this.labDSThuoc.AutoSize = true;
             this.labDSThuoc.ForeColor = System.Drawing.Color.Red;
-            this.labDSThuoc.Location = new System.Drawing.Point(29, 391);
+            this.labDSThuoc.Location = new System.Drawing.Point(29, 404);
             this.labDSThuoc.Name = "labDSThuoc";
             this.labDSThuoc.Size = new System.Drawing.Size(90, 16);
             this.labDSThuoc.TabIndex = 43;
@@ -169,7 +174,7 @@
             this.grbInfoBN.Controls.Add(this.txtMaBN);
             this.grbInfoBN.Controls.Add(this.label5);
             this.grbInfoBN.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoBN.Location = new System.Drawing.Point(19, 31);
+            this.grbInfoBN.Location = new System.Drawing.Point(19, 44);
             this.grbInfoBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoBN.Name = "grbInfoBN";
             this.grbInfoBN.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -278,9 +283,12 @@
             // 
             this.dgvTimBN.AllowUserToAddRows = false;
             this.dgvTimBN.AllowUserToDeleteRows = false;
+            this.dgvTimBN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTimBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTimBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTimBN.Location = new System.Drawing.Point(19, 178);
+            this.dgvTimBN.Location = new System.Drawing.Point(19, 170);
             this.dgvTimBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvTimBN.Name = "dgvTimBN";
             this.dgvTimBN.ReadOnly = true;
@@ -289,6 +297,19 @@
             this.dgvTimBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTimBN.Size = new System.Drawing.Size(933, 115);
             this.dgvTimBN.TabIndex = 38;
+            this.dgvTimBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimBN_CellClick);
+            // 
+            // labHeaderLSDT
+            // 
+            this.labHeaderLSDT.AutoSize = true;
+            this.labHeaderLSDT.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labHeaderLSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labHeaderLSDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labHeaderLSDT.Location = new System.Drawing.Point(413, 9);
+            this.labHeaderLSDT.Name = "labHeaderLSDT";
+            this.labHeaderLSDT.Size = new System.Drawing.Size(183, 29);
+            this.labHeaderLSDT.TabIndex = 44;
+            this.labHeaderLSDT.Text = "Lịch sử điều trị";
             // 
             // LichSuDieuTri
             // 
@@ -296,6 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(970, 624);
+            this.Controls.Add(this.labHeaderLSDT);
             this.Controls.Add(this.labDSThuoc);
             this.Controls.Add(this.dgvTimBN);
             this.Controls.Add(this.grbInfoBN);
@@ -341,5 +363,6 @@
         private System.Windows.Forms.TextBox txtGT;
         private System.Windows.Forms.TextBox txtBenhTrang;
         private System.Windows.Forms.TextBox txtNgayVao;
+        private System.Windows.Forms.Label labHeaderLSDT;
     }
 }
