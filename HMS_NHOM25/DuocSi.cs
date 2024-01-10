@@ -62,7 +62,7 @@ namespace HMS_NHOM25
 
         private void btnThemDSi_Click(object sender, EventArgs e)
         {
-            AddDuocSi addDS = new AddDuocSi();
+            ThemDuocSi addDS = new ThemDuocSi();
             addDS.Show();
         }
 

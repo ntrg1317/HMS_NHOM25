@@ -37,7 +37,7 @@ namespace HMS_NHOM25
 
         private void btnThemDonThuoc_Click(object sender, EventArgs e)
         {
-            AddDonThuoc addDonThuoc = new AddDonThuoc();
+            ThemDonThuoc addDonThuoc = new ThemDonThuoc();
             addDonThuoc.Show();
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddDuocSi
+    partial class ThemDuocSi
     {
         /// <summary>
         /// Required designer variable.

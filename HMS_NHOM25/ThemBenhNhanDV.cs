@@ -6,10 +6,10 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddBenhNhanDV : Form
+    public partial class ThemBenhNhanDV : Form
     {
         BaseModel bn_dv = new BaseModel();
-        public AddBenhNhanDV(string MaBN)
+        public ThemBenhNhanDV(string MaBN)
         {
             InitializeComponent();
             txtMaBN.Text = MaBN;
@@ -28,7 +28,7 @@ namespace HMS_NHOM25
 
         private void AddBenhNhanDV_Load(object sender, EventArgs e)
         {
-            Patients patients = new Patients();
+            BenhNhan patients = new BenhNhan();
             showComboBox();
         }
 

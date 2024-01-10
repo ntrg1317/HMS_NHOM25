@@ -24,7 +24,7 @@ namespace HMS_NHOM25
         private void btnThemDV_Click(object sender, EventArgs e)
         {
             string MaBN = txtMaBN.Text;
-            AddBenhNhanDV bn_dv = new AddBenhNhanDV(MaBN);
+            ThemBenhNhanDV bn_dv = new ThemBenhNhanDV(MaBN);
             bn_dv.FormClosed += (s, args) => DVSuDung_Load(sender, e);
             bn_dv.Show();
         }

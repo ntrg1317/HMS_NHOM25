@@ -6,12 +6,12 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddPhong : Form
+    public partial class ThemPhong : Form
     {
         BaseModel phong = new BaseModel();
         PhongParams phongP;
 
-        public AddPhong()
+        public ThemPhong()
         {
             InitializeComponent();
         }

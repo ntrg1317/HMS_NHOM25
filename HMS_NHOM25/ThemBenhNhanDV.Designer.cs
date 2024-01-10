@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddBenhNhanDV
+    partial class ThemBenhNhanDV
     {
         /// <summary>
         /// Required designer variable.

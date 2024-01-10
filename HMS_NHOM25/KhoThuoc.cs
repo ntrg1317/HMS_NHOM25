@@ -22,6 +22,13 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoKhoThuoc.DataSource = basemodel.all(table);
+
+                dgvInfoKhoThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
+                dgvInfoKhoThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
+                dgvInfoKhoThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
+                dgvInfoKhoThuoc.Columns["NSX"].HeaderText = "NSX";
+                dgvInfoKhoThuoc.Columns["HSD"].HeaderText = "HSD";
+                dgvInfoKhoThuoc.Columns["TienThuoc"].HeaderText = "Tiền thuốc";
             }
             catch (Exception ex)
             {
@@ -38,7 +45,7 @@ namespace HMS_NHOM25
 
         private void btnThemThuoc_Click(object sender, EventArgs e)
         {
-            AddThuoc addThuoc = new AddThuoc();
+            ThemThuoc addThuoc = new ThemThuoc();
             addThuoc.Show();
         }
 

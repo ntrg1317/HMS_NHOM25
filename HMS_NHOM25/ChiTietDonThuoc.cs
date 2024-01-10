@@ -65,7 +65,6 @@ namespace HMS_NHOM25
                 }
                 DeleteTextBoxes();
                 showComboBox();
-
             }
         }
 

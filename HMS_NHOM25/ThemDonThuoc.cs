@@ -13,14 +13,14 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDonThuoc : Form
+    public partial class ThemDonThuoc : Form
     {
         BaseModel thuoc = new BaseModel();
         BaseModel benhNhan = new BaseModel();
         ChiTietDTParams chiTietDT;
         DataTable dataTableDTChiTiet;
 
-        public AddDonThuoc()
+        public ThemDonThuoc()
         {
             InitializeComponent();
         }
@@ -262,7 +262,11 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "Select * from benhNhan where SDT like '%" + timKiem + "%'";
+                string query = "SELECT bn.MaBN, bn.TenBN, bn.GioiTinh, bn_ls.BenhTrang, bn.DiaChi, bn.SDT " +
+                    "FROM benhNhan AS bn  " +
+                    "JOIN benhNhan_lichSu AS bn_ls " +
+                    "ON bn.MaBN = bn_ls.MaBN " +
+                    "WHERE SDT like '%" + timKiem + "%'";
 
                 dgvTimBN.DataSource = benhNhan.Table(query);
             }

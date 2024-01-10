@@ -6,12 +6,12 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddThuoc : Form
+    public partial class ThemThuoc : Form
     {
         BaseModel basemodel = new BaseModel();
         KhoThuocParams ktp;
 
-        public AddThuoc()
+        public ThemThuoc()
         {
             InitializeComponent();
         }

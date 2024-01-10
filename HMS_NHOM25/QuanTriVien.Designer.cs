@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class Admin
+    partial class QuanTriVien
     {
         /// <summary>
         /// Required designer variable.
