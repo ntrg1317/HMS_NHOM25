@@ -65,11 +65,11 @@
             this.grbInfoDieuTri.Controls.Add(this.txtPhong);
             this.grbInfoDieuTri.Controls.Add(this.labTenThuoc);
             this.grbInfoDieuTri.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoDieuTri.Location = new System.Drawing.Point(19, 310);
+            this.grbInfoDieuTri.Location = new System.Drawing.Point(21, 388);
             this.grbInfoDieuTri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoDieuTri.Name = "grbInfoDieuTri";
             this.grbInfoDieuTri.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoDieuTri.Size = new System.Drawing.Size(933, 107);
+            this.grbInfoDieuTri.Size = new System.Drawing.Size(1050, 134);
             this.grbInfoDieuTri.TabIndex = 23;
             this.grbInfoDieuTri.TabStop = false;
             this.grbInfoDieuTri.Text = "Thông tin điều trị";
@@ -78,9 +78,9 @@
             // 
             this.labLieuDung.AutoSize = true;
             this.labLieuDung.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labLieuDung.Location = new System.Drawing.Point(639, 41);
+            this.labLieuDung.Location = new System.Drawing.Point(719, 51);
             this.labLieuDung.Name = "labLieuDung";
-            this.labLieuDung.Size = new System.Drawing.Size(77, 16);
+            this.labLieuDung.Size = new System.Drawing.Size(92, 20);
             this.labLieuDung.TabIndex = 31;
             this.labLieuDung.Text = "Bệnh Trạng";
             // 
@@ -88,46 +88,46 @@
             // 
             this.labSoLuongThuoc.AutoSize = true;
             this.labSoLuongThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSoLuongThuoc.Location = new System.Drawing.Point(360, 41);
+            this.labSoLuongThuoc.Location = new System.Drawing.Point(405, 51);
             this.labSoLuongThuoc.Name = "labSoLuongThuoc";
-            this.labSoLuongThuoc.Size = new System.Drawing.Size(46, 16);
+            this.labSoLuongThuoc.Size = new System.Drawing.Size(55, 20);
             this.labSoLuongThuoc.TabIndex = 29;
             this.labSoLuongThuoc.Text = "Phòng";
             // 
             // txtBenhTrang
             // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(742, 35);
+            this.txtBenhTrang.Location = new System.Drawing.Point(835, 44);
             this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBenhTrang.Name = "txtBenhTrang";
             this.txtBenhTrang.ReadOnly = true;
-            this.txtBenhTrang.Size = new System.Drawing.Size(156, 22);
+            this.txtBenhTrang.Size = new System.Drawing.Size(175, 26);
             this.txtBenhTrang.TabIndex = 30;
             // 
             // txtNgayVao
             // 
-            this.txtNgayVao.Location = new System.Drawing.Point(131, 35);
+            this.txtNgayVao.Location = new System.Drawing.Point(147, 44);
             this.txtNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayVao.Name = "txtNgayVao";
             this.txtNgayVao.ReadOnly = true;
-            this.txtNgayVao.Size = new System.Drawing.Size(156, 22);
+            this.txtNgayVao.Size = new System.Drawing.Size(175, 26);
             this.txtNgayVao.TabIndex = 30;
             // 
             // txtPhong
             // 
-            this.txtPhong.Location = new System.Drawing.Point(435, 35);
+            this.txtPhong.Location = new System.Drawing.Point(489, 44);
             this.txtPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhong.Name = "txtPhong";
             this.txtPhong.ReadOnly = true;
-            this.txtPhong.Size = new System.Drawing.Size(156, 22);
+            this.txtPhong.Size = new System.Drawing.Size(175, 26);
             this.txtPhong.TabIndex = 30;
             // 
             // labTenThuoc
             // 
             this.labTenThuoc.AutoSize = true;
             this.labTenThuoc.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenThuoc.Location = new System.Drawing.Point(37, 41);
+            this.labTenThuoc.Location = new System.Drawing.Point(42, 51);
             this.labTenThuoc.Name = "labTenThuoc";
-            this.labTenThuoc.Size = new System.Drawing.Size(68, 16);
+            this.labTenThuoc.Size = new System.Drawing.Size(78, 20);
             this.labTenThuoc.TabIndex = 23;
             this.labTenThuoc.Text = "Ngày Vào";
             // 
@@ -140,14 +140,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoLSDT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoLSDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoLSDT.Location = new System.Drawing.Point(20, 430);
+            this.dgvInfoLSDT.Location = new System.Drawing.Point(22, 538);
             this.dgvInfoLSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoLSDT.Name = "dgvInfoLSDT";
             this.dgvInfoLSDT.ReadOnly = true;
             this.dgvInfoLSDT.RowHeadersWidth = 62;
             this.dgvInfoLSDT.RowTemplate.Height = 28;
             this.dgvInfoLSDT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoLSDT.Size = new System.Drawing.Size(933, 178);
+            this.dgvInfoLSDT.Size = new System.Drawing.Size(1050, 222);
             this.dgvInfoLSDT.TabIndex = 38;
             this.dgvInfoLSDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoLSDT_CellClick);
             // 
@@ -155,9 +155,9 @@
             // 
             this.labDSThuoc.AutoSize = true;
             this.labDSThuoc.ForeColor = System.Drawing.Color.Red;
-            this.labDSThuoc.Location = new System.Drawing.Point(29, 404);
+            this.labDSThuoc.Location = new System.Drawing.Point(33, 505);
             this.labDSThuoc.Name = "labDSThuoc";
-            this.labDSThuoc.Size = new System.Drawing.Size(90, 16);
+            this.labDSThuoc.Size = new System.Drawing.Size(110, 20);
             this.labDSThuoc.TabIndex = 43;
             this.labDSThuoc.Text = "Lịch sử điều trị";
             // 
@@ -174,11 +174,11 @@
             this.grbInfoBN.Controls.Add(this.txtMaBN);
             this.grbInfoBN.Controls.Add(this.label5);
             this.grbInfoBN.ForeColor = System.Drawing.Color.Red;
-            this.grbInfoBN.Location = new System.Drawing.Point(19, 44);
+            this.grbInfoBN.Location = new System.Drawing.Point(21, 55);
             this.grbInfoBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInfoBN.Name = "grbInfoBN";
             this.grbInfoBN.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInfoBN.Size = new System.Drawing.Size(933, 133);
+            this.grbInfoBN.Size = new System.Drawing.Size(1050, 166);
             this.grbInfoBN.TabIndex = 23;
             this.grbInfoBN.TabStop = false;
             this.grbInfoBN.Text = "Tìm kiếm bệnh nhân";
@@ -187,9 +187,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(356, 92);
+            this.label6.Location = new System.Drawing.Point(400, 115);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.Size = new System.Drawing.Size(57, 20);
             this.label6.TabIndex = 29;
             this.label6.Text = "Địa chỉ";
             // 
@@ -197,9 +197,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(48, 92);
+            this.label3.Location = new System.Drawing.Point(54, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 16);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 29;
             this.label3.Text = "Giới tính";
             // 
@@ -207,9 +207,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(663, 37);
+            this.label2.Location = new System.Drawing.Point(746, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.Size = new System.Drawing.Size(62, 20);
             this.label2.TabIndex = 29;
             this.label2.Text = "Tên BN";
             // 
@@ -217,55 +217,55 @@
             // 
             this.labTenBN.AutoSize = true;
             this.labTenBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBN.Location = new System.Drawing.Point(358, 37);
+            this.labTenBN.Location = new System.Drawing.Point(403, 46);
             this.labTenBN.Name = "labTenBN";
-            this.labTenBN.Size = new System.Drawing.Size(48, 16);
+            this.labTenBN.Size = new System.Drawing.Size(57, 20);
             this.labTenBN.TabIndex = 29;
             this.labTenBN.Text = "Mã BN";
             // 
             // txtSDTBN
             // 
-            this.txtSDTBN.Location = new System.Drawing.Point(131, 32);
+            this.txtSDTBN.Location = new System.Drawing.Point(147, 40);
             this.txtSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTBN.Name = "txtSDTBN";
-            this.txtSDTBN.Size = new System.Drawing.Size(156, 22);
+            this.txtSDTBN.Size = new System.Drawing.Size(175, 26);
             this.txtSDTBN.TabIndex = 30;
             this.txtSDTBN.TextChanged += new System.EventHandler(this.txtSDTBN_TextChanged);
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(435, 88);
+            this.txtDiaChi.Location = new System.Drawing.Point(489, 110);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.ReadOnly = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(156, 22);
+            this.txtDiaChi.Size = new System.Drawing.Size(175, 26);
             this.txtDiaChi.TabIndex = 30;
             // 
             // txtGT
             // 
-            this.txtGT.Location = new System.Drawing.Point(131, 88);
+            this.txtGT.Location = new System.Drawing.Point(147, 110);
             this.txtGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGT.Name = "txtGT";
             this.txtGT.ReadOnly = true;
-            this.txtGT.Size = new System.Drawing.Size(156, 22);
+            this.txtGT.Size = new System.Drawing.Size(175, 26);
             this.txtGT.TabIndex = 30;
             // 
             // txtTenBN
             // 
-            this.txtTenBN.Location = new System.Drawing.Point(742, 33);
+            this.txtTenBN.Location = new System.Drawing.Point(835, 41);
             this.txtTenBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenBN.Name = "txtTenBN";
             this.txtTenBN.ReadOnly = true;
-            this.txtTenBN.Size = new System.Drawing.Size(156, 22);
+            this.txtTenBN.Size = new System.Drawing.Size(175, 26);
             this.txtTenBN.TabIndex = 30;
             // 
             // txtMaBN
             // 
-            this.txtMaBN.Location = new System.Drawing.Point(435, 33);
+            this.txtMaBN.Location = new System.Drawing.Point(489, 41);
             this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaBN.Name = "txtMaBN";
             this.txtMaBN.ReadOnly = true;
-            this.txtMaBN.Size = new System.Drawing.Size(156, 22);
+            this.txtMaBN.Size = new System.Drawing.Size(175, 26);
             this.txtMaBN.TabIndex = 30;
             this.txtMaBN.TextChanged += new System.EventHandler(this.txtMaBN_TextChanged);
             // 
@@ -273,9 +273,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(48, 36);
+            this.label5.Location = new System.Drawing.Point(54, 45);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 16);
+            this.label5.Size = new System.Drawing.Size(67, 20);
             this.label5.TabIndex = 23;
             this.label5.Text = "SDT BN";
             // 
@@ -288,14 +288,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTimBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTimBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTimBN.Location = new System.Drawing.Point(19, 170);
+            this.dgvTimBN.Location = new System.Drawing.Point(21, 240);
             this.dgvTimBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvTimBN.Name = "dgvTimBN";
             this.dgvTimBN.ReadOnly = true;
             this.dgvTimBN.RowHeadersWidth = 62;
             this.dgvTimBN.RowTemplate.Height = 28;
             this.dgvTimBN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTimBN.Size = new System.Drawing.Size(933, 115);
+            this.dgvTimBN.Size = new System.Drawing.Size(1050, 144);
             this.dgvTimBN.TabIndex = 38;
             this.dgvTimBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimBN_CellClick);
             // 
@@ -305,18 +305,18 @@
             this.labHeaderLSDT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labHeaderLSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labHeaderLSDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labHeaderLSDT.Location = new System.Drawing.Point(387, 9);
+            this.labHeaderLSDT.Location = new System.Drawing.Point(435, 11);
             this.labHeaderLSDT.Name = "labHeaderLSDT";
-            this.labHeaderLSDT.Size = new System.Drawing.Size(183, 29);
+            this.labHeaderLSDT.Size = new System.Drawing.Size(213, 32);
             this.labHeaderLSDT.TabIndex = 44;
             this.labHeaderLSDT.Text = "Lịch sử điều trị";
             // 
             // LichSuDieuTri
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(970, 624);
+            this.ClientSize = new System.Drawing.Size(1091, 780);
             this.Controls.Add(this.labHeaderLSDT);
             this.Controls.Add(this.labDSThuoc);
             this.Controls.Add(this.dgvTimBN);

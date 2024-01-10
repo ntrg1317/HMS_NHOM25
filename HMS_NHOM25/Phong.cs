@@ -21,6 +21,11 @@ namespace HMS_NHOM25
             try
             {
                 dgvInforPhong.DataSource = phong.all(table);
+
+                dgvInforPhong.Columns["MaPhong"].HeaderText = "Mã phòng";
+                dgvInforPhong.Columns["TenPhong"].HeaderText = "Tên phòng";
+                dgvInforPhong.Columns["SLGiuong"].HeaderText = "Số lượng giường";
+                dgvInforPhong.Columns["TienPhong"].HeaderText = "Tiền phòng";
             }
             catch (Exception ex)
             {
