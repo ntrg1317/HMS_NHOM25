@@ -12,7 +12,6 @@ namespace HMS_NHOM25
     {
         BaseModel basemodel = new BaseModel();
         ChiTietDTParams chiTietDT;
-        DataTable dataTableDTChiTiet;
 
         public ChiTietDonThuoc(string maDT, string maBN, string trangThaiTT)
         {
