@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(948, 813);
+            this.panel3.Size = new System.Drawing.Size(927, 813);
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
@@ -155,7 +155,7 @@
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
-            this.dgvDoanhThu.Size = new System.Drawing.Size(217, 323);
+            this.dgvDoanhThu.Size = new System.Drawing.Size(191, 323);
             this.dgvDoanhThu.TabIndex = 7;
             // 
             // label4
@@ -174,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(952, 882);
+            this.ClientSize = new System.Drawing.Size(973, 882);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labTKBenhNhan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

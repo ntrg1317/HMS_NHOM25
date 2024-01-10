@@ -31,7 +31,6 @@ namespace HMS_NHOM25
             {
                 if (dgvInforKeDonThuoc != null)
                 {
-                    // Initialize dataTableDTChiTiet
                     dataTableDTChiTiet = new DataTable();
                     dataTableDTChiTiet.Columns.Add("MaThuoc");
                     dataTableDTChiTiet.Columns.Add("TenThuoc");
@@ -39,7 +38,6 @@ namespace HMS_NHOM25
                     dataTableDTChiTiet.Columns.Add("LieuDung");
                     dataTableDTChiTiet.Columns.Add("LoiDan");
 
-                    // Set the DataTable as the DataSource for the DataGridView
                     dgvInforKeDonThuoc.DataSource = dataTableDTChiTiet;
                 }
                 else

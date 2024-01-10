@@ -16,31 +16,16 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private void showComboBox()
-        {
-            DataTable dt = bn_tk.all("phong");
-
-            cobTenPhong.DataSource = dt;
-            cobTenPhong.DisplayMember = "TenPhong";
-            cobTenPhong.ValueMember = "MaPhong";
-
-            cobTenPhong.SelectedIndex = -1;
-        }
-
         private void AddPatients_Load(object sender, EventArgs e)
         {
             DeleteTextBoxes();
-            showComboBox();
         }
 
         private void DeleteTextBoxes()
         {
             txtTenBNM.Text = "";
-            cobTenPhong.SelectedValue = -1;
             dateDobBn.Text = "";
-            dateNgayVaoM.Text = "";
             cobSexBNM.SelectedValue = -1;
-            txtBenhTrangBNM.Text = "";
             txtSDTBNM.Text = "";
             cobDiaChiBNM.SelectedValue = -1;
             txtSDTNguoiThanM.Text = "";
@@ -92,11 +77,8 @@ namespace HMS_NHOM25
         private void GetValuesTextBoxes()
         {
             string _tenBN = txtTenBNM.Text;
-            object _maPhong = (cobTenPhong.SelectedIndex != -1) ? (int)cobTenPhong.SelectedValue : (object)DBNull.Value;
             string _ngaySinh = dateDobBn.Text;
-            string _ngayVao = dateNgayVaoM.Text;
             string _gioiTinh = cobSexBNM.Text;
-            string _benhTrang = txtBenhTrangBNM.Text;
             string _sdt = txtSDTBNM.Text;
             string _diaChi = cobDiaChiBNM.Text;
             string _sdtNguoiThan = txtSDTNguoiThanM.Text;
@@ -104,7 +86,7 @@ namespace HMS_NHOM25
             string _tenDN = txtTenDNBNM.Text;
             string _matKhau = txtMatKhauBNM.Text;
 
-            bn = new BenhNhan(_tenBN, _maPhong, _ngaySinh, _ngayVao, _gioiTinh, _benhTrang, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
+            bn = new BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
         }
 
         private void btnSaveInfoBNM_Click(object sender, EventArgs e)
@@ -128,17 +110,9 @@ namespace HMS_NHOM25
                             int id = bn_tk.getLastInsertID("MaTK", "taiKhoan");
 
                             string query1;
-
-                            if (bn.MaPhong != (object)DBNull.Value)
-                            {
-                                query1 = "INSERT INTO benhNhan (MaBN, MaPhong, TenBN, NgaySinh, NgayVao, GioiTinh, BenhTrang, SDT, DiaChi, SDTNguoiThan) VALUES " +
-                                "('" + id + "', '" + bn.MaPhong + "' , N'" + bn.TenBN + "' ,N'" + bn.NgaySinh + "', N'" + bn.NgayVao + "', N'" + bn.GioiTinh + "', N'" + bn.Sdt + "', N'" + bn.BenhTrang + "' , N'" + bn.DiaChi + "', N'" + bn.SdtNguoiThan + "')";
-                            }
-                            else
-                            {
-                                query1 = "INSERT INTO benhNhan (MaBN, TenBN, NgaySinh, NgayVao, GioiTinh, BenhTrang, SDT, DiaChi, SDTNguoiThan) VALUES " +
-                                "('" + id + "', N'" + bn.TenBN + "' ,N'" + bn.NgaySinh + "', N'" + bn.NgayVao + "', N'" + bn.GioiTinh + "', N'" + bn.Sdt + "', N'" + bn.BenhTrang + "' , N'" + bn.DiaChi + "', N'" + bn.SdtNguoiThan + "')";
-                            }
+                            
+                            query1 = "INSERT INTO benhNhan (MaBN, TenBN, NgaySinh, GioiTinh, SDT, DiaChi, SDTNguoiThan) VALUES " +
+                                "('" + id + "', N'" + bn.TenBN + "' ,N'" + bn.NgaySinh + "', N'" + bn.GioiTinh + "', N'" + bn.Sdt + "', N'" + bn.DiaChi + "', N'" + bn.SdtNguoiThan + "')";
 
                             bn_tk.Command(query1);
 

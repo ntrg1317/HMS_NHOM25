@@ -146,12 +146,6 @@
     <Compile Include="AddThuoc.Designer.cs">
       <DependentUpon>AddThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="BacSiControl.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BacSiControl.Designer.cs">
-      <DependentUpon>BacSiControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="BaoCaoThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,11 +158,23 @@
     <Compile Include="ChiTietDonThuoc.Designer.cs">
       <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc.Designer.cs">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="DichVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonThuocDaKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonThuocDaKe.Designer.cs">
+      <DependentUpon>DonThuocDaKe.cs</DependentUpon>
     </Compile>
     <Compile Include="DSHoaDon.cs">
       <SubType>Form</SubType>
@@ -176,11 +182,30 @@
     <Compile Include="DSHoaDon.Designer.cs">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="DVSuDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVSuDung.Designer.cs">
+      <DependentUpon>DVSuDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
     <Compile Include="HoaDonBN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HoaDonBN.Designer.cs">
       <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieuTri.Designer.cs">
+      <DependentUpon>DieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSuDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuDieuTri.Designer.cs">
+      <DependentUpon>LichSuDieuTri.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\BaseModel.cs" />
     <Compile Include="Model\ConnectDB.cs" />
@@ -205,6 +230,18 @@
     </Compile>
     <Compile Include="Phong.Designer.cs">
       <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNS.Designer.cs">
+      <DependentUpon>QLNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
     <Compile Include="SuaTTTK.cs">
       <SubType>Form</SubType>
@@ -403,14 +440,14 @@
     <EmbeddedResource Include="AddThuoc.resx">
       <DependentUpon>AddThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BacSiControl.resx">
-      <DependentUpon>BacSiControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoThongKe.resx">
       <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietDonThuoc.resx">
       <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc.resx">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
@@ -418,14 +455,29 @@
     <EmbeddedResource Include="DSHoaDon.resx">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DVSuDung.resx">
+      <DependentUpon>DVSuDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDonBN.resx">
       <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DieuTri.resx">
+      <DependentUpon>DieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuDieuTri.resx">
+      <DependentUpon>LichSuDieuTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_TTTK.resx">
       <DependentUpon>Patient_TTTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNS.resx">
+      <DependentUpon>QLNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaTTTK.resx">
       <DependentUpon>SuaTTTK.cs</DependentUpon>

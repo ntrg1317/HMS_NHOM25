@@ -29,22 +29,16 @@
         private void InitializeComponent()
         {
             this.grbInfoBN = new System.Windows.Forms.GroupBox();
-            this.cobTenPhong = new System.Windows.Forms.ComboBox();
             this.cobDiaChiBN = new System.Windows.Forms.ComboBox();
             this.txtSDTNguoiThan = new System.Windows.Forms.TextBox();
-            this.DateVaoVienBN = new System.Windows.Forms.DateTimePicker();
-            this.labNgayVaoBN = new System.Windows.Forms.Label();
-            this.labMaPhongBN = new System.Windows.Forms.Label();
             this.cobTrangThaiBN = new System.Windows.Forms.ComboBox();
             this.cobGioiTinhBN = new System.Windows.Forms.ComboBox();
             this.DOBBN = new System.Windows.Forms.DateTimePicker();
             this.txtSDTBN = new System.Windows.Forms.TextBox();
-            this.txtBenhTrangBN = new System.Windows.Forms.TextBox();
             this.txtTenBN = new System.Windows.Forms.TextBox();
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.labTrangThaiBN = new System.Windows.Forms.Label();
             this.labSDTNguoiThan = new System.Windows.Forms.Label();
-            this.labBenhTrangBN = new System.Windows.Forms.Label();
             this.labSDTBN = new System.Windows.Forms.Label();
             this.labDiaChiBN = new System.Windows.Forms.Label();
             this.labSexBN = new System.Windows.Forms.Label();
@@ -56,7 +50,6 @@
             this.dgvInfoBN = new System.Windows.Forms.DataGridView();
             this.txtTimKiemBN = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnThemDV = new System.Windows.Forms.Button();
             this.btnSuaBN = new System.Windows.Forms.Button();
             this.btnXoaBN = new System.Windows.Forms.Button();
             this.btnThemBN = new System.Windows.Forms.Button();
@@ -67,22 +60,16 @@
             // 
             // grbInfoBN
             // 
-            this.grbInfoBN.Controls.Add(this.cobTenPhong);
             this.grbInfoBN.Controls.Add(this.cobDiaChiBN);
             this.grbInfoBN.Controls.Add(this.txtSDTNguoiThan);
-            this.grbInfoBN.Controls.Add(this.DateVaoVienBN);
-            this.grbInfoBN.Controls.Add(this.labNgayVaoBN);
-            this.grbInfoBN.Controls.Add(this.labMaPhongBN);
             this.grbInfoBN.Controls.Add(this.cobTrangThaiBN);
             this.grbInfoBN.Controls.Add(this.cobGioiTinhBN);
             this.grbInfoBN.Controls.Add(this.DOBBN);
             this.grbInfoBN.Controls.Add(this.txtSDTBN);
-            this.grbInfoBN.Controls.Add(this.txtBenhTrangBN);
             this.grbInfoBN.Controls.Add(this.txtTenBN);
             this.grbInfoBN.Controls.Add(this.txtMaBN);
             this.grbInfoBN.Controls.Add(this.labTrangThaiBN);
             this.grbInfoBN.Controls.Add(this.labSDTNguoiThan);
-            this.grbInfoBN.Controls.Add(this.labBenhTrangBN);
             this.grbInfoBN.Controls.Add(this.labSDTBN);
             this.grbInfoBN.Controls.Add(this.labDiaChiBN);
             this.grbInfoBN.Controls.Add(this.labSexBN);
@@ -98,17 +85,6 @@
             this.grbInfoBN.TabIndex = 0;
             this.grbInfoBN.TabStop = false;
             this.grbInfoBN.Text = "Thông tin bệnh nhân";
-            // 
-            // cobTenPhong
-            // 
-            this.cobTenPhong.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cobTenPhong.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cobTenPhong.FormattingEnabled = true;
-            this.cobTenPhong.Location = new System.Drawing.Point(129, 146);
-            this.cobTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cobTenPhong.Name = "cobTenPhong";
-            this.cobTenPhong.Size = new System.Drawing.Size(162, 24);
-            this.cobTenPhong.TabIndex = 25;
             // 
             // cobDiaChiBN
             // 
@@ -185,40 +161,11 @@
             // 
             // txtSDTNguoiThan
             // 
-            this.txtSDTNguoiThan.Location = new System.Drawing.Point(715, 70);
+            this.txtSDTNguoiThan.Location = new System.Drawing.Point(718, 30);
             this.txtSDTNguoiThan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDTNguoiThan.Name = "txtSDTNguoiThan";
             this.txtSDTNguoiThan.Size = new System.Drawing.Size(160, 22);
             this.txtSDTNguoiThan.TabIndex = 23;
-            // 
-            // DateVaoVienBN
-            // 
-            this.DateVaoVienBN.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateVaoVienBN.Location = new System.Drawing.Point(398, 148);
-            this.DateVaoVienBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.DateVaoVienBN.Name = "DateVaoVienBN";
-            this.DateVaoVienBN.Size = new System.Drawing.Size(162, 22);
-            this.DateVaoVienBN.TabIndex = 22;
-            // 
-            // labNgayVaoBN
-            // 
-            this.labNgayVaoBN.AutoSize = true;
-            this.labNgayVaoBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labNgayVaoBN.Location = new System.Drawing.Point(332, 151);
-            this.labNgayVaoBN.Name = "labNgayVaoBN";
-            this.labNgayVaoBN.Size = new System.Drawing.Size(66, 16);
-            this.labNgayVaoBN.TabIndex = 21;
-            this.labNgayVaoBN.Text = "Ngày vào";
-            // 
-            // labMaPhongBN
-            // 
-            this.labMaPhongBN.AutoSize = true;
-            this.labMaPhongBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labMaPhongBN.Location = new System.Drawing.Point(20, 150);
-            this.labMaPhongBN.Name = "labMaPhongBN";
-            this.labMaPhongBN.Size = new System.Drawing.Size(72, 16);
-            this.labMaPhongBN.TabIndex = 19;
-            this.labMaPhongBN.Text = "Tên phòng";
             // 
             // cobTrangThaiBN
             // 
@@ -226,7 +173,7 @@
             this.cobTrangThaiBN.Items.AddRange(new object[] {
             "Hoạt động",
             "Ngừng hoạt động"});
-            this.cobTrangThaiBN.Location = new System.Drawing.Point(715, 109);
+            this.cobTrangThaiBN.Location = new System.Drawing.Point(718, 69);
             this.cobTrangThaiBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cobTrangThaiBN.Name = "cobTrangThaiBN";
             this.cobTrangThaiBN.Size = new System.Drawing.Size(160, 24);
@@ -263,14 +210,6 @@
             this.txtSDTBN.TabIndex = 12;
             this.txtSDTBN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDTBN_KeyPress);
             // 
-            // txtBenhTrangBN
-            // 
-            this.txtBenhTrangBN.Location = new System.Drawing.Point(715, 30);
-            this.txtBenhTrangBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBenhTrangBN.Name = "txtBenhTrangBN";
-            this.txtBenhTrangBN.Size = new System.Drawing.Size(160, 22);
-            this.txtBenhTrangBN.TabIndex = 11;
-            // 
             // txtTenBN
             // 
             this.txtTenBN.Location = new System.Drawing.Point(129, 67);
@@ -292,7 +231,7 @@
             // 
             this.labTrangThaiBN.AutoSize = true;
             this.labTrangThaiBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTrangThaiBN.Location = new System.Drawing.Point(598, 110);
+            this.labTrangThaiBN.Location = new System.Drawing.Point(601, 70);
             this.labTrangThaiBN.Name = "labTrangThaiBN";
             this.labTrangThaiBN.Size = new System.Drawing.Size(67, 16);
             this.labTrangThaiBN.TabIndex = 8;
@@ -302,21 +241,11 @@
             // 
             this.labSDTNguoiThan.AutoSize = true;
             this.labSDTNguoiThan.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labSDTNguoiThan.Location = new System.Drawing.Point(598, 72);
+            this.labSDTNguoiThan.Location = new System.Drawing.Point(601, 32);
             this.labSDTNguoiThan.Name = "labSDTNguoiThan";
             this.labSDTNguoiThan.Size = new System.Drawing.Size(101, 16);
             this.labSDTNguoiThan.TabIndex = 7;
             this.labSDTNguoiThan.Text = "SĐT Người thân";
-            // 
-            // labBenhTrangBN
-            // 
-            this.labBenhTrangBN.AutoSize = true;
-            this.labBenhTrangBN.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labBenhTrangBN.Location = new System.Drawing.Point(598, 30);
-            this.labBenhTrangBN.Name = "labBenhTrangBN";
-            this.labBenhTrangBN.Size = new System.Drawing.Size(71, 16);
-            this.labBenhTrangBN.TabIndex = 6;
-            this.labBenhTrangBN.Text = "Bệnh trạng";
             // 
             // labSDTBN
             // 
@@ -427,28 +356,12 @@
             this.txtTimKiemBN.TabIndex = 18;
             this.txtTimKiemBN.TextChanged += new System.EventHandler(this.txtTimKiemBN_TextChanged);
             // 
-            // btnThemDV
-            // 
-            this.btnThemDV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemDV.Enabled = false;
-            this.btnThemDV.Image = global::HMS_NHOM25.Properties.Resources.add1;
-            this.btnThemDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDV.Location = new System.Drawing.Point(840, 235);
-            this.btnThemDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemDV.Name = "btnThemDV";
-            this.btnThemDV.Size = new System.Drawing.Size(100, 31);
-            this.btnThemDV.TabIndex = 24;
-            this.btnThemDV.Text = "Thêm DV";
-            this.btnThemDV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemDV.UseVisualStyleBackColor = true;
-            this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click);
-            // 
             // btnSuaBN
             // 
             this.btnSuaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSuaBN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBN.Location = new System.Drawing.Point(551, 235);
+            this.btnSuaBN.Location = new System.Drawing.Point(596, 235);
             this.btnSuaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBN.Name = "btnSuaBN";
             this.btnSuaBN.Size = new System.Drawing.Size(103, 31);
@@ -463,7 +376,7 @@
             this.btnXoaBN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaBN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBN.Location = new System.Drawing.Point(704, 235);
+            this.btnXoaBN.Location = new System.Drawing.Point(802, 236);
             this.btnXoaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBN.Name = "btnXoaBN";
             this.btnXoaBN.Size = new System.Drawing.Size(85, 31);
@@ -505,7 +418,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 744);
-            this.Controls.Add(this.btnThemDV);
             this.Controls.Add(this.dgvInfoBN);
             this.Controls.Add(this.btnSuaBN);
             this.Controls.Add(this.btnXoaBN);
@@ -536,11 +448,9 @@
         private System.Windows.Forms.Label labSexBN;
         private System.Windows.Forms.Label labTrangThaiBN;
         private System.Windows.Forms.Label labSDTNguoiThan;
-        private System.Windows.Forms.Label labBenhTrangBN;
         private System.Windows.Forms.Label labSDTBN;
         private System.Windows.Forms.Label labDiaChiBN;
         private System.Windows.Forms.TextBox txtSDTBN;
-        private System.Windows.Forms.TextBox txtBenhTrangBN;
         private System.Windows.Forms.TextBox txtTenBN;
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.DateTimePicker DOBBN;
@@ -552,15 +462,10 @@
         private System.Windows.Forms.Button btnXoaBN;
         private System.Windows.Forms.Button btnSuaBN;
         private System.Windows.Forms.DataGridView dgvInfoBN;
-        private System.Windows.Forms.DateTimePicker DateVaoVienBN;
-        private System.Windows.Forms.Label labNgayVaoBN;
-        private System.Windows.Forms.Label labMaPhongBN;
         private System.Windows.Forms.TextBox txtSDTNguoiThan;
         private System.Windows.Forms.TextBox txtTimKiemBN;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ComboBox cobDiaChiBN;
-        private System.Windows.Forms.ComboBox cobTenPhong;
-        private System.Windows.Forms.Button btnThemDV;
         private System.Windows.Forms.Label labDS;
     }
 }
