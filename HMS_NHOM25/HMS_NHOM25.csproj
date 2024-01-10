@@ -170,11 +170,11 @@
     <Compile Include="DichVu.Designer.cs">
       <DependentUpon>DichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonThuocDaKe.cs">
+    <Compile Include="DSDonThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonThuocDaKe.Designer.cs">
-      <DependentUpon>DonThuocDaKe.cs</DependentUpon>
+    <Compile Include="DSDonThuoc.Designer.cs">
+      <DependentUpon>DSDonThuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="DSHoaDon.cs">
       <SubType>Form</SubType>
@@ -213,6 +213,7 @@
     <Compile Include="Params\BacSi.cs" />
     <Compile Include="Params\ChiTietDTParams.cs" />
     <Compile Include="Params\DichVuParams.cs" />
+    <Compile Include="Params\DSDonThuocParams.cs" />
     <Compile Include="Params\DuocSiParams.cs" />
     <Compile Include="Params\HoaDonParams.cs" />
     <Compile Include="Params\KhoThuocParams.cs" />
@@ -230,6 +231,12 @@
     </Compile>
     <Compile Include="Phong.Designer.cs">
       <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLHoaDon.Designer.cs">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="QLNS.cs">
       <SubType>Form</SubType>
@@ -285,11 +292,11 @@
     <Compile Include="Doctors.Designer.cs">
       <DependentUpon>Doctors.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonThuoc.cs">
+    <Compile Include="DonThuocBN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonThuoc.Designer.cs">
-      <DependentUpon>DonThuoc.cs</DependentUpon>
+    <Compile Include="DonThuocBN.Designer.cs">
+      <DependentUpon>DonThuocBN.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoThuoc.cs">
       <SubType>Form</SubType>
@@ -452,6 +459,9 @@
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DSDonThuoc.resx">
+      <DependentUpon>DSDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DSHoaDon.resx">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,6 +482,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLHoaDon.resx">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLNS.resx">
       <DependentUpon>QLNS.cs</DependentUpon>
@@ -500,8 +513,8 @@
     <EmbeddedResource Include="Doctors.resx">
       <DependentUpon>Doctors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonThuoc.resx">
-      <DependentUpon>DonThuoc.cs</DependentUpon>
+    <EmbeddedResource Include="DonThuocBN.resx">
+      <DependentUpon>DonThuocBN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoThuoc.resx">
       <DependentUpon>KhoThuoc.cs</DependentUpon>

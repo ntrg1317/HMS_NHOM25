@@ -13,46 +13,33 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class DonThuoc : Form
+    public partial class DonThuocBN : Form
     {
         BaseModel basemodel = new BaseModel();
-        private string table = "donThuoc";
 
-        public DonThuoc()
+        public DonThuocBN()
         {
             InitializeComponent();
         }
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
         {
-            string timKiem = txtTimKiemSDTBN.Text.Trim();
-            if (timKiem == "")
+            try
             {
-                DonThuoc_Load(sender, e);
+                string timKiem = txtTimKiemSDTBN.Text;
+                if (timKiem == "")
+                {
+                    DonThuocBN_Load(sender, e);
+                }
+                else
+                {
+                    string timKiemBN = "SELECT * FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
+                    dgvTimBN.DataSource = basemodel.Table(timKiemBN);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                try
-                {
-                    string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
-                    DataTable resultTable = basemodel.Table(query1);
-
-                    if (resultTable.Rows.Count > 0)
-                    {
-                        string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
-                        string query2 = "SELECT * FROM donThuoc WHERE MaBN LIKE '%" + maBenhNhan + "%'";
-                        dgvDSDonThuoc.DataSource = basemodel.Table(query2);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không tìm thấy số điện thoại nào khớp.");
-                    }
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Error: ", ex.Message);
-                }
-
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -78,7 +65,7 @@ namespace HMS_NHOM25
                         basemodel.Command(query1);
                         basemodel.Command(query2);
                         MessageBox.Show("Xóa thông tin thành công!");
-                        DonThuoc_Load(sender, e);
+                        DonThuocBN_Load(sender, e);
                     }
                 }
                 catch (Exception ex)
@@ -119,7 +106,6 @@ namespace HMS_NHOM25
                     DataGridViewRow selectedRow = dgvDSDonThuoc.Rows[e.RowIndex];
 
                     txtMaDT.Text = selectedRow.Cells["MaDT"].Value.ToString();
-                    txtMaBN.Text = selectedRow.Cells["MaBN"].Value.ToString();
                     dateNgayKeDon.Text = selectedRow.Cells["NgayKeDon"].Value.ToString();
 
                     string maBN = selectedRow.Cells["MaBN"].Value.ToString();
@@ -144,16 +130,37 @@ namespace HMS_NHOM25
             }
         }
 
+        private void DonThuocBN_Load(object sender, EventArgs e)
+        {
 
-        private void DonThuoc_Load(object sender, EventArgs e)
+        }
+
+        private void dgvTimBN_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                dgvDSDonThuoc.DataSource = basemodel.all(table);
+                txtMaBN.Text = dgvTimBN.SelectedRows[0].Cells["MaBN"].Value.ToString();
+                try
+                {
+                    string timKiem = txtMaBN.Text;
+                    if (timKiem == "")
+                    {
+                        DonThuocBN_Load(sender, e);
+                    }
+                    else
+                    {
+                        string timKiemBN = "SELECT * FROM donThuoc WHERE MaBN LIKE '%" + timKiem + "%'";
+                        dgvDSDonThuoc.DataSource = basemodel.Table(timKiemBN);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

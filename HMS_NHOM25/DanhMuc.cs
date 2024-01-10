@@ -45,7 +45,7 @@ namespace HMS_NHOM25
 
         private void btnDSDonThuoc_Click(object sender, EventArgs e)
         {
-            function.OpenChildForm(new DonThuoc(), btnDSDonThuoc, panelHienThi);
+            function.OpenChildForm(new DonThuocBN(), btnDSDonThuoc, panelHienThi);
         }
 
         private void btnDSNhanSu_Click(object sender, EventArgs e)

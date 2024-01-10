@@ -39,7 +39,7 @@ namespace HMS_NHOM25
 
         private void btnSaveTT_Click(object sender, EventArgs e)
         {
-            if (int.Parse(txtTongTien.Text) <= 0)
+            if (decimal.Parse(txtTongTien.Text) <= 0)
             {
                 MessageBox.Show("Không thể tạo hóa đơn cho bệnh nhân có trạng thái không hoạt động!");
             }
@@ -150,7 +150,7 @@ namespace HMS_NHOM25
 
                     string query = @"
                                 SELECT 
-                                    benhNhan_dichVu.MaDV AS 'DichVu/DonThuoc',
+                                    benhNhan_dichVu.MaDV AS 'MaDichVu/MaDonThuoc',
                                     ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
                                 FROM 
                                     benhNhan BN
@@ -167,7 +167,7 @@ namespace HMS_NHOM25
                                 UNION
 
                                 SELECT 
-                                    DonThuoc.MaDT AS 'DichVu/DonThuoc',
+                                    DonThuoc.MaDT AS 'MaDichVu/MaDonThuoc',
                                     ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
                                 FROM 
                                     benhNhan BN
