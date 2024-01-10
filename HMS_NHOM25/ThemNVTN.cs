@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddNVTN : Form
+    public partial class ThemNVTN : Form
     {
         BaseModel basemodel = new BaseModel();
         NVThuNganParams nvtn;
-        public AddNVTN()
+        public ThemNVTN()
         {
             InitializeComponent();
         }

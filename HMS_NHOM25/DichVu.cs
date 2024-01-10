@@ -48,7 +48,7 @@ namespace HMS_NHOM25
 
         private void btnThemDV_Click(object sender, EventArgs e)
         {
-            AddDichVu addDV = new AddDichVu();
+            ThemDichVu addDV = new ThemDichVu();
             addDV.Show();
         }
 

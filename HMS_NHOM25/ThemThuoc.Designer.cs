@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddThuoc
+    partial class ThemThuoc
     {
         /// <summary>
         /// Required designer variable.

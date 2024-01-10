@@ -5,13 +5,13 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Doctors : Form
+    public partial class BacSi : Form
     {
         BaseModel bacSi = new BaseModel();
-        BacSi qlBacSi;
+        Params.BacSi qlBacSi;
 
         private string table = "bacSi";
-        public Doctors()
+        public BacSi()
         {
             InitializeComponent();
         }
@@ -94,7 +94,7 @@ namespace HMS_NHOM25
             string _chuyenMon = cobChuyenMonBS.Text;
             string _bangCap = txtBangCapBS.Text;
             string _trangThai = cobTrangThaiBS.Text;
-            qlBacSi = new BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, null, null, _trangThai);
+            qlBacSi = new Params.BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, null, null, _trangThai);
         }
         private void btnSuaBS_Click(object sender, EventArgs e)
         {
@@ -201,7 +201,7 @@ namespace HMS_NHOM25
 
         private void btnThemBS_Click(object sender, EventArgs e)
         {
-            AddDoctor doctor = new AddDoctor();
+            ThemDoctor doctor = new ThemDoctor();
             doctor.Show();
         }
 

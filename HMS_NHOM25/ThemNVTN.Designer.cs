@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddNVTN
+    partial class ThemNVTN
     {
         /// <summary>
         /// Required designer variable.

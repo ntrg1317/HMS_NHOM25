@@ -5,11 +5,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Admin : Form
+    public partial class QuanTriVien : Form
     {
         BaseModel basemodel = new BaseModel();
         private string table = "quanTriVien";
-        public Admin()
+        public QuanTriVien()
         {
             InitializeComponent();
         }

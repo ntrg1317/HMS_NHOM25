@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class Doctors
+    partial class BacSi
     {
         /// <summary>
         /// Required designer variable.
