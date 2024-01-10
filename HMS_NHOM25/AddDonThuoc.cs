@@ -186,7 +186,7 @@ namespace HMS_NHOM25
 
         private void btnThoatAddDonThuoc_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void dgvInforDonThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
