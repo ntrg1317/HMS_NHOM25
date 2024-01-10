@@ -24,6 +24,7 @@ namespace HMS_NHOM25
         {
             string MaBN = txtMaBN.Text;
             AddBenhNhanDV bn_dv = new AddBenhNhanDV(MaBN);
+            bn_dv.FormClosed += (s, args) => DVSuDung_Load(sender, e);
             bn_dv.Show();
         }
 
@@ -75,12 +76,37 @@ namespace HMS_NHOM25
 
         private void dgvTimBN_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            try
+            {
+                txtSDTBN.Text = dgvTimBN.SelectedRows[0].Cells["SDT"].Value.ToString();
+                txtMaBN.Text = dgvTimBN.SelectedRows[0].Cells["MaBN"].Value.ToString();
+                txtTenBN.Text = dgvTimBN.SelectedRows[0].Cells["TenBN"].Value.ToString();
+                txtGT.Text = dgvTimBN.SelectedRows[0].Cells["GioiTinh"].Value.ToString();
+                txtDiaChi.Text = dgvTimBN.SelectedRows[0].Cells["DiaChi"].Value.ToString();
+                int trangThai = int.Parse(dgvTimBN.SelectedRows[0].Cells["TrangThai"].Value.ToString());
+                if (trangThai == 1)
+                {
+                    txtTrangThai.Text = "Hoạt động";
+                    btnThemDV.Enabled = true;
+                }    
+                else
+                {
+                    txtTrangThai.Text = "Ngừng hoạt động";
+                    btnThemDV.Enabled = false;
+                }    
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void dgvInfoDVSD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            txtMaDV.Text = dgvInfoDVSD.SelectedRows[0].Cells["MADV"].Value.ToString();
+            txtTenDV.Text = dgvInfoDVSD.SelectedRows[0].Cells["TenDV"].Value.ToString();
+            txtTienDV.Text = dgvInfoDVSD.SelectedRows[0].Cells["TienDV"].Value.ToString();
+            txtNgayDung.Text = dgvInfoDVSD.SelectedRows[0].Cells["NgayDung"].Value.ToString();
         }
     }
 }

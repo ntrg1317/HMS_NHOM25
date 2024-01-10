@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDanhMuc = new System.Windows.Forms.Panel();
-            this.btnDSDonThuoc = new System.Windows.Forms.Button();
+            this.btnQLPhong = new System.Windows.Forms.Button();
             this.btnQLHoaDon = new System.Windows.Forms.Button();
             this.btnDieuTri = new System.Windows.Forms.Button();
             this.panelHienThi = new System.Windows.Forms.Panel();
@@ -39,7 +39,7 @@
             // panelDanhMuc
             // 
             this.panelDanhMuc.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panelDanhMuc.Controls.Add(this.btnDSDonThuoc);
+            this.panelDanhMuc.Controls.Add(this.btnQLPhong);
             this.panelDanhMuc.Controls.Add(this.btnQLHoaDon);
             this.panelDanhMuc.Controls.Add(this.btnDieuTri);
             this.panelDanhMuc.Dock = System.Windows.Forms.DockStyle.Top;
@@ -49,17 +49,18 @@
             this.panelDanhMuc.Size = new System.Drawing.Size(970, 69);
             this.panelDanhMuc.TabIndex = 0;
             // 
-            // btnDSDonThuoc
+            // btnQLPhong
             // 
-            this.btnDSDonThuoc.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDSDonThuoc.BackColor = System.Drawing.Color.Lavender;
-            this.btnDSDonThuoc.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDSDonThuoc.Location = new System.Drawing.Point(648, 0);
-            this.btnDSDonThuoc.Name = "btnDSDonThuoc";
-            this.btnDSDonThuoc.Size = new System.Drawing.Size(322, 69);
-            this.btnDSDonThuoc.TabIndex = 2;
-            this.btnDSDonThuoc.Text = "Quản Lý Phòng";
-            this.btnDSDonThuoc.UseVisualStyleBackColor = false;
+            this.btnQLPhong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnQLPhong.BackColor = System.Drawing.Color.Lavender;
+            this.btnQLPhong.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnQLPhong.Location = new System.Drawing.Point(648, 0);
+            this.btnQLPhong.Name = "btnQLPhong";
+            this.btnQLPhong.Size = new System.Drawing.Size(322, 69);
+            this.btnQLPhong.TabIndex = 2;
+            this.btnQLPhong.Text = "Quản Lý Phòng";
+            this.btnQLPhong.UseVisualStyleBackColor = false;
+            this.btnQLPhong.Click += new System.EventHandler(this.btnQLPhong_Click);
             // 
             // btnQLHoaDon
             // 
@@ -114,7 +115,7 @@
 
         private System.Windows.Forms.Panel panelDanhMuc;
         private System.Windows.Forms.Button btnDieuTri;
-        private System.Windows.Forms.Button btnDSDonThuoc;
+        private System.Windows.Forms.Button btnQLPhong;
         private System.Windows.Forms.Button btnQLHoaDon;
         private System.Windows.Forms.Panel panelHienThi;
     }
