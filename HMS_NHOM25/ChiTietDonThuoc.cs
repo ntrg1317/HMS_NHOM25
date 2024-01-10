@@ -173,6 +173,12 @@ namespace HMS_NHOM25
                 DataTable resultTable = basemodel.Table(query);
                 dgvInforDonThuoc.DataSource = resultTable;
 
+                dgvInforDonThuoc.Columns["MaDT"].HeaderText = "Mã đơn thuốc";
+                dgvInforDonThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
+                dgvInforDonThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
+                dgvInforDonThuoc.Columns["LieuDung"].HeaderText = "Liều dùng";
+                dgvInforDonThuoc.Columns["LoiDan"].HeaderText = "Lời dặn";
+
             }
             catch (Exception ex)
             {
