@@ -47,9 +47,9 @@
             this.label3.BackColor = System.Drawing.Color.Lavender;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(352, 27);
+            this.label3.Location = new System.Drawing.Point(396, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 38);
+            this.label3.Size = new System.Drawing.Size(267, 42);
             this.label3.TabIndex = 1;
             this.label3.Text = "Thống kê thuốc";
             // 
@@ -61,9 +61,10 @@
             this.panel3.Controls.Add(this.chartSuDungThuoc);
             this.panel3.Controls.Add(this.dgvSuDungThuoc);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(4, 88);
+            this.panel3.Location = new System.Drawing.Point(4, 110);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 563);
+            this.panel3.Size = new System.Drawing.Size(1030, 704);
             this.panel3.TabIndex = 5;
             // 
             // chartSuDungThuoc
@@ -84,7 +85,8 @@
             legend1.Position.X = 77.03163F;
             legend1.Position.Y = 8F;
             this.chartSuDungThuoc.Legends.Add(legend1);
-            this.chartSuDungThuoc.Location = new System.Drawing.Point(310, 54);
+            this.chartSuDungThuoc.Location = new System.Drawing.Point(349, 68);
+            this.chartSuDungThuoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chartSuDungThuoc.Name = "chartSuDungThuoc";
             this.chartSuDungThuoc.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series1.ChartArea = "ChartArea1";
@@ -92,7 +94,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Thuốc";
             this.chartSuDungThuoc.Series.Add(series1);
-            this.chartSuDungThuoc.Size = new System.Drawing.Size(581, 494);
+            this.chartSuDungThuoc.Size = new System.Drawing.Size(654, 618);
             this.chartSuDungThuoc.TabIndex = 8;
             this.chartSuDungThuoc.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -103,32 +105,35 @@
             this.dgvSuDungThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSuDungThuoc.BackgroundColor = System.Drawing.Color.White;
             this.dgvSuDungThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSuDungThuoc.Location = new System.Drawing.Point(20, 54);
+            this.dgvSuDungThuoc.Location = new System.Drawing.Point(22, 68);
+            this.dgvSuDungThuoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvSuDungThuoc.Name = "dgvSuDungThuoc";
             this.dgvSuDungThuoc.ReadOnly = true;
             this.dgvSuDungThuoc.RowHeadersWidth = 51;
             this.dgvSuDungThuoc.RowTemplate.Height = 24;
-            this.dgvSuDungThuoc.Size = new System.Drawing.Size(272, 494);
+            this.dgvSuDungThuoc.Size = new System.Drawing.Size(306, 618);
             this.dgvSuDungThuoc.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(317, 21);
+            this.label4.Location = new System.Drawing.Point(357, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(351, 17);
+            this.label4.Size = new System.Drawing.Size(384, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "Thống kê 8 loại thuốc được sử dụng nhiều nhất";
             // 
             // ThongKeThuoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 669);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1048, 836);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ThongKeThuoc";
             this.Text = "ThongKeThuoc";
             this.Load += new System.EventHandler(this.ThongKeThuoc_Load);

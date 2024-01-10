@@ -270,6 +270,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1069, 788);
             this.Controls.Add(this.dgvDSHoaDonBN);
             this.Controls.Add(this.label3);

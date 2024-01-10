@@ -44,6 +44,14 @@ namespace HMS_NHOM25
                 {
                     string timKiemBN = "SELECT * FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
                     dgvTimBN.DataSource = basemodel.Table(timKiemBN);
+                    dgvTimBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+                    dgvTimBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
+                    dgvTimBN.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                    dgvTimBN.Columns["GioiTinh"].HeaderText = "Giới Tính";
+                    dgvTimBN.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                    dgvTimBN.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                    dgvTimBN.Columns["SDTNguoiThan"].HeaderText = "Số Điện Thoại Người Thân";
+                    dgvTimBN.Columns["TrangThai"].HeaderText = "Trạng Thái";
                 }
             }
             catch (Exception ex)
@@ -73,6 +81,10 @@ namespace HMS_NHOM25
                     {
                         string timKiemHD = "SELECT * FROM hoaDon WHERE MaBN LIKE '%" + timKiem + "%'";
                         dgvDSHoaDonBN.DataSource = basemodel.Table(timKiemHD);
+                        dgvDSHoaDonBN.Columns["MaHD"].HeaderText = "Mã hóa đơn";
+                        dgvDSHoaDonBN.Columns["MaBN"].HeaderText = "Mã đơn thuốc";
+                        dgvDSHoaDonBN.Columns["NgayTT"].HeaderText = "Ngày thanh toán";
+                        dgvDSHoaDonBN.Columns["TongTien"].HeaderText = "Tổng tiền";
                     }
                 }
                 catch (Exception ex)
@@ -98,8 +110,8 @@ namespace HMS_NHOM25
 
                     string detailsQuery = @"
                                             SELECT 
-                                                benhNhan_dichVu.MaDV AS 'MaDichVu/MaDonThuoc',
-                                                ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
+                                                benhNhan_dichVu.MaDV AS 'Mã dịch vụ/Mã đơn thuốc',
+                                                ISNULL(dichVu.TienDV, 0) AS 'Giá Tiền'
                                             FROM 
                                                 benhNhan BN
                                             INNER JOIN 
@@ -112,8 +124,8 @@ namespace HMS_NHOM25
                                             UNION
 
                                             SELECT 
-                                                DonThuoc.MaDT AS 'MaDichVu/MaDonThuoc',
-                                                ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
+                                                DonThuoc.MaDT AS 'Mã dịch vụ/Mã đơn thuốc',
+                                                ISNULL(khoThuoc.TienThuoc, 0) AS 'Giá Tiền'
                                             FROM 
                                                 benhNhan BN
                                             INNER JOIN 

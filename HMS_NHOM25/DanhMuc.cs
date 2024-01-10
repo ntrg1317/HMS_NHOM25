@@ -52,5 +52,10 @@ namespace HMS_NHOM25
         {
             function.OpenChildForm(new QLNS(), btnDSNhanSu, panelHienThi);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            function.OpenChildForm(new TaiKhoan(), btnDSTaiKhoan, panelHienThi);
+        }
     }
 }

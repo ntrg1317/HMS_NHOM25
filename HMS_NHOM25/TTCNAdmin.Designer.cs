@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.palAddBS = new System.Windows.Forms.Panel();
+            this.ptbBS = new System.Windows.Forms.PictureBox();
             this.labAddBS = new System.Windows.Forms.Label();
             this.grbInforQTV = new System.Windows.Forms.GroupBox();
             this.cobDiaChiQTV = new System.Windows.Forms.ComboBox();
@@ -44,10 +45,10 @@
             this.labTenQTV = new System.Windows.Forms.Label();
             this.labMaQTV = new System.Windows.Forms.Label();
             this.btnSaveTTCN = new System.Windows.Forms.Button();
-            this.ptbBS = new System.Windows.Forms.PictureBox();
+            this.btnDoiMK = new System.Windows.Forms.Button();
             this.palAddBS.SuspendLayout();
-            this.grbInforQTV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).BeginInit();
+            this.grbInforQTV.SuspendLayout();
             this.SuspendLayout();
             // 
             // palAddBS
@@ -60,6 +61,18 @@
             this.palAddBS.Name = "palAddBS";
             this.palAddBS.Size = new System.Drawing.Size(1090, 124);
             this.palAddBS.TabIndex = 5;
+            // 
+            // ptbBS
+            // 
+            this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ptbBS.Image = global::HMS_NHOM25.Properties.Resources.user2;
+            this.ptbBS.Location = new System.Drawing.Point(292, 27);
+            this.ptbBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbBS.Name = "ptbBS";
+            this.ptbBS.Size = new System.Drawing.Size(79, 60);
+            this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbBS.TabIndex = 3;
+            this.ptbBS.TabStop = false;
             // 
             // labAddBS
             // 
@@ -92,7 +105,7 @@
             this.grbInforQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforQTV.Name = "grbInforQTV";
             this.grbInforQTV.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbInforQTV.Size = new System.Drawing.Size(1009, 265);
+            this.grbInforQTV.Size = new System.Drawing.Size(1009, 277);
             this.grbInforQTV.TabIndex = 6;
             this.grbInforQTV.TabStop = false;
             this.grbInforQTV.Text = "Thông tin cá nhân";
@@ -281,7 +294,7 @@
             // 
             this.btnSaveTTCN.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
             this.btnSaveTTCN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveTTCN.Location = new System.Drawing.Point(449, 481);
+            this.btnSaveTTCN.Location = new System.Drawing.Point(321, 484);
             this.btnSaveTTCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveTTCN.Name = "btnSaveTTCN";
             this.btnSaveTTCN.Size = new System.Drawing.Size(154, 39);
@@ -290,33 +303,37 @@
             this.btnSaveTTCN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveTTCN.UseVisualStyleBackColor = true;
             // 
-            // ptbBS
+            // btnDoiMK
             // 
-            this.ptbBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ptbBS.Image = global::HMS_NHOM25.Properties.Resources.user2;
-            this.ptbBS.Location = new System.Drawing.Point(292, 27);
-            this.ptbBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbBS.Name = "ptbBS";
-            this.ptbBS.Size = new System.Drawing.Size(79, 60);
-            this.ptbBS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbBS.TabIndex = 3;
-            this.ptbBS.TabStop = false;
+            this.btnDoiMK.Image = global::HMS_NHOM25.Properties.Resources.revision;
+            this.btnDoiMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiMK.Location = new System.Drawing.Point(589, 484);
+            this.btnDoiMK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(154, 39);
+            this.btnDoiMK.TabIndex = 10;
+            this.btnDoiMK.Text = "Đổi mật khẩu";
+            this.btnDoiMK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDoiMK.UseVisualStyleBackColor = true;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // TTCNAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 874);
+            this.Controls.Add(this.btnDoiMK);
             this.Controls.Add(this.btnSaveTTCN);
             this.Controls.Add(this.grbInforQTV);
             this.Controls.Add(this.palAddBS);
             this.Name = "TTCNAdmin";
             this.Text = "TTCNAdmin";
+            this.Load += new System.EventHandler(this.TTCNAdmin_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).EndInit();
             this.grbInforQTV.ResumeLayout(false);
             this.grbInforQTV.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -340,5 +357,6 @@
         private System.Windows.Forms.Label labTenQTV;
         private System.Windows.Forms.Label labMaQTV;
         private System.Windows.Forms.Button btnSaveTTCN;
+        private System.Windows.Forms.Button btnDoiMK;
     }
 }

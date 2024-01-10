@@ -135,6 +135,7 @@
             // 
             // dateNgayVao
             // 
+            this.dateNgayVao.AllowDrop = true;
             this.dateNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNgayVao.Location = new System.Drawing.Point(815, 22);
             this.dateNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -440,6 +441,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1091, 848);
             this.Controls.Add(this.dgvInforBN);
             this.Controls.Add(this.labChiTietHD);

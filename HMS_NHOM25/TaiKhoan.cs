@@ -35,6 +35,11 @@ namespace HMS_NHOM25
             try
             {
                 dgvInforTaiKhoan.DataSource = tk.all(table);
+
+                dgvInforTaiKhoan.Columns["MaTK"].HeaderText = "Mã tài khoản";
+                dgvInforTaiKhoan.Columns["MaCV"].HeaderText = "Mã chức vụ";
+                dgvInforTaiKhoan.Columns["TenDN"].HeaderText = "Tên đăng nhập";
+                dgvInforTaiKhoan.Columns["MatKhau"].HeaderText = "Mật khẩu";
             }
             catch (Exception ex)
             {
