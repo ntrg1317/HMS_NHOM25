@@ -116,35 +116,35 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBenhNhanDV.cs">
+    <Compile Include="ThemBenhNhanDV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddBenhNhanDV.Designer.cs">
-      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    <Compile Include="ThemBenhNhanDV.Designer.cs">
+      <DependentUpon>ThemBenhNhanDV.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDichVu.cs">
+    <Compile Include="ThemDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDichVu.Designer.cs">
-      <DependentUpon>AddDichVu.cs</DependentUpon>
+    <Compile Include="ThemDichVu.Designer.cs">
+      <DependentUpon>ThemDichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDonThuoc.cs">
+    <Compile Include="ThemDonThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddDonThuoc.Designer.cs">
-      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+      <DependentUpon>ThemDonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPhong.cs">
+    <Compile Include="ThemPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPhong.Designer.cs">
-      <DependentUpon>AddPhong.cs</DependentUpon>
+    <Compile Include="ThemPhong.Designer.cs">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddThuoc.cs">
+    <Compile Include="ThemThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddThuoc.Designer.cs">
-      <DependentUpon>AddThuoc.cs</DependentUpon>
+    <Compile Include="ThemThuoc.Designer.cs">
+      <DependentUpon>ThemThuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="BaoCaoThongKe.cs">
       <SubType>Form</SubType>
@@ -268,41 +268,41 @@
     <Compile Include="SuaTTTK.Designer.cs">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDoctor.cs">
+    <Compile Include="ThemDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDoctor.Designer.cs">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <Compile Include="ThemDoctor.Designer.cs">
+      <DependentUpon>ThemDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNVTN.cs">
+    <Compile Include="ThemNVTN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNVTN.Designer.cs">
-      <DependentUpon>AddNVTN.cs</DependentUpon>
+    <Compile Include="ThemNVTN.Designer.cs">
+      <DependentUpon>ThemNVTN.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDuocSi.cs">
+    <Compile Include="ThemDuocSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDuocSi.Designer.cs">
-      <DependentUpon>AddDuocSi.cs</DependentUpon>
+    <Compile Include="ThemDuocSi.Designer.cs">
+      <DependentUpon>ThemDuocSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPatients.cs">
+    <Compile Include="ThemBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPatients.Designer.cs">
-      <DependentUpon>AddPatients.cs</DependentUpon>
+    <Compile Include="ThemBenhNhan.Designer.cs">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="QuanTriVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="QuanTriVien.Designer.cs">
+      <DependentUpon>QuanTriVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctors.cs">
+    <Compile Include="BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctors.Designer.cs">
-      <DependentUpon>Doctors.cs</DependentUpon>
+    <Compile Include="BacSi.Designer.cs">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
     <Compile Include="DonThuocBN.cs">
       <SubType>Form</SubType>
@@ -340,11 +340,11 @@
     <Compile Include="DuocSi.Designer.cs">
       <DependentUpon>DuocSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patients.cs">
+    <Compile Include="BenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patients.Designer.cs">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <Compile Include="BenhNhan.Designer.cs">
+      <DependentUpon>BenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -444,20 +444,20 @@
     <Compile Include="TTDonThuocBN.Designer.cs">
       <DependentUpon>TTDonThuocBN.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddBenhNhanDV.resx">
-      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    <EmbeddedResource Include="ThemBenhNhanDV.resx">
+      <DependentUpon>ThemBenhNhanDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDichVu.resx">
-      <DependentUpon>AddDichVu.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDichVu.resx">
+      <DependentUpon>ThemDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddDonThuoc.resx">
-      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+      <DependentUpon>ThemDonThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPhong.resx">
-      <DependentUpon>AddPhong.cs</DependentUpon>
+    <EmbeddedResource Include="ThemPhong.resx">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddThuoc.resx">
-      <DependentUpon>AddThuoc.cs</DependentUpon>
+    <EmbeddedResource Include="ThemThuoc.resx">
+      <DependentUpon>ThemThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoThongKe.resx">
       <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
@@ -513,23 +513,23 @@
     <EmbeddedResource Include="SuaTTTK.resx">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDoctor.resx">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDoctor.resx">
+      <DependentUpon>ThemDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNVTN.resx">
-      <DependentUpon>AddNVTN.cs</DependentUpon>
+    <EmbeddedResource Include="ThemNVTN.resx">
+      <DependentUpon>ThemNVTN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDuocSi.resx">
-      <DependentUpon>AddDuocSi.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDuocSi.resx">
+      <DependentUpon>ThemDuocSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPatients.resx">
-      <DependentUpon>AddPatients.cs</DependentUpon>
+    <EmbeddedResource Include="ThemBenhNhan.resx">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="QuanTriVien.resx">
+      <DependentUpon>QuanTriVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctors.resx">
-      <DependentUpon>Doctors.cs</DependentUpon>
+    <EmbeddedResource Include="BacSi.resx">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DonThuocBN.resx">
       <DependentUpon>DonThuocBN.cs</DependentUpon>
@@ -549,8 +549,8 @@
     <EmbeddedResource Include="DuocSi.resx">
       <DependentUpon>DuocSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patients.resx">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <EmbeddedResource Include="BenhNhan.resx">
+      <DependentUpon>BenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

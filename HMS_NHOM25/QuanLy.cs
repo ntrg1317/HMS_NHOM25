@@ -25,7 +25,7 @@ namespace HMS_NHOM25
 
         private void btnQLHoaDon_Click(object sender, EventArgs e)
         {
-
+            function.OpenChildForm(new QLHoaDon(), btnQLHoaDon, panelHienThi);
         }
 
         private void btnQLPhong_Click(object sender, EventArgs e)

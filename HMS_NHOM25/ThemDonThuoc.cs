@@ -13,14 +13,14 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDonThuoc : Form
+    public partial class ThemDonThuoc : Form
     {
         BaseModel thuoc = new BaseModel();
         BaseModel benhNhan = new BaseModel();
         ChiTietDTParams chiTietDT;
         DataTable dataTableDTChiTiet;
 
-        public AddDonThuoc()
+        public ThemDonThuoc()
         {
             InitializeComponent();
         }

@@ -30,7 +30,7 @@ namespace HMS_NHOM25
 
         private void btnDT_Click(object sender, EventArgs e)
         {
-
+            function.OpenChildForm(new DonThuocBN(), btnDT, panelHienThi);
         }
     }
 }

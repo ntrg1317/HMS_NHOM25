@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             this.grbInfoDonThuoc = new System.Windows.Forms.GroupBox();
+            this.dateNgayVao = new System.Windows.Forms.DateTimePicker();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.labLieuDung = new System.Windows.Forms.Label();
             this.labNgayVao = new System.Windows.Forms.Label();
             this.labSoLuongThuoc = new System.Windows.Forms.Label();
+            this.txtMaBN = new System.Windows.Forms.TextBox();
+            this.txtBenhTrang = new System.Windows.Forms.TextBox();
             this.txtTenBN = new System.Windows.Forms.TextBox();
             this.labTenThuoc = new System.Windows.Forms.Label();
             this.txtTimKiemTenThuoc = new System.Windows.Forms.TextBox();
@@ -43,14 +47,10 @@
             this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMaBN = new System.Windows.Forms.TextBox();
-            this.dateNgayVao = new System.Windows.Forms.DateTimePicker();
-            this.txtBenhTrang = new System.Windows.Forms.TextBox();
             this.btnThoatAddDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaThuoc = new System.Windows.Forms.Button();
             this.btnThemThuoc = new System.Windows.Forms.Button();
             this.btnCapNhatCTDonThuoc = new System.Windows.Forms.Button();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.grbInfoDonThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTPhong)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,29 @@
             this.grbInfoDonThuoc.TabIndex = 23;
             this.grbInfoDonThuoc.TabStop = false;
             this.grbInfoDonThuoc.Text = "Thông Tin Bệnh Nhân";
+            // 
+            // dateNgayVao
+            // 
+            this.dateNgayVao.CustomFormat = "yyyy-MM-dd";
+            this.dateNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateNgayVao.Location = new System.Drawing.Point(166, 78);
+            this.dateNgayVao.Name = "dateNgayVao";
+            this.dateNgayVao.Size = new System.Drawing.Size(196, 22);
+            this.dateNgayVao.TabIndex = 56;
+            // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
+            this.btnLamMoi.Image = global::HMS_NHOM25.Properties.Resources.refresh;
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(354, 158);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(88, 31);
+            this.btnLamMoi.TabIndex = 55;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLamMoi.UseVisualStyleBackColor = true;
             // 
             // labLieuDung
             // 
@@ -105,6 +128,22 @@
             this.labSoLuongThuoc.Size = new System.Drawing.Size(53, 16);
             this.labSoLuongThuoc.TabIndex = 29;
             this.labSoLuongThuoc.Text = "Tên BN";
+            // 
+            // txtMaBN
+            // 
+            this.txtMaBN.Location = new System.Drawing.Point(166, 26);
+            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaBN.Name = "txtMaBN";
+            this.txtMaBN.Size = new System.Drawing.Size(195, 22);
+            this.txtMaBN.TabIndex = 30;
+            // 
+            // txtBenhTrang
+            // 
+            this.txtBenhTrang.Location = new System.Drawing.Point(542, 77);
+            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBenhTrang.Name = "txtBenhTrang";
+            this.txtBenhTrang.Size = new System.Drawing.Size(195, 22);
+            this.txtBenhTrang.TabIndex = 30;
             // 
             // txtTenBN
             // 
@@ -218,31 +257,6 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Mã Phòng";
             // 
-            // txtMaBN
-            // 
-            this.txtMaBN.Location = new System.Drawing.Point(166, 26);
-            this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaBN.Name = "txtMaBN";
-            this.txtMaBN.Size = new System.Drawing.Size(195, 22);
-            this.txtMaBN.TabIndex = 30;
-            // 
-            // dateNgayVao
-            // 
-            this.dateNgayVao.CustomFormat = "yyyy-MM-dd";
-            this.dateNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayVao.Location = new System.Drawing.Point(166, 78);
-            this.dateNgayVao.Name = "dateNgayVao";
-            this.dateNgayVao.Size = new System.Drawing.Size(196, 22);
-            this.dateNgayVao.TabIndex = 56;
-            // 
-            // txtBenhTrang
-            // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(542, 77);
-            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBenhTrang.Name = "txtBenhTrang";
-            this.txtBenhTrang.Size = new System.Drawing.Size(195, 22);
-            this.txtBenhTrang.TabIndex = 30;
-            // 
             // btnThoatAddDonThuoc
             // 
             this.btnThoatAddDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.cancel;
@@ -284,6 +298,7 @@
             this.btnThemThuoc.Text = "Thêm";
             this.btnThemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemThuoc.UseVisualStyleBackColor = true;
+            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
             // 
             // btnCapNhatCTDonThuoc
             // 
@@ -298,20 +313,6 @@
             this.btnCapNhatCTDonThuoc.Text = "Cập nhật";
             this.btnCapNhatCTDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhatCTDonThuoc.UseVisualStyleBackColor = true;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
-            this.btnLamMoi.Image = global::HMS_NHOM25.Properties.Resources.refresh;
-            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(354, 158);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(88, 31);
-            this.btnLamMoi.TabIndex = 55;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLamMoi.UseVisualStyleBackColor = true;
             // 
             // ChiTietPhong
             // 

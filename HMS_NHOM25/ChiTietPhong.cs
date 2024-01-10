@@ -46,5 +46,10 @@ namespace HMS_NHOM25
             dateNgayVao.Text = dgvCTPhong.SelectedRows[0].Cells[2].Value.ToString();
             txtBenhTrang.Text = dgvCTPhong.SelectedRows[0].Cells[3].Value.ToString();
         }
+
+        private void btnThemThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
