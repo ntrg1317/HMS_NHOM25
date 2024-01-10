@@ -60,7 +60,7 @@ namespace HMS_NHOM25
                 dgvInfoQTV.Columns["MaQL"].HeaderText = "Mã Quản Trị Viên";
                 dgvInfoQTV.Columns["TenQL"].HeaderText = "Tên Quản Trị Viên";
                 dgvInfoQTV.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
-                dgvInfoQTV.Columns["GioiTinhQTV"].HeaderText = "Giới Tính";
+                dgvInfoQTV.Columns["GioiTinh"].HeaderText = "Giới Tính";
                 dgvInfoQTV.Columns["SDT"].HeaderText = "Số Điện Thoại";
                 dgvInfoQTV.Columns["DiaChi"].HeaderText = "Địa Chỉ";
                 dgvInfoQTV.Columns["TrangThai"].HeaderText = "Trạng Thái";

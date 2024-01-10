@@ -27,6 +27,15 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoNVTN.DataSource = nvtn.all(table);
+
+
+                dgvInfoNVTN.Columns["MaNV"].HeaderText = "Mã nhân viên";
+                dgvInfoNVTN.Columns["TenNV"].HeaderText = "Tên nhân viên";
+                dgvInfoNVTN.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                dgvInfoNVTN.Columns["GioiTinh"].HeaderText = "Giới Tính";
+                dgvInfoNVTN.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoNVTN.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgvInfoNVTN.Columns["TrangThai"].HeaderText = "Trạng Thái";
             }
             catch (Exception ex)
             {

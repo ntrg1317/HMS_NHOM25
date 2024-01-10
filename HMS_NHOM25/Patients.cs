@@ -22,6 +22,15 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoBN.DataSource = benhNhan.all(table);
+
+                dgvInfoBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+                dgvInfoBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
+                dgvInfoBN.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                dgvInfoBN.Columns["GioiTinh"].HeaderText = "Giới Tính";
+                dgvInfoBN.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoBN.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgvInfoBN.Columns["SDTNguoiThan"].HeaderText = "Số Điện Thoại Người Thân";
+                dgvInfoBN.Columns["TrangThai"].HeaderText = "Trạng Thái";
             }
             catch (Exception ex)
             {
