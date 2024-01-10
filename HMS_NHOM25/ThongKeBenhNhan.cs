@@ -43,6 +43,8 @@ namespace HMS_NHOM25
                     chartSLBN2024.Series[0].YValueMembers = "SoLuong";
                 }
             }
+            dgvSLBN2024.Columns["Thang"].HeaderText = "Tháng";
+            dgvSLBN2024.Columns["SoLuong"].HeaderText = "Số lượng";
 
             string querySLBNNam = "SELECT YEAR(ls.NgayVao) AS Nam, " +
                 "COUNT(DISTINCT bn.MaBN) AS SoLuong " +
@@ -69,8 +71,10 @@ namespace HMS_NHOM25
                     chartSLBNtheoNam.Series[0].XValueMember = "Nam";
                     chartSLBNtheoNam.Series[0].YValueMembers = "SoLuong";
                 }
-
             }
+            dgvSLBNtheoNam.Columns["Nam"].HeaderText = "Năm";
+            dgvSLBNtheoNam.Columns["SoLuong"].HeaderText = "Số lượng";
+
             string querySLBN2023 = "SELECT MONTH(ls.NgayVao) AS Thang, " +
                 "COUNT(DISTINCT bn.MaBN) AS SoLuong " +
                 "FROM benhNhan_lichSu ls " +
@@ -96,6 +100,8 @@ namespace HMS_NHOM25
                     chartSLBN2023.Series[0].YValueMembers = "SoLuong";
                 }
             }
+            dgvSLBN2023.Columns["Thang"].HeaderText = "Tháng";
+            dgvSLBN2023.Columns["SoLuong"].HeaderText = "Số lượng";
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

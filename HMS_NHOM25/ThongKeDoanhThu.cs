@@ -49,6 +49,8 @@ namespace HMS_NHOM25
                 chartDoanhThu.Series[0].XValueMember = "Thang";
                 chartDoanhThu.Series[0].YValueMembers = "DoanhThu";
             }
+            dgvDoanhThu.Columns["Thang"].HeaderText = "Tháng";
+            dgvDoanhThu.Columns["DoanhThu"].HeaderText = "Doanh Thu";
 
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
@@ -57,10 +59,7 @@ namespace HMS_NHOM25
                 string queryTyLeTangTruong = "WITH DoanhThuTheoThang AS (SELECT " +
                     "MONTH(NgayTT) AS Thang, SUM(TongTien) AS DoanhThu " +
                     "FROM hoaDon WHERE YEAR(NgayTT) = 2023 " +
-<<<<<<< HEAD
 
-=======
->>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
                     "GROUP BY MONTH(NgayTT)) " +
                     "SELECT Thang, (DoanhThu - LAG(DoanhThu) OVER(ORDER BY Thang)) / LAG(DoanhThu) OVER(ORDER BY Thang) * 100 AS TyLeTangTruong " +
                     "FROM DoanhThuTheoThang;";
@@ -75,6 +74,8 @@ namespace HMS_NHOM25
                 chartTyLeTangTruong.Series[0].XValueMember = "Thang";
                 chartTyLeTangTruong.Series[0].YValueMembers = "TyLeTangTruong";
             }
+            dgvTyLeTangTruong.Columns["Thang"].HeaderText = "Tháng";
+            dgvTyLeTangTruong.Columns["TyLeTangTruong"].HeaderText = "Tỷ lệ tăng trưởng";
         }
     }
 }

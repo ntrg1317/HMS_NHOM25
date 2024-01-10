@@ -56,6 +56,8 @@ namespace HMS_NHOM25
                     }
                 }
             }
+            dgvSLNhanSu.Columns["NhanVien"].HeaderText = "Nhân viên";
+            dgvSLNhanSu.Columns["SoLuong"].HeaderText = "Số lượng";
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

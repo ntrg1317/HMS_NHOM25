@@ -47,7 +47,8 @@ namespace HMS_NHOM25
                     chartTKLoaiBenh.Series[0].YValueMembers = "SoLuong";
                 }
             }
-
+            dgvCacLoaiBenh.Columns["benhTrang"].HeaderText = "Bệnh trạng";
+            dgvCacLoaiBenh.Columns["SoLuong"].HeaderText = "Số lượng";
 
             string queryDauDauNam = "SELECT YEAR(NgayVao) AS Nam, " +
                 "COUNT(DISTINCT MaBN) AS SoLuong " +
@@ -73,6 +74,8 @@ namespace HMS_NHOM25
                     chartTKDauDau.Series[0].YValueMembers = "SoLuong";
                 }
             }
+            dgvDauDauNam.Columns["Nam"].HeaderText = "Năm";
+            dgvDauDauNam.Columns["SoLuong"].HeaderText = "Số lượng";
 
             string queryDauCo2023 = "SELECT MONTH(NgayVao) AS Thang, " +
                 "COUNT(DISTINCT MaBN) AS SoLuong " +
@@ -98,6 +101,8 @@ namespace HMS_NHOM25
                     chartTKDauCo.Series[0].YValueMembers = "SoLuong";
                 }
             }
+            dgvDauCo2023.Columns["Thang"].HeaderText = "Tháng";
+            dgvDauCo2023.Columns["SoLuong"].HeaderText = "Số lượng";
         }
     }
 

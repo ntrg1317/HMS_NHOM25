@@ -190,9 +190,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(225, 296);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(317, 17);
+            this.label6.Size = new System.Drawing.Size(405, 17);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Thống kê số bệnh nhân đau cơ theo tháng";
+            this.label6.Text = "Thống kê số bệnh nhân đau cơ năm 2023 (theo tháng)";
             // 
             // chartTKDauCo
             // 

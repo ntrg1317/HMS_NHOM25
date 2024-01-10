@@ -15,9 +15,9 @@ namespace HMS_NHOM25
         private void ThongKeThuoc_Load(object sender, System.EventArgs e)
         {
             string querySuDungThuoc = "SELECT TOP 8 kt.TenThuoc, SUM(dtct.SoLuong) AS SoLuong " +
-        "FROM donThuocChiTiet dtct " +
-        "JOIN khoThuoc kt ON dtct.MaThuoc = kt.MaThuoc " +
-        "GROUP BY kt.TenThuoc ORDER BY SoLuong DESC;";
+            "FROM donThuocChiTiet dtct " +
+            "JOIN khoThuoc kt ON dtct.MaThuoc = kt.MaThuoc " +
+            "GROUP BY kt.TenThuoc ORDER BY SoLuong DESC;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -36,6 +36,8 @@ namespace HMS_NHOM25
                     chartSuDungThuoc.Series[0].YValueMembers = "SoLuong";
                 }
             }
+            dgvSuDungThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
+            dgvSuDungThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
         }
     }
 }

@@ -23,14 +23,15 @@ namespace HMS_NHOM25
 
         private void ThongKePhong_Load(object sender, EventArgs e)
         {
-            string queryLuotSDPhong = "SELECT " +
-                "DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) AS Ngay, " +
-                "COUNT(DISTINCT MaBN) AS Luotsudung " +
-                "FROM benhNhan_lichSu " +
-                "WHERE MONTH(NgayVao) = 12 " +
-                "AND YEAR(NgayVao) = 2023 " +
-                "GROUP BY " +
-                "DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) " +
+            string queryLuotSDPhong = "SELECT  " +
+                "FORMAT(DATEADD(day, (DATEDIFF(day, 0, bnl.NgayVao) / 5) * 5, 0), 'yyyy-MM-dd') AS Ngay, " +
+                "COUNT(*) AS Luotsudung " +
+                "FROM benhNhan bn " +
+                "INNER JOIN benhNhan_lichSu bnl ON bn.MaBN = bnl.MaBN " +
+                "WHERE bn.TrangThai = 1 " +
+                "AND MONTH(bnl.NgayVao) = 1 " +
+                "AND YEAR(bnl.NgayVao) = 2024 " +
+                "GROUP BY FORMAT(DATEADD(day, (DATEDIFF(day, 0, bnl.NgayVao) / 5) * 5, 0), 'yyyy-MM-dd') " +
                 "ORDER BY Ngay; ";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
@@ -50,6 +51,8 @@ namespace HMS_NHOM25
                     chartLuotSDPhong.Series[0].YValueMembers = "Luotsudung";
                 }
             }
+            dgvLuotSDPhong.Columns["Ngay"].HeaderText = "Ngày";
+            dgvLuotSDPhong.Columns["Luotsudung"].HeaderText = "Số lượt sử dụng";
         }
     }
 }
