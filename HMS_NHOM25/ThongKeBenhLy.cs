@@ -1,9 +1,13 @@
-﻿using HMS_NHOM25.Model;
+﻿using GMap.NET.MapProviders;
+using HMS_NHOM25.Model;
+using HMS_NHOM25.Params;
 using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Windows.Controls;
 using System.Windows.Forms;
+using System.Windows.Shapes;
 
 namespace HMS_NHOM25
 {
@@ -21,7 +25,10 @@ namespace HMS_NHOM25
 
         private void ThongKeBenhLy_Load(object sender, EventArgs e)
         {
-            string queryCacLoaiBenh = "SELECT benhTrang, COUNT(*) AS SoLuong FROM benhNhan GROUP BY benhTrang";
+            string queryCacLoaiBenh = "SELECT BenhTrang, " +
+                "COUNT(*) AS SoLuong " +
+                "FROM benhNhan_lichSu " +
+                "GROUP BY BenhTrang;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -42,8 +49,12 @@ namespace HMS_NHOM25
             }
 
 
-            string queryDauDauNam = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuong  FROM benhNhan WHERE benhTrang = N'Đau đầu' AND YEAR(NgayVao) BETWEEN 2020 AND 2024 " +
-                            " GROUP BY YEAR(NgayVao)";
+            string queryDauDauNam = "SELECT YEAR(NgayVao) AS Nam, " +
+                "COUNT(DISTINCT MaBN) AS SoLuong " +
+                "FROM benhNhan_lichSu " +
+                "WHERE BenhTrang = N'Đau đầu' " +
+                "GROUP BY YEAR(NgayVao) " +
+                "ORDER BY Nam;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -63,8 +74,12 @@ namespace HMS_NHOM25
                 }
             }
 
-            string queryDauCo2023 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM benhNhan WHERE benhTrang = N'Đau Cơ'" +
-                            "GROUP BY MONTH(NgayVao)";
+            string queryDauCo2023 = "SELECT MONTH(NgayVao) AS Thang, " +
+                "COUNT(DISTINCT MaBN) AS SoLuong " +
+                "FROM benhNhan_lichSu " +
+                "WHERE BenhTrang LIKE N'Đau cơ' AND YEAR(NgayVao) = 2023 " +
+                "GROUP BY MONTH(NgayVao) " +
+                "ORDER BY Thang;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();

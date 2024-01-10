@@ -10,6 +10,7 @@ namespace HMS_NHOM25
     {
         BaseModel dv = new BaseModel();
         DichVuParams dvp;
+
         private string table = "dichVu";
         public DichVu()
         {
@@ -260,6 +261,11 @@ namespace HMS_NHOM25
             {
                 e.Handled = true;
             }
+        }
+
+        private void dgvInforDichVu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
