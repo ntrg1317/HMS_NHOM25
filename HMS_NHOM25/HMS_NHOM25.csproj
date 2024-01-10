@@ -158,6 +158,12 @@
     <Compile Include="ChiTietDonThuoc.Designer.cs">
       <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhong.Designer.cs">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -451,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietDonThuoc.resx">
       <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietPhong.resx">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc.resx">
       <DependentUpon>DanhMuc.cs</DependentUpon>
