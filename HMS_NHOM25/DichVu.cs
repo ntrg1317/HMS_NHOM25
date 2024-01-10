@@ -118,7 +118,7 @@ namespace HMS_NHOM25
             string _tenDV = cobTenDV.Text;
             string _tienDV = txtGiaDV.Text;
 
-            dvp =  new DichVuParams(_tenDV, _tienDV, null) ;
+            dvp = new DichVuParams(_tenDV, _tienDV, null);
         }
 
 
@@ -174,7 +174,7 @@ namespace HMS_NHOM25
         {
             foreach (object item in cob.Items)
             {
-                if (item.ToString() == selectedValue.Trim())
+                if (item.ToString().Trim() == selectedValue.Trim())
                 {
                     cob.SelectedItem = item;
                     break;
@@ -198,9 +198,9 @@ namespace HMS_NHOM25
         {
             try
             {
-                txtMaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[0].Value.ToString();
-                GetSelectedValue(dgvInforDichVu.SelectedRows[0].Cells[1].Value.ToString(), cobTenDV);
-                txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells[2].Value.ToString();
+                txtMaDV.Text = dgvInforDichVu.SelectedRows[0].Cells["MaDV"].Value.ToString();
+                GetSelectedValue(dgvInforDichVu.SelectedRows[0].Cells["TenDV"].Value.ToString(), cobTenDV);
+                txtGiaDV.Text = dgvInforDichVu.SelectedRows[0].Cells["TienDV"].Value.ToString();
             }
             catch (Exception ex)
             {

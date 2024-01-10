@@ -49,7 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnThoatAddDonThuoc = new System.Windows.Forms.Button();
             this.btnXoaThuoc = new System.Windows.Forms.Button();
-            this.btnThemThuoc = new System.Windows.Forms.Button();
+            this.btnThemBN_Phong = new System.Windows.Forms.Button();
             this.btnCapNhatCTDonThuoc = new System.Windows.Forms.Button();
             this.grbInfoDonThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTPhong)).BeginInit();
@@ -99,6 +99,7 @@
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // labLieuDung
             // 
@@ -272,7 +273,6 @@
             // 
             // btnXoaThuoc
             // 
-            this.btnXoaThuoc.Enabled = false;
             this.btnXoaThuoc.ForeColor = System.Drawing.Color.Black;
             this.btnXoaThuoc.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,25 +285,23 @@
             this.btnXoaThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoaThuoc.UseVisualStyleBackColor = true;
             // 
-            // btnThemThuoc
+            // btnThemBN_Phong
             // 
-            this.btnThemThuoc.Enabled = false;
-            this.btnThemThuoc.ForeColor = System.Drawing.Color.Black;
-            this.btnThemThuoc.Image = global::HMS_NHOM25.Properties.Resources.plus;
-            this.btnThemThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemThuoc.Location = new System.Drawing.Point(482, 438);
-            this.btnThemThuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemThuoc.Name = "btnThemThuoc";
-            this.btnThemThuoc.Size = new System.Drawing.Size(99, 39);
-            this.btnThemThuoc.TabIndex = 44;
-            this.btnThemThuoc.Text = "Thêm";
-            this.btnThemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemThuoc.UseVisualStyleBackColor = true;
-            this.btnThemThuoc.Click += new System.EventHandler(this.btnThemThuoc_Click);
+            this.btnThemBN_Phong.ForeColor = System.Drawing.Color.Black;
+            this.btnThemBN_Phong.Image = global::HMS_NHOM25.Properties.Resources.plus;
+            this.btnThemBN_Phong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemBN_Phong.Location = new System.Drawing.Point(428, 350);
+            this.btnThemBN_Phong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemBN_Phong.Name = "btnThemBN_Phong";
+            this.btnThemBN_Phong.Size = new System.Drawing.Size(88, 31);
+            this.btnThemBN_Phong.TabIndex = 44;
+            this.btnThemBN_Phong.Text = "Thêm";
+            this.btnThemBN_Phong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemBN_Phong.UseVisualStyleBackColor = true;
+            this.btnThemBN_Phong.Click += new System.EventHandler(this.btnThemBN_Phong_Click);
             // 
             // btnCapNhatCTDonThuoc
             // 
-            this.btnCapNhatCTDonThuoc.Enabled = false;
             this.btnCapNhatCTDonThuoc.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnCapNhatCTDonThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCapNhatCTDonThuoc.Location = new System.Drawing.Point(644, 438);
@@ -314,6 +312,7 @@
             this.btnCapNhatCTDonThuoc.Text = "Cập nhật";
             this.btnCapNhatCTDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhatCTDonThuoc.UseVisualStyleBackColor = true;
+            this.btnCapNhatCTDonThuoc.Click += new System.EventHandler(this.btnCapNhatCTDonThuoc_Click);
             // 
             // ChiTietPhong
             // 
@@ -328,7 +327,7 @@
             this.Controls.Add(this.labCTPhong);
             this.Controls.Add(this.btnThoatAddDonThuoc);
             this.Controls.Add(this.btnXoaThuoc);
-            this.Controls.Add(this.btnThemThuoc);
+            this.Controls.Add(this.btnThemBN_Phong);
             this.Controls.Add(this.dgvCTPhong);
             this.Controls.Add(this.labTKTenThuoc);
             this.Controls.Add(this.btnCapNhatCTDonThuoc);
@@ -360,7 +359,7 @@
         private System.Windows.Forms.Label labTKTenThuoc;
         private System.Windows.Forms.DataGridView dgvCTPhong;
         private System.Windows.Forms.Button btnXoaThuoc;
-        private System.Windows.Forms.Button btnThemThuoc;
+        private System.Windows.Forms.Button btnThemBN_Phong;
         private System.Windows.Forms.Button btnThoatAddDonThuoc;
         private System.Windows.Forms.Label labNgayVao;
         private System.Windows.Forms.Label labCTPhong;
