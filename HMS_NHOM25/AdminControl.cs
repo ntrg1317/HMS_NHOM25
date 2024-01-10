@@ -9,7 +9,6 @@ namespace HMS_NHOM25
     {
         bool isExit;
         private Form currentFormChild;
-        private Form currentUserControl;
         private Button lastClickedButton;
         private bool isCollapsed;
 
@@ -29,19 +28,6 @@ namespace HMS_NHOM25
         private void panelBody_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void userControl(Form childForm)
-        {
-            currentUserControl?.Close();
-            currentUserControl = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            sidebar.Controls.Add(childForm);
-            sidebar.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
         }
 
         private void OpenChildForm(Form childForm, Button clickedButton)
@@ -74,53 +60,19 @@ namespace HMS_NHOM25
 
         private void btnBN_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Patients(), btnBN);
+            OpenChildForm(new DanhMuc(), btnDanhMuc);
 
-        }
-
-        private void btnBS_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Doctors(), btnBS);
-        }
-
-        private void btnTN_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new NVThuNgan(), btnTN);
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Phong(), btnPhong);
+            OpenChildForm(new Phong(), btnQly);
         }
 
-        private void btnDT_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new DonThuoc(), btnDT);
-        }
-
-        private void btnHD_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new DSHoaDon(), btnHD);
-        }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             timer1.Start();
-        }
-
-        private void btnDV_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new DichVu(), btnDvu);
-        }
-
-        private void btnTK_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new TaiKhoan(), btnTK);
-        }
-
-        private void btnDS_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new DuocSi(), btnDS);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -152,6 +104,7 @@ namespace HMS_NHOM25
             {
                 Application.Exit();
             }
+            isExit = false;
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -191,7 +144,17 @@ namespace HMS_NHOM25
 
         private void btnKhoThuoc_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new KhoThuoc(), btnKhoThuoc);
+            OpenChildForm(new KhoThuoc(), btnHeThong);
+        }
+
+        private void btnQly_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QuanLy(), btnQly);
+        }
+
+        private void panelBody_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

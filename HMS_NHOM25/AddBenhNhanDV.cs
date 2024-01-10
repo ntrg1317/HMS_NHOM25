@@ -70,8 +70,6 @@ namespace HMS_NHOM25
             {
                 using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
                 {
-                    sqlConnection.Open();
-
                     try
                     {
                         if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)

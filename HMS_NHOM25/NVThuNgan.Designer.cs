@@ -52,6 +52,7 @@
             this.btnSuaNVTN = new System.Windows.Forms.Button();
             this.btnXoaNVTN = new System.Windows.Forms.Button();
             this.btnThemNVTN = new System.Windows.Forms.Button();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.grbInforNVTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoNVTN)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.grbInforNVTN.Controls.Add(this.labTenNVTN);
             this.grbInforNVTN.Controls.Add(this.labMaNVTN);
             this.grbInforNVTN.ForeColor = System.Drawing.Color.Red;
-            this.grbInforNVTN.Location = new System.Drawing.Point(31, 18);
+            this.grbInforNVTN.Location = new System.Drawing.Point(31, 53);
             this.grbInforNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforNVTN.Name = "grbInforNVTN";
             this.grbInforNVTN.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -291,7 +292,7 @@
             // 
             this.labTimKiemNVTN.AutoSize = true;
             this.labTimKiemNVTN.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemNVTN.Location = new System.Drawing.Point(41, 195);
+            this.labTimKiemNVTN.Location = new System.Drawing.Point(41, 230);
             this.labTimKiemNVTN.Name = "labTimKiemNVTN";
             this.labTimKiemNVTN.Size = new System.Drawing.Size(62, 16);
             this.labTimKiemNVTN.TabIndex = 1;
@@ -301,7 +302,7 @@
             // 
             this.labTenNVTNTimKiem.AutoSize = true;
             this.labTenNVTNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenNVTNTimKiem.Location = new System.Drawing.Point(60, 222);
+            this.labTenNVTNTimKiem.Location = new System.Drawing.Point(60, 258);
             this.labTenNVTNTimKiem.Name = "labTenNVTNTimKiem";
             this.labTenNVTNTimKiem.Size = new System.Drawing.Size(94, 16);
             this.labTenNVTNTimKiem.TabIndex = 18;
@@ -309,7 +310,7 @@
             // 
             // txtTimKiemNVTN
             // 
-            this.txtTimKiemNVTN.Location = new System.Drawing.Point(161, 217);
+            this.txtTimKiemNVTN.Location = new System.Drawing.Point(161, 252);
             this.txtTimKiemNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemNVTN.Name = "txtTimKiemNVTN";
             this.txtTimKiemNVTN.Size = new System.Drawing.Size(164, 22);
@@ -325,14 +326,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoNVTN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoNVTN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoNVTN.Location = new System.Drawing.Point(31, 263);
+            this.dgvInfoNVTN.Location = new System.Drawing.Point(31, 288);
             this.dgvInfoNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoNVTN.Name = "dgvInfoNVTN";
             this.dgvInfoNVTN.ReadOnly = true;
             this.dgvInfoNVTN.RowHeadersWidth = 62;
             this.dgvInfoNVTN.RowTemplate.Height = 28;
             this.dgvInfoNVTN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoNVTN.Size = new System.Drawing.Size(908, 459);
+            this.dgvInfoNVTN.Size = new System.Drawing.Size(908, 314);
             this.dgvInfoNVTN.TabIndex = 23;
             this.dgvInfoNVTN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoNVTN_CellClick);
             // 
@@ -340,7 +341,7 @@
             // 
             this.btnSuaNVTN.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaNVTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaNVTN.Location = new System.Drawing.Point(603, 206);
+            this.btnSuaNVTN.Location = new System.Drawing.Point(603, 242);
             this.btnSuaNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaNVTN.Name = "btnSuaNVTN";
             this.btnSuaNVTN.Size = new System.Drawing.Size(107, 31);
@@ -354,7 +355,7 @@
             // 
             this.btnXoaNVTN.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaNVTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaNVTN.Location = new System.Drawing.Point(799, 207);
+            this.btnXoaNVTN.Location = new System.Drawing.Point(799, 242);
             this.btnXoaNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaNVTN.Name = "btnXoaNVTN";
             this.btnXoaNVTN.Size = new System.Drawing.Size(85, 31);
@@ -368,7 +369,7 @@
             // 
             this.btnThemNVTN.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemNVTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemNVTN.Location = new System.Drawing.Point(431, 206);
+            this.btnThemNVTN.Location = new System.Drawing.Point(431, 242);
             this.btnThemNVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemNVTN.Name = "btnThemNVTN";
             this.btnThemNVTN.Size = new System.Drawing.Size(91, 31);
@@ -378,11 +379,24 @@
             this.btnThemNVTN.UseVisualStyleBackColor = true;
             this.btnThemNVTN.Click += new System.EventHandler(this.btnThemNVTN_Click);
             // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(298, 15);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(358, 29);
+            this.labAddBS.TabIndex = 24;
+            this.labAddBS.Text = "Danh sách nhân viên thu ngân";
+            // 
             // NVThuNgan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(970, 624);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.dgvInfoNVTN);
             this.Controls.Add(this.btnSuaNVTN);
             this.Controls.Add(this.btnXoaNVTN);
@@ -429,5 +443,6 @@
         private System.Windows.Forms.Button btnSuaNVTN;
         private System.Windows.Forms.DataGridView dgvInfoNVTN;
         private System.Windows.Forms.ComboBox cobDiaChiNVTN;
+        private System.Windows.Forms.Label labAddBS;
     }
 }

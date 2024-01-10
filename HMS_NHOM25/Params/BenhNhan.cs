@@ -3,11 +3,8 @@
     class BenhNhan
     {
         private string _tenBN;
-        private object _maPhong;
         private string _ngaySinh;
-        private string _ngayVao;
         private string _gioiTinh;
-        private string _benhTrang;
         private string _sdt;
         private string _diaChi;
         private string _sdtNguoiThan;
@@ -20,14 +17,11 @@
         {
         }
 
-        public BenhNhan(string tenBN, object maPhong, string ngaySinh, string ngayVao, string gioiTinh, string benhTrang, string sdt, string diaChi, string sdtNguoiThan = null, string trangThai = null, string tenDN = null, string matKhau = null)
+        public BenhNhan(string tenBN, string ngaySinh, string gioiTinh, string sdt, string diaChi, string sdtNguoiThan = null, string trangThai = null, string tenDN = null, string matKhau = null)
         {
             _tenBN = tenBN;
-            _maPhong = maPhong;
             _ngaySinh = ngaySinh;
-            _ngayVao = ngayVao;
             _gioiTinh = gioiTinh;
-            _benhTrang = benhTrang;
             _sdt = sdt;
             _diaChi = diaChi;
             _sdtNguoiThan = sdtNguoiThan;
@@ -39,15 +33,12 @@
 
         public string TenBN { get => _tenBN; set => _tenBN = value; }
         public string NgaySinh { get => _ngaySinh; set => _ngaySinh = value; }
-        public string NgayVao { get => _ngayVao; set => _ngayVao = value; }
         public string GioiTinh { get => _gioiTinh; set => _gioiTinh = value; }
-        public string BenhTrang { get => _benhTrang; set => _benhTrang = value; }
         public string Sdt { get => _sdt; set => _sdt = value; }
         public string DiaChi { get => _diaChi; set => _diaChi = value; }
         public string SdtNguoiThan { get => _sdtNguoiThan; set => _sdtNguoiThan = value; }
         public string TenDN { get => _tenDN; set => _tenDN = value; }
         public string MatKhau { get => _matKhau; set => _matKhau = value; }
-        public object MaPhong { get => _maPhong; set => _maPhong = value; }
         public string TrangThai { get => (_trangThai == "Hoạt động") ? "1" : "0"; set => _trangThai = value; }
     }
 }

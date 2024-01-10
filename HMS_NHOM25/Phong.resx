@@ -123,14 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgvInforPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 278</value>
+    <value>33, 309</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgvInforPhong.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="dgvInforPhong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>905, 454</value>
+    <value>905, 355</value>
   </data>
   <data name="dgvInforPhong.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -145,13 +145,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgvInforPhong.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 245</value>
+    <value>30, 281</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 16</value>
@@ -172,7 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="cobTenPhong.Items" xml:space="preserve">
     <value>P101</value>
@@ -436,7 +436,7 @@
     <value>8</value>
   </data>
   <data name="grb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 22</value>
+    <value>30, 58</value>
   </data>
   <data name="grb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -463,13 +463,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grb.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="btnSuaPhong.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="btnSuaPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 187</value>
+    <value>596, 223</value>
   </data>
   <data name="btnSuaPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -496,13 +496,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSuaPhong.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnXoaPhong.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="btnXoaPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>782, 187</value>
+    <value>782, 223</value>
   </data>
   <data name="btnXoaPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -529,13 +529,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnXoaPhong.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btnThemPhong.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="btnThemPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 185</value>
+    <value>424, 221</value>
   </data>
   <data name="btnThemPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -562,10 +562,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnThemPhong.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="txtTKTenPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 192</value>
+    <value>193, 228</value>
   </data>
   <data name="txtTKTenPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -586,13 +586,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTKTenPhong.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="labTenPhong.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labTenPhong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 197</value>
+    <value>92, 233</value>
   </data>
   <data name="labTenPhong.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 16</value>
@@ -613,13 +613,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;labTenPhong.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 157</value>
+    <value>30, 193</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 16</value>
@@ -640,6 +640,39 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labDS.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labDS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt, style=Bold</value>
+  </data>
+  <data name="labDS.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="labDS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 18</value>
+  </data>
+  <data name="labDS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 29</value>
+  </data>
+  <data name="labDS.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="labDS.Text" xml:space="preserve">
+    <value>Danh sách phòng</value>
+  </data>
+  <data name="&gt;&gt;labDS.Name" xml:space="preserve">
+    <value>labDS</value>
+  </data>
+  <data name="&gt;&gt;labDS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labDS.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labDS.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -649,7 +682,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>970, 744</value>
+    <value>970, 675</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Phong</value>

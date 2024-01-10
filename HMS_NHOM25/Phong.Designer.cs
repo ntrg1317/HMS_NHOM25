@@ -47,6 +47,7 @@
             this.txtTKTenPhong = new System.Windows.Forms.TextBox();
             this.labTenPhong = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.labDS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforPhong)).BeginInit();
             this.grb.SuspendLayout();
             this.SuspendLayout();
@@ -196,10 +197,17 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Name = "label5";
             // 
+            // labDS
+            // 
+            resources.ApplyResources(this.labDS, "labDS");
+            this.labDS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labDS.Name = "labDS";
+            // 
             // Phong
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.labDS);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnSuaPhong);
             this.Controls.Add(this.btnXoaPhong);
@@ -239,5 +247,6 @@
         private System.Windows.Forms.Label labTenPhong;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cobTenPhong;
+        private System.Windows.Forms.Label labDS;
     }
 }

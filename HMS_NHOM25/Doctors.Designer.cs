@@ -52,6 +52,7 @@
             this.labTenBSTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiemBS = new System.Windows.Forms.TextBox();
             this.dgvInfoBS = new System.Windows.Forms.DataGridView();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.btnSuaBS = new System.Windows.Forms.Button();
             this.btnXoaBS = new System.Windows.Forms.Button();
             this.btnThemBS = new System.Windows.Forms.Button();
@@ -80,7 +81,7 @@
             this.grbInforBS.Controls.Add(this.labTenBS);
             this.grbInforBS.Controls.Add(this.labMaBS);
             this.grbInforBS.ForeColor = System.Drawing.Color.Red;
-            this.grbInforBS.Location = new System.Drawing.Point(31, 18);
+            this.grbInforBS.Location = new System.Drawing.Point(31, 70);
             this.grbInforBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforBS.Name = "grbInforBS";
             this.grbInforBS.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -349,7 +350,7 @@
             // 
             this.labTimKiemBS.AutoSize = true;
             this.labTimKiemBS.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemBS.Location = new System.Drawing.Point(41, 195);
+            this.labTimKiemBS.Location = new System.Drawing.Point(41, 248);
             this.labTimKiemBS.Name = "labTimKiemBS";
             this.labTimKiemBS.Size = new System.Drawing.Size(62, 16);
             this.labTimKiemBS.TabIndex = 1;
@@ -359,7 +360,7 @@
             // 
             this.labTenBSTimKiem.AutoSize = true;
             this.labTenBSTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBSTimKiem.Location = new System.Drawing.Point(60, 222);
+            this.labTenBSTimKiem.Location = new System.Drawing.Point(60, 275);
             this.labTenBSTimKiem.Name = "labTenBSTimKiem";
             this.labTenBSTimKiem.Size = new System.Drawing.Size(72, 16);
             this.labTenBSTimKiem.TabIndex = 18;
@@ -367,7 +368,7 @@
             // 
             // txtTimKiemBS
             // 
-            this.txtTimKiemBS.Location = new System.Drawing.Point(147, 217);
+            this.txtTimKiemBS.Location = new System.Drawing.Point(147, 270);
             this.txtTimKiemBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemBS.Name = "txtTimKiemBS";
             this.txtTimKiemBS.Size = new System.Drawing.Size(164, 22);
@@ -383,22 +384,34 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoBS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoBS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoBS.Location = new System.Drawing.Point(31, 263);
+            this.dgvInfoBS.Location = new System.Drawing.Point(31, 312);
             this.dgvInfoBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoBS.Name = "dgvInfoBS";
             this.dgvInfoBS.ReadOnly = true;
             this.dgvInfoBS.RowHeadersWidth = 62;
             this.dgvInfoBS.RowTemplate.Height = 28;
             this.dgvInfoBS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoBS.Size = new System.Drawing.Size(904, 457);
+            this.dgvInfoBS.Size = new System.Drawing.Size(904, 288);
             this.dgvInfoBS.TabIndex = 23;
             this.dgvInfoBS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoBS_CellClick);
+            // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(371, 24);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(210, 29);
+            this.labAddBS.TabIndex = 24;
+            this.labAddBS.Text = "Danh sách bác sĩ";
             // 
             // btnSuaBS
             // 
             this.btnSuaBS.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBS.Location = new System.Drawing.Point(604, 212);
+            this.btnSuaBS.Location = new System.Drawing.Point(604, 265);
             this.btnSuaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBS.Name = "btnSuaBS";
             this.btnSuaBS.Size = new System.Drawing.Size(101, 31);
@@ -412,7 +425,7 @@
             // 
             this.btnXoaBS.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBS.Location = new System.Drawing.Point(812, 212);
+            this.btnXoaBS.Location = new System.Drawing.Point(812, 265);
             this.btnXoaBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBS.Name = "btnXoaBS";
             this.btnXoaBS.Size = new System.Drawing.Size(85, 31);
@@ -426,7 +439,7 @@
             // 
             this.btnThemBS.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemBS.Location = new System.Drawing.Point(400, 212);
+            this.btnThemBS.Location = new System.Drawing.Point(400, 265);
             this.btnThemBS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBS.Name = "btnThemBS";
             this.btnThemBS.Size = new System.Drawing.Size(88, 31);
@@ -440,7 +453,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(970, 624);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.dgvInfoBS);
             this.Controls.Add(this.btnSuaBS);
             this.Controls.Add(this.btnXoaBS);
@@ -491,5 +505,6 @@
         private System.Windows.Forms.ComboBox cobDiaChiBS;
         private System.Windows.Forms.ComboBox cobTrangThaiBS;
         private System.Windows.Forms.Label labTrangThaiBS;
+        private System.Windows.Forms.Label labAddBS;
     }
 }

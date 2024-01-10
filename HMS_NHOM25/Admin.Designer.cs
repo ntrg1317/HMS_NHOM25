@@ -324,7 +324,7 @@
             this.dgvInfoQTV.RowHeadersWidth = 62;
             this.dgvInfoQTV.RowTemplate.Height = 28;
             this.dgvInfoQTV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoQTV.Size = new System.Drawing.Size(906, 470);
+            this.dgvInfoQTV.Size = new System.Drawing.Size(906, 350);
             this.dgvInfoQTV.TabIndex = 23;
             this.dgvInfoQTV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoQTV_CellClick);
             // 
@@ -345,7 +345,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(970, 624);
             this.Controls.Add(this.dgvInfoQTV);
             this.Controls.Add(this.btnSuaQTV);
             this.Controls.Add(this.txtTimKiemQTV);

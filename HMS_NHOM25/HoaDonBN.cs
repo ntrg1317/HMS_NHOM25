@@ -39,36 +39,43 @@ namespace HMS_NHOM25
 
         private void btnSaveTT_Click(object sender, EventArgs e)
         {
-            if (CheckTextBoxes())
+            if (decimal.Parse(txtTongTien.Text) <= 0)
             {
-                using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+                MessageBox.Show("Không thể tạo hóa đơn cho bệnh nhân có trạng thái không hoạt động!");
+            }
+            else
+            {
+                if (CheckTextBoxes())
                 {
-                    sqlConnection.Open();
-                    SqlTransaction transaction = sqlConnection.BeginTransaction();
-
-                    GetValuesTextBoxes();
-
-                    try
+                    using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
                     {
-                        if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        sqlConnection.Open();
+                        SqlTransaction transaction = sqlConnection.BeginTransaction();
+
+                        GetValuesTextBoxes();
+
+                        try
                         {
-                            string query1 = "INSERT INTO hoaDon (MaBN, NgayTT, TongTien) VALUES " + "(N'" + hdp.MaBN + "', N'" + hdp.NgayTT + "', N'" + hdp.TongTien + "')";
-                            basemodel.Command(query1);
+                            if (MessageBox.Show("Bạn có muốn lưu thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                            {
+                                string query1 = "INSERT INTO hoaDon (MaBN, NgayTT, TongTien) VALUES " + "(N'" + hdp.MaBN + "', N'" + hdp.NgayTT + "', N'" + hdp.TongTien + "')";
+                                basemodel.Command(query1);
 
-                            transaction.Commit();
+                                transaction.Commit();
 
-                            MessageBox.Show("Lưu thông tin thành công!");
-                            HoaDon_Load(sender, e);
+                                MessageBox.Show("Lưu thông tin thành công!");
+                                HoaDon_Load(sender, e);
+                            }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        transaction.Rollback();
-                        MessageBox.Show("Lỗi: " + ex.Message);
-                    }
-                    finally
-                    {
-                        sqlConnection.Close();
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show("Lỗi: " + ex.Message);
+                        }
+                        finally
+                        {
+                            sqlConnection.Close();
+                        }
                     }
                 }
             }
@@ -82,6 +89,7 @@ namespace HMS_NHOM25
         private void HoaDon_Load(object sender, EventArgs e)
         {
             DeleteTextBoxes();
+            dateNgayTT.Value = DateTime.Now;
         }
 
         private void DeleteTextBoxes()
@@ -141,40 +149,40 @@ namespace HMS_NHOM25
                     string maBN = selectedRow.Cells["MaBN"].Value.ToString();
 
                     string query = @"
-                                    SELECT 
-                                        benhNhan_dichVu.MaDV AS 'DichVu/DonThuoc',
-                                        ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
-                                    FROM 
-                                        benhNhan BN
-                                    INNER JOIN 
-                                        benhNhan_dichVu ON BN.MaBN = benhNhan_dichVu.MaBN
-                                    INNER JOIN 
-                                        dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
-                                    WHERE 
-                                        BN.MaBN = @MaBN
-                                        AND BN.NgayVao <= benhNhan_dichVu.NgayDung
-                                        AND benhNhan_dichVu.NgayDung <= GETDATE() 
+                                SELECT 
+                                    benhNhan_dichVu.MaDV AS 'MaDichVu/MaDonThuoc',
+                                    ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
+                                FROM 
+                                    benhNhan BN
+                                INNER JOIN 
+                                    benhNhan_dichVu ON BN.MaBN = benhNhan_dichVu.MaBN
+                                INNER JOIN 
+                                    dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
+                                WHERE 
+                                    BN.MaBN = @MaBN
+                                    AND BN.NgayVao <= benhNhan_dichVu.NgayDung
+                                    AND benhNhan_dichVu.NgayDung <= GETDATE() 
+                                    AND BN.TrangThai = 1
 
-                                    UNION
+                                UNION
 
-                                    SELECT 
-                                        DonThuoc.MaDT AS 'DichVu/DonThuoc',
-                                        ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
-                                    FROM 
-                                        benhNhan BN
-                                    INNER JOIN 
-                                        DonThuoc ON BN.MaBN = DonThuoc.MaBN
-                                    LEFT JOIN 
-                                        donThuocChiTiet ON DonThuoc.MaDT = donThuocChiTiet.MaDT
-                                    LEFT JOIN 
-                                        khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
-                                    WHERE 
-                                        BN.MaBN = @MaBN
-                                        AND BN.NgayVao <= DonThuoc.NgayKeDon
-                                        AND DonThuoc.NgayKeDon <= GETDATE();";
+                                SELECT 
+                                    DonThuoc.MaDT AS 'MaDichVu/MaDonThuoc',
+                                    ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
+                                FROM 
+                                    benhNhan BN
+                                INNER JOIN 
+                                    DonThuoc ON BN.MaBN = DonThuoc.MaBN
+                                LEFT JOIN 
+                                    donThuocChiTiet ON DonThuoc.MaDT = donThuocChiTiet.MaDT
+                                LEFT JOIN 
+                                    khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
+                                WHERE 
+                                    BN.MaBN = @MaBN
+                                    AND BN.NgayVao <= DonThuoc.NgayKeDon
+                                    AND DonThuoc.NgayKeDon <= GETDATE()
+                                    AND BN.TrangThai = 1;";
 
-
- 
 
                     DataTable resultTable = basemodel.Table(query, new Dictionary<string, object> { { "@MaBN", maBN } });
                     dgvChiTietHD.DataSource = resultTable;

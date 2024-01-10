@@ -72,7 +72,11 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
+<<<<<<< HEAD
             this.panel3.Size = new System.Drawing.Size(885, 1094);
+=======
+            this.panel3.Size = new System.Drawing.Size(927, 813);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
@@ -101,7 +105,11 @@
             series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
             series1.Name = "Tỷ lệ tăng trưởng (%)";
             this.chartTyLeTangTruong.Series.Add(series1);
+<<<<<<< HEAD
             this.chartTyLeTangTruong.Size = new System.Drawing.Size(873, 293);
+=======
+            this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.chartTyLeTangTruong.TabIndex = 10;
             this.chartTyLeTangTruong.Text = "chartTKDauBung";
             // 
@@ -115,7 +123,11 @@
             this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
             this.dgvTyLeTangTruong.RowHeadersWidth = 51;
             this.dgvTyLeTangTruong.RowTemplate.Height = 24;
+<<<<<<< HEAD
             this.dgvTyLeTangTruong.Size = new System.Drawing.Size(371, 356);
+=======
+            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.dgvTyLeTangTruong.TabIndex = 9;
             // 
             // chartDoanhThu
@@ -141,7 +153,11 @@
             series2.Legend = "Legend1";
             series2.Name = "Doanh thu (VNĐ)";
             this.chartDoanhThu.Series.Add(series2);
+<<<<<<< HEAD
             this.chartDoanhThu.Size = new System.Drawing.Size(873, 339);
+=======
+            this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.chartDoanhThu.TabIndex = 8;
             this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -155,7 +171,11 @@
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
+<<<<<<< HEAD
             this.dgvDoanhThu.Size = new System.Drawing.Size(475, 356);
+=======
+            this.dgvDoanhThu.Size = new System.Drawing.Size(191, 323);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.dgvDoanhThu.TabIndex = 7;
             // 
             // label4
@@ -174,7 +194,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(952, 1102);
+=======
+            this.ClientSize = new System.Drawing.Size(973, 882);
+>>>>>>> 794794a8f89a1a563275d6571c3ca0da7c91e4ae
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labTKBenhNhan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

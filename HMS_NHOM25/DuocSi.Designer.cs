@@ -49,6 +49,7 @@ namespace HMS_NHOM25
             this.labTenNVYTeTimKiem = new System.Windows.Forms.Label();
             this.txtTimKiemDS = new System.Windows.Forms.TextBox();
             this.dgvInfoDS = new System.Windows.Forms.DataGridView();
+            this.labAddBS = new System.Windows.Forms.Label();
             this.btnSuaDS = new System.Windows.Forms.Button();
             this.btnXoaDS = new System.Windows.Forms.Button();
             this.btnThemDSi = new System.Windows.Forms.Button();
@@ -73,14 +74,14 @@ namespace HMS_NHOM25
             this.grbInforNVYTe.Controls.Add(this.labTenNVYTe);
             this.grbInforNVYTe.Controls.Add(this.labMaNVYTe);
             this.grbInforNVYTe.ForeColor = System.Drawing.Color.Red;
-            this.grbInforNVYTe.Location = new System.Drawing.Point(31, 18);
+            this.grbInforNVYTe.Location = new System.Drawing.Point(31, 57);
             this.grbInforNVYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforNVYTe.Name = "grbInforNVYTe";
             this.grbInforNVYTe.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforNVYTe.Size = new System.Drawing.Size(904, 166);
             this.grbInforNVYTe.TabIndex = 0;
             this.grbInforNVYTe.TabStop = false;
-            this.grbInforNVYTe.Text = "Thông tin nhân viên y tế";
+            this.grbInforNVYTe.Text = "Thông tin dược sĩ";
             // 
             // cobDiaChiDS
             // 
@@ -291,7 +292,7 @@ namespace HMS_NHOM25
             // 
             this.labTimKiemNVYTe.AutoSize = true;
             this.labTimKiemNVYTe.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemNVYTe.Location = new System.Drawing.Point(41, 195);
+            this.labTimKiemNVYTe.Location = new System.Drawing.Point(41, 234);
             this.labTimKiemNVYTe.Name = "labTimKiemNVYTe";
             this.labTimKiemNVYTe.Size = new System.Drawing.Size(62, 16);
             this.labTimKiemNVYTe.TabIndex = 1;
@@ -301,7 +302,7 @@ namespace HMS_NHOM25
             // 
             this.labTenNVYTeTimKiem.AutoSize = true;
             this.labTenNVYTeTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenNVYTeTimKiem.Location = new System.Drawing.Point(60, 222);
+            this.labTenNVYTeTimKiem.Location = new System.Drawing.Point(60, 262);
             this.labTenNVYTeTimKiem.Name = "labTenNVYTeTimKiem";
             this.labTenNVYTeTimKiem.Size = new System.Drawing.Size(91, 16);
             this.labTenNVYTeTimKiem.TabIndex = 18;
@@ -309,7 +310,7 @@ namespace HMS_NHOM25
             // 
             // txtTimKiemDS
             // 
-            this.txtTimKiemDS.Location = new System.Drawing.Point(161, 217);
+            this.txtTimKiemDS.Location = new System.Drawing.Point(161, 256);
             this.txtTimKiemDS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemDS.Name = "txtTimKiemDS";
             this.txtTimKiemDS.Size = new System.Drawing.Size(164, 22);
@@ -325,22 +326,34 @@ namespace HMS_NHOM25
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoDS.Location = new System.Drawing.Point(31, 263);
+            this.dgvInfoDS.Location = new System.Drawing.Point(31, 300);
             this.dgvInfoDS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoDS.Name = "dgvInfoDS";
             this.dgvInfoDS.ReadOnly = true;
             this.dgvInfoDS.RowHeadersWidth = 62;
             this.dgvInfoDS.RowTemplate.Height = 28;
             this.dgvInfoDS.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoDS.Size = new System.Drawing.Size(908, 470);
+            this.dgvInfoDS.Size = new System.Drawing.Size(908, 314);
             this.dgvInfoDS.TabIndex = 23;
             this.dgvInfoDS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoNVYTe_CellClick);
+            // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(362, 19);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(225, 29);
+            this.labAddBS.TabIndex = 24;
+            this.labAddBS.Text = "Danh sách dược sĩ";
             // 
             // btnSuaDS
             // 
             this.btnSuaDS.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaDS.Location = new System.Drawing.Point(603, 215);
+            this.btnSuaDS.Location = new System.Drawing.Point(603, 254);
             this.btnSuaDS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaDS.Name = "btnSuaDS";
             this.btnSuaDS.Size = new System.Drawing.Size(107, 31);
@@ -354,7 +367,7 @@ namespace HMS_NHOM25
             // 
             this.btnXoaDS.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDS.Location = new System.Drawing.Point(799, 215);
+            this.btnXoaDS.Location = new System.Drawing.Point(799, 254);
             this.btnXoaDS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDS.Name = "btnXoaDS";
             this.btnXoaDS.Size = new System.Drawing.Size(85, 31);
@@ -368,7 +381,7 @@ namespace HMS_NHOM25
             // 
             this.btnThemDSi.Image = global::HMS_NHOM25.Properties.Resources.add_user__1_;
             this.btnThemDSi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDSi.Location = new System.Drawing.Point(431, 215);
+            this.btnThemDSi.Location = new System.Drawing.Point(431, 254);
             this.btnThemDSi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDSi.Name = "btnThemDSi";
             this.btnThemDSi.Size = new System.Drawing.Size(88, 31);
@@ -382,7 +395,8 @@ namespace HMS_NHOM25
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(970, 624);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.dgvInfoDS);
             this.Controls.Add(this.btnSuaDS);
             this.Controls.Add(this.btnXoaDS);
@@ -429,5 +443,6 @@ namespace HMS_NHOM25
         private System.Windows.Forms.Button btnSuaDS;
         private System.Windows.Forms.DataGridView dgvInfoDS;
         private System.Windows.Forms.ComboBox cobDiaChiDS;
+        private System.Windows.Forms.Label labAddBS;
     }
 }

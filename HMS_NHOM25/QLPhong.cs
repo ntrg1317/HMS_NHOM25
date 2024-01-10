@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class BacSiControl : Form
+    public partial class QLPhong : Form
     {
-        public BacSiControl()
+        public QLPhong()
         {
             InitializeComponent();
         }

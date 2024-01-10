@@ -50,6 +50,7 @@
             this.btnThemDV = new System.Windows.Forms.Button();
             this.btnSuaBNDV = new System.Windows.Forms.Button();
             this.btnXoaBNDV = new System.Windows.Forms.Button();
+            this.labAddBS = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInforDichVu)).BeginInit();
             this.grb.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -78,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(29, 266);
+            this.label2.Location = new System.Drawing.Point(29, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 16);
             this.label2.TabIndex = 34;
@@ -93,13 +94,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInforDichVu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInforDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInforDichVu.Location = new System.Drawing.Point(33, 294);
+            this.dgvInforDichVu.Location = new System.Drawing.Point(33, 344);
             this.dgvInforDichVu.Name = "dgvInforDichVu";
             this.dgvInforDichVu.ReadOnly = true;
             this.dgvInforDichVu.RowHeadersWidth = 51;
             this.dgvInforDichVu.RowTemplate.Height = 24;
             this.dgvInforDichVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInforDichVu.Size = new System.Drawing.Size(907, 433);
+            this.dgvInforDichVu.Size = new System.Drawing.Size(907, 314);
             this.dgvInforDichVu.TabIndex = 32;
             this.dgvInforDichVu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDichVu_CellClick);
             this.dgvInforDichVu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforDichVu_CellContentClick);
@@ -155,7 +156,7 @@
             this.grb.Controls.Add(this.labTenBN);
             this.grb.Controls.Add(this.labMaBN);
             this.grb.ForeColor = System.Drawing.Color.Red;
-            this.grb.Location = new System.Drawing.Point(29, 17);
+            this.grb.Location = new System.Drawing.Point(33, 75);
             this.grb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grb.Name = "grb";
             this.grb.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -222,7 +223,7 @@
             this.groupBox1.Controls.Add(this.txtTKTenDV);
             this.groupBox1.Controls.Add(this.labTenPhong);
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(28, 135);
+            this.groupBox1.Location = new System.Drawing.Point(28, 201);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -256,7 +257,7 @@
             this.btnSuaDV.ForeColor = System.Drawing.Color.Black;
             this.btnSuaDV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaDV.Location = new System.Drawing.Point(444, 225);
+            this.btnSuaDV.Location = new System.Drawing.Point(444, 278);
             this.btnSuaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaDV.Name = "btnSuaDV";
             this.btnSuaDV.Size = new System.Drawing.Size(107, 31);
@@ -271,7 +272,7 @@
             this.btnXoaDV.ForeColor = System.Drawing.Color.Black;
             this.btnXoaDV.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDV.Location = new System.Drawing.Point(716, 225);
+            this.btnXoaDV.Location = new System.Drawing.Point(716, 278);
             this.btnXoaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDV.Name = "btnXoaDV";
             this.btnXoaDV.Size = new System.Drawing.Size(85, 31);
@@ -286,7 +287,7 @@
             this.btnThemDV.ForeColor = System.Drawing.Color.Black;
             this.btnThemDV.Image = global::HMS_NHOM25.Properties.Resources.add2;
             this.btnThemDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemDV.Location = new System.Drawing.Point(193, 225);
+            this.btnThemDV.Location = new System.Drawing.Point(193, 278);
             this.btnThemDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemDV.Name = "btnThemDV";
             this.btnThemDV.Size = new System.Drawing.Size(88, 31);
@@ -301,7 +302,7 @@
             this.btnSuaBNDV.ForeColor = System.Drawing.Color.Black;
             this.btnSuaBNDV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaBNDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaBNDV.Location = new System.Drawing.Point(444, 225);
+            this.btnSuaBNDV.Location = new System.Drawing.Point(444, 278);
             this.btnSuaBNDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaBNDV.Name = "btnSuaBNDV";
             this.btnSuaBNDV.Size = new System.Drawing.Size(107, 31);
@@ -317,7 +318,7 @@
             this.btnXoaBNDV.ForeColor = System.Drawing.Color.Black;
             this.btnXoaBNDV.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
             this.btnXoaBNDV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaBNDV.Location = new System.Drawing.Point(716, 225);
+            this.btnXoaBNDV.Location = new System.Drawing.Point(716, 278);
             this.btnXoaBNDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaBNDV.Name = "btnXoaBNDV";
             this.btnXoaBNDV.Size = new System.Drawing.Size(85, 31);
@@ -328,12 +329,25 @@
             this.btnXoaBNDV.Visible = false;
             this.btnXoaBNDV.Click += new System.EventHandler(this.btnXoaBNDV_Click);
             // 
+            // labAddBS
+            // 
+            this.labAddBS.AutoSize = true;
+            this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labAddBS.Location = new System.Drawing.Point(354, 22);
+            this.labAddBS.Name = "labAddBS";
+            this.labAddBS.Size = new System.Drawing.Size(223, 29);
+            this.labAddBS.TabIndex = 0;
+            this.labAddBS.Text = "Danh sách dịch vụ";
+            // 
             // DichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(970, 675);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.labAddBS);
             this.Controls.Add(this.btnSuaBNDV);
             this.Controls.Add(this.btnSuaDV);
             this.Controls.Add(this.btnXoaBNDV);
@@ -381,5 +395,6 @@
         private System.Windows.Forms.Button btnSuaBNDV;
         private System.Windows.Forms.Button btnXoaBNDV;
         private System.Windows.Forms.ComboBox cobTenDV;
+        private System.Windows.Forms.Label labAddBS;
     }
 }
