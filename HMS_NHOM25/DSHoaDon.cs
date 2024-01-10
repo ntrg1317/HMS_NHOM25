@@ -22,6 +22,11 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoDSHoaDon.DataSource = basemodel.all(table);
+
+                dgvInfoDSHoaDon.Columns["MaHD"].HeaderText = "Mã hóa đơn";
+                dgvInfoDSHoaDon.Columns["MaBN"].HeaderText = "Mã đơn thuốc";
+                dgvInfoDSHoaDon.Columns["NgayTT"].HeaderText = "Ngày thanh toán";
+                dgvInfoDSHoaDon.Columns["TongTien"].HeaderText = "Tổng tiền";
             }
             catch (Exception ex)
             {

@@ -39,11 +39,18 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show(ex.Message);
             }
+            dgvTimBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+            dgvTimBN.Columns["TenBN"].HeaderText = "Tên bênh nhân";
+            dgvTimBN.Columns["NgaySinh"].HeaderText = "Ngày sinh";
+            dgvTimBN.Columns["GioiTinh"].HeaderText = "Giới tinh";
+            dgvTimBN.Columns["SDT"].HeaderText = "SĐT";
+            dgvTimBN.Columns["DiaChi"].HeaderText = "Địa chỉ";
+            dgvTimBN.Columns["SDTNguoiThan"].HeaderText = "SĐT người thân";
+            dgvTimBN.Columns["TrangThai"].HeaderText = "Trạng thái";
         }
 
         private void LichSuDieuTri_Load(object sender, EventArgs e)
         {
-
         }
 
         private void txtMaBN_TextChanged(object sender, EventArgs e)
@@ -67,6 +74,9 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            dgvInfoLSDT.Columns["NgayVao"].HeaderText = "Ngày vào";
+            dgvInfoLSDT.Columns["MaPhong"].HeaderText = "Mã phòng";
+            dgvInfoLSDT.Columns["BenhTrang"].HeaderText = "Bệnh trạng";
         }
 
         private void dgvInfoLSDT_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -131,6 +131,10 @@ namespace HMS_NHOM25
             try
             {
                 dgvDSDonThuoc.DataSource = basemodel.all(table);
+
+                dgvDSDonThuoc.Columns["MaDT"].HeaderText = "Mã đơn thuốc";
+                dgvDSDonThuoc.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+                dgvDSDonThuoc.Columns["NgayKeDon"].HeaderText = "Ngày kê đơn";
             }
             catch (Exception ex)
             {

@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -47,11 +48,18 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show(ex.Message);
             }
+            dgvTimBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+            dgvTimBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
+            dgvTimBN.Columns["NgaySinh"].HeaderText = "Ngày sinh";
+            dgvTimBN.Columns["GioiTinh"].HeaderText = "Giới tính";
+            dgvTimBN.Columns["SDT"].HeaderText = "SĐT";
+            dgvTimBN.Columns["DiaChi"].HeaderText = "Địa chỉ";
+            dgvTimBN.Columns["SDTNguoiThan"].HeaderText = "SĐT người thân";
+            dgvTimBN.Columns["TrangThai"].HeaderText = "Trạng thái";
         }
 
         private void DVSuDung_Load(object sender, EventArgs e)
         {
-
         }
 
         private void txtMaBN_TextChanged(object sender, EventArgs e)
@@ -99,6 +107,10 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            dgvInfoDVSD.Columns["MaDV"].HeaderText = "Mã dịch vụ";
+            dgvInfoDVSD.Columns["TenDV"].HeaderText = "Tên dịch vụ";
+            dgvInfoDVSD.Columns["TienDV"].HeaderText = "Tiền dịch vụ";
+            dgvInfoDVSD.Columns["NgayDung"].HeaderText = "Ngày dùng";
         }
 
         private void dgvInfoDVSD_CellClick(object sender, DataGridViewCellEventArgs e)

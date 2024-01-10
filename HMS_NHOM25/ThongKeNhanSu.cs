@@ -29,13 +29,6 @@ namespace HMS_NHOM25
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
-                dgvSLNhanSu.DataSource = dataTable;
-
-                chart1.Series[0].Points.DataBind(dataTable.AsEnumerable(), "NhanVien", "SoLuong", "");
-
-                chart1.Series[0].Name = "NhanVien";
-
-
                 foreach (var point in chart1.Series[0].Points)
                 {
                     point.Label = point.YValues[0].ToString();
@@ -55,6 +48,29 @@ namespace HMS_NHOM25
                             break;
                     }
                 }
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    if (row["NhanVien"].ToString() == "BacSi")
+                    {
+                        row["NhanVien"] = "Bác sĩ";
+                    }
+                    if (row["NhanVien"].ToString() == "DuocSi")
+                    {
+                        row["NhanVien"] = "Dược sĩ";
+                    }
+                    if (row["NhanVien"].ToString() == "NhanVienThuNgan")
+                    {
+                        row["NhanVien"] = "Nhân viên thu ngân";
+                    }
+                }
+                dgvSLNhanSu.DataSource = dataTable;
+
+                chart1.Series[0].Points.DataBind(dataTable.AsEnumerable(), "NhanVien", "SoLuong", "");
+
+                chart1.Series[0].Name = "NhanVien";
+
+                
+
             }
             dgvSLNhanSu.Columns["NhanVien"].HeaderText = "Nhân viên";
             dgvSLNhanSu.Columns["SoLuong"].HeaderText = "Số lượng";

@@ -26,6 +26,10 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Error: ", ex.Message);
             }
+            dgvInforPhong.Columns["MaPhong"].HeaderText = "Mã phòng";
+            dgvInforPhong.Columns["TenPhong"].HeaderText = "Tên phòng";
+            dgvInforPhong.Columns["SLGiuong"].HeaderText = "Số lượng giường";
+            dgvInforPhong.Columns["TienPhong"].HeaderText = "Tiền phòng";
         }
 
         private void txtTKTenPhong_TextChanged(object sender, EventArgs e)

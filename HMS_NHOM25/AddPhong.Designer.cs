@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.grbAddInfoNVYTeM = new System.Windows.Forms.GroupBox();
+            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.txtSoLuongPhong = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.btnThoatAddPhong = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveInfoPhong = new System.Windows.Forms.Button();
-            this.txtTenPhong = new System.Windows.Forms.TextBox();
             this.grbAddInfoNVYTeM.SuspendLayout();
             this.palAddBS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
@@ -73,6 +73,14 @@
             this.grbAddInfoNVYTeM.TabIndex = 12;
             this.grbAddInfoNVYTeM.TabStop = false;
             this.grbAddInfoNVYTeM.Text = "Thông tin phòng";
+            // 
+            // txtTenPhong
+            // 
+            this.txtTenPhong.Location = new System.Drawing.Point(145, 59);
+            this.txtTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenPhong.Name = "txtTenPhong";
+            this.txtTenPhong.Size = new System.Drawing.Size(184, 26);
+            this.txtTenPhong.TabIndex = 29;
             // 
             // label4
             // 
@@ -203,14 +211,6 @@
             this.btnSaveInfoPhong.UseVisualStyleBackColor = true;
             this.btnSaveInfoPhong.Click += new System.EventHandler(this.btnSaveInfoPhong_Click);
             // 
-            // txtTenPhong
-            // 
-            this.txtTenPhong.Location = new System.Drawing.Point(145, 59);
-            this.txtTenPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenPhong.Name = "txtTenPhong";
-            this.txtTenPhong.Size = new System.Drawing.Size(184, 26);
-            this.txtTenPhong.TabIndex = 29;
-            // 
             // AddPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -224,7 +224,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddPhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddPhong";
+            this.Text = "ThemPhong";
             this.Load += new System.EventHandler(this.AddPhong_Load);
             this.grbAddInfoNVYTeM.ResumeLayout(false);
             this.grbAddInfoNVYTeM.PerformLayout();

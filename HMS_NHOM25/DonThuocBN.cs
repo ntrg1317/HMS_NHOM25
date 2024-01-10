@@ -41,6 +41,15 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show(ex.Message);
             }
+
+            dgvTimBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+            dgvTimBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
+            dgvTimBN.Columns["NgaySinh"].HeaderText = "Ngày sinh";
+            dgvTimBN.Columns["GioiTinh"].HeaderText = "Giới tính";
+            dgvTimBN.Columns["SDT"].HeaderText = "SĐT";
+            dgvTimBN.Columns["DiaChi"].HeaderText = "Địa chỉ";
+            dgvTimBN.Columns["SDTNguoiThan"].HeaderText = "SĐT người thân";
+            dgvTimBN.Columns["TrangThai"].HeaderText = "Trạng thái";
         }
 
         private void btnThemDonThuoc_Click(object sender, EventArgs e)
@@ -132,7 +141,6 @@ namespace HMS_NHOM25
 
         private void DonThuocBN_Load(object sender, EventArgs e)
         {
-
         }
 
         private void dgvTimBN_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -162,6 +170,10 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            dgvDSDonThuoc.Columns["MaDT"].HeaderText = "Đơn thuốc";
+            dgvDSDonThuoc.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+            dgvDSDonThuoc.Columns["NgayKeDon"].HeaderText = "Ngày kê đơn";
         }
     }
 }

@@ -27,6 +27,13 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Loi " + ex.Message);
             }
+
+            dgvInfoKhoThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
+            dgvInfoKhoThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
+            dgvInfoKhoThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
+            dgvInfoKhoThuoc.Columns["NSX"].HeaderText = "NSX";
+            dgvInfoKhoThuoc.Columns["HSD"].HeaderText = "HSD";
+            dgvInfoKhoThuoc.Columns["TienThuoc"].HeaderText = "Tiền thuốc";
         }
 
         private void btnThemThuoc_Click(object sender, EventArgs e)

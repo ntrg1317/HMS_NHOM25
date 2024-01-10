@@ -22,8 +22,10 @@ namespace HMS_NHOM25
             //Application.Run(new login());
 
             //Application.Run(new login());
-            Application.Run(new login());
+           // Application.Run(new login());
             //Application.Run(new DSHoaDon());
+
+            //Application.Run(new DVSuDung());
         }
     }
 }
