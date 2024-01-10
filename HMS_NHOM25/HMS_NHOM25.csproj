@@ -116,6 +116,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Params\BenhNhan_LichSuParams.cs" />
     <Compile Include="ThemBenhNhanDV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -444,6 +445,12 @@
     <Compile Include="TTDonThuocBN.Designer.cs">
       <DependentUpon>TTDonThuocBN.cs</DependentUpon>
     </Compile>
+    <Compile Include="XepPhongBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XepPhongBN.Designer.cs">
+      <DependentUpon>XepPhongBN.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ThemBenhNhanDV.resx">
       <DependentUpon>ThemBenhNhanDV.cs</DependentUpon>
     </EmbeddedResource>
@@ -609,6 +616,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TTDonThuocBN.resx">
       <DependentUpon>TTDonThuocBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XepPhongBN.resx">
+      <DependentUpon>XepPhongBN.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

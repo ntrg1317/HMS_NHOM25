@@ -206,6 +206,7 @@ namespace HMS_NHOM25
             richTxtLieuDung.Text = "";
             richTxtLoiDan.Text = "";
         }
+
         private bool CheckTextBoxes()
         {
             if (cmbTenThuoc.SelectedIndex == -1)
