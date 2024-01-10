@@ -24,6 +24,13 @@ namespace HMS_NHOM25
 
         private void ThongKeDoanhThu_Load(object sender, EventArgs e)
         {
+            //dgvDoanhThu.Columns["Thang"].HeaderText = "Tháng";
+            //dgvDoanhThu.Columns["DoanhThu"].HeaderText = "Doanh thu";
+            //dgvTyLeTangTruong.Columns["TyLeTangTruong"].HeaderText = "Tỷ lệ tăng trưởng";
+            //dgvTyLeTangTruong.Columns["Thang"].HeaderText = "Tháng";
+
+
+
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();

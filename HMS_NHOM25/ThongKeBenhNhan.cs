@@ -17,7 +17,13 @@ namespace HMS_NHOM25
         private void ThongKeBenhNhan_Load(object sender, EventArgs e)
         {
 
-            string querySLBN2024 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2022 GROUP BY MONTH(NgayVao) ORDER BY Thang";
+            string querySLBN2024 = "SELECT MONTH(ls.NgayVao) AS Thang, " +
+                "COUNT(DISTINCT bn.MaBN) AS SoLuong " +
+                "FROM benhNhan_lichSu ls " +
+                "JOIN benhNhan bn ON ls.MaBN = bn.MaBN " +
+                "WHERE YEAR(ls.NgayVao) = 2022 " +
+                "GROUP BY MONTH(ls.NgayVao) " +
+                "ORDER BY Thang;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -38,8 +44,12 @@ namespace HMS_NHOM25
                 }
             }
 
-            string querySLBNNam = "SELECT YEAR(NgayVao) AS Nam, COUNT(*) AS SoLuong FROM benhNhan " +
-                "WHERE YEAR(NgayVao) BETWEEN 2020 AND 2024 GROUP BY YEAR(NgayVao) ORDER BY Nam;";
+            string querySLBNNam = "SELECT YEAR(ls.NgayVao) AS Nam, " +
+                "COUNT(DISTINCT bn.MaBN) AS SoLuong " +
+                "FROM benhNhan_lichSu ls " +
+                "JOIN benhNhan bn ON ls.MaBN = bn.MaBN " +
+                "GROUP BY YEAR(ls.NgayVao) " +
+                "ORDER BY Nam;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -61,7 +71,13 @@ namespace HMS_NHOM25
                 }
 
             }
-            string querySLBN2023 = "SELECT MONTH(NgayVao) AS Thang, COUNT(*) AS SoLuong FROM BenhNhan WHERE YEAR(NgayVao) = 2023 GROUP BY MONTH(NgayVao) ORDER BY Thang";
+            string querySLBN2023 = "SELECT MONTH(ls.NgayVao) AS Thang, " +
+                "COUNT(DISTINCT bn.MaBN) AS SoLuong " +
+                "FROM benhNhan_lichSu ls " +
+                "JOIN benhNhan bn ON ls.MaBN = bn.MaBN " +
+                "WHERE YEAR(ls.NgayVao) = 2023 " +
+                "GROUP BY MONTH(ls.NgayVao) " +
+                "ORDER BY Thang;";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();

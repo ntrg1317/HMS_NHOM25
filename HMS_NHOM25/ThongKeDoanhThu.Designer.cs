@@ -72,6 +72,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(885, 1094);
             this.panel3.Size = new System.Drawing.Size(927, 813);
             this.panel3.TabIndex = 5;
             // 
@@ -88,7 +89,7 @@
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Name = "Legend1";
             this.chartTyLeTangTruong.Legends.Add(legend1);
-            this.chartTyLeTangTruong.Location = new System.Drawing.Point(231, 406);
+            this.chartTyLeTangTruong.Location = new System.Drawing.Point(20, 789);
             this.chartTyLeTangTruong.Name = "chartTyLeTangTruong";
             this.chartTyLeTangTruong.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.ChartArea = "ChartArea1";
@@ -101,6 +102,7 @@
             series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Star5;
             series1.Name = "Tỷ lệ tăng trưởng (%)";
             this.chartTyLeTangTruong.Series.Add(series1);
+            this.chartTyLeTangTruong.Size = new System.Drawing.Size(873, 293);
             this.chartTyLeTangTruong.Size = new System.Drawing.Size(665, 286);
             this.chartTyLeTangTruong.TabIndex = 10;
             this.chartTyLeTangTruong.Text = "chartTKDauBung";
@@ -111,10 +113,11 @@
             this.dgvTyLeTangTruong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTyLeTangTruong.BackgroundColor = System.Drawing.Color.White;
             this.dgvTyLeTangTruong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTyLeTangTruong.Location = new System.Drawing.Point(20, 406);
+            this.dgvTyLeTangTruong.Location = new System.Drawing.Point(522, 54);
             this.dgvTyLeTangTruong.Name = "dgvTyLeTangTruong";
             this.dgvTyLeTangTruong.RowHeadersWidth = 51;
             this.dgvTyLeTangTruong.RowTemplate.Height = 24;
+            this.dgvTyLeTangTruong.Size = new System.Drawing.Size(371, 356);
             this.dgvTyLeTangTruong.Size = new System.Drawing.Size(191, 286);
             this.dgvTyLeTangTruong.TabIndex = 9;
             // 
@@ -132,7 +135,7 @@
             legend2.MaximumAutoSize = 30F;
             legend2.Name = "Legend1";
             this.chartDoanhThu.Legends.Add(legend2);
-            this.chartDoanhThu.Location = new System.Drawing.Point(231, 54);
+            this.chartDoanhThu.Location = new System.Drawing.Point(20, 428);
             this.chartDoanhThu.Name = "chartDoanhThu";
             this.chartDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series2.ChartArea = "ChartArea1";
@@ -141,6 +144,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Doanh thu (VNĐ)";
             this.chartDoanhThu.Series.Add(series2);
+            this.chartDoanhThu.Size = new System.Drawing.Size(873, 339);
             this.chartDoanhThu.Size = new System.Drawing.Size(665, 323);
             this.chartDoanhThu.TabIndex = 8;
             this.chartDoanhThu.Text = "Số lượng bệnh nhân theo năm";
@@ -155,6 +159,7 @@
             this.dgvDoanhThu.Name = "dgvDoanhThu";
             this.dgvDoanhThu.RowHeadersWidth = 51;
             this.dgvDoanhThu.RowTemplate.Height = 24;
+            this.dgvDoanhThu.Size = new System.Drawing.Size(475, 356);
             this.dgvDoanhThu.Size = new System.Drawing.Size(191, 323);
             this.dgvDoanhThu.TabIndex = 7;
             // 
@@ -174,6 +179,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(952, 1102);
             this.ClientSize = new System.Drawing.Size(973, 882);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labTKBenhNhan);

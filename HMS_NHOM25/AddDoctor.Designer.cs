@@ -440,7 +440,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddDoctor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddDoctor";
+            this.Text = "ThemBacSi";
             this.Load += new System.EventHandler(this.AddDoctor_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();

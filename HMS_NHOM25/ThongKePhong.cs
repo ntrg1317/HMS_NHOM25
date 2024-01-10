@@ -1,4 +1,5 @@
-﻿using HMS_NHOM25.Model;
+﻿using GMap.NET.MapProviders;
+using HMS_NHOM25.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -21,9 +23,15 @@ namespace HMS_NHOM25
 
         private void ThongKePhong_Load(object sender, EventArgs e)
         {
-            string queryLuotSDPhong = "SELECT DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) AS Ngay, " +
-                                      "COUNT(*) AS LuotSuDung FROM BenhNhan WHERE TrangThai = 1 AND MONTH(NgayVao) = 1 AND YEAR(NgayVao) = 2024 " +
-                                      "GROUP BY DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE));";
+            string queryLuotSDPhong = "SELECT " +
+                "DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) AS Ngay, " +
+                "COUNT(DISTINCT MaBN) AS Luotsudung " +
+                "FROM benhNhan_lichSu " +
+                "WHERE MONTH(NgayVao) = 12 " +
+                "AND YEAR(NgayVao) = 2023 " +
+                "GROUP BY " +
+                "DATEADD(day, (DATEPART(day, NgayVao) - 1) / 3 * 3, CAST(NgayVao AS DATE)) " +
+                "ORDER BY Ngay; ";
             using (SqlConnection connection = ConnectDB.getSqlConnection())
             {
                 connection.Open();
@@ -36,10 +44,10 @@ namespace HMS_NHOM25
                     adapter.Fill(dataTable);
                     dgvLuotSDPhong.DataSource = dataTable;
 
-                    chartLuotSDPhong.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Ngay", "LuotSuDung", "");
+                    chartLuotSDPhong.Series[0].Points.DataBind(dataTable.AsEnumerable(), "Ngay", "Luotsudung", "");
 
                     chartLuotSDPhong.Series[0].XValueMember = "Ngay";
-                    chartLuotSDPhong.Series[0].YValueMembers = "LuotSuDung";
+                    chartLuotSDPhong.Series[0].YValueMembers = "Luotsudung";
                 }
             }
         }

@@ -14,18 +14,6 @@ namespace HMS_NHOM25
             InitializeComponent();
         }
 
-        private void Admin_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                dgvInfoQTV.DataSource = basemodel.all(table);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Loi " + ex.Message);
-            }
-        }
-
         private void dgvInfoQTV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txtMaQTV.Text = dgvInfoQTV.SelectedRows[0].Cells[0].Value.ToString();
@@ -60,6 +48,26 @@ namespace HMS_NHOM25
             else
             {
                 e.Handled = true;
+            }
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvInfoQTV.DataSource = basemodel.all(table);
+
+                dgvInfoQTV.Columns["MaQL"].HeaderText = "Mã Quản Trị Viên";
+                dgvInfoQTV.Columns["TenQL"].HeaderText = "Tên Quản Trị Viên";
+                dgvInfoQTV.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                dgvInfoQTV.Columns["GioiTinhQTV"].HeaderText = "Giới Tính";
+                dgvInfoQTV.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoQTV.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgvInfoQTV.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }
