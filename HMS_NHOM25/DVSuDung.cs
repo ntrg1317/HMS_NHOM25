@@ -51,7 +51,7 @@ namespace HMS_NHOM25
 
         private void DVSuDung_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txtMaBN_TextChanged(object sender, EventArgs e)

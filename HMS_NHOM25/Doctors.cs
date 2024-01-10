@@ -21,6 +21,16 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoBS.DataSource = bacSi.all(table);
+
+                dgvInfoBS.Columns["MaBS"].HeaderText = "Mã Quản Trị Viên";
+                dgvInfoBS.Columns["TenBS"].HeaderText = "Tên Quản Trị Viên";
+                dgvInfoBS.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                dgvInfoBS.Columns["GioiTinh"].HeaderText = "Giới Tính";
+                dgvInfoBS.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoBS.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgvInfoBS.Columns["ChuyenMon"].HeaderText = "Chuyên môn";
+                dgvInfoBS.Columns["BangCap"].HeaderText = "Bằng cấp";
+                dgvInfoBS.Columns["TrangThai"].HeaderText = "Trạng Thái";
             }
             catch (Exception ex)
             {

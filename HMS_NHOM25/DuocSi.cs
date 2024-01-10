@@ -95,6 +95,14 @@ namespace HMS_NHOM25
             try
             {
                 dgvInfoDS.DataSource = ds.all(table);
+
+                dgvInfoDS.Columns["MaNV"].HeaderText = "Mã nhân viên";
+                dgvInfoDS.Columns["TenNV"].HeaderText = "Tên nhân viên";
+                dgvInfoDS.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+                dgvInfoDS.Columns["GioiTinh"].HeaderText = "Giới Tính";
+                dgvInfoDS.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoDS.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+                dgvInfoDS.Columns["TrangThai"].HeaderText = "Trạng Thái";
             }
             catch (Exception ex)
             {

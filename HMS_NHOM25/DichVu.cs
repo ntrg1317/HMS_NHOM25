@@ -21,7 +21,10 @@ namespace HMS_NHOM25
             try
             {
                 dgvInforDichVu.DataSource = dv.all(table);
-                showComboBox();
+
+                dgvInforDichVu.Columns["MaDV"].HeaderText = "Mã dịch vụ";
+                dgvInforDichVu.Columns["TenDV"].HeaderText = "Tên dịch vụ";
+                dgvInforDichVu.Columns["TienDV"].HeaderText = "Tiền dịch vụ";
             }
             catch (Exception ex)
             {
