@@ -14,7 +14,7 @@ namespace HMS_NHOM25
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new DonThuocBN());
+            Application.Run(new login());
         }
     }
 }

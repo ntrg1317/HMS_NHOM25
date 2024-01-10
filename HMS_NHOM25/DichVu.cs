@@ -21,12 +21,12 @@ namespace HMS_NHOM25
             try
             {
                 dgvInforDichVu.DataSource = dv.all(table);
+                showComboBox();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-            
         }
 
         private void txtTKTenDV_TextChanged(object sender, EventArgs e)
@@ -191,18 +191,6 @@ namespace HMS_NHOM25
             }
         }
 
-        private void txtSDTBN_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsDigit(e.KeyChar) | char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
         private void dgvInforDichVu_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -215,6 +203,17 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void showComboBox()
+        {
+            DataTable dt = dv.all("dichVu");
+
+            cobTenDV.DataSource = dt;
+            cobTenDV.DisplayMember = "TenDV";
+            cobTenDV.ValueMember = "MaDV";
+
+            cobTenDV.SelectedIndex = -1;
         }
     }
 }

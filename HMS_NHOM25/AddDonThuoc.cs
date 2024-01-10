@@ -262,7 +262,11 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "Select * from benhNhan where SDT like '%" + timKiem + "%'";
+                string query = "SELECT bn.MaBN, bn.TenBN, bn.GioiTinh, bn_ls.BenhTrang, bn.DiaChi, bn.SDT " +
+                    "FROM benhNhan AS bn  " +
+                    "JOIN benhNhan_lichSu AS bn_ls " +
+                    "ON bn.MaBN = bn_ls.MaBN " +
+                    "WHERE SDT like '%" + timKiem + "%'";
 
                 dgvTimBN.DataSource = benhNhan.Table(query);
             }
