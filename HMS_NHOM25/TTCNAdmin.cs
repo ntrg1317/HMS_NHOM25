@@ -16,5 +16,11 @@ namespace HMS_NHOM25
         {
             InitializeComponent();
         }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            SuaTTTK suaTTTK = new SuaTTTK();
+            suaTTTK.Show();
+        }
     }
 }

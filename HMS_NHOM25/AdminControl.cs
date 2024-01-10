@@ -156,5 +156,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnHeThong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TTCNAdmin(), btnHeThong);
+        }
     }
 }

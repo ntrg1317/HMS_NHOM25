@@ -272,6 +272,7 @@
             this.btnHeThong.TabIndex = 0;
             this.btnHeThong.Text = "Hệ Thống";
             this.btnHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
             // navbar
             // 

@@ -134,7 +134,7 @@ namespace HMS_NHOM25
         {
             try
             {
-                if (e.RowIndex >= 0) 
+                if (e.RowIndex >= 0)
                 {
                     DataGridViewRow selectedRow = dgvInforBN.Rows[e.RowIndex];
 
@@ -149,39 +149,45 @@ namespace HMS_NHOM25
                     string maBN = selectedRow.Cells["MaBN"].Value.ToString();
 
                     string query = @"
-                                SELECT 
-                                    benhNhan_dichVu.MaDV AS 'MaDichVu/MaDonThuoc',
-                                    ISNULL(dichVu.TienDV, 0) AS 'GiaTien'
-                                FROM 
-                                    benhNhan BN
-                                INNER JOIN 
-                                    benhNhan_dichVu ON BN.MaBN = benhNhan_dichVu.MaBN
-                                INNER JOIN 
-                                    dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
-                                WHERE 
-                                    BN.MaBN = @MaBN
-                                    AND BN.NgayVao <= benhNhan_dichVu.NgayDung
-                                    AND benhNhan_dichVu.NgayDung <= GETDATE() 
-                                    AND BN.TrangThai = 1
+SELECT 
+    benhNhan_dichVu.MaDV AS 'Mã dịch vụ/Mã đơn thuốc',
+    ISNULL(dichVu.TienDV, 0) AS 'Giá tiền'
+FROM 
+    benhNhan BN
+INNER JOIN 
+    benhNhan_dichVu ON BN.MaBN = benhNhan_dichVu.MaBN
+INNER JOIN 
+    dichVu ON benhNhan_dichVu.MaDV = dichVu.MaDV
+INNER JOIN
+    benhNhan_lichSu LS ON BN.MaBN = LS.MaBN
+WHERE 
+    BN.MaBN = @MaBN
+    AND LS.NgayVao <= benhNhan_dichVu.NgayDung
+    AND benhNhan_dichVu.NgayDung <= GETDATE() 
+    AND BN.TrangThai = 1
 
-                                UNION
+UNION
 
-                                SELECT 
-                                    DonThuoc.MaDT AS 'MaDichVu/MaDonThuoc',
-                                    ISNULL(khoThuoc.TienThuoc, 0) AS 'GiaTien'
-                                FROM 
-                                    benhNhan BN
-                                INNER JOIN 
-                                    DonThuoc ON BN.MaBN = DonThuoc.MaBN
-                                LEFT JOIN 
-                                    donThuocChiTiet ON DonThuoc.MaDT = donThuocChiTiet.MaDT
-                                LEFT JOIN 
-                                    khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
-                                WHERE 
-                                    BN.MaBN = @MaBN
-                                    AND BN.NgayVao <= DonThuoc.NgayKeDon
-                                    AND DonThuoc.NgayKeDon <= GETDATE()
-                                    AND BN.TrangThai = 1;";
+SELECT 
+    DonThuoc.MaDT AS 'Mã dịch vụ/Mã đơn thuốc',
+    ISNULL(khoThuoc.TienThuoc, 0) AS 'Giá tiền'
+FROM 
+    benhNhan BN
+INNER JOIN 
+    DonThuoc ON BN.MaBN = DonThuoc.MaBN
+INNER JOIN
+    benhNhan_lichSu LS ON BN.MaBN = LS.MaBN
+LEFT JOIN 
+    donThuocChiTiet ON DonThuoc.MaDT = donThuocChiTiet.MaDT
+LEFT JOIN 
+    khoThuoc ON donThuocChiTiet.MaThuoc = khoThuoc.MaThuoc
+WHERE 
+    BN.MaBN = @MaBN
+    AND LS.NgayVao <= DonThuoc.NgayKeDon
+    AND DonThuoc.NgayKeDon <= GETDATE()
+    AND BN.TrangThai = 1;";
+
+
 
 
                     DataTable resultTable = basemodel.Table(query, new Dictionary<string, object> { { "@MaBN", maBN } });
@@ -191,7 +197,7 @@ namespace HMS_NHOM25
                     if (resultTable.Rows.Count > 0)
                     {
                         totalGiaTien = resultTable.AsEnumerable()
-                            .Sum(row => row.Field<decimal>("GiaTien"));
+                            .Sum(row => row.Field<decimal>("Giá tiền"));
                     }
 
                     txtTongTien.Text = totalGiaTien.ToString();
@@ -214,7 +220,11 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "Select * from benhNhan where SDT like '%" + timKiem + "%'";
+                string query = "SELECT bn.MaBN, bn.TenBN,bn.NgaySinh,bn_ls.NgayVao, bn.GioiTinh, bn_ls.BenhTrang, bn.DiaChi, bn.SDT " +
+                    "FROM benhNhan AS bn  " +
+                    "JOIN benhNhan_lichSu AS bn_ls " +
+                    "ON bn.MaBN = bn_ls.MaBN " +
+                    "WHERE SDT like '%" + timKiem + "%'";
 
                 dgvInforBN.DataSource = basemodel.Table(query);
             }
