@@ -290,7 +290,7 @@
             this.btnThemBN_Phong.ForeColor = System.Drawing.Color.Black;
             this.btnThemBN_Phong.Image = global::HMS_NHOM25.Properties.Resources.plus;
             this.btnThemBN_Phong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemBN_Phong.Location = new System.Drawing.Point(428, 350);
+            this.btnThemBN_Phong.Location = new System.Drawing.Point(500, 442);
             this.btnThemBN_Phong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemBN_Phong.Name = "btnThemBN_Phong";
             this.btnThemBN_Phong.Size = new System.Drawing.Size(88, 31);
