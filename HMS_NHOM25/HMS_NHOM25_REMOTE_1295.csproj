@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E6BFBAA-BEC8-4FC4-988D-4048A8B506B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HMS_NHOM25</RootNamespace>
+    <AssemblyName>HMS_NHOM25</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBenhNhanDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBenhNhanDV.Designer.cs">
+      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDichVu.Designer.cs">
+      <DependentUpon>AddDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDonThuoc.Designer.cs">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPhong.Designer.cs">
+      <DependentUpon>AddPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddThuoc.Designer.cs">
+      <DependentUpon>AddThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataThongKe1%27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataThongKe1%27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DichVu.Designer.cs">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSHoaDon.Designer.cs">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonBN.Designer.cs">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\ConnectDB.cs" />
+    <Compile Include="Params\BenhNhan.cs" />
+    <Compile Include="Params\BacSi.cs" />
+    <Compile Include="Params\DichVuParams.cs" />
+    <Compile Include="Params\DuocSiParams.cs" />
+    <Compile Include="Params\NVThuNganParams.cs" />
+    <Compile Include="Params\PhongParams.cs" />
+    <Compile Include="Params\TaiKhoanParams.cs" />
+    <Compile Include="Patient_TTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_TTTK.Designer.cs">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phong.Designer.cs">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaTTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaTTTK.Designer.cs">
+      <DependentUpon>SuaTTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDoctor.Designer.cs">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNVTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNVTN.Designer.cs">
+      <DependentUpon>AddNVTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDuocSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDuocSi.Designer.cs">
+      <DependentUpon>AddDuocSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPatients.Designer.cs">
+      <DependentUpon>AddPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonThuoc.Designer.cs">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhoThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhoThuoc.Designer.cs">
+      <DependentUpon>KhoThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminControl.Designer.cs">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVThuNgan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVThuNgan.Designer.cs">
+      <DependentUpon>NVThuNgan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuocSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuocSi.Designer.cs">
+      <DependentUpon>DuocSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDuLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDuLieu.Designer.cs">
+      <DependentUpon>ThongKeDuLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinPhongChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinPhongChiTiet.Designer.cs">
+      <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBenhNhanDV.resx">
+      <DependentUpon>AddBenhNhanDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDichVu.resx">
+      <DependentUpon>AddDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDonThuoc.resx">
+      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPhong.resx">
+      <DependentUpon>AddPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddThuoc.resx">
+      <DependentUpon>AddThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DichVu.resx">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSHoaDon.resx">
+      <DependentUpon>DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBN.resx">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_TTTK.resx">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phong.resx">
+      <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaTTTK.resx">
+      <DependentUpon>SuaTTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDoctor.resx">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNVTN.resx">
+      <DependentUpon>AddNVTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDuocSi.resx">
+      <DependentUpon>AddDuocSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatients.resx">
+      <DependentUpon>AddPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctors.resx">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonThuoc.resx">
+      <DependentUpon>DonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhoThuoc.resx">
+      <DependentUpon>KhoThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminControl.resx">
+      <DependentUpon>AdminControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVThuNgan.resx">
+      <DependentUpon>NVThuNgan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuocSi.resx">
+      <DependentUpon>DuocSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDuLieu.resx">
+      <DependentUpon>ThongKeDuLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinPhongChiTiet.resx">
+      <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataThongKe1%27.xsc">
+      <DependentUpon>DataThongKe1%27.xsd</DependentUpon>
+    </None>
+    <None Include="DataThongKe1%27.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataThongKe1%27.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataThongKe1%27.xss">
+      <DependentUpon>DataThongKe1%27.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revision %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospitalisation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video202312311116.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundLoginVideo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

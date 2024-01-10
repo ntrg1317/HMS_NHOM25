@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,23 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,9 +51,58 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.1.7\lib\net472\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.1.7\lib\net472\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinPresentation.2.1.7\lib\net472\GMap.NET.WindowsPresentation.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,19 +112,76 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDonThuoc.cs">
+    <Compile Include="Params\BenhNhan_LichSuParams.cs" />
+    <Compile Include="ThemBenhNhanDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemBenhNhanDV.Designer.cs">
+      <DependentUpon>ThemBenhNhanDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemDichVu.Designer.cs">
+      <DependentUpon>ThemDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemDonThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddDonThuoc.Designer.cs">
-      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+      <DependentUpon>ThemDonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddThuoc.cs">
+    <Compile Include="ThemPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddThuoc.Designer.cs">
-      <DependentUpon>AddThuoc.cs</DependentUpon>
+    <Compile Include="ThemPhong.Designer.cs">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemThuoc.Designer.cs">
+      <DependentUpon>ThemThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoThongKe.Designer.cs">
+      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietDonThuoc.Designer.cs">
+      <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhong.Designer.cs">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc.Designer.cs">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DichVu.Designer.cs">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSDonThuoc.Designer.cs">
+      <DependentUpon>DSDonThuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="DSHoaDon.cs">
       <SubType>Form</SubType>
@@ -65,11 +189,79 @@
     <Compile Include="DSHoaDon.Designer.cs">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="DVSuDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVSuDung.Designer.cs">
+      <DependentUpon>DVSuDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="HoaDonBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonBN.Designer.cs">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieuTri.Designer.cs">
+      <DependentUpon>DieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSuDieuTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuDieuTri.Designer.cs">
+      <DependentUpon>LichSuDieuTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\ConnectDB.cs" />
+    <Compile Include="Params\BenhNhan.cs" />
+    <Compile Include="Params\BacSi.cs" />
+    <Compile Include="Params\ChiTietDTParams.cs" />
+    <Compile Include="Params\DichVuParams.cs" />
+    <Compile Include="Params\DSDonThuocParams.cs" />
+    <Compile Include="Params\DuocSiParams.cs" />
+    <Compile Include="Params\HoaDonParams.cs" />
+    <Compile Include="Params\KhoThuocParams.cs" />
+    <Compile Include="Params\NVThuNganParams.cs" />
+    <Compile Include="Params\PhongParams.cs" />
+    <Compile Include="Params\TaiKhoanParams.cs" />
+    <Compile Include="Patient_TTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_TTTK.Designer.cs">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Phong.Designer.cs">
       <DependentUpon>Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLHoaDon.Designer.cs">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLNS.Designer.cs">
+      <DependentUpon>QLNS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLPhong.Designer.cs">
+      <DependentUpon>QLPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </Compile>
     <Compile Include="SuaTTTK.cs">
       <SubType>Form</SubType>
@@ -77,47 +269,47 @@
     <Compile Include="SuaTTTK.Designer.cs">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDoctor.cs">
+    <Compile Include="ThemDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDoctor.Designer.cs">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <Compile Include="ThemDoctor.Designer.cs">
+      <DependentUpon>ThemDoctor.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNVTN.cs">
+    <Compile Include="ThemNVTN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNVTN.Designer.cs">
-      <DependentUpon>AddNVTN.cs</DependentUpon>
+    <Compile Include="ThemNVTN.Designer.cs">
+      <DependentUpon>ThemNVTN.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNVYTe.cs">
+    <Compile Include="ThemDuocSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNVYTe.Designer.cs">
-      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    <Compile Include="ThemDuocSi.Designer.cs">
+      <DependentUpon>ThemDuocSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPatients.cs">
+    <Compile Include="ThemBenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPatients.Designer.cs">
-      <DependentUpon>AddPatients.cs</DependentUpon>
+    <Compile Include="ThemBenhNhan.Designer.cs">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="QuanTriVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="QuanTriVien.Designer.cs">
+      <DependentUpon>QuanTriVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctors.cs">
+    <Compile Include="BacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctors.Designer.cs">
-      <DependentUpon>Doctors.cs</DependentUpon>
+    <Compile Include="BacSi.Designer.cs">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonThuoc.cs">
+    <Compile Include="DonThuocBN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonThuoc.Designer.cs">
-      <DependentUpon>DonThuoc.cs</DependentUpon>
+    <Compile Include="DonThuocBN.Designer.cs">
+      <DependentUpon>DonThuocBN.cs</DependentUpon>
     </Compile>
     <Compile Include="KhoThuoc.cs">
       <SubType>Form</SubType>
@@ -143,61 +335,211 @@
     <Compile Include="NVThuNgan.Designer.cs">
       <DependentUpon>NVThuNgan.cs</DependentUpon>
     </Compile>
-    <Compile Include="NVYTe.cs">
+    <Compile Include="DuocSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NVYTe.Designer.cs">
-      <DependentUpon>NVYTe.cs</DependentUpon>
+    <Compile Include="DuocSi.Designer.cs">
+      <DependentUpon>DuocSi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patients.cs">
+    <Compile Include="BenhNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patients.Designer.cs">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <Compile Include="BenhNhan.Designer.cs">
+      <DependentUpon>BenhNhan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDoanhThu.Designer.cs">
+      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeHoaDon&amp;ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeHoaDon&amp;ThanhToan.Designer.cs">
+      <DependentUpon>ThongKeHoaDon&amp;ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKePhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKePhong.Designer.cs">
+      <DependentUpon>ThongKePhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeBenhLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeBenhLy.Designer.cs">
+      <DependentUpon>ThongKeBenhLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeBenhNhan.Designer.cs">
+      <DependentUpon>ThongKeBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeNhanSu.Designer.cs">
+      <DependentUpon>ThongKeNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeThuoc.Designer.cs">
+      <DependentUpon>ThongKeThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinPhongChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongTinPhongChiTiet.Designer.cs">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddDonThuoc.resx">
-      <DependentUpon>AddDonThuoc.cs</DependentUpon>
+    <Compile Include="TTCNAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNAdmin.Designer.cs">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBacSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBacSi.Designer.cs">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNBenhNhan.Designer.cs">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNDuocSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNDuocSi.Designer.cs">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTCNNhanVienTN.Designer.cs">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDanhSachDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDanhSachDT.Designer.cs">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTDonThuocBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDonThuocBN.Designer.cs">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XepPhongBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XepPhongBN.Designer.cs">
+      <DependentUpon>XepPhongBN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ThemBenhNhanDV.resx">
+      <DependentUpon>ThemBenhNhanDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddThuoc.resx">
-      <DependentUpon>AddThuoc.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDichVu.resx">
+      <DependentUpon>ThemDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDonThuoc.resx">
+      <DependentUpon>ThemDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemPhong.resx">
+      <DependentUpon>ThemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemThuoc.resx">
+      <DependentUpon>ThemThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoThongKe.resx">
+      <DependentUpon>BaoCaoThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietDonThuoc.resx">
+      <DependentUpon>ChiTietDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietPhong.resx">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc.resx">
+      <DependentUpon>DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DichVu.resx">
+      <DependentUpon>DichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSDonThuoc.resx">
+      <DependentUpon>DSDonThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DSHoaDon.resx">
       <DependentUpon>DSHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DVSuDung.resx">
+      <DependentUpon>DVSuDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonBN.resx">
+      <DependentUpon>HoaDonBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DieuTri.resx">
+      <DependentUpon>DieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuDieuTri.resx">
+      <DependentUpon>LichSuDieuTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_TTTK.resx">
+      <DependentUpon>Patient_TTTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Phong.resx">
       <DependentUpon>Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLHoaDon.resx">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNS.resx">
+      <DependentUpon>QLNS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLPhong.resx">
+      <DependentUpon>QLPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaTTTK.resx">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDoctor.resx">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDoctor.resx">
+      <DependentUpon>ThemDoctor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNVTN.resx">
-      <DependentUpon>AddNVTN.cs</DependentUpon>
+    <EmbeddedResource Include="ThemNVTN.resx">
+      <DependentUpon>ThemNVTN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNVYTe.resx">
-      <DependentUpon>AddNVYTe.cs</DependentUpon>
+    <EmbeddedResource Include="ThemDuocSi.resx">
+      <DependentUpon>ThemDuocSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddPatients.resx">
-      <DependentUpon>AddPatients.cs</DependentUpon>
+    <EmbeddedResource Include="ThemBenhNhan.resx">
+      <DependentUpon>ThemBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="QuanTriVien.resx">
+      <DependentUpon>QuanTriVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctors.resx">
-      <DependentUpon>Doctors.cs</DependentUpon>
+    <EmbeddedResource Include="BacSi.resx">
+      <DependentUpon>BacSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonThuoc.resx">
-      <DependentUpon>DonThuoc.cs</DependentUpon>
+    <EmbeddedResource Include="DonThuocBN.resx">
+      <DependentUpon>DonThuocBN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhoThuoc.resx">
       <DependentUpon>KhoThuoc.cs</DependentUpon>
@@ -211,11 +553,11 @@
     <EmbeddedResource Include="NVThuNgan.resx">
       <DependentUpon>NVThuNgan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NVYTe.resx">
-      <DependentUpon>NVYTe.cs</DependentUpon>
+    <EmbeddedResource Include="DuocSi.resx">
+      <DependentUpon>DuocSi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patients.resx">
-      <DependentUpon>Patients.cs</DependentUpon>
+    <EmbeddedResource Include="BenhNhan.resx">
+      <DependentUpon>BenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -227,9 +569,58 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDoanhThu.resx">
+      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeHoaDon&amp;ThanhToan.resx">
+      <DependentUpon>ThongKeHoaDon&amp;ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKePhong.resx">
+      <DependentUpon>ThongKePhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeBenhLy.resx">
+      <DependentUpon>ThongKeBenhLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeBenhNhan.resx">
+      <DependentUpon>ThongKeBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeNhanSu.resx">
+      <DependentUpon>ThongKeNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeThuoc.resx">
+      <DependentUpon>ThongKeThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongTinPhongChiTiet.resx">
       <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TTCNAdmin.resx">
+      <DependentUpon>TTCNAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBacSi.resx">
+      <DependentUpon>TTCNBacSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNBenhNhan.resx">
+      <DependentUpon>TTCNBenhNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNDuocSi.resx">
+      <DependentUpon>TTCNDuocSi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTCNNhanVienTN.resx">
+      <DependentUpon>TTCNNhanVienTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDanhSachDT.resx">
+      <DependentUpon>TTDanhSachDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTDonThuocBN.resx">
+      <DependentUpon>TTDonThuocBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XepPhongBN.resx">
+      <DependentUpon>XepPhongBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -304,5 +695,74 @@
   <ItemGroup>
     <None Include="Resources\cancel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video202312311116.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundLoginVideo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-pharmacy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
 </Project>

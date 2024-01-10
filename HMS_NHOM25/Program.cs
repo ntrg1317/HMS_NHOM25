@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -16,17 +13,7 @@ namespace HMS_NHOM25
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //Application.Run(new login());
-            //Application.Run(new AddThuoc());
-            //Application.Run(new Doctors());
-            //Application.Run(new Admin());
-            //Application.Run(new NVYTe());
-            //Application.Run(new NVThuNgan());
-            //Application.Run(new AddDoctor());
-            //Application.Run(new DonThuoc());
-            //Application.Run(new AddDonThuoc());
-            Application.Run(new AdminControl());
+            Application.Run(new AdminControl("ntlan12"));
         }
     }
 }

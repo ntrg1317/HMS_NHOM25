@@ -1,20 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
     public partial class AdminControl : Form
     {
-        public AdminControl()
+        bool isExit;
+        private Form currentFormChild;
+        private Button lastClickedButton;
+        private bool isCollapsed;
+
+        public AdminControl(string TenDN)
         {
             InitializeComponent();
+            OpenChildForm(new BaoCaoThongKe(), btnThongKe);
+
+            labTenDN.Text = TenDN;
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
@@ -27,15 +30,9 @@ namespace HMS_NHOM25
 
         }
 
-        private Form currentFormChild;
-        private Button lastClickedButton;
-
         private void OpenChildForm(Form childForm, Button clickedButton)
         {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
+            currentFormChild?.Close();
             currentFormChild = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -44,59 +41,125 @@ namespace HMS_NHOM25
             panelBody.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-            // Revert the appearance of the last clicked button
             if (lastClickedButton != null && lastClickedButton != clickedButton)
             {
                 lastClickedButton.BackColor = SystemColors.Highlight;
                 lastClickedButton.ForeColor = Color.White;
             }
 
-            // Highlight the selected button
             clickedButton.BackColor = SystemColors.Control;
             clickedButton.ForeColor = SystemColors.Highlight;
 
-            // Update the last clicked button
             lastClickedButton = clickedButton;
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new BaoCaoThongKe(), btnThongKe);
         }
 
         private void btnBN_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Patients(), btnBN);
-        }
+            OpenChildForm(new DanhMuc(), btnDanhMuc);
 
-        private void btnBS_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Doctors(), btnBS);
-        }
-
-        private void btnTN_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new NVThuNgan(), btnTN);
-        }
-
-        private void btnYT_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new NVYTe(), btnYT);
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Phong(), btnPhong);
+            OpenChildForm(new Phong(), btnQly);
         }
 
-        private void btnDT_Click(object sender, EventArgs e)
+
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new DonThuoc(), btnDT);
+            timer1.Start();
         }
 
-        private void btnHD_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            OpenChildForm(new DSHoaDon(), btnHD);
+            if (isCollapsed)
+            {
+                panelUser.Height += 10;
+                if (panelUser.Size == panelUser.MaximumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = false;
+                }
+
+            }
+            else
+            {
+                panelUser.Height -= 10;
+                if (panelUser.Size == panelUser.MinimumSize)
+                {
+                    timer1.Stop();
+                    isCollapsed = true;
+                }
+            }
+        }
+
+        private void AdminControl_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (isExit)
+            {
+                Application.Exit();
+            }
+            isExit = false;
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picLogout_Click(object sender, EventArgs e)
+        {
+            isExit = false;
+            this.Close();
+            login login = new login();
+            login.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            isExit = false;
+            this.Close();
+            login login = new login();
+            login.Show();
+        }
+
+        private void picChangPw_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SuaTTTK(), btnChangePw);
+            isCollapsed = false;
+            timer1_Tick(sender, e);
+        }
+
+        private void btnChangePw_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new SuaTTTK(), btnChangePw);
+            isCollapsed = false;
+            timer1_Tick(sender, e);
+        }
+
+        private void btnKhoThuoc_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new KhoThuoc(), btnHeThong);
+        }
+
+        private void btnQly_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QuanLy(), btnQly);
+        }
+
+        private void panelBody_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHeThong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TTCNAdmin(), btnHeThong);
         }
     }
 }
