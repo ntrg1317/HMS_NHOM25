@@ -385,7 +385,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddNVTN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddNVTN";
+            this.Text = "ThemNVTN";
             this.palAddNVTN.ResumeLayout(false);
             this.palAddNVTN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbNVTN)).EndInit();

@@ -231,7 +231,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AddBenhNhanDV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddBenhNhanDV";
+            this.Text = "ThemBenhNhanDV";
             this.Load += new System.EventHandler(this.AddBenhNhanDV_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();

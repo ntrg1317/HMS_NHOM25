@@ -272,7 +272,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddThuoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddNVYTe";
+            this.Text = "ThemThuoc";
             this.Load += new System.EventHandler(this.AddThuoc_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
