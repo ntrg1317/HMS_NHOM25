@@ -63,7 +63,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(916, 499);
+            this.panel3.Size = new System.Drawing.Size(916, 563);
             this.panel3.TabIndex = 5;
             // 
             // chartSuDungThuoc
@@ -92,7 +92,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Thuốc";
             this.chartSuDungThuoc.Series.Add(series1);
-            this.chartSuDungThuoc.Size = new System.Drawing.Size(581, 420);
+            this.chartSuDungThuoc.Size = new System.Drawing.Size(581, 494);
             this.chartSuDungThuoc.TabIndex = 8;
             this.chartSuDungThuoc.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -108,7 +108,7 @@
             this.dgvSuDungThuoc.ReadOnly = true;
             this.dgvSuDungThuoc.RowHeadersWidth = 51;
             this.dgvSuDungThuoc.RowTemplate.Height = 24;
-            this.dgvSuDungThuoc.Size = new System.Drawing.Size(272, 420);
+            this.dgvSuDungThuoc.Size = new System.Drawing.Size(272, 494);
             this.dgvSuDungThuoc.TabIndex = 7;
             // 
             // label4
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 953);
+            this.ClientSize = new System.Drawing.Size(932, 669);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

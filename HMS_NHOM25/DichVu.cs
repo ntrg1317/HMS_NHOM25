@@ -10,6 +10,7 @@ namespace HMS_NHOM25
     {
         BaseModel dv = new BaseModel();
         DichVuParams dvp;
+
         private string table = "dichVu";
         public DichVu()
         {
@@ -26,6 +27,9 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+            dgvInforDichVu.Columns["MaDV"].HeaderText = "Mã dịch vụ";
+            dgvInforDichVu.Columns["TenDV"].HeaderText = "Tên dịch vụ";
+            dgvInforDichVu.Columns["TienDV"].HeaderText = "Giá";
         }
 
         private void txtTKTenDV_TextChanged(object sender, EventArgs e)
@@ -257,6 +261,11 @@ namespace HMS_NHOM25
             {
                 e.Handled = true;
             }
+        }
+
+        private void dgvInforDichVu_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

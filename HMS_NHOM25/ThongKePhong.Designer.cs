@@ -55,7 +55,7 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.LightBlue;
             this.panel3.Controls.Add(this.chartLuotSDPhong);
@@ -63,7 +63,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(951, 813);
+            this.panel3.Size = new System.Drawing.Size(951, 614);
             this.panel3.TabIndex = 4;
             // 
             // chartLuotSDPhong
@@ -77,7 +77,7 @@
             this.chartLuotSDPhong.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartLuotSDPhong.Legends.Add(legend1);
-            this.chartLuotSDPhong.Location = new System.Drawing.Point(20, 268);
+            this.chartLuotSDPhong.Location = new System.Drawing.Point(357, 54);
             this.chartLuotSDPhong.Name = "chartLuotSDPhong";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -92,7 +92,7 @@
             series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Diamond;
             series1.Name = "Series1";
             this.chartLuotSDPhong.Series.Add(series1);
-            this.chartLuotSDPhong.Size = new System.Drawing.Size(913, 443);
+            this.chartLuotSDPhong.Size = new System.Drawing.Size(559, 541);
             this.chartLuotSDPhong.TabIndex = 8;
             this.chartLuotSDPhong.Text = "Số lượng bệnh nhân theo năm";
             // 
@@ -108,7 +108,7 @@
             this.dgvLuotSDPhong.ReadOnly = true;
             this.dgvLuotSDPhong.RowHeadersWidth = 51;
             this.dgvLuotSDPhong.RowTemplate.Height = 24;
-            this.dgvLuotSDPhong.Size = new System.Drawing.Size(903, 194);
+            this.dgvLuotSDPhong.Size = new System.Drawing.Size(322, 541);
             this.dgvLuotSDPhong.TabIndex = 7;
             // 
             // label4
@@ -117,16 +117,16 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(317, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(322, 17);
+            this.label4.Size = new System.Drawing.Size(331, 17);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Thống kê lượt sử dụng phòng tháng 1/2024";
+            this.label4.Text = "Thống kê lượt sử dụng phòng tháng 12/2023";
             // 
             // ThongKePhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(975, 882);
+            this.ClientSize = new System.Drawing.Size(975, 726);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
