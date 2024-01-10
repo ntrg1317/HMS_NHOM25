@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDoctor : Form
+    public partial class ThemDoctor : Form
     {
-        BacSi qlBacSi;
+        Params.BacSi qlBacSi;
         BaseModel Doctor = new BaseModel();
-        public AddDoctor()
+        public ThemDoctor()
         {
             InitializeComponent();
         }
@@ -82,7 +82,7 @@ namespace HMS_NHOM25
             string _bangCap = txtBangCapBSM.Text;
             string _tenDNBS = txtTenDNBSM.Text;
             string _matKhauBS = txtMatKhauBSM.Text;
-            qlBacSi = new BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS);
+            qlBacSi = new Params.BacSi(_tenBS, _ngaySinh, _gioiTinh, _sdt, _diaChi, _chuyenMon, _bangCap, _tenDNBS, _matKhauBS);
 
         }
 

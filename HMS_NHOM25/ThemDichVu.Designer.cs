@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddDichVu
+    partial class ThemDichVu
     {
         /// <summary>
         /// Required designer variable.

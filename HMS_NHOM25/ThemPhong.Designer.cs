@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddPhong
+    partial class ThemPhong
     {
         /// <summary>
         /// Required designer variable.

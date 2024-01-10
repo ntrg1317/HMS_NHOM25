@@ -22,7 +22,7 @@ namespace HMS_NHOM25
 
         private void btnDSBS_Click(object sender, EventArgs e)
         {
-            function.OpenChildForm(new Doctors(), btnDSBS, panelHienThi);
+            function.OpenChildForm(new BacSi(), btnDSBS, panelHienThi);
         }
 
         private void btnDSDuocSi_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace HMS_NHOM25
 
         private void btnQTV_Click(object sender, EventArgs e)
         {
-            function.OpenChildForm(new Admin(), btnQTV, panelHienThi);
+            function.OpenChildForm(new QuanTriVien(), btnQTV, panelHienThi);
         }
     }
 }

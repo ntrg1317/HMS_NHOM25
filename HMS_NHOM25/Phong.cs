@@ -65,7 +65,7 @@ namespace HMS_NHOM25
 
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
-            AddPhong addPhong = new AddPhong();
+            ThemPhong addPhong = new ThemPhong();
             addPhong.Show();
         }
 

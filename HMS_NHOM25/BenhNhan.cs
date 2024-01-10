@@ -6,13 +6,13 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class Patients : Form
+    public partial class BenhNhan : Form
     {
         readonly BaseModel benhNhan = new BaseModel();
-        BenhNhan bn;
+        Params.BenhNhan bn;
 
         private readonly string table = "benhNhan";
-        public Patients()
+        public BenhNhan()
         {
             InitializeComponent();
         }
@@ -86,7 +86,7 @@ namespace HMS_NHOM25
 
         private void btnThemBN_Click(object sender, EventArgs e)
         {
-            AddPatients addBn = new AddPatients();
+            ThemBenhNhan addBn = new ThemBenhNhan();
             addBn.Show();
         }
 
@@ -145,7 +145,7 @@ namespace HMS_NHOM25
             string _sdtNguoiThan = txtSDTNguoiThan.Text;
             string _trangThai = cobTrangThaiBN.Text;
 
-            bn = new BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, _trangThai, null, null);
+            bn = new Params.BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, _trangThai, null, null);
         }
 
         private void btnSuaBN_Click(object sender, EventArgs e)

@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDuocSi : Form
+    public partial class ThemDuocSi : Form
     {
         DuocSiParams duocSi;
         BaseModel ds = new BaseModel();
-        public AddDuocSi()
+        public ThemDuocSi()
         {
             InitializeComponent();
         }

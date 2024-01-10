@@ -7,11 +7,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddPatients : Form
+    public partial class ThemBenhNhan : Form
     {
-        BenhNhan bn = new BenhNhan();
+        Params.BenhNhan bn = new Params.BenhNhan();
         BaseModel bn_tk = new BaseModel();
-        public AddPatients()
+        public ThemBenhNhan()
         {
             InitializeComponent();
         }
@@ -86,7 +86,7 @@ namespace HMS_NHOM25
             string _tenDN = txtTenDNBNM.Text;
             string _matKhau = txtMatKhauBNM.Text;
 
-            bn = new BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
+            bn = new Params.BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
         }
 
         private void btnSaveInfoBNM_Click(object sender, EventArgs e)

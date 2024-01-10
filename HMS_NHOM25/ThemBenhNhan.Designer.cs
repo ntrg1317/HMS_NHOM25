@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class AddPatients
+    partial class ThemBenhNhan
     {
         /// <summary>
         /// Required designer variable.

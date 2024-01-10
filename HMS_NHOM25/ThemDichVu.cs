@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class AddDichVu : Form
+    public partial class ThemDichVu : Form
     {
         BaseModel basemodel = new BaseModel();
         DichVuParams dvp;
-        public AddDichVu()
+        public ThemDichVu()
         {
             InitializeComponent();
         }

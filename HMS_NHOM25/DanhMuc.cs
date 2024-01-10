@@ -20,7 +20,7 @@ namespace HMS_NHOM25
 
         private void btnBN_Click(object sender, EventArgs e)
         {
-            function.OpenChildForm(new Patients(), btnBN, panelHienThi);
+            function.OpenChildForm(new BenhNhan(), btnBN, panelHienThi);
         }
 
         private void btnDSPhong_Click(object sender, EventArgs e)
