@@ -305,7 +305,7 @@
             this.labHeaderLSDT.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labHeaderLSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labHeaderLSDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labHeaderLSDT.Location = new System.Drawing.Point(413, 9);
+            this.labHeaderLSDT.Location = new System.Drawing.Point(387, 9);
             this.labHeaderLSDT.Name = "labHeaderLSDT";
             this.labHeaderLSDT.Size = new System.Drawing.Size(183, 29);
             this.labHeaderLSDT.TabIndex = 44;

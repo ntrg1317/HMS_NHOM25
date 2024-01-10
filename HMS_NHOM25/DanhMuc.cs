@@ -35,7 +35,7 @@ namespace HMS_NHOM25
 
         private void btnDSHD_Click(object sender, EventArgs e)
         {
-            function.OpenChildForm(new HoaDon(), btnDSHD, panelHienThi);
+            function.OpenChildForm(new DSHoaDon(), btnDSHD, panelHienThi);
         }
 
         private void btnDSThuoc_Click(object sender, EventArgs e)

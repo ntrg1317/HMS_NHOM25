@@ -71,9 +71,9 @@ namespace HMS_NHOM25
 
         private void dgvInfoLSDT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtNgayVao.Text = dgvInfoLSDT.SelectedRows[0].Cells[3].Value.ToString();
-            txtBenhTrang.Text = dgvInfoLSDT.SelectedRows[0].Cells[4].Value.ToString();
-            int MaPhong = int.Parse(dgvInfoLSDT.SelectedRows[0].Cells[2].Value.ToString());
+            txtNgayVao.Text = dgvInfoLSDT.SelectedRows[0].Cells[0].Value.ToString();
+            txtBenhTrang.Text = dgvInfoLSDT.SelectedRows[0].Cells[2].Value.ToString();
+            int MaPhong = int.Parse(dgvInfoLSDT.SelectedRows[0].Cells[1].Value.ToString());
             switch (MaPhong)
             {
                 case 1:

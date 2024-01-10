@@ -31,9 +31,9 @@
             this.grbInfoDieuTri = new System.Windows.Forms.GroupBox();
             this.labLieuDung = new System.Windows.Forms.Label();
             this.labSoLuongThuoc = new System.Windows.Forms.Label();
-            this.txtBenhTrang = new System.Windows.Forms.TextBox();
-            this.txtNgayVao = new System.Windows.Forms.TextBox();
-            this.txtPhong = new System.Windows.Forms.TextBox();
+            this.txtNgayDung = new System.Windows.Forms.TextBox();
+            this.txtMaDV = new System.Windows.Forms.TextBox();
+            this.txtTenDV = new System.Windows.Forms.TextBox();
             this.labTenThuoc = new System.Windows.Forms.Label();
             this.dgvInfoDVSD = new System.Windows.Forms.DataGridView();
             this.labDSThuoc = new System.Windows.Forms.Label();
@@ -50,8 +50,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTimBN = new System.Windows.Forms.DataGridView();
             this.btnThemDV = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTienDV = new System.Windows.Forms.TextBox();
             this.labTienDV = new System.Windows.Forms.Label();
+            this.txtTrangThai = new System.Windows.Forms.TextBox();
+            this.labTrangThai = new System.Windows.Forms.Label();
             this.grbInfoDieuTri.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoDVSD)).BeginInit();
             this.grbInfoBN.SuspendLayout();
@@ -62,11 +64,11 @@
             // 
             this.grbInfoDieuTri.Controls.Add(this.labTienDV);
             this.grbInfoDieuTri.Controls.Add(this.labLieuDung);
-            this.grbInfoDieuTri.Controls.Add(this.textBox1);
+            this.grbInfoDieuTri.Controls.Add(this.txtTienDV);
             this.grbInfoDieuTri.Controls.Add(this.labSoLuongThuoc);
-            this.grbInfoDieuTri.Controls.Add(this.txtBenhTrang);
-            this.grbInfoDieuTri.Controls.Add(this.txtNgayVao);
-            this.grbInfoDieuTri.Controls.Add(this.txtPhong);
+            this.grbInfoDieuTri.Controls.Add(this.txtNgayDung);
+            this.grbInfoDieuTri.Controls.Add(this.txtMaDV);
+            this.grbInfoDieuTri.Controls.Add(this.txtTenDV);
             this.grbInfoDieuTri.Controls.Add(this.labTenThuoc);
             this.grbInfoDieuTri.ForeColor = System.Drawing.Color.Red;
             this.grbInfoDieuTri.Location = new System.Drawing.Point(19, 297);
@@ -98,32 +100,32 @@
             this.labSoLuongThuoc.TabIndex = 29;
             this.labSoLuongThuoc.Text = "Tên Dịch Vụ";
             // 
-            // txtBenhTrang
+            // txtNgayDung
             // 
-            this.txtBenhTrang.Location = new System.Drawing.Point(631, 26);
-            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtBenhTrang.Name = "txtBenhTrang";
-            this.txtBenhTrang.ReadOnly = true;
-            this.txtBenhTrang.Size = new System.Drawing.Size(156, 22);
-            this.txtBenhTrang.TabIndex = 30;
+            this.txtNgayDung.Location = new System.Drawing.Point(631, 26);
+            this.txtNgayDung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNgayDung.Name = "txtNgayDung";
+            this.txtNgayDung.ReadOnly = true;
+            this.txtNgayDung.Size = new System.Drawing.Size(156, 22);
+            this.txtNgayDung.TabIndex = 30;
             // 
-            // txtNgayVao
+            // txtMaDV
             // 
-            this.txtNgayVao.Location = new System.Drawing.Point(230, 26);
-            this.txtNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNgayVao.Name = "txtNgayVao";
-            this.txtNgayVao.ReadOnly = true;
-            this.txtNgayVao.Size = new System.Drawing.Size(156, 22);
-            this.txtNgayVao.TabIndex = 30;
+            this.txtMaDV.Location = new System.Drawing.Point(230, 26);
+            this.txtMaDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaDV.Name = "txtMaDV";
+            this.txtMaDV.ReadOnly = true;
+            this.txtMaDV.Size = new System.Drawing.Size(156, 22);
+            this.txtMaDV.TabIndex = 30;
             // 
-            // txtPhong
+            // txtTenDV
             // 
-            this.txtPhong.Location = new System.Drawing.Point(230, 58);
-            this.txtPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPhong.Name = "txtPhong";
-            this.txtPhong.ReadOnly = true;
-            this.txtPhong.Size = new System.Drawing.Size(156, 22);
-            this.txtPhong.TabIndex = 30;
+            this.txtTenDV.Location = new System.Drawing.Point(230, 58);
+            this.txtTenDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenDV.Name = "txtTenDV";
+            this.txtTenDV.ReadOnly = true;
+            this.txtTenDV.Size = new System.Drawing.Size(156, 22);
+            this.txtTenDV.TabIndex = 30;
             // 
             // labTenThuoc
             // 
@@ -164,11 +166,13 @@
             // 
             // grbInfoBN
             // 
+            this.grbInfoBN.Controls.Add(this.labTrangThai);
             this.grbInfoBN.Controls.Add(this.label6);
             this.grbInfoBN.Controls.Add(this.label3);
             this.grbInfoBN.Controls.Add(this.label2);
             this.grbInfoBN.Controls.Add(this.labTenBN);
             this.grbInfoBN.Controls.Add(this.txtSDTBN);
+            this.grbInfoBN.Controls.Add(this.txtTrangThai);
             this.grbInfoBN.Controls.Add(this.txtDiaChi);
             this.grbInfoBN.Controls.Add(this.txtGT);
             this.grbInfoBN.Controls.Add(this.txtTenBN);
@@ -313,14 +317,14 @@
             this.btnThemDV.UseVisualStyleBackColor = true;
             this.btnThemDV.Click += new System.EventHandler(this.btnThemDV_Click);
             // 
-            // textBox1
+            // txtTienDV
             // 
-            this.textBox1.Location = new System.Drawing.Point(631, 55);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(156, 22);
-            this.textBox1.TabIndex = 30;
+            this.txtTienDV.Location = new System.Drawing.Point(631, 55);
+            this.txtTienDV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTienDV.Name = "txtTienDV";
+            this.txtTienDV.ReadOnly = true;
+            this.txtTienDV.Size = new System.Drawing.Size(156, 22);
+            this.txtTienDV.TabIndex = 30;
             // 
             // labTienDV
             // 
@@ -331,6 +335,25 @@
             this.labTienDV.Size = new System.Drawing.Size(83, 16);
             this.labTienDV.TabIndex = 31;
             this.labTienDV.Text = "Tiền Dịch Vụ";
+            // 
+            // txtTrangThai
+            // 
+            this.txtTrangThai.Location = new System.Drawing.Point(742, 86);
+            this.txtTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTrangThai.Name = "txtTrangThai";
+            this.txtTrangThai.ReadOnly = true;
+            this.txtTrangThai.Size = new System.Drawing.Size(156, 22);
+            this.txtTrangThai.TabIndex = 30;
+            // 
+            // labTrangThai
+            // 
+            this.labTrangThai.AutoSize = true;
+            this.labTrangThai.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labTrangThai.Location = new System.Drawing.Point(663, 90);
+            this.labTrangThai.Name = "labTrangThai";
+            this.labTrangThai.Size = new System.Drawing.Size(73, 16);
+            this.labTrangThai.TabIndex = 29;
+            this.labTrangThai.Text = "Trạng Thái";
             // 
             // DVSuDung
             // 
@@ -366,7 +389,7 @@
         private System.Windows.Forms.GroupBox grbInfoDieuTri;
         private System.Windows.Forms.Label labLieuDung;
         private System.Windows.Forms.Label labSoLuongThuoc;
-        private System.Windows.Forms.TextBox txtPhong;
+        private System.Windows.Forms.TextBox txtTenDV;
         private System.Windows.Forms.Label labTenThuoc;
         private System.Windows.Forms.DataGridView dgvInfoDVSD;
         private System.Windows.Forms.Label labDSThuoc;
@@ -382,10 +405,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtGT;
-        private System.Windows.Forms.TextBox txtBenhTrang;
-        private System.Windows.Forms.TextBox txtNgayVao;
+        private System.Windows.Forms.TextBox txtNgayDung;
+        private System.Windows.Forms.TextBox txtMaDV;
         private System.Windows.Forms.Button btnThemDV;
         private System.Windows.Forms.Label labTienDV;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTienDV;
+        private System.Windows.Forms.Label labTrangThai;
+        private System.Windows.Forms.TextBox txtTrangThai;
     }
 }

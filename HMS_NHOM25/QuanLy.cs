@@ -27,5 +27,10 @@ namespace HMS_NHOM25
         {
 
         }
+
+        private void btnQLPhong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
