@@ -11,7 +11,7 @@ namespace HMS_NHOM25.Model
         //private static string connectionString = @"Data Source=DESKTOP-QLAEGME\SQLEXPRESS;Initial Catalog=DBO1;Integrated Security=True";
 
         //private static string connectionString = @"Data Source = VANGNGUYEN\SQLEXPRESS;Initial Catalog = HMS; Integrated Security = True";
-        private static string connectionString = @"Data Source=DESKTOP-QLAEGME\SQLEXPRESS;Initial Catalog=DBO1;Integrated Security=True";
+        private static string connectionString = @"Data Source=DESKTOP-QLAEGME\SQLEXPRESS;Initial Catalog=DB1;Integrated Security=True";
         public static SqlConnection getSqlConnection()
         {
             return new SqlConnection(connectionString);
