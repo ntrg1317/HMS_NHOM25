@@ -11,7 +11,6 @@ namespace HMS_NHOM25
         BaseModel basemodel = new BaseModel();
         HoaDonParams hdp;
 
-        private string table = "hoaDon";
         public DSHoaDon()
         {
             InitializeComponent();
@@ -21,10 +20,14 @@ namespace HMS_NHOM25
         {
             try
             {
-                dgvInfoDSHoaDon.DataSource = basemodel.all(table);
+                string query = "SELECT hoaDon.MaHD, hoaDon.MaBN, benhNhan.SDT,hoaDon.NgayTT, hoaDon.TongTien " +
+                       "FROM hoaDon " +
+                       "INNER JOIN benhNhan ON hoaDon.MaBN = benhNhan.MaBN";
+                dgvInfoDSHoaDon.DataSource = basemodel.Table(query);
 
                 dgvInfoDSHoaDon.Columns["MaHD"].HeaderText = "Mã hóa đơn";
-                dgvInfoDSHoaDon.Columns["MaBN"].HeaderText = "Mã đơn thuốc";
+                dgvInfoDSHoaDon.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+                dgvInfoDSHoaDon.Columns["SDT"].HeaderText = "SĐT";
                 dgvInfoDSHoaDon.Columns["NgayTT"].HeaderText = "Ngày thanh toán";
                 dgvInfoDSHoaDon.Columns["TongTien"].HeaderText = "Tổng tiền";
             }
@@ -36,28 +39,36 @@ namespace HMS_NHOM25
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
         {
-            string timKiem = txtTimKiemSDTBN.Text.Trim();
-            if (timKiem == "")
+            try
             {
-                DSHoaDon_Load(sender, e);
-            }
-            else
-            {
-                string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
-                DataTable resultTable = basemodel.Table(query1);
-                try
+                string timKiem = txtTimKiemSDTBN.Text.Trim();
+
+                if (timKiem == "")
                 {
+                    DSHoaDon_Load(sender, e);
+                }
+                else
+                {
+                    string query = "SELECT hoaDon.MaHD, hoaDon.MaBN, benhNhan.SDT, hoaDon.NgayTT, hoaDon.TongTien " +
+                                   "FROM hoaDon " +
+                                   "INNER JOIN benhNhan ON hoaDon.MaBN = benhNhan.MaBN " +
+                                   "WHERE benhNhan.SDT LIKE '%" + timKiem + "%'";
+
+                    DataTable resultTable = basemodel.Table(query);
+
                     if (resultTable.Rows.Count > 0)
                     {
-                        string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
-                        string query2 = "SELECT * FROM hoaDon WHERE MaBN LIKE '%" + maBenhNhan + "%'";
-                        dgvInfoDSHoaDon.DataSource = basemodel.Table(query2);
+                        dgvInfoDSHoaDon.DataSource = resultTable;
+                    }
+                    else
+                    {
+                        dgvInfoDSHoaDon.DataSource = null;
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -91,8 +102,8 @@ namespace HMS_NHOM25
             {
                 txtMaHD.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[0].Value.ToString();
                 txtMaBN.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[1].Value.ToString();
-                dateNgayTT.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[2].Value.ToString();
-                txtTongTien.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[3].Value.ToString();
+                dateNgayTT.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[3].Value.ToString();
+                txtTongTien.Text = dgvInfoDSHoaDon.SelectedRows[0].Cells[4].Value.ToString();
             }
             catch (Exception ex)
             {

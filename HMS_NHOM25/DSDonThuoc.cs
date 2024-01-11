@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -17,7 +18,6 @@ namespace HMS_NHOM25
         BaseModel basemodel = new BaseModel();
         DSDonThuocParams dsDT;
 
-        private string table = "donThuoc";
         public DSDonThuoc()
         {
             InitializeComponent();
@@ -130,10 +130,15 @@ namespace HMS_NHOM25
         {
             try
             {
-                dgvDSDonThuoc.DataSource = basemodel.all(table);
+                string query = "SELECT donThuoc.MaDT, donThuoc.MaBN, benhNhan.SDT, donThuoc.NgayKeDon " +
+                       "FROM donThuoc " +
+                       "INNER JOIN benhNhan ON donThuoc.MaBN = benhNhan.MaBN ";
+
+                dgvDSDonThuoc.DataSource = basemodel.Table(query);
 
                 dgvDSDonThuoc.Columns["MaDT"].HeaderText = "Mã đơn thuốc";
                 dgvDSDonThuoc.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
+                dgvDSDonThuoc.Columns["SDT"].HeaderText = "SĐT";
                 dgvDSDonThuoc.Columns["NgayKeDon"].HeaderText = "Ngày kê đơn";
             }
             catch (Exception ex)
@@ -144,34 +149,36 @@ namespace HMS_NHOM25
 
         private void txtTimKiemSDTBN_TextChanged(object sender, EventArgs e)
         {
-            string timKiem = txtTimKiemSDTBN.Text.Trim();
-            if (timKiem == "")
+            try
             {
-                DSDonThuoc_Load(sender, e);
-            }
-            else
-            {
-                try
+                string timKiem = txtTimKiemSDTBN.Text.Trim();
+
+                if (timKiem == "")
                 {
-                    string query1 = "SELECT MaBN FROM benhNhan WHERE SDT LIKE '%" + timKiem + "%'";
-                    DataTable resultTable = basemodel.Table(query1);
+                    DSDonThuoc_Load(sender, e);
+                }
+                else
+                {
+                    string query = "SELECT donThuoc.MaDT, donThuoc.MaBN, benhNhan.SDT, donThuoc.NgayKeDon " +
+                       "FROM donThuoc " +
+                       "INNER JOIN benhNhan ON donThuoc.MaBN = benhNhan.MaBN " +
+                                   "WHERE benhNhan.SDT LIKE '%" + timKiem + "%'";
+
+                    DataTable resultTable = basemodel.Table(query);
 
                     if (resultTable.Rows.Count > 0)
                     {
-                        string maBenhNhan = resultTable.Rows[0]["MaBN"].ToString();
-                        string query2 = "SELECT * FROM donThuoc WHERE MaBN LIKE '%" + maBenhNhan + "%'";
-                        dgvDSDonThuoc.DataSource = basemodel.Table(query2);
+                        dgvDSDonThuoc.DataSource = resultTable;
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy số điện thoại nào khớp.");
+                        dgvDSDonThuoc.DataSource = null;
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: ", ex.Message);
-                }
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
