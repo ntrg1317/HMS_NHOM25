@@ -201,20 +201,6 @@ namespace HMS_NHOM25
             login.Show();
         }
 
-        private void picChangPw_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new SuaTTTK(), btnChangePw);
-            isCollapsed = false;
-            timer1_Tick(sender, e);
-        }
-
-        private void btnChangePw_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new SuaTTTK(), btnChangePw);
-            isCollapsed = false;
-            timer1_Tick(sender, e);
-        }
-
         private void btnKhoThuoc_Click(object sender, EventArgs e)
         {
             OpenChildForm(new KhoThuoc(), btnHeThong);

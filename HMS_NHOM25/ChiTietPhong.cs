@@ -31,7 +31,8 @@ namespace HMS_NHOM25
                                     "ON bn.MaBN = bn_ls.MaBN " +
                                     "JOIN phong AS p " +
                                     "ON bn_ls.MaPhong = p.MaPhong " +
-                                    "WHERE p.MaPhong = '" + MaPhong + "'";
+                                    "WHERE p.MaPhong = '" + MaPhong + "' " +
+                                    "AND bn.TrangThai = 1";
                 dgvCTPhong.DataSource = ctphong.Table(showTatCaBN);
 
                 dgvCTPhong.Columns["MaBN"].HeaderText = "Mã bệnh nhân";

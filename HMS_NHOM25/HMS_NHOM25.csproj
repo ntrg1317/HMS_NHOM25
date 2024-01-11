@@ -397,12 +397,6 @@
     <Compile Include="ThongKeThuoc.Designer.cs">
       <DependentUpon>ThongKeThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongTinPhongChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongTinPhongChiTiet.Designer.cs">
-      <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
-    </Compile>
     <Compile Include="TTCNAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -592,9 +586,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongKeThuoc.resx">
       <DependentUpon>ThongKeThuoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongTinPhongChiTiet.resx">
-      <DependentUpon>ThongTinPhongChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TTCNAdmin.resx">
       <DependentUpon>TTCNAdmin.cs</DependentUpon>

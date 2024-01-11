@@ -55,17 +55,11 @@
             this.picLogout = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.panelUser = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.picChangPw = new System.Windows.Forms.PictureBox();
-            this.btnChangePw = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.labTenDN = new System.Windows.Forms.Label();
             this.txtVaiTro = new System.Windows.Forms.Label();
             this.picAva = new System.Windows.Forms.PictureBox();
             this.txtTen = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.picTTTK = new System.Windows.Forms.PictureBox();
-            this.btnTTTK = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -83,12 +77,8 @@
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogout)).BeginInit();
             this.panelUser.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picChangPw)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAva)).BeginInit();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picTTTK)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -378,51 +368,13 @@
             // 
             this.panelUser.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panelUser.Controls.Add(this.panel16);
-            this.panelUser.Controls.Add(this.panel15);
             this.panelUser.Controls.Add(this.panel12);
-            this.panelUser.Controls.Add(this.panel14);
             this.panelUser.Location = new System.Drawing.Point(866, 70);
             this.panelUser.MaximumSize = new System.Drawing.Size(313, 192);
             this.panelUser.MinimumSize = new System.Drawing.Size(313, 0);
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(313, 0);
             this.panelUser.TabIndex = 3;
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.picChangPw);
-            this.panel15.Controls.Add(this.btnChangePw);
-            this.panel15.Location = new System.Drawing.Point(122, 136);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(99, 53);
-            this.panel15.TabIndex = 5;
-            // 
-            // picChangPw
-            // 
-            this.picChangPw.BackColor = System.Drawing.Color.Transparent;
-            this.picChangPw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picChangPw.BackgroundImage")));
-            this.picChangPw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picChangPw.Location = new System.Drawing.Point(4, 15);
-            this.picChangPw.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.picChangPw.Name = "picChangPw";
-            this.picChangPw.Size = new System.Drawing.Size(25, 25);
-            this.picChangPw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picChangPw.TabIndex = 0;
-            this.picChangPw.TabStop = false;
-            this.picChangPw.Click += new System.EventHandler(this.picChangPw_Click);
-            // 
-            // btnChangePw
-            // 
-            this.btnChangePw.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnChangePw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangePw.Location = new System.Drawing.Point(-11, -7);
-            this.btnChangePw.Name = "btnChangePw";
-            this.btnChangePw.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnChangePw.Size = new System.Drawing.Size(120, 68);
-            this.btnChangePw.TabIndex = 4;
-            this.btnChangePw.Text = "Mật khẩu";
-            this.btnChangePw.UseVisualStyleBackColor = false;
-            this.btnChangePw.Click += new System.EventHandler(this.btnChangePw_Click);
             // 
             // panel12
             // 
@@ -474,39 +426,6 @@
             this.txtTen.TabIndex = 1;
             this.txtTen.Text = "Nguyễn Thị Trang";
             // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.picTTTK);
-            this.panel14.Controls.Add(this.btnTTTK);
-            this.panel14.Location = new System.Drawing.Point(3, 136);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(117, 53);
-            this.panel14.TabIndex = 5;
-            // 
-            // picTTTK
-            // 
-            this.picTTTK.Image = ((System.Drawing.Image)(resources.GetObject("picTTTK.Image")));
-            this.picTTTK.Location = new System.Drawing.Point(9, 15);
-            this.picTTTK.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.picTTTK.Name = "picTTTK";
-            this.picTTTK.Size = new System.Drawing.Size(25, 25);
-            this.picTTTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picTTTK.TabIndex = 0;
-            this.picTTTK.TabStop = false;
-            this.picTTTK.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
-            // btnTTTK
-            // 
-            this.btnTTTK.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnTTTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTTTK.Location = new System.Drawing.Point(-11, -7);
-            this.btnTTTK.Name = "btnTTTK";
-            this.btnTTTK.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnTTTK.Size = new System.Drawing.Size(134, 68);
-            this.btnTTTK.TabIndex = 4;
-            this.btnTTTK.Text = "Thông tin\r\ntài khoản";
-            this.btnTTTK.UseVisualStyleBackColor = false;
-            // 
             // timer1
             // 
             this.timer1.Interval = 15;
@@ -545,13 +464,9 @@
             this.panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogout)).EndInit();
             this.panelUser.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picChangPw)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAva)).EndInit();
-            this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picTTTK)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -579,15 +494,9 @@
         private System.Windows.Forms.PictureBox picAva;
         private System.Windows.Forms.Label txtTen;
         private System.Windows.Forms.PictureBox picLogout;
-        private System.Windows.Forms.PictureBox picChangPw;
-        private System.Windows.Forms.PictureBox picTTTK;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button btnTTTK;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Button btnChangePw;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnHeThong;
         private System.Windows.Forms.Panel panelKThuoc;

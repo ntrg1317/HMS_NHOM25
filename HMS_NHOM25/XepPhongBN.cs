@@ -15,6 +15,10 @@ namespace HMS_NHOM25
     public partial class XepPhongBN : Form
     {
         BaseModel benhNhan = new BaseModel();
+        public XepPhongBN() 
+        { 
+            InitializeComponent();
+        }
         public XepPhongBN(string MaPhong, string TenPhong)
         {
             InitializeComponent();
@@ -36,7 +40,8 @@ namespace HMS_NHOM25
                     "FROM benhNhan AS bn  " +
                     "JOIN benhNhan_lichSu AS bn_ls " +
                     "ON bn.MaBN = bn_ls.MaBN " +
-                    "WHERE SDT like '%" + timKiem + "%'";
+                    "WHERE SDT like '%" + timKiem + "%' " +
+                    "AND bn.TrangThai = 1";
 
                 dgvTimBN.DataSource = benhNhan.Table(query);
             }

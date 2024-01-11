@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(901, 1094);
+            this.panel3.Size = new System.Drawing.Size(880, 1094);
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
