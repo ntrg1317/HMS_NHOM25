@@ -120,11 +120,11 @@ namespace HMS_NHOM25
                 {
                     GetValuesTextBoxes();
                     string updateQuery = $@"UPDATE quanTriVien
-                                SET TenQL = '{qtv.TenNV}',
+                                SET TenQL = N'{qtv.TenNV}',
                                     SDT = '{qtv.Sdt}',
                                     NgaySinh = '{qtv.NgaySinh}',
-                                    GioiTinh = '{qtv.GioiTinh}',
-                                    DiaChi = '{qtv.DiaChi}' 
+                                    GioiTinh = N'{qtv.GioiTinh}',
+                                    DiaChi = N'{qtv.DiaChi}' 
                                 FROM quanTriVien 
                                 WHERE MaQL = '{txtMaQTV.Text}'";
 

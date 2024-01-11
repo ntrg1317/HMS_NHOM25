@@ -185,7 +185,7 @@
             this.dgvInfoDSHoaDon.RowHeadersWidth = 62;
             this.dgvInfoDSHoaDon.RowTemplate.Height = 28;
             this.dgvInfoDSHoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(1037, 494);
+            this.dgvInfoDSHoaDon.Size = new System.Drawing.Size(922, 349);
             this.dgvInfoDSHoaDon.TabIndex = 30;
             this.dgvInfoDSHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoDSHoaDon_CellClick);
             // 
