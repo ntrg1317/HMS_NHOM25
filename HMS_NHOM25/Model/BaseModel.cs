@@ -86,6 +86,7 @@ namespace HMS_NHOM25.Model
             return datatable;
         }
 
+
         public int getLastInsertID(string pk, string table)
         {
             string query = "SELECT TOP(1) " + pk + " FROM " + table + " ORDER BY 1 DESC";

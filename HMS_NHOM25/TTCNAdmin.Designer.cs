@@ -302,6 +302,7 @@
             this.btnSaveTTCN.Text = "Lưu thông tin";
             this.btnSaveTTCN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaveTTCN.UseVisualStyleBackColor = true;
+            this.btnSaveTTCN.Click += new System.EventHandler(this.btnSaveTTCN_Click);
             // 
             // btnDoiMK
             // 
@@ -329,6 +330,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TTCNAdmin";
             this.Text = "TTCNAdmin";
+            this.Load += new System.EventHandler(this.TTCNAdmin_Load);
             this.palAddBS.ResumeLayout(false);
             this.palAddBS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbBS)).EndInit();

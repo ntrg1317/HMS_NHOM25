@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HMS_NHOM25.Model;
+using System;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -11,14 +13,91 @@ namespace HMS_NHOM25
         private Form currentFormChild;
         private Button lastClickedButton;
         private bool isCollapsed;
+        BaseModel info = new BaseModel();
 
-        public AdminControl(string TenDN)
+        public AdminControl()
+        {
+            InitializeComponent();
+        }
+
+        string TenDN;
+        int MaCV;
+        public AdminControl(string tenDN)
         {
             InitializeComponent();
             OpenChildForm(new BaoCaoThongKe(), btnThongKe);
 
-            labTenDN.Text = TenDN;
+            TenDN = tenDN;
+            var userInfo = getInfo(TenDN);
+
+            labTenDN.Text = tenDN;
+            txtTen.Text = userInfo.name;
+            txtVaiTro.Text = userInfo.role;
         }
+
+        private (string role, string name) getInfo(string userName)
+        {
+            string getRoleQuery = @"SELECT TenCV 
+                        FROM chucVu AS cv 
+                        JOIN taiKhoan AS tk 
+                        ON tk.MaCV = cv.MaCV 
+                        WHERE tk.TenDN = '" + TenDN + "'";
+
+            string getRoleId = @"SELECT cv.MaCV 
+                        FROM chucVu AS cv 
+                        JOIN taiKhoan AS tk 
+                        ON tk.MaCV = cv.MaCV 
+                        WHERE tk.TenDN = '" + TenDN + "'";
+
+
+            string role = info.GetAStringValue(getRoleQuery).Trim();
+            int roleId = info.GetAIntValue(getRoleId);
+            MaCV = roleId;
+            string name = getName(roleId);
+            return (role, name);
+        }
+        private string getName(int roleId)
+        {
+            string tableName = "";
+            string columnName = "";
+            string idColumnName = "";
+            switch (roleId)
+            {
+                case 1:
+                    tableName = "quanTriVien";
+                    columnName = "TenQL";
+                    idColumnName = "MaQL";
+                    break;
+                case 2:
+                    tableName = "benhNhan";
+                    columnName = "TenBN";
+                    idColumnName = "MaBN";
+                    break;
+                case 3:
+                    tableName = "bacSi";
+                    columnName = "TenBS";
+                    idColumnName = "MaBS";
+                    break;
+                case 4:
+                    tableName = "duocSi";
+                    columnName = "TenNV";
+                    idColumnName = "MaNV";
+                    break;
+                case 5:
+                    tableName = "nhanVienThuNgan";
+                    columnName = "TenNV";
+                    idColumnName = "MaNV";
+                    break;
+            }
+
+            string query = $@"SELECT {columnName} FROM {tableName} AS nv  JOIN taiKhoan AS tk 
+                            ON tk.MaTK = nv.{idColumnName} 
+                            WHERE tk.TenDN = '{TenDN}'";
+
+
+            return info.GetAStringValue(query);
+        }
+
 
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
@@ -63,12 +142,6 @@ namespace HMS_NHOM25
             OpenChildForm(new DanhMuc(), btnDanhMuc);
 
         }
-
-        private void btnPhong_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Phong(), btnQly);
-        }
-
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
@@ -159,7 +232,25 @@ namespace HMS_NHOM25
 
         private void btnHeThong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new TTCNAdmin(), btnHeThong);
+            switch(MaCV)
+            {
+                case 1:
+                    OpenChildForm(new TTCNAdmin(TenDN), btnHeThong);
+                    break;
+                case 2:
+                    OpenChildForm(new TTCNBacSi(), btnHeThong);
+                    break;
+                case 3:
+                    OpenChildForm(new TTCNBenhNhan(), btnHeThong);
+                    break;
+                case 4:
+                    OpenChildForm(new TTCNDuocSi(), btnHeThong);
+                    break;
+                case 5:
+                    OpenChildForm(new TTCNNhanVienTN(), btnHeThong);
+                    break;
+            }
+            
         }
     }
 }
