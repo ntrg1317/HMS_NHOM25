@@ -49,6 +49,7 @@
             this.txtTimKiemQTV = new System.Windows.Forms.TextBox();
             this.dgvInfoQTV = new System.Windows.Forms.DataGridView();
             this.btnSuaQTV = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.grbInforQTV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfoQTV)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             this.grbInforQTV.Controls.Add(this.labTenQTV);
             this.grbInforQTV.Controls.Add(this.labMaQTV);
             this.grbInforQTV.ForeColor = System.Drawing.Color.Red;
-            this.grbInforQTV.Location = new System.Drawing.Point(35, 22);
+            this.grbInforQTV.Location = new System.Drawing.Point(35, 67);
             this.grbInforQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbInforQTV.Name = "grbInforQTV";
             this.grbInforQTV.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -286,7 +287,7 @@
             // 
             this.labTimKiemQTV.AutoSize = true;
             this.labTimKiemQTV.ForeColor = System.Drawing.Color.Red;
-            this.labTimKiemQTV.Location = new System.Drawing.Point(46, 244);
+            this.labTimKiemQTV.Location = new System.Drawing.Point(46, 289);
             this.labTimKiemQTV.Name = "labTimKiemQTV";
             this.labTimKiemQTV.Size = new System.Drawing.Size(71, 20);
             this.labTimKiemQTV.TabIndex = 1;
@@ -296,7 +297,7 @@
             // 
             this.labTenQTVTimKiem.AutoSize = true;
             this.labTenQTVTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenQTVTimKiem.Location = new System.Drawing.Point(68, 278);
+            this.labTenQTVTimKiem.Location = new System.Drawing.Point(68, 323);
             this.labTenQTVTimKiem.Name = "labTenQTVTimKiem";
             this.labTenQTVTimKiem.Size = new System.Drawing.Size(90, 20);
             this.labTenQTVTimKiem.TabIndex = 18;
@@ -304,7 +305,7 @@
             // 
             // txtTimKiemQTV
             // 
-            this.txtTimKiemQTV.Location = new System.Drawing.Point(181, 271);
+            this.txtTimKiemQTV.Location = new System.Drawing.Point(181, 316);
             this.txtTimKiemQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemQTV.Name = "txtTimKiemQTV";
             this.txtTimKiemQTV.Size = new System.Drawing.Size(184, 26);
@@ -318,13 +319,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvInfoQTV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInfoQTV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInfoQTV.Location = new System.Drawing.Point(35, 329);
+            this.dgvInfoQTV.Location = new System.Drawing.Point(35, 358);
             this.dgvInfoQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInfoQTV.Name = "dgvInfoQTV";
             this.dgvInfoQTV.RowHeadersWidth = 62;
             this.dgvInfoQTV.RowTemplate.Height = 28;
             this.dgvInfoQTV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInfoQTV.Size = new System.Drawing.Size(1019, 438);
+            this.dgvInfoQTV.Size = new System.Drawing.Size(1019, 409);
             this.dgvInfoQTV.TabIndex = 23;
             this.dgvInfoQTV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInfoQTV_CellClick);
             // 
@@ -332,7 +333,7 @@
             // 
             this.btnSuaQTV.Image = global::HMS_NHOM25.Properties.Resources.revision__1_;
             this.btnSuaQTV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaQTV.Location = new System.Drawing.Point(520, 258);
+            this.btnSuaQTV.Location = new System.Drawing.Point(520, 303);
             this.btnSuaQTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaQTV.Name = "btnSuaQTV";
             this.btnSuaQTV.Size = new System.Drawing.Size(125, 39);
@@ -341,12 +342,23 @@
             this.btnSuaQTV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaQTV.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(424, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 37);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Quản trị viên";
+            // 
             // QuanTriVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1091, 780);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvInfoQTV);
             this.Controls.Add(this.btnSuaQTV);
             this.Controls.Add(this.txtTimKiemQTV);
@@ -389,5 +401,6 @@
         private System.Windows.Forms.TextBox txtTimKiemQTV;
         private System.Windows.Forms.Button btnSuaQTV;
         private System.Windows.Forms.DataGridView dgvInfoQTV;
+        private System.Windows.Forms.Label label1;
     }
 }

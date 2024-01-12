@@ -336,6 +336,7 @@
             this.Controls.Add(this.labTimKiemDT);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ChiTietPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietDonThuoc";
             this.Load += new System.EventHandler(this.ChiTietPhong_Load);
             this.grbInfoDonThuoc.ResumeLayout(false);

@@ -78,7 +78,7 @@
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.service;
-            this.ptbYTe.Location = new System.Drawing.Point(234, 31);
+            this.ptbYTe.Location = new System.Drawing.Point(224, 31);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
             this.ptbYTe.Size = new System.Drawing.Size(94, 42);
@@ -92,7 +92,7 @@
             this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(324, 41);
+            this.labAddBS.Location = new System.Drawing.Point(315, 41);
             this.labAddBS.Name = "labAddBS";
             this.labAddBS.Size = new System.Drawing.Size(204, 32);
             this.labAddBS.TabIndex = 0;
@@ -188,7 +188,7 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // AddDichVu
+            // ThemDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +199,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.grbAddInfoDV);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AddDichVu";
+            this.Name = "ThemDichVu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemDichVu";
             this.Load += new System.EventHandler(this.AddDichVu_Load);

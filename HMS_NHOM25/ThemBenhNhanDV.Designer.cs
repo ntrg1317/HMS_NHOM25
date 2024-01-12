@@ -63,7 +63,7 @@
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.service;
-            this.ptbYTe.Location = new System.Drawing.Point(220, 22);
+            this.ptbYTe.Location = new System.Drawing.Point(189, 28);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
             this.ptbYTe.Size = new System.Drawing.Size(94, 42);
@@ -77,7 +77,7 @@
             this.labAddBS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(322, 28);
+            this.labAddBS.Location = new System.Drawing.Point(279, 28);
             this.labAddBS.Name = "labAddBS";
             this.labAddBS.Size = new System.Drawing.Size(329, 32);
             this.labAddBS.TabIndex = 0;
@@ -219,7 +219,7 @@
             this.btnSaveBNDV.UseVisualStyleBackColor = true;
             this.btnSaveBNDV.Click += new System.EventHandler(this.btnSaveBNDV_Click);
             // 
-            // AddBenhNhanDV
+            // ThemBenhNhanDV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -229,7 +229,7 @@
             this.Controls.Add(this.btnSaveBNDV);
             this.Controls.Add(this.grbAddInfoDV);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "AddBenhNhanDV";
+            this.Name = "ThemBenhNhanDV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemBenhNhanDV";
             this.Load += new System.EventHandler(this.AddBenhNhanDV_Load);

@@ -420,11 +420,11 @@
             this.labAddBS.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.labAddBS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labAddBS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labAddBS.Location = new System.Drawing.Point(429, 22);
+            this.labAddBS.Location = new System.Drawing.Point(386, 28);
             this.labAddBS.Name = "labAddBS";
-            this.labAddBS.Size = new System.Drawing.Size(246, 32);
+            this.labAddBS.Size = new System.Drawing.Size(310, 32);
             this.labAddBS.TabIndex = 25;
-            this.labAddBS.Text = "Danh sách bác sĩ";
+            this.labAddBS.Text = "Danh sách bệnh nhân";
             // 
             // BenhNhan
             // 
