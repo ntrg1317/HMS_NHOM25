@@ -52,15 +52,15 @@
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.palAddBS = new System.Windows.Forms.Panel();
             this.ptbYTe = new System.Windows.Forms.PictureBox();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnSaveTT = new System.Windows.Forms.Button();
-            this.labInHoaDon = new System.Windows.Forms.Button();
             this.txtTimKiemSDTBN = new System.Windows.Forms.TextBox();
             this.labTenBNTimKiem = new System.Windows.Forms.Label();
             this.grbTK = new System.Windows.Forms.GroupBox();
             this.dgvChiTietHD = new System.Windows.Forms.DataGridView();
             this.labChiTietHD = new System.Windows.Forms.Label();
             this.dgvInforBN = new System.Windows.Forms.DataGridView();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnSaveTT = new System.Windows.Forms.Button();
+            this.labInHoaDon = new System.Windows.Forms.Button();
             this.grbTTBenhNhan.SuspendLayout();
             this.grbThanhToan.SuspendLayout();
             this.palAddBS.SuspendLayout();
@@ -231,6 +231,7 @@
             // 
             // dateNgayTT
             // 
+            this.dateNgayTT.Enabled = false;
             this.dateNgayTT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNgayTT.Location = new System.Drawing.Point(272, 26);
             this.dateNgayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -253,7 +254,7 @@
             this.labHoaDon.AutoSize = true;
             this.labHoaDon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.labHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labHoaDon.Location = new System.Drawing.Point(445, 10);
+            this.labHoaDon.Location = new System.Drawing.Point(438, 10);
             this.labHoaDon.Name = "labHoaDon";
             this.labHoaDon.Size = new System.Drawing.Size(263, 46);
             this.labHoaDon.TabIndex = 37;
@@ -319,53 +320,13 @@
             // 
             this.ptbYTe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ptbYTe.Image = global::HMS_NHOM25.Properties.Resources.receipt;
-            this.ptbYTe.Location = new System.Drawing.Point(352, 10);
+            this.ptbYTe.Location = new System.Drawing.Point(345, 10);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbYTe.Name = "ptbYTe";
             this.ptbYTe.Size = new System.Drawing.Size(87, 41);
             this.ptbYTe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbYTe.TabIndex = 3;
             this.ptbYTe.TabStop = false;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(818, 795);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(141, 39);
-            this.btnThoat.TabIndex = 51;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnSaveTT
-            // 
-            this.btnSaveTT.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
-            this.btnSaveTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveTT.Location = new System.Drawing.Point(182, 795);
-            this.btnSaveTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSaveTT.Name = "btnSaveTT";
-            this.btnSaveTT.Size = new System.Drawing.Size(154, 39);
-            this.btnSaveTT.TabIndex = 50;
-            this.btnSaveTT.Text = "Lưu thông tin";
-            this.btnSaveTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaveTT.UseVisualStyleBackColor = true;
-            this.btnSaveTT.Click += new System.EventHandler(this.btnSaveTT_Click);
-            // 
-            // labInHoaDon
-            // 
-            this.labInHoaDon.Image = global::HMS_NHOM25.Properties.Resources.printer__2_;
-            this.labInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.labInHoaDon.Location = new System.Drawing.Point(501, 795);
-            this.labInHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labInHoaDon.Name = "labInHoaDon";
-            this.labInHoaDon.Size = new System.Drawing.Size(138, 39);
-            this.labInHoaDon.TabIndex = 49;
-            this.labInHoaDon.Text = "In hóa đơn";
-            this.labInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.labInHoaDon.UseVisualStyleBackColor = true;
             // 
             // txtTimKiemSDTBN
             // 
@@ -436,10 +397,51 @@
             this.dgvInforBN.TabIndex = 59;
             this.dgvInforBN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInforBN_CellClick);
             // 
+            // btnThoat
+            // 
+            this.btnThoat.Image = global::HMS_NHOM25.Properties.Resources.cross__1_;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(818, 795);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(141, 39);
+            this.btnThoat.TabIndex = 51;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnSaveTT
+            // 
+            this.btnSaveTT.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
+            this.btnSaveTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveTT.Location = new System.Drawing.Point(182, 795);
+            this.btnSaveTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSaveTT.Name = "btnSaveTT";
+            this.btnSaveTT.Size = new System.Drawing.Size(154, 39);
+            this.btnSaveTT.TabIndex = 50;
+            this.btnSaveTT.Text = "Lưu thông tin";
+            this.btnSaveTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaveTT.UseVisualStyleBackColor = true;
+            this.btnSaveTT.Click += new System.EventHandler(this.btnSaveTT_Click);
+            // 
+            // labInHoaDon
+            // 
+            this.labInHoaDon.Image = global::HMS_NHOM25.Properties.Resources.printer__2_;
+            this.labInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labInHoaDon.Location = new System.Drawing.Point(501, 795);
+            this.labInHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labInHoaDon.Name = "labInHoaDon";
+            this.labInHoaDon.Size = new System.Drawing.Size(138, 39);
+            this.labInHoaDon.TabIndex = 49;
+            this.labInHoaDon.Text = "In hóa đơn";
+            this.labInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labInHoaDon.UseVisualStyleBackColor = true;
+            // 
             // HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1091, 848);
             this.Controls.Add(this.dgvInforBN);
             this.Controls.Add(this.labChiTietHD);

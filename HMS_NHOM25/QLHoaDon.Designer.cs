@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dgvDSHoaDonBN = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnTaoHD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimBN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbYTe)).BeginInit();
@@ -85,7 +86,7 @@
             // 
             // txtTimKiemSDTBN
             // 
-            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(254, 88);
+            this.txtTimKiemSDTBN.Location = new System.Drawing.Point(254, 80);
             this.txtTimKiemSDTBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiemSDTBN.Name = "txtTimKiemSDTBN";
             this.txtTimKiemSDTBN.Size = new System.Drawing.Size(180, 26);
@@ -97,7 +98,7 @@
             // 
             this.labTenBNTimKiem.AutoSize = true;
             this.labTenBNTimKiem.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labTenBNTimKiem.Location = new System.Drawing.Point(116, 94);
+            this.labTenBNTimKiem.Location = new System.Drawing.Point(116, 86);
             this.labTenBNTimKiem.Name = "labTenBNTimKiem";
             this.labTenBNTimKiem.Size = new System.Drawing.Size(121, 20);
             this.labTenBNTimKiem.TabIndex = 54;
@@ -215,7 +216,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(661, 94);
+            this.label1.Location = new System.Drawing.Point(512, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 56;
@@ -223,7 +224,7 @@
             // 
             // txtMaBN
             // 
-            this.txtMaBN.Location = new System.Drawing.Point(750, 88);
+            this.txtMaBN.Location = new System.Drawing.Point(601, 80);
             this.txtMaBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaBN.Name = "txtMaBN";
             this.txtMaBN.ReadOnly = true;
@@ -266,11 +267,27 @@
             this.label3.TabIndex = 72;
             this.label3.Text = "Danh sách hóa đơn của bệnh nhân";
             // 
+            // btnTaoHD
+            // 
+            this.btnTaoHD.Image = global::HMS_NHOM25.Properties.Resources.plus;
+            this.btnTaoHD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoHD.Location = new System.Drawing.Point(862, 74);
+            this.btnTaoHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTaoHD.Name = "btnTaoHD";
+            this.btnTaoHD.Size = new System.Drawing.Size(142, 39);
+            this.btnTaoHD.TabIndex = 73;
+            this.btnTaoHD.Text = "Tạo hóa đơn";
+            this.btnTaoHD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTaoHD.UseVisualStyleBackColor = true;
+            this.btnTaoHD.Click += new System.EventHandler(this.btnTaoHD_Click);
+            // 
             // QLHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1069, 788);
+            this.Controls.Add(this.btnTaoHD);
             this.Controls.Add(this.dgvDSHoaDonBN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -320,5 +337,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvDSHoaDonBN;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnTaoHD;
     }
 }

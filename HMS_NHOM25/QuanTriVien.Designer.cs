@@ -341,10 +341,11 @@
             this.btnSuaQTV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSuaQTV.UseVisualStyleBackColor = true;
             // 
-            // Admin
+            // QuanTriVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1091, 780);
             this.Controls.Add(this.dgvInfoQTV);
             this.Controls.Add(this.btnSuaQTV);
@@ -354,7 +355,7 @@
             this.Controls.Add(this.grbInforQTV);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Admin";
+            this.Name = "QuanTriVien";
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.grbInforQTV.ResumeLayout(false);
