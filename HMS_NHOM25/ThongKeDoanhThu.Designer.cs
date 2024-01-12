@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(859, 1094);
+            this.panel3.Size = new System.Drawing.Size(921, 1094);
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
@@ -174,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(952, 1102);
+            this.ClientSize = new System.Drawing.Size(973, 1102);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.labTKBenhNhan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
