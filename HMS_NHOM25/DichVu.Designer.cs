@@ -402,6 +402,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1091, 844);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labAddBS);

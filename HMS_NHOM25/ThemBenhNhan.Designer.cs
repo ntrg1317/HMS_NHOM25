@@ -33,6 +33,10 @@
             this.palAddBN = new System.Windows.Forms.Panel();
             this.ptbBS = new System.Windows.Forms.PictureBox();
             this.grbAddInfoBN = new System.Windows.Forms.GroupBox();
+            this.dateNgayVao = new System.Windows.Forms.DateTimePicker();
+            this.txtBenhTrang = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtSDTNguoiThanM = new System.Windows.Forms.TextBox();
             this.labSDTNguoiThan = new System.Windows.Forms.Label();
             this.cobDiaChiBNM = new System.Windows.Forms.ComboBox();
@@ -97,6 +101,10 @@
             // 
             // grbAddInfoBN
             // 
+            this.grbAddInfoBN.Controls.Add(this.dateNgayVao);
+            this.grbAddInfoBN.Controls.Add(this.txtBenhTrang);
+            this.grbAddInfoBN.Controls.Add(this.label2);
+            this.grbAddInfoBN.Controls.Add(this.label4);
             this.grbAddInfoBN.Controls.Add(this.txtSDTNguoiThanM);
             this.grbAddInfoBN.Controls.Add(this.labSDTNguoiThan);
             this.grbAddInfoBN.Controls.Add(this.cobDiaChiBNM);
@@ -114,10 +122,47 @@
             this.grbAddInfoBN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbAddInfoBN.Name = "grbAddInfoBN";
             this.grbAddInfoBN.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grbAddInfoBN.Size = new System.Drawing.Size(711, 207);
+            this.grbAddInfoBN.Size = new System.Drawing.Size(711, 258);
             this.grbAddInfoBN.TabIndex = 5;
             this.grbAddInfoBN.TabStop = false;
             this.grbAddInfoBN.Text = "Thông tin bệnh nhân mới";
+            // 
+            // dateNgayVao
+            // 
+            this.dateNgayVao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayVao.Location = new System.Drawing.Point(506, 177);
+            this.dateNgayVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateNgayVao.Name = "dateNgayVao";
+            this.dateNgayVao.Size = new System.Drawing.Size(175, 22);
+            this.dateNgayVao.TabIndex = 24;
+            // 
+            // txtBenhTrang
+            // 
+            this.txtBenhTrang.Location = new System.Drawing.Point(153, 176);
+            this.txtBenhTrang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBenhTrang.Name = "txtBenhTrang";
+            this.txtBenhTrang.Size = new System.Drawing.Size(174, 22);
+            this.txtBenhTrang.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(30, 182);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 16);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Bệnh trạng";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label4.Location = new System.Drawing.Point(375, 179);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 16);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Ngày vào";
             // 
             // txtSDTNguoiThanM
             // 
@@ -318,7 +363,7 @@
             this.grbTaiKhoanBSM.Controls.Add(this.labMKBNM);
             this.grbTaiKhoanBSM.Controls.Add(this.labTenDNBNM);
             this.grbTaiKhoanBSM.ForeColor = System.Drawing.Color.Red;
-            this.grbTaiKhoanBSM.Location = new System.Drawing.Point(27, 315);
+            this.grbTaiKhoanBSM.Location = new System.Drawing.Point(27, 402);
             this.grbTaiKhoanBSM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbTaiKhoanBSM.Name = "grbTaiKhoanBSM";
             this.grbTaiKhoanBSM.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -342,6 +387,7 @@
             this.txtMatKhauBNM.Name = "txtMatKhauBNM";
             this.txtMatKhauBNM.Size = new System.Drawing.Size(173, 22);
             this.txtMatKhauBNM.TabIndex = 17;
+            this.txtMatKhauBNM.UseSystemPasswordChar = true;
             // 
             // labMKBNM
             // 
@@ -367,7 +413,7 @@
             // 
             this.btnThoatAddBNM.Image = global::HMS_NHOM25.Properties.Resources.cancel;
             this.btnThoatAddBNM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoatAddBNM.Location = new System.Drawing.Point(404, 408);
+            this.btnThoatAddBNM.Location = new System.Drawing.Point(404, 495);
             this.btnThoatAddBNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoatAddBNM.Name = "btnThoatAddBNM";
             this.btnThoatAddBNM.Size = new System.Drawing.Size(125, 31);
@@ -380,7 +426,7 @@
             // 
             this.btnSaveInfoBNM.Image = global::HMS_NHOM25.Properties.Resources.floppy_disk;
             this.btnSaveInfoBNM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaveInfoBNM.Location = new System.Drawing.Point(206, 408);
+            this.btnSaveInfoBNM.Location = new System.Drawing.Point(206, 495);
             this.btnSaveInfoBNM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveInfoBNM.Name = "btnSaveInfoBNM";
             this.btnSaveInfoBNM.Size = new System.Drawing.Size(137, 31);
@@ -399,11 +445,11 @@
             this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 2;
             // 
-            // AddPatients
+            // ThemBenhNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 462);
+            this.ClientSize = new System.Drawing.Size(765, 559);
             this.Controls.Add(this.btnThoatAddBNM);
             this.Controls.Add(this.btnSaveInfoBNM);
             this.Controls.Add(this.grbTaiKhoanBSM);
@@ -411,7 +457,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.palAddBN);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "AddPatients";
+            this.Name = "ThemBenhNhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm bệnh nhân";
             this.Load += new System.EventHandler(this.AddPatients_Load);
@@ -454,5 +500,9 @@
         private System.Windows.Forms.Button btnThoatAddBNM;
         private System.Windows.Forms.TextBox txtSDTNguoiThanM;
         private System.Windows.Forms.Label labSDTNguoiThan;
+        private System.Windows.Forms.DateTimePicker dateNgayVao;
+        private System.Windows.Forms.TextBox txtBenhTrang;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }

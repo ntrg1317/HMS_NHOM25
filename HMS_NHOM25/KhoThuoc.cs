@@ -1,6 +1,7 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -14,33 +15,6 @@ namespace HMS_NHOM25
         public KhoThuoc()
         {
             InitializeComponent();
-            dgvInfoKhoThuoc.DataSource = basemodel.all(table);
-        }
-
-        private void KhoThuoc_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                dgvInfoKhoThuoc.DataSource = basemodel.all(table);
-
-                dgvInfoKhoThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
-                dgvInfoKhoThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
-                dgvInfoKhoThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
-                dgvInfoKhoThuoc.Columns["NSX"].HeaderText = "NSX";
-                dgvInfoKhoThuoc.Columns["HSD"].HeaderText = "HSD";
-                dgvInfoKhoThuoc.Columns["TienThuoc"].HeaderText = "Tiền thuốc";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Loi " + ex.Message);
-            }
-
-            dgvInfoKhoThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
-            dgvInfoKhoThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
-            dgvInfoKhoThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
-            dgvInfoKhoThuoc.Columns["NSX"].HeaderText = "NSX";
-            dgvInfoKhoThuoc.Columns["HSD"].HeaderText = "HSD";
-            dgvInfoKhoThuoc.Columns["TienThuoc"].HeaderText = "Tiền thuốc";
         }
 
         private void btnThemThuoc_Click(object sender, EventArgs e)
@@ -185,6 +159,25 @@ namespace HMS_NHOM25
             else
             {
                 e.Handled = true;
+            }
+        }
+
+        private void KhoThuoc_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvInfoKhoThuoc.DataSource = basemodel.all(table);
+
+                dgvInfoKhoThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
+                dgvInfoKhoThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
+                dgvInfoKhoThuoc.Columns["SoLuong"].HeaderText = "Số lượng";
+                dgvInfoKhoThuoc.Columns["NSX"].HeaderText = "NSX";
+                dgvInfoKhoThuoc.Columns["HSD"].HeaderText = "HSD";
+                dgvInfoKhoThuoc.Columns["TienThuoc"].HeaderText = "Tiền thuốc";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi " + ex.Message);
             }
         }
     }

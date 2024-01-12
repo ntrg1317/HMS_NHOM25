@@ -196,9 +196,9 @@ namespace HMS_NHOM25
         private void btnLogout_Click(object sender, EventArgs e)
         {
             isExit = false;
-            this.Close();
             login login = new login();
             login.Show();
+            this.Close();
         }
 
         private void btnKhoThuoc_Click(object sender, EventArgs e)

@@ -201,7 +201,7 @@ namespace HMS_NHOM25
 
         private void btnThemBS_Click(object sender, EventArgs e)
         {
-            ThemDoctor doctor = new ThemDoctor();
+            ThemBacSi doctor = new ThemBacSi();
             doctor.Show();
         }
 

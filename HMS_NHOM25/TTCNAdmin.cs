@@ -16,6 +16,7 @@ namespace HMS_NHOM25
     {
         DuocSiParams qtv;
         BaseModel info = new BaseModel();
+        string TenDN;
         public TTCNAdmin()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace HMS_NHOM25
         public TTCNAdmin(string tenDN)
         {
             InitializeComponent();
+            TenDN = tenDN;
             getInfo(tenDN);
         }
 
@@ -61,7 +63,7 @@ namespace HMS_NHOM25
 
         private void btnDoiMK_Click(object sender, EventArgs e)
         {
-            SuaTTTK suaTTTK = new SuaTTTK();
+            SuaTTTK suaTTTK = new SuaTTTK(TenDN);
             suaTTTK.Show();
         }
 

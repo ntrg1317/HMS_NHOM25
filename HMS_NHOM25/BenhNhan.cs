@@ -2,6 +2,7 @@
 using HMS_NHOM25.Params;
 using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -10,6 +11,7 @@ namespace HMS_NHOM25
     {
         readonly BaseModel benhNhan = new BaseModel();
         Params.BenhNhan bn;
+        BenhNhan_LichSuParams bn_ls;
 
         private readonly string table = "benhNhan";
         public BenhNhan()
@@ -21,13 +23,27 @@ namespace HMS_NHOM25
         {
             try
             {
-                dgvInfoBN.DataSource = benhNhan.all(table);
+                string query = @"SELECT 
+                                    bn.MaBN, bn.TenBN, bn_ls.NgayVao, bn_ls.BenhTrang,
+                                    bn.NgaySinh, bn.GioiTinh, bn.SDT, p.TenPhong,
+                                    bn.DiaChi,  bn.SDTNguoiThan, bn.TrangThai 
+                                FROM 
+                                    benhNhan bn 
+                                LEFT JOIN 
+                                    benhNhan_lichSu bn_ls ON bn_ls.MaBN = bn.MaBN 
+                                LEFT JOIN 
+                                    phong p ON p.MaPhong = bn_ls.MaPhong;";
+
+                dgvInfoBN.DataSource = benhNhan.Table(query);
 
                 dgvInfoBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
                 dgvInfoBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
+                dgvInfoBN.Columns["NgayVao"].HeaderText = "Ngày Vào";
+                dgvInfoBN.Columns["BenhTrang"].HeaderText = "Bệnh Trạng";
                 dgvInfoBN.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
                 dgvInfoBN.Columns["GioiTinh"].HeaderText = "Giới Tính";
                 dgvInfoBN.Columns["SDT"].HeaderText = "Số Điện Thoại";
+                dgvInfoBN.Columns["TenPhong"].HeaderText = "Tên Phòng";
                 dgvInfoBN.Columns["DiaChi"].HeaderText = "Địa Chỉ";
                 dgvInfoBN.Columns["SDTNguoiThan"].HeaderText = "Số Điện Thoại Người Thân";
                 dgvInfoBN.Columns["TrangThai"].HeaderText = "Trạng Thái";
@@ -48,7 +64,28 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "Select * from benhNhan where TenBN like '%" + timKiem + "%'";
+                string query = @"WITH PatientRanked AS ( 
+                                    SELECT 
+                                        bn.MaBN, bn.TenBN, bn_ls.NgayVao, bn_ls.BenhTrang, 
+				                        bn.NgaySinh, bn.GioiTinh, bn.SDT, p.TenPhong, 
+				                        bn.DiaChi,  bn.SDTNguoiThan, bn.TrangThai, 
+                                        ROW_NUMBER() OVER(PARTITION BY bn.MaBN ORDER BY bn_ls.ngayVao DESC) AS RowNum 
+                                    FROM 
+                                        benhNhan bn 
+                                    LEFT JOIN 
+                                        benhNhan_lichSu bn_ls ON bn.MaBN = bn_ls.MaBN 
+                                    JOIN phong p ON p.MaPhong = bn_ls.MaPhong
+                                    WHERE 
+                                        bn_ls.ngayVao IS NOT NULL 
+                                ) 
+                                SELECT 
+                                    MaBN, TenBN, NgayVao, BenhTrang,
+		                            NgaySinh, GioiTinh, SDT, TenPhong,
+		                            DiaChi,  SDTNguoiThan, TrangThai 
+                                FROM 
+                                    PatientRanked 
+                                WHERE 
+                                    RowNum = 1 AND TenBN LIKE '%" + timKiem + "'";
 
                 dgvInfoBN.DataSource = benhNhan.Table(query);
             }
@@ -58,14 +95,16 @@ namespace HMS_NHOM25
         {
             try
             {
-                txtMaBN.Text = dgvInfoBN.SelectedRows[0].Cells[0].Value.ToString();
-                txtTenBN.Text = dgvInfoBN.SelectedRows[0].Cells[1].Value.ToString();
-                DOBBN.Text = dgvInfoBN.SelectedRows[0].Cells[2].Value.ToString();
-                GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells[3].Value.ToString(), cobGioiTinhBN);
-                txtSDTBN.Text = dgvInfoBN.SelectedRows[0].Cells[4].Value.ToString();
-                GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells[5].Value.ToString(), cobDiaChiBN);
-                txtSDTNguoiThan.Text = dgvInfoBN.SelectedRows[0].Cells[6].Value.ToString();
-                string trangThaiValue = dgvInfoBN.SelectedRows[0].Cells[7].Value.ToString();
+                txtMaBN.Text = dgvInfoBN.SelectedRows[0].Cells["MaBN"].Value.ToString();
+                txtTenBN.Text = dgvInfoBN.SelectedRows[0].Cells["TenBN"].Value.ToString();
+                dateNgayVao.Text = dgvInfoBN.SelectedRows[0].Cells["NgayVao"].Value.ToString();
+                txtBenhTrang.Text = dgvInfoBN.SelectedRows[0].Cells["BenhTrang"].Value.ToString();
+                DOBBN.Text = dgvInfoBN.SelectedRows[0].Cells["NgaySinh"].Value.ToString();
+                GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells["GioiTinh"].Value.ToString(), cobGioiTinhBN);
+                txtSDTBN.Text = dgvInfoBN.SelectedRows[0].Cells["SDT"].Value.ToString();
+                GetSelectedValue(dgvInfoBN.SelectedRows[0].Cells["DiaChi"].Value.ToString(), cobDiaChiBN);
+                txtSDTNguoiThan.Text = dgvInfoBN.SelectedRows[0].Cells["SDTNguoiThan"].Value.ToString();
+                string trangThaiValue = dgvInfoBN.SelectedRows[0].Cells["TrangThai"].Value.ToString();
                 if (int.TryParse(trangThaiValue, out int _trangThai))
                 {
                     if (_trangThai == 1)
@@ -94,9 +133,10 @@ namespace HMS_NHOM25
         {
             foreach (object item in cob.Items)
             {
-                if (item.ToString() == selectedValue.Trim())
+                if (item.ToString().Trim() == selectedValue.Trim())
                 {
                     cob.SelectedItem = item;
+                    cob.Text = selectedValue;
                     break;
                 }
             }
@@ -111,6 +151,14 @@ namespace HMS_NHOM25
             if (DOBBN.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập ngày sinh!"); return false;
+            }
+            if (dateNgayVao.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập ngày vào!"); return false;
+            }
+            if (txtBenhTrang.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập bệnh trạng của bệnh nhân!"); return false;
             }
             if (cobGioiTinhBN.SelectedIndex == -1)
             {
@@ -137,6 +185,7 @@ namespace HMS_NHOM25
 
         private void GetValuesTextBoxes()
         {
+            string _maBN = txtMaBN.Text;
             string _tenBN = txtTenBN.Text;
             string _ngaySinh = DOBBN.Text;
             string _gioiTinh = cobGioiTinhBN.Text;
@@ -145,15 +194,25 @@ namespace HMS_NHOM25
             string _sdtNguoiThan = txtSDTNguoiThan.Text;
             string _trangThai = cobTrangThaiBN.Text;
 
+            string _ngayVao = dateNgayVao.Text;
+            string _benhTrang = txtBenhTrang.Text;
+
             bn = new Params.BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, _trangThai, null, null);
+            bn_ls = new BenhNhan_LichSuParams(_maBN, _ngayVao, _benhTrang);
         }
 
         private void btnSuaBN_Click(object sender, EventArgs e)
         {
             if (CheckTextBoxes())
             {
-                GetValuesTextBoxes();
-                string query1 = "UPDATE benhNhan SET " +
+                using (SqlConnection sqlConnection = ConnectDB.getSqlConnection())
+                {
+                    sqlConnection.Open();
+                    SqlTransaction transaction = sqlConnection.BeginTransaction();
+
+                    GetValuesTextBoxes();
+
+                    string query1 = "UPDATE benhNhan SET " +
                         $"TenBN = N'{bn.TenBN}', " +
                         $"NgaySinh = N'{bn.NgaySinh}', " +
                         $"SDT = N'{bn.Sdt}'," +
@@ -161,18 +220,35 @@ namespace HMS_NHOM25
                         $"SDTNguoiThan = N'{bn.SdtNguoiThan}', " +
                         $"TrangThai = '{bn.TrangThai}' " +
                         $"WHERE MaBN = '{txtMaBN.Text}'";
-                try
-                {
-                    if (MessageBox.Show("Bạn có muốn cập nhật thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+
+                    string query2 = "UPDATE benhNhan_lichSu SET " +
+                        $"NgayVao = N'{bn_ls.NgayVao}', " +
+                        $"BenhTrang = N'{bn_ls.BenhTrang}' " +
+                        $"WHERE MaBN = '{bn_ls.MaBN}'";
+
+                    try
                     {
-                        benhNhan.Command(query1);
-                        MessageBox.Show("Cập nhật thông tin thành công!");
-                        Patients_Load(sender, e);
+                        if (MessageBox.Show("Bạn có muốn cập nhật thông tin không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        {
+                            benhNhan.Command(query1);
+
+                            benhNhan.Command(query2);
+
+                            transaction.Commit();
+
+                            MessageBox.Show("Lưu thông tin thành công!");
+                            Patients_Load(sender, e);
+                        }
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        MessageBox.Show("Lỗi: " + ex.Message);
+                    }
+                    finally
+                    {
+                        sqlConnection.Close();
+                    }
                 }
             }
         }

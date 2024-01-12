@@ -43,6 +43,8 @@
             this.labTenDNmoi = new System.Windows.Forms.Label();
             this.btnLuuTT = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCfMatKhau = new System.Windows.Forms.TextBox();
             this.grbTTTKCu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSuaTTTK)).BeginInit();
             this.grbTTTKMoi.SuspendLayout();
@@ -55,7 +57,7 @@
             this.grbTTTKCu.Controls.Add(this.labMK);
             this.grbTTTKCu.Controls.Add(this.labTenDN);
             this.grbTTTKCu.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKCu.Location = new System.Drawing.Point(51, 154);
+            this.grbTTTKCu.Location = new System.Drawing.Point(182, 179);
             this.grbTTTKCu.Name = "grbTTTKCu";
             this.grbTTTKCu.Size = new System.Drawing.Size(588, 152);
             this.grbTTTKCu.TabIndex = 0;
@@ -68,11 +70,13 @@
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(202, 22);
             this.txtMK.TabIndex = 3;
+            this.txtMK.UseSystemPasswordChar = true;
             // 
             // txtTenDN
             // 
             this.txtTenDN.Location = new System.Drawing.Point(302, 48);
             this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.ReadOnly = true;
             this.txtTenDN.Size = new System.Drawing.Size(202, 22);
             this.txtTenDN.TabIndex = 2;
             // 
@@ -100,7 +104,7 @@
             // 
             this.labSuaTTTK.AutoSize = true;
             this.labSuaTTTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labSuaTTTK.Location = new System.Drawing.Point(237, 56);
+            this.labSuaTTTK.Location = new System.Drawing.Point(368, 81);
             this.labSuaTTTK.Name = "labSuaTTTK";
             this.labSuaTTTK.Size = new System.Drawing.Size(277, 29);
             this.labSuaTTTK.TabIndex = 2;
@@ -110,7 +114,7 @@
             // 
             this.ptbSuaTTTK.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.ErrorImage")));
             this.ptbSuaTTTK.Image = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.Image")));
-            this.ptbSuaTTTK.Location = new System.Drawing.Point(192, 47);
+            this.ptbSuaTTTK.Location = new System.Drawing.Point(323, 72);
             this.ptbSuaTTTK.Name = "ptbSuaTTTK";
             this.ptbSuaTTTK.Size = new System.Drawing.Size(48, 43);
             this.ptbSuaTTTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -119,14 +123,16 @@
             // 
             // grbTTTKMoi
             // 
+            this.grbTTTKMoi.Controls.Add(this.txtCfMatKhau);
             this.grbTTTKMoi.Controls.Add(this.txtMKmoi);
+            this.grbTTTKMoi.Controls.Add(this.label1);
             this.grbTTTKMoi.Controls.Add(this.txtTenDNmoi);
             this.grbTTTKMoi.Controls.Add(this.labMKmoi);
             this.grbTTTKMoi.Controls.Add(this.labTenDNmoi);
             this.grbTTTKMoi.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKMoi.Location = new System.Drawing.Point(51, 333);
+            this.grbTTTKMoi.Location = new System.Drawing.Point(182, 358);
             this.grbTTTKMoi.Name = "grbTTTKMoi";
-            this.grbTTTKMoi.Size = new System.Drawing.Size(588, 152);
+            this.grbTTTKMoi.Size = new System.Drawing.Size(588, 199);
             this.grbTTTKMoi.TabIndex = 4;
             this.grbTTTKMoi.TabStop = false;
             this.grbTTTKMoi.Text = "Thông tin tài khoản mới";
@@ -137,6 +143,7 @@
             this.txtMKmoi.Name = "txtMKmoi";
             this.txtMKmoi.Size = new System.Drawing.Size(202, 22);
             this.txtMKmoi.TabIndex = 3;
+            this.txtMKmoi.UseSystemPasswordChar = true;
             // 
             // txtTenDNmoi
             // 
@@ -169,7 +176,7 @@
             // 
             this.btnLuuTT.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuTT.Image")));
             this.btnLuuTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuTT.Location = new System.Drawing.Point(169, 571);
+            this.btnLuuTT.Location = new System.Drawing.Point(300, 596);
             this.btnLuuTT.Name = "btnLuuTT";
             this.btnLuuTT.Size = new System.Drawing.Size(128, 32);
             this.btnLuuTT.TabIndex = 5;
@@ -182,7 +189,7 @@
             // 
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(353, 571);
+            this.btnThoat.Location = new System.Drawing.Point(484, 596);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(128, 32);
             this.btnThoat.TabIndex = 6;
@@ -190,11 +197,29 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(66, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Xác nhận mật khẩu mới";
+            // 
+            // txtCfMatKhau
+            // 
+            this.txtCfMatKhau.Location = new System.Drawing.Point(302, 118);
+            this.txtCfMatKhau.Name = "txtCfMatKhau";
+            this.txtCfMatKhau.Size = new System.Drawing.Size(202, 22);
+            this.txtCfMatKhau.TabIndex = 3;
+            this.txtCfMatKhau.UseSystemPasswordChar = true;
+            // 
             // SuaTTTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 644);
+            this.ClientSize = new System.Drawing.Size(970, 744);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuuTT);
             this.Controls.Add(this.grbTTTKMoi);
@@ -202,7 +227,9 @@
             this.Controls.Add(this.labSuaTTTK);
             this.Controls.Add(this.grbTTTKCu);
             this.Name = "SuaTTTK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SuaThongTinTaiKhoan";
+            this.Load += new System.EventHandler(this.SuaTTTK_Load);
             this.grbTTTKCu.ResumeLayout(false);
             this.grbTTTKCu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSuaTTTK)).EndInit();
@@ -229,5 +256,7 @@
         private System.Windows.Forms.Label labTenDNmoi;
         private System.Windows.Forms.Button btnLuuTT;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.TextBox txtCfMatKhau;
+        private System.Windows.Forms.Label label1;
     }
 }

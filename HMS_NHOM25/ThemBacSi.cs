@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace HMS_NHOM25
 {
-    public partial class ThemDoctor : Form
+    public partial class ThemBacSi : Form
     {
         Params.BacSi qlBacSi;
         BaseModel Doctor = new BaseModel();
-        public ThemDoctor()
+        public ThemBacSi()
         {
             InitializeComponent();
         }

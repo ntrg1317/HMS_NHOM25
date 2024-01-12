@@ -1,15 +1,20 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
+using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static GMap.NET.Entity.OpenStreetMapGraphHopperRouteEntity;
 
 namespace HMS_NHOM25
 {
     public partial class ThemBenhNhan : Form
     {
         Params.BenhNhan bn = new Params.BenhNhan();
+        BenhNhan_LichSuParams bn_ls;
+
         BaseModel bn_tk = new BaseModel();
         public ThemBenhNhan()
         {
@@ -31,6 +36,9 @@ namespace HMS_NHOM25
             txtSDTNguoiThanM.Text = "";
             txtTenDNBNM.Text = "";
             txtMatKhauBNM.Text = "";
+
+            dateNgayVao.Text = "";
+            txtBenhTrang.Text = "";
         }
 
         private bool CheckTextBoxes()
@@ -71,6 +79,14 @@ namespace HMS_NHOM25
             {
                 MessageBox.Show("Bạn chưa nhập mật khẩu!"); return false;
             }
+            if (dateNgayVao.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập ngày vào!"); return false;
+            }
+            if (txtBenhTrang.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập bệnh trạng của bệnh nhân!"); return false;
+            }
             return true;
         }
 
@@ -86,7 +102,11 @@ namespace HMS_NHOM25
             string _tenDN = txtTenDNBNM.Text;
             string _matKhau = txtMatKhauBNM.Text;
 
+            string _ngayVao = dateNgayVao.Text;
+            string _benhTrang = txtBenhTrang.Text;
+
             bn = new Params.BenhNhan(_tenBN, _ngaySinh, _gioiTinh, _sdt, _diaChi, _sdtNguoiThan, null, _tenDN, _matKhau);
+            bn_ls = new BenhNhan_LichSuParams(null, _ngayVao, _benhTrang);
         }
 
         private void btnSaveInfoBNM_Click(object sender, EventArgs e)
@@ -114,7 +134,12 @@ namespace HMS_NHOM25
                             query1 = "INSERT INTO benhNhan (MaBN, TenBN, NgaySinh, GioiTinh, SDT, DiaChi, SDTNguoiThan) VALUES " +
                                 "('" + id + "', N'" + bn.TenBN + "' ,N'" + bn.NgaySinh + "', N'" + bn.GioiTinh + "', N'" + bn.Sdt + "', N'" + bn.DiaChi + "', N'" + bn.SdtNguoiThan + "')";
 
+                            query2 = "INSERT INTO benhNhan_lichSu(MaBN, NgayVao, BenhTrang) VALUES " +
+                                "('" + id + "', N'" + bn_ls.NgayVao + "', N'" + bn_ls.BenhTrang  + "')";
+
                             bn_tk.Command(query1);
+
+                            bn_tk.Command(query2);
 
                             transaction.Commit();
 

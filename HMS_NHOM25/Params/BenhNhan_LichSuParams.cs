@@ -9,11 +9,11 @@ namespace HMS_NHOM25.Params
     internal class BenhNhan_LichSuParams
     {
         private string _maBN;
-        private string _maPhong;
+        private object _maPhong;
         private string _ngayVao;
         private string _benhTrang;
 
-        public BenhNhan_LichSuParams(string maBN, string maPhong, string ngayVao, string benhTrang)
+        public BenhNhan_LichSuParams(string maBN, string ngayVao, string benhTrang, object maPhong = null)
         {
             _maBN = maBN;
             _maPhong = maPhong;
@@ -22,7 +22,7 @@ namespace HMS_NHOM25.Params
         }
 
         public string MaBN { get => _maBN; set => _maBN = value; }
-        public string MaPhong { get => _maPhong; set => _maPhong = value; }
+        public object MaPhong { get => _maPhong; set => _maPhong = value; }
         public string NgayVao { get => _ngayVao; set => _ngayVao = value; }
         public string BenhTrang { get => _benhTrang; set => _benhTrang = value; }
     }

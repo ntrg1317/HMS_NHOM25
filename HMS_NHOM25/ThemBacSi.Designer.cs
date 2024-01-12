@@ -1,6 +1,6 @@
 ﻿namespace HMS_NHOM25
 {
-    partial class ThemDoctor
+    partial class ThemBacSi
     {
         /// <summary>
         /// Required designer variable.

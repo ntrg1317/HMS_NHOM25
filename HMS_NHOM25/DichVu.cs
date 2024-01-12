@@ -177,6 +177,7 @@ namespace HMS_NHOM25
                 if (item.ToString().Trim() == selectedValue.Trim())
                 {
                     cob.SelectedItem = item;
+                    cob.Text = selectedValue;
                     break;
                 }
             }

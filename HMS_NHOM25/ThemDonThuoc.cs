@@ -1,14 +1,18 @@
 ﻿using HMS_NHOM25.Model;
 using HMS_NHOM25.Params;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace HMS_NHOM25
@@ -262,11 +266,25 @@ namespace HMS_NHOM25
             }
             else
             {
-                string query = "SELECT bn.MaBN, bn.TenBN, bn.GioiTinh, bn_ls.BenhTrang, bn.DiaChi, bn.SDT " +
-                    "FROM benhNhan AS bn  " +
-                    "JOIN benhNhan_lichSu AS bn_ls " +
-                    "ON bn.MaBN = bn_ls.MaBN " +
-                    "WHERE SDT like '%" + timKiem + "%'";
+                string query = @"WITH PatientRanked AS ( 
+                                    SELECT 
+                                        bn.SDT, bn.MaBN, bn.TenBN, bn.GioiTinh, bn_ls.BenhTrang, bn.DiaChi, 
+                                        ROW_NUMBER() OVER(PARTITION BY bn.MaBN ORDER BY bn_ls.ngayVao DESC) AS RowNum 
+                                    FROM 
+                                        benhNhan bn 
+                                    LEFT JOIN 
+                                        benhNhan_lichSu bn_ls ON bn.MaBN = bn_ls.MaBN 
+                                    WHERE 
+                                        bn_ls.ngayVao IS NOT NULL 
+                                        AND bn.TrangThai = 1 
+                                ) 
+                                SELECT 
+                                    SDT, MaBN, TenBN, GioiTinh, BenhTrang, DiaChi 
+                                FROM 
+                                    PatientRanked 
+                                WHERE 
+                                    RowNum = 1 AND 
+                                    SDT like '%" + timKiem + "%'";
 
                 dgvTimBN.DataSource = benhNhan.Table(query);
             }

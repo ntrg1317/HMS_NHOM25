@@ -269,11 +269,11 @@
     <Compile Include="SuaTTTK.Designer.cs">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemDoctor.cs">
+    <Compile Include="ThemBacSi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemDoctor.Designer.cs">
-      <DependentUpon>ThemDoctor.cs</DependentUpon>
+    <Compile Include="ThemBacSi.Designer.cs">
+      <DependentUpon>ThemBacSi.cs</DependentUpon>
     </Compile>
     <Compile Include="ThemNVTN.cs">
       <SubType>Form</SubType>
@@ -514,8 +514,8 @@
     <EmbeddedResource Include="SuaTTTK.resx">
       <DependentUpon>SuaTTTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemDoctor.resx">
-      <DependentUpon>ThemDoctor.cs</DependentUpon>
+    <EmbeddedResource Include="ThemBacSi.resx">
+      <DependentUpon>ThemBacSi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemNVTN.resx">
       <DependentUpon>ThemNVTN.cs</DependentUpon>
