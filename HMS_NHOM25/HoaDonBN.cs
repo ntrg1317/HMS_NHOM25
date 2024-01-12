@@ -63,9 +63,11 @@ namespace HMS_NHOM25
                                 {
                                     string query1 = "INSERT INTO hoaDon (MaBN, NgayTT, TongTien) VALUES " + "(N'" + hdp.MaBN + "', N'" + hdp.NgayTT + "', N'" + hdp.TongTien + "')";
                                     string query2 = "UPDATE benhNhan SET TrangThai = " + 0 + "WHERE MaBN = " + hdp.MaBN;
+                                    string query3 = "UPDATE benhNhan_lichSu SET MaPhong = NULL WHERE MaBN = " + hdp.MaBN;
 
                                     basemodel.Command(query1);
                                     basemodel.Command(query2);
+                                    basemodel.Command(query3);
 
                                     transaction.Commit();
 

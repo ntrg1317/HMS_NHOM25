@@ -312,7 +312,6 @@
             this.btnCapNhatCTDonThuoc.Text = "Cập nhật";
             this.btnCapNhatCTDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhatCTDonThuoc.UseVisualStyleBackColor = true;
-            this.btnCapNhatCTDonThuoc.Click += new System.EventHandler(this.btnCapNhatCTDonThuoc_Click);
             // 
             // ChiTietPhong
             // 

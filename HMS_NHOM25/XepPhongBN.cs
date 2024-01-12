@@ -110,13 +110,7 @@ namespace HMS_NHOM25
 
         private void XepPhongBN_Load(object sender, EventArgs e)
         {
-            dgvTimBN.Columns["MaBN"].HeaderText = "Mã bệnh nhân";
-            dgvTimBN.Columns["TenBN"].HeaderText = "Tên bệnh nhân";
-            dgvTimBN.Columns["GioiTinh"].HeaderText = "Giới Tính";
-            dgvTimBN.Columns["BenhTrang"].HeaderText = "Bệnh Trạng";
-            dgvTimBN.Columns["NgayVao"].HeaderText = "Ngày Vào";
-            dgvTimBN.Columns["DiaChi"].HeaderText = "Địa Chỉ";
-            dgvTimBN.Columns["SDT"].HeaderText = "Số Điện Thoại";
+            
         }
     }
 }

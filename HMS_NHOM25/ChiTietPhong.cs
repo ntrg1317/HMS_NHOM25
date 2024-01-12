@@ -104,10 +104,5 @@ namespace HMS_NHOM25
             }
             return true;
         }
-
-        private void btnCapNhatCTDonThuoc_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

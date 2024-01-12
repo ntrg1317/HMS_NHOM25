@@ -40,8 +40,8 @@ namespace HMS_NHOM25
                                             CASE
                                                 WHEN(p.SLGiuong - ISNULL(COUNT(DISTINCT bn_ls.MaBN), 0)) > 0 THEN N'Còn'
                                                 ELSE N'Hết'
-                                            END AS trangThai
-                                                        FROM
+                                            END AS trangThai 
+                                        FROM
                                             phong AS p
                                         LEFT JOIN(
                                             SELECT DISTINCT MaPhong, bn_ls.MaBN
