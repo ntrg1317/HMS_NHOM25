@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(4, 88);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(880, 1094);
+            this.panel3.Size = new System.Drawing.Size(859, 1094);
             this.panel3.TabIndex = 5;
             // 
             // chartTyLeTangTruong
@@ -166,7 +166,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(598, 17);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Thống kê doanh thu và tỷ lệ tăng trưởng doanh thu trong năm 2023 (theo thán" +
+            this.label4.Text = "Thống kê doanh thu và tỷ lệ tăng trưởng doanh thu trong năm 2024 (theo thán" +
     "g) ";
             // 
             // ThongKeDoanhThu

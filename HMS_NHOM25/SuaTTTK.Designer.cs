@@ -55,7 +55,7 @@
             this.grbTTTKCu.Controls.Add(this.labMK);
             this.grbTTTKCu.Controls.Add(this.labTenDN);
             this.grbTTTKCu.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKCu.Location = new System.Drawing.Point(182, 179);
+            this.grbTTTKCu.Location = new System.Drawing.Point(51, 154);
             this.grbTTTKCu.Name = "grbTTTKCu";
             this.grbTTTKCu.Size = new System.Drawing.Size(588, 152);
             this.grbTTTKCu.TabIndex = 0;
@@ -100,7 +100,7 @@
             // 
             this.labSuaTTTK.AutoSize = true;
             this.labSuaTTTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labSuaTTTK.Location = new System.Drawing.Point(368, 81);
+            this.labSuaTTTK.Location = new System.Drawing.Point(237, 56);
             this.labSuaTTTK.Name = "labSuaTTTK";
             this.labSuaTTTK.Size = new System.Drawing.Size(277, 29);
             this.labSuaTTTK.TabIndex = 2;
@@ -110,7 +110,7 @@
             // 
             this.ptbSuaTTTK.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.ErrorImage")));
             this.ptbSuaTTTK.Image = ((System.Drawing.Image)(resources.GetObject("ptbSuaTTTK.Image")));
-            this.ptbSuaTTTK.Location = new System.Drawing.Point(323, 72);
+            this.ptbSuaTTTK.Location = new System.Drawing.Point(192, 47);
             this.ptbSuaTTTK.Name = "ptbSuaTTTK";
             this.ptbSuaTTTK.Size = new System.Drawing.Size(48, 43);
             this.ptbSuaTTTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -124,7 +124,7 @@
             this.grbTTTKMoi.Controls.Add(this.labMKmoi);
             this.grbTTTKMoi.Controls.Add(this.labTenDNmoi);
             this.grbTTTKMoi.ForeColor = System.Drawing.Color.Red;
-            this.grbTTTKMoi.Location = new System.Drawing.Point(182, 358);
+            this.grbTTTKMoi.Location = new System.Drawing.Point(51, 333);
             this.grbTTTKMoi.Name = "grbTTTKMoi";
             this.grbTTTKMoi.Size = new System.Drawing.Size(588, 152);
             this.grbTTTKMoi.TabIndex = 4;
@@ -169,7 +169,7 @@
             // 
             this.btnLuuTT.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuTT.Image")));
             this.btnLuuTT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuTT.Location = new System.Drawing.Point(300, 596);
+            this.btnLuuTT.Location = new System.Drawing.Point(169, 571);
             this.btnLuuTT.Name = "btnLuuTT";
             this.btnLuuTT.Size = new System.Drawing.Size(128, 32);
             this.btnLuuTT.TabIndex = 5;
@@ -182,25 +182,25 @@
             // 
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(484, 596);
+            this.btnThoat.Location = new System.Drawing.Point(353, 571);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(128, 32);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // SuaTTTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 744);
+            this.ClientSize = new System.Drawing.Size(685, 644);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuuTT);
             this.Controls.Add(this.grbTTTKMoi);
             this.Controls.Add(this.ptbSuaTTTK);
             this.Controls.Add(this.labSuaTTTK);
             this.Controls.Add(this.grbTTTKCu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SuaTTTK";
             this.Text = "SuaThongTinTaiKhoan";
             this.grbTTTKCu.ResumeLayout(false);
