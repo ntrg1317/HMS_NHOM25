@@ -36,3 +36,5 @@ Quản trị viên:
   - Xem chi tiết về các dịch vụ và đơn thuốc đã được sử dụng.
   - Tạo hóa đơn dựa trên thông tin này và tính tổng chi phí.
   - Gửi hóa đơn cho bệnh nhân và cập nhật trạng thái thanh toán.
+ 
+## This repo has contributon of [phamthuhue](https://github.com/phamthuhue) and [nguyenvang12003454](https://github.com/nguyenvang12003454)
